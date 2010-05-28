@@ -1,101 +1,17 @@
-<!-- @(#) $Id: local_rules.xml,v 1.7 2010/03/04 20:12:33 dcid Exp $
-  -  Example of local rules for OSSEC.
-  -
-  -  Copyright (C) 2009 Trend Micro Inc.
-  -  All rights reserved.
-  -
+  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
   -  This program is a free software; you can redistribute it
   -  and/or modify it under the terms of the GNU General Public
   -  License (version 2) as published by the FSF - Free Software
   -  Foundation.
   -
-  -  License details: http://www.ossec.net/en/licensing.html
+  -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
   -->
 
 
-<!-- Modify it at your will. -->
+
+  <!-- Modify it at your will. -->
 
 <group name="local,syslog,">
-
-  <!-- Note that rule id 5711 is defined at the ssh_rules file
-    -  as a ssh failed login. This is just an example
-    -  since ip 1.1.1.1 shouldn't be used anywhere.
-    -  Level 0 means ignore.
-    -->
-  <rule id="100001" level="0">
-    <if_sid>5711</if_sid>
-    <srcip>1.1.1.1</srcip>
-    <description>Example of rule that will ignore sshd </description>
-    <description>failed logins from IP 1.1.1.1.</description>
-  </rule>
-  
-  
-  <!-- This example will ignore ssh failed logins for the user name XYZABC.
-    -->
-  <!--  
-  <rule id="100020" level="0">
-    <if_sid>5711</if_sid>
-    <user>XYZABC</user>
-    <description>Example of rule that will ignore sshd </description>
-    <description>failed logins for user XYZABC.</description>
-  </rule>
-  -->
-  
-  
-  <!-- Specify here a list of rules to ignore. -->
-  <!--
-  <rule id="100030" level="0">
-    <if_sid>12345, 23456, xyz, abc</if_sid>
-    <description>List of rules to be ignored.</description>
-  </rule>
-  -->
-
-  <!--Oct 13 12:03:19 ix arpwatch: pcap open re0: /dev/bpf0: Permission denied-->
-  <rule id="200001" level="1">
-    <if_sid>7200</if_sid>
-    <match>/dev/bpf0: Permission denied</match>
-    <description>arpwatch probably run with wrong permissions</description>
-  </rule>
-
-  <rule id="210000" level="0" noalert="1">
-    <decoded_as>avahi</decoded_as>
-    <description>Grouping for avahi alerts</description>
-  </rule>
-
-  <rule id="210001" level="0" noalert="1">
-    <decoded_as>avahi-dnsconfd</decoded_as>
-    <description>Grouping for avahi-dnsconfd</description>
-  </rule>
-
-  <!--Jul  8 00:47:19 gorilla avahi-daemon[32088]: dbus_bus_get_private(): Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or di
-rectory-->
-  <rule id="210010" level="1">
-    <if_sid>210000</if_sid>
-    <match>Failed to connect to socket</match>
-    <description>XXX Could not connect to socket</description>
-  </rule>
-
-  <!--Jul  8 00:47:19 gorilla avahi-daemon[32088]: WARNING: Failed to contact D-Bus daemon.-->
-  <rule id="210011" level="1">
-    <if_sid>210000</if_sid>
-    <match>Failed to contact D-Bus daemon</match>
-    <description>Cannot connect to D-Bus daemon</description>
-  </rule>
-
-  <!--Jul  8 00:59:06 gorilla avahi-daemon[22180]: IP_DROP_MEMBERSHIP failed: Can't assign requested address-->
-  <rule id="210012" level="1">
-    <if_sid>210000</if_sid>
-    <match>Can't assign requested address</match>
-    <description>Cannot assign requested address</description>
-  </rule>
-
-  <!--Sep  6 01:56:16 gorilla avahi-dnsconfd[30635]: Failed to parse browsing line: <28>Sep  6 01:56:16 avahi-daemon[13441]: Invalid query packet.ansfer o
-n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\^L\^R\^\\^A-->
-  <rule id="210013" level="1">
-    <if_sid>210001</if_sid>
-    <match>Invalid query packet.ansfer</match>
-    <description>XXX</description>
-  </rule>
 
   <rule id="220000" level="0" noalert="1">
     <decoded_as>bsd_kernel</decoded_as>
@@ -105,7 +21,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
   <!--Mar  3 10:30:10 ix /bsd: ichiic0: abort failed, status 0x40<INUSE>-->
   <rule id="220001" level="1">
     <if_sid>220000</if_sid>
-    <match>ichiic0: abort failed, status 0x40</match>
+    <match>ichiic0: abort failed, status 0x40</match> 
     <description>XXX</description>
   </rule>
 
@@ -117,9 +33,9 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
   </rule>
 
   <!--Apr 20 01:27:21 gorilla /bsd: umass0: BBB bulk-in clear stall failed, TIMEOUT-->
-  <rule id="220003" level="1">
+  <rule id="220003" level="1"> 
     <if_sid>220000</if_sid>
-    <match>BBB bulk-in clear stall failed</match>
+    <match>BBB bulk-in clear stall failed</match> 
     <description>XXX</description>
   </rule>
 
@@ -154,7 +70,6 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
   <!--Oct 17 07:39:56 power /bsd: wd0: soft error (corrected)-->
   <rule id="220008" level="2">
     <if_sid>220000</if_sid>
-    <!--<if_sid>1002</if_sid>-->
     <match>soft error (corrected)</match>
     <description>A soft error has been corrected on a hard drive, </description>
     <description>this is a possible early sign of failure.</description>
@@ -199,7 +114,10 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
 
 
 
+
+
+
 </group> <!-- SYSLOG,LOCAL -->
 
 
-<!-- EOF -->
+  <!-- EOF -->
