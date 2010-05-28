@@ -1,0 +1,39 @@
+<!-- @(#) $Id: local_rules.xml,v 1.7 2010/03/04 20:12:33 dcid Exp $
+  -  Example of local rules for OSSEC.
+  -
+  -  Copyright (C) 2009 Trend Micro Inc.
+  -  All rights reserved.
+  -
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.ossec.net/en/licensing.html
+  -->
+
+
+<!-- Modify it at your will. -->
+
+<group name="local,syslog,">
+
+  <!-- Note that rule id 5711 is defined at the ssh_rules file
+    -  as a ssh failed login. This is just an example
+    -  since ip 1.1.1.1 shouldn't be used anywhere.
+    -  Level 0 means ignore.
+    -->
+  <!--Oct 13 12:03:19 ix arpwatch: pcap open re0: /dev/bpf0: Permission denied-->
+  <rule id="200001" level="1">
+    <if_sid>7200</if_sid>
+    <match>/dev/bpf0: Permission denied</match>
+    <description>arpwatch probably run with wrong permissions</description>
+  </rule>
+  
+ 
+
+ 
+   
+</group> <!-- SYSLOG,LOCAL -->
+
+
+<!-- EOF -->
