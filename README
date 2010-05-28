@@ -10,3 +10,8 @@ ossec/rules/* - These files (except local_rules.xml) are from OSSEC snapshots, a
 ossec/rules/local_rules.xml - This file contains the new rules for testing.
 ossec/etc/* - These files (except local_decoder.xml) are from the OSSEC snapshots, and are being used for testing.
 ossec/etc/local_decoder.xml - This file contains the new decoders for testing.
+
+Rule IDs:
+200001+: new arpwatch rules 
+210000+: new avahi related rules
+220000+: (Open?)bsd kernel
