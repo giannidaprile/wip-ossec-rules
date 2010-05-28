@@ -27,3 +27,7 @@
   <order>extra_data</order>
 </decoder>
 -->
+
+<decoder name="python">
+  <program_name>^python</program_name>
+</decoder>
