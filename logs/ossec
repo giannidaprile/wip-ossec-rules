@@ -1,5 +1,1 @@
- Alert on world writable files
- Alert on new rules
- Be more granular with above: 
-
-Do not alert about files that are world writable that were previously world writable
+Oct 27 09:48:52 172.16.51.135 fedora11 kernel: ossec-logcollec[2166]: segfault at 0 ip 0804d4ee sp bf988b40 error 4 in ossec-logcollector[8048000+27000]
