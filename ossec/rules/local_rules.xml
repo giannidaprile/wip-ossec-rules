@@ -49,6 +49,15 @@
     <description>List of rules to be ignored.</description>
   </rule>
   -->
+
+  <!--Oct 13 12:03:19 ix arpwatch: pcap open re0: /dev/bpf0: Permission denied-->
+  <rule id="200001" level="1">
+    <if_sid>7200</if_sid>
+    <match>/dev/bpf0: Permission denied</match>
+    <description>arpwatch probably run with wrong permissions</description>
+  </rule>
+
+
    
 </group> <!-- SYSLOG,LOCAL -->
 
