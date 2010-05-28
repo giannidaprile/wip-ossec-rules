@@ -1,4 +1,4 @@
-<!-- @(#) $Id: sshd_rules.xml,v 1.23 2010/03/04 20:12:33 dcid Exp $
+<!-- @(#) $Id: sshd_rules.xml,v 1.24 2010/05/18 11:49:23 dcid Exp $
   -  Official SSHD rules for OSSEC.
   -
   -  Copyright (C) 2009 Trend Micro Inc.
@@ -69,7 +69,8 @@
   <rule id="5709" level="0">
     <if_sid>5700</if_sid>
     <match>error: Could not get shadow information for NOUSER|</match>
-    <match>fatal: Read from socket failed: |error: ssh_msg_send: write</match>
+    <match>fatal: Read from socket failed: |error: ssh_msg_send: write|</match>
+    <match>^syslogin_perform_logout: </match>
     <description>Useless SSHD message without an user/ip and context.</description>
   </rule>
   
