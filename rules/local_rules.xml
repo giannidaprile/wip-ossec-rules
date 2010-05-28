@@ -1,16 +1,12 @@
-<!-- @(#) $Id: local_rules.xml,v 1.7 2010/03/04 20:12:33 dcid Exp $
-  -  Example of local rules for OSSEC.
-  -
-  -  Copyright (C) 2009 Trend Micro Inc.
-  -  All rights reserved.
-  -
+  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
   -  This program is a free software; you can redistribute it
   -  and/or modify it under the terms of the GNU General Public
   -  License (version 2) as published by the FSF - Free Software
   -  Foundation.
   -
-  -  License details: http://www.ossec.net/en/licensing.html
+  -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
   -->
+
 
 
 <!-- Modify it at your will. -->
