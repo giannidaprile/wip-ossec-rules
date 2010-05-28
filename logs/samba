@@ -1,0 +1,7 @@
+Dec 25 18:11:29 ix smbd[22614]:   ERROR: smbd is already running. File /var/run/smbd.pid exists and process id 3203 is running.
+Dec 25 18:11:33 ix nmbd[554]:   ERROR: nmbd is already running. File /var/run/nmbd.pid exists and process id 31838 is running.
+Oct 28 01:53:12 ix smbd[16392]:   getpeername failed. Error was Socket is not connected
+Oct 28 01:53:12 ix smbd[16392]:   read_fd_with_timeout: client 0.0.0.0 read error = Socket is not connected.
+Nov  9 04:56:33 giediprime kernel: gvfsd-smb[8203]: segfault at c ip 08061322 sp bfcd78a0 error 4 in gvfsd-smb[8048000+22000
+Mar 13 16:29:04 ix smbd[6238]:   Connection denied from 0.0.0.0
+Mar 13 16:29:04 ix smbd[6238]:   write_data: write failure in writing to client 0.0.0.0. Error Socket is not connected

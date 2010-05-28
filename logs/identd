@@ -1,0 +1,2 @@
+Jun  8 08:48:28 gorilla identd[8029]: scanf: invalid-port(s): 0 , 0 from gorilla.monkey.local
+Jun  8 08:49:18 gorilla identd[9790]: read from gorilla.monkey.local: EOF

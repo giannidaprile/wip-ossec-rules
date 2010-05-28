@@ -1,0 +1,6 @@
+Oct  1 14:37:42 fedora11 NetworkManager: <info>  Activation (eth1) failed.                                                                                                                                                                                    
+Oct  1 14:37:42 fedora11 NetworkManager: <info>  Activation (eth1) failed.
+Oct 22 09:30:40 172.16.51.135 fedora11 NetworkManager: <info>  Activation (eth1) failed.
+Nov  8 09:45:48 giediprime NetworkManager: nm_device_ethernet_new: assertion `driver != NULL' failed
+Nov 14 13:06:43 giediprime NetworkManager: <WARN>  check_one_route(): (wlan0) error -34 returned from rtnl_route_del(): Sucess#012
+Jan  3 02:22:01 giediprime nm-system-settings:    ifcfg-rh:     error: Couldn't parse file '/etc/sysconfig/network-scripts/ifcfg-lo;4b404592'

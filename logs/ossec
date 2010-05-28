@@ -1,0 +1,5 @@
+ Alert on world writable files
+ Alert on new rules
+ Be more granular with above: 
+
+Do not alert about files that are world writable that were previously world writable

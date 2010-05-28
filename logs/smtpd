@@ -1,0 +1,8 @@
+Oct 26 13:37:52 tiny smtpd[9446]: fatal: mfa: chroot: No such file or directory
+Oct 26 22:30:12 ix smtpd[6726]: client 192.168.17.9 read error: Connection reset by peer
+Nov  2 20:54:57 ix smtpd[3884]: fatal: bind: Address already in use
+Nov 13 17:30:34 ix smtpd[29377]: (none): from=<@>, relay=power.example.com [192.168.17.249], stat=LocalError (501 EHLO requires domain address)
+Nov 15 04:15:28 ix smtpd[1461]: 1258258526.ulJRPbD7Ch7um55S: to=<ddp@power.example.com>, delay=2, relay=smtp.east.cox.net [68.1.17.4], stat=RemoteError (5.1.0 <ddp@power.example.com> sender rejected)
+Nov 16 21:41:30 ix smtpd[13395]: fatal: lka_resolve_node: unexpected type
+Nov 25 01:28:45 ix smtpd[4224]: 1259112525.AbdJ8tDSelOWn16C: from=<root@tiny>, relay=tiny.example.com [192.168.17.33], stat=LocalError (530 Recipient rejected: ddp@ix.example.com)
+Jan  8 01:30:45 tiny smtpd[18682]: 1262914225.YfKQNsGh7vFa7e2q: from=<root@tiny>, relay=0@localhost [IPv6:::1], stat=LocalError (500 Line too long)

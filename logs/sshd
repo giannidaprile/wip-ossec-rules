@@ -1,0 +1,14 @@
+Apr 14 19:28:21 gorilla sshd[31274]: Connection closed by 192.168.1.33
+Jun 11 06:32:17 gorilla sshd[28293]: error: buffer_get_bignum2_ret: negative numbers not supported
+Jun 11 06:32:17 gorilla sshd[28293]: fatal: buffer_get_bignum2: buffer error
+Jun 17 05:52:32 tiny sshd[30527]: Received disconnect from 61.129.60.23: 11: Bye Bye
+Jun 19 20:56:00 tiny sshd[11605]: fatal: Write failed: Host is down
+Oct  8 14:15:33 fedora11 sshd[11773]: Failed password for ddp from 172.16.51.1 port 56588 ssh2
+Oct  8 11:09:16 y sshd[7836]: error: ssh_msg_send: write
+Oct  8 11:18:26 172.16.51.132 sshd[7618]: error: PAM: Module is unknown for ddp from 172.16.51.1
+Oct  8 08:48:33 y sshd[6856]: error: Bind to port 22 on 0.0.0.0 failed: Address already in use.
+Oct  8 08:58:37 y sshd[6956]: fatal: PAM: pam_setcred(): Authentication service cannot retrieve user credentials
+Oct  7 13:22:29 localhost login: PAM [dlerror: <*unknown module path*>: cannot open shared object file: No such file or directory]
+Oct  7 13:22:29 localhost login: PAM (login) illegal module type: include
+Oct  8 10:07:27 y sshd[7644]: debug1: attempt 2 failures 2
+Jan 26 11:57:26 ix sshd[14879]: error: connect to ix.example.com port 7777 failed: Connection refused

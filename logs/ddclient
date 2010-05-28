@@ -1,0 +1,2 @@
+ ddclient[4867]: WARNING:  cannot connect to checkip.dyndns.org:80 socket: IO::Socket::INET: Bad hostname 'checkip.dyndns.org'
+Mar 25 18:04:57 gorilla ddclient[4352]: WARNING:  Cannot create file '/var/run/ddclient.pid'. (Permission denied)

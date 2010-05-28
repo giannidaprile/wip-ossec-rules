@@ -1,0 +1,2 @@
+Jun 10 12:15:18 gorilla mountd[29763]: Can't delete exports for /tmp/xxxy: Invalid argument                                                                                                                                                                   
+Jun 26 21:09:01 gorilla mountd[3773]: Bad exports list line /data01

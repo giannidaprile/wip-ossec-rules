@@ -1,0 +1,16 @@
+Apr  3 18:35:14 power /bsd: cd0(atapiscsi0:0:0): Check Condition (error 0x70) on opcode 0x0
+Apr 20 01:27:21 gorilla /bsd: umass0: BBB bulk-in clear stall failed, TIMEOUT
+Jun  8 23:40:41 gorilla /bsd: arp info overwritten for 192.168.17.111 by 00:16:01:4b:45:a6 on sk0
+Jun  8 21:46:18 gorilla /bsd: WARNING: / was not properly unmounted
+May 26 23:30:57 gorilla /bsd: UKC> quit
+Oct 15 20:06:43 mobile /bsd: run0: Michael MIC failure
+Oct 17 07:39:56 power /bsd: wd0: soft error (corrected)
+Oct 17 07:39:56 power /bsd: wd0: soft error (corrected)
+Logs From misc@ (Don Scott don.scott.misc@gmail.com)
+Jan 12 19:40:27 x60 /bsd: acpithinkpad0: unknown event 0x6022
+Jan 12 19:40:45 x60 /bsd: acpitz1: Critical temperature, shutting down
+From henson@acm.org via misc@:
+Jan 18 09:22:45 bart /bsd: acpitz0: _AL0[0] _PR0 failed
+Feb 26 11:18:59 ix /bsd: ehci_freex: xfer=0xffff8000003ef800 not busy, 0x4f4e5155
+Feb 28 23:23:21 ix /bsd: ichiic0: abort failed, status 0x0
+Mar  3 10:30:10 ix /bsd: ichiic0: abort failed, status 0x40<INUSE>

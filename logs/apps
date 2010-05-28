@@ -1,0 +1,1 @@
+Oct 27 09:48:52 172.16.51.135 fedora11 kernel: ossec-logcollec[2166]: segfault at 0 ip 0804d4ee sp bf988b40 error 4 in ossec-logcollector[8048000+27000]

@@ -1,0 +1,8 @@
+Jan 22 21:21:20 buffalo1 dropbear[3859]: exit before auth: Failed to get kex value
+Jan 22 21:21:20 buffalo1 dropbear[3859]: Premature kexdh_init message received
+Mar 24 15:25:51 buffalo1 dropbear[4092]: bad password attempt for 'root' from 192.168.17.9:5543
+Mar 22 16:22:17 buffalo1 dropbear[25017]: password auth succeeded for 'root' from 192.168.17.9:39285
+Mar 22 16:22:18 buffalo1 dropbear[25017]: exit after auth (root): Disconnect received
+Mar 22 16:29:14 buffalo1 dropbear[25121]: exit before auth: Exited normally
+Mar 22 16:29:51 buffalo1 dropbear[25132]: exit before auth: Incompatible remote version 'SSH-1.5-NmapNSE_1.0'
+Mar 22 16:29:53 buffalo1 dropbear[25139]: exit before auth: Incompatible remote version 'SSH-1.5-Nmap-SSH1-Hostkey'
