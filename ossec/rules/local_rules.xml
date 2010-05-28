@@ -196,6 +196,141 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <description>XXX</description>
   </rule>
 
+  <rule id="230000" level="0" noalert="1">
+    <decoded_as>python</decoded_as>
+    <description>Grouping for python rules</description>
+  </rule>
+
+  <rule id="230001" level="0" noalert="1">
+    <if_sid>230000</if_sid>
+    <match>^hp-scan</match>
+    <description>Grouping for hp-scan rules</description>
+  </rule>
+
+  <rule id="230002" level="0" noalert="1">
+    <if_sid>230000</if_sid>
+    <match>^hp-probe</match>
+    <description>Grouping for hp-probe rules</description>
+  </rule>
+
+  <rule id="230003" level="0" noalert="1">
+    <if_sid>230000</if_sid>
+    <match>^hp-setup</match>
+    <description>Grouping for hp-setup rules</description>
+  </rule>
+
+  <rule id="230004" level="0" noalert="1">
+    <if_sid>230000</if_sid>
+    <match>^hp-info</match>
+    <description>Grouping for hp-info rules</description>
+  </rule>
+
+  <rule id="230005" level="0" noalert="1">
+    <if_sid>230000</if_sid>
+    <match>^hp-makeuri</match>
+    <description>Grouping for hp-makeuri rules</description>
+  </rule>
+
+  <rule id="230006" level="0" noalert="1">
+    <if_sid>230000</if_sid>
+    <match>^hp-check</match>
+    <description>Grouping for hp-check rules</description>
+  </rule>
+
+  <!--Jul  8 00:45:36 gorilla python2.5: hp-scan[552]: error: No device-->
+  <rule id="230020" level="1">
+    <if_sid>230001</if_sid>
+    <regex>^hp-scan[\d+]: error: No device</regex>
+    <description>hp-scan could not find a printer</description>
+  </rule>
+
+  <!--Jul  8 00:46:53 gorilla python2.5: hp-probe[24546]: error: Unable to setup multicast socket for SLP: (22, 'Invalid argument')-->
+  <rule id="230021" level="1">
+    <if_sid>230002</if_sid>
+    <regex>^hp-probe[\S+]: </regex>
+    <match>error: Unable to setup multicast socket for SLP</match>
+    <description>XXX</description>
+  </rule>
+
+  <!--Jul  8 01:14:31 gorilla python2.5: hp-setup[21147]: error: hp-setup requires GUI support (try running with --qt3). Also, try using interactive (-i)
+mode.-->
+  <rule id="230022" level="1">
+    <if_sid>230003</if_sid>
+    <match>requires GUI support</match>
+    <description>hp-setup requires a GUI</description>
+  </rule>
+
+  <!--Jul  8 01:17:38 gorilla python2.5: hp-setup[21681]: error: No devices found on bus: net-->
+  <rule id="230023" level="1">
+    <if_sid>230003</if_sid>
+    <match>error: No devices found on bus:</match>
+    <description>hp-setup could not find a printer</description>
+  </rule>
+
+  <!--Jul  8 01:32:22 gorilla python2.5: hp-info[25919]: error:  No devices found.-->
+  <rule id="230024" level="1">
+    <if_sid>230004</if_sid>
+    <match>error:  No devices found.</match>
+    <description>hp-info cannot find a printer</description>
+  </rule>
+
+  <!--Jul  8 02:10:43 gorilla python2.5: hp-makeuri[8442]: error: You must specify one SERIAL NO., IP, USB ID or DEVNODE parameter.-->
+  <rule id="230025" level="1">
+    <if_sid>230005</if_sid>
+    <match>error: You must specify one</match>
+    <description>A proper ID was not specified for hp-makeuri</description>
+  </rule>
+
+  <!--Jul  8 02:12:10 gorilla python2.5: hp-check[27994]: error: Not found. SANE backend 'hpaio' NOT properly setup (needs to be added to /etc/sane.d/dll.
+conf).-->
+  <rule id="230026" level="1">
+    <if_sid>230006</if_sid>
+    <match>error: Not found. SANE backend 'hpaio' NOT properly setup</match>
+    <description>hpaio has not been setup.</description>
+  </rule>
+
+  <!--Jul  8 02:12:13 gorilla python2.5: hp-check[27994]: error: 4 errors and/or warnings.-->
+  <rule id="230027" level="1">
+    <if_sid>230006</if_sid>
+    <match>errors and/or warnings</match>
+    <description>errors and/or warnings were found in the configuration</description>
+  </rule>
+
+  <!--Jul  8 02:29:30 gorilla python2.5: hp-makeuri[13147]: error: Device not found-->
+  <rule id="230028" level="1">
+    <if_sid>230005</if_sid>
+    <match>error: Device not found</match>
+    <description>hp-makeuri could not find the printer device</description>
+  </rule>
+
+  <rule id="240000" level="0" noalert="1">
+    <program_name>^hp$</program_name>
+    <description>Grouping for hp rules</description>
+  </rule>
+
+  <rule id="240001" level="0" noalert="1">
+    <program_name>^hp-mkuri$</program_name>
+    <description>Grouping for hp-mkuri rules</description>
+  </rule>
+
+
+
+  <!--'Aug 23 20:03:57 power hp[2463]: prnt/backend/hp.c 593: ERROR: 1009 media-empty-error; will retry in 30 seconds...-->
+  <rule id="240010" level="1">
+    <if_sid>240000</if_sid>
+    <match>1009 media-empty-error</match>
+    <description>Printer is out of paper</description>
+  </rule>
+
+  <!--Jul  8 02:11:42 gorilla hp-mkuri: io/hpmud/hp-mkuri.c 223: error no hp_model environment variable set-->
+  <rule id="240011" level="0">
+    <if_sid>240001</if_sid>
+    <match>error no hp_model environment variable set</match>
+    <description>Please set the hp_model environment variable</description>
+  </rule>
+
+
+
 
 
 
