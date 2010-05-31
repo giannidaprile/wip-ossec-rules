@@ -1,3 +1,3 @@
-    <!--Apr  2 01:23:31 gorilla ntpd[27379]: bad sensor nmea0
+Apr  2 01:23:31 gorilla ntpd[27379]: bad sensor nmea0
 Apr 20 13:02:11 tiny ntpd[25875]: bad peer 192.168.1.233 (192.168.1.233)
 May 26 23:31:02 gorilla ntpd[29719]: bind on 192.168.1.233 failed, skipping: Can't assign requested address
