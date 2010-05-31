@@ -31,3 +31,11 @@
 <decoder name="python">
   <program_name>^python</program_name>
 </decoder>
+
+<!--Apr 20 00:45:40 gorilla named[19606]: zone adioserrores.com/IN: refresh: retry limit for master 192.168.1.33#53 exceeded (source 0.0.0.0#0)-->
+<decoder name="named-master">
+  <parent>named</parent>
+  <prematch> for master</prematch>
+  <regex>for master (\d+.\d+.\d+.\d+):(\d+) \S+ \(source (\d+.\d+.\d+.\d+)#d+\)$</regex>
+  <order>dstip,dstport,srcip</order>
+</decoder>
