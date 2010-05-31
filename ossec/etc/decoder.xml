@@ -666,6 +666,7 @@
   <program_name>^named</program_name>
 </decoder>
 
+
 <decoder name="named_client">
   <parent>named</parent>  
   <prematch>^client </prematch>
@@ -673,12 +674,18 @@
   <order>srcip</order>
 </decoder>
 
+<!--Apr 20 00:45:40 gorilla named[19606]: zone adioserrores.com/IN: refresh: retry limit for master 192.168.1.33#53 exceeded (source 0.0.0.0#0)-->
+<decoder name="named-master">
+  <parent>named</parent>
+  <regex>for master (\d+.\d+.\d+.\d+)#(\d+) \S+ \(source (\d+.\d+.\d+.\d+)#\d+\)</regex>
+  <order>dstip,dstport,srcip</order>
+</decoder>
+
 <decoder name="named_from">
   <parent>named</parent>  
   <regex offset="after_parent"> from [(\d+.\d+.\d+.\d+)]</regex>
   <order>srcip</order>
 </decoder>
-
 
 
 <!-- Postfix  decoder.
