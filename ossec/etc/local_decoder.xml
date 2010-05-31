@@ -31,3 +31,14 @@
   <program_name>^python</program_name>
 </decoder>
 
+<!--This needs to be added to decoder.xml after named, and before named_from for it to work.
+    Commented this out for now, since I've added it to decoders.xml-->
+<!--Apr 20 00:45:40 gorilla named[19606]: zone adioserrores.com/IN: refresh: retry limit for master 192.168.1.33#53 exceeded (source 0.0.0.0#0)-->
+<!--
+<decoder name="named-master">
+  <parent>named</parent>
+  <regex>for master (\d+.\d+.\d+.\d+)#(\d+) \S+ \(source (\d+.\d+.\d+.\d+)#\d+\)</regex>
+  <order>dstip,dstport,srcip</order>
+</decoder>
+-->
+
