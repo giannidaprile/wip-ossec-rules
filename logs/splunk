@@ -1,5 +1,4 @@
 Oct  1 08:44:21 localhost --: splunkweb is not running. failed
-Oct  1 08:44:21 localhost --: splunkd is not running. failed                                                                                                                                                                                                  
 Oct  1 08:44:21 localhost --: splunkd is not running. failed
 Oct 27 13:16:21 localhost --: The splunk daemon (splunkd) is already running. failed
-Oct 27 13:16:21 localhost --: splunkweb is already running. failed                                                                                                                                                                                            
+Oct 27 13:16:21 localhost --: splunkweb is already running. failed

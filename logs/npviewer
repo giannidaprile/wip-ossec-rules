@@ -1,3 +1,2 @@
-Nov 11 12:31:19 giediprime kernel: npviewer.bin[31677] general protection ip:116d04c sp:bfab2470 error:0 in libflashplayer.so[dfd000+990000]                                                                                                                  
-Could not get <decoded_as>iptables</decoded_as> to work with this
-Jan  3 02:20:37 giediprime kernel: npviewer.bin[2406]: segfault at ff999ed8 ip ff999ed8 sp bf876cdc error 14                                                                                                                                                  
+Nov 11 12:31:19 giediprime kernel: npviewer.bin[31677] general protection ip:116d04c sp:bfab2470 error:0 in libflashplayer.so[dfd000+990000]
+Jan  3 02:20:37 giediprime kernel: npviewer.bin[2406]: segfault at ff999ed8 ip ff999ed8 sp bf876cdc error 14

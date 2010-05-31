@@ -1,4 +1,4 @@
-Oct  1 14:37:42 fedora11 NetworkManager: <info>  Activation (eth1) failed.                                                                                                                                                                                    
+Oct  1 14:37:42 fedora11 NetworkManager: <info>  Activation (eth1) failed.
 Oct  1 14:37:42 fedora11 NetworkManager: <info>  Activation (eth1) failed.
 Oct 22 09:30:40 172.16.51.135 fedora11 NetworkManager: <info>  Activation (eth1) failed.
 Nov  8 09:45:48 giediprime NetworkManager: nm_device_ethernet_new: assertion `driver != NULL' failed

@@ -1,5 +1,5 @@
 Jul  8 00:45:36 gorilla python2.5: hp-scan[552]: error: No device
-Jul  8 00:46:53 gorilla python2.5: hp-probe[24546]: error: Unable to setup multicast socket for SLP: (22, 'Invalid argument')                                                                                                                                 
+Jul  8 00:46:53 gorilla python2.5: hp-probe[24546]: error: Unable to setup multicast socket for SLP: (22, 'Invalid argument')
 Jul  8 01:14:31 gorilla python2.5: hp-setup[21147]: error: hp-setup requires GUI support (try running with --qt3). Also, try using interactive (-i) mode.
 Jul  8 01:17:38 gorilla python2.5: hp-setup[21681]: error: No devices found on bus: net
 Jul  8 01:32:22 gorilla python2.5: hp-info[25919]: error:  No devices found.
