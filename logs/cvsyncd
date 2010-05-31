@@ -4,6 +4,6 @@ Nov 24 03:13:23 ix cvsyncd[551]: configuration: failed to reload
 Nov 24 03:17:11 ix cvsyncd[15862]: [192.168.17.33] (9b5c193f) DirCmp: RCS Error
 Nov 24 03:17:11 ix cvsyncd[15862]: Receiver Error: recv
 Nov 24 03:17:11 ix cvsyncd[15862]: [192.168.17.33] (9b5c193f) FileCmp: RCS Error
-Nov 24 03:17:11 ix cvsyncd[15862]: Mux(RECV) Error: not running: 0                                                                                                                                                                                            
-Nov 24 03:17:11 ix cvsyncd[15862]: [192.168.17.33] (9b5c193f) FileCmp(RCS): /data/cvs/sysconf/buffalo1/buffalo1.nvram,v: UPDATE Error                                                                                                                         
+Nov 24 03:17:11 ix cvsyncd[15862]: Mux(RECV) Error: not running: 0
+Nov 24 03:17:11 ix cvsyncd[15862]: [192.168.17.33] (9b5c193f) FileCmp(RCS): /data/cvs/sysconf/buffalo1/buffalo1.nvram,v: UPDATE Error
 Nov 24 03:17:11 ix cvsyncd[15862]: Mux(SEND) Error: not running: 1
