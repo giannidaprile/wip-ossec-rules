@@ -1,0 +1,91 @@
+  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  -->
+
+
+
+<!-- Modify it at your will. -->
+
+<group name="local,syslog,">
+
+  <rule id="250000" level="0" noalert="1">
+    <program_name>cvsyncd</program_name>
+    <description>Grouping for cvsyncd rules</description>
+  </rule>
+
+  <!--Oct 21 02:09:46 ix cvsyncd[19692]: /var/run/cvsyncd.pid: Permission denied-->
+  <rule id="250010" level="1">
+    <if_sid>250000</if_sid>
+    <match>cvsyncd.pid: Permission denied</match>
+    <description>cvsyncd cannot write pid file with current permissions</description>
+  </rule>
+
+  <!--Oct 26 22:31:17 ix cvsyncd[3699]: Socket Error: recv: 2 residue 2-->
+  <rule id="250011" level="1">
+    <if_sid>250000</if_sid>
+    <match>Socket Error: recv: 2 residue 2</match>
+    <description>XXX</description>
+  </rule>
+
+  <!--Nov 24 03:13:23 ix cvsyncd[551]: configuration: failed to reload-->
+  <rule id="250012" level="1">
+    <if_sid>250000</if_sid>
+    <match>configuration: failed to reload</match>
+    <description>Error in configuration</description>
+  </rule>
+
+  <!--Nov 24 03:17:11 ix cvsyncd[15862]: [192.168.17.33] (9b5c193f) DirCmp: RCS Error-->
+  <rule id="250013" level="1">
+    <if_sid>250000</if_sid>
+    <match>DirCmp: RCS Error</match>
+    <description>XXX</description>
+  </rule>
+
+  <!--Nov 24 03:17:11 ix cvsyncd[15862]: Receiver Error: recv-->
+  <rule id="250014" level="1">
+    <if_sid>250000</if_sid>
+    <match>Receiver Error: recv</match>
+    <description>XXX</description>
+  </rule>
+
+  <!--Nov 24 03:17:11 ix cvsyncd[15862]: [192.168.17.33] (9b5c193f) FileCmp: RCS Error-->
+  <rule id="250015" level="1">
+    <if_sid>250000</if_sid>
+    <match>FileCmp: RCS Error</match>
+    <description>XXX</description>
+  </rule>
+
+  <!--Nov 24 03:17:11 ix cvsyncd[15862]: Mux(RECV) Error: not running: 0-->
+  <rule id="250016" level="1">
+    <if_sid>250000</if_sid>
+    <match>Mux(RECV) Error: not running: 0</match>
+    <description>XXX</description>
+  </rule>
+
+  <!--Nov 24 03:17:11 ix cvsyncd[15862]: [192.168.17.33] (9b5c193f) FileCmp(RCS): /data/cvs/sysconf/buffalo1/buffalo1.nvram,v: UPDATE Error-->
+  <rule id="250017" level="1">
+    <if_sid>250000</if_sid>
+    <regex>FileCmp(RCS): \.+ : UPDATE Error</regex>
+    <description>XXX</description>
+  </rule>
+
+  <!--Nov 24 03:17:11 ix cvsyncd[15862]: Mux(SEND) Error: not running: 1-->
+  <rule id="250018" level="1">
+    <if_sid>250000</if_sid>
+    <match>Mux(SEND) Error: not running: 1</match>
+    <description>XXX</description>
+  </rule>
+
+
+  
+  
+   
+</group> <!-- SYSLOG,LOCAL -->
+
+
+<!-- EOF -->
