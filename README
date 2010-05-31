@@ -15,3 +15,11 @@ Rule IDs:
 200001+: new arpwatch rules 
 210000+: new avahi related rules
 220000+: (Open?)bsd kernel
+230000+: python
+240000+: cups
+250000+: cvsyncd
+260000+: dbus
+270000+: ddclient
+280000+: dropbear
+290000+: flowd
+300000+: identd
