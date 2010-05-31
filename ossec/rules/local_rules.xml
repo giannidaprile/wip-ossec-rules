@@ -398,6 +398,93 @@ conf).-->
     <description>XXX</description>
   </rule>
 
+  <!--Mar 26 01:06:48 gorilla named[12721]: zone dnserrortool.com/IN: zone transfer deferred due to quota-->
+  <rule id="310000" level="1">
+    <if_sid>12100</if_sid>
+    <match>zone transfer deferred due to quota</match>
+    <description>Zone transfer deferred</description>
+  </rule>
+
+  <!--Jan 11 14:05:53 ix named[2200]: /master/blockeddomain.hosts:16: aniulu.cn,\\010: bad owner name (check-names)-->
+  <rule id="310001" level="1">
+    <if_sid>12100</if_sid>
+    <match>bad owner name (check-names)</match>
+    <description>Hostname contains characters that check-names does not like</description>
+  </rule>
+
+  <!--Dec 25 17:12:00 ix named[18333]: zone antivirus-solution.net/IN: loaded serial 6-->
+  <rule id="310002" level="1">
+    <if_sid>12100</if_sid>
+    <match>loaded serial</match>
+    <description>Zone transfer</description>
+  </rule>
+
+  <!--Mar 26 01:52:13 gorilla named[12721]: zone idenserror.com/IN: transferred serial 6-->
+  <rule id="310003" level="1">
+    <if_sid>12100</if_sid>
+    <match>transferred serial</match>
+    <description>Zone transfer</description>
+  </rule>
+
+  <!--Apr 20 00:45:40 gorilla named[19606]: zone adioserrores.com/IN: refresh: retry limit for master 192.168.1.33#53 exceeded (source 0.0.0.0#0)-->
+  <rule id="310004" level="1">
+    <if_sid>12100</if_sid>
+    <regex>refresh: retry limit for master \S+ exceeded</regex>
+    <description>Zone transfer rety limit exceeded</description>
+  </rule>
+
+  <!--May  4 14:53:13 gorilla named[29877]: /etc/blocked.zones_slave:9637: zone 'internet-optimizer.com': already exists previous definition: /etc/adserve
+r.zones_slave:1593-->
+  <rule id="310005" level="1">
+    <if_sid>12100</if_sid>
+    <match>already exists previous definition</match>
+    <description>Zone has been duplicated</description>
+  </rule>
+
+  <!--Jun  8 21:06:21 gorilla named[25104]: starting BIND 9.4.2-P2-->
+  <rule id="310006" level="1">
+    <if_sid>12100</if_sid>
+    <match>starting BIND</match>
+    <description>BIND has been started</description>
+  </rule>
+
+  <!--Jun  8 21:46:19 gorilla named[27527]: zone 17.168.192.in-addr.arpa/IN: NS 'gorilla.17.168.192.IN-ADDR.ARPA' has no address records (A or AAAA)-->
+  <rule id="310007" level="1">
+    <if_sid>12100</if_sid>
+    <match>has no address records</match>
+    <description>Missing A or AAAA record</description>
+  </rule>
+
+  <!--Sep  8 12:38:41 gorilla named[699]: zone dns.org/IN: (master) removed-->
+  <rule id="310008" level="1">
+    <if_sid>12100</if_sid>
+    <regex>zone \S+: \(master\) removed</regex>
+    <description>Zone has been removed from a master server</description>
+  </rule>
+
+  <!--Nov 12 13:16:04 ix named[16880]: zone 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loading from master file standard/l
+oopback6.arpa failed: not at top of zone-->
+  <rule id="310009" level="1">
+    <if_sid>12100</if_sid>
+    <regex>loading from master file \S+ failed: not at top of zone</regex>
+    <description>XXX not at top of zone</description>
+  </rule>
+
+  <!--Nov 12 14:16:44 ix named[3709]: client 192.168.17.249#7784: zone transfer 'example.com/AXFR/IN' denied-->
+  <rule id="310010" level="1">
+    <if_sid>12100</if_sid>
+    <regex>zone transfer \S+ denied</regex>
+    <description>zone transfer denied</description>
+  </rule>
+
+  <!--Jan 11 15:05:38 ix named[2200]: reloading configuration failed: unexpected end of input-->
+  <rule id="310011" level="1">
+    <if_sid>12100</if_sid>
+    <match>reloading configuration failed: unexpected end of input</match>
+    <description>Configuration mistake</description>
+  </rule>
+
+
 
 
 
