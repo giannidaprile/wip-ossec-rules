@@ -1,2 +1,5 @@
 Jun 10 12:15:18 gorilla mountd[29763]: Can't delete exports for /tmp/xxxy: Invalid argument
 Jun 26 21:09:01 gorilla mountd[3773]: Bad exports list line /data01
+Apr 11 20:01:02 ix mountd[11618]: Refused mount RPC from host 192.168.17.10 port 45659
+Mar 11 15:30:44 ix mountd[17006]: Bad opt mast
+Mar 11 15:30:44 ix mountd[17006]: Bad exports list line /data4 -network
