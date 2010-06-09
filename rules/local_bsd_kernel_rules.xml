@@ -22,21 +22,21 @@
   <rule id="220001" level="1">
     <if_sid>220000</if_sid>
     <match>ichiic0: abort failed, status 0x40</match> 
-    <description>XXX</description>
+    <description>A timeout occurred waiting for a transfer.</description>
   </rule>
 
   <!--Apr  3 18:35:14 power /bsd: cd0(atapiscsi0:0:0): Check Condition (error 0x70) on opcode 0x0-->
-  <rule id="220002" level="1">
+  <rule id="220002" level="0">
     <if_sid>220000</if_sid>
     <match>Check Condition (error 0x70) on opcode 0x0</match>
-    <description>XXX</description>
+    <description>Check media in optical drive.</description>
   </rule>
 
   <!--Apr 20 01:27:21 gorilla /bsd: umass0: BBB bulk-in clear stall failed, TIMEOUT-->
   <rule id="220003" level="1"> 
     <if_sid>220000</if_sid>
     <match>BBB bulk-in clear stall failed</match> 
-    <description>XXX</description>
+    <description>A disk has timed out.</description>
   </rule>
 
   <!--'Jun  8 23:40:41 gorilla /bsd: arp info overwritten for 192.168.17.111 by 00:16:01:4b:45:a6 on sk0-->
@@ -61,10 +61,11 @@
   </rule>
 
   <!--Oct 15 20:06:43 mobile /bsd: run0: Michael MIC failure-->
+  <!--http://en.wikipedia.org/wiki/Temporal_Key_Integrity_Protocol-->
   <rule id="220007" level="1">
     <if_sid>220000</if_sid>
     <match>Michael MIC failure</match>
-    <description>XXX Michael MIC failure (wifi)</description>
+    <description>Michael MIC failure: Checksum failure in the tkip protocol.</description>
   </rule>
 
   <!--Oct 17 07:39:56 power /bsd: wd0: soft error (corrected)-->
@@ -79,8 +80,8 @@
   <rule id="220009" level="1">
     <if_sid>220000</if_sid>
     <regex>acpithinkpad\d:</regex>
-    <match>unknown event 0x6022</match>
-    <description>XXX acpithinkpad event</description>
+    <match>unknown event</match>
+    <description>Unknown acpithinkpad event</description>
   </rule>
 
   <!--Jan 12 19:40:45 x60 /bsd: acpitz1: Critical temperature, shutting down-->
@@ -94,21 +95,22 @@
   <rule id="220011" level="1">
     <if_sid>220000</if_sid>
     <match>_AL0[0] _PR0 failed</match>
-    <description>XXX</description>
+    <description>Unknown ACPI event (bug 6299 in OpenBSD bug tracking system).</description>
   </rule>
 
   <!--Feb 26 11:18:59 ix /bsd: ehci_freex: xfer=0xffff8000003ef800 not busy, 0x4f4e5155-->
   <rule id="220012" level="1">
     <if_sid>220000</if_sid>
     <match>ehci_freex: xfer=0xffff8000003ef800 not busy, 0x4f4e5155</match>
-    <description>XXX usb?</description>
+    <description>USB diagnostic message.</description>
   </rule>
 
   <!--Feb 28 23:23:21 ix /bsd: ichiic0: abort failed, status 0x0-->
+  <!--https://calomel.org/apm_control.html-->
   <rule id="220013" level="1">
     <if_sid>220000</if_sid>
     <match>ichiic0: abort failed, status 0x0</match>
-    <description>XXX</description>
+    <description>Possible APM or ACPI event.</description>
   </rule>
 
 

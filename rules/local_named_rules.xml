@@ -83,7 +83,7 @@ oopback6.arpa failed: not at top of zone-->
   <rule id="310009" level="1">
     <if_sid>12100</if_sid>
     <regex>loading from master file \S+ failed: not at top of zone$</regex>
-    <description>XXX not at top of zone</description>
+    <description>Origin of zone and owner name of SOA do not match.</description>
   </rule>
 
   <!--Nov 12 14:16:44 ix named[3709]: client 192.168.17.249#7784: zone transfer 'example.com/AXFR/IN' denied-->
