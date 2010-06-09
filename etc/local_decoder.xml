@@ -39,3 +39,16 @@
   <regex>for master (\d+.\d+.\d+.\d+):(\d+) \S+ \(source (\d+.\d+.\d+.\d+)#d+\)$</regex>
   <order>dstip,dstport,srcip</order>
 </decoder>
+
+
+<decoder name="dropbear">
+  <program_name>dropbear</program_name>
+</decoder>
+
+<!--Mar 24 15:25:51 buffalo1 dropbear[4092]: bad password attempt for 'root' from 192.168.17.9:5543-->
+<decoder name="dropbear-from">
+  <parent>dropbear</parent>
+  <regex>for '(\S+)' from (\S+):\d+$</regex>
+  <order>dstuser,srcip</order>
+</decoder>
+
