@@ -484,8 +484,93 @@ oopback6.arpa failed: not at top of zone-->
     <description>Configuration mistake</description>
   </rule>
 
+  <rule id="260000" level="0" noalert="1">
+    <program_name>dbus</program_name>
+  </rule>
+
+  <!--Nov 14 09:51:17 giediprime dbus: Rejected send message, 2 matched rules; type="method_call", sender=":1.30" (uid=42 pid=1916 comm="/usr/bin/pulseaudio --start --l
+og-target=syslog ") interface="org.bluez.Manager" member="ListAdapters" error name="(unset)" re-->
+  <rule id="260010" level="0">
+    <if_sid>260000</if_sid>
+    <match>Rejected send message</match>
+    <description>Rejected send message.</description>
+  </rule>
+
+  <rule id="270000" level="0" noalert="1">
+    <program_name>ddclient</program_name>
+  </rule>
+
+  <!--Mar 25 18:04:57 gorilla ddclient[4867]: WARNING:  cannot connect to checkip.dyndns.org:80 socket: IO::Socket::INET: Bad hostname 'checkip.dyndns.org'-->
+  <!--May 18 04:53:43 ix ddclient[15172]: FAILED:   updating home: Could not connect to updates.opendns.com.-->
+  <rule id="270010" level="1">
+    <if_sid>270000</if_sid>
+    <match>cannot connect to|Could not connect to</match>
+    <description>Could not connect to the dyndns server</description>
+  </rule>
+
+  <!--Mar 25 18:04:57 gorilla ddclient[4352]: WARNING:  Cannot create file '/var/run/ddclient.pid'. (Permission denied)-->
+  <rule id="270011" level="1">
+    <if_sid>270000</if_sid>
+    <match>Cannot create file</match>
+    <description>Cannot create pid file</description>
+  </rule>
+
+  <rule id="280000" level="0" noalert="1">
+    <decoded_as>dropbear</decoded_as>
+  </rule>
+
+  <!--Jan 22 21:21:20 buffalo1 dropbear[3859]: exit before auth: Failed to get kex value-->
+  <rule id="280010" level="1">
+    <if_sid>280000</if_sid>
+    <match>Failed to get kex value</match>
+    <description>Failed to get key exchange value</description>
+  </rule>
+
+  <!--Jan 22 21:21:20 buffalo1 dropbear[3859]: Premature kexdh_init message received-->
+  <rule id="280011" level="1">
+    <if_sid>280000</if_sid>
+    <match>Premature kexdh_init message received</match>
+    <description>Premature kexdh_init message</description>
+  </rule>
+
+  <!--Mar 24 15:25:51 buffalo1 dropbear[4092]: bad password attempt for 'root' from 192.168.17.9:5543-->
+  <rule id="280012" level="5">
+    <if_sid>280000</if_sid>
+    <match>bad password attempt for</match>
+    <description>Bad password attempt.</description>
+  </rule>
+
+<!--XXXX-->
+<!--Add a frequency rule here-->
 
 
+  <!--Mar 22 16:22:18 buffalo1 dropbear[25017]: exit after auth (root): Disconnect received-->
+  <rule id="280013" level="1">
+    <if_sid>280000</if_sid>
+    <regex>exit after auth \(\S+\): Disconnect received</regex>
+    <description>User disconnected</description>
+  </rule>
+
+  <!--Mar 22 16:29:14 buffalo1 dropbear[25121]: exit before auth: Exited normally-->
+  <rule id="280014" level="2">
+    <if_sid>280000</if_sid>
+    <match>exit before auth</match>
+    <description>Client exited before authentication.</description>
+  </rule>
+
+  <!--Mar 22 16:29:51 buffalo1 dropbear[25132]: exit before auth: Incompatible remote version 'SSH-1.5-NmapNSE_1.0'-->
+  <rule id="280015" level="1">
+    <if_sid>280000</if_sid>
+    <match>Incompatible remote version</match>
+    <description>Incompatible remote version. XXX</description>
+  </rule>
+
+  <!--Mar 22 16:22:17 buffalo1 dropbear[25017]: password auth succeeded for 'root' from 192.168.17.9:39285-->
+  <rule id="280016" level="1">
+    <if_sid>280000</if_sid>
+    <match>password auth succeeded for</match>
+    <description>User successfully logged in using a password.</description>
+  </rule>
 
 
 
