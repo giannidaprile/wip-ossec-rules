@@ -1,0 +1,41 @@
+  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  -->
+
+
+
+<!-- Modify it at your will. -->
+
+<group name="local,syslog,">
+
+  <rule id="270000" level="0" noalert="1">
+    <program_name>ddclient</program_name>
+  </rule>
+
+  <!--Mar 25 18:04:57 gorilla ddclient[4867]: WARNING:  cannot connect to checkip.dyndns.org:80 socket: IO::Socket::INET: Bad hostname 'checkip.dyndns.org'-->
+  <!--May 18 04:53:43 ix ddclient[15172]: FAILED:   updating home: Could not connect to updates.opendns.com.-->
+  <rule id="270010" level="1">
+    <if_sid>270000</if_sid>
+    <match>cannot connect to|Could not connect to</match>
+    <description>Could not connect to the dyndns server</description>
+  </rule>
+
+  <!--Mar 25 18:04:57 gorilla ddclient[4352]: WARNING:  Cannot create file '/var/run/ddclient.pid'. (Permission denied)-->
+  <rule id="270011" level="1">
+    <if_sid>270000</if_sid>
+    <match>Cannot create file</match>
+    <description>Cannot create pid file</description>
+  </rule>
+
+  
+  
+   
+</group> <!-- SYSLOG,LOCAL -->
+
+
+<!-- EOF -->
