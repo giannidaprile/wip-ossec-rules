@@ -1,0 +1,39 @@
+  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  -->
+
+
+
+<!-- Modify it at your will. -->
+
+<group name="local,syslog,">
+
+  <rule id="300000" level="0" noalert="1">
+    <program_name>identd</program_name>
+    <desciption>Grouping for identd rules.</description>
+  </rule>
+
+  <!--Jun  8 08:48:28 gorilla identd[8029]: scanf: invalid-port(s): 0 , 0 from gorilla.monkey.local-->
+  <rule id="300010" level="1">
+    <if_sid>300000</if_sid>
+    <match>scanf: invalid-port</match>
+    <description>Invalid port request.</description>
+  </rule>
+
+  <!--Jun  8 08:49:18 gorilla identd[9790]: read from gorilla.monkey.local: EOF-->
+  <rule id="300011" level="1">
+    <if_sid>300000</if_sid>
+    <regex>read from \S+: EOF</regex>
+    <description>Unexpected EOF</description>
+  </rule>
+  
+   
+</group> <!-- SYSLOG,LOCAL -->
+
+
+<!-- EOF -->
