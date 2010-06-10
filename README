@@ -24,3 +24,4 @@ Rule IDs:
 290000+: flowd
 300000+: identd
 310000+: named
+320000+: smtpd
