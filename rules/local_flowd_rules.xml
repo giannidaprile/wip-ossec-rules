@@ -1,0 +1,40 @@
+  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  -->
+
+
+
+<!-- Modify it at your will. -->
+
+<group name="local,syslog,">
+
+  <rule id="290000" level="0" noalert="1">
+    <program_name>flowd</program_name>
+    <description>Grouping for flowd rules.</description>
+  </rule>
+
+  <!--Oct  6 11:33:14 gorilla flowd[15953]: Exiting on signal 15-->
+  <rule id="290010" level="1">
+    <if_sid>290000</if_sid>
+    <match>Exiting on signal 15</match>
+    <description>flowd has been shutdown.</description>
+  </rule>
+
+  <!--Jan 19 20:39:23 ix flowd[22557]: start_log: lseek: Illegal seek-->
+  <rule id="290011" level="2">
+    <if_sid>290000</if_sid>
+    <match>start_log: lseek: Illegal seek</match>
+    <description>start_log is not able to seek to the proper place </description>
+    <description>in the log file</description>
+  </rule>
+  
+   
+</group> <!-- SYSLOG,LOCAL -->
+
+
+<!-- EOF -->
