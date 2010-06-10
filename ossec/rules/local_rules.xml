@@ -572,6 +572,77 @@ og-target=syslog ") interface="org.bluez.Manager" member="ListAdapters" error na
     <description>User successfully logged in using a password.</description>
   </rule>
 
+  <rule id="320000" level="0" noalert="1">
+    <decoded_as>smtpd</decoded_as>
+    <description>Grouping for smtpd rules.</description>
+  </rule>
+
+  <!--Oct 26 13:37:52 tiny smtpd[9446]: fatal: mfa: chroot: No such file or directory-->
+  <rule id="320010" level="1">
+    <if_sid>320000</if_sid>
+    <match>fatal: mfa: chroot: No such file or directory</match>
+    <description>Missing file or directory for mfa chroot</description>
+  </rule>
+
+  <!--Oct 26 22:30:12 ix smtpd[6726]: client 192.168.17.9 read error: Connection reset by peer-->
+  <rule id="320011" level="1">
+    <if_sid>320000</if_sid>
+    <match>read error: Connection reset by peer</match>
+    <description>Connection was interrupted.</description>
+  </rule>
+
+  <!--Nov  2 20:54:57 ix smtpd[3884]: fatal: bind: Address already in use-->
+  <rule id="320012" level="1">
+    <if_sid>320000</if_sid>
+    <match>bind: Address already in use</match>
+    <description>smtpd may already be running.</description>
+  </rule>
+
+  <!--Nov 13 17:30:34 ix smtpd[29377]: (none): from=<@>, relay=power.example.com [192.168.17.249], stat=LocalError (501 EHLO requires domain address)-->
+  <rule id="320013" level="2">
+    <if_sid>320000</if_sid>
+    <match>501 EHLO requires domain address</match>
+    <description>EHLO requires domain address</description>
+  </rule>
+
+  <!--Nov 15 04:15:28 ix smtpd[1461]: 1258258526.ulJRPbD7Ch7um55S: to=<ddp@power.example.com>, delay=2, relay=smtp.east.cox.net [68.1.17.4], stat=RemoteError (5.1.0 <dd
+p@power.example.com> sender rejected)-->
+  <rule id="320014" level="5">
+    <if_sid>320000</if_sid>
+    <match>sender rejected</match>
+    <description>Sender has been rejected by an upstream mail server.</description>
+  </rule>
+
+  <!--Nov 16 21:41:30 ix smtpd[13395]: fatal: lka_resolve_node: unexpected type-->
+  <rule id="320015" level="2">
+    <if_sid>320000</if_sid>
+    <match>fatal: lka_resolve_node: unexpected type</match>
+    <description>XXX Unexpected DNS response.</description>
+  </rule>
+
+
+  <!--Nov 25 01:28:45 ix smtpd[4224]: 1259112525.AbdJ8tDSelOWn16C: from=<root@tiny>, relay=tiny.example.com [192.168.17.33], stat=LocalError (530 Recipient rejected: dd
+p@ix.example.com)-->
+  <rule id="320016" level="5">
+    <if_sid>320000</if_sid>
+    <match>530 Recipient rejected</match>
+    <description>Recipient rejected</description>
+  </rule>
+
+  <!--Jan  8 01:30:45 tiny smtpd[18682]: 1262914225.YfKQNsGh7vFa7e2q: from=<root@tiny>, relay=0@localhost [IPv6:::1], stat=LocalError (500 Line too long)-->
+  <rule id="320017" level="5">
+    <if_sid>320000</if_sid>
+    <match>Line too long</match>
+    <description>XXX Line too long.</description>
+  </rule>
+
+  <!--May 10 23:32:09 ix smtpd[15646]: (none): from=<@>, relay=power.example.com [192.168.17.249], stat=LocalError (500 Command unrecognized)-->
+  <rule id="320018" level="5">
+    <if_sid>320000</if_sid>
+    <match>Command unrecognized</match>
+    <description>Command unrecognized.</description>
+  </rule>
+
 
 
 </group> <!-- SYSLOG,LOCAL -->
