@@ -1,7 +1,19 @@
-Jul 16 19:24:13 gorilla smartd[31945]: Device: /dev/wd2c, SMART
+Apr 28 02:33:53 ix smartd[7092]: Device: /dev/wd0c, previous self-test completed without error
 Aug 25 13:55:15 gorilla smartd[3018]: Device: /dev/sd0c, Bad IEC (SMART) mode page, err=5, skip device
-Oct  1 15:02:39 localhost smartd: smartd shutdown failed
-Oct 14 17:05:49 ix smartd[3956]: Device: /dev/wd0c, SMART Usage Attribute: 7 Seek_Error_Rate changed from 100 to 200
 Jan 18 14:54:28 tiny smartd[31648]: Device: /dev/wd0c, SMART Usage Attribute: 190 Airflow_Temperature_Cel changed from 62 to 61
 Jan 18 14:54:28 tiny smartd[31648]: Device: /dev/wd0c, SMART Usage Attribute: 194 Temperature_Celsius changed from 38 to 39
-Apr 28 02:33:53 ix smartd[7092]: Device: /dev/wd0c, previous self-test completed without error
+Jul 16 19:24:13 gorilla smartd[31945]: Device: /dev/wd2c, SMART
+Jun  9 02:01:21 ix smartd[30274]: Device: /dev/wd0c, starting scheduled Short Self-Test.
+Jun  9 13:56:22 tiny smartd[631]: Device: /dev/wd1c, SMART Prefailure Attribute: 1 Raw_Read_Error_Rate changed from 103 to 104
+Jun 10 16:37:13 ix smartd[6233]: Configuration file /etc/smartd.conf parsed.
+Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, enabled SMART Attribute Autosave.
+Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, enabled SMART Automatic Offline Testing.
+Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, found in smartd database.
+Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, is SMART capable. Adding to "monitor" list.
+Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, opened
+Jun 10 16:37:13 ix smartd[6233]: Monitoring 1 ATA and 0 SCSI devices
+Jun 10 16:37:13 ix smartd[6233]: Opened configuration file /etc/smartd.conf
+Jun 10 16:37:14 ix smartd[3419]: smartd has fork()ed into background mode. New PID=3419.
+Jun 10 16:56:22 tiny smartd[631]: Device: /dev/wd1c, SMART Prefailure Attribute: 1 Raw_Read_Error_Rate changed from 110 to 108
+Oct  1 15:02:39 localhost smartd: smartd shutdown failed
+Oct 14 17:05:49 ix smartd[3956]: Device: /dev/wd0c, SMART Usage Attribute: 7 Seek_Error_Rate changed from 100 to 200
