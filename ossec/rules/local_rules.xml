@@ -684,6 +684,117 @@ p@ix.example.com)-->
   </rule>
 
 
+  <rule id="330000" level="0" noalert="1">
+    <program_name>smartd</program_name>
+    <description>Grouping for smartd rules.</description>
+  </rule>
+
+  <!--Apr 28 02:33:53 ix smartd[7092]: Device: /dev/wd0c, previous self-test completed without error-->
+  <rule id="330010" level="0">
+    <if_sid>330000</if_sid>
+    <match>previous self-test completed without error</match>
+    <description>Ignore this non-error</description>
+  </rule>
+
+  <!--Aug 25 13:55:15 gorilla smartd[3018]: Device: /dev/sd0c, Bad IEC (SMART) mode page, err=5, skip device-->
+  <rule id="330011" level="2">
+    <if_sid>330000</if_sid>
+    <match>Bad IEC (SMART) mode page</match>
+    <description>XXX Bad IEC</description>
+  </rule>
+
+  <!--Jan 18 14:54:28 tiny smartd[31648]: Device: /dev/wd0c, SMART Usage Attribute: 190 Airflow_Temperature_Cel changed from 62 to 61-->
+  <rule id="330012" level="1">
+    <if_sid>330000</if_sid>
+    <regex>SMART Usage Attribute: \d+ \S+ changed from</regex>
+    <description>SMART Usage Attribute changed.</description>
+  </rule>
+
+  <!--Jun  9 02:01:21 ix smartd[30274]: Device: /dev/wd0c, starting scheduled Short Self-Test.-->
+  <rule id="330013" level="1">
+    <if_sid>330000</if_sid>
+    <match>starting scheduled Short Self-Test</match>
+    <description>Short self-test started</description>
+  </rule>
+
+  <!--Jun  9 13:56:22 tiny smartd[631]: Device: /dev/wd1c, SMART Prefailure Attribute: 1 Raw_Read_Error_Rate changed from 103 to 104-->
+  <rule id="330014" level="2">
+    <if_sid>330000</if_sid>
+    <regex>SMART Prefailure Attribute: \d+ \S+ from</regex>
+    <description>SMART prefailure attribute changed.</description>
+  </rule>
+
+  <!--Jun 10 16:37:13 ix smartd[6233]: Configuration file /etc/smartd.conf parsed.-->
+  <rule id="330015" level="0">
+    <if_sid>330000</if_sid>
+    <regex>Configuration file \S+ parsed.</regex>
+    <description>Configuration file parsed.</description>
+  </rule>
+
+  <!--Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, enabled SMART Attribute Autosave.-->
+  <rule id="330016" level="0">
+    <if_sid>330000</if_sid>
+    <match>enabled SMART Attribute Autosave.</match>
+    <description>Ignore SMART attribute autosave enabled messages</description>
+  </rule>
+
+  <!--Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, enabled SMART Automatic Offline Testing.-->
+  <rule id="330017" level="0">
+    <if_sid>330000</if_sid>
+    <match>enabled SMART Automatic Offline Testing.</match>
+    <description>Ignore SMART automatic offline testing enabled messages</description>
+  </rule>
+
+  <!--Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, found in smartd database.-->
+  <rule id="330018" level="0">
+    <if_sid>330000</if_sid>
+    <match>, found in smartd database</match>
+    <description>Ignore device found in smartd database messages.</description>
+  </rule>
+
+  <!--Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, is SMART capable. Adding to "monitor" list.-->
+  <rule id="330019" level="0">
+    <if_sid>330000</if_sid>
+    <match>, is SMART capable. Adding to "monitor" list.</match>
+    <description>Ignore device added to monitor list messages.</description>
+  </rule>
+
+  <!--Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, opened-->
+  <rule id="330020" level="0">
+    <if_sid>330000</if_sid>
+    <regex>Device: \S+, opened</regex>
+    <description>Ignore device opened messages.</description>
+  </rule>
+
+  <!--Jun 10 16:37:13 ix smartd[6233]: Monitoring 1 ATA and 0 SCSI devices-->
+  <rule id="330021" level="0">
+    <if_sid>330000</if_sid>
+    <regex>Monitoring \d+ ATA and \d+ SCSI devices</regex>
+    <description>Ignore smartd status message.</description>
+  </rule>
+
+  <!--Jun 10 16:37:13 ix smartd[6233]: Opened configuration file /etc/smartd.conf-->
+  <rule id="330022" level="0">
+    <if_sid>330000</if_sid>
+    <match>Opened configuration file</match>
+    <description>Ignore configuration file opened messages.</description>
+  </rule>
+
+  <!--Jun 10 16:37:14 ix smartd[3419]: smartd has fork()ed into background mode. New PID=3419.-->
+  <rule id="330023" level="0">
+    <if_sid>330000</if_sid>
+    <match>smartd has fork()ed into background mode</match>
+    <description>Ignore smartd being forked into the background messages.</description>
+  </rule>
+
+  <!--Oct  1 15:02:39 localhost smartd: smartd shutdown failed-->
+  <rule id="330024" level="2">
+    <if_sid>330000</if_sid>
+    <match>smartd shutdown failed</match>
+    <description>XXX smartd shutdown failed.</description>
+  </rule>
+
+
 
 </group> <!-- SYSLOG,LOCAL -->
 

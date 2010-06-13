@@ -25,3 +25,4 @@ Rule IDs:
 300000+: identd
 310000+: named
 320000+: smtpd
+330000+: smartd
