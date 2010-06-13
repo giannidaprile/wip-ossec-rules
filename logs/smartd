@@ -2,7 +2,6 @@ Apr 28 02:33:53 ix smartd[7092]: Device: /dev/wd0c, previous self-test completed
 Aug 25 13:55:15 gorilla smartd[3018]: Device: /dev/sd0c, Bad IEC (SMART) mode page, err=5, skip device
 Jan 18 14:54:28 tiny smartd[31648]: Device: /dev/wd0c, SMART Usage Attribute: 190 Airflow_Temperature_Cel changed from 62 to 61
 Jan 18 14:54:28 tiny smartd[31648]: Device: /dev/wd0c, SMART Usage Attribute: 194 Temperature_Celsius changed from 38 to 39
-Jul 16 19:24:13 gorilla smartd[31945]: Device: /dev/wd2c, SMART
 Jun  9 02:01:21 ix smartd[30274]: Device: /dev/wd0c, starting scheduled Short Self-Test.
 Jun  9 13:56:22 tiny smartd[631]: Device: /dev/wd1c, SMART Prefailure Attribute: 1 Raw_Read_Error_Rate changed from 103 to 104
 Jun 10 16:37:13 ix smartd[6233]: Configuration file /etc/smartd.conf parsed.
