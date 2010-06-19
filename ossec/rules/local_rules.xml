@@ -196,6 +196,14 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <description>XXX</description>
   </rule>
 
+  <!--May 31 21:45:14 ix /bsd: WARNING: R/W mount of /data4 denied.  Filesystem is not clean - run fsck-->
+  <rule id="220014" level="3">
+    <if_sid>220000</if_sid>
+    <match>Filesystem is not clean - run fsck</match>
+    <description>Unclean filesystem, run fsck.</description>
+  </rule>
+
+
   <rule id="230000" level="0" noalert="1">
     <decoded_as>python</decoded_as>
     <description>Grouping for python rules</description>
@@ -484,6 +492,21 @@ oopback6.arpa failed: not at top of zone-->
     <description>Configuration mistake</description>
   </rule>
 
+  <!--Jun 16 19:01:01 junction named[1112]: /etc/named.conf:98: open: /etc/blocked.zones: file not found-->
+  <rule id="310012" level="1">
+    <if_sid>12100</if_sid>
+    <match>file not found</match>
+    <description>Configuration error, file not found.</description>
+  </rule>
+
+  <!--Jun 16 19:02:17 junction named[4509]: /etc/blocked.slave:14: option 'masters' is not allowed in 'master' zone '404dnserror.com'-->
+  <rule id="310013" level="2">
+    <if_sid>12100</if_sid>
+    <match>option 'masters' is not allowed in 'master' zone</match>
+    <description>Configuration error, option master used in a master zone.</description>
+  </rule>
+
+
   <rule id="260000" level="0" noalert="1">
     <program_name>dbus</program_name>
   </rule>
@@ -720,7 +743,7 @@ p@ix.example.com)-->
   <!--Jun  9 13:56:22 tiny smartd[631]: Device: /dev/wd1c, SMART Prefailure Attribute: 1 Raw_Read_Error_Rate changed from 103 to 104-->
   <rule id="330014" level="2">
     <if_sid>330000</if_sid>
-    <regex>SMART Prefailure Attribute: \d+ \S+ from</regex>
+    <regex>SMART Prefailure Attribute: \d+ \S+ changed from</regex>
     <description>SMART prefailure attribute changed.</description>
   </rule>
 
@@ -794,6 +817,12 @@ p@ix.example.com)-->
     <description>XXX smartd shutdown failed.</description>
   </rule>
 
+  <!--Jun 16 06:45:04 ix smartd[14769]: Device: /dev/sd0c [SAT], previous self-test could not complete due to a fatal or unknown error-->
+  <rule id="330025" level="2">
+    <if_sid>330000</if_sid>
+    <match>previous self-test could not complete due to a fatal or unknown error</match>
+    <description>XXX self-test failed</description>
+  </rule>
 
 
 </group> <!-- SYSLOG,LOCAL -->

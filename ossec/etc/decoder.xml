@@ -1,4 +1,4 @@
-<!-- @(#) $Id: decoder.xml,v 1.164 2010/03/10 18:08:07 dcid Exp $
+<!-- @(#) $Id: decoder.xml,v 1.166 2010/06/15 12:52:01 dcid Exp $
   -  OSSEC log decoder.
   -  Author: Daniel B. Cid
   -  License: http://www.ossec.net/en/licensing.html
@@ -135,8 +135,8 @@
 <decoder name="ssh-invfailed">
   <parent>sshd</parent>
   <prematch>^Failed \S+ for invalid user|^Failed \S+ for illegal user</prematch>
-  <regex offset="after_prematch"> (\S+) from (\S+) port \d+ \w+$</regex>
-  <order>dstuser,srcip</order>
+  <regex offset="after_prematch">from (\S+) port \d+ \w+$</regex>
+  <order>srcip</order>
 </decoder>
 
 <decoder name="ssh-failed">
@@ -156,7 +156,6 @@
 <decoder name="ssh-reverse-mapping">
   <parent>sshd</parent>
   <prematch>^reverse mapping checking </prematch>
-  <!--<regex offset="after_prematch">^\w+ for (\S+) |^\w+ for \S+ [(\S+)] </regex>-->
   <regex offset="after_prematch">^\w+ for \S+ [(\S+)] |^\w+ for (\S+) </regex>
   <order>srcip</order>
 </decoder>       
@@ -644,22 +643,29 @@
 <decoder name="dovecot-success">
   <parent>dovecot</parent>
   <prematch offset="after_parent">^\w\w\w\w-login: Login: </prematch>
-  <regex offset="after_prematch">^user=\p(\S+)\p, method=\S+, rip=(\S+), </regex>
-  <order>user, srcip</order>
+  <regex offset="after_prematch">^user=\p(\S+)\p, method=\S+, rip=\S*(\d+.\d+.\d+.\d+), lip=\S*(\d+.\d+.\d+.\d+), (\S*)$</regex>
+  <order>user, srcip, dstip, protocol</order>
 </decoder>
 
 <decoder name="dovecot-aborted">
   <parent>dovecot</parent>
   <prematch offset="after_parent">^\w\w\w\w-login: Aborted login</prematch>
-  <regex offset="after_prematch"> user=\p\S+>, method=\w+, rip=(\S+), lip=\S+</regex>
-  <order>srcip</order>
+  <regex offset="after_prematch">: user=\p(\S+)\p, method=\S+, rip=::ffff:(\d+.\d+.\d+.\d+), lip=::ffff:(\d+.\d+.\d+.\d+)$</regex>
+  <order>user, srcip, dstip</order>
+</decoder> 
+
+<decoder name="dovecot-fail">
+  <parent>dovecot</parent>
+  <prematch offset="after_parent">^auth\(default\)|auth-worker\(default\)</prematch>
+  <regex offset="after_prematch">^: \S+\((\S+),(\d+.\d+.\d+.\d+)\)</regex>
+  <order>user, srcip</order>
 </decoder>
 
 <decoder name="dovecot-disconnect">
   <parent>dovecot</parent>
   <prematch offset="after_parent">^\w\w\w\w-login: Disconnected: </prematch>
-  <regex offset="after_prematch">^rip=(\S+), </regex>
-  <order>srcip</order>
+  <regex offset="after_prematch">^rip=(\S+), lip=(\d+.\d+.\d+.\d+)</regex>
+  <order>srcip, dstip</order>
 </decoder>
 
 
