@@ -113,7 +113,19 @@
     <description>Possible APM or ACPI event.</description>
   </rule>
 
-
+  <!--May 31 21:45:14 ix /bsd: WARNING: R/W mount of /data4 denied.  Filesystem is not clean - run fsck-->
+  <rule id="220014" level="3">
+    <if_sid>220000</if_sid>
+    <match>Filesystem is not clean - run fsck</match>
+    <description>Unclean filesystem, run fsck.</description>
+  </rule>
+  
+  <!--Jun 15 21:15:03 ix /bsd: atascsi_passthru_done, timeout-->
+  <rule id="220015" level="1">
+    <if_sid>220000</if_sid>
+    <match>atascsi_passthru_done, timeout</match>
+    <description>XXX Timeout in atascsi_passthru_done.</description>
+  </rule>
 
 
 
