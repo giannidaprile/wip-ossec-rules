@@ -824,6 +824,17 @@ p@ix.example.com)-->
     <description>XXX self-test failed</description>
   </rule>
 
+  <rule id="340000" level="0" noalert="1">
+    <decoded_as>isakmpd</decoded_as>
+  </rule>
+
+  <!--Apr 10 13:22:52 tiny isakmpd[6988]: dropped message from 192.168.1.233 port 500 due to notification type INVALID_COOKIE-->
+  <rule id="340010" level="1">
+    <if_sid>340000</if_sid>
+    <match>notification type INVALID_COOKIE</match>
+    <description>XXX Bad isakmpd, no cookie.</description>
+  </rule>
+
 
 </group> <!-- SYSLOG,LOCAL -->
 

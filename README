@@ -26,3 +26,4 @@ Rule IDs:
 310000+: named
 320000+: smtpd
 330000+: smartd
+340000+: isakmpd
