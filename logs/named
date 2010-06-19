@@ -10,3 +10,6 @@ Sep  8 12:38:41 gorilla named[699]: zone dns.org/IN: (master) removed
 Nov 12 13:16:04 ix named[16880]: zone 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loading from master file standard/loopback6.arpa failed: not at top of zone  
 Nov 12 14:16:44 ix named[3709]: client 192.168.17.249#7784: zone transfer 'example.com/AXFR/IN' denied
 Jan 11 15:05:38 ix named[2200]: reloading configuration failed: unexpected end of input
+Jun 16 19:01:01 junction named[1112]: /etc/named.conf:98: open: /etc/blocked.zones: file not found
+Jun 16 19:01:01 junction named[1112]: loading configuration: file not found
+Jun 16 19:02:17 junction named[4509]: /etc/blocked.slave:14: option 'masters' is not allowed in 'master' zone 'example.com'
