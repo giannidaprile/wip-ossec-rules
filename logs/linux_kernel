@@ -1,5 +1,5 @@
-Jun  9 08:43:54 localhost kernel: scsi: Device offlined - not
-Jul  2 15:46:33 localhost kernel: SCSI error : <7 0 0 0> return
+Jun  9 08:43:54 localhost kernel: scsi: Device offlined - not ready after error recovery: host 8 channel 0 id 0 lun 0
+Jul  2 15:46:33 localhost kernel: SCSI error : <7 0 0 0> return code = 0x70000
 Sep 24 15:26:00 localhost kernel: /dev/vmmon[20519]: /dev/rtc enable interrupt failed: -13
 Nov  3 05:48:52 giediprime kernel: type=1400 audit(1257245332.827:14980): avc:  denied  { search } for  pid=2517 comm="portrelease" name="/" dev=dm-2 ino=2 scontext=unconfined_u:system_r:portreserve_t:s0 tcontext=system_u:object_r:tmp_t:s0 tclass=dir
 Nov  9 16:03:40 localhost kernel: FAT: bread(block 6440) in fat_access failed

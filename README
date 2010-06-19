@@ -28,3 +28,5 @@ Rule IDs:
 330000+: smartd
 340000+: isakmpd
 350000+: irqbalance
+360000+: Linux kernel
+
