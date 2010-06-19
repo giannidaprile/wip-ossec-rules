@@ -1,0 +1,12 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jan 16 19:28:36 buffalo1 syslog: snmpd : SNMP daemon successfully started'
+       hostname: 'buffalo1'
+       program_name: 'syslog'
+       log: 'snmpd : SNMP daemon successfully started'
+
+**Phase 2: Completed decoding.
+       No decoder matched.

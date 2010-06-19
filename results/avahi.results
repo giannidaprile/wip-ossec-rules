@@ -1,0 +1,74 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  8 00:47:19 gorilla avahi-daemon[32088]: dbus_bus_get_private(): Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory'
+       hostname: 'gorilla'
+       program_name: 'avahi-daemon'
+       log: 'dbus_bus_get_private(): Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory'
+
+**Phase 2: Completed decoding.
+       decoder: 'avahi'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '210010'
+       Level: '1'
+       Description: 'XXX Could not connect to socket'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  8 00:47:19 gorilla avahi-daemon[32088]: WARNING: Failed to contact D-Bus daemon.'
+       hostname: 'gorilla'
+       program_name: 'avahi-daemon'
+       log: 'WARNING: Failed to contact D-Bus daemon.'
+
+**Phase 2: Completed decoding.
+       decoder: 'avahi'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '210011'
+       Level: '1'
+       Description: 'Cannot connect to D-Bus daemon'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  8 00:59:06 gorilla avahi-daemon[22180]: IP_DROP_MEMBERSHIP failed: Can't assign requested address'
+       hostname: 'gorilla'
+       program_name: 'avahi-daemon'
+       log: 'IP_DROP_MEMBERSHIP failed: Can't assign requested address'
+
+**Phase 2: Completed decoding.
+       decoder: 'avahi'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '210012'
+       Level: '1'
+       Description: 'Cannot assign requested address'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep  6 01:56:16 gorilla avahi-dnsconfd[30635]: Failed to parse browsing line: <28>Sep  6 01:56:16 avahi-daemon[13441]: Invalid query packet.ansfer on gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\^L\^R\^\\^A'
+       hostname: 'gorilla'
+       program_name: 'avahi-dnsconfd'
+       log: 'Failed to parse browsing line: <28>Sep  6 01:56:16 avahi-daemon[13441]: Invalid query packet.ansfer on gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\^L\^R\^\\^A'
+
+**Phase 2: Completed decoding.
+       decoder: 'avahi-dnsconfd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '210013'
+       Level: '1'
+       Description: 'XXX'
+**Alert to be generated.
+
+

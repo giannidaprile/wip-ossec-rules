@@ -1,0 +1,273 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Mar 26 01:06:48 gorilla named[12721]: zone dnserrortool.com/IN: zone transfer deferred due to quota'
+       hostname: 'gorilla'
+       program_name: 'named'
+       log: 'zone dnserrortool.com/IN: zone transfer deferred due to quota'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310000'
+       Level: '1'
+       Description: 'Zone transfer deferred'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jan 11 14:05:53 ix named[2200]: /master/blockeddomain.hosts:16: aniulu.cn,\\010: bad owner name (check-names)'
+       hostname: 'ix'
+       program_name: 'named'
+       log: '/master/blockeddomain.hosts:16: aniulu.cn,\\010: bad owner name (check-names)'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310001'
+       Level: '1'
+       Description: 'Hostname contains characters that check-names does not like'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Dec 25 17:12:00 ix named[18333]: zone antivirus-solution.net/IN: loaded serial 6'
+       hostname: 'ix'
+       program_name: 'named'
+       log: 'zone antivirus-solution.net/IN: loaded serial 6'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310002'
+       Level: '1'
+       Description: 'Zone transfer'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Mar 26 01:52:13 gorilla named[12721]: zone idenserror.com/IN: transferred serial 6'
+       hostname: 'gorilla'
+       program_name: 'named'
+       log: 'zone idenserror.com/IN: transferred serial 6'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310003'
+       Level: '1'
+       Description: 'Zone transfer'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 20 00:45:40 gorilla named[19606]: zone adioserrores.com/IN: refresh: retry limit for master 192.168.1.33#53 exceeded (source 0.0.0.0#0)'
+       hostname: 'gorilla'
+       program_name: 'named'
+       log: 'zone adioserrores.com/IN: refresh: retry limit for master 192.168.1.33#53 exceeded (source 0.0.0.0#0)'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310004'
+       Level: '1'
+       Description: 'Zone transfer rety limit exceeded'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'May  4 14:53:13 gorilla named[29877]: /etc/blocked.zones_slave:9637: zone 'internet-optimizer.com': already exists previous definition: /etc/adserver.zones_slave:1593'
+       hostname: 'gorilla'
+       program_name: 'named'
+       log: '/etc/blocked.zones_slave:9637: zone 'internet-optimizer.com': already exists previous definition: /etc/adserver.zones_slave:1593'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310005'
+       Level: '1'
+       Description: 'Zone has been duplicated'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  8 21:06:21 gorilla named[25104]: starting BIND 9.4.2-P2'
+       hostname: 'gorilla'
+       program_name: 'named'
+       log: 'starting BIND 9.4.2-P2'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310006'
+       Level: '1'
+       Description: 'BIND has been started'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  8 21:46:19 gorilla named[27527]: zone 17.168.192.in-addr.arpa/IN: NS 'gorilla.17.168.192.IN-ADDR.ARPA' has no address records (A or AAAA)'
+       hostname: 'gorilla'
+       program_name: 'named'
+       log: 'zone 17.168.192.in-addr.arpa/IN: NS 'gorilla.17.168.192.IN-ADDR.ARPA' has no address records (A or AAAA)'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310007'
+       Level: '1'
+       Description: 'Missing A or AAAA record'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep  8 12:38:41 gorilla named[699]: zone dns.org/IN: (master) removed'
+       hostname: 'gorilla'
+       program_name: 'named'
+       log: 'zone dns.org/IN: (master) removed'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310008'
+       Level: '1'
+       Description: 'Zone has been removed from a master server'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 12 13:16:04 ix named[16880]: zone 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loading from master file standard/loopback6.arpa failed: not at top of zone  '
+       hostname: 'ix'
+       program_name: 'named'
+       log: 'zone 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loading from master file standard/loopback6.arpa failed: not at top of zone  '
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310009'
+       Level: '1'
+       Description: 'XXX not at top of zone'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 12 14:16:44 ix named[3709]: client 192.168.17.249#7784: zone transfer 'example.com/AXFR/IN' denied'
+       hostname: 'ix'
+       program_name: 'named'
+       log: 'client 192.168.17.249#7784: zone transfer 'example.com/AXFR/IN' denied'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+       srcip: '192.168.17.249'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310010'
+       Level: '1'
+       Description: 'zone transfer denied'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jan 11 15:05:38 ix named[2200]: reloading configuration failed: unexpected end of input'
+       hostname: 'ix'
+       program_name: 'named'
+       log: 'reloading configuration failed: unexpected end of input'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310011'
+       Level: '1'
+       Description: 'Configuration mistake'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 16 19:01:01 junction named[1112]: /etc/named.conf:98: open: /etc/blocked.zones: file not found'
+       hostname: 'junction'
+       program_name: 'named'
+       log: '/etc/named.conf:98: open: /etc/blocked.zones: file not found'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310012'
+       Level: '1'
+       Description: 'Configuration error, file not found.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 16 19:01:01 junction named[1112]: loading configuration: file not found'
+       hostname: 'junction'
+       program_name: 'named'
+       log: 'loading configuration: file not found'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310012'
+       Level: '1'
+       Description: 'Configuration error, file not found.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 16 19:02:17 junction named[4509]: /etc/blocked.slave:14: option 'masters' is not allowed in 'master' zone 'example.com''
+       hostname: 'junction'
+       program_name: 'named'
+       log: '/etc/blocked.slave:14: option 'masters' is not allowed in 'master' zone 'example.com''
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310013'
+       Level: '2'
+       Description: 'Configuration error, option master used in a master zone.'
+**Alert to be generated.
+
+

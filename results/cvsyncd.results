@@ -1,0 +1,164 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct 21 02:09:46 ix cvsyncd[19692]: /var/run/cvsyncd.pid: Permission denied'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: '/var/run/cvsyncd.pid: Permission denied'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '250010'
+       Level: '1'
+       Description: 'cvsyncd cannot write pid file with current permissions'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct 26 22:31:17 ix cvsyncd[3699]: Socket Error: recv: 2 residue 2'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: 'Socket Error: recv: 2 residue 2'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '250011'
+       Level: '1'
+       Description: 'XXX'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 24 03:13:23 ix cvsyncd[551]: configuration: failed to reload'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: 'configuration: failed to reload'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '250012'
+       Level: '1'
+       Description: 'Error in configuration'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 24 03:17:11 ix cvsyncd[15862]: [192.168.17.33] (9b5c193f) DirCmp: RCS Error'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: '[192.168.17.33] (9b5c193f) DirCmp: RCS Error'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '250013'
+       Level: '1'
+       Description: 'XXX'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 24 03:17:11 ix cvsyncd[15862]: Receiver Error: recv'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: 'Receiver Error: recv'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '250014'
+       Level: '1'
+       Description: 'XXX'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 24 03:17:11 ix cvsyncd[15862]: [192.168.17.33] (9b5c193f) FileCmp: RCS Error'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: '[192.168.17.33] (9b5c193f) FileCmp: RCS Error'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '250015'
+       Level: '1'
+       Description: 'XXX'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 24 03:17:11 ix cvsyncd[15862]: Mux(RECV) Error: not running: 0'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: 'Mux(RECV) Error: not running: 0'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '250016'
+       Level: '1'
+       Description: 'XXX'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 24 03:17:11 ix cvsyncd[15862]: [192.168.17.33] (9b5c193f) FileCmp(RCS): /data/cvs/sysconf/buffalo1/buffalo1.nvram,v: UPDATE Error'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: '[192.168.17.33] (9b5c193f) FileCmp(RCS): /data/cvs/sysconf/buffalo1/buffalo1.nvram,v: UPDATE Error'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 24 03:17:11 ix cvsyncd[15862]: Mux(SEND) Error: not running: 1'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: 'Mux(SEND) Error: not running: 1'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '250018'
+       Level: '1'
+       Description: 'XXX'
+**Alert to be generated.
+
+

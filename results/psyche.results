@@ -1,0 +1,20 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Mar  1 08:00:10 gorilla /data01/psyche/bin/nfcapd[30119]: Ident: 'router2' Flows: 0, Packets: 0, Bytes: 0, Sequence Errors: 0, Bad Packets: 0 '
+       hostname: 'gorilla'
+       program_name: '/data01/psyche/bin/nfcapd'
+       log: 'Ident: 'router2' Flows: 0, Packets: 0, Bytes: 0, Sequence Errors: 0, Bad Packets: 0 '
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

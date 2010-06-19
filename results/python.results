@@ -1,0 +1,164 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  8 00:45:36 gorilla python2.5: hp-scan[552]: error: No device'
+       hostname: 'gorilla'
+       program_name: 'python2.5'
+       log: 'hp-scan[552]: error: No device'
+
+**Phase 2: Completed decoding.
+       decoder: 'python'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '230020'
+       Level: '1'
+       Description: 'hp-scan could not find a printer'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  8 00:46:53 gorilla python2.5: hp-probe[24546]: error: Unable to setup multicast socket for SLP: (22, 'Invalid argument')'
+       hostname: 'gorilla'
+       program_name: 'python2.5'
+       log: 'hp-probe[24546]: error: Unable to setup multicast socket for SLP: (22, 'Invalid argument')'
+
+**Phase 2: Completed decoding.
+       decoder: 'python'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '230021'
+       Level: '1'
+       Description: 'XXX'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  8 01:14:31 gorilla python2.5: hp-setup[21147]: error: hp-setup requires GUI support (try running with --qt3). Also, try using interactive (-i) mode.'
+       hostname: 'gorilla'
+       program_name: 'python2.5'
+       log: 'hp-setup[21147]: error: hp-setup requires GUI support (try running with --qt3). Also, try using interactive (-i) mode.'
+
+**Phase 2: Completed decoding.
+       decoder: 'python'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '230022'
+       Level: '1'
+       Description: 'hp-setup requires a GUI'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  8 01:17:38 gorilla python2.5: hp-setup[21681]: error: No devices found on bus: net'
+       hostname: 'gorilla'
+       program_name: 'python2.5'
+       log: 'hp-setup[21681]: error: No devices found on bus: net'
+
+**Phase 2: Completed decoding.
+       decoder: 'python'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '230023'
+       Level: '1'
+       Description: 'hp-setup could not find a printer'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  8 01:32:22 gorilla python2.5: hp-info[25919]: error:  No devices found.'
+       hostname: 'gorilla'
+       program_name: 'python2.5'
+       log: 'hp-info[25919]: error:  No devices found.'
+
+**Phase 2: Completed decoding.
+       decoder: 'python'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '230024'
+       Level: '1'
+       Description: 'hp-info cannot find a printer'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  8 02:10:43 gorilla python2.5: hp-makeuri[8442]: error: You must specify one SERIAL NO., IP, USB ID or DEVNODE parameter.'
+       hostname: 'gorilla'
+       program_name: 'python2.5'
+       log: 'hp-makeuri[8442]: error: You must specify one SERIAL NO., IP, USB ID or DEVNODE parameter.'
+
+**Phase 2: Completed decoding.
+       decoder: 'python'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '230025'
+       Level: '1'
+       Description: 'A proper ID was not specified for hp-makeuri'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  8 02:12:10 gorilla python2.5: hp-check[27994]: error: Not found. SANE backend 'hpaio' NOT properly setup (needs to be added to /etc/sane.d/dll.conf).'
+       hostname: 'gorilla'
+       program_name: 'python2.5'
+       log: 'hp-check[27994]: error: Not found. SANE backend 'hpaio' NOT properly setup (needs to be added to /etc/sane.d/dll.conf).'
+
+**Phase 2: Completed decoding.
+       decoder: 'python'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '230026'
+       Level: '1'
+       Description: 'hpaio has not been setup.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  8 02:12:13 gorilla python2.5: hp-check[27994]: error: 4 errors and/or warnings.'
+       hostname: 'gorilla'
+       program_name: 'python2.5'
+       log: 'hp-check[27994]: error: 4 errors and/or warnings.'
+
+**Phase 2: Completed decoding.
+       decoder: 'python'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '230027'
+       Level: '1'
+       Description: 'errors and/or warnings were found in the configuration'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  8 02:29:30 gorilla python2.5: hp-makeuri[13147]: error: Device not found'
+       hostname: 'gorilla'
+       program_name: 'python2.5'
+       log: 'hp-makeuri[13147]: error: Device not found'
+
+**Phase 2: Completed decoding.
+       decoder: 'python'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '230028'
+       Level: '1'
+       Description: 'hp-makeuri could not find the printer device'
+**Alert to be generated.
+
+

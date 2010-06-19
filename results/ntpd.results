@@ -1,0 +1,56 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr  2 01:23:31 gorilla ntpd[27379]: bad sensor nmea0'
+       hostname: 'gorilla'
+       program_name: 'ntpd'
+       log: 'bad sensor nmea0'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 20 13:02:11 tiny ntpd[25875]: bad peer 192.168.1.233 (192.168.1.233)'
+       hostname: 'tiny'
+       program_name: 'ntpd'
+       log: 'bad peer 192.168.1.233 (192.168.1.233)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'May 26 23:31:02 gorilla ntpd[29719]: bind on 192.168.1.233 failed, skipping: Can't assign requested address'
+       hostname: 'gorilla'
+       program_name: 'ntpd'
+       log: 'bind on 192.168.1.233 failed, skipping: Can't assign requested address'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

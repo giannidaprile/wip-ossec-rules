@@ -1,0 +1,20 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Dec 22 13:15:10 ix su: -: unknown class'
+       hostname: 'ix'
+       program_name: 'su'
+       log: '-: unknown class'
+
+**Phase 2: Completed decoding.
+       decoder: 'su'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5301'
+       Level: '5'
+       Description: 'User missed the password to change UID (user id).'
+**Alert to be generated.
+
+

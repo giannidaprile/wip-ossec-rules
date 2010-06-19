@@ -1,0 +1,20 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct 27 09:48:52 172.16.51.135 fedora11 kernel: ossec-logcollec[2166]: segfault at 0 ip 0804d4ee sp bf988b40 error 4 in ossec-logcollector[8048000+27000]'
+       hostname: '172.16.51.135'
+       program_name: '(null)'
+       log: 'fedora11 kernel: ossec-logcollec[2166]: segfault at 0 ip 0804d4ee sp bf988b40 error 4 in ossec-logcollector[8048000+27000]'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

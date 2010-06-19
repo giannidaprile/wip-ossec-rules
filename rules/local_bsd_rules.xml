@@ -1,0 +1,31 @@
+  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  -->
+
+
+
+<!-- Modify it at your will. -->
+
+<group name="local,syslog,">
+
+  <rule id="340000" level="0" noalert="1">
+    <decoded_as>groupdel</decoded_as>
+    <description>Grouping for groupdel rules.</description>
+  </rule>
+
+  <!--May 28 09:15:43 ix groupdel[25984]: group deleted: name=_dbus-->
+  <rule id="340010" level="2">
+    <if_sid>340000</if_sid>
+    <match>group deleted</match>
+    <description>Group deleted.</description> 
+  
+   
+</group> <!-- SYSLOG,LOCAL -->
+
+
+<!-- EOF -->

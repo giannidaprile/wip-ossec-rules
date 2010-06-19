@@ -1,0 +1,550 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 14 19:28:21 gorilla sshd[31274]: Connection closed by 192.168.1.33'
+       hostname: 'gorilla'
+       program_name: 'sshd'
+       log: 'Connection closed by 192.168.1.33'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 11 06:32:17 gorilla sshd[28293]: error: buffer_get_bignum2_ret: negative numbers not supported'
+       hostname: 'gorilla'
+       program_name: 'sshd'
+       log: 'error: buffer_get_bignum2_ret: negative numbers not supported'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 11 06:32:17 gorilla sshd[28293]: fatal: buffer_get_bignum2: buffer error'
+       hostname: 'gorilla'
+       program_name: 'sshd'
+       log: 'fatal: buffer_get_bignum2: buffer error'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 17 05:52:32 tiny sshd[30527]: Received disconnect from 61.129.60.23: 11: Bye Bye'
+       hostname: 'tiny'
+       program_name: 'sshd'
+       log: 'Received disconnect from 61.129.60.23: 11: Bye Bye'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 19 20:56:00 tiny sshd[11605]: fatal: Write failed: Host is down'
+       hostname: 'tiny'
+       program_name: 'sshd'
+       log: 'fatal: Write failed: Host is down'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct  8 14:15:33 fedora11 sshd[11773]: Failed password for ddp from 172.16.51.1 port 56588 ssh2'
+       hostname: 'fedora11'
+       program_name: 'sshd'
+       log: 'Failed password for ddp from 172.16.51.1 port 56588 ssh2'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       dstuser: 'ddp'
+       srcip: '172.16.51.1'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5716'
+       Level: '5'
+       Description: 'SSHD authentication failed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct  8 11:09:16 y sshd[7836]: error: ssh_msg_send: write'
+       hostname: 'y'
+       program_name: 'sshd'
+       log: 'error: ssh_msg_send: write'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5709'
+       Level: '0'
+       Description: 'Useless SSHD message without an user/ip and context.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct  8 11:18:26 172.16.51.132 sshd[7618]: error: PAM: Module is unknown for ddp from 172.16.51.1'
+       hostname: '172.16.51.132'
+       program_name: 'sshd'
+       log: 'error: PAM: Module is unknown for ddp from 172.16.51.1'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct  8 08:48:33 y sshd[6856]: error: Bind to port 22 on 0.0.0.0 failed: Address already in use.'
+       hostname: 'y'
+       program_name: 'sshd'
+       log: 'error: Bind to port 22 on 0.0.0.0 failed: Address already in use.'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct  8 08:58:37 y sshd[6956]: fatal: PAM: pam_setcred(): Authentication service cannot retrieve user credentials'
+       hostname: 'y'
+       program_name: 'sshd'
+       log: 'fatal: PAM: pam_setcred(): Authentication service cannot retrieve user credentials'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct  7 13:22:29 localhost login: PAM [dlerror: <*unknown module path*>: cannot open shared object file: No such file or directory]'
+       hostname: 'localhost'
+       program_name: 'login'
+       log: 'PAM [dlerror: <*unknown module path*>: cannot open shared object file: No such file or directory]'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct  7 13:22:29 localhost login: PAM (login) illegal module type: include'
+       hostname: 'localhost'
+       program_name: 'login'
+       log: 'PAM (login) illegal module type: include'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct  8 10:07:27 y sshd[7644]: debug1: attempt 2 failures 2'
+       hostname: 'y'
+       program_name: 'sshd'
+       log: 'debug1: attempt 2 failures 2'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jan 26 11:57:26 ix sshd[14879]: error: connect to ix.example.com port 7777 failed: Connection refused'
+       hostname: 'ix'
+       program_name: 'sshd'
+       log: 'error: connect to ix.example.com port 7777 failed: Connection refused'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 00:00:01 ix sshd[8813]: Accepted password for root from 192.168.10.1 port 1066 ssh2'
+       hostname: 'ix'
+       program_name: 'sshd'
+       log: 'Accepted password for root from 192.168.10.1 port 1066 ssh2'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       dstuser: 'root'
+       srcip: '192.168.10.1'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '10100'
+       Level: '4'
+       Description: 'First time user logged in.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 00:00:01 ix sshd[2404]: Accepted password for root from 192.168.11.1 port 2011 ssh2'
+       hostname: 'ix'
+       program_name: 'sshd'
+       log: 'Accepted password for root from 192.168.11.1 port 2011 ssh2'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       dstuser: 'root'
+       srcip: '192.168.11.1'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5715'
+       Level: '3'
+       Description: 'SSHD authentication success.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 00:00:01 ix sshd[21405]: Accepted password for root from 192.1.1.1 port 6023 ssh2'
+       hostname: 'ix'
+       program_name: 'sshd'
+       log: 'Accepted password for root from 192.1.1.1 port 6023 ssh2'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       dstuser: 'root'
+       srcip: '192.1.1.1'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5715'
+       Level: '3'
+       Description: 'SSHD authentication success.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 00:00:01 ix sshd[21487]: Failed password for root from 192.168.1.1 port 1045 ssh2'
+       hostname: 'ix'
+       program_name: 'sshd'
+       log: 'Failed password for root from 192.168.1.1 port 1045 ssh2'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       dstuser: 'root'
+       srcip: '192.168.1.1'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5716'
+       Level: '5'
+       Description: 'SSHD authentication failed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 00:00:01 ix sshd[8813]: Failed none for root from 192.168.10.161 port 1066 ssh2'
+       hostname: 'ix'
+       program_name: 'sshd'
+       log: 'Failed none for root from 192.168.10.161 port 1066 ssh2'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       dstuser: 'root'
+       srcip: '192.168.10.161'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5716'
+       Level: '5'
+       Description: 'SSHD authentication failed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 00:00:01 ix sshd[12675]: Failed password for invalid user lala11 from 192.168.1.1 port 222 ssh2'
+       hostname: 'ix'
+       program_name: 'sshd'
+       log: 'Failed password for invalid user lala11 from 192.168.1.1 port 222 ssh2'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       srcip: '192.168.1.1'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5710'
+       Level: '5'
+       Description: 'Attempt to login using a non-existent user'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 00:00:01 ix sshd[8267]: Failed password for illegal user test from 62.67.45.4 port 39141 ssh2'
+       hostname: 'ix'
+       program_name: 'sshd'
+       log: 'Failed password for illegal user test from 62.67.45.4 port 39141 ssh2'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       srcip: '62.67.45.4'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5710'
+       Level: '5'
+       Description: 'Attempt to login using a non-existent user'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 00:00:01 ix sshd[11259]: Invalid user abc from 127.0.0.1'
+       hostname: 'ix'
+       program_name: 'sshd'
+       log: 'Invalid user abc from 127.0.0.1'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       srcip: '127.0.0.1'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5710'
+       Level: '5'
+       Description: 'Attempt to login using a non-existent user'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 00:00:01 ix sshd[1111]: Failed keyboard-interactive for root from 192.1.1.1 port 1066 ssh2'
+       hostname: 'ix'
+       program_name: 'sshd'
+       log: 'Failed keyboard-interactive for root from 192.1.1.1 port 1066 ssh2'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       dstuser: 'root'
+       srcip: '192.1.1.1'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5716'
+       Level: '5'
+       Description: 'SSHD authentication failed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 00:00:01 ix sshd[23857]: [ID 702911 auth.notice] User xxx, coming from zzzz, authenticated.'
+       hostname: 'ix'
+       program_name: 'sshd'
+       log: 'User xxx, coming from zzzz, authenticated.'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       dstuser: 'xxx'
+       srcip: 'zzzz'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '10100'
+       Level: '4'
+       Description: 'First time user logged in.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 00:00:01 ix sshd[23578]: reverse mapping checking getaddrinfo for pib4.catv-bauer.at failed - POSSIBLE BREAKIN ATTEMPT!'
+       hostname: 'ix'
+       program_name: 'sshd'
+       log: 'reverse mapping checking getaddrinfo for pib4.catv-bauer.at failed - POSSIBLE BREAKIN ATTEMPT!'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       srcip: 'pib4.catv-bauer.at'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5702'
+       Level: '5'
+       Description: 'Reverse lookup error (bad ISP or attack).'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 00:00:01 ix sshd[61834]: reverse mapping checking getaddrinfo for sv.tvcm.ch failed - POSSIBLE BREAKIN ATTEMPT!'
+       hostname: 'ix'
+       program_name: 'sshd'
+       log: 'reverse mapping checking getaddrinfo for sv.tvcm.ch failed - POSSIBLE BREAKIN ATTEMPT!'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       srcip: 'sv.tvcm.ch'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5702'
+       Level: '5'
+       Description: 'Reverse lookup error (bad ISP or attack).'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 00:00:01 ix sshd[3251]: User root not allowed because listed in DenyUsers'
+       hostname: 'ix'
+       program_name: 'sshd'
+       log: 'User root not allowed because listed in DenyUsers'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5718'
+       Level: '5'
+       Description: 'Attempt to login using a denied user.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '[Time 2006.12.28 15:53:55 UTC] [Facility auth] [Sender sshd] [PID 483] [Message error: PAM: Authentication failure for username from 192.168.0.2] [Level 3] [UID -2] [GID -2] [Host Hostname]'
+       hostname: 'Hostname'
+       program_name: 'sshd'
+       log: 'error: PAM: Authentication failure for username from 192.168.0.2'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       dstuser: 'username'
+       srcip: '192.168.0.2'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5716'
+       Level: '5'
+       Description: 'SSHD authentication failed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '[Time 2006.11.02 11:41:44 UTC] [Facility auth] [Sender sshd] [PID 800] [Message refused connect from 51.124.44.34] [Level 4] [UID -2] [GID -2] [Host test2-emac]'
+       hostname: 'test2-emac'
+       program_name: 'sshd'
+       log: 'refused connect from 51.124.44.34'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       srcip: '51.124.44.34'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '2503'
+       Level: '5'
+       Description: 'Connection blocked by Tcp Wrappers.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 00:00:01 ix Apr 23 07:03:53 machinename sshd[29961]: User root from 12.3.4.5 not allowed because not listed in AllowUsers'
+       hostname: 'ix'
+       program_name: '(null)'
+       log: 'Apr 23 07:03:53 machinename sshd[29961]: User root from 12.3.4.5 not allowed because not listed in AllowUsers'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 00:00:01 ix sshd[9815]: scanned from 127.0.0.1 with SSH-1.99-AKASSH_Version_Mapper1.  Don't panic.'
+       hostname: 'ix'
+       program_name: 'sshd'
+       log: 'scanned from 127.0.0.1 with SSH-1.99-AKASSH_Version_Mapper1.  Don't panic.'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       srcip: '127.0.0.1'

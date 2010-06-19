@@ -1,0 +1,20 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct  9 01:23:30 gorilla ykksm[24214]: Database connect error: Can't connect to local MySQL server through socket '/var/run/mysql/mysql.sock' (2)'
+       hostname: 'gorilla'
+       program_name: 'ykksm'
+       log: 'Database connect error: Can't connect to local MySQL server through socket '/var/run/mysql/mysql.sock' (2)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

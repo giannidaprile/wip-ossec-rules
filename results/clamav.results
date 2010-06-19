@@ -1,0 +1,38 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Mar 27 04:03:26 localhost freshclam[8992]: getfile: Error while reading database from db.us.clamav.net (IP: 64.142.100.50)'
+       hostname: 'localhost'
+       program_name: 'freshclam'
+       log: 'getfile: Error while reading database from db.us.clamav.net (IP: 64.142.100.50)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  7 04:08:24 localhost freshclam[4328]: Update failed. Your'
+       hostname: 'localhost'
+       program_name: 'freshclam'
+       log: 'Update failed. Your'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
