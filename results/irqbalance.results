@@ -12,9 +12,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '350010'
+       Level: '1'
+       Description: 'An SMP machine is necessary to balance irqs.'
 **Alert to be generated.
 
 

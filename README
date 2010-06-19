@@ -27,3 +27,4 @@ Rule IDs:
 320000+: smtpd
 330000+: smartd
 340000+: isakmpd
+350000+: irqbalance

@@ -856,6 +856,17 @@ p@ix.example.com)-->
     <description>XXX No response from peer.</description>
   </rule>
 
+  <rule id="350000" level="0" noalert="1">
+    <program_name>irqbalance</program_name>
+    <description>Grouping for irqbalance rules.</description>
+  </rule>
+
+  <!--Oct  6 14:31:31 localhost irqbalance: Can't balance irqs on a uniprocessor system:  failed-->
+  <rule id="350010" level="1">
+    <if_sid>350000</if_sid>
+    <match>Can't balance irqs on a uniprocessor system:  failed</match>
+    <description>An SMP machine is necessary to balance irqs.</description>
+  </rule>
 
 
 </group> <!-- SYSLOG,LOCAL -->
