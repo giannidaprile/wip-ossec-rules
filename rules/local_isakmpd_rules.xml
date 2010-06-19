@@ -23,6 +23,28 @@
     <match>notification type INVALID_COOKIE</match>
     <description>XXX Bad isakmpd, no cookie.</description>
   </rule>
+
+  <!--Nov 4 18:15:48 vpn-gw isakmpd[13559]: message_parse_payloads: invalid next payload type RESERVED_MIN in payload of type 10-->
+  <rule id="34011" level="1">
+    <if_sid>340000</if_sid>
+    <match>invalid next payload type RESERVED_MIN in payload of type 10</match>
+    <description>XXX</description>
+  </rule>
+
+  <!--Nov 4 18:15:48 vpn-gw isakmpd[13559]: dropped message from 192.168.1.1 port 500 due to notification type INVALID_PAYLOAD_TYPE-->
+  <rule id="340012" level="1">
+    <if_sid>340000</if_sid>
+    <match>due to notification type INVALID_PAYLOAD_TYPE</match>
+    <description>XXX Invalid payload type.</description>
+  </rule>
+
+  <!--Nov 4 18:15:59 alphen-vpn-gw isakmpd[28891]: transport_send_messages: giving up on exchange ISAKMP-peer-node-ldn, no response from peer 192.168.1.1:500-->
+  <rule id="340013" level="1">
+    <if_sid>340000</if_sid>
+    <match>giving up on exchange ISAKMP-peer-node-ldn, no response from peer</match>
+    <description>XXX No response from peer.</description>
+  </rule>
+
   
    
 </group> <!-- SYSLOG,LOCAL -->
