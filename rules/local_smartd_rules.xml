@@ -49,7 +49,7 @@
   <!--Jun  9 13:56:22 tiny smartd[631]: Device: /dev/wd1c, SMART Prefailure Attribute: 1 Raw_Read_Error_Rate changed from 103 to 104-->
   <rule id="330014" level="2">
     <if_sid>330000</if_sid>
-    <regex>SMART Prefailure Attribute: \d+ \S+ from</regex>
+    <regex>SMART Prefailure Attribute: \d+ \S+ changed from</regex>
     <description>SMART prefailure attribute changed.</description>
   </rule>
 
@@ -121,6 +121,13 @@
     <if_sid>330000</if_sid>
     <match>smartd shutdown failed</match>
     <description>XXX smartd shutdown failed.</description>
+  </rule>
+
+  <!--Jun 16 06:45:04 ix smartd[14769]: Device: /dev/sd0c [SAT], previous self-test could not complete due to a fatal or unknown error-->
+  <rule id="330025" level="2">
+    <if_sid>330000</if_sid>
+    <match>previous self-test could not complete due to a fatal or unknown error</match>
+    <description>XXX self-test failed</description>
   </rule>
 
   
