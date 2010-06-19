@@ -12,3 +12,4 @@ Jan 18 09:22:45 bart /bsd: acpitz0: _AL0[0] _PR0 failed
 Feb 26 11:18:59 ix /bsd: ehci_freex: xfer=0xffff8000003ef800 not busy, 0x4f4e5155
 Feb 28 23:23:21 ix /bsd: ichiic0: abort failed, status 0x0
 Mar  3 10:30:10 ix /bsd: ichiic0: abort failed, status 0x40<INUSE>
+Jun 15 21:15:03 ix /bsd: atascsi_passthru_done, timeout
