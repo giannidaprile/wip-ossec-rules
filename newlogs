@@ -5,4 +5,4 @@ Jun 16 19:18:28 ix named[17897]: client 192.168.17.17#48823: transfer of 'antite
 Jun 16 19:18:28 junction named[14448]: transfer of 'antiterroralliance.com/IN' from 192.168.17.9#53: connected using 192.168.17.17#48823
 Jun 16 19:18:28 junction named[14448]: zone antiterroralliance.com/IN: transferred serial 6
 Jun 16 19:18:28 junction named[14448]: transfer of 'antiterroralliance.com/IN' from 192.168.17.9#53: end of transfe
-
+Jun 16 19:56:51 blocker sshd[2263]: refused connect from 119.147.1.1 (119.147.1.1)
