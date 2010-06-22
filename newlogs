@@ -6,3 +6,4 @@ Jun 16 19:18:28 junction named[14448]: transfer of 'antiterroralliance.com/IN' f
 Jun 16 19:18:28 junction named[14448]: zone antiterroralliance.com/IN: transferred serial 6
 Jun 16 19:18:28 junction named[14448]: transfer of 'antiterroralliance.com/IN' from 192.168.17.9#53: end of transfe
 Jun 16 19:56:51 blocker sshd[2263]: refused connect from 119.147.1.1 (119.147.1.1)
+Jun 22 12:01:13 junction sshd[11283]: Received disconnect from 212.14.228.46: 11: Bye Bye
