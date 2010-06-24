@@ -7,3 +7,7 @@ Jun 16 19:18:28 junction named[14448]: zone antiterroralliance.com/IN: transferr
 Jun 16 19:18:28 junction named[14448]: transfer of 'antiterroralliance.com/IN' from 192.168.17.9#53: end of transfe
 Jun 16 19:56:51 blocker sshd[2263]: refused connect from 119.147.1.1 (119.147.1.1)
 Jun 22 12:01:13 junction sshd[11283]: Received disconnect from 212.14.228.46: 11: Bye Bye
+Jun 23 03:45:35 ix smartd[1285]: Device: /dev/sd0c [SAT], Self-Test Log error count increased from 0 to 4
+Jun 23 04:15:35 ix smartd[1285]: Device: /dev/sd0c [SAT], new Self-Test Log error at hour timestamp 0
+Jun 23 15:45:35 ix smartd[1285]: Device: /dev/sd0c [SAT], previous self-test completed with error (unknown test element)
+
