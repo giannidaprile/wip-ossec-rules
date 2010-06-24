@@ -17,3 +17,7 @@ Jun 10 16:56:22 tiny smartd[631]: Device: /dev/wd1c, SMART Prefailure Attribute:
 Oct  1 15:02:39 localhost smartd: smartd shutdown failed
 Oct 14 17:05:49 ix smartd[3956]: Device: /dev/wd0c, SMART Usage Attribute: 7 Seek_Error_Rate changed from 100 to 200
 Jun 16 06:45:04 ix smartd[14769]: Device: /dev/sd0c [SAT], previous self-test could not complete due to a fatal or unknown error
+Jun 23 03:45:35 ix smartd[1285]: Device: /dev/sd0c [SAT], Self-Test Log error count increased from 0 to 4
+Jun 23 04:15:35 ix smartd[1285]: Device: /dev/sd0c [SAT], new Self-Test Log error at hour timestamp 0
+Jun 23 15:45:35 ix smartd[1285]: Device: /dev/sd0c [SAT], previous self-test completed with error (unknown test element)
+

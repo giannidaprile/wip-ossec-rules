@@ -824,6 +824,27 @@ p@ix.example.com)-->
     <description>XXX self-test failed</description>
   </rule>
 
+  <!--Jun 23 03:45:35 ix smartd[1285]: Device: /dev/sd0c [SAT], Self-Test Log error count increased from 0 to 4-->
+  <rule id="330026" level="2">
+    <if_sid>330000</if_sid>
+    <match>Self-Test Log error count increased</match>
+    <description>Self-test log error count increased.</description>
+  </rule>
+
+  <!--Jun 23 04:15:35 ix smartd[1285]: Device: /dev/sd0c [SAT], new Self-Test Log error at hour timestamp 0-->
+  <rule id="330027" level="2">
+    <if_sid>330000</if_sid>
+    <match>new Self-Test Log error at hour timestamp</match>
+    <description>Self-test log error.</description>
+  </rule>
+
+  <!--Jun 23 15:45:35 ix smartd[1285]: Device: /dev/sd0c [SAT], previous self-test completed with error (unknown test element)-->
+  <rule id="330028" level="2">
+    <if_sid>330000</if_sid>
+    <match>previous self-test completed with error</match>
+    <description>Previous self-test completed, but had an error.</description>
+  </rule>
+
   <rule id="340000" level="0" noalert="1">
     <decoded_as>isakmpd</decoded_as>
   </rule>
