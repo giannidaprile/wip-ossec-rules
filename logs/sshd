@@ -8,8 +8,6 @@ Oct  8 11:09:16 y sshd[7836]: error: ssh_msg_send: write
 Oct  8 11:18:26 172.16.51.132 sshd[7618]: error: PAM: Module is unknown for ddp from 172.16.51.1
 Oct  8 08:48:33 y sshd[6856]: error: Bind to port 22 on 0.0.0.0 failed: Address already in use.
 Oct  8 08:58:37 y sshd[6956]: fatal: PAM: pam_setcred(): Authentication service cannot retrieve user credentials
-Oct  7 13:22:29 localhost login: PAM [dlerror: <*unknown module path*>: cannot open shared object file: No such file or directory]
-Oct  7 13:22:29 localhost login: PAM (login) illegal module type: include
 Oct  8 10:07:27 y sshd[7644]: debug1: attempt 2 failures 2
 Jan 26 11:57:26 ix sshd[14879]: error: connect to ix.example.com port 7777 failed: Connection refused
 Jun  9 00:00:01 ix sshd[8813]: Accepted password for root from 192.168.10.1 port 1066 ssh2
@@ -21,7 +19,7 @@ Jun  9 00:00:01 ix sshd[12675]: Failed password for invalid user lala11 from 192
 Jun  9 00:00:01 ix sshd[8267]: Failed password for illegal user test from 62.67.45.4 port 39141 ssh2
 Jun  9 00:00:01 ix sshd[11259]: Invalid user abc from 127.0.0.1
 Jun  9 00:00:01 ix sshd[1111]: Failed keyboard-interactive for root from 192.1.1.1 port 1066 ssh2
-Jun  9 00:00:01 ix sshd[23857]: [ID 702911 auth.notice] User xxx, coming from zzzz, authenticated.
+Jun  9 00:00:01 ix sshd[23857]: [ID 702911 auth.notice] User xxx, coming from 192.168.1.1, authenticated.
 Jun  9 00:00:01 ix sshd[23578]: reverse mapping checking getaddrinfo for pib4.catv-bauer.at failed - POSSIBLE BREAKIN ATTEMPT!
 Jun  9 00:00:01 ix sshd[61834]: reverse mapping checking getaddrinfo for sv.tvcm.ch failed - POSSIBLE BREAKIN ATTEMPT!
 Jun  9 00:00:01 ix sshd[3251]: User root not allowed because listed in DenyUsers
