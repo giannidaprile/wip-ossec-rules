@@ -15,7 +15,5 @@ done
 cd ${HOME} || ( echo "Cannot chdir to ${HOME}!" ; exit 1 )
 hg status | grep '^M ' > /dev/null && ( echo "Status:" >> ${MAINOUT} && hg status | grep -v '^? ' >> ${MAINOUT} \
   && echo "" >> ${MAINOUT} && echo "Diff:" >> ${MAINOUT} && hg diff >> ${MAINOUT} )
-#hg status | grep -v '^? ' >> ${MAINOUT}
-#grep '^M ' ${MAINOUT} && ( echo "Diff:" >> ${MAINOUT} && hg diff >> ${MAINOUT} )
 
-[ -s ${MAINOUT} ] && mail -s 'wip-ossec-rules test' ddp < ${MAINOUT}
+[ -s ${MAINOUT} ] && mail -s 'wip-ossec-rules test' ddp < ${MAINOUT} && rm ${MAINOUT}
