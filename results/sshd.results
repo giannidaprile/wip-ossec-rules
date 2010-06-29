@@ -56,6 +56,15 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'sshd'
+       srcip: '61.129.60.23'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '370010'
+       Level: '1'
+       Description: 'System disconnected from sshd.'
+**Alert to be generated.
+
+
 
 
 **Phase 1: Completed pre-decoding.
@@ -548,3 +557,60 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'sshd'
        srcip: '127.0.0.1'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 26 10:14:12 dg-linux sshd[16527]: reverse mapping checking getaddrinfo for 64.79.111.4.rdns.continuumdatacenters.com [64.79.111.4] failed - POSSIBLE BREAK-IN ATTEMPT!'
+       hostname: 'dg-linux'
+       program_name: 'sshd'
+       log: 'reverse mapping checking getaddrinfo for 64.79.111.4.rdns.continuumdatacenters.com [64.79.111.4] failed - POSSIBLE BREAK-IN ATTEMPT!'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       srcip: '64.79.111.4'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5702'
+       Level: '5'
+       Description: 'Reverse lookup error (bad ISP or attack).'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 16 19:56:51 blocker sshd[2263]: refused connect from 119.147.1.1 (119.147.1.1)'
+       hostname: 'blocker'
+       program_name: 'sshd'
+       log: 'refused connect from 119.147.1.1 (119.147.1.1)'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       srcip: '119.147.1.1'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '2503'
+       Level: '5'
+       Description: 'Connection blocked by Tcp Wrappers.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 22 12:01:13 junction sshd[11283]: Received disconnect from 212.14.228.46: 11: Bye Bye'
+       hostname: 'junction'
+       program_name: 'sshd'
+       log: 'Received disconnect from 212.14.228.46: 11: Bye Bye'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+       srcip: '212.14.228.46'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '370010'
+       Level: '1'
+       Description: 'System disconnected from sshd.'
+**Alert to be generated.
+
+
