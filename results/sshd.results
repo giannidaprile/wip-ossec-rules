@@ -10,6 +10,15 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'sshd'
+       srcip: '192.168.1.33'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '370011'
+       Level: '1'
+       Description: 'ssh connection closed.'
+**Alert to be generated.
+
+
 
 
 **Phase 1: Completed pre-decoding.
@@ -22,12 +31,9 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
+       Rule id: '370012'
+       Level: '0'
+       Description: 'XXX'
 
 
 **Phase 1: Completed pre-decoding.
@@ -40,12 +46,9 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
+       Rule id: '370013'
+       Level: '0'
+       Description: 'XXX'
 
 
 **Phase 1: Completed pre-decoding.
@@ -77,9 +80,9 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '370014'
+       Level: '1'
+       Description: 'XXX Host ungracefully disconnected.'
 **Alert to be generated.
 
 
@@ -128,11 +131,13 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'sshd'
+       dstuser: 'ddp'
+       srcip: '172.16.51.1'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '370015'
+       Level: '5'
+       Description: 'Unknown PAM module, PAM misconfiguration'
 **Alert to be generated.
 
 
@@ -148,12 +153,9 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
+       Rule id: '370016'
+       Level: '0'
+       Description: 'Attempt to start sshd when something already bound to the port.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -166,45 +168,10 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
-
-
-**Phase 1: Completed pre-decoding.
-       full event: 'Oct  7 13:22:29 localhost login: PAM [dlerror: <*unknown module path*>: cannot open shared object file: No such file or directory]'
-       hostname: 'localhost'
-       program_name: 'login'
-       log: 'PAM [dlerror: <*unknown module path*>: cannot open shared object file: No such file or directory]'
-
-**Phase 2: Completed decoding.
-       No decoder matched.
-
-**Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
-
-
-**Phase 1: Completed pre-decoding.
-       full event: 'Oct  7 13:22:29 localhost login: PAM (login) illegal module type: include'
-       hostname: 'localhost'
-       program_name: 'login'
-       log: 'PAM (login) illegal module type: include'
-
-**Phase 2: Completed decoding.
-       No decoder matched.
-
-**Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '370017'
+       Level: '4'
+       Description: 'XXX Authentication was not able to retrieve user credentials.'
+       Info - Text: 'May be related to PAM module errors.'
 **Alert to be generated.
 
 
@@ -220,12 +187,9 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
+       Rule id: '370018'
+       Level: '0'
+       Description: 'Debug message.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -238,9 +202,9 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '370019'
+       Level: '4'
+       Description: 'sshd is not accepting connections.'
 **Alert to be generated.
 
 
@@ -424,15 +388,15 @@ ossec-testrule: Type one log per line.
 
 
 **Phase 1: Completed pre-decoding.
-       full event: 'Jun  9 00:00:01 ix sshd[23857]: [ID 702911 auth.notice] User xxx, coming from zzzz, authenticated.'
+       full event: 'Jun  9 00:00:01 ix sshd[23857]: [ID 702911 auth.notice] User xxx, coming from 192.168.1.1, authenticated.'
        hostname: 'ix'
        program_name: 'sshd'
-       log: 'User xxx, coming from zzzz, authenticated.'
+       log: 'User xxx, coming from 192.168.1.1, authenticated.'
 
 **Phase 2: Completed decoding.
        decoder: 'sshd'
        dstuser: 'xxx'
-       srcip: 'zzzz'
+       srcip: '192.168.1.1'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '10100'
@@ -539,13 +503,23 @@ ossec-testrule: Type one log per line.
 
 
 **Phase 1: Completed pre-decoding.
-       full event: 'Jun  9 00:00:01 ix Apr 23 07:03:53 machinename sshd[29961]: User root from 12.3.4.5 not allowed because not listed in AllowUsers'
-       hostname: 'ix'
-       program_name: '(null)'
-       log: 'Apr 23 07:03:53 machinename sshd[29961]: User root from 12.3.4.5 not allowed because not listed in AllowUsers'
+       full event: 'Apr 23 07:03:53 machinename sshd[29961]: User root from 12.3.4.5 not allowed because not listed in AllowUsers'
+       hostname: 'machinename'
+       program_name: 'sshd'
+       log: 'User root from 12.3.4.5 not allowed because not listed in AllowUsers'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'sshd'
+       dstuser: 'root'
+       srcip: '12.3.4.5'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5718'
+       Level: '5'
+       Description: 'Attempt to login using a denied user.'
+**Alert to be generated.
+
+
 
 
 **Phase 1: Completed pre-decoding.
@@ -557,6 +531,14 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'sshd'
        srcip: '127.0.0.1'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '370020'
+       Level: '1'
+       Description: 'XXX SSH Scanning.'
+**Alert to be generated.
+
+
 
 
 **Phase 1: Completed pre-decoding.
