@@ -15,11 +15,82 @@
 
   <!--Jun 22 12:01:13 junction sshd[11283]: Received disconnect from 212.14.228.46: 11: Bye Bye-->
   <rule id="370010" level="1">
-    <if_sid>3700</if_sid>
+    <if_sid>5700</if_sid>
     <match>Received disconnect from</match>
     <description>System disconnected from sshd.</description>
   </rule>
-  
+
+  <!--Apr 14 19:28:21 gorilla sshd[31274]: Connection closed by 192.168.1.33-->
+  <rule id="370011" level="1">
+    <if_sid>5700</if_sid>
+    <match>Connection closed</match>
+    <description>ssh connection closed.</description>
+  </rule>
+
+  <!--Jun 11 06:32:17 gorilla sshd[28293]: error: buffer_get_bignum2_ret: negative numbers not supported-->
+  <rule id="370012" level="0">
+    <if_sid>5700</if_sid>
+    <match>error: buffer_get_bignum2_ret: negative numbers not supported</match>
+    <description>XXX</description>
+  </rule>
+
+  <!--Jun 11 06:32:17 gorilla sshd[28293]: fatal: buffer_get_bignum2: buffer error-->
+  <rule id="370013" level="0">
+    <if_sid>5700</if_sid>
+    <match>fatal: buffer_get_bignum2: buffer error</match>
+    <description>XXX</description>
+  </rule>
+
+  <!--Jun 19 20:56:00 tiny sshd[11605]: fatal: Write failed: Host is down-->
+  <rule id="370014" level="1">
+    <if_sid>5700</if_sid>
+    <match>fatal: Write failed: Host is down</match>
+    <description>XXX Host ungracefully disconnected.</description>
+  </rule>
+
+  <!--Oct  8 11:18:26 172.16.51.132 sshd[7618]: error: PAM: Module is unknown for ddp from 172.16.51.1-->
+  <rule id="370015" level="5">
+    <if_sid>5700</if_sid>
+    <match>error: PAM: Module is unknown for</match>
+    <description>Unknown PAM module, PAM misconfiguration</description>
+  </rule>
+
+  <!--Oct  8 08:48:33 y sshd[6856]: error: Bind to port 22 on 0.0.0.0 failed: Address already in use.-->
+  <rule id="370016" level="0">
+    <if_sid>5700</if_sid>
+    <match>failed: Address already in use.</match>
+    <description>Attempt to start sshd when something already bound to the port.</description>
+  </rule>
+
+  <!--Oct  8 08:58:37 y sshd[6956]: fatal: PAM: pam_setcred(): Authentication service cannot retrieve user credentials-->
+  <rule id="370017" level="4">
+    <if_sid>5700</if_sid>
+    <match>Authentication service cannot retrieve user credentials</match>
+    <info>May be related to PAM module errors.</info>
+    <description>XXX Authentication was not able to retrieve user credentials.</description>
+  </rule>
+
+  <!--Oct  8 10:07:27 y sshd[7644]: debug1: attempt 2 failures 2-->
+  <rule id="370018" level="0">
+    <if_sid>5700</if_sid>
+    <match>debug1: attempt</match>
+    <description>Debug message.</description>
+  </rule>
+
+  <!--Jan 26 11:57:26 ix sshd[14879]: error: connect to ix.example.com port 7777 failed: Connection refused-->
+  <rule id="370019" level="4">
+    <if_sid>5700</if_sid>
+    <regex>error: connect to \S+ port \d+ failed: Connection refused</regex>
+    <description>sshd is not accepting connections.</description>
+  </rule>
+
+  <!--Jun  9 00:00:01 ix sshd[9815]: scanned from 127.0.0.1 with SSH-1.99-AKASSH_Version_Mapper1.  Don't panic.-->
+  <rule id="370020" level="1">
+    <if_sid>5700</if_sid>
+    <match>AKASSH_Version_Mapper1.</match>
+    <description>XXX SSH Scanning.</description>
+  </rule>
+
    
 </group> <!-- SYSLOG,LOCAL -->
 
