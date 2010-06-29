@@ -30,3 +30,4 @@ Rule IDs:
 350000+: irqbalance
 360000+: Linux kernel
 370000+: sshd
+380000+: pam

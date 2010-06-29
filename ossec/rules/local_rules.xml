@@ -1091,6 +1091,26 @@ p@ix.example.com)-->
     <description>XXX SSH Scanning.</description>
   </rule>
 
+  <!--Apr 14 13:33:50 fedora10 gdm-session-worker[2484]: pam_unix(gdm:auth): conversation failed-->
+  <rule id="380010" level="1">
+    <if_sid>5500</if_sid>
+    <match>gdm:auth): conversation failed</match>                                                                                               
+    <description>XXX PAM and gdm are not playing nicely.</description>
+  </rule>
+
+  <!--Oct  7 13:22:29 localhost login: PAM [dlerror: <*unknown module path*>: cannot open shared object file: No such file or directory]-->
+   <rule id="380011" level="4">
+    <program_name>login</program_name>
+    <match>cannot open shared object file: No such file or directory</match>
+    <description>PAM misconfiguration.</description>
+  </rule>
+
+  <!--Oct  7 13:22:29 localhost login: PAM (login) illegal module type: include-->
+  <rule id="380012" level="4">
+    <program_name>login</program_name>
+    <match>illegal module type: </match>
+    <description>XXX PAM misconfiguration.</description>
+  </rule>
 
 
 
