@@ -30,3 +30,5 @@ Jun  9 00:00:01 ix sshd[3251]: User root not allowed because listed in DenyUsers
 Jun  9 00:00:01 ix Apr 23 07:03:53 machinename sshd[29961]: User root from 12.3.4.5 not allowed because not listed in AllowUsers
 Jun  9 00:00:01 ix sshd[9815]: scanned from 127.0.0.1 with SSH-1.99-AKASSH_Version_Mapper1.  Don't panic.
 Jun 26 10:14:12 dg-linux sshd[16527]: reverse mapping checking getaddrinfo for 64.79.111.4.rdns.continuumdatacenters.com [64.79.111.4] failed - POSSIBLE BREAK-IN ATTEMPT!
+Jun 16 19:56:51 blocker sshd[2263]: refused connect from 119.147.1.1 (119.147.1.1)
+Jun 22 12:01:13 junction sshd[11283]: Received disconnect from 212.14.228.46: 11: Bye Bye
