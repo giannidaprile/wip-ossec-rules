@@ -29,4 +29,4 @@ Jun  9 00:00:01 ix sshd[3251]: User root not allowed because listed in DenyUsers
 [Time 2006.11.02 11:41:44 UTC] [Facility auth] [Sender sshd] [PID 800] [Message refused connect from 51.124.44.34] [Level 4] [UID -2] [GID -2] [Host test2-emac]
 Jun  9 00:00:01 ix Apr 23 07:03:53 machinename sshd[29961]: User root from 12.3.4.5 not allowed because not listed in AllowUsers
 Jun  9 00:00:01 ix sshd[9815]: scanned from 127.0.0.1 with SSH-1.99-AKASSH_Version_Mapper1.  Don't panic.
-
+Jun 26 10:14:12 dg-linux sshd[16527]: reverse mapping checking getaddrinfo for 64.79.111.4.rdns.continuumdatacenters.com [64.79.111.4] failed - POSSIBLE BREAK-IN ATTEMPT!
