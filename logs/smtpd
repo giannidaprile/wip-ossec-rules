@@ -8,3 +8,4 @@ Nov 25 01:28:45 ix smtpd[4224]: 1259112525.AbdJ8tDSelOWn16C: from=<root@tiny>, r
 Jan  8 01:30:45 tiny smtpd[18682]: 1262914225.YfKQNsGh7vFa7e2q: from=<root@tiny>, relay=0@localhost [IPv6:::1], stat=LocalError (500 Line too long)
 May 10 23:32:09 ix smtpd[15646]: (none): from=<@>, relay=power.example.com [192.168.17.249], stat=LocalError (500 Command unrecognized)
 May 11 01:40:49 ix smtpd[15646]: 1273556449.uHHIXLagKFbXXnNy: from=<root@ix.example.com>, relay=0@localhost [IPv6:::1], stat=LocalError (500 5.0.0 Line too long)
+Jun 29 13:50:06 power smtpd[1462]: 1277789704.eAEyryx4h198WX2u: to=<ddp@ix.example.com>, delay=44102, relay=(none) [], stat=LocalError (Domain does not exist)

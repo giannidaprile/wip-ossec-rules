@@ -666,6 +666,12 @@ p@ix.example.com)-->
     <description>Command unrecognized.</description>
   </rule>
 
+  <!--Jun 29 13:50:06 power smtpd[1462]: 1277789704.eAEyryx4h198WX2u: to=<ddp@ix.example.com>, delay=44102, relay=(none) [], stat=LocalError (Domain does not exist)-->
+  <rule id="320019" level="5">
+    <if_sid>320000</if_sid>
+    <match>Domain does not exist</match>
+    <description>XXX Domain does not exist.</description>
+  </rule>
 
   <rule id="290000" level="0" noalert="1">
     <program_name>flowd</program_name>
