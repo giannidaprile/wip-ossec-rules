@@ -9,3 +9,4 @@ Apr 27 17:38:41 power prelude-manager: WARNING: signal 15 received, terminating 
 Apr 27 16:55:22 tiny prelude-pflogger: WARNING: prelude-client: error: TLS handshake failed: Error in the push function..  In order to register this sensor, please run: prelude-admin register prelude-pflogger-tiny "idmef:w" 192.168.17.249 --uid 0 --gid 0  Profile 'prelude-pflogger-tiny' does not exist. In order to create it, please run: prelude-admin register "prelude-pflogger-tiny" "idmef:w" <manager address> --uid 0 --gid 0.
 Apr 27 16:56:44 power prelude-lml: WARNING: Failover enabled: connection error with 127.0.0.1:4690: End of file
 Apr 27 16:56:54 power prelude-lml: WARNING: Failover enabled: connection error with 127.0.0.1:4690: Connection refused
+Jun 15 21:37:38 power Prewikka ERROR: [192.168.17.10:3884 alert_listing] Authentication failed
