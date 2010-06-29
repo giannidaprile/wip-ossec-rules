@@ -979,6 +979,12 @@ p@ix.example.com)-->
     <description>XXX I/O error.</description>
   </rule>
  
+  <!--Jun 22 12:01:13 junction sshd[11283]: Received disconnect from 212.14.228.46: 11: Bye Bye-->
+  <rule id="370010" level="1">
+    <if_sid>5700</if_sid>
+    <match>Received disconnect from</match>
+    <description>System disconnected from sshd.</description>
+  </rule>
 
 
 </group> <!-- SYSLOG,LOCAL -->
