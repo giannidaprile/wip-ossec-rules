@@ -18,3 +18,39 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct  7 13:22:29 localhost login: PAM [dlerror: <*unknown module path*>: cannot open shared object file: No such file or directory]'
+       hostname: 'localhost'
+       program_name: 'login'
+       log: 'PAM [dlerror: <*unknown module path*>: cannot open shared object file: No such file or directory]'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct  7 13:22:29 localhost login: PAM (login) illegal module type: include'
+       hostname: 'localhost'
+       program_name: 'login'
+       log: 'PAM (login) illegal module type: include'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
