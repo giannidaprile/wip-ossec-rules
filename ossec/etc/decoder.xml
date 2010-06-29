@@ -181,13 +181,22 @@
   <order>srcip</order>
 </decoder>
 
+<!--Jun 16 19:56:51 blocker sshd[2263]: refused connect from 119.147.1.1 (119.147.1.1)-->
 <decoder name="ssh-osx-refuse">
   <parent>sshd</parent>
   <prematch>^refused connect </prematch>
-  <regex offset="after_prematch">^from (\S+)$</regex>
+  <regex offset="after_prematch">^from (\S+)</regex>
   <order>srcip</order>
 </decoder>
 
+
+<!--Jun 22 12:01:13 junction sshd[11283]: Received disconnect from 212.14.228.46: 11: Bye Bye-->
+<decoder name="ssh-disconnect">
+  <parent>sshd</parent>
+  <prematch>^Received disconnect </prematch>
+  <regex offset="after_prematch">^from (\S+):</regex>
+  <order>srcip</order>
+</decoder>
 
 
 <!--
