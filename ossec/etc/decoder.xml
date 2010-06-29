@@ -189,6 +189,13 @@
   <order>srcip</order>
 </decoder>
 
+<!--Apr 14 19:28:21 gorilla sshd[31274]: Connection closed by 192.168.1.33-->
+<decoder name="ssh-closed">
+  <parent>sshd</parent>
+  <prematch>^Connection closed </prematch>
+  <regex offset="after_prematch">^by (\S+)$</regex>
+  <order>srcip</order>
+</decoder>
 
 <!--Jun 22 12:01:13 junction sshd[11283]: Received disconnect from 212.14.228.46: 11: Bye Bye-->
 <decoder name="ssh-disconnect">
@@ -196,6 +203,14 @@
   <prematch>^Received disconnect </prematch>
   <regex offset="after_prematch">^from (\S+):</regex>
   <order>srcip</order>
+</decoder>
+
+<!--Oct  8 11:18:26 172.16.51.132 sshd[7618]: error: PAM: Module is unknown for ddp from 172.16.51.1-->
+<decoder name="ssh-pam">
+  <parent>sshd</parent>
+  <prematch>PAM: Module</prematch>
+  <regex>for (\S+) from (\S+)$</regex>
+  <order>user, srcip</order>
 </decoder>
 
 
