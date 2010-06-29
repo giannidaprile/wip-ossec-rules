@@ -312,3 +312,57 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 23 03:45:35 ix smartd[1285]: Device: /dev/sd0c [SAT], Self-Test Log error count increased from 0 to 4'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Device: /dev/sd0c [SAT], Self-Test Log error count increased from 0 to 4'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330026'
+       Level: '2'
+       Description: 'Self-test log error count increased.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 23 04:15:35 ix smartd[1285]: Device: /dev/sd0c [SAT], new Self-Test Log error at hour timestamp 0'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Device: /dev/sd0c [SAT], new Self-Test Log error at hour timestamp 0'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330027'
+       Level: '2'
+       Description: 'Self-test log error.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 23 15:45:35 ix smartd[1285]: Device: /dev/sd0c [SAT], previous self-test completed with error (unknown test element)'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Device: /dev/sd0c [SAT], previous self-test completed with error (unknown test element)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330028'
+       Level: '2'
+       Description: 'Previous self-test completed, but had an error.'
+**Alert to be generated.
+
+
