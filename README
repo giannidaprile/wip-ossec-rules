@@ -11,6 +11,18 @@ ossec/rules/local_rules.xml - This file contains the new rules for testing.
 ossec/etc/* - These files (except local_decoder.xml) are from the OSSEC snapshots, and are being used for testing.
 ossec/etc/local_decoder.xml - This file contains the new decoders for testing.
 
+Regress testing:
+Regress testing can be done on individual log sets. The ossec directory should contain the ossec rulesets, as 
+well as a populated local_rules.xml. The decoders are also present, and should be up to date. Inside of the 
+ossec directory the following command can be used to test a log set and save the output to a file:
+  cat ../logs/logfile | /var/ossec/bin/ossec-logtest -D . -c etc/ossec.conf 2>&1 | grep -v \
+    'ossec-testrule: INFO: Started' > ../results/logfile.results
+The "logfile.results" can be compared to previous runs with the following command (as long as the command 
+has been run previously for that logset):
+  hg diff results/logfile.results
+Regressions should be easy to spot if there were no changes to the rule set or decoders being tested. For 
+new rulesets/decoders, going through the file by hand may be the best option right now.
+
 Rule IDs:
 200001+: new arpwatch rules 
 210000+: new avahi related rules
