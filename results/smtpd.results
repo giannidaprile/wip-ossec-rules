@@ -187,3 +187,21 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 29 13:50:06 power smtpd[1462]: 1277789704.eAEyryx4h198WX2u: to=<ddp@ix.example.com>, delay=44102, relay=(none) [], stat=LocalError (Domain does not exist)'
+       hostname: 'power'
+       program_name: 'smtpd'
+       log: '1277789704.eAEyryx4h198WX2u: to=<ddp@ix.example.com>, delay=44102, relay=(none) [], stat=LocalError (Domain does not exist)'
+
+**Phase 2: Completed decoding.
+       decoder: 'smtpd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '320019'
+       Level: '5'
+       Description: 'Cannot resolve the to domain.'
+**Alert to be generated.
+
+
