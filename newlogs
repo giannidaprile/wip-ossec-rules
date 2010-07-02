@@ -7,15 +7,12 @@ Jun 30 17:20:56 junction /bsd: WARNING: R/W mount of /home denied.  Filesystem i
 Jun 30 17:03:17 junction /bsd: RTC BIOS diagnostic error 80<clock_battery>
 Jun 30 17:04:38 junction smartd[19809]: Device: /dev/wd0c, appears to lack SMART Error log; disabling -l error (override with -T permissive Directive)
 Jun 30 17:20:56 junction /bsd: WARNING: R/W mount of /home denied.  Filesystem is not clean - run fsck
-
-
-[2010-07-01 10:12:55.843 EDT] [local]:postgres ERROR:  role "reconnoiter" already exists
 Jul  1 10:55:24 junction argus[20159]: 01 Jul 10 10:55:24.234443 illegal char '.'
 Jul  1 10:55:28 junction argus[2167]: 01 Jul 10 10:55:28.797574 syntax error
 Jul  1 17:52:05 junction argus[22951]: 01 Jul 10 17:52:05.074699 ArgusOpenInterface: pcap_open_live /dev/bpf0: Permission denied
 Jul  1 19:50:00 ix ntpd[11685]: bad peer from pool pool.ntp.org (64.73.32.135)
 
-
+[2010-07-01 10:12:55.843 EDT] [local]:postgres ERROR:  role "reconnoiter" already exists
 
 WinEvtLog: Application: ERROR(11): Microsoft-Windows-CAPI2: (no user): no domain: Bunny-PC: http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab A required certificate is not within its validity period when verifying against the current system clock or the timestamp in the signed file.
 
