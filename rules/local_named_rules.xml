@@ -114,6 +114,84 @@ oopback6.arpa failed: not at top of zone-->
     <description>Configuration error, option master used in a master zone.</description>
   </rule>
 
+  <!--Jun 16 19:18:28 ix named[17897]: client 192.168.17.17#48823: transfer of 'domain.com/IN': AXFR ended-->
+  <rule id="310014" level="0">
+    <if_sid>12100</if_sid>
+    <match>AXFR ended</match>
+    <description>Zone transfer ended.</description>
+  </rule>
+
+  <!--Jun 16 19:18:28 junction named[14448]: transfer of 'example.com/IN' from 192.168.17.9#53: connected using 192.168.17.17#48823-->
+  <rule id="310015" level="1">
+    <if_sid>12100</if_sid>
+    <match>^transfer of</match>
+    <description>Zone transfer.</description>
+  </rule>
+
+  <!--Jun 28 22:49:11 junction named[8435]: transfer of 'example.com/IN' from 192.168.17.9#53: failed to connect: connection refused-->
+  <rule id="310016" level="4">
+    <if_sid>310015</if_sid>
+    <match>failed to connect: connection refused</match>
+    <description>Zone transfer failed, unable to connect to master.</description>
+  </rule>
+
+  <!--Jun 29 09:39:11 ix named[17743]: listening on all IPv6 interfaces failed-->
+  <rule id="310017" level="2">
+    <if_sid>12100</if_sid>
+    <match>IPv6 interfaces failed</match>
+    <description>Could not listen on IPv6 interface.</description>
+  </rule>
+
+  <!--Jun 29 09:40:11 ix named[17743]: creating IPv4 interface lo0 failed; interface ignored-->
+  <rule id="310018" level="2">
+    <if_sid>12100</if_sid>
+    <match>failed; interface ignored</match>
+    <description>Could not bind to an interface.</description>
+  </rule>
+
+  <!--Jun 29 10:38:38 junction named[8435]: transfer of 'example.net/IN' from 192.168.17.9#53: failed while receiving responses: not authoritative-->
+  <rule id="310019" level="1">
+    <if_sid>310015</if_sid>
+    <match>failed while receiving responses: not authoritative</match>
+    <description>Master is not authoritative for zone.</description>
+  </rule>
+
+  <!--Jun 30 17:03:17 junction named[24824]: none:0: open: /etc/named.conf: permission denied-->
+  <rule id="310020" level="4">
+    <if_sid>12100</if_sid>
+    <regex>open: \S+: permission denied$</regex>
+    <description>Could not open configuration file, permission denied.</description>
+  </rule>
+
+  <!--Jun 30 17:03:17 junction named[24824]: loading configuration: permission denied-->
+  <rule id="310021" level="4">
+    <if_sid>12100</if_sid>
+    <match>loading configuration: permission denied</match>
+    <description>Could not open configuration file, permission denied.</description>
+  </rule>
+
+  <!--Jul  1 10:07:17 ix named[13508]: client 192.168.17.17#3969: query: example.com IN SOA -E-->
+  <rule id="310022" level="0">
+    <if_sid>12100</if_sid>
+    <match>IN SOA -E</match>
+    <description>XXX Domain in SOE?</description>
+  </rule>
+
+  <!--Jul  1 18:38:30 junction named[23078]: transfer of 'trojanremoverpc.com/IN' from 192.168.17.9#53: failed to connect: host unreachable-->
+  <rule id="310023" level="4">
+    <if_sid>310015</if_sid>
+    <match>failed to connect: host unreachable</match>
+    <description>Master appears to be down.</description>
+  </rule>
+
+  <!--Jul  1 21:15:39 ix named[30050]: client 192.168.17.17#6511: query: example.com IN AXFR --->
+  <rule id="310024" level="0">
+    <if_sid>12100</if_sid>
+    <match>IN AXFR -</match>
+    <description>XXX Domain in transfer?</description>
+  </rule>
+
+
 
    
 </group> <!-- SYSLOG,LOCAL -->
