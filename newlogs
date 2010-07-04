@@ -1,6 +1,5 @@
 Jun  5 17:12:39 ix ddclient[13600]: WARNING:  forcing update of home from 11.111.11.111 to 11.111.11.111; 25 days since last update on Tue May 11 17:09:57 2010.
 Jun  5 17:12:40 ix ddclient[13600]: SUCCESS:  updating home: good: IP address set to 11.111.11.111
-Jun 28 22:54:52 ix ntpd[8392]: bind on 192.168.17.9 failed, skipping: Address already in use
 Jun 30 17:03:17 junction /bsd: RTC BIOS diagnostic error 80<clock_battery>
 Jun 30 17:04:38 junction smartd[19809]: Device: /dev/wd0c, appears to lack SMART Error log; disabling -l error (override with -T permissive Directive)
 Jun 30 17:20:56 junction /bsd: WARNING: R/W mount of /home denied.  Filesystem is not clean - run fsck
@@ -10,9 +9,6 @@ Jun 30 17:20:56 junction /bsd: WARNING: R/W mount of /home denied.  Filesystem i
 Jul  1 10:55:24 junction argus[20159]: 01 Jul 10 10:55:24.234443 illegal char '.'
 Jul  1 10:55:28 junction argus[2167]: 01 Jul 10 10:55:28.797574 syntax error
 Jul  1 17:52:05 junction argus[22951]: 01 Jul 10 17:52:05.074699 ArgusOpenInterface: pcap_open_live /dev/bpf0: Permission denied
-Jul  1 19:50:00 ix ntpd[11685]: bad peer from pool pool.ntp.org (64.73.32.135)
-Jul  2 22:06:30 richese ntpd[3465]: bad peer ix (192.168.17.9)
-Jul  2 22:07:58 ix ntpd[11685]: bad peer from pool pool.ntp.org (69.50.219.51)
 
 
 [2010-07-01 10:12:55.843 EDT] [local]:postgres ERROR:  role "reconnoiter" already exists
