@@ -1,0 +1,4 @@
+Jul  1 10:55:24 junction argus[20159]: 01 Jul 10 10:55:24.234443 illegal char '.'
+Jul  1 10:55:28 junction argus[2167]: 01 Jul 10 10:55:28.797574 syntax error
+Jul  1 17:52:05 junction argus[22951]: 01 Jul 10 17:52:05.074699 ArgusOpenInterface: pcap_open_live /dev/bpf0: Permission denied
+Jul  5 15:10:43 junction ratop[22380]: 15:10:43.658123 argus filter syntax error
