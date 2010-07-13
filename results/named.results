@@ -424,6 +424,7 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'named'
        srcip: '192.168.17.17'
+       url: 'example.com'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '310022'
@@ -458,6 +459,7 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'named'
        srcip: '192.168.17.17'
+       url: 'example.com'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '310024'
