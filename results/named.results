@@ -465,3 +465,21 @@ ossec-testrule: Type one log per line.
        Rule id: '310024'
        Level: '0'
        Description: 'XXX Domain in transfer?'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul 13 02:59:55 junction named[15915]: zone example.com/IN: refresh: unexpected rcode (SERVFAIL) from master 192.168.1.8#53 (source 0.0.0.0#0)'
+       hostname: 'junction'
+       program_name: 'named'
+       log: 'zone example.com/IN: refresh: unexpected rcode (SERVFAIL) from master 192.168.1.8#53 (source 0.0.0.0#0)'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12105'
+       Level: '4'
+       Description: 'Unexpected error while resolving domain.'
+**Alert to be generated.
+
+
