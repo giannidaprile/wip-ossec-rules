@@ -1,0 +1,59 @@
+  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  -->
+
+
+
+<!-- Modify it at your will. -->
+
+<group name="local,syslog,">
+
+  <rule id="400000" level="0" noalert="1">
+    <program_name>^ntpd</program_name>
+    <description>Grouping for ntpd rules.</description>
+  </rule>
+
+  <!--Apr  2 01:23:31 gorilla ntpd[27379]: bad sensor nmea0-->
+  <rule id="400010" level="1">
+    <if_sid>400000<if_sid>
+    <match>bad sensor</match>
+    <description>A time sensor is not working properly</description>
+  </rule>
+
+  <!--Apr 20 13:02:11 tiny ntpd[25875]: bad peer 192.168.1.233 (192.168.1.233)-->
+  <rule id="400011" level="1">
+    <if_sid>400000</if_sid>
+    <match>bad peer</match>
+    <description>Bad ntp peer.</description>
+  </rule>
+
+  <!--May 26 23:31:02 gorilla ntpd[29719]: bind on 192.168.1.233 failed, skipping: Can't assign requested address-->
+  <rule id="400012" level="2">
+    <if_sid>400000</if_sid>
+    <match>skipping: Can't assign requested address</match>
+    <description>Cannot bind to the assigned port.</description>
+  </rule>
+
+  <!--Jun 28 22:54:52 ix ntpd[8392]: bind on 192.168.17.9 failed, skipping: Address already in use-->
+  <rule id="400013" level="2">
+    <if_sid>400000</if_sid>
+    <match>skipping: Address already in use</match>
+    <description>Something is already bound to the assigned port.</description>
+  </rule>
+
+  <!--Jul  1 19:50:00 ix ntpd[11685]: bad peer from pool pool.ntp.org (64.73.32.135)-->
+  <rule id="400014" level="1">
+    <if_sid>400000</if_sid>
+    <match>bad peer from pool</match>
+    <description>Bad ntp peer.</description>
+  </rule>
+
+</group> <!-- SYSLOG,LOCAL -->
+
+
+<!-- EOF -->
