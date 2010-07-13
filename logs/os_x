@@ -4,3 +4,8 @@ Aug 14 03:15:07 bunnys-mac-mini cp: error processing extended attributes: Operat
 [Time 2009.08.14 07:15:07 UTC] [Facility user] [Sender cp] [PID -1] [Message error processing extended attributes: Operation not permitted] [Level 4] [UID -2][GID -2] [Host bunnys-mac-mini]
 Aug 22 13:11:29 bunnys-mac-mini launchproxy[1286]: /usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution
 [Time 2009.08.22 17:11:29 UTC] [Facility launchd] [Sender launchproxy] [PID 1286] [Message /usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution] [Level 4] [UID -2] [GID -2] [Host bunnys-mac-mini]
+Jul 13 08:40:30 wks5184 loginwindow[35]: in pam_sm_authenticate(): Failed to determine Kerberos principal name.
+Jul 13 08:46:01 wks5184 SystemStarter[2661]: The following StartupItems failed to start properly:
+Jul 13 08:46:01 wks5184 SystemStarter[2661]:  - execution of Startup script failed
+Jul 13 08:46:01 wks5184 SystemStarter[2661]: The following StartupItems were not attempted due to failure of a required service:
+Jul 13 08:48:17 wks5184 mdworker[702]: Error, could not create MachMessagePort for com.apple.AddressBook.abd
