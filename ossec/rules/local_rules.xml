@@ -1229,7 +1229,7 @@ p@ix.example.com)-->
   </rule>
 
   <rule id="400000" level="0" noalert="1">
-    <program_name>ntpd</program_name>
+    <program_name>^ntpd</program_name>
     <description>Grouping for ntpd rules.</description>
   </rule>
 
