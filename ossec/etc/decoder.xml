@@ -181,7 +181,6 @@
   <order>srcip</order>
 </decoder>
 
-<!--Jun 16 19:56:51 blocker sshd[2263]: refused connect from 119.147.1.1 (119.147.1.1)-->
 <decoder name="ssh-osx-refuse">
   <parent>sshd</parent>
   <prematch>^refused connect </prematch>
@@ -212,6 +211,9 @@
   <regex>for (\S+) from (\S+)$</regex>
   <order>user, srcip</order>
 </decoder>
+
+
+
 
 
 <!--
@@ -703,6 +705,16 @@
 <decoder name="named">
   <program_name>^named</program_name>
 </decoder>
+
+<!--Jul 12 18:00:02 junction named[15915]: client 192.168.17.9#24416: query: 8.17.168.192.in-addr.arpa IN PTR +-->
+<!--Attempting to pull the domain name out in extra_data-->
+<decoder name="named-query">
+  <parent>named</parent>
+  <prematch>: query: </prematch>
+  <regex>client (\S+)#\d+: query: (\S+) IN </regex>
+  <order>srcip,url</order>
+</decoder>
+
 
 <decoder name="named_client">
   <parent>named</parent>  
