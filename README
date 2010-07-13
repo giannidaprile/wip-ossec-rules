@@ -44,3 +44,4 @@ Rule IDs:
 370000+: sshd
 380000+: pam
 390000+: sensorsd
+400000+: ntpd
