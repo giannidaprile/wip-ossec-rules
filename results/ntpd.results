@@ -12,9 +12,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '400010'
+       Level: '1'
+       Description: 'A time sensor is not working properly'
 **Alert to be generated.
 
 
@@ -30,9 +30,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '400011'
+       Level: '1'
+       Description: 'Bad ntp peer.'
 **Alert to be generated.
 
 
@@ -48,9 +48,81 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
+       Rule id: '400012'
        Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Description: 'Cannot bind to the assigned port.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 28 22:54:52 ix ntpd[8392]: bind on 192.168.17.9 failed, skipping: Address already in use'
+       hostname: 'ix'
+       program_name: 'ntpd'
+       log: 'bind on 192.168.17.9 failed, skipping: Address already in use'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '400013'
+       Level: '2'
+       Description: 'Something is already bound to the assigned port.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  1 19:50:00 ix ntpd[11685]: bad peer from pool pool.ntp.org (64.73.32.135)'
+       hostname: 'ix'
+       program_name: 'ntpd'
+       log: 'bad peer from pool pool.ntp.org (64.73.32.135)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '400011'
+       Level: '1'
+       Description: 'Bad ntp peer.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  2 22:06:30 richese ntpd[3465]: bad peer ix (192.168.17.9)'
+       hostname: 'richese'
+       program_name: 'ntpd'
+       log: 'bad peer ix (192.168.17.9)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '400011'
+       Level: '1'
+       Description: 'Bad ntp peer.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  2 22:07:58 ix ntpd[11685]: bad peer from pool pool.ntp.org (69.50.219.51)'
+       hostname: 'ix'
+       program_name: 'ntpd'
+       log: 'bad peer from pool pool.ntp.org (69.50.219.51)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '400011'
+       Level: '1'
+       Description: 'Bad ntp peer.'
 **Alert to be generated.
 
 
