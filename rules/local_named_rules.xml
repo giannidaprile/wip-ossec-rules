@@ -191,6 +191,12 @@ oopback6.arpa failed: not at top of zone-->
     <description>XXX Domain in transfer?</description>
   </rule>
 
+  <!--Jul 13 17:09:30 junction named[15915]: client 192.168.17.10#53663: query: example.com IN A +-->
+  <rule id="310025" level="0">
+    <if_sid>12100</if_sid>
+    <match> IN A +</match>
+    <description>XXX Domain A record found?</description>
+  </rule>
 
 
    
