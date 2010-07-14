@@ -642,6 +642,20 @@ og-target=syslog ") interface="org.bluez.Manager" member="ListAdapters" error na
     <description>Cannot create pid file</description>
   </rule>
 
+  <!--Jun  5 17:12:39 ix ddclient[13600]: WARNING:  forcing update of home from 11.111.11.111 to 11.111.11.111; 25 days since last update on Tue May 11 17:09:57 2010.-->
+  <rule id="270012" level="0">
+    <if_sid>270000</if_sid>
+    <match>WARNING:  forcing update of</match>
+    <description>Forcing an update, since an update has not been necessary in a while.</description>
+  </rule>
+
+  <!--Jun  5 17:12:40 ix ddclient[13600]: SUCCESS:  updating home: good: IP address set to 11.111.11.111-->
+  <rule id="270013" level="0">
+    <if_sid>270000</if_sid>
+    <match>SUCCESS:  updating</match>
+    <description>ddclient successfully updated the IP address.</description>
+  </rule>
+
   <rule id="280000" level="0" noalert="1">
     <decoded_as>dropbear</decoded_as>
   </rule>
@@ -1302,8 +1316,6 @@ p@ix.example.com)-->
     <match>bad peer from pool</match>
     <description>Bad ntp peer.</description>
   </rule>
-
-
 
 
 </group> <!-- SYSLOG,LOCAL -->
