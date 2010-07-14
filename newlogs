@@ -1,7 +1,6 @@
 Jun  5 17:12:39 ix ddclient[13600]: WARNING:  forcing update of home from 11.111.11.111 to 11.111.11.111; 25 days since last update on Tue May 11 17:09:57 2010.
 Jun  5 17:12:40 ix ddclient[13600]: SUCCESS:  updating home: good: IP address set to 11.111.11.111
 Jun 30 17:03:17 junction /bsd: RTC BIOS diagnostic error 80<clock_battery>
-Jun 30 17:04:38 junction smartd[19809]: Device: /dev/wd0c, appears to lack SMART Error log; disabling -l error (override with -T permissive Directive)
 Jun 30 17:20:56 junction /bsd: WARNING: R/W mount of /home denied.  Filesystem is not clean - run fsck
 Jun 30 17:03:17 junction /bsd: RTC BIOS diagnostic error 80<clock_battery>
 Jun 30 17:20:56 junction /bsd: WARNING: R/W mount of /home denied.  Filesystem is not clean - run fsck
