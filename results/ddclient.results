@@ -54,3 +54,33 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  5 17:12:39 ix ddclient[13600]: WARNING:  forcing update of home from 11.111.11.111 to 11.111.11.111; 25 days since last update on Tue May 11 17:09:57 2010.'
+       hostname: 'ix'
+       program_name: 'ddclient'
+       log: 'WARNING:  forcing update of home from 11.111.11.111 to 11.111.11.111; 25 days since last update on Tue May 11 17:09:57 2010.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '270012'
+       Level: '0'
+       Description: 'Forcing an update, since an update has not been necessary in a while.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  5 17:12:40 ix ddclient[13600]: SUCCESS:  updating home: good: IP address set to 11.111.11.111'
+       hostname: 'ix'
+       program_name: 'ddclient'
+       log: 'SUCCESS:  updating home: good: IP address set to 11.111.11.111'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '270013'
+       Level: '0'
+       Description: 'ddclient successfully updated the IP address.'

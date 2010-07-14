@@ -366,3 +366,21 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul 13 18:01:52 junction smartd[17585]: Device: /dev/wd0c, appears to lack SMART Error log; disabling -l error (override with -T permissive Directive)'
+       hostname: 'junction'
+       program_name: 'smartd'
+       log: 'Device: /dev/wd0c, appears to lack SMART Error log; disabling -l error (override with -T permissive Directive)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330029'
+       Level: '2'
+       Description: 'Device does not have a SMART Error log available.'
+**Alert to be generated.
+
+

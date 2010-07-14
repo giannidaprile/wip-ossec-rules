@@ -264,3 +264,47 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '220015'
+       Level: '1'
+       Description: 'XXX Timeout in atascsi_passthru_done.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 30 17:03:17 junction /bsd: RTC BIOS diagnostic error 80<clock_battery>'
+       hostname: 'junction'
+       program_name: '/bsd'
+       log: 'RTC BIOS diagnostic error 80<clock_battery>'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '220016'
+       Level: '1'
+       Description: 'XXX Clock battery error 80'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 30 17:20:56 junction /bsd: WARNING: R/W mount of /home denied.  Filesystem is not clean - run fsck'
+       hostname: 'junction'
+       program_name: '/bsd'
+       log: 'WARNING: R/W mount of /home denied.  Filesystem is not clean - run fsck'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '220014'
+       Level: '3'
+       Description: 'Unclean filesystem, run fsck.'
+**Alert to be generated.
+
+
