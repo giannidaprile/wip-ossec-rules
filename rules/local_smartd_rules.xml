@@ -155,7 +155,7 @@
   <!--Jul 13 18:01:52 junction smartd[17585]: Device: /dev/wd0c, appears to lack SMART Error log; disabling -l error (override with -T permissive Directive)-->
   <rule id="330029" level="2">
     <if_sid>330000</if_sid>
-    <match>appearst o lack SMART Error log</match>
+    <match>appears to lack SMART Error log</match>
     <description>Device does not have a SMART Error log available.</description>
   </rule>
   
