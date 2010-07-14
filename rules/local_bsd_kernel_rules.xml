@@ -127,6 +127,19 @@
     <description>XXX Timeout in atascsi_passthru_done.</description>
   </rule>
 
+  <!--Jun 30 17:03:17 junction /bsd: RTC BIOS diagnostic error 80<clock_battery>-->
+  <rule id="220016" level="1">
+    <if_sid>220000</if_sid>
+    <regex>RTC BIOS diagnostic error 80\pclock_battery\p</regex>
+    <description>XXX Clock battery error 80</description>
+  </rule>
+
+  <!--Jun 30 17:20:56 junction /bsd: WARNING: R/W mount of /home denied.  Filesystem is not clean - run fsck-->
+  <rule id="220017" level="3">
+    <if_sid>220000</if_sid>
+    <match>Filesystem is not clean - run fsck</match>
+    <description>A filesystem is not clean and a fsck is necessary.</description>
+  </rule>
 
 
 
