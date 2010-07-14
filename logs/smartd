@@ -20,4 +20,4 @@ Jun 16 06:45:04 ix smartd[14769]: Device: /dev/sd0c [SAT], previous self-test co
 Jun 23 03:45:35 ix smartd[1285]: Device: /dev/sd0c [SAT], Self-Test Log error count increased from 0 to 4
 Jun 23 04:15:35 ix smartd[1285]: Device: /dev/sd0c [SAT], new Self-Test Log error at hour timestamp 0
 Jun 23 15:45:35 ix smartd[1285]: Device: /dev/sd0c [SAT], previous self-test completed with error (unknown test element)
-
+Jul 13 18:01:52 junction smartd[17585]: Device: /dev/wd0c, appears to lack SMART Error log; disabling -l error (override with -T permissive Directive)
