@@ -7,6 +7,9 @@ Jun 30 17:03:17 junction /bsd: RTC BIOS diagnostic error 80<clock_battery>
 Jun 30 17:04:38 junction smartd[19809]: Device: /dev/wd0c, appears to lack SMART Error log; disabling -l error (override with -T permissive Directive)
 Jun 30 17:20:56 junction /bsd: WARNING: R/W mount of /home denied.  Filesystem is not clean - run fsck
 Jul  6 10:18:42 junction argus[27695]: 06 Jul 10 10:18:42.881971 argus: ArgusEstablishListen: bind() error
+Jul 13 18:01:21 junction /bsd: RTC BIOS diagnostic error 80<clock_battery>
+Jul 13 18:01:52 junction smartd[17585]: Device: /dev/wd0c, appears to lack SMART Error log; disabling -l error (override with -T permissive Directive)
+
 
 [2010-07-01 10:12:55.843 EDT] [local]:postgres ERROR:  role "reconnoiter" already exists
 
