@@ -13,8 +13,31 @@
 
 <group name="local,syslog,">
 
-  
-  
+  <rule id="410000" level="0" noalert="1">
+    <program_name>^snmpd</program_name>
+    <description>Grouping for snmpd rules.</description>
+  </rule>
+ 
+  <!--Jan 16 19:28:36 buffalo1 syslog: snmpd : SNMP daemon successfully started-->
+  <rule id="410010" level="0">
+    <match>snmpd : SNMP daemon successfully started</match>
+    <description>snmpd has been started.</description>
+  </rule>
+
+  <!--Jun 29 14:15:16 junction snmpd[16830]: fatal: snmpe: failed to bind SNMP UDP socket-->
+  <rule id="410011" level="2">
+    <if_sid>410000</if_sid>
+    <match>snmpe: failed to bind SNMP UDP socket</match>
+    <description>snmpd is unable to bind to the UDP socket.</description>
+  </rule>
+
+  <!--Jun 29 14:15:16 junction snmpd[27091]: check_child: lost child: snmp engine exited-->
+  <rule id="410012" level="3">
+    <if_sid>410000</if_sid>
+    <match>check_child: lost child: snmp engine exited</match>                                                                                                         
+    <description>snmpd has exited.</description>
+  </rule>
+ 
    
 </group> <!-- SYSLOG,LOCAL -->
 
