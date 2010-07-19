@@ -17,6 +17,7 @@
   <rule id="400010" level="0">
     <if_sid>5300</if_sid>
     <match>unknown class</match>
+    <info>OpenBSD uses login classes, and an inappropriate login class was used.</info>
     <description>A user has attempted to su to an unknown class.</description>
   </rule>
   
