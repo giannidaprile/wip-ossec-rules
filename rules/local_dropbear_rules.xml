@@ -11,10 +11,11 @@
 
 <!-- Modify it at your will. -->
 
-<group name="local,syslog,">
+<group name="syslog,sshd">
 
   <rule id="280000" level="0" noalert="1">
     <decoded_as>dropbear</decoded_as>
+    <description>Grouping for dropbear rules.</description>
   </rule>
 
   <!--Jan 22 21:21:20 buffalo1 dropbear[3859]: exit before auth: Failed to get kex value-->
@@ -36,17 +37,21 @@
     <if_sid>280000</if_sid>
     <match>bad password attempt for</match>
     <description>Bad password attempt.</description>
+    <group>authentication_failed,</group>
   </rule>
 
-<!--XXXX-->
-<!--Add a frequency rule here-->
-
+  <rule id="280017" level="10" frequency="6" timeframe="120" ignore="60">
+    <if_matched_sid>280012</if_matched_sid>
+    <same_source_ip />
+    <description>dropbear brute force attempt.</description>
+    <group>authentication_failures,</group>
+  </rule>
 
   <!--Mar 22 16:22:18 buffalo1 dropbear[25017]: exit after auth (root): Disconnect received-->
-  <rule id="280013" level="1">
+  <rule id="280013" level="0">
     <if_sid>280000</if_sid>
     <regex>exit after auth \(\S+\): Disconnect received</regex>
-    <description>User disconnected</description>
+    <description>User disconnected.</description>
   </rule>
 
   <!--Mar 22 16:29:14 buffalo1 dropbear[25121]: exit before auth: Exited normally-->
@@ -54,23 +59,31 @@
     <if_sid>280000</if_sid>
     <match>exit before auth</match>
     <description>Client exited before authentication.</description>
+    <group>recon,</group>
   </rule>
 
-  <!--XXX-->
-  <!--Add a frequency rule here-->
+  <rule id="280018" level="10" frequency="6" timeframe="120" ignore="60">
+    <if_matched_sid>280014</if_matched_sid>
+    <same_source_ip />
+    <description>dropbear brute force attempt.</description> 
+    <group>authentication_failures,</group>
+  </rule>
+
 
   <!--Mar 22 16:29:51 buffalo1 dropbear[25132]: exit before auth: Incompatible remote version 'SSH-1.5-NmapNSE_1.0'-->
   <rule id="280015" level="1">
     <if_sid>280000</if_sid>
     <match>Incompatible remote version</match>
     <description>Incompatible remote version. XXX</description>
+    <group>recon,</group>
   </rule>
  
   <!--Mar 22 16:22:17 buffalo1 dropbear[25017]: password auth succeeded for 'root' from 192.168.17.9:39285-->
-  <rule id="280016" level="1">
+  <rule id="280016" level="0">
     <if_sid>280000</if_sid>
     <match>password auth succeeded for</match>
     <description>User successfully logged in using a password.</description>
+    <group>authentication_success,</group>
   </rule>
  
    
