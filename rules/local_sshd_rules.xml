@@ -31,21 +31,23 @@
   <rule id="370012" level="0">
     <if_sid>5700</if_sid>
     <match>error: buffer_get_bignum2_ret: negative numbers not supported</match>
-    <description>XXX</description>
+    <info>This maybe a bad key in authorized_keys.</info>
+    <description>SSHD key error.</description>
   </rule>
 
   <!--Jun 11 06:32:17 gorilla sshd[28293]: fatal: buffer_get_bignum2: buffer error-->
   <rule id="370013" level="0">
     <if_sid>5700</if_sid>
     <match>fatal: buffer_get_bignum2: buffer error</match>
-    <description>XXX</description>
+    <info>This error may relate to ssh key handling.</info>
+    <description>SSHD key error.</description>
   </rule>
 
   <!--Jun 19 20:56:00 tiny sshd[11605]: fatal: Write failed: Host is down-->
   <rule id="370014" level="1">
     <if_sid>5700</if_sid>
     <match>fatal: Write failed: Host is down</match>
-    <description>XXX Host ungracefully disconnected.</description>
+    <description>Host ungracefully disconnected.</description>
   </rule>
 
   <!--Oct  8 11:18:26 172.16.51.132 sshd[7618]: error: PAM: Module is unknown for ddp from 172.16.51.1-->
@@ -67,7 +69,7 @@
     <if_sid>5700</if_sid>
     <match>Authentication service cannot retrieve user credentials</match>
     <info>May be related to PAM module errors.</info>
-    <description>XXX Authentication was not able to retrieve user credentials.</description>
+    <description>Authentication services were not able to retrieve user credentials.</description>
   </rule>
 
   <!--Oct  8 10:07:27 y sshd[7644]: debug1: attempt 2 failures 2-->
@@ -88,7 +90,8 @@
   <rule id="370020" level="1">
     <if_sid>5700</if_sid>
     <match>AKASSH_Version_Mapper1.</match>
-    <description>XXX SSH Scanning.</description>
+    <description>SSH Scanning.</description>
+    <group>recon,</group>
   </rule>
 
    
