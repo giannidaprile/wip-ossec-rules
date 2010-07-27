@@ -320,9 +320,9 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '220018'
+       Level: '3'
+       Description: 'I/O error on a storage device'
 **Alert to be generated.
 
 
