@@ -47,3 +47,4 @@ Rule IDs:
 400000+: ntpd
 410000+: snmpd
 420000+: mountd
+430000+: pulseaudio
