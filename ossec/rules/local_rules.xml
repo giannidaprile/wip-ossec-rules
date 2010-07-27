@@ -217,13 +217,13 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <description>XXX Clock battery error 80</description>
   </rule>
 
-  <!--Jun 30 17:20:56 junction /bsd: WARNING: R/W mount of /home denied.  Filesystem is not clean - run fsck-->
-  <rule id="220017" level="3">
+  <!--Jul 27 11:19:20 richese /bsd: softraid0: i/o error on block 528-->
+  <rule id="220018" level="3">
     <if_sid>220000</if_sid>
-    <match>Filesystem is not clean - run fsck</match>
-    <description>A filesystem is not clean and a fsck is necessary.</description>
+    <match>i/o error on block</match>
+    <description>I/O error on a storage device</description>
+    <group>storage, sysadmin,</group>
   </rule>
-
 
   <rule id="230000" level="0" noalert="1">
     <decoded_as>python</decoded_as>

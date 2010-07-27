@@ -308,3 +308,21 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul 27 11:19:20 richese /bsd: softraid0: i/o error on block 528'
+       hostname: 'richese'
+       program_name: '/bsd'
+       log: 'softraid0: i/o error on block 528'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
