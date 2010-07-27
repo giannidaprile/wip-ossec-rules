@@ -2,7 +2,6 @@ Jul 15 18:32:43 server fsmpm[16951]: PortMapper: Deleting stale mapping for id 1
 Jul 15 18:33:10 server fsmpm[16951]: NSS: Name Server '192.168.1.2' (192.168.1.2) heartbeat lost, unable to send message.
 Jul 15 18:33:10 server fsmpm[16951]: NSS: Name Server '192.168.1.2' (192.168.1.2) port is 55040, revision is 0x0102.
 Jul 15 18:33:10 server fsmpm[16951]: PortMapper: Added mapping from id 192.168.1.2 to addr 192.168.1.2
-Jul 27 11:19:20 richese /bsd: softraid0: i/o error on block 528
 
 WinEvtLog: Application: ERROR(11): Microsoft-Windows-CAPI2: (no user): no domain: Bunny-PC: http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab A required certificate is not within its validity period when verifying against the current system clock or the timestamp in the signed file.
 
