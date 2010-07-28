@@ -174,9 +174,9 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310009'
-       Level: '1'
-       Description: 'XXX not at top of zone'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
