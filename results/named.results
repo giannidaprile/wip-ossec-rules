@@ -165,18 +165,18 @@ ossec-testrule: Type one log per line.
 
 
 **Phase 1: Completed pre-decoding.
-       full event: 'Nov 12 13:16:04 ix named[16880]: zone 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loading from master file standard/loopback6.arpa failed: not at top of zone  '
+       full event: 'Nov 12 13:16:04 ix named[16880]: zone 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loading from master file standard/loopback6.arpa failed: not at top of zone'
        hostname: 'ix'
        program_name: 'named'
-       log: 'zone 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loading from master file standard/loopback6.arpa failed: not at top of zone  '
+       log: 'zone 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loading from master file standard/loopback6.arpa failed: not at top of zone'
 
 **Phase 2: Completed decoding.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '310009'
+       Level: '1'
+       Description: 'Origin of zone and owner name of SOA do not match.'
 **Alert to be generated.
 
 
