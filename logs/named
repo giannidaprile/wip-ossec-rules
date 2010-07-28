@@ -7,7 +7,7 @@ May  4 14:53:13 gorilla named[29877]: /etc/blocked.zones_slave:9637: zone 'inter
 Jun  8 21:06:21 gorilla named[25104]: starting BIND 9.4.2-P2
 Jun  8 21:46:19 gorilla named[27527]: zone 17.168.192.in-addr.arpa/IN: NS 'gorilla.17.168.192.IN-ADDR.ARPA' has no address records (A or AAAA)
 Sep  8 12:38:41 gorilla named[699]: zone dns.org/IN: (master) removed
-Nov 12 13:16:04 ix named[16880]: zone 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loading from master file standard/loopback6.arpa failed: not at top of zone  
+Nov 12 13:16:04 ix named[16880]: zone 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loading from master file standard/loopback6.arpa failed: not at top of zone
 Nov 12 14:16:44 ix named[3709]: client 192.168.17.249#7784: zone transfer 'example.com/AXFR/IN' denied
 Jan 11 15:05:38 ix named[2200]: reloading configuration failed: unexpected end of input
 Jun 16 19:01:01 junction named[1112]: /etc/named.conf:98: open: /etc/blocked.zones: file not found
