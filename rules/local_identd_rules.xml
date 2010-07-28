@@ -15,7 +15,7 @@
 
   <rule id="300000" level="0" noalert="1">
     <program_name>identd</program_name>
-    <desciption>Grouping for identd rules.</description>
+    <description>Grouping for identd rules.</description>
   </rule>
 
   <!--Jun  8 08:48:28 gorilla identd[8029]: scanf: invalid-port(s): 0 , 0 from gorilla.monkey.local-->
