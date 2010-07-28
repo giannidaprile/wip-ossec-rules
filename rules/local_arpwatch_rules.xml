@@ -22,6 +22,7 @@
     <if_sid>7200</if_sid>
     <match>/dev/bpf0: Permission denied</match>
     <description>arpwatch probably run with wrong permissions</description>
+    <group>arpwatch,</group>
   </rule>
   
  
