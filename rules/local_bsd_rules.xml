@@ -23,6 +23,7 @@
     <if_sid>340000</if_sid>
     <match>group deleted</match>
     <description>Group deleted.</description> 
+  </rule>
   
    
 </group> <!-- SYSLOG,LOCAL -->
