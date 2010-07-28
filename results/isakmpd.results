@@ -12,14 +12,6 @@ ossec-testrule: Type one log per line.
        decoder: 'isakmpd'
        srcip: '192.168.1.233'
 
-**Phase 3: Completed filtering (rules).
-       Rule id: '340010'
-       Level: '1'
-       Description: 'XXX Bad isakmpd, no cookie.'
-**Alert to be generated.
-
-
-
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  4 18:15:48 vpn-gw isakmpd[13559]: message_parse_payloads: invalid next payload type RESERVED_MIN in payload of type 10'
@@ -29,14 +21,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'isakmpd'
-
-**Phase 3: Completed filtering (rules).
-       Rule id: '34011'
-       Level: '1'
-       Description: 'XXX'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.
@@ -49,14 +33,6 @@ ossec-testrule: Type one log per line.
        decoder: 'isakmpd'
        srcip: '192.168.1.1'
 
-**Phase 3: Completed filtering (rules).
-       Rule id: '340012'
-       Level: '1'
-       Description: 'XXX Invalid payload type.'
-**Alert to be generated.
-
-
-
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  4 18:15:59 alphen-vpn-gw isakmpd[28891]: transport_send_messages: giving up on exchange ISAKMP-peer-node-ldn, no response from peer 192.168.1.1:500'
@@ -67,11 +43,3 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'isakmpd'
        srcip: '192.168.1.1'
-
-**Phase 3: Completed filtering (rules).
-       Rule id: '340013'
-       Level: '1'
-       Description: 'XXX No response from peer.'
-**Alert to be generated.
-
-

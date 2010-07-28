@@ -13,11 +13,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '220002'
-       Level: '1'
-       Description: 'XXX'
-**Alert to be generated.
-
-
+       Level: '0'
+       Description: 'Check media in optical drive.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -32,7 +29,7 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '220003'
        Level: '1'
-       Description: 'XXX'
+       Description: 'A disk has timed out.'
 **Alert to be generated.
 
 
@@ -106,7 +103,7 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '220007'
        Level: '1'
-       Description: 'XXX Michael MIC failure (wifi)'
+       Description: 'Michael MIC failure: Checksum failure in the tkip protocol.'
 **Alert to be generated.
 
 
@@ -160,7 +157,7 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '220009'
        Level: '1'
-       Description: 'XXX acpithinkpad event'
+       Description: 'Unknown acpithinkpad event'
 **Alert to be generated.
 
 
@@ -196,7 +193,7 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '220011'
        Level: '1'
-       Description: 'XXX'
+       Description: 'Unknown ACPI event (bug 6299 in OpenBSD bug tracking system).'
 **Alert to be generated.
 
 
@@ -214,7 +211,7 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '220012'
        Level: '1'
-       Description: 'XXX usb?'
+       Description: 'USB diagnostic message.'
 **Alert to be generated.
 
 
@@ -232,7 +229,7 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '220013'
        Level: '1'
-       Description: 'XXX'
+       Description: 'Possible APM or ACPI event.'
 **Alert to be generated.
 
 
@@ -250,7 +247,7 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '220001'
        Level: '1'
-       Description: 'XXX'
+       Description: 'A timeout occurred waiting for a transfer.'
 **Alert to be generated.
 
 

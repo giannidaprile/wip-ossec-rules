@@ -71,11 +71,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '280016'
-       Level: '1'
+       Level: '0'
        Description: 'User successfully logged in using a password.'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.
@@ -89,11 +86,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '280013'
-       Level: '1'
-       Description: 'User disconnected'
-**Alert to be generated.
-
-
+       Level: '0'
+       Description: 'User disconnected.'
 
 
 **Phase 1: Completed pre-decoding.

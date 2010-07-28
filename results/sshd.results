@@ -33,7 +33,8 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '370012'
        Level: '0'
-       Description: 'XXX'
+       Description: 'SSHD key error.'
+       Info - Text: 'This maybe a bad key in authorized_keys.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -48,7 +49,8 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '370013'
        Level: '0'
-       Description: 'XXX'
+       Description: 'SSHD key error.'
+       Info - Text: 'This error may relate to ssh key handling.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -82,7 +84,7 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '370014'
        Level: '1'
-       Description: 'XXX Host ungracefully disconnected.'
+       Description: 'Host ungracefully disconnected.'
 **Alert to be generated.
 
 
@@ -170,7 +172,7 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '370017'
        Level: '4'
-       Description: 'XXX Authentication was not able to retrieve user credentials.'
+       Description: 'Authentication services were not able to retrieve user credentials.'
        Info - Text: 'May be related to PAM module errors.'
 **Alert to be generated.
 
@@ -535,7 +537,7 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '370020'
        Level: '1'
-       Description: 'XXX SSH Scanning.'
+       Description: 'SSH Scanning.'
 **Alert to be generated.
 
 
