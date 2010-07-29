@@ -483,3 +483,22 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul 29 11:19:18 buzzell named[10305]: client 192.168.17.17#14126: bad zone transfer request: 'construtoranovak.com.br/IN': non-authoritative zone (NOTAUTH)'
+       hostname: 'buzzell'
+       program_name: 'named'
+       log: 'client 192.168.17.17#14126: bad zone transfer request: 'construtoranovak.com.br/IN': non-authoritative zone (NOTAUTH)'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+       srcip: '192.168.17.17'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310026'
+       Level: '3'
+       Description: 'Bad zone transfer request.'
+**Alert to be generated.
+
+
