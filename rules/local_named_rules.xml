@@ -198,6 +198,12 @@ oopback6.arpa failed: not at top of zone-->
     <description>XXX Domain A record found?</description>
   </rule>
 
+  <!--Jul 29 11:19:18 buzzell named[10305]: client 192.168.17.17#14126: bad zone transfer request: 'construtoranovak.com.br/IN': non-authoritative zone (NOTAUTH)-->
+  <rule id="3120026" level="3">
+    <if_sid>12100</if_sid>
+    <regex>client \S+: bad zone transfer request: \S+: non-authoritative zone \(NOTAUTH\)</regex>
+    <description>Bad zone transfer request.</description>
+  </rule>
 
    
 </group> <!-- SYSLOG,LOCAL -->
