@@ -48,3 +48,5 @@ Rule IDs:
 410000+: snmpd
 420000+: mountd
 430000+: pulseaudio
+440000+: smbd
+

@@ -1414,6 +1414,70 @@ conf).-->
     <description>A user has attempted to su to an unknown class.</description>
   </rule>
 
+  <rule id="440000" level="0" noalert="1">
+    <decoded_as>nmbd</decoded_as>
+  </rule>
+
+  <!--Aug 22 13:11:29 bunnys-mac-mini launchproxy[1286]: /usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution-->
+  <rule id="440001" level="1">
+    <if_sid>13100</if_sid>
+    <match>Non-recoverable failure in name resolution</match>
+    <description>Failure in name resolutioni.</description>
+    <group>smbd,</group>
+  </rule>
+
+  <!--Dec 25 18:11:29 ix smbd[22614]:   ERROR: smbd is already running. File /var/run/smbd.pid exists and process id 3203 is running.-->
+  <rule id="440010" level="1">
+    <if_sid>13100</if_sid>
+    <match>smbd is already running</match>
+    <description>An attempt has been made to start smbd but the process is already running.</description>
+    <group>smbd,</group>
+  </rule>
+
+  <!--Dec 25 18:11:33 ix nmbd[554]:   ERROR: nmbd is already running. File /var/run/nmbd.pid exists and process id 31838 is running.-->
+  <rule id="440011" level="1">
+    <if_sid>440000</if_sid>
+    <match>nmbd is already running</match>
+    <description>An attempt has been made to start nmbd but the process is already running.</description>
+    <group>smbd,nmbd,</group>
+  </rule>
+
+  <!--Mar 13 16:29:04 ix smbd[6238]:   Connection denied from 0.0.0.0-->
+  <rule id="440012" level="2">
+    <if_sid>13100</if_sid>
+    <match>Connection denied from</match>
+    <description>Connection was denied.</description>
+    <group>smbd,</group>
+  </rule>
+
+  <!--Mar 13 16:29:04 ix smbd[6238]:   write_data: write failure in writing to client 0.0.0.0. Error Socket is not connected-->
+  <rule id="440013" level="3">
+    <if_sid>13100</if_sid>
+    <match>Error Socket is not connected</match>
+    <description>Socket is not connected, write failed.</description>
+    <group>smbd,</group>
+  </rule>
+
+  <!--Nov  9 04:56:33 giediprime kernel: gvfsd-smb[8203]: segfault at c ip 08061322 sp bfcd78a0 error 4 in gvfsd-smb[8048000+22000-->
+  <rule id="440014" level="3">
+    <decoded_as>iptables</decoded_as>
+    <program_name>gvfsd-smb</program_name>
+    <regex>segfault at \S+ ip \S+ sp \S+ error \d+ in</regex>
+    <description>Segfault in gvfs-smb.</description>
+    <group>smbd,</group>
+  </rule>
+
+  <!--[Time 2009.08.22 17:11:29 UTC] [Facility launchd] [Sender launchproxy] [PID 1286] [Message /usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name re
+solution] [Level 4] [UID -2] [GID -2] [Host bunnys-mac-mini]-->
+  <rule id="440015" level="2">
+    <program_name>launchproxy</program_name>
+    <match>smbd: getnameinfo(): Non-recoverable failure in name resolution</match>
+    <description>Failure in name resolution</description>
+    <group>smbd,</group>
+  </rule>
+
+
+
 </group> <!-- SYSLOG,LOCAL -->
 
 
