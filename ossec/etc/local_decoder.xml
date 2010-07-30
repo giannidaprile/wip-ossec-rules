@@ -132,3 +132,6 @@
   <order>srcip</order>
 </decoder>
 
+<decoder name="launchproxy">
+  <program_name>launchproxy</program_name>
+</decoder>
