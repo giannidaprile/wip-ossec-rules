@@ -120,7 +120,7 @@
 <decoder name="smbd-from">
   <parent>smbd</parent>
   <prematch> from (\S+)$</prematch>
-  <regex> from (\S+)$</prematch>
+  <regex> from (\S+)$</regex>
   <order>dstip</order>
 </decoder>
 
