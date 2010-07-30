@@ -9,12 +9,12 @@ ossec-testrule: Type one log per line.
        log: '/usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'launchproxy'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '440001'
+       Level: '1'
+       Description: 'Failure in name resolution.'
 **Alert to be generated.
 
 
@@ -30,9 +30,9 @@ ossec-testrule: Type one log per line.
        decoder: 'smbd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '440010'
+       Level: '1'
+       Description: 'An attempt has been made to start smbd but the process is already running.'
 **Alert to be generated.
 
 
@@ -45,12 +45,12 @@ ossec-testrule: Type one log per line.
        log: '  ERROR: nmbd is already running. File /var/run/nmbd.pid exists and process id 31838 is running.'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'nmbd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '440011'
+       Level: '1'
+       Description: 'An attempt has been made to start nmbd but the process is already running.'
 **Alert to be generated.
 
 
@@ -84,9 +84,9 @@ ossec-testrule: Type one log per line.
        decoder: 'smbd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '440013'
+       Level: '3'
+       Description: 'Socket is not connected, write failed.'
 **Alert to be generated.
 
 
@@ -102,9 +102,9 @@ ossec-testrule: Type one log per line.
        decoder: 'iptables'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '440014'
+       Level: '3'
+       Description: 'Segfault in gvfs-smb.'
 **Alert to be generated.
 
 
@@ -120,9 +120,9 @@ ossec-testrule: Type one log per line.
        decoder: 'smbd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '440013'
+       Level: '3'
+       Description: 'Socket is not connected, write failed.'
 **Alert to be generated.
 
 
@@ -138,9 +138,9 @@ ossec-testrule: Type one log per line.
        decoder: 'smbd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '440013'
+       Level: '3'
+       Description: 'Socket is not connected, write failed.'
 **Alert to be generated.
 
 
@@ -153,12 +153,12 @@ ossec-testrule: Type one log per line.
        log: '/usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'launchproxy'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '440001'
+       Level: '1'
+       Description: 'Failure in name resolution.'
 **Alert to be generated.
 
 

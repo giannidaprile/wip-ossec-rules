@@ -9,7 +9,7 @@ ossec-testrule: Type one log per line.
        log: 'Can't delete exports for /tmp/xxxy: Invalid argument'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'mountd'
 
 
 **Phase 1: Completed pre-decoding.
@@ -19,12 +19,12 @@ ossec-testrule: Type one log per line.
        log: 'Bad exports list line /data01'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'mountd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '420011'
+       Level: '3'
+       Description: 'Bad exports configuration.'
 **Alert to be generated.
 
 
@@ -37,12 +37,13 @@ ossec-testrule: Type one log per line.
        log: 'Refused mount RPC from host 192.168.17.10 port 45659'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'mountd'
+       srcip: '192.168.17.10'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '420012'
+       Level: '4'
+       Description: 'A mount RPC was refused.'
 **Alert to be generated.
 
 
@@ -55,12 +56,12 @@ ossec-testrule: Type one log per line.
        log: 'Bad opt mast'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'mountd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
+       Rule id: '420013'
        Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Description: 'XXX Bad option?'
 **Alert to be generated.
 
 
@@ -73,12 +74,12 @@ ossec-testrule: Type one log per line.
        log: 'Bad exports list line /data4 -network'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'mountd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '420011'
+       Level: '3'
+       Description: 'Bad exports configuration.'
 **Alert to be generated.
 
 

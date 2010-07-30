@@ -11,6 +11,11 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        No decoder matched.
 
+**Phase 3: Completed filtering (rules).
+       Rule id: '390010'
+       Level: '0'
+       Description: 'A sensor has been attached.'
+
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  7 03:03:51 ix sensorsd[4027]: nmea0.timedelta0: 0.335796 secs, CRITICAL'
@@ -21,6 +26,14 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        No decoder matched.
 
+**Phase 3: Completed filtering (rules).
+       Rule id: '390011'
+       Level: '5'
+       Description: 'A sensor is in a CRITICAL state.'
+**Alert to be generated.
+
+
+
 
 **Phase 1: Completed pre-decoding.
        full event: 'Oct 28 21:28:36 ix sensorsd[4027]: nmea0.percent0: 100.00%, WARN'
@@ -30,3 +43,26 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '390012'
+       Level: '2'
+       Description: 'A sensor is in a WARN state.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  5 15:22:22 junction sensorsd[26757]: startup, system has 15 sensors'
+       hostname: 'junction'
+       program_name: 'sensorsd'
+       log: 'startup, system has 15 sensors'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '390013'
+       Level: '0'
+       Description: 'sensorsd was started.'

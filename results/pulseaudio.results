@@ -3,18 +3,18 @@ ossec-testrule: Type one log per line.
 
 
 **Phase 1: Completed pre-decoding.
-       full event: 'Oct 22 11:33:40 172.16.51.135 fedora11 pulseaudio[3424]: main.c: Daemon startup failed.'
-       hostname: '172.16.51.135'
-       program_name: '(null)'
-       log: 'fedora11 pulseaudio[3424]: main.c: Daemon startup failed.'
+       full event: 'Oct 22 11:33:40 fedora11 pulseaudio[3424]: main.c: Daemon startup failed.'
+       hostname: 'fedora11'
+       program_name: 'pulseaudio'
+       log: 'main.c: Daemon startup failed.'
 
 **Phase 2: Completed decoding.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '430010'
+       Level: '1'
+       Description: 'Pulseaudio daemon could not start.'
 **Alert to be generated.
 
 
@@ -30,12 +30,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
+       Rule id: '430011'
+       Level: '0'
+       Description: 'Unknown DBus Service error from ListAdapters reply.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -48,12 +45,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
+       Rule id: '430012'
+       Level: '0'
+       Description: 'D-Bus error while parsing HAL data.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -66,12 +60,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
+       Rule id: '430013'
+       Level: '0'
+       Description: 'Access denied error from ListAdapters reply.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -84,12 +75,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
+       Rule id: '430014'
+       Level: '0'
+       Description: 'XXX Failed to push data into queue.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -102,9 +90,6 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
+       Rule id: '430015'
+       Level: '0'
+       Description: 'XXX Error in pulseaudio code.'
