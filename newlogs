@@ -5,3 +5,7 @@ Jul 15 18:33:10 server fsmpm[16951]: PortMapper: Added mapping from id 192.168.1
 
 WinEvtLog: Application: ERROR(11): Microsoft-Windows-CAPI2: (no user): no domain: Bunny-PC: http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab A required certificate is not within its validity period when verifying against the current system clock or the timestamp in the signed file.
 
+
+2010/08/02 14:17:39 ossec-dbd(1230): ERROR: Invalid element in the configuration: 'list'.
+2010/08/02 14:17:39 ossec-dbd(1220): ERROR: Error loading the rules: 'local_rules.xml'.
+2010/08/02 14:17:39 ossec-dbd(1202): ERROR: Configuration error at '/var/ossec/etc/ossec.conf'. Exiting.
