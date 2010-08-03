@@ -8,7 +8,7 @@ cd ${HOMEDIR}/ossec || ( echo "Cannot chdir to ${HOMEDIR}/ossec!" ; exit 1 )
 
 for i in ${RULES}; do
   cat ${HOMEDIR}/logs/${i} | sudo /var/ossec/bin/ossec-logtest -D ${HOMEDIR}/ossec -c ${HOMEDIR}/ossec/etc/ossec.conf 2>&1 | \
-    grep -v 'ossec-testrule: INFO: Started' > ${HOMEDIR}/results/${i}.results
+    grep -v 'ossec-testrule: INFO:' > ${HOMEDIR}/results/${i}.results
 done
 
 cd ${HOMEDIR} || ( echo "Cannot chdir to ${HOMEDIR}!" ; exit 1 )
