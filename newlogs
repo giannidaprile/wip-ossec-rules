@@ -2,7 +2,10 @@ Jul 15 18:32:43 server fsmpm[16951]: PortMapper: Deleting stale mapping for id 1
 Jul 15 18:33:10 server fsmpm[16951]: NSS: Name Server '192.168.1.2' (192.168.1.2) heartbeat lost, unable to send message.
 Jul 15 18:33:10 server fsmpm[16951]: NSS: Name Server '192.168.1.2' (192.168.1.2) port is 55040, revision is 0x0102.
 Jul 15 18:33:10 server fsmpm[16951]: PortMapper: Added mapping from id 192.168.1.2 to addr 192.168.1.2
-Aug  3 10:20:57 junction named[19435]: zone update2.winprotection-suite.com/IN: refresh: failure trying master 192.168.17.8#53 (source 0.0.0.0#0): operation canceled 
+Aug  3 10:20:57 junction named[19435]: zone update2.winprotection-suite.com/IN: refresh: failure trying master 192.168.17.8#53 (source 0.0.0.0#0): operation canceled
+Aug  3 11:12:41 ix collectd[26538]: read-function of plugin `ntpd' failed. Will suspend it for 20 seconds.
+Aug  3 11:12:41 ix collectd[26538]: recv(2) failed: Connection refused
+ug  3 11:22:46 ix collectdmon[11906]: Error: couldn't open PID-file (/var/run/collectdmon.pid) for writing: Permission denied
 
 WinEvtLog: Application: ERROR(11): Microsoft-Windows-CAPI2: (no user): no domain: Bunny-PC: http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab A required certificate is not within its validity period when verifying against the current system clock or the timestamp in the signed file.
 
