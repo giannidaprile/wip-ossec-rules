@@ -5,7 +5,8 @@ Jul 15 18:33:10 server fsmpm[16951]: PortMapper: Added mapping from id 192.168.1
 Aug  3 10:20:57 junction named[19435]: zone update2.winprotection-suite.com/IN: refresh: failure trying master 192.168.17.8#53 (source 0.0.0.0#0): operation canceled
 Aug  3 11:12:41 ix collectd[26538]: read-function of plugin `ntpd' failed. Will suspend it for 20 seconds.
 Aug  3 11:12:41 ix collectd[26538]: recv(2) failed: Connection refused
-ug  3 11:22:46 ix collectdmon[11906]: Error: couldn't open PID-file (/var/run/collectdmon.pid) for writing: Permission denied
+Aug  3 11:22:46 ix collectdmon[11906]: Error: couldn't open PID-file (/var/run/collectdmon.pid) for writing: Permission denied
+Aug  3 12:46:08 junction collectd[3827]: uc_update: Value too old: name = junction.example.com/interface/if_errors-lo0; value time = 1280853968; last cache update = 1280853968;
 
 WinEvtLog: Application: ERROR(11): Microsoft-Windows-CAPI2: (no user): no domain: Bunny-PC: http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab A required certificate is not within its validity period when verifying against the current system clock or the timestamp in the signed file.
 
