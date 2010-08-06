@@ -16,6 +16,7 @@
   <rule id="220000" level="0" noalert="1">
     <decoded_as>bsd_kernel</decoded_as>
     <description>Grouping of bsd_kernel alerts</description>
+    <group>bsd,</group>
   </rule>
 
   <!--Mar  3 10:30:10 ix /bsd: ichiic0: abort failed, status 0x40<INUSE>-->
@@ -23,6 +24,7 @@
     <if_sid>220000</if_sid>
     <match>ichiic0: abort failed, status 0x40</match> 
     <description>A timeout occurred waiting for a transfer.</description>
+    <group>bsd,</group>
   </rule>
 
   <!--Apr  3 18:35:14 power /bsd: cd0(atapiscsi0:0:0): Check Condition (error 0x70) on opcode 0x0-->
@@ -46,6 +48,7 @@
     <if_sid>220000</if_sid>
     <match>arp info overwritten for</match>
     <description>arp info has been overwritten for a host</description>
+    <group>bsd,</group>
   </rule>
 
   <!--Jun  8 21:46:18 gorilla /bsd: WARNING: / was not properly unmounted-->
@@ -61,6 +64,7 @@
     <if_sid>220000</if_sid>
     <match>UKC> quit</match>
     <description>UKC was used, possibly modifying a kernel at boot time.</description>
+    <group>bsd,</group>
   </rule>
 
   <!--Oct 15 20:06:43 mobile /bsd: run0: Michael MIC failure-->
@@ -69,7 +73,7 @@
     <if_sid>220000</if_sid>
     <match>Michael MIC failure</match>
     <description>Michael MIC failure: Checksum failure in the tkip protocol.</description>
-    <group>wireless,</group>
+    <group>wireless,bsd,</group>
   </rule>
 
   <!--Oct 17 07:39:56 power /bsd: wd0: soft error (corrected)-->
@@ -78,7 +82,7 @@
     <match>soft error (corrected)</match>
     <description>A soft error has been corrected on a hard drive, </description>
     <description>this is a possible early sign of failure.</description>
-    <group>storage, bsd, sysadmin,</group>
+    <group>storage,bsd,sysadmin,</group>
   </rule>
 
   <!--Jan 12 19:40:27 x60 /bsd: acpithinkpad0: unknown event 0x6022-->
@@ -87,7 +91,7 @@
     <regex>acpithinkpad\d:</regex>
     <match>unknown event</match>
     <description>Unknown acpithinkpad event</description>
-    <group>sysadmin, acpi,</group>
+    <group>sysadmin,acpi,bsd,</group>
   </rule>
 
   <!--Jan 12 19:40:45 x60 /bsd: acpitz1: Critical temperature, shutting down-->
@@ -95,7 +99,7 @@
     <if_sid>220000</if_sid>
     <match>Critical temperature, shutting down</match>
     <description>System shutdown due to temperature</description>
-    <group>sysadmin, acpi,</group>
+    <group>sysadmin,acpi,bsd,</group>
   </rule>
 
   <!--Jan 18 09:22:45 bart /bsd: acpitz0: _AL0[0] _PR0 failed-->
@@ -103,7 +107,7 @@
     <if_sid>220000</if_sid>
     <match>_AL0[0] _PR0 failed</match>
     <description>Unknown ACPI event (bug 6299 in OpenBSD bug tracking system).</description>
-    <group>sysadmin, acpi,</group>
+    <group>sysadmin,acpi,bsd,</group>
   </rule>
 
   <!--Feb 26 11:18:59 ix /bsd: ehci_freex: xfer=0xffff8000003ef800 not busy, 0x4f4e5155-->
@@ -111,6 +115,7 @@
     <if_sid>220000</if_sid>
     <match>ehci_freex: xfer=0xffff8000003ef800 not busy, 0x4f4e5155</match>
     <description>USB diagnostic message.</description>
+    <group>bsd,</group>
   </rule>
 
   <!--Feb 28 23:23:21 ix /bsd: ichiic0: abort failed, status 0x0-->
@@ -119,7 +124,7 @@
     <if_sid>220000</if_sid>
     <match>ichiic0: abort failed, status 0x0</match>
     <description>Possible APM or ACPI event.</description>
-    <group>sysadmin, acpi,</group>
+    <group>sysadmin,acpi,bsd,</group>
   </rule>
 
   <!--May 31 21:45:14 ix /bsd: WARNING: R/W mount of /data4 denied.  Filesystem is not clean - run fsck-->
@@ -131,17 +136,19 @@
   </rule>
   
   <!--Jun 15 21:15:03 ix /bsd: atascsi_passthru_done, timeout-->
-  <rule id="220015" level="1">
+  <rule id="220015" level="0">
     <if_sid>220000</if_sid>
     <match>atascsi_passthru_done, timeout</match>
-    <description>XXX Timeout in atascsi_passthru_done.</description>
+    <description>Timeout in atascsi_passthru_done.</description>
+    <group>bsd,</group>
   </rule>
 
   <!--Jun 30 17:03:17 junction /bsd: RTC BIOS diagnostic error 80<clock_battery>-->
-  <rule id="220016" level="1">
+  <rule id="220016" level="0">
     <if_sid>220000</if_sid>
     <regex>RTC BIOS diagnostic error 80\pclock_battery\p</regex>
-    <description>XXX Clock battery error 80</description>
+    <description>Clock battery error 80</description>
+    <group>bsd,</group>
   </rule>
 
   <!--Jul 27 11:19:20 richese /bsd: softraid0: i/o error on block 528-->
@@ -149,7 +156,7 @@
     <if_sid>220000</if_sid>
     <match>i/o error on block</match>
     <description>I/O error on a storage device</description>
-    <group>storage, sysadmin,</group>
+    <group>storage,sysadmin,bsd,</group>
   </rule>
 
 
