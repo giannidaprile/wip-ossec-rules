@@ -1,4 +1,4 @@
-<!-- @(#) $Id: proftpd_rules.xml,v 1.18 2010/03/04 20:12:33 dcid Exp $
+<!-- @(#) $Id: proftpd_rules.xml,v 1.19 2010/08/09 20:07:48 dcid Exp $
   -  Official Proftpd rules for OSSEC.
   -
   -  Copyright (C) 2009 Trend Micro Inc.
@@ -80,7 +80,8 @@
     <match>Refused PORT </match> 
     <description>Attempt to bypass firewall that can't adequately</description>
     <description> keep state of FTP traffic.</description>
-    <info>http://www.kb.cert.org/vuls/id/328867</info>
+    <info type="link">http://www.kb.cert.org/vuls/id/328867</info>
+    <info type="text">US-Cert Note VU#328867: Multiple vendors' firewalls do not adequately keep state of FTP traffic</info>
   </rule>
 
   <rule id="11210" level="10">

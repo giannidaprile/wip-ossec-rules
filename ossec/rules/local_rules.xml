@@ -12,11 +12,6 @@
 
 <group name="local,syslog,">
 
-  <!-- Note that rule id 5711 is defined at the ssh_rules file
-    -  as a ssh failed login. This is just an example
-    -  since ip 1.1.1.1 shouldn't be used anywhere.
-    -  Level 0 means ignore.
-    -->
   <!--Oct 13 12:03:19 ix arpwatch: pcap open re0: /dev/bpf0: Permission denied-->
   <rule id="200001" level="1">
     <if_sid>7200</if_sid>
@@ -24,23 +19,25 @@
     <description>arpwatch probably run with wrong permissions</description>
     <group>arpwatch,</group>
   </rule>
-
+  
   <rule id="210000" level="0" noalert="1">
     <decoded_as>avahi</decoded_as>
     <description>Grouping for avahi alerts</description>
+    <group>avahi,</group>
   </rule>
 
   <rule id="210001" level="0" noalert="1">
     <decoded_as>avahi-dnsconfd</decoded_as>
     <description>Grouping for avahi-dnsconfd</description>
+    <group>avahi,</group>
   </rule>
 
-  <!--Jul  8 00:47:19 gorilla avahi-daemon[32088]: dbus_bus_get_private(): Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or di
-rectory-->
-  <rule id="210010" level="1">
+  <!--Jul  8 00:47:19 gorilla avahi-daemon[32088]: dbus_bus_get_private(): Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory-->
+  <rule id="210010" level="0">
     <if_sid>210000</if_sid>
     <match>Failed to connect to socket</match>
-    <description>XXX Could not connect to socket</description>
+    <description>Could not connect to socket</description>
+    <group>avahi,</group>
   </rule>
 
   <!--Jul  8 00:47:19 gorilla avahi-daemon[32088]: WARNING: Failed to contact D-Bus daemon.-->
@@ -48,26 +45,37 @@ rectory-->
     <if_sid>210000</if_sid>
     <match>Failed to contact D-Bus daemon</match>
     <description>Cannot connect to D-Bus daemon</description>
+    <group>avahi,</group>
   </rule>
 
   <!--Jul  8 00:59:06 gorilla avahi-daemon[22180]: IP_DROP_MEMBERSHIP failed: Can't assign requested address-->
-  <rule id="210012" level="1">
+  <rule id="210012" level="0">
     <if_sid>210000</if_sid>
     <match>Can't assign requested address</match>
     <description>Cannot assign requested address</description>
+    <group>avahi,</group>
   </rule>
 
-  <!--Sep  6 01:56:16 gorilla avahi-dnsconfd[30635]: Failed to parse browsing line: <28>Sep  6 01:56:16 avahi-daemon[13441]: Invalid query packet.ansfer o
-n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\^L\^R\^\\^A-->
-  <rule id="210013" level="1">
+  <!--Sep  6 01:56:16 gorilla avahi-dnsconfd[30635]: Failed to parse browsing line: <28>Sep  6 01:56:16 avahi-daemon[13441]: Invalid query packet.ansfer on gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\^L\^R\^\\^A-->
+  <rule id="210013" level="0">
     <if_sid>210001</if_sid>
-    <match>Invalid query packet.ansfer</match>
-    <description>XXX</description>
+    <match>Failed to parse browsing line</match>
+    <description>Failed to parse a browsing line.</description>
+    <group>avahi,</group>
+  </rule>
+
+  <!--Sep  6 01:56:16 avahi-daemon[13441]: Invalid query packet.ansfer on gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\^L\^R\^\\^A-->
+  <rule id="210014" level="0">
+    <if_sid>210001</if_sid>
+    <match>Invalid query packet.ansfer on</match>
+    <description>Invalid query packet.</description>
+    <group>avahi,</group>
   </rule>
   
   <rule id="220000" level="0" noalert="1">
     <decoded_as>bsd_kernel</decoded_as>
     <description>Grouping of bsd_kernel alerts</description>
+    <group>bsd,</group>
   </rule>
 
   <!--Mar  3 10:30:10 ix /bsd: ichiic0: abort failed, status 0x40<INUSE>-->
@@ -75,6 +83,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <if_sid>220000</if_sid>
     <match>ichiic0: abort failed, status 0x40</match> 
     <description>A timeout occurred waiting for a transfer.</description>
+    <group>bsd,</group>
   </rule>
 
   <!--Apr  3 18:35:14 power /bsd: cd0(atapiscsi0:0:0): Check Condition (error 0x70) on opcode 0x0-->
@@ -98,6 +107,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <if_sid>220000</if_sid>
     <match>arp info overwritten for</match>
     <description>arp info has been overwritten for a host</description>
+    <group>bsd,</group>
   </rule>
 
   <!--Jun  8 21:46:18 gorilla /bsd: WARNING: / was not properly unmounted-->
@@ -113,6 +123,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <if_sid>220000</if_sid>
     <match>UKC> quit</match>
     <description>UKC was used, possibly modifying a kernel at boot time.</description>
+    <group>bsd,</group>
   </rule>
 
   <!--Oct 15 20:06:43 mobile /bsd: run0: Michael MIC failure-->
@@ -121,7 +132,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <if_sid>220000</if_sid>
     <match>Michael MIC failure</match>
     <description>Michael MIC failure: Checksum failure in the tkip protocol.</description>
-    <group>wireless,</group>
+    <group>wireless,bsd,</group>
   </rule>
 
   <!--Oct 17 07:39:56 power /bsd: wd0: soft error (corrected)-->
@@ -130,7 +141,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <match>soft error (corrected)</match>
     <description>A soft error has been corrected on a hard drive, </description>
     <description>this is a possible early sign of failure.</description>
-    <group>storage, bsd, sysadmin,</group>
+    <group>storage,bsd,sysadmin,</group>
   </rule>
 
   <!--Jan 12 19:40:27 x60 /bsd: acpithinkpad0: unknown event 0x6022-->
@@ -139,7 +150,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <regex>acpithinkpad\d:</regex>
     <match>unknown event</match>
     <description>Unknown acpithinkpad event</description>
-    <group>sysadmin, acpi,</group>
+    <group>sysadmin,acpi,bsd,</group>
   </rule>
 
   <!--Jan 12 19:40:45 x60 /bsd: acpitz1: Critical temperature, shutting down-->
@@ -147,7 +158,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <if_sid>220000</if_sid>
     <match>Critical temperature, shutting down</match>
     <description>System shutdown due to temperature</description>
-    <group>sysadmin, acpi,</group>
+    <group>sysadmin,acpi,bsd,</group>
   </rule>
 
   <!--Jan 18 09:22:45 bart /bsd: acpitz0: _AL0[0] _PR0 failed-->
@@ -155,7 +166,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <if_sid>220000</if_sid>
     <match>_AL0[0] _PR0 failed</match>
     <description>Unknown ACPI event (bug 6299 in OpenBSD bug tracking system).</description>
-    <group>sysadmin, acpi,</group>
+    <group>sysadmin,acpi,bsd,</group>
   </rule>
 
   <!--Feb 26 11:18:59 ix /bsd: ehci_freex: xfer=0xffff8000003ef800 not busy, 0x4f4e5155-->
@@ -163,6 +174,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <if_sid>220000</if_sid>
     <match>ehci_freex: xfer=0xffff8000003ef800 not busy, 0x4f4e5155</match>
     <description>USB diagnostic message.</description>
+    <group>bsd,</group>
   </rule>
 
   <!--Feb 28 23:23:21 ix /bsd: ichiic0: abort failed, status 0x0-->
@@ -171,7 +183,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <if_sid>220000</if_sid>
     <match>ichiic0: abort failed, status 0x0</match>
     <description>Possible APM or ACPI event.</description>
-    <group>sysadmin, acpi,</group>
+    <group>sysadmin,acpi,bsd,</group>
   </rule>
 
   <!--May 31 21:45:14 ix /bsd: WARNING: R/W mount of /data4 denied.  Filesystem is not clean - run fsck-->
@@ -183,17 +195,19 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
   </rule>
   
   <!--Jun 15 21:15:03 ix /bsd: atascsi_passthru_done, timeout-->
-  <rule id="220015" level="1">
+  <rule id="220015" level="0">
     <if_sid>220000</if_sid>
     <match>atascsi_passthru_done, timeout</match>
-    <description>XXX Timeout in atascsi_passthru_done.</description>
+    <description>Timeout in atascsi_passthru_done.</description>
+    <group>bsd,</group>
   </rule>
 
   <!--Jun 30 17:03:17 junction /bsd: RTC BIOS diagnostic error 80<clock_battery>-->
-  <rule id="220016" level="1">
+  <rule id="220016" level="0">
     <if_sid>220000</if_sid>
     <regex>RTC BIOS diagnostic error 80\pclock_battery\p</regex>
-    <description>XXX Clock battery error 80</description>
+    <description>Clock battery error 80</description>
+    <group>bsd,</group>
   </rule>
 
   <!--Jul 27 11:19:20 richese /bsd: softraid0: i/o error on block 528-->
@@ -201,7 +215,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <if_sid>220000</if_sid>
     <match>i/o error on block</match>
     <description>I/O error on a storage device</description>
-    <group>storage, sysadmin,</group>
+    <group>storage,sysadmin,bsd,</group>
   </rule>
 
   <rule id="340000" level="0" noalert="1">
@@ -331,6 +345,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
   <rule id="280000" level="0" noalert="1">
     <decoded_as>dropbear</decoded_as>
     <description>Grouping for dropbear rules.</description>
+    <group>ssh,dropbear,</group>
   </rule>
 
   <!--Jan 22 21:21:20 buffalo1 dropbear[3859]: exit before auth: Failed to get kex value-->
@@ -338,6 +353,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <if_sid>280000</if_sid>
     <match>Failed to get kex value</match>
     <description>Failed to get key exchange value</description>
+    <group>ssh,dropbear,</group>
   </rule>
 
   <!--Jan 22 21:21:20 buffalo1 dropbear[3859]: Premature kexdh_init message received-->
@@ -345,6 +361,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <if_sid>280000</if_sid>
     <match>Premature kexdh_init message received</match>
     <description>Premature kexdh_init message</description>
+    <group>ssh,dropbear,</group>
   </rule>
 
   <!--Mar 24 15:25:51 buffalo1 dropbear[4092]: bad password attempt for 'root' from 192.168.17.9:5543-->
@@ -352,14 +369,14 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <if_sid>280000</if_sid>
     <match>bad password attempt for</match>
     <description>Bad password attempt.</description>
-    <group>authentication_failed,</group>
+    <group>authentication_failed,ssh,dropbear,</group>
   </rule>
 
   <rule id="280017" level="10" frequency="6" timeframe="120" ignore="60">
     <if_matched_sid>280012</if_matched_sid>
     <same_source_ip />
     <description>dropbear brute force attempt.</description>
-    <group>authentication_failures,</group>
+    <group>authentication_failures,ssh,dropbear,</group>
   </rule>
 
   <!--Mar 22 16:22:18 buffalo1 dropbear[25017]: exit after auth (root): Disconnect received-->
@@ -367,6 +384,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <if_sid>280000</if_sid>
     <regex>exit after auth \(\S+\): Disconnect received</regex>
     <description>User disconnected.</description>
+    <group>ssh,dropbear,</group>
   </rule>
 
   <!--Mar 22 16:29:14 buffalo1 dropbear[25121]: exit before auth: Exited normally-->
@@ -374,14 +392,14 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <if_sid>280000</if_sid>
     <match>exit before auth</match>
     <description>Client exited before authentication.</description>
-    <group>recon,</group>
+    <group>recon,ssh,dropbear,</group>
   </rule>
 
   <rule id="280018" level="10" frequency="6" timeframe="120" ignore="60">
     <if_matched_sid>280014</if_matched_sid>
     <same_source_ip />
     <description>dropbear brute force attempt.</description> 
-    <group>authentication_failures,</group>
+    <group>authentication_failures,ssh,dropbear,</group>
   </rule>
 
 
@@ -389,8 +407,8 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
   <rule id="280015" level="1">
     <if_sid>280000</if_sid>
     <match>Incompatible remote version</match>
-    <description>Incompatible remote version. XXX</description>
-    <group>recon,</group>
+    <description>Incompatible remote version.</description>
+    <group>recon,ssh,dropbear,</group>
   </rule>
  
   <!--Mar 22 16:22:17 buffalo1 dropbear[25017]: password auth succeeded for 'root' from 192.168.17.9:39285-->
@@ -398,9 +416,9 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <if_sid>280000</if_sid>
     <match>password auth succeeded for</match>
     <description>User successfully logged in using a password.</description>
-    <group>authentication_success,</group>
+    <group>authentication_success,ssh,dropbear,</group>
   </rule>
-
+ 
   <rule id="290000" level="0" noalert="1">
     <program_name>flowd</program_name>
     <description>Grouping for flowd rules.</description>
@@ -452,7 +470,6 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <description>Grouping for identd rules.</description>
   </rule>
 
-  <!--Jun  8 08:48:28 gorilla identd[8029]: scanf: invalid-port(s): 0 , 0 from gorilla.monkey.local-->
   <rule id="300010" level="1">
     <if_sid>300000</if_sid>
     <match>scanf: invalid-port</match>
@@ -465,7 +482,7 @@ n gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\
     <regex>read from \S+: EOF</regex>
     <description>Unexpected EOF</description>
   </rule>
-  
+
   <rule id="350000" level="0" noalert="1">
     <program_name>irqbalance</program_name>
     <description>Grouping for irqbalance rules.</description>
@@ -819,7 +836,7 @@ oopback6.arpa failed: not at top of zone-->
   </rule>
 
   <!--Jul 29 11:19:18 buzzell named[10305]: client 192.168.17.17#14126: bad zone transfer request: 'construtoranovak.com.br/IN': non-authoritative zone (NOTAUTH)-->
-  <rule id="310026" level="3">
+  <rule id="3120026" level="3">
     <if_sid>12100</if_sid>
     <regex>client \S+: bad zone transfer request: \S+: non-authoritative zone \(NOTAUTH\)</regex>
     <description>Bad zone transfer request.</description>
@@ -865,6 +882,11 @@ oopback6.arpa failed: not at top of zone-->
     <description>Bad ntp peer.</description>
   </rule>
 
+  <rule id="450000" level="0" noalert="1">
+    <decoded_as>launchproxy</decoded_as>
+    <description>Grouping for launchproxy rules</description>
+  </rule>
+  
   <!--Apr 14 13:33:50 fedora10 gdm-session-worker[2484]: pam_unix(gdm:auth): conversation failed-->
   <rule id="380010" level="1">
     <if_sid>5500</if_sid>
@@ -1045,6 +1067,59 @@ conf).-->
     <if_sid>230005</if_sid>
     <match>error: Device not found</match>
     <description>hp-makeuri could not find the printer device</description>
+  </rule>
+
+  <rule id="440000" level="0" noalert="1">
+    <decoded_as>nmbd</decoded_as>
+  </rule>
+
+  <!--Aug 22 13:11:29 bunnys-mac-mini launchproxy[1286]: /usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution-->
+  <rule id="440009" level="1">
+    <if_sid>450000</if_sid>
+    <match>resolution</match>
+    <description>Failure in name resolution.</description>
+    <group>smbd,</group>
+  </rule>
+
+  <!--Dec 25 18:11:29 ix smbd[22614]:   ERROR: smbd is already running. File /var/run/smbd.pid exists and process id 3203 is running.-->
+  <rule id="440010" level="1">
+    <if_sid>13100</if_sid>
+    <match>smbd is already running</match>
+    <description>An attempt has been made to start smbd but the process is already running.</description>
+    <group>smbd,</group>
+  </rule>
+
+  <!--Dec 25 18:11:33 ix nmbd[554]:   ERROR: nmbd is already running. File /var/run/nmbd.pid exists and process id 31838 is running.-->
+  <rule id="440011" level="1">
+    <if_sid>440000</if_sid>
+    <match>nmbd is already running</match>
+    <description>An attempt has been made to start nmbd but the process is already running.</description>
+    <group>smbd,nmbd,</group>
+  </rule>
+
+  <!--Mar 13 16:29:04 ix smbd[6238]:   Connection denied from 0.0.0.0-->
+  <rule id="440012" level="2">
+    <if_sid>13100</if_sid>
+    <match>Connection denied from</match>
+    <description>Connection was denied.</description>
+    <group>smbd,</group>
+  </rule>
+
+  <!--Mar 13 16:29:04 ix smbd[6238]:   write_data: write failure in writing to client 0.0.0.0. Error Socket is not connected-->
+  <rule id="440013" level="3">
+    <if_sid>13100</if_sid>
+    <match>Socket is not connected</match>
+    <description>Socket is not connected, write failed.</description>
+    <group>smbd,</group>
+  </rule>
+
+  <!--Nov  9 04:56:33 giediprime kernel: gvfsd-smb[8203]: segfault at c ip 08061322 sp bfcd78a0 error 4 in gvfsd-smb[8048000+22000-->
+  <rule id="440014" level="3">
+    <decoded_as>iptables</decoded_as>
+    <match>gvfsd-smb</match>
+    <regex>segfault at \S+ ip \S+ sp \S+ error \d+ in</regex>
+    <description>Segfault in gvfs-smb.</description>
+    <group>smbd,</group>
   </rule>
 
   <rule id="390000" level="0" noalert="1">
@@ -1413,65 +1488,6 @@ conf).-->
     <info>OpenBSD uses login classes, and an inappropriate login class was used.</info>
     <description>A user has attempted to su to an unknown class.</description>
   </rule>
-
-  <rule id="440000" level="0" noalert="1">
-    <decoded_as>nmbd</decoded_as>
-  </rule>
-  <rule id="450000" level="0" noalert="1">
-    <decoded_as>launchproxy</decoded_as>
-    <description>Grouping for launchproxy rules.</description>
-  </rule>
-
-  <!--Aug 22 13:11:29 bunnys-mac-mini launchproxy[1286]: /usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution-->
-  <rule id="440001" level="1">
-    <if_sid>450000</if_sid>
-    <match>resolution</match>
-    <description>Failure in name resolution.</description>
-    <group>smbd,</group>
-  </rule>
-
-  <!--Dec 25 18:11:29 ix smbd[22614]:   ERROR: smbd is already running. File /var/run/smbd.pid exists and process id 3203 is running.-->
-  <rule id="440010" level="1">
-    <if_sid>13100</if_sid>
-    <match>smbd is already running</match>
-    <description>An attempt has been made to start smbd but the process is already running.</description>
-    <group>smbd,</group>
-  </rule>
-
-  <!--Dec 25 18:11:33 ix nmbd[554]:   ERROR: nmbd is already running. File /var/run/nmbd.pid exists and process id 31838 is running.-->
-  <rule id="440011" level="1">
-    <if_sid>440000</if_sid>
-    <match>nmbd is already running</match>
-    <description>An attempt has been made to start nmbd but the process is already running.</description>
-    <group>smbd,nmbd,</group>
-  </rule>
-
-  <!--Mar 13 16:29:04 ix smbd[6238]:   Connection denied from 0.0.0.0-->
-  <rule id="440012" level="2">
-    <if_sid>13100</if_sid>
-    <match>Connection denied from</match>
-    <description>Connection was denied.</description>
-    <group>smbd,</group>
-  </rule>
-
-  <!--Mar 13 16:29:04 ix smbd[6238]:   write_data: write failure in writing to client 0.0.0.0. Error Socket is not connected-->
-  <rule id="440013" level="3">
-    <if_sid>13100</if_sid>
-    <match>Socket is not connected</match>
-    <description>Socket is not connected, write failed.</description>
-    <group>smbd,</group>
-  </rule>
-
-  <!--Nov  9 04:56:33 giediprime kernel: gvfsd-smb[8203]: segfault at c ip 08061322 sp bfcd78a0 error 4 in gvfsd-smb[8048000+22000-->
-  <rule id="440014" level="3">
-    <decoded_as>iptables</decoded_as>
-    <match>gvfsd-smb</match>
-    <regex>segfault at \S+ ip \S+ sp \S+ error \d+ in</regex>
-    <description>Segfault in gvfs-smb.</description>
-    <group>smbd,</group>
-  </rule>
-
-
 
 </group> <!-- SYSLOG,LOCAL -->
 
