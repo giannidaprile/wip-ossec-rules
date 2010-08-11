@@ -13,11 +13,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '210010'
-       Level: '1'
-       Description: 'XXX Could not connect to socket'
-**Alert to be generated.
-
-
+       Level: '0'
+       Description: 'Could not connect to socket'
 
 
 **Phase 1: Completed pre-decoding.
@@ -49,11 +46,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '210012'
-       Level: '1'
+       Level: '0'
        Description: 'Cannot assign requested address'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.
@@ -67,8 +61,15 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '210013'
-       Level: '1'
-       Description: 'XXX'
-**Alert to be generated.
+       Level: '0'
+       Description: 'Failed to parse a browsing line.'
 
 
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep  6 01:56:16 avahi-daemon[13441]: Invalid query packet.ansfer on gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\^L\^R\^\\^A'
+       hostname: 'ix'
+       program_name: '(null)'
+       log: 'avahi-daemon[13441]: Invalid query packet.ansfer on gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\^L\^R\^\\^A'
+
+**Phase 2: Completed decoding.
+       No decoder matched.

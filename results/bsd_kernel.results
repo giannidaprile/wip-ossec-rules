@@ -264,11 +264,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '220015'
-       Level: '1'
-       Description: 'XXX Timeout in atascsi_passthru_done.'
-**Alert to be generated.
-
-
+       Level: '0'
+       Description: 'Timeout in atascsi_passthru_done.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -282,11 +279,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '220016'
-       Level: '1'
-       Description: 'XXX Clock battery error 80'
-**Alert to be generated.
-
-
+       Level: '0'
+       Description: 'Clock battery error 80'
 
 
 **Phase 1: Completed pre-decoding.

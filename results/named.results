@@ -496,7 +496,7 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.17.17'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310026'
+       Rule id: '312002'
        Level: '3'
        Description: 'Bad zone transfer request.'
 **Alert to be generated.
