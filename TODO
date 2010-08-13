@@ -3,3 +3,9 @@ A rough list of things I need to work on:
 * Adding groups to existing and future rules
 * Replacing XXX with real descriptions
 * Documentation on rule/decoder writing
+* Clean up the sshd rules/decoders
+
+Things I'm planning on trying to find rules for:
+* openldap/OpenBSD's ldapd
+* I'd love to get some procurve logs (and a switch or two ;))
+
