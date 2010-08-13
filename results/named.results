@@ -502,3 +502,21 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  3 10:20:57 junction named[19435]: zone example.com/IN: refresh: failure trying master 192.168.17.8#53 (source 0.0.0.0#0): operation canceled'
+       hostname: 'junction'
+       program_name: 'named'
+       log: 'zone example.com/IN: refresh: failure trying master 192.168.17.8#53 (source 0.0.0.0#0): operation canceled'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '312002'
+       Level: '2'
+       Description: 'Cannot refresh a domain from the master server.'
+**Alert to be generated.
+
+
