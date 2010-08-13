@@ -7,7 +7,6 @@ Aug  3 11:12:41 ix collectd[26538]: read-function of plugin `ntpd' failed. Will 
 Aug  3 11:12:41 ix collectd[26538]: recv(2) failed: Connection refused
 Aug  3 11:22:46 ix collectdmon[11906]: Error: couldn't open PID-file (/var/run/collectdmon.pid) for writing: Permission denied
 Aug  3 12:46:08 junction collectd[3827]: uc_update: Value too old: name = junction.example.com/interface/if_errors-lo0; value time = 1280853968; last cache update = 1280853968;
-Aug 10 08:38:40 junction sshd[20013]: error: connect_to 192.168.179 port 8080: failed.
 
 WinEvtLog: Application: ERROR(11): Microsoft-Windows-CAPI2: (no user): no domain: Bunny-PC: http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab A required certificate is not within its validity period when verifying against the current system clock or the timestamp in the signed file.
 
