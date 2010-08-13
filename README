@@ -50,4 +50,5 @@ Rule IDs:
 430000+: pulseaudio
 440000+: smbd
 450000+: os x
+460000+: clamav
 
