@@ -205,6 +205,14 @@ oopback6.arpa failed: not at top of zone-->
     <description>Bad zone transfer request.</description>
   </rule>
 
+  <!--Aug  3 10:20:57 junction named[19435]: zone example.com/IN: refresh: failure trying master 192.168.17.8#53 (source 0.0.0.0#0): operation canceled-->
+  <rule id="3120027" level="2">
+    <if_sid>12100</if_sid>
+    <match>refresh: failure trying master</match>
+    <description>Cannot refresh a domain from the master server.</description>
+    <group>named,dns,</group>
+  </rule>
+
    
 </group> <!-- SYSLOG,LOCAL -->
 

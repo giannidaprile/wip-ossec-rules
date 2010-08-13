@@ -26,3 +26,4 @@ Jul  1 18:38:30 junction named[23078]: transfer of 'trojanremoverpc.com/IN' from
 Jul  1 21:15:39 ix named[30050]: client 192.168.17.17#6511: query: example.com IN AXFR -
 Jul 13 02:59:55 junction named[15915]: zone example.com/IN: refresh: unexpected rcode (SERVFAIL) from master 192.168.1.8#53 (source 0.0.0.0#0)
 Jul 29 11:19:18 buzzell named[10305]: client 192.168.17.17#14126: bad zone transfer request: 'construtoranovak.com.br/IN': non-authoritative zone (NOTAUTH)
+Aug  3 10:20:57 junction named[19435]: zone example.com/IN: refresh: failure trying master 192.168.17.8#53 (source 0.0.0.0#0): operation canceled
