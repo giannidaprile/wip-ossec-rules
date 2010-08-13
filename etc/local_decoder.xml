@@ -129,3 +129,11 @@
 <decoder name="launchproxy">
   <program_name>launchproxy</program_name>
 </decoder>
+
+<!--Aug 10 08:38:40 junction sshd[20013]: error: connect_to 192.168.179 port 8080: failed.-->
+<decoder name="ssh-connect-to">
+  <parent>sshd</parent>
+  <prematch>connect_to</prematch>
+  <regex>connect_to: (\S+) port (\d+):</regex>
+  <order>dstip,dstport</order>
+</decoder>

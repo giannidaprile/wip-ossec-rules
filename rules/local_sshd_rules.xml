@@ -94,6 +94,14 @@
     <group>recon,</group>
   </rule>
 
+  <!--Aug 10 08:38:40 junction sshd[20013]: error: connect_to 192.168.179 port 8080: failed.-->
+  <rule id="370021" level="2">
+    <if_sid>5700</if_sid>
+    <match>error: connect_to </match>
+    <description>Possible port forwarding failure.</description>
+    <group>sshd,</group>
+  </rule>
+
    
 </group> <!-- SYSLOG,LOCAL -->
 
