@@ -3,3 +3,5 @@ Jul  1 10:55:28 junction argus[2167]: 01 Jul 10 10:55:28.797574 syntax error
 Jul  1 17:52:05 junction argus[22951]: 01 Jul 10 17:52:05.074699 ArgusOpenInterface: pcap_open_live /dev/bpf0: Permission denied
 Jul  5 15:10:43 junction ratop[22380]: 15:10:43.658123 argus filter syntax error
 Jul  6 10:18:42 junction argus[27695]: 06 Jul 10 10:18:42.881971 argus: ArgusEstablishListen: bind() error
+Aug 13 16:26:14 junction radium[27235]: 16:26:14.398694 connect to 127.0.0.1:561 failed 'Connection refused'
+Aug 15 12:48:31 junction ratop[28040]: 12:48:31.178756 argus.00.00.00 filter syntax error
