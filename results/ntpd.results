@@ -126,3 +126,21 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 15 17:26:17 ix ntpd[7045]: recvmsg 192.168.17.17: Connection refused'
+       hostname: 'ix'
+       program_name: 'ntpd'
+       log: 'recvmsg 192.168.17.17: Connection refused'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '480001'
+       Level: '1'
+       Description: 'Connection refused.'
+**Alert to be generated.
+
+
