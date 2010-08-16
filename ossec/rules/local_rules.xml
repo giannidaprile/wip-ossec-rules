@@ -890,6 +890,14 @@ oopback6.arpa failed: not at top of zone-->
     <description>Bad ntp peer.</description>
   </rule>
 
+  <!--Aug 15 17:26:17 ix ntpd[7045]: recvmsg 192.168.17.17: Connection refused-->
+  <rule id="4800015" level="1">
+    <if_sid>400000</if_sid>
+    <match>Connection refused$</match>
+    <description>Connection refused.</description>
+    <group>ntpd,</group>
+  </rule>
+
   <rule id="450000" level="0" noalert="1">
     <decoded_as>launchproxy</decoded_as>
     <description>Grouping for launchproxy rules</description>
