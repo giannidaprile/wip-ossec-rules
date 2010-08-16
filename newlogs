@@ -3,6 +3,13 @@ Jul 15 18:33:10 server fsmpm[16951]: NSS: Name Server '192.168.1.2' (192.168.1.2
 Jul 15 18:33:10 server fsmpm[16951]: NSS: Name Server '192.168.1.2' (192.168.1.2) port is 55040, revision is 0x0102.
 Jul 15 18:33:10 server fsmpm[16951]: PortMapper: Added mapping from id 192.168.1.2 to addr 192.168.1.2
 
+Aug 16 10:58:12 client nscd: nss_ldap: failed to bind to LDAP server ldap://ldap.example.com: Can't contact LDAP server
+Aug 16 10:58:12 client nscd: nss_ldap: reconnecting to LDAP server (sleeping 32 seconds)...
+Aug 16 10:59:24 client nscd: nss_ldap: failed to bind to LDAP server ldap://ldap.example.com: Can't contact LDAP server
+Aug 16 10:59:24 client nscd: nss_ldap: reconnecting to LDAP server (sleeping 64 seconds)...
+
+Aug 16 10:59:57 snortsensor snort[11557]: database: mysql_error: Can't connect to MySQL server on '192.168.1.90' (110)
+Aug 16 10:59:57 snortsensor snort[11557]: database: Problem inserting a new signature 'TEST RULE': INSERT INTO signature (sig_name,sig_rev,sig_sid,sig_gid) VALUES ('TEST RULE',1,2010000001,1)
 
 WinEvtLog: Application: ERROR(11): Microsoft-Windows-CAPI2: (no user): no domain: Bunny-PC: http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab A required certificate is not within its validity period when verifying against the current system clock or the timestamp in the signed file.
 
