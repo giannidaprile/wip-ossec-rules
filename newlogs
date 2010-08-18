@@ -8,9 +8,3 @@ Aug 16 10:58:12 client nscd: nss_ldap: reconnecting to LDAP server (sleeping 32 
 Aug 16 10:59:24 client nscd: nss_ldap: failed to bind to LDAP server ldap://ldap.example.com: Can't contact LDAP server
 Aug 16 10:59:24 client nscd: nss_ldap: reconnecting to LDAP server (sleeping 64 seconds)...
 
-Aug  4 13:45:14 buzzell reboot: rebooted by ddp
-Aug  4 13:51:08 buzzell savecore: no core dump
-
-WinEvtLog: Application: ERROR(11): Microsoft-Windows-CAPI2: (no user): no domain: Bunny-PC: http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab A required certificate is not within its validity period when verifying against the current system clock or the timestamp in the signed file.
-
-
