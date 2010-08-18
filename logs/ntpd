@@ -6,3 +6,4 @@ Jul  1 19:50:00 ix ntpd[11685]: bad peer from pool pool.ntp.org (64.73.32.135)
 Jul  2 22:06:30 richese ntpd[3465]: bad peer ix (192.168.17.9)
 Jul  2 22:07:58 ix ntpd[11685]: bad peer from pool pool.ntp.org (69.50.219.51)
 Aug 15 17:26:17 ix ntpd[7045]: recvmsg 192.168.17.17: Connection refused
+Aug  4 23:18:33 ix ntpd[29411]: 2 out of 3 peers valid

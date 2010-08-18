@@ -60,13 +60,20 @@
   </rule>
 
   <!--Aug 15 17:26:17 ix ntpd[7045]: recvmsg 192.168.17.17: Connection refused-->
-  <rule id="4800015" level="1">
+  <rule id="400015" level="1">
     <if_sid>400000</if_sid>
     <match>Connection refused$</match>
     <description>Connection refused.</description>
     <group>ntpd,</group>
   </rule>
 
+  <!--Aug  4 23:18:33 ix ntpd[29411]: 2 out of 3 peers valid-->
+  <rule id="400016" level="0">
+    <if_sid>400000</if_sid>
+    <regex>\d+ out of \d+ peers valid</regex>
+    <description>Some peers are now valid.</description>
+    <group>ntpd,</group>
+  </rule>
 </group> <!-- SYSLOG,LOCAL -->
 
 
