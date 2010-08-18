@@ -11,6 +11,65 @@ Aug 16 10:59:24 client nscd: nss_ldap: reconnecting to LDAP server (sleeping 64 
 Aug 16 10:59:57 snortsensor snort[11557]: database: mysql_error: Can't connect to MySQL server on '192.168.1.90' (110)
 Aug 16 10:59:57 snortsensor snort[11557]: database: Problem inserting a new signature 'TEST RULE': INSERT INTO signature (sig_name,sig_rev,sig_sid,sig_gid) VALUES ('TEST RULE',1,2010000001,1)
 
+Aug 16 16:00:01 ix newsyslog[11856]: logfile turned over
+
+Aug 16 16:02:10 junction named[26796]: /slave/blockeddomain.hosts:3: SOA record not at top of zone (icicles2010.com)
+
+Aug 16 16:17:01 junction smartd[9934]: Device: /dev/wd0c, 409245770 Offline uncorrectable sectors (changed +708992)
+
+Aug 16 23:35:02 ix cvsyncd[25508]: [192.168.1.8] (734d2640) Connected (status=0)
+Aug 16 23:35:08 ix cvsyncd[25508]: [192.168.1.8] (734d2640) Connection closed
+Aug  6 01:30:11 ix cvsyncd[13850]: [192.168.17.17] (b8f9513b) Collection sysconf/rcs (time=6s)
+Aug  6 01:30:11 ix cvsyncd[13850]: [192.168.17.17] (b8f9513b) Finished successfully
+Aug  6 01:30:11 ix cvsyncd[13850]: [192.168.17.17] (b8f9513b) in=83510, out=21081723, time=9s
+Aug  5 12:28:40 ix cvsyncd[9129]: Stop cvsync server
+Aug  5 12:28:52 ix cvsyncd[13201]: Listen on 0.0.0.0 port 7777
+Aug  5 12:28:52 ix cvsyncd[13201]: Listen on :: port 7777
+Aug  5 12:28:52 ix cvsyncd[13201]: Starting cvsync server
+
+Aug  4 09:14:58 ix last message repeated 2 times
+
+Aug  4 09:23:55 junction collectd[28372]: network plugin: Cannot set the interface on a unicast socket because the the "SO_BINDTODEVICE" socket option is not available on your system.
+
+Aug  4 13:45:14 buzzell reboot: rebooted by ddp
+
+Aug  5 17:01:08 ix ldattach[15538]: eof during read from pty: Input/output error
+
+Aug 15 16:39:12 ix /bsd: kbc: cmd word write error
+Aug 15 17:02:12 ix /bsd: umass0: BBB reset failed, IOERROR
+Aug 15 17:02:12 ix /bsd: umass0: BBB bulk-out clear stall failed, IOERROR
+Aug 15 17:04:06 ix /bsd: kbc: cmd word write error
+Aug 15 17:16:28 ix /bsd: kbc: cmd word write error
+Aug 15 17:22:13 ix ldattach[23650]: eof during read from pty: Input/output error
+Aug 15 12:48:31 junction ratop[28040]: 12:48:31.178756 argus.00.00.00 filter syntax error
+Aug 13 16:26:13 junction radium[27235]: 16:26:13.398755 connect to 127.0.0.1:561 failed 'Connection refused'
+
+Aug  4 13:46:23 buzzell syslogd: start
+
+NO RULE: Aug  4 13:47:16 buzzell named[20055]: command channel listening on 127.0.0.1#953
+NO RULE: Aug  4 13:47:16 buzzell named[20055]: command channel listening on ::1#953
+NO RULE: Aug  4 13:51:06 buzzell named[20055]: running
+NO RULE: Aug  4 13:51:08 buzzell savecore: no core dump
+
+NO RULE: Aug  4 23:18:33 ix ntpd[29411]: 2 out of 3 peers valid
+NO RULE: Aug  5 13:42:27 ix userdel[20611]: user removed: name=_flowd
+NO RULE: Aug  5 16:59:50 ix sensorsd[19365]: nmea0.timedelta0: 0.303331 secs, UNKNOWN
+
+Aug  5 18:22:12 ix arpwatch: reused old ethernet address 192.168.17.248 0:e:3b:a:cb:67 (0:1e:8c:72:b0:d0)
+
+Aug  9 11:48:38 buzzell collectd[13606]: network plugin: The `TimeToLive' config option needs exactly one numeric argument.
+
+NO RULE: Aug 15 15:08:08 junction radium[5356]: 15:08:08.610208 started
+NO RULE: Aug 15 15:08:09 junction rastream[12043]: 15:08:09.133533 started
+
+Aug 15 16:39:27 ix apmd: battery status: absent. external power status: not known. estimated battery life 0%
+
+Aug 15 16:53:22 ix ldattach: can't open /dev/cuaU0
+
+
+
+
+
 WinEvtLog: Application: ERROR(11): Microsoft-Windows-CAPI2: (no user): no domain: Bunny-PC: http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab A required certificate is not within its validity period when verifying against the current system clock or the timestamp in the signed file.
 
 
