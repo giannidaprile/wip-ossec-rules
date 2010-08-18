@@ -66,3 +66,21 @@ ossec-testrule: Type one log per line.
        Rule id: '390013'
        Level: '0'
        Description: 'sensorsd was started.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  5 16:59:50 ix sensorsd[19365]: nmea0.timedelta0: 0.303331 secs, UNKNOWN'
+       hostname: 'ix'
+       program_name: 'sensorsd'
+       log: 'nmea0.timedelta0: 0.303331 secs, UNKNOWN'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '390014'
+       Level: '2'
+       Description: 'A sensor is in an UNKNOWN state.'
+**Alert to be generated.
+
+

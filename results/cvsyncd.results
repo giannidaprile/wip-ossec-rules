@@ -162,3 +162,124 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 16 23:35:02 ix cvsyncd[25508]: [192.168.1.8] (734d2640) Connected (status=0)-->'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: '[192.168.1.8] (734d2640) Connected (status=0)-->'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '250019'
+       Level: '1'
+       Description: 'cvsync client connected.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 16 23:35:08 ix cvsyncd[25508]: [192.168.1.8] (734d2640) Connection closed'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: '[192.168.1.8] (734d2640) Connection closed'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '250020'
+       Level: '0'
+       Description: 'Client disconnected.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  6 01:30:11 ix cvsyncd[13850]: [192.168.17.17] (b8f9513b) Collection sysconf/rcs (time=6s)'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: '[192.168.17.17] (b8f9513b) Collection sysconf/rcs (time=6s)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  6 01:30:11 ix cvsyncd[13850]: [192.168.17.17] (b8f9513b) Finished successfully'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: '[192.168.17.17] (b8f9513b) Finished successfully'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '250021'
+       Level: '0'
+       Description: 'Client finished successfully.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  5 12:28:40 ix cvsyncd[9129]: Stop cvsync server'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: 'Stop cvsync server'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '250022'
+       Level: '1'
+       Description: 'cvsyncd stopped.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  5 12:28:52 ix cvsyncd[13201]: Listen on 0.0.0.0 port 7777'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: 'Listen on 0.0.0.0 port 7777'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '250023'
+       Level: '0'
+       Description: 'cvsynd is now listening.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  5 12:28:52 ix cvsyncd[13201]: Listen on :: port 7777'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: 'Listen on :: port 7777'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '250023'
+       Level: '0'
+       Description: 'cvsynd is now listening.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  5 12:28:52 ix cvsyncd[13201]: Starting cvsync server'
+       hostname: 'ix'
+       program_name: 'cvsyncd'
+       log: 'Starting cvsync server'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '250024'
+       Level: '0'
+       Description: 'cvsyncd has been started.'

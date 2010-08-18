@@ -138,9 +138,24 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '480001'
+       Rule id: '400015'
        Level: '1'
        Description: 'Connection refused.'
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  4 23:18:33 ix ntpd[29411]: 2 out of 3 peers valid'
+       hostname: 'ix'
+       program_name: 'ntpd'
+       log: '2 out of 3 peers valid'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '400016'
+       Level: '0'
+       Description: 'Some peers are now valid.'
