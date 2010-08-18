@@ -1,7 +1,7 @@
 #!/bin/sh
 
 HOMEDIR=/home/ddp/src/projects/hg/wip-ossec-rules
-RULES="arpwatch avahi bsd_kernel clamav cvsyncd dbus ddclient dropbear flowd hp identd irqbalance isakmpd linux_kernel mountd named ntpd pam pulseaudio python samba sensorsd smartd smtpd smtpd snmpd sshd su"
+RULES="arpwatch avahi bsd_kernel bsd clamav cvsyncd dbus ddclient dropbear flowd hp identd irqbalance isakmpd linux_kernel mountd named ntpd pam pulseaudio python samba sensorsd smartd smtpd snmpd sshd su syslog"
 MAINOUT=`mktemp /tmp/wip-ossec-rules.XXXXXX` || ( echo "Cannot create tempfile!" ; exit 1 )
 
 cd ${HOMEDIR}/ossec || ( echo "Cannot chdir to ${HOMEDIR}/ossec!" ; exit 1 )
