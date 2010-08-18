@@ -21,9 +21,6 @@ Aug  5 12:28:52 ix cvsyncd[13201]: Listen on 0.0.0.0 port 7777
 Aug  5 12:28:52 ix cvsyncd[13201]: Listen on :: port 7777
 Aug  5 12:28:52 ix cvsyncd[13201]: Starting cvsync server
 
-Aug  4 09:14:58 ix last message repeated 2 times
-
-
 Aug  4 13:45:14 buzzell reboot: rebooted by ddp
 
 Aug 15 16:39:12 ix /bsd: kbc: cmd word write error

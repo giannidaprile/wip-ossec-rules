@@ -218,6 +218,22 @@
     <group>storage,sysadmin,bsd,</group>
   </rule>
 
+  <!--Aug 15 16:39:12 ix /bsd: kbc: cmd word write error-->
+  <rule id="220019" level="1">
+    <if_sid>220000</if_sid>
+    <match>kbc: cmd word write error</match>
+    <description>XXX kbc error.</description>
+    <group>bsd,</group>
+  </rule>
+
+  <!--Aug 15 17:02:12 ix /bsd: umass0: BBB reset failed, IOERROR-->
+  <rule id="220020" level="1">
+    <if_sid>220000</if_sid>
+    <match>BBB reset failed, IOERROR</match>
+    <description>USB reset failed, IOERROR.</description>
+    <group>bsd,storage,</group>
+  </rule>
+
   <rule id="340000" level="0" noalert="1">
     <decoded_as>groupdel</decoded_as>
     <description>Grouping for groupdel rules.</description>

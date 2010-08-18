@@ -16,3 +16,5 @@ Jun 15 21:15:03 ix /bsd: atascsi_passthru_done, timeout
 Jun 30 17:03:17 junction /bsd: RTC BIOS diagnostic error 80<clock_battery>
 Jun 30 17:20:56 junction /bsd: WARNING: R/W mount of /home denied.  Filesystem is not clean - run fsck
 Jul 27 11:19:20 richese /bsd: softraid0: i/o error on block 528
+Aug 15 16:39:12 ix /bsd: kbc: cmd word write error
+Aug 15 17:02:12 ix /bsd: umass0: BBB reset failed, IOERROR
