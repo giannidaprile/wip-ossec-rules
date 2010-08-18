@@ -27,3 +27,7 @@ Jul  1 21:15:39 ix named[30050]: client 192.168.17.17#6511: query: example.com I
 Jul 13 02:59:55 junction named[15915]: zone example.com/IN: refresh: unexpected rcode (SERVFAIL) from master 192.168.1.8#53 (source 0.0.0.0#0)
 Jul 29 11:19:18 buzzell named[10305]: client 192.168.17.17#14126: bad zone transfer request: 'construtoranovak.com.br/IN': non-authoritative zone (NOTAUTH)
 Aug  3 10:20:57 junction named[19435]: zone example.com/IN: refresh: failure trying master 192.168.17.8#53 (source 0.0.0.0#0): operation canceled
+Aug 16 16:02:10 junction named[26796]: /slave/blockeddomain.hosts:3: SOA record not at top of zone (icicles2010.com)
+Aug  4 13:47:16 buzzell named[20055]: command channel listening on 127.0.0.1#953
+Aug  4 13:47:16 buzzell named[20055]: command channel listening on ::1#953
+Aug  4 13:51:06 buzzell named[20055]: running

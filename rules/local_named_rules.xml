@@ -199,19 +199,45 @@ oopback6.arpa failed: not at top of zone-->
   </rule>
 
   <!--Jul 29 11:19:18 buzzell named[10305]: client 192.168.17.17#14126: bad zone transfer request: 'construtoranovak.com.br/IN': non-authoritative zone (NOTAUTH)-->
-  <rule id="3120026" level="3">
+  <rule id="310026" level="3">
     <if_sid>12100</if_sid>
     <regex>client \S+: bad zone transfer request: \S+: non-authoritative zone \(NOTAUTH\)</regex>
     <description>Bad zone transfer request.</description>
   </rule>
 
   <!--Aug  3 10:20:57 junction named[19435]: zone example.com/IN: refresh: failure trying master 192.168.17.8#53 (source 0.0.0.0#0): operation canceled-->
-  <rule id="3120027" level="2">
+  <rule id="310027" level="2">
     <if_sid>12100</if_sid>
     <match>refresh: failure trying master</match>
     <description>Cannot refresh a domain from the master server.</description>
     <group>named,dns,</group>
   </rule>
+
+  <!--Aug 16 16:02:10 junction named[26796]: /slave/blockeddomain.hosts:3: SOA record not at top of zone (icicles2010.com)-->
+  <rule id="310028" level="1">
+    <if_sid>12100</if_sid>
+    <match>SOA record not at top of zone</match>
+    <description>Origin of zone and owner name of SOA do not match.</description>
+    <group>named,dn,s</group>
+  </rule>
+
+  <!--Aug  4 13:47:16 buzzell named[20055]: command channel listening on 127.0.0.1#953
+      Aug  4 13:47:16 buzzell named[20055]: command channel listening on ::1#953-->
+  <rule id="310029" level="0">
+    <if_sid>12100</if_sid>
+    <match>command channel listening on</match>
+    <description>named command channel is listening.</description>
+    <group>named,</group>
+  </rule>
+
+  <!--Aug  4 13:51:06 buzzell named[20055]: running-->
+  <rule id="310030" level="0">
+    <if_sid>12100</if_sid>
+    <match>running</match>
+    <description>named is now running.</description>
+    <group>named,</group>
+  </rule>
+
 
    
 </group> <!-- SYSLOG,LOCAL -->
