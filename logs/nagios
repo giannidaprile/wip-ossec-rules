@@ -1,0 +1,3 @@
+Aug 18 13:27:49 nagiosclient nrped: nrpe shutdown succeeded
+Aug 18 13:27:49 nagiosclient nrpe[6215]: Unknown option specified in config file '/etc/nrpe.cfg' - Line 44
+Aug 18 13:27:49 nagiosclient nrped: nrpe startup succeeded
