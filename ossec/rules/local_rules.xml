@@ -1316,6 +1316,14 @@ conf).-->
     <match>appears to lack SMART Error log</match>
     <description>Device does not have a SMART Error log available.</description>
   </rule>
+
+  <!--Aug 16 16:17:01 junction smartd[9934]: Device: /dev/wd0c, 409245770 Offline uncorrectable sectors (changed +708992)-->
+  <rule id="330030" level="2">
+    <if_sid>330000</if_sid>
+    <match>Offline uncorrectable sectors</match>
+    <description>Offline uncorrectable sectors have been counted.</description>
+    <group>smartd,</group>
+  </rule>
   
   <rule id="320000" level="0" noalert="1">
     <decoded_as>smtpd</decoded_as>

@@ -11,8 +11,6 @@ Aug 16 10:59:24 client nscd: nss_ldap: reconnecting to LDAP server (sleeping 64 
 
 Aug 16 16:02:10 junction named[26796]: /slave/blockeddomain.hosts:3: SOA record not at top of zone (icicles2010.com)
 
-Aug 16 16:17:01 junction smartd[9934]: Device: /dev/wd0c, 409245770 Offline uncorrectable sectors (changed +708992)
-
 Aug 16 23:35:02 ix cvsyncd[25508]: [192.168.1.8] (734d2640) Connected (status=0)
 Aug 16 23:35:08 ix cvsyncd[25508]: [192.168.1.8] (734d2640) Connection closed
 Aug  6 01:30:11 ix cvsyncd[13850]: [192.168.17.17] (b8f9513b) Collection sysconf/rcs (time=6s)
@@ -34,10 +32,10 @@ Aug 15 17:02:12 ix /bsd: umass0: BBB bulk-out clear stall failed, IOERROR
 Aug 15 17:04:06 ix /bsd: kbc: cmd word write error
 Aug 15 17:16:28 ix /bsd: kbc: cmd word write error
 
-
 Aug  4 13:47:16 buzzell named[20055]: command channel listening on 127.0.0.1#953
 Aug  4 13:47:16 buzzell named[20055]: command channel listening on ::1#953
 Aug  4 13:51:06 buzzell named[20055]: running
+
 Aug  4 13:51:08 buzzell savecore: no core dump
 
 Aug  4 23:18:33 ix ntpd[29411]: 2 out of 3 peers valid
