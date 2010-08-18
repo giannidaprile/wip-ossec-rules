@@ -1,2 +1,5 @@
 Jan  1 00:00:05 buffalo1 syslog: syslogd : syslog daemon successfully started
 Jan  1 00:02:00 buffalo1.example.com syslog: process_monitor successfully started
+Aug 16 16:00:01 ix newsyslog[11856]: logfile turned over
+Aug  4 13:46:23 buzzell syslogd: start
+Aug  4 09:14:58 ix last message repeated 2 times
