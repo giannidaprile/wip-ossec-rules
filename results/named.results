@@ -496,7 +496,7 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.17.17'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '312002'
+       Rule id: '310026'
        Level: '3'
        Description: 'Bad zone transfer request.'
 **Alert to be generated.
@@ -514,9 +514,72 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '312002'
+       Rule id: '310027'
        Level: '2'
        Description: 'Cannot refresh a domain from the master server.'
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 16 16:02:10 junction named[26796]: /slave/blockeddomain.hosts:3: SOA record not at top of zone (icicles2010.com)'
+       hostname: 'junction'
+       program_name: 'named'
+       log: '/slave/blockeddomain.hosts:3: SOA record not at top of zone (icicles2010.com)'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310028'
+       Level: '1'
+       Description: 'Origin of zone and owner name of SOA do not match.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  4 13:47:16 buzzell named[20055]: command channel listening on 127.0.0.1#953'
+       hostname: 'buzzell'
+       program_name: 'named'
+       log: 'command channel listening on 127.0.0.1#953'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310029'
+       Level: '0'
+       Description: 'named command channel is listening.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  4 13:47:16 buzzell named[20055]: command channel listening on ::1#953'
+       hostname: 'buzzell'
+       program_name: 'named'
+       log: 'command channel listening on ::1#953'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310029'
+       Level: '0'
+       Description: 'named command channel is listening.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  4 13:51:06 buzzell named[20055]: running'
+       hostname: 'buzzell'
+       program_name: 'named'
+       log: 'running'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310030'
+       Level: '0'
+       Description: 'named is now running.'

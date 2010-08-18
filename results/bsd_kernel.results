@@ -317,3 +317,39 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 15 16:39:12 ix /bsd: kbc: cmd word write error'
+       hostname: 'ix'
+       program_name: '/bsd'
+       log: 'kbc: cmd word write error'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '220019'
+       Level: '1'
+       Description: 'XXX kbc error.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 15 17:02:12 ix /bsd: umass0: BBB reset failed, IOERROR'
+       hostname: 'ix'
+       program_name: '/bsd'
+       log: 'umass0: BBB reset failed, IOERROR'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '220020'
+       Level: '1'
+       Description: 'USB reset failed, IOERROR.'
+**Alert to be generated.
+
+

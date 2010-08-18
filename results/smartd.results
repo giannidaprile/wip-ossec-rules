@@ -384,3 +384,21 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 16 16:17:01 junction smartd[9934]: Device: /dev/wd0c, 409245770 Offline uncorrectable sectors (changed +708992)'
+       hostname: 'junction'
+       program_name: 'smartd'
+       log: 'Device: /dev/wd0c, 409245770 Offline uncorrectable sectors (changed +708992)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330030'
+       Level: '2'
+       Description: 'Offline uncorrectable sectors have been counted.'
+**Alert to be generated.
+
+
