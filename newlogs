@@ -8,17 +8,6 @@ Aug 16 10:58:12 client nscd: nss_ldap: reconnecting to LDAP server (sleeping 32 
 Aug 16 10:59:24 client nscd: nss_ldap: failed to bind to LDAP server ldap://ldap.example.com: Can't contact LDAP server
 Aug 16 10:59:24 client nscd: nss_ldap: reconnecting to LDAP server (sleeping 64 seconds)...
 
-
-Aug 16 23:35:02 ix cvsyncd[25508]: [192.168.1.8] (734d2640) Connected (status=0)
-Aug 16 23:35:08 ix cvsyncd[25508]: [192.168.1.8] (734d2640) Connection closed
-Aug  6 01:30:11 ix cvsyncd[13850]: [192.168.17.17] (b8f9513b) Collection sysconf/rcs (time=6s)
-Aug  6 01:30:11 ix cvsyncd[13850]: [192.168.17.17] (b8f9513b) Finished successfully
-Aug  6 01:30:11 ix cvsyncd[13850]: [192.168.17.17] (b8f9513b) in=83510, out=21081723, time=9s
-Aug  5 12:28:40 ix cvsyncd[9129]: Stop cvsync server
-Aug  5 12:28:52 ix cvsyncd[13201]: Listen on 0.0.0.0 port 7777
-Aug  5 12:28:52 ix cvsyncd[13201]: Listen on :: port 7777
-Aug  5 12:28:52 ix cvsyncd[13201]: Starting cvsync server
-
 Aug  4 13:45:14 buzzell reboot: rebooted by ddp
 Aug  4 13:51:08 buzzell savecore: no core dump
 

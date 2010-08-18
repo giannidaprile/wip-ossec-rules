@@ -16,6 +16,7 @@
   <rule id="250000" level="0" noalert="1">
     <program_name>cvsyncd</program_name>
     <description>Grouping for cvsyncd rules</description>
+    <group>cvsyncd,</group>
   </rule>
 
   <!--Oct 21 02:09:46 ix cvsyncd[19692]: /var/run/cvsyncd.pid: Permission denied-->
@@ -23,6 +24,7 @@
     <if_sid>250000</if_sid>
     <match>cvsyncd.pid: Permission denied</match>
     <description>cvsyncd cannot write pid file with current permissions</description>
+    <group>cvsyncd,</group>
   </rule>
 
   <!--Oct 26 22:31:17 ix cvsyncd[3699]: Socket Error: recv: 2 residue 2-->
@@ -30,6 +32,7 @@
     <if_sid>250000</if_sid>
     <match>Socket Error: recv: 2 residue 2</match>
     <description>XXX</description>
+    <group>cvsyncd,</group>
   </rule>
 
   <!--Nov 24 03:13:23 ix cvsyncd[551]: configuration: failed to reload-->
@@ -37,6 +40,7 @@
     <if_sid>250000</if_sid>
     <match>configuration: failed to reload</match>
     <description>Error in configuration</description>
+    <group>cvsyncd,</group>
   </rule>
 
   <!--Nov 24 03:17:11 ix cvsyncd[15862]: [192.168.17.33] (9b5c193f) DirCmp: RCS Error-->
@@ -44,6 +48,7 @@
     <if_sid>250000</if_sid>
     <match>DirCmp: RCS Error</match>
     <description>XXX</description>
+    <group>cvsyncd,</group>
   </rule>
 
   <!--Nov 24 03:17:11 ix cvsyncd[15862]: Receiver Error: recv-->
@@ -51,6 +56,7 @@
     <if_sid>250000</if_sid>
     <match>Receiver Error: recv</match>
     <description>XXX</description>
+    <group>cvsyncd,</group>
   </rule>
 
   <!--Nov 24 03:17:11 ix cvsyncd[15862]: [192.168.17.33] (9b5c193f) FileCmp: RCS Error-->
@@ -58,6 +64,7 @@
     <if_sid>250000</if_sid>
     <match>FileCmp: RCS Error</match>
     <description>XXX</description>
+    <group>cvsyncd,</group>
   </rule>
 
   <!--Nov 24 03:17:11 ix cvsyncd[15862]: Mux(RECV) Error: not running: 0-->
@@ -65,6 +72,7 @@
     <if_sid>250000</if_sid>
     <match>Mux(RECV) Error: not running: 0</match>
     <description>XXX</description>
+    <group>cvsyncd,</group>
   </rule>
 
   <!--Nov 24 03:17:11 ix cvsyncd[15862]: [192.168.17.33] (9b5c193f) FileCmp(RCS): /data/cvs/sysconf/buffalo1/buffalo1.nvram,v: UPDATE Error-->
@@ -72,6 +80,7 @@
     <if_sid>250000</if_sid>
     <regex>FileCmp(RCS): \.+ : UPDATE Error</regex>
     <description>XXX</description>
+    <group>cvsyncd,</group>
   </rule>
 
   <!--Nov 24 03:17:11 ix cvsyncd[15862]: Mux(SEND) Error: not running: 1-->
@@ -79,8 +88,57 @@
     <if_sid>250000</if_sid>
     <match>Mux(SEND) Error: not running: 1</match>
     <description>XXX</description>
+    <group>cvsyncd,</group>
   </rule>
 
+  <!--Aug 16 23:35:02 ix cvsyncd[25508]: [192.168.1.8] (734d2640) Connected (status=0)-->
+  <rule id="250019" level="1">
+    <if_sid>250000</if_sid>
+    <match>Connected (status=0)</match>
+    <description>cvsync client connected.</description>
+    <group>cvsyncd,</group>
+  </rule>
+
+  <!--Aug 16 23:35:08 ix cvsyncd[25508]: [192.168.1.8] (734d2640) Connection closed-->
+  <rule id="250020" level="0">
+    <if_sid>250000</if_sid>
+    <match>Connection closed</match>
+    <description>Client disconnected.</description>
+    <group>cvsyncd,</group>
+  </rule>
+
+  <!-Aug  6 01:30:11 ix cvsyncd[13850]: [192.168.17.17] (b8f9513b) Finished successfully-->
+  <rule id="250021" level="0">
+    <if_sid>250000</if_sid>
+    <match>Finished successfully</match>
+    <description>Client finished successfully.</description>
+    <group>cvsyncd,</group>
+  </rule>
+
+  <!--Aug  5 12:28:40 ix cvsyncd[9129]: Stop cvsync server-->
+  <rule id="250022" level="1">
+    <if_sid>250000</if_sid>
+    <match>Stop cvsync server</match>
+    <description>cvsyncd stopped.</description>
+    <group>cvsyncd,</group>
+  </rule>
+
+  <!--Aug  5 12:28:52 ix cvsyncd[13201]: Listen on 0.0.0.0 port 7777-->
+  <!--Aug  5 12:28:52 ix cvsyncd[13201]: Listen on :: port 7777-->
+  <rule id="250023" level="0">
+    <if_sid>250000</if_sid>
+    <match>Listen on</match>
+    <description>cvsynd is now listening.</description>
+    <group>cvsyncd,</group>
+  </rule>
+
+  <!--Aug  5 12:28:52 ix cvsyncd[13201]: Starting cvsync server-->
+  <rule id="250024" level="0">
+    <if_sid>250000</if_sid>
+    <match>Starting cvsync server</match>
+    <description>cvsyncd has been started.</description>
+    <group>cvsyncd,</group>
+  </rule>
 
   
   
