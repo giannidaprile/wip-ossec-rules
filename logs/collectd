@@ -2,3 +2,5 @@ Aug  3 11:12:41 ix collectd[26538]: read-function of plugin `ntpd' failed. Will 
 Aug  3 11:12:41 ix collectd[26538]: recv(2) failed: Connection refused
 Aug  3 11:22:46 ix collectdmon[11906]: Error: couldn't open PID-file (/var/run/collectdmon.pid) for writing: Permission denied
 Aug  3 12:46:08 junction collectd[3827]: uc_update: Value too old: name = junction.example.com/interface/if_errors-lo0; value time = 1280853968; last cache update = 1280853968;
+Aug  4 09:23:55 junction collectd[28372]: network plugin: Cannot set the interface on a unicast socket because the the "SO_BINDTODEVICE" socket option is not availableon your system.
+Aug  9 11:48:38 buzzell collectd[13606]: network plugin: The `TimeToLive' config option needs exactly one numeric argument.
