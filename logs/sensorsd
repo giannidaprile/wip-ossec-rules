@@ -2,3 +2,4 @@ Jun 22 01:04:55 gorilla sensorsd[28381]: nmea0 has appeared
 Nov  7 03:03:51 ix sensorsd[4027]: nmea0.timedelta0: 0.335796 secs, CRITICAL
 Oct 28 21:28:36 ix sensorsd[4027]: nmea0.percent0: 100.00%, WARN
 Jul  5 15:22:22 junction sensorsd[26757]: startup, system has 15 sensors
+Aug  5 16:59:50 ix sensorsd[19365]: nmea0.timedelta0: 0.303331 secs, UNKNOWN
