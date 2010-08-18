@@ -20,11 +20,7 @@ Aug  5 12:28:52 ix cvsyncd[13201]: Listen on :: port 7777
 Aug  5 12:28:52 ix cvsyncd[13201]: Starting cvsync server
 
 Aug  4 13:45:14 buzzell reboot: rebooted by ddp
-
 Aug  4 13:51:08 buzzell savecore: no core dump
-
-Aug  5 16:59:50 ix sensorsd[19365]: nmea0.timedelta0: 0.303331 secs, UNKNOWN
-
 
 WinEvtLog: Application: ERROR(11): Microsoft-Windows-CAPI2: (no user): no domain: Bunny-PC: http://www.download.windowsupdate.com/msdownload/update/v3/static/trustedr/en/authrootstl.cab A required certificate is not within its validity period when verifying against the current system clock or the timestamp in the signed file.
 
