@@ -1535,6 +1535,21 @@ conf).-->
     <group>clamav,</group>
   </rule>
 
+  <!--Aug 16 16:00:01 ix newsyslog[11856]: logfile turned over-->
+  <rule id="470010" level="0">
+    <program_name>newsyslog</program_name>
+    <match>logfile turned over</match>
+    <description>newsyslog has rotated a logfile.</description>
+    <group>newsyslog,</group>
+  </rule>
+
+  <!--Aug  4 13:46:23 buzzell syslogd: start-->
+  <rule id="470011" level="0">
+    <program_name>syslogd</program_name>
+    <match>start$</match>
+    <description>syslogd has started.</description>
+  </rule>
+
 
 </group> <!-- SYSLOG,LOCAL -->
 

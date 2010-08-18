@@ -8,7 +8,6 @@ Aug 16 10:58:12 client nscd: nss_ldap: reconnecting to LDAP server (sleeping 32 
 Aug 16 10:59:24 client nscd: nss_ldap: failed to bind to LDAP server ldap://ldap.example.com: Can't contact LDAP server
 Aug 16 10:59:24 client nscd: nss_ldap: reconnecting to LDAP server (sleeping 64 seconds)...
 
-Aug 16 16:00:01 ix newsyslog[11856]: logfile turned over
 
 Aug 16 16:02:10 junction named[26796]: /slave/blockeddomain.hosts:3: SOA record not at top of zone (icicles2010.com)
 
@@ -35,7 +34,6 @@ Aug 15 17:02:12 ix /bsd: umass0: BBB bulk-out clear stall failed, IOERROR
 Aug 15 17:04:06 ix /bsd: kbc: cmd word write error
 Aug 15 17:16:28 ix /bsd: kbc: cmd word write error
 
-Aug  4 13:46:23 buzzell syslogd: start
 
 Aug  4 13:47:16 buzzell named[20055]: command channel listening on 127.0.0.1#953
 Aug  4 13:47:16 buzzell named[20055]: command channel listening on ::1#953

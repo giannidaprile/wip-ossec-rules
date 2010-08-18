@@ -51,4 +51,5 @@ Rule IDs:
 440000+: smbd
 450000+: os x
 460000+: clamav
+470000+: syslog/newsyslog
 
