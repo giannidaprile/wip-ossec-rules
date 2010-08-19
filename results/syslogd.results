@@ -20,3 +20,48 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        No decoder matched.
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 16 16:00:01 ix newsyslog[11856]: logfile turned over'
+       hostname: 'ix'
+       program_name: 'newsyslog'
+       log: 'logfile turned over'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '470010'
+       Level: '0'
+       Description: 'newsyslog has rotated a logfile.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  4 13:46:23 buzzell syslogd: start'
+       hostname: 'buzzell'
+       program_name: 'syslogd'
+       log: 'start'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '470011'
+       Level: '0'
+       Description: 'syslogd has started.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  4 09:14:58 ix last message repeated 2 times'
+       hostname: 'ix'
+       program_name: '(null)'
+       log: 'last message repeated 2 times'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '470012'
+       Level: '0'
+       Description: 'A syslog message has been sent repeatedly.'
