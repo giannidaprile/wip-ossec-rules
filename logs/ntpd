@@ -7,3 +7,5 @@ Jul  2 22:06:30 richese ntpd[3465]: bad peer ix (192.168.17.9)
 Jul  2 22:07:58 ix ntpd[11685]: bad peer from pool pool.ntp.org (69.50.219.51)
 Aug 15 17:26:17 ix ntpd[7045]: recvmsg 192.168.17.17: Connection refused
 Aug  4 23:18:33 ix ntpd[29411]: 2 out of 3 peers valid
+Sep 27 11:56:04 bridge ntpd[5877]: logconfig: illegal argument  - ignored
+Sep 27 12:56:53 bridge ntpd[5902]: offset 0.000000 sec freq 0.000 ppm error 0.000011 poll 6
