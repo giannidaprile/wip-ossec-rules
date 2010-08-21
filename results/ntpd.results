@@ -159,3 +159,36 @@ ossec-testrule: Type one log per line.
        Rule id: '400016'
        Level: '0'
        Description: 'Some peers are now valid.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 27 11:56:04 bridge ntpd[5877]: logconfig: illegal argument  - ignored'
+       hostname: 'bridge'
+       program_name: 'ntpd'
+       log: 'logconfig: illegal argument  - ignored'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '400017'
+       Level: '1'
+       Description: 'Illegal argument in the configuration.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 27 12:56:53 bridge ntpd[5902]: offset 0.000000 sec freq 0.000 ppm error 0.000011 poll 6'
+       hostname: 'bridge'
+       program_name: 'ntpd'
+       log: 'offset 0.000000 sec freq 0.000 ppm error 0.000011 poll 6'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '400018'
+       Level: '0'
+       Description: 'Normal ntpd status updates.'
