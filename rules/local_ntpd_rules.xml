@@ -74,6 +74,23 @@
     <description>Some peers are now valid.</description>
     <group>ntpd,</group>
   </rule>
+
+  <!--Sep 27 11:56:04 bridge ntpd[5877]: logconfig: illegal argument  - ignored-->
+  <rule id="400017" level="1">
+    <if_sid>400000</if_sid>
+    <match>logconfig: illegal argument</match>
+    <description>Illegal argument in the configuration.</description>
+    <group>ntpd,</group>
+  </rule>
+
+  <!--Sep 27 12:56:53 bridge ntpd[5902]: offset 0.000000 sec freq 0.000 ppm error 0.000011 poll 6-->
+  <rule id="400018" level="0">
+    <if_sid>400000</if_sid>
+    <regex>offset \S+ sec freq \S+ ppm error \S+ poll \S+</regex>
+    <description>Normal ntpd status updates.</description>
+    <group>ntpd,</group>
+  </rule>
+
 </group> <!-- SYSLOG,LOCAL -->
 
 
