@@ -137,3 +137,9 @@
   <regex>connect_to: (\S+) port (\d+):</regex>
   <order>dstip,dstport</order>
 </decoder>
+
+<decoder name="bro-ids">
+  <program_name>^bro</program_name>
+</decoder>
+
+
