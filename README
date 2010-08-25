@@ -53,3 +53,4 @@ Rule IDs:
 460000+: clamav
 470000+: syslog/newsyslog
 480000+: argus/related tools
+490000+: bro-ids
