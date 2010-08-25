@@ -150,3 +150,23 @@
   <order>srcip,extra_data</order>
 </decoder>
 
+<!--XXX This is for some personal testing and will be removed.-->
+<!--Aug 25 13:20:35 ix bro: WTF domain: sacxtra.com other: 208.53.158.84-->
+<decoder name="bro-wtf">
+  <parent>bro-ids</parent>
+  <prematch offset="after_parent">^WTF domain</prematch>
+  <regex>WTF domain: (\S+) other: (\S+)$</regex>
+  <order>extra_data,srcip</order>
+</decoder>
+
+<!--This is for a personal bro-ids script that looks at the responses for dns lookups and compares the resulting IP to a list of known bad IPs-->
+<!--XXX Format is subject to change!-->
+<!--Aug 25 13:28:48 junction bro: no=DNS_Bad_Response na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.1.1 sp=42166/udp da=192.168.1.2 dp=53/udp p=53/udp msg=
+BadResponse\\ for\\example.com\\ (192.168.2.1) tag=@ce-a7a-1-->
+<decoder name="bro-baddns">
+  <parent>bro-ids</parent>
+  <prematch>no=DNS_Bad_Response na=</prematch>
+  <regex>es=bro sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+ p=\d+/\S+ msg=BadResponse\\\\ for\\\\(\S+)\\\\ </regex>-->
+  <order>srcip,srcport,protocol,dstip,dstport,extra_data</order>
+</decoder>
+
