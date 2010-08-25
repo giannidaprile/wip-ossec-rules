@@ -13,7 +13,59 @@
 
 <group name="local,syslog,">
 
-  
+  <rule id="490000" level="0" noalert="1">
+    <decoded_as>bro-ids</decoded_as>
+    <description>Grouping for all bro-ids events.</description>
+    <group>bro-ids,ids,</group>
+  </rule>
+
+  <!--Aug 25 08:57:11 junction bro: Starting incremental serialization...-->
+  <rule id="490010" level="0">
+    <if_sid>490000</if_sid>
+    <match>Starting incremental serialization</match>
+    <description>Bro-ids has been started.</description>
+    <group>bro-ids,ids,</group>
+  </rule>
+
+  <!--Aug 25 08:57:13 junction bro: Finished incremental serialization.-->
+  <rule id="490011" level="0">
+    <if_sid>490000</if_sid>
+    <match>Finished incremental serialization</match>
+    <description>Bro-ids has been stopped.</description>
+    <group>bro-ids,ids,</group>
+  </rule>
+
+  <!--Aug 25 13:09:28 ix bro: no=NoticeTally na=NOTICE_ALARM_ALWAYS es=bro num=307 msg=AckAboveHole\\ (307\\ times) tag=@81-2fd-1f9-->
+  <rule id="490012" level="8">
+    <if_sid>490000</if_sid>
+    <match>msg=AckAboveHole</match>
+    <description>XXX Ack Above Hole</description>
+    <group>bro-ids,ids,</group>
+  </rule>
+
+  <!--Aug 25 13:09:28 ix bro: no=NoticeTally na=NOTICE_ALARM_ALWAYS es=bro num=7 msg=ContentGap\\ (7\\ times) tag=@81-2fd-1fa-->
+  <rule id="490013" level="8">
+    <if_sid>490000</if_sid>
+    <match>msg=ContentGap</match>
+    <description>XXX Content Gap</description>
+    <group>bro-ids,ids,</group>
+  </rule>
+
+  <!--Aug 23 14:37:30 ix bro: no=ResourceSummary na=NOTICE_ALARM_ALWAYS es=bro msg=elapsed\\ time\\ \\=\\ 376.0\\ msecs\\ 174.0\\ usecs,\\ total\\ CPU\\ \\=\\ 390.0\\ msecs,\\ maximum\\ memory\\ \\=\\ 0\\ KB,\\ peak\\ connections\\ \\=\\ 0,\\ peak\\ timers\\ \\=\\ 84,\\ peak\\ fragments\\ \\=\\ 0 tag=@69-1f25-1-->
+  <rule id="490014" level="1">
+    <if_sid>490000</if_sid>
+    <match>no=ResourceSummary</match>
+    <description>Bro-ids resource summary.</description>
+    <group>bro-ids,ids,</group>
+  </rule>
+
+  <!--Aug 25 08:52:10 junction bro: no=PortScanSummary na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 num=988 msg=192.168.17.8\\\\ scanned\\\\ a\\\\ total\\\\ of\\\\ 988\\\\ ports tag=@ef-24ad-af-->
+  <rule id="490015" level="7">
+    <if_sid>490000</if_sid>
+    <match>no=PortScanSummary</match>
+    <description>Bro-ids port scan summary.</description>
+    <group>bro-ids,ids,</group>
+  </rule>
   
    
 </group> <!-- SYSLOG,LOCAL -->
