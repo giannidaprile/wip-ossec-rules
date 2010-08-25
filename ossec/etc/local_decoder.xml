@@ -13,10 +13,12 @@
 <decoder name="bsd_arp">
   <parent>bsd_kernel</parent>
   <prematch offset="after_parent">^arp </prematch>
+  <!--<regex offset="after_prematch"> overwritten for (\S+) by (\S+) on \S+</regex>-->
   <regex offset="after_prematch"> for (\S+) by (\S+) on \S+</regex>
   <order>dstip, extra_data</order>
 </decoder>
-<!--
+
+<!-- This does not work quite the way I expect yet:
 <decoder name="bsd_hd">
   <parent>bsd_kernel</parent>
   <use_own_name>true</use_own_name>
@@ -26,21 +28,18 @@
 </decoder>
 -->
 
-
 <decoder name="python">
   <program_name>^python</program_name>
 </decoder>
 
-<!--This needs to be added to decoder.xml after named, and before named_from for it to work.
-    Commented this out for now, since I've added it to decoders.xml-->
 <!--Apr 20 00:45:40 gorilla named[19606]: zone adioserrores.com/IN: refresh: retry limit for master 192.168.1.33#53 exceeded (source 0.0.0.0#0)-->
-<!--
 <decoder name="named-master">
   <parent>named</parent>
-  <regex>for master (\d+.\d+.\d+.\d+)#(\d+) \S+ \(source (\d+.\d+.\d+.\d+)#\d+\)</regex>
+  <prematch> for master</prematch>
+  <regex>for master (\d+.\d+.\d+.\d+):(\d+) \S+ \(source (\d+.\d+.\d+.\d+)#d+\)$</regex>
   <order>dstip,dstport,srcip</order>
 </decoder>
--->
+
 
 <decoder name="dropbear">
   <program_name>dropbear</program_name>
@@ -80,25 +79,19 @@
   <order>extra_data</order>
 </decoder>
 
+
+<!--Apr 10 13:22:52 tiny isakmpd[6988]: dropped message from 192.168.1.233 port 500 due to notification type INVALID_COOKIE-->
 <decoder name="isakmpd">
   <program_name>isakmpd</program_name>
 </decoder>
 
-<!--Apr 10 13:22:52 tiny isakmpd[6988]: dropped message from 192.168.1.233 port 500 due to notification type INVALID_COOKIE-->
 <decoder name="isakmpd-from">
   <parent>isakmpd</parent>
   <prematch>message from </prematch>
-  <regex>from (\S+) port 500</regex>
+  <regex>from (\S+) port 50</regex>
   <order>srcip</order>
 </decoder>
 
-<!--Nov  4 18:15:59 alphen-vpn-gw isakmpd[28891]: transport_send_messages: giving up on exchange ISAKMP-peer-node-ldn, no response from peer 192.168.1.1:500-->
-<decoder name="isakmpd-response">
-  <parent>isakmpd</parent>
-  <prematch>response from peer </prematch>
-  <regex>from peer (\S+):500$</regex>
-  <order>srcip</order>
-</decoder>
 
 <!--Apr 11 20:01:02 ix mountd[11618]: Refused mount RPC from host 192.168.17.10 port 45659-->
 <decoder name="mountd">
@@ -116,10 +109,11 @@
   <program_name>^nmbd</program_name>
 </decoder>
 
+
 <!--Mar 13 16:29:04 ix smbd[6238]:   Connection denied from 0.0.0.0-->
 <decoder name="smbd-from">
   <parent>smbd</parent>
-  <prematch> from (\S+)$</prematch>
+  <prematch> from (\S+)$</prematch>                                                                                                                               
   <regex> from (\S+)$</regex>
   <order>dstip</order>
 </decoder>
@@ -139,7 +133,40 @@
 <!--Aug 10 08:38:40 junction sshd[20013]: error: connect_to 192.168.179 port 8080: failed.-->
 <decoder name="ssh-connect-to">
   <parent>sshd</parent>
-  <prematch offset="after_parent">^error: connect_to </prematch>
-  <regex>connect_to (\S+) port (\d+):</regex>                                                                                                                      
+  <prematch>connect_to</prematch>
+  <regex>connect_to: (\S+) port (\d+):</regex>
   <order>dstip,dstport</order>
 </decoder>
+
+<decoder name="bro-ids">
+  <program_name>^bro</program_name>
+</decoder>
+
+<!--Aug 25 08:52:10 junction bro: no=PortScanSummary na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 num=988 msg=192.168.17.8\\\\ scanned\\\\ a\\\\ total\\\\ of\\\\ 988\\\\ ports tag=@ef-24ad-af-->
+<decoder name="bro-portscan">
+  <parent>bro-ids</parent>
+  <prematch>no=PortscanSummary</prematch>
+  <regex>sa=(\S+) num=(\d+) msg=</regex> 
+  <order>srcip,extra_data</order>
+</decoder>
+
+<!--XXX This is for some personal testing and will be removed.-->
+<!--Aug 25 13:20:35 ix bro: WTF domain: sacxtra.com other: 208.53.158.84-->
+<decoder name="bro-wtf">
+  <parent>bro-ids</parent>
+  <prematch offset="after_parent">^WTF domain</prematch>
+  <regex>WTF domain: (\S+) other: (\S+)$</regex>
+  <order>extra_data,srcip</order>
+</decoder>
+
+<!--This is for a personal bro-ids script that looks at the responses for dns lookups and compares the resulting IP to a list of known bad IPs-->
+<!--XXX Format is subject to change!-->
+<!--Aug 25 13:28:48 junction bro: no=DNS_Bad_Response na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.1.1 sp=42166/udp da=192.168.1.2 dp=53/udp p=53/udp msg=
+BadResponse\\ for\\example.com\\ (192.168.2.1) tag=@ce-a7a-1-->
+<decoder name="bro-baddns">
+  <parent>bro-ids</parent>
+  <prematch>no=DNS_Bad_Response na=</prematch>
+  <regex>es=bro sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+ p=\d+/\S+ msg=BadResponse\\\\ for\\\\(\S+)\\\\ </regex>-->
+  <order>srcip,srcport,protocol,dstip,dstport,extra_data</order>
+</decoder>
+
