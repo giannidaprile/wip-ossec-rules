@@ -142,4 +142,11 @@
   <program_name>^bro</program_name>
 </decoder>
 
+<!--Aug 25 08:52:10 junction bro: no=PortScanSummary na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 num=988 msg=192.168.17.8\\\\ scanned\\\\ a\\\\ total\\\\ of\\\\ 988\\\\ ports tag=@ef-24ad-af-->
+<decoder name="bro-portscan">
+  <parent>bro-ids</parent>
+  <prematch>no=PortscanSummary</prematch>
+  <regex>sa=(\S+) num=(\d+) msg=</regex> 
+  <order>srcip,extra_data</order>
+</decoder>
 
