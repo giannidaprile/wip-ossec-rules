@@ -11,6 +11,7 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'isakmpd'
        srcip: '192.168.1.233'
+       srcport: '500'
 
 
 **Phase 1: Completed pre-decoding.
@@ -32,6 +33,7 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'isakmpd'
        srcip: '192.168.1.1'
+       srcport: '500'
 
 
 **Phase 1: Completed pre-decoding.
@@ -43,3 +45,4 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'isakmpd'
        srcip: '192.168.1.1'
+       srcport: '500'
