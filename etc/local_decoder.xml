@@ -88,8 +88,16 @@
 <decoder name="isakmpd-from">
   <parent>isakmpd</parent>
   <prematch>message from </prematch>
-  <regex>from (\S+) port 50</regex>
-  <order>srcip</order>
+  <regex>from (\S+) port (\d+)</regex>
+  <order>srcip,srcport</order>
+</decoder>
+
+<!--Nov  4 18:15:59 alphen-vpn-gw isakmpd[28891]: transport_send_messages: giving up on exchange ISAKMP-peer-node-ldn, no response from peer 192.168.1.1:500-->
+<decoder name="isakmpd-peer">
+  <parent>isakmpd</parent>
+  <prematch>from peer</prematch>
+  <regex>from peer (\S+):(\d+)$</regex>
+  <order>srcip,srcport</order>
 </decoder>
 
 
