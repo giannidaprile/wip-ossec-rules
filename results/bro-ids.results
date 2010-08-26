@@ -104,3 +104,26 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 26 01:37:15 junction bro: no=ZoneTransfer na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.1.9 sp=4175/tcp da=192.168.1.17 dp=53/tcp p=53/tcp msg=transfer\\ of\\example.com\\ requested\\ by\\ 192.168.1.9 tag=@61-3a46-d'
+       hostname: 'junction'
+       program_name: 'bro'
+       log: 'no=ZoneTransfer na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.1.9 sp=4175/tcp da=192.168.1.17 dp=53/tcp p=53/tcp msg=transfer\\ of\\example.com\\ requested\\ by\\ 192.168.1.9 tag=@61-3a46-d'
+
+**Phase 2: Completed decoding.
+       decoder: 'bro-ids'
+       srcip: '192.168.1.9'
+       srcport: '4175'
+       proto: 'tcp'
+       dstip: '192.168.1.17'
+       dstport: '53'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490016'
+       Level: '4'
+       Description: 'Bro-ids Zone Transfer alert.'
+**Alert to be generated.
+
+
