@@ -158,6 +158,14 @@
   <order>srcip,extra_data</order>
 </decoder>
 
+<!--Aug 26 01:37:15 junction bro: no=ZoneTransfer na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.1.9 sp=4175/tcp da=192.168.1.17 dp=53/tcp p=53/tcp msg=transfer\\ of\\example.
+com\\ requested\\ by\\ 192.168.1.9 tag=@61-3a46-d--><decoder name="bro-zonetransfer">
+  <parent>bro-ids</parent>
+  <prematch>no=ZoneTransfer</prematch>
+  <regex>sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+</regex>
+  <order>srcip,srcport,protocol,dstip,dstport</order>
+</decoder>
+
 <!--XXX This is for some personal testing and will be removed.-->
 <!--Aug 25 13:20:35 ix bro: WTF domain: sacxtra.com other: 208.53.158.84-->
 <decoder name="bro-wtf">

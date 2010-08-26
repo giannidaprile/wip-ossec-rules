@@ -4,3 +4,4 @@ Aug 25 08:57:11 junction bro: Starting incremental serialization...
 Aug 25 08:57:13 junction bro: Finished incremental serialization.
 Aug 23 14:37:30 ix bro: no=ResourceSummary na=NOTICE_ALARM_ALWAYS es=bro msg=elapsed\\ time\\ \\=\\ 376.0\\ msecs\\ 174.0\\ usecs,\\ total\\ CPU\\ \\=\\ 390.0\\ msecs,\\ maximum\\ memory\\ \\=\\ 0\\ KB,\\ peak\\ connections\\ \\=\\ 0,\\ peak\\ timers\\ \\=\\ 84,\\ peak\\ fragments\\ \\=\\ 0 tag=@69-1f25-1
 Aug 25 08:52:10 junction bro: no=PortScanSummary na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 num=988 msg=192.168.17.8\\\\ scanned\\\\ a\\\\ total\\\\ of\\\\ 988\\\\ ports tag=@ef-24ad-af
+Aug 26 01:37:15 junction bro: no=ZoneTransfer na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.1.9 sp=4175/tcp da=192.168.1.17 dp=53/tcp p=53/tcp msg=transfer\\ of\\example.com\\ requested\\ by\\ 192.168.1.9 tag=@61-3a46-d

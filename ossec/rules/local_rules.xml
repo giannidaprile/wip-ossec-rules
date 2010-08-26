@@ -1906,6 +1906,14 @@ conf).-->
     <description>Bro-ids port scan summary.</description>
     <group>bro-ids,ids,</group>
   </rule>
+
+  <!--Aug 26 01:37:15 junction bro: no=ZoneTransfer na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.1.9 sp=4175/tcp da=192.168.1.17 dp=53/tcp p=53/tcp msg=transfer\\ of\\example.com\\ requested\\ by\\ 192.168.1.9 tag=@61-3a46-d-->
+  <rule id="490016" level="4">
+    <if_sid>490000</if_sid>
+    <match>no=ZoneTransfer</match>
+    <description>Bro-ids Zone Transfer alert.</description>
+    <group>bro-ids,ids,</group>
+  </rule>
   
 
 
