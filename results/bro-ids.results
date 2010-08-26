@@ -150,3 +150,25 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 26 12:34:27 junction bro: no=PortScan na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 p=17/tcp num=250 msg=192.168.17.8\\ has\\ scanned\\ 250\\ ports\\ of\\ 192.168.17.17 tag=@11-68e9-5'
+       hostname: 'junction'
+       program_name: 'bro'
+       log: 'no=PortScan na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 p=17/tcp num=250 msg=192.168.17.8\\ has\\ scanned\\ 250\\ ports\\ of\\ 192.168.17.17 tag=@11-68e9-5'
+
+**Phase 2: Completed decoding.
+       decoder: 'bro-ids'
+       srcip: '192.168.17.8'
+       srcport: '17'
+       proto: 'tcp'
+       extra_data: '250'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490018'
+       Level: '4'
+       Description: 'Bro-ids detected a portscan.'
+**Alert to be generated.
+
+
