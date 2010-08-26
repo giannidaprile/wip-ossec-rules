@@ -127,3 +127,26 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 26 02:28:57 ix bro: no=SensitivePortmapperAccess na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 sp=2957/tcp da=192.168.17.9 dp=111/tcp p=111/tcp msg=rpc:\\ 192.168.17.8/2957\\ >\\ 192.168.17.9/portmap\\ pm_dump:\\ (done) tag=@46-764d-5d'
+       hostname: 'ix'
+       program_name: 'bro'
+       log: 'no=SensitivePortmapperAccess na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 sp=2957/tcp da=192.168.17.9 dp=111/tcp p=111/tcp msg=rpc:\\ 192.168.17.8/2957\\ >\\ 192.168.17.9/portmap\\ pm_dump:\\ (done) tag=@46-764d-5d'
+
+**Phase 2: Completed decoding.
+       decoder: 'bro-ids'
+       srcip: '192.168.17.8'
+       srcport: '2957'
+       proto: 'tcp'
+       dstip: '192.168.17.9'
+       dstport: '111'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490017'
+       Level: '4'
+       Description: 'Bro-ids detected acces to the portmapper port.'
+**Alert to be generated.
+
+
