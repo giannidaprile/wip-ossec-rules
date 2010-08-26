@@ -83,6 +83,14 @@ e.com\\ requested\\ by\\ 192.168.1.9 tag=@61-3a46-d-->
     <description>Bro-ids detected acces to the portmapper port.</description>
     <group>bro-ids,ids,</group>
   </rule>
+
+  <!--Aug 26 12:34:27 junction bro: no=PortScan na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 p=17/tcp num=250 msg=192.168.17.8\\ has\\ scanned\\ 250\\ ports\\ of\\ 192.168.17.17 tag=@11-68e9-5-->
+  <rule id="490018" level="4">
+    <if_sid>490000</if_sid>
+    <match>no=PortScan </match>
+    <description>Bro-ids detected a portscan.</description>
+    <group>bro-ids,ids,</group>
+  </rule>
   
    
 </group> <!-- SYSLOG,LOCAL -->
