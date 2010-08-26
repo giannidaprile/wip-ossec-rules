@@ -17,4 +17,6 @@ Jun 23 08:35:32 servername su[19301]: pam_ldap: error trying to bind as user "ui
 Jun 29 10:34:44 ix named[22107]: automatic empty zone: A.E.F.IP6.ARPA
 
 
+Aug 26 01:37:15 junction bro: no=ZoneTransfer na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.1.9 sp=4175/tcp da=192.168.1.17 dp=53/tcp p=53/tcp msg=transfer\\ of\\example.com\\ requested\\ by\\ 192.168.1.9 tag=@61-3a46-d
+
 
