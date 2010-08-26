@@ -1914,6 +1914,15 @@ conf).-->
     <description>Bro-ids Zone Transfer alert.</description>
     <group>bro-ids,ids,</group>
   </rule>
+
+  <!--Aug 26 02:28:57 ix bro: no=SensitivePortmapperAccess na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 sp=2957/tcp da=192.168.17.9 dp=111/tcp p=111/tcp msg=rpc:\\ 192.
+168.17.8/2957\\ >\\ 192.168.17.9/portmap\\ pm_dump:\\ (done) tag=@46-764d-5d-->
+  <rule id="490017" level="4">
+    <if_sid>490000</if_sid>
+    <match>no=SensitivePortMapperAccess</match>
+    <description>Bro-ids detected acces to the portmapper port.</description>
+    <group>bro-ids,ids,</group>
+  </rule>
   
 
 

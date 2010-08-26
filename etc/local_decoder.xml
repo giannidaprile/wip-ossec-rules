@@ -166,6 +166,14 @@ com\\ requested\\ by\\ 192.168.1.9 tag=@61-3a46-d--><decoder name="bro-zonetrans
   <order>srcip,srcport,protocol,dstip,dstport</order>
 </decoder>
 
+<!--Aug 26 02:28:57 ix bro: no=SensitivePortmapperAccess na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 sp=2957/tcp da=192.168.17.9 dp=111/tcp p=111/tcp msg=rpc:\\ 192.16
+8.17.8/2957\\ >\\ 192.168.17.9/portmap\\ pm_dump:\\ (done) tag=@46-764d-5d-->
+<decoder name="bro-sensitive">    <parent>bro-ids</parent>
+  <prematch>no=SensitivePortmapperAccess</prematch>
+  <regex>sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+</regex>
+  <order>srcip,srcport,protocol,dstip,dstport</order>
+</decoder>
+
 <!--XXX This is for some personal testing and will be removed.-->
 <!--Aug 25 13:20:35 ix bro: WTF domain: sacxtra.com other: 208.53.158.84-->
 <decoder name="bro-wtf">
@@ -181,8 +189,8 @@ com\\ requested\\ by\\ 192.168.1.9 tag=@61-3a46-d--><decoder name="bro-zonetrans
 BadResponse\\ for\\example.com\\ (192.168.2.1) tag=@ce-a7a-1-->
 <decoder name="bro-baddns">
   <parent>bro-ids</parent>
-  <prematch>no=DNS_Bad_Response na=</prematch>
-  <regex>es=bro sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+ p=\d+/\S+ msg=BadResponse\\\\ for\\\\(\S+)\\\\ </regex>-->
+  <prematch>no=DNS_Bad_Response</prematch>
+  <regex>es=bro sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+ p=\d+/\S+ msg=BadResponse\\\\ for\\\\ (\S+)\\\\ </regex>
   <order>srcip,srcport,protocol,dstip,dstport,extra_data</order>
 </decoder>
 
