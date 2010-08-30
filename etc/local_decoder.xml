@@ -154,19 +154,16 @@
 <decoder name="bro-portscan">
   <parent>bro-ids</parent>
   <prematch>no=PortscanSummary</prematch>
-  <regex>sa=(\S+) num=(\d+) msg=</regex>
+  <regex>sa=(\S+) num=(\d+) msg=</regex> 
   <order>srcip,extra_data</order>
 </decoder>
 
-<!--Aug 26 01:37:15 junction bro: no=ZoneTransfer na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.1.9 sp=4175/tcp da=192.168.1.17 dp=53/tcp p=53/tcp msg=transfer\\ of\\example.
-com\\ requested\\ by\\ 192.168.1.9 tag=@61-3a46-d--><decoder name="bro-zonetransfer">
-<!--Aug 26 02:28:57 ix bro: no=SensitivePortmapperAccess na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 sp=2957/tcp da=192.168.17.9 dp=111/tcp p=111/tcp msg=rpc:\\ 192.16
-8.17.8/2957\\ >\\ 192.168.17.9/portmap\\ pm_dump:\\ (done) tag=@46-764d-5d-->
-<decoder name="bro-typical">
+<!--Aug 26 12:34:27 junction bro: no=PortScan na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 p=17/tcp num=250 msg=192.168.17.8\\ has\\ scanned\\ 250\\ ports\\ of\\ 192.168.17.17 tag=@11-68e9-5-->
+<decoder name="bro-portscan2">
   <parent>bro-ids</parent>
-  <prematch>na=NOTICE</prematch>
-  <regex>sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+</regex>
-  <order>srcip,srcport,protocol,dstip,dstport</order>
+  <prematch>no=PortScan </prematch>
+  <regex>sa=(\S+) p=(\d+)/(\S+) num=(\d+)</regex>
+  <order>srcip,srcport,protocol,extra_data</order>
 </decoder>
 
 <!--XXX This is for some personal testing and will be removed.-->
@@ -181,11 +178,18 @@ com\\ requested\\ by\\ 192.168.1.9 tag=@61-3a46-d--><decoder name="bro-zonetrans
 <!--This is for a personal bro-ids script that looks at the responses for dns lookups and compares the resulting IP to a list of known bad IPs-->
 <!--XXX Format is subject to change!-->
 <!--Aug 25 13:28:48 junction bro: no=DNS_Bad_Response na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.1.1 sp=42166/udp da=192.168.1.2 dp=53/udp p=53/udp msg=
-BadResponse\\ for\\example.com\\ (192.168.2.1) tag=@ce-a7a-1-->
+BadResponse\\ for\\ example.com\\ (192.168.2.1) tag=@ce-a7a-1-->
+<!--Aug 28 22:21:29 junction bro: no=DNS_Bad_Response na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.17 sp=16254/udp da=208.67.220.220 dp=53/udp p=53/udp msg=BadResponse\\\\ for\\\\ torrent-finder.com\\\\ (208.101.51.57) tag=@11-68e9-3e-->
 <decoder name="bro-baddns">
   <parent>bro-ids</parent>
   <prematch>no=DNS_Bad_Response</prematch>
-  <regex>es=bro sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+ p=\d+/\S+ msg=BadResponse\\\\ for\\\\ (\S+)\\\\ </regex>
-  <order>srcip,srcport,protocol,dstip,dstport,extra_data</order>
+  <regex>es=bro sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+ p=\d+/\S+ msg=BadResponse\S+ for\S+ (\S+)\\\S+ </regex>
+  <order>srcip,srcport,protocol,dstip,dstport,url</order>
 </decoder>
 
+<decoder name="bro-typical">
+  <parent>bro-ids</parent>
+  <prematch>na=NOTICE</prematch>
+  <regex>sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+</regex>
+  <order>srcip,srcport,protocol,dstip,dstport</order>
+</decoder>
