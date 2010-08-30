@@ -166,14 +166,6 @@
   <order>srcip,srcport,protocol,extra_data</order>
 </decoder>
 
-<decoder name="bro-typical">
-  <parent>bro-ids</parent>
-  <prematch>na=NOTICE</prematch>
-  <regex>sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+</regex>
-  <order>srcip,srcport,protocol,dstip,dstport</order>
-</decoder>
-  
-
 <!--XXX This is for some personal testing and will be removed.-->
 <!--Aug 25 13:20:35 ix bro: WTF domain: sacxtra.com other: 208.53.158.84-->
 <decoder name="bro-wtf">
@@ -186,11 +178,18 @@
 <!--This is for a personal bro-ids script that looks at the responses for dns lookups and compares the resulting IP to a list of known bad IPs-->
 <!--XXX Format is subject to change!-->
 <!--Aug 25 13:28:48 junction bro: no=DNS_Bad_Response na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.1.1 sp=42166/udp da=192.168.1.2 dp=53/udp p=53/udp msg=
-BadResponse\\ for\\example.com\\ (192.168.2.1) tag=@ce-a7a-1-->
+BadResponse\\ for\\ example.com\\ (192.168.2.1) tag=@ce-a7a-1-->
+<!--Aug 28 22:21:29 junction bro: no=DNS_Bad_Response na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.17 sp=16254/udp da=208.67.220.220 dp=53/udp p=53/udp msg=BadResponse\\\\ for\\\\ torrent-finder.com\\\\ (208.101.51.57) tag=@11-68e9-3e-->
 <decoder name="bro-baddns">
   <parent>bro-ids</parent>
   <prematch>no=DNS_Bad_Response</prematch>
-  <regex>es=bro sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+ p=\d+/\S+ msg=BadResponse\\\\ for\\\\ (\S+)\\\\ </regex>
-  <order>srcip,srcport,protocol,dstip,dstport,extra_data</order>
+  <regex>es=bro sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+ p=\d+/\S+ msg=BadResponse\S+ for\S+ (\S+)\\\S+ </regex>
+  <order>srcip,srcport,protocol,dstip,dstport,url</order>
 </decoder>
 
+<decoder name="bro-typical">
+  <parent>bro-ids</parent>
+  <prematch>na=NOTICE</prematch>
+  <regex>sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+</regex>
+  <order>srcip,srcport,protocol,dstip,dstport</order>
+</decoder>
