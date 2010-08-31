@@ -2,3 +2,5 @@ Oct 27 09:48:52 172.16.51.135 fedora11 kernel: ossec-logcollec[2166]: segfault a
 2010/08/02 14:17:39 ossec-dbd(1230): ERROR: Invalid element in the configuration: 'list'.
 2010/08/02 14:17:39 ossec-dbd(1220): ERROR: Error loading the rules: 'local_rules.xml'.
 2010/08/02 14:17:39 ossec-dbd(1202): ERROR: Configuration error at '/var/ossec/etc/ossec.conf'. Exiting.
+2010/08/30 11:38:12 ossec-remoted: ERROR: Unable to create merged file: '/etc/shared/merged.mg'.
+2010/08/30 11:45:16 ossec-rootcheck(1251): ERROR: Invalid rk configuration name: '^M'.
