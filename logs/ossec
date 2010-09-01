@@ -7,3 +7,6 @@ Oct 27 09:48:52 172.16.51.135 fedora11 kernel: ossec-logcollec[2166]: segfault a
 2010/08/31 10:05:08 ossec-reportd: ERROR: Invalid related entry 'Rule'.
 2010/08/31 10:05:08 ossec-reportd(1202): ERROR: Configuration error at 'user argument'. Exiting.
 2010/08/31 10:05:13 ossec-reportd: ERROR: Invalid relation '1002'.
+2010/08/31 14:41:29 ossec-config(1226): ERROR: Error reading XML file 'etc/ossec.conf': XMLERR: File 'etc/ossec.conf' not found. (line 0).
+2010/09/01 04:41:11 ossec-logcollector: Bad formated nmap grepable file (port).
+2010/09/01 13:52:55 ossec-testrule(1202): ERROR: Configuration error at '/etc/local_decoder.xml'. Exiting.
