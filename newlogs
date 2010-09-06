@@ -16,4 +16,4 @@ Jun 23 08:35:32 servername su[19301]: pam_ldap: error trying to bind as user "ui
 
 Jun 29 10:34:44 ix named[22107]: automatic empty zone: A.E.F.IP6.ARPA
 
-
+Sep  4 23:58:33 junction sshd[9351]: fatal: Write failed: Broken pipe
