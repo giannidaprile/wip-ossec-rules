@@ -11,4 +11,8 @@ Oct 27 09:48:52 172.16.51.135 fedora11 kernel: ossec-logcollec[2166]: segfault a
 2010/09/01 04:41:11 ossec-logcollector: Bad formated nmap grepable file (port).
 2010/09/01 13:52:55 ossec-testrule(1202): ERROR: Configuration error at '/etc/local_decoder.xml'. Exiting.
 2010/09/01 15:09:42 ossec-syscheckd(1124): ERROR: Unable to rename file: '/etc/malloc.conf'. <!--From report changes-->
-2010/09/01 15:25:14 ossec-syscheckd: ERROR: Invalid internal state (missing '/etc/malloc.conf'). 
+2010/09/01 15:25:14 ossec-syscheckd: ERROR: Invalid internal state (missing '/etc/malloc.conf').
+2010/09/10 14:00:34 ossec-dbd(1235): ERROR: Invalid value for element 'id': 1100000.
+2010/09/10 14:00:34 ossec-dbd(5105): ERROR: Invalid rule attributes inside file: 'local_rules.xml'.
+2010/09/10 14:00:34 ossec-dbd(1220): ERROR: Error loading the rules: 'local_rules.xml'.
+2010/09/10 14:00:34 ossec-dbd(1202): ERROR: Configuration error at '/var/ossec/etc/ossec.conf'. Exiting.
