@@ -1,4 +1,4 @@
-<!-- @(#) $Id: postgresql_rules.xml,v 1.6 2010/03/04 20:12:33 dcid Exp $
+<!-- @(#) $Id$
   -  Official PostgreSQL rules for OSSEC.
   -
   -  Copyright (C) 2009 Trend Micro Inc.

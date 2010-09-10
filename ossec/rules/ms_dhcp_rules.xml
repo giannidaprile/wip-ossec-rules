@@ -1,5 +1,5 @@
 
-<!-- @(#) $Id: ms_dhcp_rules.xml,v 1.1 2009/05/28 17:08:39 dcid Exp $
+<!-- @(#) $Id$
   -  Microsoft Windows 2003 ipv4, Windows 2008 ipv4/ipv6 DHCP rules for OSSEC.
   -  Author: phishphreek@gmail.com
   -  License: http://www.ossec.net/en/licensing.html (http://gplv3.fsf.org)

@@ -1,4 +1,4 @@
-<!-- @(#) $Id: syslog_rules.xml,v 1.91 2010/08/09 20:07:48 dcid Exp $
+<!-- @(#) $Id$
   -  Official Generic Syslog rules for OSSEC.
   -
   -  Copyright (C) 2009 Trend Micro Inc.
