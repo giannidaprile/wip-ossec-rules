@@ -16,3 +16,7 @@ Oct 27 09:48:52 172.16.51.135 fedora11 kernel: ossec-logcollec[2166]: segfault a
 2010/09/10 14:00:34 ossec-dbd(5105): ERROR: Invalid rule attributes inside file: 'local_rules.xml'.
 2010/09/10 14:00:34 ossec-dbd(1220): ERROR: Error loading the rules: 'local_rules.xml'.
 2010/09/10 14:00:34 ossec-dbd(1202): ERROR: Configuration error at '/var/ossec/etc/ossec.conf'. Exiting.
+2010/09/01 04:41:11 ossec-logcollector: Bad formated nmap grepable file (port).
+2010/09/01 13:52:55 ossec-testrule(1202): ERROR: Configuration error at '/etc/local_decoder.xml'. Exiting.
+2010/09/01 14:15:49 ossec-analysisd(2107): ERROR: Decoder configuration error: 'dennis-test'.
+2010/09/10 21:14:03 ossec-dbd(5204): ERROR: Database error. Unable to run query.
