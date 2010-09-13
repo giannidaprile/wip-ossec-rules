@@ -20,3 +20,4 @@ Oct 27 09:48:52 172.16.51.135 fedora11 kernel: ossec-logcollec[2166]: segfault a
 2010/09/01 13:52:55 ossec-testrule(1202): ERROR: Configuration error at '/etc/local_decoder.xml'. Exiting.
 2010/09/01 14:15:49 ossec-analysisd(2107): ERROR: Decoder configuration error: 'dennis-test'.
 2010/09/10 21:14:03 ossec-dbd(5204): ERROR: Database error. Unable to run query.
+2010/09/13 09:38:10 ossec-reportd: ERROR: Invalid filter 'Rule'.
