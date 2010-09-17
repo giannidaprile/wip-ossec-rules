@@ -22,3 +22,5 @@ Oct 27 09:48:52 172.16.51.135 fedora11 kernel: ossec-logcollec[2166]: segfault a
 2010/09/10 21:14:03 ossec-dbd(5204): ERROR: Database error. Unable to run query.
 2010/09/13 09:38:10 ossec-reportd: ERROR: Invalid filter 'Rule'.
 2010/09/13 19:48:32 decode-xml: Wrong field 'hostname' in the order of decoder 'attack data'
+2010/09/16 22:37:46 ossec-reportd: ERROR: Invalid filter 'agent'. 
+2010/09/16 22:37:50 ossec-reportd: ERROR: Invalid filter 'id'.
