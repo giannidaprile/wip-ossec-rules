@@ -32,7 +32,7 @@
   <!--Aug  4 09:14:58 ix last message repeated 2 times-->
   <rule id="470012" level="0">
     <match>last message repeated</match>
-    <descrption>A syslog message has been sent repeatedly.</description>
+    <description>A syslog message has been sent repeatedly.</description>
   </rule>
    
 </group> <!-- SYSLOG,LOCAL -->
