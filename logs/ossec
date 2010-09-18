@@ -24,3 +24,7 @@ Oct 27 09:48:52 172.16.51.135 fedora11 kernel: ossec-logcollec[2166]: segfault a
 2010/09/13 19:48:32 decode-xml: Wrong field 'hostname' in the order of decoder 'attack data'
 2010/09/16 22:37:46 ossec-reportd: ERROR: Invalid filter 'agent'. 
 2010/09/16 22:37:50 ossec-reportd: ERROR: Invalid filter 'id'.
+2010/09/17 13:28:05 adding rule: attack_rules.xml
+2010/09/17 13:28:05 ossec-testrule: INFO: Reading rules file: 'attack_rules.xml'
+2010/09/17 13:35:08 ossec-config(1226): ERROR: Error reading XML file 'etc/ossec.conf': XML ERR: Element not closed: decoder_dir (line 180).
+2010/09/17 13:35:08 ossec-testrule(1202): ERROR: Configuration error at 'etc/ossec.conf'. Exiting.
