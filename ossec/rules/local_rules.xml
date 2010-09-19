@@ -1933,7 +1933,7 @@ conf).-->
     <group>bro-ids,ids,</group>
   </rule>
 
-  
+
 
 
 </group> <!-- SYSLOG,LOCAL -->
