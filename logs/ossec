@@ -28,3 +28,6 @@ Oct 27 09:48:52 172.16.51.135 fedora11 kernel: ossec-logcollec[2166]: segfault a
 2010/09/17 13:28:05 ossec-testrule: INFO: Reading rules file: 'attack_rules.xml'
 2010/09/17 13:35:08 ossec-config(1226): ERROR: Error reading XML file 'etc/ossec.conf': XML ERR: Element not closed: decoder_dir (line 180).
 2010/09/17 13:35:08 ossec-testrule(1202): ERROR: Configuration error at 'etc/ossec.conf'. Exiting.
+2010/09/20 17:21:50 ossec-analysisd(1226): ERROR: Error reading XML file 'rules/rules.d/local_argus_rules.xml': XMLERR: File 'rules/rules.d/local_argus_rules.xml' not found. (line 125).
+2010/09/20 17:21:50 ossec-testrule(1220): ERROR: Error loading the rules: 'rules/rules.d/local_argus_rules.xml'.
+2010/09/20 17:25:40 ossec-testrule: INFO: Reading rules file: 'attack_rules.xml'
