@@ -583,3 +583,39 @@ ossec-testrule: Type one log per line.
        Rule id: '310030'
        Level: '0'
        Description: 'named is now running.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 29 10:34:44 ix named[22107]: automatic empty zone: A.E.F.IP6.ARPA'
+       hostname: 'ix'
+       program_name: 'named'
+       log: 'automatic empty zone: A.E.F.IP6.ARPA'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310031'
+       Level: '1'
+       Description: 'named has created an automatic empty zone.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 10 11:27:39 buzzell named[13160]: reloading configuration failed: out of memory'
+       hostname: 'buzzell'
+       program_name: 'named'
+       log: 'reloading configuration failed: out of memory'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '310032'
+       Level: '3'
+       Description: 'Server does not have enough memory to reload the configuration.'
+**Alert to be generated.
+
+

@@ -225,3 +225,21 @@ ossec-testrule: Type one log per line.
        Rule id: '480027'
        Level: '0'
        Description: 'XXX Client has sent a DONE message.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 22 20:22:51 junction rastream[19908]: 20:22:51.957358 ArgusReadStreamSocket (0x253e000) read error Connection reset by peer'
+       hostname: 'junction'
+       program_name: 'rastream'
+       log: '20:22:51.957358 ArgusReadStreamSocket (0x253e000) read error Connection reset by peer'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '480032'
+       Level: '2'
+       Description: 'rastream connection was reset.'
+**Alert to be generated.
+
+
