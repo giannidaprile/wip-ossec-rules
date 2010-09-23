@@ -111,6 +111,15 @@
     <group>sshd,ldap,pam,authentication_failures,</group>
   </rule>
 
+  <!--Sep 18 14:58:47 ix sshd[11816]: error: Could not load host key: /etc/ssh/ssh_host_ecdsa_key-->
+  <rule id="370023" level="1">
+    <if_sid>5700</if_sid>
+    <match>Could not load host key</match>
+    <description>sshd could not load one or more host keys.</description>
+    <info>https://code.google.com/p/wip-ossec-rules/wiki/rule_id_370023</info>
+    <group>sshd,sysadmin,</group>
+  </rule>
+
 
    
 </group> <!-- SYSLOG,LOCAL -->

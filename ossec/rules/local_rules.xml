@@ -1698,7 +1698,7 @@ conf).-->
     <if_sid>5700</if_sid>
     <match>Could not load host key</match>
     <description>sshd could not load one or more host keys.</description>
-    <info>http://www.openbsd.org/cgi-bin/man.cgi?query=ssh-keygen&sektion=1</info>
+    <info>https://code.google.com/p/wip-ossec-rules/wiki/rule_id_370023</info>
     <group>sshd,sysadmin,</group>
   </rule>
 
