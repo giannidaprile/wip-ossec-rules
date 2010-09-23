@@ -3,10 +3,6 @@ Jul 15 18:33:10 server fsmpm[16951]: NSS: Name Server '192.168.1.2' (192.168.1.2
 Jul 15 18:33:10 server fsmpm[16951]: NSS: Name Server '192.168.1.2' (192.168.1.2) port is 55040, revision is 0x0102.
 Jul 15 18:33:10 server fsmpm[16951]: PortMapper: Added mapping from id 192.168.1.2 to addr 192.168.1.2
 
-Aug 16 10:58:12 client nscd: nss_ldap: failed to bind to LDAP server ldap://ldap.example.com: Can't contact LDAP server
-Aug 16 10:58:12 client nscd: nss_ldap: reconnecting to LDAP server (sleeping 32 seconds)...
-Jun 26 08:19:25 servername sh: nss_ldap: reconnecting to LDAP server (sleeping 32 seconds)...
-Jun 26 08:19:29 servername sh: nss_ldap: failed to bind to LDAP server ldap://ldap-server.example.com: Can't contact LDAP server
 Jun 23 08:35:32 servername su[19301]: pam_ldap: error trying to bind as user "uid=root,cn=users,dc=ldap-server,dc=example,dc=example,dc=com" (Invalid credentials)
 
 
