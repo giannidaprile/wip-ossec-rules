@@ -348,6 +348,14 @@
   <fts>name, srcuser, location</fts>
 </decoder>
 
+<!--Jun 23 08:35:32 servername su[19301]: pam_ldap: error trying to bind as user "uid=root,cn=users,dc=ldap-server,dc=example,dc=example,dc=com" (Invalid credentials)-->
+<decoder name="su-pam">
+  <parent>su</parent>
+  <prematch>pam_ldap</prematch>                                                                                                                                        
+  <regex>user "uid=(\S+),</regex>
+  <order>user</order>
+</decoder>
+
 <decoder name="su-detail2">
   <parent>su</parent>  
   <regex>^BAD SU (\S+) to (\S+) on|</regex>
