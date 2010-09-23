@@ -31,3 +31,4 @@ Jun 26 10:14:12 dg-linux sshd[16527]: reverse mapping checking getaddrinfo for 6
 Jun 16 19:56:51 blocker sshd[2263]: refused connect from 119.147.1.1 (119.147.1.1)
 Jun 22 12:01:13 junction sshd[11283]: Received disconnect from 212.14.228.46: 11: Bye Bye
 Sep 23 10:32:25 server sshd[25209]: pam_ldap: error trying to bind as user "uid=user123,ou=People,dc=domain,dc=com" (Invalid credentials)
+Sep 18 14:58:47 ix sshd[11816]: error: Could not load host key: /etc/ssh/ssh_host_ecdsa_key
