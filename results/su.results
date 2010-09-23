@@ -16,3 +16,156 @@ ossec-testrule: Type one log per line.
        Level: '0'
        Description: 'A user has attempted to su to an unknown class.'
        Info - Text: 'OpenBSD uses login classes, and an inappropriate login class was used.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  8 08:48:28 gorilla su[2921936]: failed: ttyq4 changing from ldap to root'
+       hostname: 'gorilla'
+       program_name: 'su'
+       log: 'failed: ttyq4 changing from ldap to root'
+
+**Phase 2: Completed decoding.
+       decoder: 'su'
+       srcuser: 'ldap'
+       dstuser: 'root'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5302'
+       Level: '9'
+       Description: 'User missed the password to change UID to root.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  8 08:48:28 gorilla su[234]: BAD SU ger to fwmaster on /dev/ttyp0'
+       hostname: 'gorilla'
+       program_name: 'su'
+       log: 'BAD SU ger to fwmaster on /dev/ttyp0'
+
+**Phase 2: Completed decoding.
+       decoder: 'su'
+       srcuser: 'ger'
+       dstuser: 'fwmaster'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5301'
+       Level: '5'
+       Description: 'User missed the password to change UID (user id).'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  8 08:48:28 gorilla su(pam_unix)[23164]: authentication failure; logname= uid=1342 euid=0 tty= ruser=dcid rhost=  user=osaudit'
+       hostname: 'gorilla'
+       program_name: 'su(pam_unix)'
+       log: 'authentication failure; logname= uid=1342 euid=0 tty= ruser=dcid rhost=  user=osaudit'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5503'
+       Level: '5'
+       Description: 'User login failed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  8 08:48:28 gorilla su(pam_unix)[2298]: authentication failure; logname= uid=1342 euid=0 tty= ruser=dcid rhost=  user=root'
+       hostname: 'gorilla'
+       program_name: 'su(pam_unix)'
+       log: 'authentication failure; logname= uid=1342 euid=0 tty= ruser=dcid rhost=  user=root'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5503'
+       Level: '5'
+       Description: 'User login failed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  5 12:17:38 lili su[2702]: - pts/5 ab-dc-root'
+       hostname: 'lili'
+       program_name: 'su'
+       log: '- pts/5 ab-dc-root'
+
+**Phase 2: Completed decoding.
+       decoder: 'su'
+       srcuser: 'ab'
+       dstuser: 'dc-root'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5301'
+       Level: '5'
+       Description: 'User missed the password to change UID (user id).'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  5 12:13:15 lili su[2614]: - pts/6 dcid-root  -  su[29149]: + pts/5 dcid:root  -  SU 07/23 01:24 + pts/4 lcid-root'
+       hostname: 'lili'
+       program_name: 'su'
+       log: '- pts/6 dcid-root  -  su[29149]: + pts/5 dcid:root  -  SU 07/23 01:24 + pts/4 lcid-root'
+
+**Phase 2: Completed decoding.
+       decoder: 'su'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5301'
+       Level: '5'
+       Description: 'User missed the password to change UID (user id).'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 22 17:51:51 enigma su: dcid to root on /dev/ttyp1'
+       hostname: 'enigma'
+       program_name: 'su'
+       log: 'dcid to root on /dev/ttyp1'
+
+**Phase 2: Completed decoding.
+       decoder: 'su'
+       srcuser: 'dcid'
+       dstuser: 'root'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5303'
+       Level: '3'
+       Description: 'User successfully changed UID to root.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 23 08:35:32 servername su[19301]: pam_ldap: error trying to bind as user "uid=root,cn=users,dc=ldap-server,dc=example,dc=example,dc=com" (Invalid credentials)'
+       hostname: 'servername'
+       program_name: 'su'
+       log: 'pam_ldap: error trying to bind as user "uid=root,cn=users,dc=ldap-server,dc=example,dc=example,dc=com" (Invalid credentials)'
+
+**Phase 2: Completed decoding.
+       decoder: 'su'
+       dstuser: 'root'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

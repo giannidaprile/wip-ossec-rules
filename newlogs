@@ -3,7 +3,6 @@ Jul 15 18:33:10 server fsmpm[16951]: NSS: Name Server '192.168.1.2' (192.168.1.2
 Jul 15 18:33:10 server fsmpm[16951]: NSS: Name Server '192.168.1.2' (192.168.1.2) port is 55040, revision is 0x0102.
 Jul 15 18:33:10 server fsmpm[16951]: PortMapper: Added mapping from id 192.168.1.2 to addr 192.168.1.2
 
-Jun 23 08:35:32 servername su[19301]: pam_ldap: error trying to bind as user "uid=root,cn=users,dc=ldap-server,dc=example,dc=example,dc=com" (Invalid credentials)
 
 
 Sep 17 14:44:51 wks5184 Safari[402]: Periodic CFURLCache Insert stats (iters: 520) - Tx time:0.434590, # of Inserts: 5, # of bytes written: 185855, Did shrink: NO, Size of cache-file: 182607872, Num of Failures: 0
