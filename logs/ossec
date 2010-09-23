@@ -34,3 +34,4 @@ Oct 27 09:48:52 172.16.51.135 fedora11 kernel: ossec-logcollec[2166]: segfault a
 2010/09/20 17:42:41 ossec-syscheckd: Error accessing '/usr/local/bin/pkg.74xZ7mk5eM'.
 2010/09/20 17:46:52 ossec-analysisd: INFO: Ignoring file: '^/usr/local/bin/pkg.'
 2010/09/23 11:15:13 ossec-analysisd(2107): ERROR: Decoder configuration error: 'nss-ldap'.
+2010/09/23 11:32:53 ossec-analysisd(2106): ERROR: Error adding decoder plugin.
