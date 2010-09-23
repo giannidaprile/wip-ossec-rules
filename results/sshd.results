@@ -598,3 +598,21 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 23 10:32:25 server sshd[25209]: pam_ldap: error trying to bind as user "uid=user123,ou=People,dc=domain,dc=com" (Invalid credentials)'
+       hostname: 'server'
+       program_name: 'sshd'
+       log: 'pam_ldap: error trying to bind as user "uid=user123,ou=People,dc=domain,dc=com" (Invalid credentials)'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '370022'
+       Level: '2'
+       Description: 'User entered incorrect password.'
+**Alert to be generated.
+
+
