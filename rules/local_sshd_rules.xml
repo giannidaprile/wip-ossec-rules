@@ -108,7 +108,7 @@
     <!--<match>pam_ldap: error trying to bind as user</match>-->
     <match>Invalid credentials</match>
     <description>User entered incorrect password.</description>
-    <group>sshd,ldap,pam,authentication_failure,</group>
+    <group>sshd,ldap,pam,authentication_failures,</group>
   </rule>
 
 

@@ -1690,7 +1690,7 @@ conf).-->
     <if_sid>370001</if_sid>
     <match>Invalid credentials</match>
     <description>User entered incorrect password.</description>
-    <group>sshd,ldap,pam,authentication_failure,</group>
+    <group>sshd,ldap,pam,authentication_failures,</group>
   </rule>
 
   <!--Dec 22 13:15:10 ix su: -: unknown class-->
