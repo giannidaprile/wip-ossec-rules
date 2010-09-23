@@ -146,6 +146,14 @@
   <order>dstip,dstport</order>
 </decoder>
 
+<!--Sep 23 10:32:25 server sshd[25209]: pam_ldap: error trying to bind as user "uid=user123,ou=People,dc=domain,dc=com" (Invalid credentials)-->
+<decoder name="sshd-ldap">
+  <parent>sshd</parent>
+  <prematch offset="after_parent">^pam_ldap: </prematch>
+  <regex>user "uid=(\S+),ou=\w+,dc=\w+,dc=\w+"</regex>
+  <order>user</order>
+</decoder>
+
 <decoder name="bro-ids">
   <program_name>^bro</program_name>
 </decoder>
