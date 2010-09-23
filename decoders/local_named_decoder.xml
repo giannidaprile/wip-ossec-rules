@@ -1,0 +1,41 @@
+<!-- @(#) $Id: decoder.xml,v 1.166 2010/06/15 12:52:01 dcid Exp $
+  -  OSSEC log decoder.
+  -  Author: Daniel B. Cid
+  -  License: http://www.ossec.net/en/licensing.html
+  -->
+
+<!-- Named decoder.
+  - Will extract the srcip
+  - Examples:
+  -  valhalla named[7885]: client 192.168.1.231#1142: update 'hayaletgemi.edu/IN' denied
+  - named[12637]: client 1.2.3.4#32769: query (cache) 'somedomain.com/MX/IN' denied
+ -->
+<decoder name="named">
+  <program_name>^named</program_name>
+</decoder>
+
+<!--Jul 12 18:00:02 junction named[15915]: client 192.168.17.9#24416: query: 8.17.168.192.in-addr.arpa IN PTR +-->
+<!--Attempting to pull the domain name out in extra_data-->
+<decoder name="named-query">
+  <parent>named</parent>
+  <prematch>: query: </prematch>
+  <regex>client (\S+)#\d+: query: (\S+) IN </regex>
+  <order>srcip,url</order>
+</decoder>
+
+
+<decoder name="named_client">
+  <parent>named</parent>
+  <prematch>^client </prematch>
+  <regex offset="after_prematch">^(\d+.\d+.\d+.\d+)#</regex>
+  <order>srcip</order>
+</decoder>
+
+<decoder name="named_from">
+  <parent>named</parent>
+  <regex offset="after_parent"> from [(\d+.\d+.\d+.\d+)]</regex>
+  <order>srcip</order>
+</decoder>
+
+
+
