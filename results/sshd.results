@@ -608,6 +608,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'sshd'
+       dstuser: 'user123'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '370022'
