@@ -67,7 +67,7 @@
     <if_sid>230002</if_sid>
     <regex>^hp-probe[\S+]: </regex>
     <match>error: Unable to setup multicast socket for SLP</match>
-    <description>XXX</description>
+    <description>Unable to setup multicast socket.</description>
   </rule>
 
   <!--Jul  8 01:14:31 gorilla python2.5: hp-setup[21147]: error: hp-setup requires GUI support (try running with --qt3). Also, try using interactive (-i)

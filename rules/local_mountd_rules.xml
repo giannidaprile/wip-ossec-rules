@@ -44,7 +44,7 @@
   <rule id="420013" level="2">
     <if_sid>420000</if_sid>
     <match>Bad opt</match>
-    <description>XXX Bad option?</description>
+    <description>Bad mountd option.</description>
   </rule>
 
    

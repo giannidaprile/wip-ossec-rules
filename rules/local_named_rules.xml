@@ -174,7 +174,7 @@ oopback6.arpa failed: not at top of zone-->
   <rule id="310022" level="0">
     <if_sid>12100</if_sid>
     <match>IN SOA -E</match>
-    <description>XXX Domain in SOE?</description>
+    <description>Domain in SOA -E.</description>
   </rule>
 
   <!--Jul  1 18:38:30 junction named[23078]: transfer of 'trojanremoverpc.com/IN' from 192.168.17.9#53: failed to connect: host unreachable-->
@@ -188,14 +188,14 @@ oopback6.arpa failed: not at top of zone-->
   <rule id="310024" level="0">
     <if_sid>12100</if_sid>
     <match>IN AXFR -</match>
-    <description>XXX Domain in transfer?</description>
+    <description>Domain is queried for a zone transferred.</description>
   </rule>
 
   <!--Jul 13 17:09:30 junction named[15915]: client 192.168.17.10#53663: query: example.com IN A +-->
   <rule id="310025" level="0">
     <if_sid>12100</if_sid>
     <match> IN A +</match>
-    <description>XXX Domain A record found?</description>
+    <description>Domain A record found.</description>
   </rule>
 
   <!--Jul 29 11:19:18 buzzell named[10305]: client 192.168.17.17#14126: bad zone transfer request: 'construtoranovak.com.br/IN': non-authoritative zone (NOTAUTH)-->

@@ -135,7 +135,7 @@
   <rule id="330024" level="2">
     <if_sid>330000</if_sid>
     <match>smartd shutdown failed</match>
-    <description>XXX smartd shutdown failed.</description>
+    <description>smartd shutdown failed.</description>
     <group>smartd,</group>
   </rule>
 
@@ -143,7 +143,7 @@
   <rule id="330025" level="2">
     <if_sid>330000</if_sid>
     <match>previous self-test could not complete due to a fatal or unknown error</match>
-    <description>XXX self-test failed</description>
+    <description>smartd self-test failed.</description>
     <group>smartd,</group>
   </rule>
 
