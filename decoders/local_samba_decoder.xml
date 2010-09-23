@@ -31,4 +31,24 @@
   <order>srcip</order>
 </decoder>
 
+<decoder name="nmbd">
+  <program_name>^nmbd</program_name>
+</decoder>
+
+<!--Mar 13 16:29:04 ix smbd[6238]:   Connection denied from 0.0.0.0-->
+<decoder name="smbd-from">
+  <parent>smbd</parent>
+  <prematch> from (\S+)$</prematch>
+  <regex> from (\S+)$</regex>
+  <order>dstip</order>
+</decoder>
+
+<!--Mar 13 16:29:04 ix smbd[6238]:   write_data: write failure in writing to client 0.0.0.0. Error Socket is not connected'-->
+<decoder name="smbd-client">
+  <parent>smbd</parent>
+  <prematch>to client \S+.</prematch>
+  <regex>to client (\S+). </regex>
+  <order>srcip</order>
+</decoder>
+
 
