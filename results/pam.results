@@ -54,3 +54,298 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 28 15:28:58 server su(pam_unix)[23164]: authentication failure; logname= uid=1342 euid=0 tty= ruser=dcid rhost=  user=osaudit'
+       hostname: 'server'
+       program_name: 'su(pam_unix)'
+       log: 'authentication failure; logname= uid=1342 euid=0 tty= ruser=dcid rhost=  user=osaudit'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+       srcuser: 'dcid'
+       dstuser: 'osaudit'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5503'
+       Level: '5'
+       Description: 'User login failed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 28 15:28:58 server su(pam_unix)[2298]: authentication failure; logname= uid=1342 euid=0 tty= ruser=dcid rhost=  user=root'
+       hostname: 'server'
+       program_name: 'su(pam_unix)'
+       log: 'authentication failure; logname= uid=1342 euid=0 tty= ruser=dcid rhost=  user=root'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+       srcuser: 'dcid'
+       dstuser: 'root'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5503'
+       Level: '5'
+       Description: 'User login failed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 28 15:28:58 server vsftpd(pam_unix)[25073]: authentication failure; logname= uid=0 euid=0 tty= ruser= rhost=211.100.27.101'
+       hostname: 'server'
+       program_name: 'vsftpd(pam_unix)'
+       log: 'authentication failure; logname= uid=0 euid=0 tty= ruser= rhost=211.100.27.101'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5503'
+       Level: '5'
+       Description: 'User login failed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 28 15:28:58 server vsftpd(pam_unix)[25073]: check pass; user unknown'
+       hostname: 'server'
+       program_name: 'vsftpd(pam_unix)'
+       log: 'check pass; user unknown'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5504'
+       Level: '5'
+       Description: 'Attempt to login with an invalid user.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 28 15:28:58 server sshd(pam_unix)[16660]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=202.110.184.100  user=root'
+       hostname: 'server'
+       program_name: 'sshd(pam_unix)'
+       log: 'authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=202.110.184.100  user=root'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5503'
+       Level: '5'
+       Description: 'User login failed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 28 15:28:58 server su(pam_unix)[14592]: session opened for user news by (uid=0)'
+       hostname: 'server'
+       program_name: 'su(pam_unix)'
+       log: 'session opened for user news by (uid=0)'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+       dstuser: 'news'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5501'
+       Level: '3'
+       Description: 'Login session opened.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 28 15:28:58 server su(pam_unix)[14592]: session closed for user news'
+       hostname: 'server'
+       program_name: 'su(pam_unix)'
+       log: 'session closed for user news'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+       dstuser: 'news'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5502'
+       Level: '3'
+       Description: 'Login session closed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 28 15:28:58 server sshd(pam_unix)[13025]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=210.70.129.207  user=nobody'
+       hostname: 'server'
+       program_name: 'sshd(pam_unix)'
+       log: 'authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=210.70.129.207  user=nobody'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5503'
+       Level: '5'
+       Description: 'User login failed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 28 15:28:58 server sshd(pam_unix)[18987]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=languedoc-2-81-56-82-49.fbx.proxad.net  user=root'
+       hostname: 'server'
+       program_name: 'sshd(pam_unix)'
+       log: 'authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=languedoc-2-81-56-82-49.fbx.proxad.net  user=root'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5503'
+       Level: '5'
+       Description: 'User login failed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 28 15:28:58 server sshd(pam_unix)[17365]: session opened for user test by (uid=508)'
+       hostname: 'server'
+       program_name: 'sshd(pam_unix)'
+       log: 'session opened for user test by (uid=508)'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+       dstuser: 'test'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5501'
+       Level: '3'
+       Description: 'Login session opened.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 28 15:28:58 server sshd(pam_unix)[1345]: authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=222.237.79.237  user=root'
+       hostname: 'server'
+       program_name: 'sshd(pam_unix)'
+       log: 'authentication failure; logname= uid=0 euid=0 tty=NODEVssh ruser= rhost=222.237.79.237  user=root'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5503'
+       Level: '5'
+       Description: 'User login failed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 28 15:28:58 server sshd(pam_unix)[15794]: 2 more authentication failures; logname= uid=0'
+       hostname: 'server'
+       program_name: 'sshd(pam_unix)'
+       log: '2 more authentication failures; logname= uid=0'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '2502'
+       Level: '10'
+       Description: 'User missed the password more than one time'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 17 21:41:22 localhost su[8060]: (pam_unix) session opened for user root by (uid=0)'
+       hostname: 'localhost'
+       program_name: 'su'
+       log: '(pam_unix) session opened for user root by (uid=0)'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5501'
+       Level: '3'
+       Description: 'Login session opened.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 11 22:46:29 localhost vsftpd: pam_unix(vsftpd:auth): authentication failure; logname= uid=0 euid=0 tty= ruser= rhost=1.2.3.4'
+       hostname: 'localhost'
+       program_name: 'vsftpd'
+       log: 'pam_unix(vsftpd:auth): authentication failure; logname= uid=0 euid=0 tty= ruser= rhost=1.2.3.4'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5503'
+       Level: '5'
+       Description: 'User login failed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 28 15:28:58 server login: pam_unix(login:session): session opened for user carl by LOGIN(uid=0)'
+       hostname: 'server'
+       program_name: 'login'
+       log: 'pam_unix(login:session): session opened for user carl by LOGIN(uid=0)'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5501'
+       Level: '3'
+       Description: 'Login session opened.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 28 15:35:18 server sshd[123]: pam_unix(sshd:session): session opened for user carl by (uid=0)'
+       hostname: 'server'
+       program_name: 'sshd'
+       log: 'pam_unix(sshd:session): session opened for user carl by (uid=0)'
+
+**Phase 2: Completed decoding.
+       decoder: 'pam'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5501'
+       Level: '3'
+       Description: 'Login session opened.'
+**Alert to be generated.
+
+
