@@ -201,3 +201,20 @@ BadResponse\\ for\\ example.com\\ (192.168.2.1) tag=@ce-a7a-1-->
   <regex>sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+</regex>
   <order>srcip,srcport,protocol,dstip,dstport</order>
 </decoder>
+
+<!--Jun 26 08:19:25 servername sh: nss_ldap: reconnecting to LDAP server (sleeping 32 seconds)...-->                                                                   
+<decoder name="nss-ldap">
+  <program_name></program_name>
+  <prematch>nss_ldap</prematch>                                                                                                                                        
+</decoder>
+
+<!--Aug 16 10:58:12 client nscd: nss_ldap: failed to bind to LDAP server ldap://ldap.example.com: Can't contact LDAP server-->
+<decoder name="ldap-server">
+  <parent>nss-ldap</parent>
+  <prematch> server </prematch>
+  <regex offset="after_prematch">ldap://(\S+):</regex>
+  <order>system_name</order>                                                                                                                                           
+</decoder>
+
+
+
