@@ -1678,6 +1678,15 @@ conf).-->
     <group>sshd,</group>
   </rule>
 
+  <!--Sep 23 10:32:25 server sshd[25209]: pam_ldap: error trying to bind as user "uid=user123,ou=People,dc=domain,dc=com" (Invalid credentials)-->
+  <rule id="370022" level="2">
+    <if_sid>5700</if_sid>
+    <!--<match>pam_ldap: error trying to bind as user</match>-->
+    <match>Invalid credentials</match>
+    <description>User entered incorrect password.</description>
+    <group>sshd,ldap,pam,authentication_failure,</group>
+  </rule>
+
   <!--Dec 22 13:15:10 ix su: -: unknown class-->
   <rule id="400010" level="0">
     <if_sid>5300</if_sid>
