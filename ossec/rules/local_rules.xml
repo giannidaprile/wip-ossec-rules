@@ -1905,6 +1905,14 @@ conf).-->
     <group>argus,</group>
   </rule>
 
+  <!--Sep 22 20:22:51 junction rastream[19908]: 20:22:51.957358 ArgusReadStreamSocket (0x253e000) read error Connection reset by peer-->
+  <rule id="480032" level="2">
+    <if_sid>480002</if_sid>
+    <match>read error Connection reset by peer</match>
+    <description>rastream connection was reset.</description>
+    <group>argus,</group>
+  </rule>
+
   <rule id="490000" level="0" noalert="1">
     <decoded_as>bro-ids</decoded_as>
     <description>Grouping for all bro-ids events.</description>
