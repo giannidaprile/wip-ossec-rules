@@ -238,6 +238,21 @@ oopback6.arpa failed: not at top of zone-->
     <group>named,</group>
   </rule>
 
+  <!--Jun 29 10:34:44 ix named[22107]: automatic empty zone: A.E.F.IP6.ARPA-->
+  <rule id="310031" level="1">
+    <if_sid>12100</if_sid>
+    <match>automatic empty zone</match>
+    <description>named has created an automatic empty zone.</description>
+    <group>named,</group>
+  </rule>
+
+  <!--Sep 10 11:27:39 buzzell named[13160]: reloading configuration failed: out of memory-->
+  <rule id="310032" level="3">
+    <if_sid>12100</if_sid>
+    <match>reloading configuration failed: out of memory</match>
+    <description>Server does not have enough memory to reload the configuration.</description>
+    <group>named,</group>
+  </rule>
 
    
 </group> <!-- SYSLOG,LOCAL -->

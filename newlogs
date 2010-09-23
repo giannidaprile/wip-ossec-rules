@@ -14,12 +14,6 @@ Jun 26 08:19:29 servername sh: nss_ldap: failed to bind to LDAP server ldap://ld
 Jun 23 08:35:32 servername su[19301]: pam_ldap: error trying to bind as user "uid=root,cn=users,dc=ldap-server,dc=example,dc=example,dc=com" (Invalid credentials)
 
 
-Jun 29 10:34:44 ix named[22107]: automatic empty zone: A.E.F.IP6.ARPA
-
-Sep  4 23:58:33 junction sshd[9351]: fatal: Write failed: Broken pipe
-
-Sep 10 11:27:39 buzzell named[13160]: reloading configuration failed: out of memory
-
 Sep 17 14:44:51 wks5184 Safari[402]: Periodic CFURLCache Insert stats (iters: 520) - Tx time:0.434590, # of Inserts: 5, # of bytes written: 185855, Did shrink: NO, Size of cache-file: 182607872, Num of Failures: 0
 
 Sep 22 20:22:51 junction rastream[19908]: 20:22:51.957358 ArgusReadStreamSocket (0x253e000) read error Connection reset by peer
