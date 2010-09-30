@@ -4,3 +4,4 @@ ossec/etc/decoders.d/*
 ossec/queue/fts/fts-queue
 ossec/queue/fts/ig-queue
 ossec/rules/rule.d/*
+*~
