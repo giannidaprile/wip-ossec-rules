@@ -32,14 +32,6 @@
   <program_name>^python</program_name>
 </decoder>
 
-<!--Apr 20 00:45:40 gorilla named[19606]: zone adioserrores.com/IN: refresh: retry limit for master 192.168.1.33#53 exceeded (source 0.0.0.0#0)-->
-<decoder name="named-master">
-  <parent>named</parent>
-  <prematch> for master</prematch>
-  <regex>for master (\d+.\d+.\d+.\d+):(\d+) \S+ \(source (\d+.\d+.\d+.\d+)#d+\)$</regex>
-  <order>dstip,dstport,srcip</order>
-</decoder>
-
 
 <decoder name="dropbear">
   <program_name>dropbear</program_name>
@@ -118,40 +110,8 @@
 </decoder>
 
 
-<!--Mar 13 16:29:04 ix smbd[6238]:   Connection denied from 0.0.0.0-->
-<decoder name="smbd-from">
-  <parent>smbd</parent>
-  <prematch> from (\S+)$</prematch>                                                                                                                               
-  <regex> from (\S+)$</regex>
-  <order>dstip</order>
-</decoder>
-
-<!--Mar 13 16:29:04 ix smbd[6238]:   write_data: write failure in writing to client 0.0.0.0. Error Socket is not connected'-->
-<decoder name="smbd-client">
-  <parent>smbd</parent>
-  <prematch>to client \S+.</prematch>
-  <regex>to client (\S+). </regex>
-  <order>srcip</order>
-</decoder>
-
 <decoder name="launchproxy">
   <program_name>launchproxy</program_name>
-</decoder>
-
-<!--Aug 10 08:38:40 junction sshd[20013]: error: connect_to 192.168.179 port 8080: failed.-->
-<decoder name="ssh-connect-to">
-  <parent>sshd</parent>
-  <prematch>connect_to</prematch>
-  <regex>connect_to: (\S+) port (\d+):</regex>
-  <order>dstip,dstport</order>
-</decoder>
-
-<!--Sep 23 10:32:25 server sshd[25209]: pam_ldap: error trying to bind as user "uid=user123,ou=People,dc=domain,dc=com" (Invalid credentials)-->
-<decoder name="sshd-ldap">
-  <parent>sshd</parent>
-  <prematch offset="after_parent">^pam_ldap: </prematch>
-  <regex>user "uid=(\S+),ou=\w+,dc=\w+,dc=\w+"</regex>
-  <order>user</order>
 </decoder>
 
 <decoder name="bro-ids">
