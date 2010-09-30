@@ -690,3 +690,39 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/29 22:34:44 ossec-analysisd(2102): ERROR: Duplicated decoder with prematch: 'named-master'.'
+       hostname: 'ix'
+       program_name: '(null)'
+       log: '2010/09/29 22:34:44 ossec-analysisd(2102): ERROR: Duplicated decoder with prematch: 'named-master'.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-analysisd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/29 22:34:44 ossec-analysisd(2105): ERROR: Error loading decoder options.'
+       hostname: 'ix'
+       program_name: '(null)'
+       log: '2010/09/29 22:34:44 ossec-analysisd(2105): ERROR: Error loading decoder options.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-analysisd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
