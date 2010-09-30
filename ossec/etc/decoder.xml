@@ -55,7 +55,7 @@
 </decoder>
 
 <!--Jun  8 08:48:28 gorilla su(pam_unix)[2298]: authentication failure; logname= uid=1342 euid=0 tty= ruser=dcid rhost=  user=root-->
-<decoder name="pam-blah">
+<decoder name="pam-auth-fail">
   <parent>pam</parent>
   <prematch>uid=\d+ euid=\d+ tty=</prematch>
   <regex>ruser=(\S+) rhost=\.+ user=(\S+)</regex>
