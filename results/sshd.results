@@ -632,7 +632,7 @@ ossec-testrule: Type one log per line.
        Rule id: '370023'
        Level: '1'
        Description: 'sshd could not load one or more host keys.'
-       Info - Text: 'http://www.openbsd.org/cgi-bin/man.cgi?query=ssh-keygen&sektion=1'
+       Info - Text: 'https://code.google.com/p/wip-ossec-rules/wiki/rule_id_370023'
 **Alert to be generated.
 
 

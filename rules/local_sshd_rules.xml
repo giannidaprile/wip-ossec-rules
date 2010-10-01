@@ -120,6 +120,13 @@
     <group>sshd,sysadmin,</group>
   </rule>
 
+  <!--Sep  4 23:58:33 junction sshd[9351]: fatal: Write failed: Broken pipe-->
+  <rule id="370024" level="2">
+    <if_sid>5700</if_sid>
+    <match>Write failed: Broken pipe</match>
+    <description>Failed write due to one host disappearing.</description>
+    <group>sshd,</group>
+  </rule>
 
    
 </group> <!-- SYSLOG,LOCAL -->
