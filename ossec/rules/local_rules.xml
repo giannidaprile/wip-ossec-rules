@@ -977,22 +977,6 @@ oopback6.arpa failed: not at top of zone-->
     <group>named,</group>
   </rule>
 
-  <!--Jun 29 10:34:44 ix named[22107]: automatic empty zone: A.E.F.IP6.ARPA-->
-  <rule id="310031" level="1">
-    <if_sid>12100</if_sid>
-    <match>automatic empty zone</match>
-    <description>named has created an automatic empty zone.</description>
-    <group>named,</group>
-  </rule>
-
-  <!--Sep 10 11:27:39 buzzell named[13160]: reloading configuration failed: out of memory-->
-  <rule id="310032" level="3">
-    <if_sid>12100</if_sid>
-    <match>reloading configuration failed: out of memory</match>
-    <description>Server does not have enough memory to reload the configuration.</description>
-    <group>named,</group>
-  </rule>
-
   <rule id="400000" level="0" noalert="1">
     <program_name>ntpd</program_name>
     <description>Grouping for ntpd rules.</description>
@@ -1605,13 +1589,6 @@ conf).-->
     <description>snmpd has exited.</description>
   </rule>
 
-  <!--Sep 23 10:32:25 server sshd[25209]: pam_ldap: error trying to bind as user "uid=user123,ou=People,dc=domain,dc=com" (Invalid credentials)-->
-  <rule id="370001" level="0" noalert="1">
-    <if_sid>5700</if_sid>
-    <match>^pam_ldap: </match>
-    <description>Collecting sshd/pam events.</description>
-  </rule>
-
   <!--Jun 22 12:01:13 junction sshd[11283]: Received disconnect from 212.14.228.46: 11: Bye Bye-->
   <rule id="370010" level="1">
     <if_sid>5700</if_sid>
@@ -1700,32 +1677,6 @@ conf).-->
     <description>Possible port forwarding failure.</description>
     <group>sshd,</group>
   </rule>
-
-  <!--Sep 23 10:32:25 server sshd[25209]: pam_ldap: error trying to bind as user "uid=user123,ou=People,dc=domain,dc=com" (Invalid credentials)-->
-  <rule id="370022" level="2">
-    <if_sid>370001</if_sid>
-    <match>Invalid credentials</match>
-    <description>User entered incorrect password.</description>
-    <group>sshd,ldap,pam,authentication_failures,</group>
-  </rule>
-
-  <!--Sep 18 14:58:47 ix sshd[11816]: error: Could not load host key: /etc/ssh/ssh_host_ecdsa_key-->
-  <rule id="370023" level="1">
-    <if_sid>5700</if_sid>
-    <match>Could not load host key</match>
-    <description>sshd could not load one or more host keys.</description>
-    <info>http://www.openbsd.org/cgi-bin/man.cgi?query=ssh-keygen&sektion=1</info>
-    <group>sshd,sysadmin,</group>
-  </rule>
-
-  <!--Sep  4 23:58:33 junction sshd[9351]: fatal: Write failed: Broken pipe-->
-  <rule id="370024" level="2">
-    <if_sid>5700</if_sid>
-    <match>Write failed: Broken pipe</match>
-    <description>Failed write due to one host disappearing.</description>
-    <group>sshd,</group>
-  </rule>
-
 
   <!--Dec 22 13:15:10 ix su: -: unknown class-->
   <rule id="400010" level="0">
@@ -1902,14 +1853,6 @@ conf).-->
     <if_sid>480004</if_sid>
     <match>filter syntax error</match>
     <description>Incorrect filter syntax used with ra.</description>
-    <group>argus,</group>
-  </rule>
-
-  <!--Sep 22 20:22:51 junction rastream[19908]: 20:22:51.957358 ArgusReadStreamSocket (0x253e000) read error Connection reset by peer-->
-  <rule id="480032" level="2">
-    <if_sid>480002</if_sid>
-    <match>read error Connection reset by peer</match>
-    <description>rastream connection was reset.</description>
     <group>argus,</group>
   </rule>
 
