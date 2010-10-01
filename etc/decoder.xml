@@ -219,7 +219,35 @@
   <order>user, srcip</order>
 </decoder>
 
+<!--Aug 10 08:38:40 junction sshd[20013]: error: connect_to 192.168.179 port 8080: failed.-->
+<decoder name="ssh-connect-to">
+  <parent>sshd</parent>
+  <prematch>connect_to</prematch>
+  <regex>connect_to: (\S+) port (\d+):</regex>
+  <order>dstip,dstport</order>
+</decoder>
 
+<!--Sep 23 10:32:25 server sshd[25209]: pam_ldap: error trying to bind as user "uid=user123,ou=People,dc=domain,dc=com" (Invalid credentials)-->
+<decoder name="sshd-ldap">
+  <parent>sshd</parent>
+  <prematch offset="after_parent">^pam_ldap: </prematch>
+  <regex>user "uid=(\S+),ou=\w+,dc=\w+,dc=\w+"</regex>
+  <order>user</order>
+</decoder>
+
+
+<!-- dropbear ssh server decoders -->
+
+<decoder name="dropbear">
+  <program_name>dropbear</program_name>
+</decoder>
+
+<!--Mar 24 15:25:51 buffalo1 dropbear[4092]: bad password attempt for 'root' from 192.168.17.9:5543-->
+<decoder name="dropbear-from">
+  <parent>dropbear</parent>
+  <regex>for '(\S+)' from (\S+):\d+$</regex>
+  <order>dstuser,srcip</order>
+</decoder>
 
 
 
@@ -310,6 +338,25 @@
   <order>srcip</order>
 </decoder>
 
+<!--Mar 13 16:29:04 ix smbd[6238]:   Connection denied from 0.0.0.0-->
+<decoder name="smbd-from">
+  <parent>smbd</parent>
+  <prematch> from (\S+)$</prematch>
+  <regex> from (\S+)$</regex>
+  <order>dstip</order>
+</decoder>
+
+<!--Mar 13 16:29:04 ix smbd[6238]:   write_data: write failure in writing to client 0.0.0.0. Error Socket is not connected'-->
+<decoder name="smbd-client">
+  <parent>smbd</parent>
+  <prematch>to client \S+.</prematch>
+  <regex>to client (\S+). </regex>
+  <order>srcip</order>
+</decoder>
+
+<decoder name="nmbd">
+  <program_name>^nmbd</program_name>
+</decoder>
 
 
 <!-- Sudo decoder.
@@ -744,6 +791,13 @@
   <order>srcip</order>
 </decoder>
 
+<!--Apr 20 00:45:40 gorilla named[19606]: zone adioserrores.com/IN: refresh: retry limit for master 192.168.1.33#53 exceeded (source 0.0.0.0#0)-->
+<decoder name="named-master">
+  <parent>named</parent>
+  <prematch> for master</prematch>
+  <regex>for master (\d+.\d+.\d+.\d+):(\d+) \S+ \(source (\d+.\d+.\d+.\d+)#d+\)$</regex>
+  <order>dstip,dstport,srcip</order>
+</decoder>
 
 
 <!-- Postfix  decoder.
@@ -859,6 +913,30 @@
   <regex offset="after_prematch">^(\d+.\d+.\d+.\d+) \S+ to \S+ is (\w+)</regex>
   <order>srcip, action</order>
 </decoder>
+
+
+<!-- OpenBSD smtpd decoders -->
+
+<decoder name="smtpd">
+  <program_name>smtpd</program_name>
+</decoder>
+
+<!--Oct 26 22:30:12 ix smtpd[6726]: client 192.168.17.9 read error: Connection reset by peer-->
+<decoder name="smtpd-client">
+  <parent>smtpd</parent>
+  <prematch offset="after_parent">^client</prematch>
+  <regex>client (\S+) </regex>
+  <order>srcip</order>
+</decoder>
+
+<!--Nov 13 17:30:34 ix smtpd[29377]: (none): from=<@>, relay=power.example.com [192.168.17.249], stat=LocalError (501 EHLO requires domain address)-->
+<decoder name="smtpd-relay">
+  <parent>smtpd</parent>
+  <prematch>relay=</prematch>
+  <regex>relay=\S+ [(\S+)], </regex>
+  <order>srcip</order>
+</decoder>
+
 
 
 <!-- Iptables decoder.
@@ -1230,6 +1308,30 @@
    <regex>(\d+.\d+.\d+.\d+)\p*\d* -> (\d+.\d+.\d+.\d+)</regex>
    <order>id,srcip,dstip</order>
    <fts>name,id,srcip,dstip</fts>
+</decoder>
+
+
+
+<!-- OpenBSD isakmpd decoders -->
+
+<!--Apr 10 13:22:52 tiny isakmpd[6988]: dropped message from 192.168.1.233 port 500 due to notification type INVALID_COOKIE-->
+<decoder name="isakmpd">
+  <program_name>isakmpd</program_name>
+</decoder>
+
+<decoder name="isakmpd-from">
+  <parent>isakmpd</parent>
+  <prematch>message from </prematch>
+  <regex>from (\S+) port (\d+)</regex>
+  <order>srcip,srcport</order>
+</decoder>
+
+<!--Nov  4 18:15:59 alphen-vpn-gw isakmpd[28891]: transport_send_messages: giving up on exchange ISAKMP-peer-node-ldn, no response from peer 192.168.1.1:500-->
+<decoder name="isakmpd-peer">
+  <parent>isakmpd</parent>
+  <prematch>from peer</prematch>
+  <regex>from peer (\S+):(\d+)$</regex>
+  <order>srcip,srcport</order>
 </decoder>
 
 
@@ -2003,6 +2105,86 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
   <regex>^(\d\d\d\d\d),</regex>
   <order>id</order>
 </decoder>
+
+
+<!-- OpenBSD kernel messages -->
+<decoder name="bsd_kernel">
+  <program_name>/bsd</program_name>
+</decoder>
+
+<decoder name="bsd_arp">
+  <parent>bsd_kernel</parent>
+  <prematch offset="after_parent">^arp </prematch>
+  <!--<regex offset="after_prematch"> overwritten for (\S+) by (\S+) on \S+</regex>-->
+  <regex offset="after_prematch"> for (\S+) by (\S+) on \S+</regex>
+  <order>dstip, extra_data</order>
+</decoder>
+
+
+<!-- OpenBSD mountd decoder -->
+
+<!--Apr 11 20:01:02 ix mountd[11618]: Refused mount RPC from host 192.168.17.10 port 45659-->
+<decoder name="mountd">
+  <program_name>^mountd</program_name>
+</decoder>
+
+<decoder name="mountd-host">
+  <parent>mountd</parent>
+  <prematch>from host </prematch>
+  <regex offset="after_prematch">(\S+) port \d+$</regex>
+  <order>srcip</order>
+</decoder>
+
+
+<!-- bro-ids decoders -->
+
+<decoder name="bro-ids">
+  <program_name>^bro</program_name>
+</decoder>
+
+<!--Aug 25 08:52:10 junction bro: no=PortScanSummary na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 num=988 msg=192.168.17.8\\\\ scanned\\\\ a\\\\ total\\\\ of\\\\ 988\\
+\\ ports tag=@ef-24ad-af-->
+<decoder name="bro-portscan">
+  <parent>bro-ids</parent>
+  <prematch>no=PortscanSummary</prematch>
+  <regex>sa=(\S+) num=(\d+) msg=</regex>
+  <order>srcip,extra_data</order>
+</decoder>
+
+<!--Aug 26 12:34:27 junction bro: no=PortScan na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 p=17/tcp num=250 msg=192.168.17.8\\ has\\ scanned\\ 250\\ ports\\ of\\ 192.1
+68.17.17 tag=@11-68e9-5-->
+<decoder name="bro-portscan2">
+  <parent>bro-ids</parent>
+  <prematch>no=PortScan </prematch>
+  <regex>sa=(\S+) p=(\d+)/(\S+) num=(\d+)</regex>
+  <order>srcip,srcport,protocol,extra_data</order>
+</decoder>
+
+<decoder name="bro-typical">
+  <parent>bro-ids</parent>
+  <prematch>na=NOTICE</prematch>
+  <regex>sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+</regex>
+  <order>srcip,srcport,protocol,dstip,dstport</order>
+</decoder>
+
+
+
+<!-- nss ldap decoders -->
+
+<!--Jun 26 08:19:25 servername sh: nss_ldap: reconnecting to LDAP server (sleeping 32 seconds)...-->
+<decoder name="nss-ldap">
+  <program_name></program_name>
+  <prematch>nss_ldap</prematch>
+</decoder>
+
+<!--Aug 16 10:58:12 client nscd: nss_ldap: failed to bind to LDAP server ldap://ldap.example.com: Can't contact LDAP server-->
+<decoder name="ldap-server">
+  <parent>nss-ldap</parent>
+  <prematch> server </prematch>
+  <regex offset="after_prematch">ldap://(\S+):</regex>
+  <order>system_name</order>
+</decoder>
+
 
 
 
