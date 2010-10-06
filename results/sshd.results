@@ -13,7 +13,7 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.1.33'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '370011'
+       Rule id: '5722'
        Level: '1'
        Description: 'ssh connection closed.'
 **Alert to be generated.
@@ -31,7 +31,7 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '370012'
+       Rule id: '5723'
        Level: '0'
        Description: 'SSHD key error.'
        Info - Text: 'This maybe a bad key in authorized_keys.'
@@ -47,7 +47,7 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '370013'
+       Rule id: '5724'
        Level: '0'
        Description: 'SSHD key error.'
        Info - Text: 'This error may relate to ssh key handling.'
@@ -64,7 +64,7 @@ ossec-testrule: Type one log per line.
        srcip: '61.129.60.23'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '370010'
+       Rule id: '5721'
        Level: '1'
        Description: 'System disconnected from sshd.'
 **Alert to be generated.
@@ -82,7 +82,7 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '370014'
+       Rule id: '5725'
        Level: '1'
        Description: 'Host ungracefully disconnected.'
 **Alert to be generated.
@@ -137,7 +137,7 @@ ossec-testrule: Type one log per line.
        srcip: '172.16.51.1'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '370015'
+       Rule id: '5726'
        Level: '5'
        Description: 'Unknown PAM module, PAM misconfiguration'
 **Alert to be generated.
@@ -155,7 +155,7 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '370016'
+       Rule id: '5727'
        Level: '0'
        Description: 'Attempt to start sshd when something already bound to the port.'
 
@@ -170,7 +170,7 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '370017'
+       Rule id: '5728'
        Level: '4'
        Description: 'Authentication services were not able to retrieve user credentials.'
        Info - Text: 'May be related to PAM module errors.'
@@ -189,7 +189,7 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '370018'
+       Rule id: '5729'
        Level: '0'
        Description: 'Debug message.'
 
@@ -204,7 +204,7 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '370019'
+       Rule id: '5730'
        Level: '4'
        Description: 'sshd is not accepting connections.'
 **Alert to be generated.
@@ -535,7 +535,7 @@ ossec-testrule: Type one log per line.
        srcip: '127.0.0.1'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '370020'
+       Rule id: '5731'
        Level: '1'
        Description: 'SSH Scanning.'
 **Alert to be generated.
@@ -592,7 +592,7 @@ ossec-testrule: Type one log per line.
        srcip: '212.14.228.46'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '370010'
+       Rule id: '5721'
        Level: '1'
        Description: 'System disconnected from sshd.'
 **Alert to be generated.
@@ -611,7 +611,7 @@ ossec-testrule: Type one log per line.
        dstuser: 'user123'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '370022'
+       Rule id: '5733'
        Level: '2'
        Description: 'User entered incorrect password.'
 **Alert to be generated.
@@ -629,7 +629,7 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '370023'
+       Rule id: '5734'
        Level: '1'
        Description: 'sshd could not load one or more host keys.'
        Info - Text: 'https://code.google.com/p/wip-ossec-rules/wiki/rule_id_370023'
@@ -648,7 +648,7 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '370024'
+       Rule id: '5735'
        Level: '2'
        Description: 'Failed write due to one host disappearing.'
 **Alert to be generated.
