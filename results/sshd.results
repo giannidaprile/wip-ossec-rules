@@ -632,7 +632,7 @@ ossec-testrule: Type one log per line.
        Rule id: '5734'
        Level: '1'
        Description: 'sshd could not load one or more host keys.'
-       Info - Text: 'https://code.google.com/p/wip-ossec-rules/wiki/rule_id_370023'
+       Info - Text: 'This may be related to an upgrade to OpenSSH.'
 **Alert to be generated.
 
 
