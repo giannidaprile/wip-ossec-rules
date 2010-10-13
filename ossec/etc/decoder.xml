@@ -83,7 +83,7 @@
   <order>srcip</order>
 </decoder>
 
-  
+
 <!-- SSH decoder.
   -  Will extract username and srcip from the logs.
   -  Only add to the FTS if the login was successful

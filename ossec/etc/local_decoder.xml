@@ -113,3 +113,10 @@ BadResponse\\ for\\ example.com\\ (192.168.2.1) tag=@ce-a7a-1-->
 
 
 
+<decoder name="pam-user2">
+  <parent>pam</parent>
+  <prematch>session \S+ </prematch>
+  <regex>for user (\S+)</regex>
+  <order>user</order>
+</decoder>
+
