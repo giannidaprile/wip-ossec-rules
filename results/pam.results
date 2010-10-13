@@ -287,6 +287,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'pam'
+       dstuser: 'root'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '5501'
@@ -323,6 +324,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'pam'
+       dstuser: 'carl'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '5501'
@@ -341,6 +343,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'pam'
+       dstuser: 'carl'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '5501'
