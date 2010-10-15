@@ -7,7 +7,11 @@ Jul 15 18:33:10 server fsmpm[16951]: PortMapper: Added mapping from id 192.168.1
 
 Sep 17 14:44:51 wks5184 Safari[402]: Periodic CFURLCache Insert stats (iters: 520) - Tx time:0.434590, # of Inserts: 5, # of bytes written: 185855, Did shrink: NO, Size of cache-file: 182607872, Num of Failures: 0
 
-
+Oct 15 15:34:27 carpsystem /bsd: carp1: state transition: MASTER -> BACKUP
+Oct 15 15:34:27 carpsystem /bsd: carp16: state transition: MASTER -> BACKUP
+Oct 15 15:34:27 carpsystem /bsd: nd6_na_input: duplicate IP6 address fe80:0424::03e0: 5e6f:fe00:0110
+Oct 15 15:34:27 carpsystem /bsd: nd6_na_input: duplicate IP6 address 2001:0560:73d7:0002:0012::00ef
+2001:0660:7307:0001:0002::000f
 
 
 
