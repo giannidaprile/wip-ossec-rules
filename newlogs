@@ -11,7 +11,6 @@ Oct 15 15:34:27 carpsystem /bsd: carp1: state transition: MASTER -> BACKUP
 Oct 15 15:34:27 carpsystem /bsd: carp16: state transition: MASTER -> BACKUP
 Oct 15 15:34:27 carpsystem /bsd: nd6_na_input: duplicate IP6 address fe80:0424::03e0: 5e6f:fe00:0110
 Oct 15 15:34:27 carpsystem /bsd: nd6_na_input: duplicate IP6 address 2001:0560:73d7:0002:0012::00ef
-2001:0660:7307:0001:0002::000f
 
 
 
