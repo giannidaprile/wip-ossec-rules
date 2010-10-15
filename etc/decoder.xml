@@ -69,6 +69,13 @@
   <order>user</order>
 </decoder>  
 
+<decoder name="pam-user2">
+  <parent>pam</parent>
+  <prematch>session \S+ </prematch>
+  <regex>for user (\S+)</regex>
+  <order>user</order>
+</decoder>
+
 <decoder name="pam-host-user">
   <parent>pam</parent>
   <prematch>rhost=\S+\s+user=\S+</prematch>
@@ -2130,7 +2137,6 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 <decoder name="bsd_arp">
   <parent>bsd_kernel</parent>
   <prematch offset="after_parent">^arp </prematch>
-  <!--<regex offset="after_prematch"> overwritten for (\S+) by (\S+) on \S+</regex>-->
   <regex offset="after_prematch"> for (\S+) by (\S+) on \S+</regex>
   <order>dstip, extra_data</order>
 </decoder>
@@ -2138,7 +2144,10 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 
 <!-- OpenBSD mountd decoder -->
 
-<!--Apr 11 20:01:02 ix mountd[11618]: Refused mount RPC from host 192.168.17.10 port 45659-->
+<!--
+- Apr 11 20:01:02 ix mountd[11618]: Refused mount RPC from host 192.168.17.10 port 45659
+-->
+
 <decoder name="mountd">
   <program_name>^mountd</program_name>
 </decoder>
@@ -2152,13 +2161,15 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 
 
 <!-- bro-ids decoders -->
+<!--
+- Aug 25 08:52:10 junction bro: no=PortScanSummary na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 num=988 msg=192.168.17.8\\\\ scanned\\\\ a\\\\ total\\\\ of\\\\ 988\\\\ ports tag=@ef-24ad-af
+- Aug 26 12:34:27 junction bro: no=PortScan na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 p=17/tcp num=250 msg=192.168.17.8\\ has\\ scanned\\ 250\\ ports\\ of\\ 192.168.17.17 tag=@11-68e9-5
+-->
 
 <decoder name="bro-ids">
   <program_name>^bro</program_name>
 </decoder>
 
-<!--Aug 25 08:52:10 junction bro: no=PortScanSummary na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 num=988 msg=192.168.17.8\\\\ scanned\\\\ a\\\\ total\\\\ of\\\\ 988\\
-\\ ports tag=@ef-24ad-af-->
 <decoder name="bro-portscan">
   <parent>bro-ids</parent>
   <prematch>no=PortscanSummary</prematch>
@@ -2166,8 +2177,6 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
   <order>srcip,extra_data</order>
 </decoder>
 
-<!--Aug 26 12:34:27 junction bro: no=PortScan na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 p=17/tcp num=250 msg=192.168.17.8\\ has\\ scanned\\ 250\\ ports\\ of\\ 192.1
-68.17.17 tag=@11-68e9-5-->
 <decoder name="bro-portscan2">
   <parent>bro-ids</parent>
   <prematch>no=PortScan </prematch>
@@ -2185,20 +2194,36 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 
 
 <!-- nss ldap decoders -->
+<!--
+- Jun 26 08:19:25 servername sh: nss_ldap: reconnecting to LDAP server (sleeping 32 seconds)...
+- Aug 16 10:58:12 client nscd: nss_ldap: failed to bind to LDAP server ldap://ldap.example.com: Can't contact LDAP server
+-->
 
-<!--Jun 26 08:19:25 servername sh: nss_ldap: reconnecting to LDAP server (sleeping 32 seconds)...-->
+
 <decoder name="nss-ldap">
   <program_name></program_name>
   <prematch>nss_ldap</prematch>
 </decoder>
 
-<!--Aug 16 10:58:12 client nscd: nss_ldap: failed to bind to LDAP server ldap://ldap.example.com: Can't contact LDAP server-->
 <decoder name="ldap-server">
   <parent>nss-ldap</parent>
   <prematch> server </prematch>
   <regex offset="after_prematch">ldap://(\S+):</regex>
   <order>system_name</order>
 </decoder>
+
+
+
+<!-- Avahi daemon -->
+
+<decoder name="avahi">
+  <program_name>avahi-daemon</program_name>
+</decoder>
+
+<decoder name="avahi-dnsconfd">
+  <program_name>avahi-dnsconfd</program_name>
+</decoder>
+
 
 
 
