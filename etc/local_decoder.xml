@@ -1,11 +1,3 @@
-<decoder name="avahi">
-  <program_name>avahi-daemon</program_name>
-</decoder>
-
-<decoder name="avahi-dnsconfd">
-  <program_name>avahi-dnsconfd</program_name>
-</decoder>
-
 <!-- This does not work quite the way I expect yet:
 <decoder name="bsd_hd">
   <parent>bsd_kernel</parent>
