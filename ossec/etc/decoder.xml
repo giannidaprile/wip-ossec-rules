@@ -69,6 +69,13 @@
   <order>user</order>
 </decoder>  
 
+<decoder name="pam-user2">
+ <parent>pam</parent>
+ <prematch>session \S+ </prematch>
+ <regex>for user (\S+)</regex>
+ <order>user</order>
+</decoder>
+
 <decoder name="pam-host-user">
   <parent>pam</parent>
   <prematch>rhost=\S+\s+user=\S+</prematch>
@@ -83,7 +90,7 @@
   <order>srcip</order>
 </decoder>
 
-
+  
 <!-- SSH decoder.
   -  Will extract username and srcip from the logs.
   -  Only add to the FTS if the login was successful
