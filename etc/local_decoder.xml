@@ -12,20 +12,6 @@
   <program_name>^python</program_name>
 </decoder>
 
-<!--May 28 09:15:43 ix groupdel[25984]: group deleted: name=_dbus-->
-<decoder name="groupdel">
-  <program_name>groupdel</program_name>
-  <regex>^group deleted: name=(\S+)$</regex>
-  <order>extra_data</order>
-</decoder>
-
-
-
-
-<decoder name="launchproxy">
-  <program_name>launchproxy</program_name>
-</decoder>
-
 
 <!--XXX This is for some personal testing and will be removed.-->
 <!--Aug 25 13:20:35 ix bro: WTF domain: sacxtra.com other: 208.53.158.84-->
