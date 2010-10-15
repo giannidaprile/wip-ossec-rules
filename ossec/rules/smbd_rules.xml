@@ -59,7 +59,7 @@
   </rule>
 
   <rule id="13107" level="1">
-    <if_sid>450000</if_sid>
+    <decoded_as>launchproxy</decoded_as>
     <match>resolution</match>
     <description>Failure in name resolution.</description>
     <group>smbd,</group>
