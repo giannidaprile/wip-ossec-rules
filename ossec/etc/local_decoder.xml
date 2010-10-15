@@ -1,11 +1,3 @@
-<decoder name="avahi">
-  <program_name>avahi-daemon</program_name>
-</decoder>
-
-<decoder name="avahi-dnsconfd">
-  <program_name>avahi-dnsconfd</program_name>
-</decoder>
-
 <!-- This does not work quite the way I expect yet:
 <decoder name="bsd_hd">
   <parent>bsd_kernel</parent>
@@ -18,20 +10,6 @@
 
 <decoder name="python">
   <program_name>^python</program_name>
-</decoder>
-
-<!--May 28 09:15:43 ix groupdel[25984]: group deleted: name=_dbus-->
-<decoder name="groupdel">
-  <program_name>groupdel</program_name>
-  <regex>^group deleted: name=(\S+)$</regex>
-  <order>extra_data</order>
-</decoder>
-
-
-
-
-<decoder name="launchproxy">
-  <program_name>launchproxy</program_name>
 </decoder>
 
 
@@ -106,7 +84,6 @@ BadResponse\\ for\\ example.com\\ (192.168.2.1) tag=@ce-a7a-1-->
 <decoder name="decode-xml">
   <prematch>\d+/\d+/\d+ \d+:\d+:\d+ decode-xml</prematch>
 </decoder>
-
 
 
 
