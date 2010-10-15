@@ -12,7 +12,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310000'
+       Rule id: '12113'
        Level: '1'
        Description: 'Zone transfer deferred'
 **Alert to be generated.
@@ -30,7 +30,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310001'
+       Rule id: '12114'
        Level: '1'
        Description: 'Hostname contains characters that check-names does not like'
 **Alert to be generated.
@@ -48,7 +48,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310002'
+       Rule id: '12115'
        Level: '1'
        Description: 'Zone transfer'
 **Alert to be generated.
@@ -66,7 +66,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310003'
+       Rule id: '12116'
        Level: '1'
        Description: 'Zone transfer'
 **Alert to be generated.
@@ -84,7 +84,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310004'
+       Rule id: '12117'
        Level: '1'
        Description: 'Zone transfer rety limit exceeded'
 **Alert to be generated.
@@ -102,7 +102,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310005'
+       Rule id: '12118'
        Level: '1'
        Description: 'Zone has been duplicated'
 **Alert to be generated.
@@ -120,7 +120,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310006'
+       Rule id: '12119'
        Level: '1'
        Description: 'BIND has been started'
 **Alert to be generated.
@@ -138,7 +138,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310007'
+       Rule id: '12120'
        Level: '1'
        Description: 'Missing A or AAAA record'
 **Alert to be generated.
@@ -156,7 +156,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310008'
+       Rule id: '12121'
        Level: '1'
        Description: 'Zone has been removed from a master server'
 **Alert to be generated.
@@ -174,7 +174,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310009'
+       Rule id: '12122'
        Level: '1'
        Description: 'Origin of zone and owner name of SOA do not match.'
 **Alert to be generated.
@@ -299,7 +299,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310015'
+       Rule id: '12128'
        Level: '1'
        Description: 'Zone transfer.'
 **Alert to be generated.
@@ -317,7 +317,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310016'
+       Rule id: '12129'
        Level: '4'
        Description: 'Zone transfer failed, unable to connect to master.'
 **Alert to be generated.
@@ -335,7 +335,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310017'
+       Rule id: '12130'
        Level: '2'
        Description: 'Could not listen on IPv6 interface.'
 **Alert to be generated.
@@ -353,7 +353,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310018'
+       Rule id: '12131'
        Level: '2'
        Description: 'Could not bind to an interface.'
 **Alert to be generated.
@@ -371,7 +371,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310019'
+       Rule id: '12132'
        Level: '1'
        Description: 'Master is not authoritative for zone.'
 **Alert to be generated.
@@ -389,7 +389,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310020'
+       Rule id: '12133'
        Level: '4'
        Description: 'Could not open configuration file, permission denied.'
 **Alert to be generated.
@@ -407,7 +407,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310021'
+       Rule id: '12134'
        Level: '4'
        Description: 'Could not open configuration file, permission denied.'
 **Alert to be generated.
@@ -427,9 +427,9 @@ ossec-testrule: Type one log per line.
        url: 'example.com'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310022'
+       Rule id: '12135'
        Level: '0'
-       Description: 'XXX Domain in SOE?'
+       Description: 'Domain in SOA -E.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -442,7 +442,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310023'
+       Rule id: '12136'
        Level: '4'
        Description: 'Master appears to be down.'
 **Alert to be generated.
@@ -462,9 +462,9 @@ ossec-testrule: Type one log per line.
        url: 'example.com'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310024'
+       Rule id: '12137'
        Level: '0'
-       Description: 'XXX Domain in transfer?'
+       Description: 'Domain is queried for a zone transferred.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -496,7 +496,7 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.17.17'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310026'
+       Rule id: '12139'
        Level: '3'
        Description: 'Bad zone transfer request.'
 **Alert to be generated.
@@ -514,7 +514,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310027'
+       Rule id: '12140'
        Level: '2'
        Description: 'Cannot refresh a domain from the master server.'
 **Alert to be generated.
@@ -532,7 +532,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310028'
+       Rule id: '12141'
        Level: '1'
        Description: 'Origin of zone and owner name of SOA do not match.'
 **Alert to be generated.
@@ -550,7 +550,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310029'
+       Rule id: '12142'
        Level: '0'
        Description: 'named command channel is listening.'
 
@@ -565,7 +565,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310029'
+       Rule id: '12142'
        Level: '0'
        Description: 'named command channel is listening.'
 
@@ -580,7 +580,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310030'
+       Rule id: '12143'
        Level: '0'
        Description: 'named is now running.'
 
@@ -595,7 +595,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310031'
+       Rule id: '12144'
        Level: '1'
        Description: 'named has created an automatic empty zone.'
 **Alert to be generated.
@@ -613,7 +613,7 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310032'
+       Rule id: '12145'
        Level: '3'
        Description: 'Server does not have enough memory to reload the configuration.'
 **Alert to be generated.
