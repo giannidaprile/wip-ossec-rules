@@ -69,13 +69,6 @@
   <order>user</order>
 </decoder>  
 
-<decoder name="pam-user2">
- <parent>pam</parent>
- <prematch>session \S+ </prematch>
- <regex>for user (\S+)</regex>
- <order>user</order>
-</decoder>
-
 <decoder name="pam-host-user">
   <parent>pam</parent>
   <prematch>rhost=\S+\s+user=\S+</prematch>
@@ -117,6 +110,21 @@
   -  Apr 23 07:03:53 machinename sshd[29961]: User root from 12.3.4.5
   not allowed because not listed in AllowUsers
   -  sshd[9815]: scanned from 127.0.0.1 with SSH-1.99-AKASSH_Version_Mapper1.  Don't panic.
+  -  Sep  4 23:58:33 junction sshd[9351]: fatal: Write failed: Broken pipe-->
+  -  Sep 18 14:58:47 ix sshd[11816]: error: Could not load host key: /etc/ssh/ssh_host_ecdsa_key
+  -  Sep 23 10:32:25 server sshd[25209]: pam_ldap: error trying to bind as user "uid=user123,ou=People,dc=domain,dc=com" (Invalid credentials)
+  -  Aug 10 08:38:40 junction sshd[20013]: error: connect_to 192.168.179 port 8080: failed
+  -  Jun  9 00:00:01 ix sshd[9815]: scanned from 127.0.0.1 with SSH-1.99-AKASSH_Version_Mapper1.  Don't panic.
+  -  Jan 26 11:57:26 ix sshd[14879]: error: connect to ix.example.com port 7777 failed: Connection refused
+  -  Oct  8 10:07:27 y sshd[7644]: debug1: attempt 2 failures 2
+  -  Oct  8 08:58:37 y sshd[6956]: fatal: PAM: pam_setcred(): Authentication service cannot retrieve user credentials
+  -  Oct  8 08:48:33 y sshd[6856]: error: Bind to port 22 on 0.0.0.0 failed: Address already in use.
+  -  Oct  8 11:18:26 172.16.51.132 sshd[7618]: error: PAM: Module is unknown for ddp from 172.16.51.1
+  -  Jun 19 20:56:00 tiny sshd[11605]: fatal: Write failed: Host is down
+  -  Jun 11 06:32:17 gorilla sshd[28293]: fatal: buffer_get_bignum2: buffer error
+  -  Jun 11 06:32:17 gorilla sshd[28293]: error: buffer_get_bignum2_ret: negative numbers not supported
+  -  Apr 14 19:28:21 gorilla sshd[31274]: Connection closed by 192.168.1.33
+  -  Jun 22 12:01:13 junction sshd[11283]: Received disconnect from 212.14.228.46: 11: Bye Bye
   -->
 
 <decoder name="sshd">
