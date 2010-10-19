@@ -193,9 +193,9 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.17.249'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '12146'
+       Level: '1'
+       Description: 'zone transfer denied'
 **Alert to be generated.
 
 
@@ -211,9 +211,9 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '12147'
+       Level: '1'
+       Description: 'Configuration mistake'
 **Alert to be generated.
 
 
