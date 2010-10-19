@@ -2136,6 +2136,29 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 
 
 <!-- OpenBSD kernel messages -->
+<!--
+  - Mar  3 10:30:10 ix /bsd: ichiic0: abort failed, status 0x40<INUSE>
+  - Apr  3 18:35:14 power /bsd: cd0(atapiscsi0:0:0): Check Condition (error 0x70) on opcode 0x0
+  - Apr 20 01:27:21 gorilla /bsd: umass0: BBB bulk-in clear stall failed, TIMEOUT
+  - Jun  8 23:40:41 gorilla /bsd: arp info overwritten for 192.168.17.111 by 00:16:01:4b:45:a6 on sk0
+  - Jun  8 21:46:18 gorilla /bsd: WARNING: / was not properly unmounted
+  - May 26 23:30:57 gorilla /bsd: UKC> quit
+  - Oct 15 20:06:43 mobile /bsd: run0: Michael MIC failure
+  - http://en.wikipedia.org/wiki/Temporal_Key_Integrity_Protocol
+  - Oct 17 07:39:56 power /bsd: wd0: soft error (corrected)
+  - Jan 12 19:40:27 x60 /bsd: acpithinkpad0: unknown event 0x6022
+  - Jan 12 19:40:45 x60 /bsd: acpitz1: Critical temperature, shutting down
+  - Jan 18 09:22:45 bart /bsd: acpitz0: _AL0[0] _PR0 failed
+  - Feb 26 11:18:59 ix /bsd: ehci_freex: xfer=0xffff8000003ef800 not busy, 0x4f4e5155
+  - Feb 28 23:23:21 ix /bsd: ichiic0: abort failed, status 0x0
+  - May 31 21:45:14 ix /bsd: WARNING: R/W mount of /data4 denied.  Filesystem is not clean - run fsck
+  - Jun 15 21:15:03 ix /bsd: atascsi_passthru_done, timeout
+  - Jun 30 17:03:17 junction /bsd: RTC BIOS diagnostic error 80<clock_battery>
+  - Jul 27 11:19:20 richese /bsd: softraid0: i/o error on block 528
+  - Aug 15 16:39:12 ix /bsd: kbc: cmd word write error
+  - Aug 15 17:02:12 ix /bsd: umass0: BBB reset failed, IOERROR
+-->
+
 <decoder name="bsd_kernel">
   <program_name>/bsd</program_name>
 </decoder>
