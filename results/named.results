@@ -193,9 +193,9 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.17.249'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310010'
-       Level: '1'
-       Description: 'zone transfer denied'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -211,9 +211,9 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '310011'
-       Level: '1'
-       Description: 'Configuration mistake'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -228,14 +228,6 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'named'
 
-**Phase 3: Completed filtering (rules).
-       Rule id: '310012'
-       Level: '1'
-       Description: 'Configuration error, file not found.'
-**Alert to be generated.
-
-
-
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 16 19:01:01 junction named[1112]: loading configuration: file not found'
@@ -245,14 +237,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'named'
-
-**Phase 3: Completed filtering (rules).
-       Rule id: '310012'
-       Level: '1'
-       Description: 'Configuration error, file not found.'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.
@@ -264,14 +248,6 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'named'
 
-**Phase 3: Completed filtering (rules).
-       Rule id: '310013'
-       Level: '2'
-       Description: 'Configuration error, option master used in a master zone.'
-**Alert to be generated.
-
-
-
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 16 19:18:28 ix named[17897]: client 192.168.17.17#48823: transfer of 'domain.com/IN': AXFR ended'
@@ -282,11 +258,6 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'named'
        srcip: '192.168.17.17'
-
-**Phase 3: Completed filtering (rules).
-       Rule id: '310014'
-       Level: '0'
-       Description: 'Zone transfer ended.'
 
 
 **Phase 1: Completed pre-decoding.

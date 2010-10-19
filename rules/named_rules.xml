@@ -305,6 +305,18 @@
     <group>named,</group>
   </rule>
 
+  <rule id="12146" level="1">
+    <if_sid>12100</if_sid>
+    <regex>zone transfer \S+ denied</regex>
+    <description>zone transfer denied</description>
+  </rule>
+
+  <rule id="12147" level="1">
+    <if_sid>12100</if_sid>
+    <match>reloading configuration failed: unexpected end of input</match>
+    <description>Configuration mistake</description>
+  </rule>
+
   
 
   

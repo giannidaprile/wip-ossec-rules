@@ -12,9 +12,9 @@ ossec-testrule: Type one log per line.
        decoder: 'dropbear'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '280014'
-       Level: '2'
-       Description: 'Client exited before authentication.'
+       Rule id: '51001'
+       Level: '1'
+       Description: 'Failed to get key exchange value'
 **Alert to be generated.
 
 
@@ -30,7 +30,7 @@ ossec-testrule: Type one log per line.
        decoder: 'dropbear'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '280011'
+       Rule id: '51002'
        Level: '1'
        Description: 'Premature kexdh_init message'
 **Alert to be generated.
@@ -50,7 +50,7 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.17.9'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '280012'
+       Rule id: '51003'
        Level: '5'
        Description: 'Bad password attempt.'
 **Alert to be generated.
@@ -70,7 +70,7 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.17.9'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '280016'
+       Rule id: '51009'
        Level: '0'
        Description: 'User successfully logged in using a password.'
 
@@ -85,7 +85,7 @@ ossec-testrule: Type one log per line.
        decoder: 'dropbear'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '280013'
+       Rule id: '51005'
        Level: '0'
        Description: 'User disconnected.'
 
@@ -99,14 +99,6 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'dropbear'
 
-**Phase 3: Completed filtering (rules).
-       Rule id: '280014'
-       Level: '2'
-       Description: 'Client exited before authentication.'
-**Alert to be generated.
-
-
-
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 22 16:29:51 buffalo1 dropbear[25132]: exit before auth: Incompatible remote version 'SSH-1.5-NmapNSE_1.0''
@@ -118,9 +110,9 @@ ossec-testrule: Type one log per line.
        decoder: 'dropbear'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '280014'
-       Level: '2'
-       Description: 'Client exited before authentication.'
+       Rule id: '51008'
+       Level: '1'
+       Description: 'Incompatible remote version.'
 **Alert to be generated.
 
 
@@ -136,9 +128,9 @@ ossec-testrule: Type one log per line.
        decoder: 'dropbear'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '280014'
-       Level: '2'
-       Description: 'Client exited before authentication.'
+       Rule id: '51008'
+       Level: '1'
+       Description: 'Incompatible remote version.'
 **Alert to be generated.
 
 

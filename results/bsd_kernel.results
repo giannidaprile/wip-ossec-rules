@@ -12,7 +12,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220002'
+       Rule id: '51502'
        Level: '0'
        Description: 'Check media in optical drive.'
 
@@ -27,7 +27,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220003'
+       Rule id: '51503'
        Level: '1'
        Description: 'A disk has timed out.'
 **Alert to be generated.
@@ -47,7 +47,7 @@ ossec-testrule: Type one log per line.
        extra_data: '00:16:01:4b:45:a6'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220004'
+       Rule id: '51504'
        Level: '1'
        Description: 'arp info has been overwritten for a host'
 **Alert to be generated.
@@ -65,7 +65,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220005'
+       Rule id: '51505'
        Level: '5'
        Description: 'A filesystem was not properly unmounted, likely system crash'
 **Alert to be generated.
@@ -83,7 +83,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220006'
+       Rule id: '51506'
        Level: '1'
        Description: 'UKC was used, possibly modifying a kernel at boot time.'
 **Alert to be generated.
@@ -101,7 +101,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220007'
+       Rule id: '51507'
        Level: '1'
        Description: 'Michael MIC failure: Checksum failure in the tkip protocol.'
 **Alert to be generated.
@@ -119,7 +119,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220008'
+       Rule id: '51508'
        Level: '2'
        Description: 'A soft error has been corrected on a hard drive, this is a possible early sign of failure.'
 **Alert to be generated.
@@ -137,7 +137,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220008'
+       Rule id: '51508'
        Level: '2'
        Description: 'A soft error has been corrected on a hard drive, this is a possible early sign of failure.'
 **Alert to be generated.
@@ -155,7 +155,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220009'
+       Rule id: '51509'
        Level: '1'
        Description: 'Unknown acpithinkpad event'
 **Alert to be generated.
@@ -173,7 +173,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220010'
+       Rule id: '51510'
        Level: '5'
        Description: 'System shutdown due to temperature'
 **Alert to be generated.
@@ -191,7 +191,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220011'
+       Rule id: '51511'
        Level: '1'
        Description: 'Unknown ACPI event (bug 6299 in OpenBSD bug tracking system).'
 **Alert to be generated.
@@ -209,7 +209,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220012'
+       Rule id: '51512'
        Level: '1'
        Description: 'USB diagnostic message.'
 **Alert to be generated.
@@ -227,7 +227,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220013'
+       Rule id: '51513'
        Level: '1'
        Description: 'Possible APM or ACPI event.'
 **Alert to be generated.
@@ -245,7 +245,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220001'
+       Rule id: '51501'
        Level: '1'
        Description: 'A timeout occurred waiting for a transfer.'
 **Alert to be generated.
@@ -263,7 +263,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220015'
+       Rule id: '51515'
        Level: '0'
        Description: 'Timeout in atascsi_passthru_done.'
 
@@ -278,7 +278,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220016'
+       Rule id: '51516'
        Level: '0'
        Description: 'Clock battery error 80'
 
@@ -293,7 +293,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220014'
+       Rule id: '51514'
        Level: '3'
        Description: 'Unclean filesystem, run fsck.'
 **Alert to be generated.
@@ -311,7 +311,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220018'
+       Rule id: '51518'
        Level: '3'
        Description: 'I/O error on a storage device'
 **Alert to be generated.
@@ -329,7 +329,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220019'
+       Rule id: '51519'
        Level: '1'
        Description: 'XXX kbc error.'
 **Alert to be generated.
@@ -347,7 +347,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bsd_kernel'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '220020'
+       Rule id: '51520'
        Level: '1'
        Description: 'USB reset failed, IOERROR.'
 **Alert to be generated.

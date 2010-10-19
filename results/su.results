@@ -12,7 +12,7 @@ ossec-testrule: Type one log per line.
        decoder: 'su'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '400010'
+       Rule id: '5306'
        Level: '0'
        Description: 'A user has attempted to su to an unknown class.'
        Info - Text: 'OpenBSD uses login classes, and an inappropriate login class was used.'
