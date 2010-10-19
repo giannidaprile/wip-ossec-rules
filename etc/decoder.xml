@@ -2241,6 +2241,22 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
   <program_name>launchproxy</program_name>
 </decoder>
 
+<!-- Avahi -->
+<decoder name="avahi">
+  <program_name>avahi-daemon</program_name>
+</decoder>
+
+<decoder name="avahi-dnsconfd">
+  <program_name>avahi-dnsconfd</program_name>
+</decoder>
+
+<!-- OpenBSD groupdel -->
+<decoder name="groupdel">
+  <program_name>groupdel</program_name>
+  <regex>^group deleted: name=(\S+)$</regex>
+  <order>extra_data</order>
+</decoder>
+
 
 
 

@@ -41,7 +41,7 @@
   </rule>
 
   <rule id="51004" level="10" frequency="6" timeframe="120" ignore="60">
-    <if_matched_sid>280012</if_matched_sid>
+    <if_matched_sid>51003</if_matched_sid>
     <same_source_ip />
     <description>dropbear brute force attempt.</description>
     <group>authentication_failures,ssh,dropbear,</group>
@@ -55,14 +55,14 @@
   </rule>
 
   <rule id="51006" level="2">
-    <if_sid>51000</if_sid>
+    <if_sid>51005</if_sid>
     <match>exit before auth</match>
     <description>Client exited before authentication.</description>
     <group>recon,ssh,dropbear,</group>
   </rule>
 
   <rule id="51007" level="10" frequency="6" timeframe="120" ignore="60">
-    <if_matched_sid>280014</if_matched_sid>
+    <if_matched_sid>51000</if_matched_sid>
     <same_source_ip />
     <description>dropbear brute force attempt.</description> 
     <group>authentication_failures,ssh,dropbear,</group>
