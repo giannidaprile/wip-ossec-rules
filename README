@@ -24,7 +24,6 @@ Regressions should be easy to spot if there were no changes to the rule set or d
 new rulesets/decoders, going through the file by hand may be the best option right now.
 
 Rule IDs:
-200001+: new arpwatch rules 
 210000+: new avahi related rules
 220000+: (Open?)bsd kernel
 230000+: python
@@ -35,20 +34,17 @@ Rule IDs:
 280000+: dropbear
 290000+: flowd
 300000+: identd
-310000+: named
 320000+: smtpd
 330000+: smartd
 340000+: isakmpd
 350000+: irqbalance
 360000+: Linux kernel
-370000+: sshd
 380000+: pam
 390000+: sensorsd
 400000+: ntpd
 410000+: snmpd
 420000+: mountd
 430000+: pulseaudio
-440000+: smbd
 450000+: os x
 460000+: clamav
 470000+: syslog/newsyslog
