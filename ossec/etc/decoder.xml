@@ -1,4 +1,4 @@
-<!-- @(#) $Id: decoder.xml,v 1.166 2010/06/15 12:52:01 dcid Exp $
+<!-- @(#) $Id: decoder.xml,v 1.20 2010/10/10 19:41:32 ddp Exp $
   -  OSSEC log decoder.
   -  Author: Daniel B. Cid
   -  License: http://www.ossec.net/en/licensing.html
@@ -44,6 +44,9 @@
   - Nov 11 22:46:29 localhost vsftpd: pam_unix(vsftpd:auth): authentication failure; logname= uid=0 euid=0 tty= ruser= rhost=1.2.3.4
   - Sep 28 15:28:58 server login: pam_unix(login:session): session opened for user carl by LOGIN(uid=0)
   - Sep 28 15:35:18 server sshd[123]: pam_unix(sshd:session): session opened for user carl by (uid=0)
+  - Apr 14 13:33:50 fedora10 gdm-session-worker[2484]: pam_unix(gdm:auth): conversation failed
+  - Oct  7 13:22:29 localhost login: PAM [dlerror: <*unknown module path*>: cannot open shared object file: No such file or directory]
+  - Oct  7 13:22:29 localhost login: PAM (login) illegal module type: include
   -->
 <decoder name="pam">
   <program_name>(pam_unix)$</program_name>
@@ -68,13 +71,6 @@
   <regex offset="after_prematch">^for user (\S+)</regex>
   <order>user</order>
 </decoder>  
-
-<decoder name="pam-user2">
-  <parent>pam</parent>
-  <prematch>session \S+ </prematch>
-  <regex>for user (\S+)</regex>
-  <order>user</order>
-</decoder>
 
 <decoder name="pam-host-user">
   <parent>pam</parent>
@@ -259,6 +255,15 @@
 
 
 <!-- dropbear ssh server decoders -->
+<!--
+- Jan 22 21:21:20 buffalo1 dropbear[3859]: exit before auth: Failed to get kex value
+- Jan 22 21:21:20 buffalo1 dropbear[3859]: Premature kexdh_init message received
+- Mar 24 15:25:51 buffalo1 dropbear[4092]: bad password attempt for 'root' from 192.168.17.9:5543
+- Mar 22 16:22:18 buffalo1 dropbear[25017]: exit after auth (root): Disconnect received
+- Mar 22 16:29:14 buffalo1 dropbear[25121]: exit before auth: Exited normally
+- Mar 22 16:29:51 buffalo1 dropbear[25132]: exit before auth: Incompatible remote version 'SSH-1.5-NmapNSE_1.0'
+- Mar 22 16:22:17 buffalo1 dropbear[25017]: password auth succeeded for 'root' from 192.168.17.9:39285
+-->
 
 <decoder name="dropbear">
   <program_name>dropbear</program_name>
@@ -411,6 +416,7 @@
   -  SU 07/23 01:24 + pts/4 lcid-root
   -  Apr 22 17:51:51 enigma su: dcid to root on /dev/ttyp1
   - 'su root' failed for chapman on /dev/pts/1
+  - Oct 19 12:10:11 ix su: aslkdfj: unknown class
   -->
 <decoder name="su">
   <program_name>^su$</program_name>
@@ -584,8 +590,6 @@
   - arpwatch: new station 192.168.1.103 0:11:43:5e:5d:80 eth0
   - arpwatch: bogon 172.16.150.149 0:2:b3:d6:e5:68 eth0
   - arpwatch: new station 192.168.2.10 0:c0:4f:78:32:be
-  - arpwatch: pcap open re0: /dev/bpf0: Permission denied
-  - arpwatch: reused old ethernet address 192.168.17.248 0:e:3b:a:cb:67 (0:1e:8c:72:b0:d0)
   -->
 <decoder name="arpwatch">
   <program_name>^arpwatch</program_name>
@@ -2132,6 +2136,29 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 
 
 <!-- OpenBSD kernel messages -->
+<!--
+  - Mar  3 10:30:10 ix /bsd: ichiic0: abort failed, status 0x40<INUSE>
+  - Apr  3 18:35:14 power /bsd: cd0(atapiscsi0:0:0): Check Condition (error 0x70) on opcode 0x0
+  - Apr 20 01:27:21 gorilla /bsd: umass0: BBB bulk-in clear stall failed, TIMEOUT
+  - Jun  8 23:40:41 gorilla /bsd: arp info overwritten for 192.168.17.111 by 00:16:01:4b:45:a6 on sk0
+  - Jun  8 21:46:18 gorilla /bsd: WARNING: / was not properly unmounted
+  - May 26 23:30:57 gorilla /bsd: UKC> quit
+  - Oct 15 20:06:43 mobile /bsd: run0: Michael MIC failure
+  - http://en.wikipedia.org/wiki/Temporal_Key_Integrity_Protocol
+  - Oct 17 07:39:56 power /bsd: wd0: soft error (corrected)
+  - Jan 12 19:40:27 x60 /bsd: acpithinkpad0: unknown event 0x6022
+  - Jan 12 19:40:45 x60 /bsd: acpitz1: Critical temperature, shutting down
+  - Jan 18 09:22:45 bart /bsd: acpitz0: _AL0[0] _PR0 failed
+  - Feb 26 11:18:59 ix /bsd: ehci_freex: xfer=0xffff8000003ef800 not busy, 0x4f4e5155
+  - Feb 28 23:23:21 ix /bsd: ichiic0: abort failed, status 0x0
+  - May 31 21:45:14 ix /bsd: WARNING: R/W mount of /data4 denied.  Filesystem is not clean - run fsck
+  - Jun 15 21:15:03 ix /bsd: atascsi_passthru_done, timeout
+  - Jun 30 17:03:17 junction /bsd: RTC BIOS diagnostic error 80<clock_battery>
+  - Jul 27 11:19:20 richese /bsd: softraid0: i/o error on block 528
+  - Aug 15 16:39:12 ix /bsd: kbc: cmd word write error
+  - Aug 15 17:02:12 ix /bsd: umass0: BBB reset failed, IOERROR
+-->
+
 <decoder name="bsd_kernel">
   <program_name>/bsd</program_name>
 </decoder>
@@ -2139,6 +2166,7 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 <decoder name="bsd_arp">
   <parent>bsd_kernel</parent>
   <prematch offset="after_parent">^arp </prematch>
+  <!--<regex offset="after_prematch"> overwritten for (\S+) by (\S+) on \S+</regex>-->
   <regex offset="after_prematch"> for (\S+) by (\S+) on \S+</regex>
   <order>dstip, extra_data</order>
 </decoder>
@@ -2146,10 +2174,7 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 
 <!-- OpenBSD mountd decoder -->
 
-<!--
-- Apr 11 20:01:02 ix mountd[11618]: Refused mount RPC from host 192.168.17.10 port 45659
--->
-
+<!--Apr 11 20:01:02 ix mountd[11618]: Refused mount RPC from host 192.168.17.10 port 45659-->
 <decoder name="mountd">
   <program_name>^mountd</program_name>
 </decoder>
@@ -2163,15 +2188,13 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 
 
 <!-- bro-ids decoders -->
-<!--
-- Aug 25 08:52:10 junction bro: no=PortScanSummary na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 num=988 msg=192.168.17.8\\\\ scanned\\\\ a\\\\ total\\\\ of\\\\ 988\\\\ ports tag=@ef-24ad-af
-- Aug 26 12:34:27 junction bro: no=PortScan na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 p=17/tcp num=250 msg=192.168.17.8\\ has\\ scanned\\ 250\\ ports\\ of\\ 192.168.17.17 tag=@11-68e9-5
--->
 
 <decoder name="bro-ids">
   <program_name>^bro</program_name>
 </decoder>
 
+<!--Aug 25 08:52:10 junction bro: no=PortScanSummary na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 num=988 msg=192.168.17.8\\\\ scanned\\\\ a\\\\ total\\\\ of\\\\ 988\\
+\\ ports tag=@ef-24ad-af-->
 <decoder name="bro-portscan">
   <parent>bro-ids</parent>
   <prematch>no=PortscanSummary</prematch>
@@ -2179,6 +2202,8 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
   <order>srcip,extra_data</order>
 </decoder>
 
+<!--Aug 26 12:34:27 junction bro: no=PortScan na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 p=17/tcp num=250 msg=192.168.17.8\\ has\\ scanned\\ 250\\ ports\\ of\\ 192.1
+68.17.17 tag=@11-68e9-5-->
 <decoder name="bro-portscan2">
   <parent>bro-ids</parent>
   <prematch>no=PortScan </prematch>
@@ -2196,16 +2221,14 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 
 
 <!-- nss ldap decoders -->
-<!--
-- Jun 26 08:19:25 servername sh: nss_ldap: reconnecting to LDAP server (sleeping 32 seconds)...
-- Aug 16 10:58:12 client nscd: nss_ldap: failed to bind to LDAP server ldap://ldap.example.com: Can't contact LDAP server
--->
 
+<!--Jun 26 08:19:25 servername sh: nss_ldap: reconnecting to LDAP server (sleeping 32 seconds)...-->
 <decoder name="nss-ldap">
   <program_name></program_name>
   <prematch>nss_ldap</prematch>
 </decoder>
 
+<!--Aug 16 10:58:12 client nscd: nss_ldap: failed to bind to LDAP server ldap://ldap.example.com: Can't contact LDAP server-->
 <decoder name="ldap-server">
   <parent>nss-ldap</parent>
   <prematch> server </prematch>
@@ -2213,36 +2236,12 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
   <order>system_name</order>
 </decoder>
 
-
-
-<!-- Avahi daemon -->
-
-<decoder name="avahi">
-  <program_name>avahi-daemon</program_name>
-</decoder>
-
-<decoder name="avahi-dnsconfd">
-  <program_name>avahi-dnsconfd</program_name>
-</decoder>
-
-
-
-<!-- OpenBSD groupdel -->
-<!--
-- May 28 09:15:43 ix groupdel[25984]: group deleted: name=_dbus
--->
-
-<decoder name="groupdel">
-  <program_name>groupdel</program_name>
-  <regex>^group deleted: name=(\S+)$</regex>
-  <order>extra_data</order>
-</decoder>
-
-<!-- Launchproxy -->
-
+<!-- launchproxy -->
 <decoder name="launchproxy">
   <program_name>launchproxy</program_name>
 </decoder>
+
+
 
 
 <!-- EOF -->
