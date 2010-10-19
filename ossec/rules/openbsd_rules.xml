@@ -1,0 +1,173 @@
+  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  -->
+
+
+
+  <!-- Modify it at your will. -->
+
+<group name="local,syslog,openbsd">
+
+  <rule id="51500" level="0" noalert="1">
+    <decoded_as>bsd_kernel</decoded_as>
+    <description>Grouping of bsd_kernel alerts</description>
+  </rule>
+
+  <!--Mar  3 10:30:10 ix /bsd: ichiic0: abort failed, status 0x40<INUSE>-->
+  <rule id="51501" level="1">
+    <if_sid>51500</if_sid>
+    <match>ichiic0: abort failed, status 0x40</match> 
+    <description>A timeout occurred waiting for a transfer.</description>
+  </rule>
+
+  <!--Apr  3 18:35:14 power /bsd: cd0(atapiscsi0:0:0): Check Condition (error 0x70) on opcode 0x0-->
+  <rule id="51502" level="0">
+    <if_sid>51500</if_sid>
+    <match>Check Condition (error 0x70) on opcode 0x0</match>
+    <description>Check media in optical drive.</description>
+    <group>storage, sysadmin,</group>
+  </rule>
+
+  <!--Apr 20 01:27:21 gorilla /bsd: umass0: BBB bulk-in clear stall failed, TIMEOUT-->
+  <rule id="51503" level="1"> 
+    <if_sid>51500</if_sid>
+    <match>BBB bulk-in clear stall failed</match> 
+    <description>A disk has timed out.</description>
+    <group>storage, sysadmin,</group>
+  </rule>
+
+  <!--'Jun  8 23:40:41 gorilla /bsd: arp info overwritten for 192.168.17.111 by 00:16:01:4b:45:a6 on sk0-->
+  <rule id="51504" level="1">
+    <if_sid>51500</if_sid>
+    <match>arp info overwritten for</match>
+    <description>arp info has been overwritten for a host</description>
+  </rule>
+
+  <!--Jun  8 21:46:18 gorilla /bsd: WARNING: / was not properly unmounted-->
+  <rule id="51505" level="5">
+    <if_sid>51500</if_sid>
+    <match>was not properly unmounted</match>
+    <description>A filesystem was not properly unmounted, likely system crash</description>
+    <group>storage, sysadmin,</group>
+  </rule>
+
+  <!--May 26 23:30:57 gorilla /bsd: UKC> quit-->
+  <rule id="51506" level="1">
+    <if_sid>51500</if_sid>
+    <match>UKC> quit</match>
+    <description>UKC was used, possibly modifying a kernel at boot time.</description>
+  </rule>
+
+  <!--Oct 15 20:06:43 mobile /bsd: run0: Michael MIC failure-->
+  <!--http://en.wikipedia.org/wiki/Temporal_Key_Integrity_Protocol-->
+  <rule id="51507" level="1">
+    <if_sid>51500</if_sid>
+    <match>Michael MIC failure</match>
+    <description>Michael MIC failure: Checksum failure in the tkip protocol.</description>
+    <group>wireless,</group>
+  </rule>
+
+  <!--Oct 17 07:39:56 power /bsd: wd0: soft error (corrected)-->
+  <rule id="51508" level="2">
+    <if_sid>51500</if_sid>
+    <match>soft error (corrected)</match>
+    <description>A soft error has been corrected on a hard drive, </description>
+    <description>this is a possible early sign of failure.</description>
+    <group>storage,sysadmin,</group>
+  </rule>
+
+  <!--Jan 12 19:40:27 x60 /bsd: acpithinkpad0: unknown event 0x6022-->
+  <rule id="51509" level="1">
+    <if_sid>51500</if_sid>
+    <regex>acpithinkpad\d:</regex>
+    <match>unknown event</match>
+    <description>Unknown acpithinkpad event</description>
+    <group>sysadmin,acpi,</group>
+  </rule>
+
+  <!--Jan 12 19:40:45 x60 /bsd: acpitz1: Critical temperature, shutting down-->
+  <rule id="51510" level="5">
+    <if_sid>51500</if_sid>
+    <match>Critical temperature, shutting down</match>
+    <description>System shutdown due to temperature</description>
+    <group>sysadmin,acpi,</group>
+  </rule>
+
+  <!--Jan 18 09:22:45 bart /bsd: acpitz0: _AL0[0] _PR0 failed-->
+  <rule id="51511" level="1">
+    <if_sid>51500</if_sid>
+    <match>_AL0[0] _PR0 failed</match>
+    <description>Unknown ACPI event (bug 6299 in OpenBSD bug tracking system).</description>
+    <group>sysadmin,acpi,</group>
+  </rule>
+
+  <!--Feb 26 11:18:59 ix /bsd: ehci_freex: xfer=0xffff8000003ef800 not busy, 0x4f4e5155-->
+  <rule id="51512" level="1">
+    <if_sid>51500</if_sid>
+    <match>ehci_freex: xfer=0xffff8000003ef800 not busy, 0x4f4e5155</match>
+    <description>USB diagnostic message.</description>
+  </rule>
+
+  <!--Feb 28 23:23:21 ix /bsd: ichiic0: abort failed, status 0x0-->
+  <!--https://calomel.org/apm_control.html-->
+  <rule id="51513" level="1">
+    <if_sid>51500</if_sid>
+    <match>ichiic0: abort failed, status 0x0</match>
+    <description>Possible APM or ACPI event.</description>
+    <group>sysadmin,acpi,</group>
+  </rule>
+
+  <!--May 31 21:45:14 ix /bsd: WARNING: R/W mount of /data4 denied.  Filesystem is not clean - run fsck-->
+  <rule id="51514" level="3">
+    <if_sid>51500</if_sid>
+    <match>Filesystem is not clean - run fsck</match>
+    <description>Unclean filesystem, run fsck.</description>
+    <group>sysadmin, storage,</group>
+  </rule>
+  
+  <!--Jun 15 21:15:03 ix /bsd: atascsi_passthru_done, timeout-->
+  <rule id="51515" level="0">
+    <if_sid>51500</if_sid>
+    <match>atascsi_passthru_done, timeout</match>
+    <description>Timeout in atascsi_passthru_done.</description>
+  </rule>
+
+  <!--Jun 30 17:03:17 junction /bsd: RTC BIOS diagnostic error 80<clock_battery>-->
+  <rule id="51516" level="0">
+    <if_sid>51500</if_sid>
+    <regex>RTC BIOS diagnostic error 80\pclock_battery\p</regex>
+    <description>Clock battery error 80</description>
+  </rule>
+
+  <!--Jul 27 11:19:20 richese /bsd: softraid0: i/o error on block 528-->
+  <rule id="51518" level="3">
+    <if_sid>51500</if_sid>
+    <match>i/o error on block</match>
+    <description>I/O error on a storage device</description>
+    <group>storage,sysadmin,</group>
+  </rule>
+
+  <!--Aug 15 16:39:12 ix /bsd: kbc: cmd word write error-->
+  <rule id="51519" level="1">
+    <if_sid>51500</if_sid>
+    <match>kbc: cmd word write error</match>
+    <description>XXX kbc error.</description>
+  </rule>
+
+  <!--Aug 15 17:02:12 ix /bsd: umass0: BBB reset failed, IOERROR-->
+  <rule id="51520" level="1">
+    <if_sid>51500</if_sid>
+    <match>BBB reset failed, IOERROR</match>
+    <description>USB reset failed, IOERROR.</description>
+    <group>storage,</group>
+  </rule>
+
+</group> <!-- SYSLOG,LOCAL -->
+
+
+  <!-- EOF -->
