@@ -44,6 +44,9 @@
   - Nov 11 22:46:29 localhost vsftpd: pam_unix(vsftpd:auth): authentication failure; logname= uid=0 euid=0 tty= ruser= rhost=1.2.3.4
   - Sep 28 15:28:58 server login: pam_unix(login:session): session opened for user carl by LOGIN(uid=0)
   - Sep 28 15:35:18 server sshd[123]: pam_unix(sshd:session): session opened for user carl by (uid=0)
+  - Apr 14 13:33:50 fedora10 gdm-session-worker[2484]: pam_unix(gdm:auth): conversation failed
+  - Oct  7 13:22:29 localhost login: PAM [dlerror: <*unknown module path*>: cannot open shared object file: No such file or directory]
+  - Oct  7 13:22:29 localhost login: PAM (login) illegal module type: include
   -->
 <decoder name="pam">
   <program_name>(pam_unix)$</program_name>
