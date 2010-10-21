@@ -86,11 +86,20 @@ BadResponse\\ for\\ example.com\\ (192.168.2.1) tag=@ce-a7a-1-->
 </decoder>
 
 
+<!--
+"Vitor Correia" "PT" 89.155.91.201 - - [21/Oct/2010:01:48:13 +0100] "GET /collect/main/ HTTP/1.1" 200 2970 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.11) Gecko/20101012 Firefox/3.6.11"
+-->
+
 <decoder name="ssl-cert">
   <prematch>^"\.+" "\S+" \S+ - - [\d+/\S+/\d\d\d\d:\d\d:\d\d:\d\d \S+] </prematch>
+  <regex>^"(\.+)" "(\S+)" (\S+) - - [\d+/\S+/\d\d\d\d:\d\d:\d\d:\d\d \p\d+] "(\S+) (\.+) HTTP/\d.\d" (\d+) \d+ "\.+" "(\.+)</regex>
+  <order>srcuser,id,srcip,action,url,status,extra_data</order>
+</decoder>
+
+<!--
   <regex>^"(\.+)" "(\S+)" (\S+) - - [\d+/\S+/\d\d\d\d:\d\d:\d\d:\d\d \S+] "(\.+) HTTP/\d.\d" (\d+) \S+ "-" "(\.+)"$</regex>
   <order>srcuser,action,srcip,url,status,extra_data</order>
-</decoder>
+-->
 
 
 
