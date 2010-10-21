@@ -86,7 +86,11 @@ BadResponse\\ for\\ example.com\\ (192.168.2.1) tag=@ce-a7a-1-->
 </decoder>
 
 
-
+<decoder name="ssl-cert">
+  <prematch>^"\.+" "\S+" \S+ - - [\d+/\S+/\d\d\d\d:\d\d:\d\d:\d\d \S+] </prematch>
+  <regex>^"(\.+)" "(\S+)" (\S+) - - [\d+/\S+/\d\d\d\d:\d\d:\d\d:\d\d \S+] "(\.+) HTTP/\d.\d" (\d+) \S+ "-" "(\.+)"$</regex>
+  <order>srcuser,action,srcip,url,status,extra_data</order>
+</decoder>
 
 
 
