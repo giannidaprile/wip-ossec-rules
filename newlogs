@@ -17,4 +17,3 @@ Oct 22 10:12:33 junction named[31687]: /etc/blocked.slave:9892: syntax error nea
 Oct 22 10:12:33 junction named[31687]: reloading configuration failed: unexpected token
 
 
-Oct 24 01:04:25 ix smtpd[28336]: 1287896658.JV4Wq8oILSx84ncz: to=<ddpbsd@gmail.com>, delay=7, relay=email.server.example.com [192.168.1.4], stat=RemoteError (5.2.0 NV4K1f0052G0zYQ02V4KgD This message was undeliverable.  This message has been found to be a potential spam message, and has therefore been blocked.
