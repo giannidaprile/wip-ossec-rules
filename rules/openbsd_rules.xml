@@ -134,6 +134,32 @@
     <description>USB reset failed, IOERROR.</description>
   </rule>
 
+  <rule id="51521" level="0" noalert="1">
+    <decoded_as>groupdel</decoded_as>
+    <description>Grouping for groupdel rules.</description>
+    <group>groupdel,</group>
+  </rule>
+
+  <rule id="51522" level="2">
+    <if_sid>340000</if_sid>
+    <match>group deleted</match>
+    <description>Group deleted.</description>
+    <group>groupdel,</group>
+  </rule>
+
+  <rule id="51523" level="0">
+    <program_name>savecore</program_name>
+    <match>no core dump</match>
+    <description>No core dumps.</description>
+  </rule>
+
+  <rule id="51524" level="1">
+    <program_name>reboot</program_name>
+    <match>rebooted by</match>
+    <description>System was rebooted.</description>
+  </rule>
+
+
 </group> <!-- SYSLOG,LOCAL -->
 
 
