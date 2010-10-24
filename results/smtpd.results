@@ -218,9 +218,9 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.1.4'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '320022'
+       Level: '8'
+       Description: 'The message is believed to be spam.'
 **Alert to be generated.
 
 
