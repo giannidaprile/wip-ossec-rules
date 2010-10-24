@@ -12,7 +12,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bro-ids'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '490012'
+       Rule id: '52003'
        Level: '8'
        Description: 'XXX Ack Above Hole'
 **Alert to be generated.
@@ -30,7 +30,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bro-ids'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '490013'
+       Rule id: '52004'
        Level: '8'
        Description: 'XXX Content Gap'
 **Alert to be generated.
@@ -48,7 +48,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bro-ids'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '490010'
+       Rule id: '52001'
        Level: '0'
        Description: 'Bro-ids has been started.'
 
@@ -63,7 +63,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bro-ids'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '490011'
+       Rule id: '52002'
        Level: '0'
        Description: 'Bro-ids has been stopped.'
 
@@ -78,7 +78,7 @@ ossec-testrule: Type one log per line.
        decoder: 'bro-ids'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '490014'
+       Rule id: '52005'
        Level: '1'
        Description: 'Bro-ids resource summary.'
 **Alert to be generated.
@@ -98,7 +98,7 @@ ossec-testrule: Type one log per line.
        extra_data: '988'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '490015'
+       Rule id: '52006'
        Level: '7'
        Description: 'Bro-ids port scan summary.'
 **Alert to be generated.
@@ -121,7 +121,7 @@ ossec-testrule: Type one log per line.
        dstport: '53'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '490016'
+       Rule id: '52007'
        Level: '4'
        Description: 'Bro-ids Zone Transfer alert.'
 **Alert to be generated.
@@ -144,7 +144,7 @@ ossec-testrule: Type one log per line.
        dstport: '111'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '490017'
+       Rule id: '52008'
        Level: '4'
        Description: 'Bro-ids detected acces to the portmapper port.'
 **Alert to be generated.
@@ -166,7 +166,7 @@ ossec-testrule: Type one log per line.
        extra_data: '250'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '490018'
+       Rule id: '52009'
        Level: '4'
        Description: 'Bro-ids detected a portscan.'
 **Alert to be generated.
