@@ -62,35 +62,30 @@
     <decoded_as>launchproxy</decoded_as>
     <match>resolution</match>
     <description>Failure in name resolution.</description>
-    <group>smbd,</group>
   </rule>
 
   <rule id="13108" level="1">
     <if_sid>13100</if_sid>
     <match>smbd is already running</match>
     <description>An attempt has been made to start smbd but the process is already running.</description>
-    <group>smbd,</group>
   </rule>
 
   <rule id="13109" level="1">
     <if_sid>13106</if_sid>
     <match>nmbd is already running</match>
     <description>An attempt has been made to start nmbd but the process is already running.</description>
-    <group>smbd,nmbd,</group>
   </rule>
 
   <rule id="13110" level="2">
     <if_sid>13100</if_sid>
     <match>Connection denied from</match>
     <description>Connection was denied.</description>
-    <group>smbd,</group>
   </rule>
 
   <rule id="13111" level="3">
     <if_sid>13100</if_sid>
     <match>Socket is not connected</match>
     <description>Socket is not connected, write failed.</description>
-    <group>smbd,</group>
   </rule>
 
   <rule id="13112" level="3">
@@ -98,7 +93,6 @@
     <match>gvfsd-smb</match>
     <regex>segfault at \S+ ip \S+ sp \S+ error \d+ in</regex>
     <description>Segfault in gvfs-smb.</description>
-    <group>smbd,</group>
   </rule>
 
 
