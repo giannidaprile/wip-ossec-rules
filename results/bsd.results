@@ -12,7 +12,7 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '340011'
+       Rule id: '51523'
        Level: '0'
        Description: 'No core dumps.'
 
@@ -28,7 +28,7 @@ ossec-testrule: Type one log per line.
        extra_data: '_dbus'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '340010'
+       Rule id: '51522'
        Level: '2'
        Description: 'Group deleted.'
 **Alert to be generated.
@@ -46,7 +46,7 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '340012'
+       Rule id: '51524'
        Level: '1'
        Description: 'System was rebooted.'
 **Alert to be generated.

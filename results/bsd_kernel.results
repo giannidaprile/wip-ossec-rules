@@ -331,7 +331,7 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '51519'
        Level: '1'
-       Description: 'XXX kbc error.'
+       Description: 'kbc error.'
 **Alert to be generated.
 
 

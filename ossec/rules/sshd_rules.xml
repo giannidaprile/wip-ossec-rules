@@ -142,6 +142,7 @@
   <rule id="5719" level="10" frequency="6" timeframe="120" ignore="60">
     <if_matched_sid>5718</if_matched_sid>
     <description>Multiple access attempts using a denied user.</description>
+    <group>invalid_login,</group>
   </rule>
   
   <rule id="5720" level="10" frequency="6">
@@ -200,6 +201,7 @@
     <match>Authentication service cannot retrieve user credentials</match>
     <info>May be related to PAM module errors.</info>
     <description>Authentication services were not able to retrieve user credentials.</description>
+    <group>authentication_failed</group>
   </rule>
 
   <rule id="5729" level="0">
@@ -225,14 +227,13 @@
     <if_sid>5700</if_sid>
     <match>error: connect_to </match>
     <description>Possible port forwarding failure.</description>
-    <group>sshd,</group>
   </rule>
 
   <rule id="5733" level="2">
     <if_sid>5700</if_sid>
     <match>Invalid credentials</match>
     <description>User entered incorrect password.</description>
-    <group>sshd,ldap,pam,authentication_failures,</group>
+    <group>authentication_failures,</group>
   </rule>
 
   <rule id="5734" level="1">
@@ -240,14 +241,12 @@
     <match>Could not load host key</match>
     <description>sshd could not load one or more host keys.</description>
     <info>This may be related to an upgrade to OpenSSH.</info>
-    <group>sshd,sysadmin,</group>
   </rule>
 
   <rule id="5735" level="2">
     <if_sid>5700</if_sid>
     <match>Write failed: Broken pipe</match>
     <description>Failed write due to one host disappearing.</description>
-    <group>sshd,</group>
   </rule>
 
 
