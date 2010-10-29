@@ -548,11 +548,12 @@
   <program_name>^ftpd|^in.ftpd</program_name>
 </decoder>
 
+<!-- Modifications from blacklight vphuvan@yahoo.com -->
 <decoder name="ftpd-mac-failure">
   <parent>ftpd</parent>
   <prematch>^Failed authentication from: \S+ |</prematch>
   <prematch>^repeated login failures from </prematch>
-  <regex offset="after_prematch">[(\d+.\d+.\d+.\d+)]$</regex>
+  <regex offset="after_prematch">(\S+)</regex>
   <order>srcip</order>
 </decoder>
 
@@ -1033,6 +1034,14 @@
    <order>srcport,dstport</order>
 </decoder>   
 
+<decoder name="iptables-shorewall2">
+  <parent>iptables</parent>
+  <type>firewall</type>
+  <prematch>^\p\S+\p Shorewall:\S+:</prematch>
+  <regex offset="after_prematch">^(\S+):\.+ SRC=(\S+) DST=(\S+) \.+ </regex>
+  <regex>PROTO=(\w+) </regex>
+  <order>action,srcip,dstip,protocol</order>
+</decoder>
 
 
 <!-- Solaris IPFilter decoder.

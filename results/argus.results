@@ -237,7 +237,7 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '480032'
+       Rule id: '148003'
        Level: '2'
        Description: 'rastream connection was reset.'
 **Alert to be generated.
