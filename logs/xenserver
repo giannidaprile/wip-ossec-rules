@@ -1,0 +1,19 @@
+Nov  2 12:13:32 192.168.17.7 NET[5953]: /etc/sysconfig/network-scripts/ifup-post : updated /etc/resolv.conf
+Nov  2 12:13:38 kaitain rpc.statd[6439]: Version 1.0.9 Starting
+Nov  2 12:13:38 192.168.17.7 rpc.statd[6439]: statd running as root. chown /var/lib/nfs/statd/sm to choose different user
+Nov  2 12:13:38 192.168.17.7 lwsmd: Logging started
+Nov  2 12:13:38 192.168.17.7 ntpdate[6590]: step time server 192.168.17.9 offset -0.444219 sec
+Nov  2 12:13:38 192.168.17.7 ntpd[6594]: ntpd 4.2.2p1@1.1570-o Sat Dec 19 00:58:16 UTC 2009 (1)
+Nov  2 12:13:38 192.168.17.7 ntpd[6595]: getaddrinfo: "::1" invalid host address, ignored
+Nov  2 12:13:40 192.168.17.7 xapi: [ warn|kaitain|0 thread_zero|Licensing host D:a42b453ec4fe|license] License application failed: cannot read license file.
+Nov  2 12:13:40 192.168.17.7 xapi: [ warn|kaitain|22 heartbeat|heartbeat thread D:86dc1fdcb5b8|startup] thread [heartbeat thread] died
+Nov  2 12:13:40 192.168.17.7 xapi: [ warn|kaitain|20|control domain memory D:099f65a5240e|startup] thread [control domain memory] died
+Nov  2 12:13:40 192.168.17.7 ovs-vsctl: 00001|vsctl|INFO|Called as /usr/bin/ovs-vsctl -vANY:console:emer get Open_vSwitch . managers
+Nov  2 12:13:40 192.168.17.7 ovs-vsctl: 00002|stream_unix|ERR|/tmp/stream-unix.7188.0: connection to /var/run/openvswitch/db.sock failed: No such file or directory
+Nov  2 12:13:40 192.168.17.7 ovs-vsctl: 00003|reconnect|WARN|unix:/var/run/openvswitch/db.sock: connection attempt failed (No such file or directory)
+Nov  2 12:13:41 192.168.17.7 ovs-vsctl: 00004|stream_unix|ERR|/tmp/stream-unix.7188.1: connection to /var/run/openvswitch/db.sock failed: No such file or directory
+Nov  2 12:13:41 192.168.17.7 ovs-vsctl: 00005|reconnect|WARN|unix:/var/run/openvswitch/db.sock: connection attempt failed (No such file or directory)
+Nov  2 12:13:43 192.168.17.7 ovs-vsctl: 00006|stream_unix|ERR|/tmp/stream-unix.7188.2: connection to /var/run/openvswitch/db.sock failed: No such file or directory
+Nov  2 12:13:43 192.168.17.7 ovs-vsctl: 00007|reconnect|WARN|unix:/var/run/openvswitch/db.sock: connection attempt failed (No such file or directory)
+Nov  2 12:13:49 192.168.17.7 xapi: [ warn|kaitain|500|Calling on_xapi_initialize event hook in the external authentication plugin D:0787ad5289d1|startup] thread [Calling on_xapi_initialize event hook in the external authentication plugin] died
+

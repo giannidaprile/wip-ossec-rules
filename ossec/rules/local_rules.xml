@@ -1407,7 +1407,13 @@ conf).-->
     <group>argus,</group>
   </rule>
 
-
+  <rule id="480033" level="10">
+    <if_sid>480002</if_sid>
+    <hostname>ix</hostname>
+    <match>read error Connection reset by peer</match>
+    <description>rastream connection was reset.</description>
+    <group>argus,</group>
+  </rule>
 
 </group> <!-- SYSLOG,LOCAL -->
 
