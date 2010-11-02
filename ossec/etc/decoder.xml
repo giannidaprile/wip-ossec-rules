@@ -2264,4 +2264,25 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 </decoder>
 
 
+<!-- Portsentry -->
+
+<decoder name="portsentry">
+  <program_name>portsentry</program_name>
+</decoder>
+
+<decoder name="portsentry-attackalert">
+  <parent>portsentry</parent>
+  <prematch>attackalert: Connect from </prematch>
+  <regex offset="after_prematch">ost: (\S)/\S+ to \S+ port: (\d+)$</regex>
+  <order>srcip, dstport</order>
+</decoder>
+
+<decoder name="portsentry-blocked">
+  <parent>portsentry</parent>
+  <prematch>is already blocked. Ignoring$</prematch>
+  <regex>Host: (\S+) is</regex>
+  <order>srcip</order>
+</decoder>
+
+
 <!-- EOF -->
