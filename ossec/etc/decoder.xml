@@ -553,7 +553,8 @@
   <parent>ftpd</parent>
   <prematch>^Failed authentication from: \S+ |</prematch>
   <prematch>^repeated login failures from </prematch>
-  <regex offset="after_prematch">(\S+)</regex>
+  <!--<regex offset="after_prematch">(\S+)</regex>-->
+  <regex offset="after_prematch">\S+ [(\d+.\d+.\d+.\d+)]$|(\S+)</regex>
   <order>srcip</order>
 </decoder>
 

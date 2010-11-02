@@ -1,5 +1,5 @@
-2010/11/02 11:32:11 ossec-testrule: INFO: Reading local decoder file.
-2010/11/02 11:32:11 ossec-testrule: INFO: Started (pid: 22436).
+2010/11/02 11:40:55 ossec-testrule: INFO: Reading local decoder file.
+2010/11/02 11:40:56 ossec-testrule: INFO: Started (pid: 22326).
 ossec-testrule: Type one log per line.
 
 
@@ -12,7 +12,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'ftpd'
-       srcip: 'nod32.megalan.bg'
+       srcip: '89.190.196.14'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '11109'
@@ -31,7 +31,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'ftpd'
-       srcip: 'nod32.megalan.bg'
+       srcip: '89.190.196.14'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '11109'
@@ -50,7 +50,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'ftpd'
-       srcip: 'nod32.megalan.bg'
+       srcip: '89.190.196.14'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '11109'
@@ -69,7 +69,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'ftpd'
-       srcip: 'nod32.megalan.bg'
+       srcip: '89.190.196.14'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '11109'
@@ -651,7 +651,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'ftpd'
-       srcip: '201-23-190-65.gprs.claro.net.br'
+       srcip: '201.23.190.65'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '11109'
