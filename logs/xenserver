@@ -44,4 +44,15 @@ Nov  3 09:34:25 kaitain xapi: [error|kaitain|1792|Async.VM.start R:21189fb7498c|
 Nov  2 12:13:40 192.168.17.7 xapi: [ warn|kaitain|0 thread_zero|Licensing host D:a42b453ec4fe|license] License application failed: cannot read license file.
 Nov  2 12:13:40 192.168.17.7 ovs-vsctl: 00002|stream_unix|ERR|/tmp/stream-unix.7188.0: connection to /var/run/openvswitch/db.sock failed: No such file or directory
 Nov  2 12:13:40 192.168.17.7 ovs-vsctl: 00003|reconnect|WARN|unix:/var/run/openvswitch/db.sock: connection attempt failed (No such file or directory)
-
+Nov  3 01:31:04 kaitain stunnel: LOG3[7071:3073440656]: SSL_accept: 140760FC: error:140760FC:SSL routines:SSL23_GET_CLIENT_HELLO:unknown protocol
+Nov  3 01:32:28 kaitain stunnel: LOG3[7071:3073301392]: SSL_accept: 1407609C: error:1407609C:SSL routines:SSL23_GET_CLIENT_HELLO:http request
+Nov  3 09:34:24 kaitain xapi: [error|kaitain|1799 unix-RPC|VBD.plug R:efc92134466d|hotplug] Failed waiting for frontend device frontend (domid=0 | kind=vbd | devid=51712); backend (domid=0 | kind=vbd | devid=51712): 2 creating vbd structure
+Nov  3 09:34:24 kaitain kernel: xenbus dev backend/vbd/0/51712 error 2 creating vbd structure
+Nov  3 09:34:25 kaitain xapi: [error|kaitain|1792|Async.VM.start R:21189fb7498c|xapi] Memory F 7804760 KiB S 0 KiB T 8182 MiB
+Nov  3 09:34:24 kaitain xapi: [error|kaitain|1799 unix-RPC|VBD.plug R:efc92134466d|hotplug] Failed waiting for frontend device frontend (domid=0 | kind=vbd | devid=51712); backend (domid=0 | kind=vbd | devid=51712): 2 creating vbd structure
+Nov  3 09:39:34 kaitain vhd-util: libvhd::vhd_read_footer_at: /dev/VG_XenStorage-98bc3b50-ef9b-4d63-4298-347505db8e05/VHD-7ba13aed-dfdb-4a56-b5bd-9ae51daebc54: reading footer at 0x281bffe00 failed: -22
+Nov  3 10:09:23 kaitain TAPDISK[23030]: /dev/VG_XenStorage-98bc3b50-ef9b-4d63-4298-347505db8e05/VHD-7ba13aed-dfdb-4a56-b5bd-9ae51daebc54: state: 0x00000000, new: 0x00, pending: 0x00, failed: 0x00, completed: 0x00
+Nov  3 10:09:23 kaitain TAPDISK[23030]: last activity: 1288791629.476631, errors: 0x0000, retries: 0x0000, received: 0x00000002, returned: 0x00000002, kicked: +0x00000002, kicks in: 0x00000002, out: 0x00000002
+Nov  3 10:09:23 kaitain TAPDISK[23030]: tapdisk-log: closing after 0 errors
+Nov  3 10:09:23 kaitain TAPDISK[23030]: tapdisk-syslog: 0 messages, 0 bytes, xmits: 0, failed: 0, dropped: 0
+Nov  3 10:09:23 kaitain xapi: [error|kaitain|167 xal_listen|VM (domid: 2) device_event = device shutdown {tap,51712} D:f609ffba7f95|event] device_event could not be processed because VM record not in database
