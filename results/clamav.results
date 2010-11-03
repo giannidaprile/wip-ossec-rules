@@ -9,7 +9,7 @@ ossec-testrule: Type one log per line.
        log: 'getfile: Error while reading database from db.us.clamav.net (IP: 64.142.100.50)'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'freshclam'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '460010'
@@ -27,7 +27,7 @@ ossec-testrule: Type one log per line.
        log: 'Update failed. Your'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'freshclam'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '460011'

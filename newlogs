@@ -19,4 +19,5 @@ Oct 22 10:12:33 junction named[31687]: reloading configuration failed: unexpecte
 Oct 26 01:35:27 ix smtpd[4667]: (none): from=<@>, relay=ix.example.com [192.168.17.9], stat=LocalError (500 5.0.0 Pipelining unsupported)
 Oct 26 01:35:27 ix smtpd[4667]: client 192.168.17.9 write error: Broken pipe
 
+Nov  2 12:08:27 192.168.17.7 sshd[9665]: fatal: Cannot bind any address.
 
