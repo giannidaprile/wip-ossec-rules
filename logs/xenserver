@@ -56,3 +56,7 @@ Nov  3 10:09:23 kaitain TAPDISK[23030]: last activity: 1288791629.476631, errors
 Nov  3 10:09:23 kaitain TAPDISK[23030]: tapdisk-log: closing after 0 errors
 Nov  3 10:09:23 kaitain TAPDISK[23030]: tapdisk-syslog: 0 messages, 0 bytes, xmits: 0, failed: 0, dropped: 0
 Nov  3 10:09:23 kaitain xapi: [error|kaitain|167 xal_listen|VM (domid: 2) device_event = device shutdown {tap,51712} D:f609ffba7f95|event] device_event could not be processed because VM record not in database
+Nov  3 11:51:37 kaitain xapi: [error|kaitain|167 xal_listen|VM (domid: 8) device_event = device shutdown {tap,51712} D:b1b27bc7c794|event] device_event could not be processed because VM record not in database
+Nov  3 11:51:37 kaitain TAPDISK[25765]: /dev/VG_XenStorage-98bc3b50-ef9b-4d63-4298-347505db8e05/VHD-42506f52-cbee-47db-847c-61f272471c5b: state: 0x00000000, new: 0x00, pending: 0x00, failed: 0x00, completed: 0x00
+Nov  3 11:51:37 kaitain TAPDISK[25765]: last activity: 1288799490.708935, errors: 0x0000, retries: 0x007c, received: 0x000048eb, returned: 0x000048eb, kicked: 0x000048eb, kicks in: 0x00001b28, out: 0x00008431
+
