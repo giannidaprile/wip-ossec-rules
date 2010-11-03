@@ -41,4 +41,7 @@ Nov  3 09:34:24 kaitain xapi: [error|kaitain|1799 unix-RPC|VBD.plug R:efc9213446
 Nov  3 09:34:24 kaitain kernel: xenbus dev backend/vbd/0/51712 error 2 creating vbd structure
 Nov  3 09:34:25 kaitain last message repeated 2 times
 Nov  3 09:34:25 kaitain xapi: [error|kaitain|1792|Async.VM.start R:21189fb7498c|xapi] Memory F 7804760 KiB S 0 KiB T 8182 MiB
+Nov  2 12:13:40 192.168.17.7 xapi: [ warn|kaitain|0 thread_zero|Licensing host D:a42b453ec4fe|license] License application failed: cannot read license file.
+Nov  2 12:13:40 192.168.17.7 ovs-vsctl: 00002|stream_unix|ERR|/tmp/stream-unix.7188.0: connection to /var/run/openvswitch/db.sock failed: No such file or directory
+Nov  2 12:13:40 192.168.17.7 ovs-vsctl: 00003|reconnect|WARN|unix:/var/run/openvswitch/db.sock: connection attempt failed (No such file or directory)
 
