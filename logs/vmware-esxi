@@ -13,3 +13,4 @@ Nov  5 14:11:40 kaitain watchdog-usbarbitrator: [5347] Begin '/usr/lib/vmware/bi
 Nov  5 14:11:39 kaitain vmkernel: 0:00:00:33.126 cpu1:5319)Vol3: 1604: Could not open device 't10.ATA_____SAMSUNG_HE253GJ_______________________________S2B5J90Z907112:5' for probing: Permission denied
 Nov  5 14:11:39 kaitain vmkernel: 0:00:00:33.126 cpu1:5319)Vol3: 644: Could not open device 't10.ATA_____SAMSUNG_HE253GJ_______________________________S2B5J90Z907112:5' for volume open: Permission denied
 Nov  6 02:24:08 kaitain vmkernel: 0:12:13:01.567 cpu0:80682)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy
+Nov  6 04:39:17 kaitain watchdog-cdp: [5431] Begin '/usr/sbin/net-cdp', min-uptime = 60, max-quick-failures = 1, max-total-failures = 1000000
