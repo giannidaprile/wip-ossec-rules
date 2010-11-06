@@ -25,3 +25,5 @@ Nov  2 12:11:40 192.168.17.7 sshd[9814]: pam_loginuid(sshd:session): set_loginui
 Nov  5 22:59:19 ix freshclam[32349]: Incremental update failed, trying to download daily.cvd
 Nov  5 22:59:37 ix freshclam[32349]: Incremental update failed, trying to download bytecode.cvd
 
+Nov  6 09:53:38 hagal sshd[697]: error: accept: Software caused connection abort
+
