@@ -16,3 +16,4 @@ Nov  6 02:24:08 kaitain vmkernel: 0:12:13:01.567 cpu0:80682)WARNING: UserObj: 56
 Nov  6 04:39:17 kaitain watchdog-cdp: [5431] Begin '/usr/sbin/net-cdp', min-uptime = 60, max-quick-failures = 1, max-total-failures = 1000000
 Nov  6 05:30:59 kaitain sfcb-CIMXML-Processor[13160]:  *** 1622 Timeout error accepting SSL connection -- exiting
 Nov  6 05:31:05 kaitain vmkernel: 0:00:52:21.765 cpu6:4842)Migrate: 402: Error reading from pending connection: Connection closed by remote host, possibly due to timeout
+Nov  8 17:13:17 kaitain vmkernel: 2:12:34:33.682 cpu2:369423)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy
