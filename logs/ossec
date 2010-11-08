@@ -39,3 +39,4 @@ Oct 27 09:48:52 fedora11 kernel: ossec-logcollec[2166]: segfault at 0 ip 0804d4e
 2010/09/29 09:19:03 ossec-remoted(1403): ERROR: Incorrectly formated message from
 2010/09/29 22:34:44 ossec-analysisd(2102): ERROR: Duplicated decoder with prematch: 'named-master'.
 2010/09/29 22:34:44 ossec-analysisd(2105): ERROR: Error loading decoder options.
+Oct 27 11:07:14 richese collectd[6415]: network plugin: sendto failed: No route to host
