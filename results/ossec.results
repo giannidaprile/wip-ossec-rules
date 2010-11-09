@@ -726,3 +726,39 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct 27 11:07:14 richese collectd[6415]: network plugin: sendto failed: No route to host'
+       hostname: 'richese'
+       program_name: 'collectd'
+       log: 'network plugin: sendto failed: No route to host'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/11/08 12:59:28 ossec-remoted(1206): ERROR: Unable to Bind port '1514''
+       hostname: 'ix'
+       program_name: '(null)'
+       log: '2010/11/08 12:59:28 ossec-remoted(1206): ERROR: Unable to Bind port '1514''
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-remoted'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
