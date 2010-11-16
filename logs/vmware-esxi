@@ -17,3 +17,7 @@ Nov  6 04:39:17 kaitain watchdog-cdp: [5431] Begin '/usr/sbin/net-cdp', min-upti
 Nov  6 05:30:59 kaitain sfcb-CIMXML-Processor[13160]:  *** 1622 Timeout error accepting SSL connection -- exiting
 Nov  6 05:31:05 kaitain vmkernel: 0:00:52:21.765 cpu6:4842)Migrate: 402: Error reading from pending connection: Connection closed by remote host, possibly due to timeout
 Nov  8 17:13:17 kaitain vmkernel: 2:12:34:33.682 cpu2:369423)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy
+Nov 16 15:39:26 kaitain vmkernel: 0:22:45:24.981 cpu6:5755)WARNING: NFS: 1090: Error (No connection) trying to umount /exports/ISO on host hagal (192.168.17.12)
+Nov 16 15:41:26 kaitain vmkernel: 0:22:47:25.037 cpu1:4654)NMP: nmp_CompleteCommandForPath: Command 0x12 (0x41027f400340) to NMP device "mpx.vmhba1:C0:T0:L0" failed on physical path "vmhba1:C0:T0:L0" H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x24 0x0.
+Nov 16 15:42:01 kaitain vmkernel: 0:22:47:59.559 cpu4:143711)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy
+
