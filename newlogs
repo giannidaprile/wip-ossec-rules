@@ -22,5 +22,6 @@ Nov 15 18:15:14 kaitain nssquery: User lookup failed for uid '1000'
 
 Nov 16 22:57:30 gamont ntpdate[6752]: name server cannot be used, reason: Temporary failure in name resolution
 
+Nov 17 10:51:26 junction named[5358]: client 192.168.17.14#58909: update forwarding 'example.com/IN' denied
 
 
