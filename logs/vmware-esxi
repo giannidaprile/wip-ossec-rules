@@ -22,3 +22,7 @@ Nov 16 15:41:26 kaitain vmkernel: 0:22:47:25.037 cpu1:4654)NMP: nmp_CompleteComm
 Nov 16 15:42:01 kaitain vmkernel: 0:22:47:59.559 cpu4:143711)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy
 Nov 17 06:30:28 kaitain sfcb-CIMXML-Processor[232856]:  *** 1622 Timeout error accepting SSL connection -- exiting
 Nov 16 15:15:01 kaitain vmkernel: 0:22:20:59.810 cpu0:13640)WARNING: NFS: 213: Got error 13 from mount call
+Nov 16 15:15:38 kaitain vmkernel: 0:22:21:37.151 cpu2:5131)WARNING: NFS: 959: MOUNT failed with MOUNT status 13 (Permission denied) trying to mount Server (192.168.17.12) Path (/exports)
+Nov 16 15:15:38 kaitain vmkernel: 0:22:21:37.151 cpu2:5131)NFS: 171: NFS mount hagal:/exports status: The mount request was denied by the NFS server. Check that the export exists and that the client is permitted to mount it
+Nov 16 15:30:51 kaitain vmkernel: 0:22:36:50.193 cpu2:9299)WARNING: NFS: 213: Got error 13 from mount call
+Nov 16 15:33:41 kaitain vmkernel: 0:22:39:39.817 cpu0:142815)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy
