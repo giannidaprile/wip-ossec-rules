@@ -60,4 +60,10 @@
     <group>virus</group>
   </rule>
 
+  <rule id="52509" level="1">
+    <if_sid>52501</if_sid>
+    <match>Incremental update failed</match>
+    <description>Could not download the incremental virus definition updates.</description>
+  </rule>
+
 </group> <!-- clamd, freshclam -->

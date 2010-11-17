@@ -2292,7 +2292,10 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
   <order>srcip</order>
 </decoder>
 
-<!-- Clamav and Freshclam decoder -->
+<!-- Clamav and Freshclam decoder
+  -  Nov  5 22:59:19 ix freshclam[32349]: Incremental update failed, trying to download daily.cvd
+-->
+
 <decoder name="clamd">
   <program_name>^clamd</program_name>
 </decoder>

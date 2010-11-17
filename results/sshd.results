@@ -654,3 +654,84 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  9 07:40:25 ginaz sshd[5973]: error: setsockopt SO_KEEPALIVE: Connection reset by peer'
+       hostname: 'ginaz'
+       program_name: 'sshd'
+       log: 'error: setsockopt SO_KEEPALIVE: Connection reset by peer'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5736'
+       Level: '0'
+       Description: 'Connection reset or aborted.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  2 12:08:27 192.168.17.7 sshd[9665]: fatal: Cannot bind any address.'
+       hostname: '192.168.17.7'
+       program_name: 'sshd'
+       log: 'fatal: Cannot bind any address.'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5737'
+       Level: '3'
+       Description: 'sshd cannot bind to configured address.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  2 12:11:40 192.168.17.7 sshd[9814]: pam_loginuid(sshd:session): set_loginuid failed opening loginuid'
+       hostname: '192.168.17.7'
+       program_name: 'sshd'
+       log: 'pam_loginuid(sshd:session): set_loginuid failed opening loginuid'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5738'
+       Level: '5'
+       Description: 'pam_loginuid could not open loginuid.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  6 09:53:38 hagal sshd[697]: error: accept: Software caused connection abort'
+       hostname: 'hagal'
+       program_name: 'sshd'
+       log: 'error: accept: Software caused connection abort'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5736'
+       Level: '0'
+       Description: 'Connection reset or aborted.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  9 11:36:55 ecaz sshd[26967]: pam_succeed_if(sshd:auth): error retrieving information about user _z9xxbBW'
+       hostname: 'ecaz'
+       program_name: 'sshd'
+       log: 'pam_succeed_if(sshd:auth): error retrieving information about user _z9xxbBW'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5711'
+       Level: '0'
+       Description: 'Useless/Duplicated SSHD message without a user/ip.'
