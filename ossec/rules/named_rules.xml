@@ -317,6 +317,12 @@
     <description>Configuration mistake</description>
   </rule>
 
+  <rule id="12148" level="1">
+    <if_sid>12100</if_sid>
+    <match>syntax error near|</match>
+    <match>reloading configuration failed: unexpected token</match>
+    <description>Syntax error in a named configuration file.</description>
+  </rule>
   
 
   

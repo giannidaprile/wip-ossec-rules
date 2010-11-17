@@ -794,6 +794,8 @@
   - Examples:
   -  valhalla named[7885]: client 192.168.1.231#1142: update 'hayaletgemi.edu/IN' denied
   - named[12637]: client 1.2.3.4#32769: query (cache) 'somedomain.com/MX/IN' denied
+  -  Oct 22 10:12:33 junction named[31687]: /etc/blocked.slave:9892: syntax error near ';'
+  -  Oct 22 10:12:33 junction named[31687]: reloading configuration failed: unexpected token
  -->           
 <decoder name="named">
   <program_name>^named</program_name>
