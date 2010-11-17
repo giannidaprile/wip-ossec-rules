@@ -19,17 +19,8 @@ Oct 22 10:12:33 junction named[31687]: reloading configuration failed: unexpecte
 Oct 26 01:35:27 ix smtpd[4667]: (none): from=<@>, relay=ix.example.com [192.168.17.9], stat=LocalError (500 5.0.0 Pipelining unsupported)
 Oct 26 01:35:27 ix smtpd[4667]: client 192.168.17.9 write error: Broken pipe
 
-Nov  2 12:08:27 192.168.17.7 sshd[9665]: fatal: Cannot bind any address.
-Nov  2 12:11:40 192.168.17.7 sshd[9814]: pam_loginuid(sshd:session): set_loginuid failed opening loginuid
-
 Nov  5 22:59:19 ix freshclam[32349]: Incremental update failed, trying to download daily.cvd
 Nov  5 22:59:37 ix freshclam[32349]: Incremental update failed, trying to download bytecode.cvd
-
-Nov  6 09:53:38 hagal sshd[697]: error: accept: Software caused connection abort
-
-Nov  9 11:36:55 ecaz sshd[26967]: pam_succeed_if(sshd:auth): error retrieving information about user _z9xxbBW
-Nov  9 07:40:25 ginaz sshd[4932]: error: accept: Software caused connection abort
-Nov  9 07:40:25 ginaz sshd[5973]: error: setsockopt SO_KEEPALIVE: Connection reset by peer
 
 Nov 15 12:18:44 corrin mountd[7163]: refused mount request from 192.168.17.9 for /mnt (/mnt): illegal port 13329
 Nov 16 05:52:25 hagal mountd[541]: mount request denied from 192.168.17.7 for /home/ddp/ISO
