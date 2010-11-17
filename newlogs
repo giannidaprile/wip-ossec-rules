@@ -13,9 +13,6 @@ Oct 15 15:34:27 carpsystem /bsd: nd6_na_input: duplicate IP6 address 2001:0560:7
 Oct 26 01:35:27 ix smtpd[4667]: (none): from=<@>, relay=ix.example.com [192.168.17.9], stat=LocalError (500 5.0.0 Pipelining unsupported)
 Oct 26 01:35:27 ix smtpd[4667]: client 192.168.17.9 write error: Broken pipe
 
-Nov  5 22:59:19 ix freshclam[32349]: Incremental update failed, trying to download daily.cvd
-Nov  5 22:59:37 ix freshclam[32349]: Incremental update failed, trying to download bytecode.cvd
-
 Nov 15 12:18:44 corrin mountd[7163]: refused mount request from 192.168.17.9 for /mnt (/mnt): illegal port 13329
 Nov 16 05:52:25 hagal mountd[541]: mount request denied from 192.168.17.7 for /home/ddp/ISO
 Nov 16 06:32:42 hagal mountd[542]: bad exports list line /exports -ro -alldirs maproot=ddp -network
