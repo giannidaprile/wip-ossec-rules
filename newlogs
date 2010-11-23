@@ -31,4 +31,6 @@ Nov  9 07:43:15 richese identd[28080]: read from ecaz.example.com: Undefined err
 
 WinEvtLog: Application: ERROR(0): AuthLite: (no user): no domain: GIEDIPRIME: ,000 9890a406-efc7-479a-a698-96644243d781 [8] ERROR Collective.AuthLite.Audit.OtpValidation - Invalid OTP string.
 
+Nov 22 07:24:15 hagal nfsd[550]: accept failed: Software caused connection abort
+
 
