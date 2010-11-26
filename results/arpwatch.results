@@ -1,2 +1,38 @@
-2010/11/26 09:30:01 ossec-analysisd: Invalid decoder name: 'openldap'.
-2010/11/26 09:30:01 ossec-testrule(1220): ERROR: Error loading the rules: 'syslog_rules.xml'.
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct 13 12:03:19 ix arpwatch: pcap open re0: /dev/bpf0: Permission denied'
+       hostname: 'ix'
+       program_name: 'arpwatch'
+       log: 'pcap open re0: /dev/bpf0: Permission denied'
+
+**Phase 2: Completed decoding.
+       decoder: 'arpwatch'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '7207'
+       Level: '1'
+       Description: 'arpwatch probably run with wrong permissions'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  5 18:22:12 ix arpwatch: reused old ethernet address 192.168.17.248 0:e:3b:a:cb:67 (0:1e:8c:72:b0:d0)'
+       hostname: 'ix'
+       program_name: 'arpwatch'
+       log: 'reused old ethernet address 192.168.17.248 0:e:3b:a:cb:67 (0:1e:8c:72:b0:d0)'
+
+**Phase 2: Completed decoding.
+       decoder: 'arpwatch'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '7208'
+       Level: '1'
+       Description: 'An IP has reverted to an old ethernet address.'
+**Alert to be generated.
+
+

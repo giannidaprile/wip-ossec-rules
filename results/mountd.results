@@ -1,2 +1,85 @@
-2010/11/26 09:30:04 ossec-analysisd: Invalid decoder name: 'openldap'.
-2010/11/26 09:30:04 ossec-testrule(1220): ERROR: Error loading the rules: 'syslog_rules.xml'.
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 10 12:15:18 gorilla mountd[29763]: Can't delete exports for /tmp/xxxy: Invalid argument'
+       hostname: 'gorilla'
+       program_name: 'mountd'
+       log: 'Can't delete exports for /tmp/xxxy: Invalid argument'
+
+**Phase 2: Completed decoding.
+       decoder: 'mountd'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 26 21:09:01 gorilla mountd[3773]: Bad exports list line /data01'
+       hostname: 'gorilla'
+       program_name: 'mountd'
+       log: 'Bad exports list line /data01'
+
+**Phase 2: Completed decoding.
+       decoder: 'mountd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '420011'
+       Level: '3'
+       Description: 'Bad exports configuration.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 11 20:01:02 ix mountd[11618]: Refused mount RPC from host 192.168.17.10 port 45659'
+       hostname: 'ix'
+       program_name: 'mountd'
+       log: 'Refused mount RPC from host 192.168.17.10 port 45659'
+
+**Phase 2: Completed decoding.
+       decoder: 'mountd'
+       srcip: '192.168.17.10'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '420012'
+       Level: '4'
+       Description: 'A mount RPC was refused.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Mar 11 15:30:44 ix mountd[17006]: Bad opt mast'
+       hostname: 'ix'
+       program_name: 'mountd'
+       log: 'Bad opt mast'
+
+**Phase 2: Completed decoding.
+       decoder: 'mountd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '420013'
+       Level: '2'
+       Description: 'XXX Bad option?'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Mar 11 15:30:44 ix mountd[17006]: Bad exports list line /data4 -network'
+       hostname: 'ix'
+       program_name: 'mountd'
+       log: 'Bad exports list line /data4 -network'
+
+**Phase 2: Completed decoding.
+       decoder: 'mountd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '420011'
+       Level: '3'
+       Description: 'Bad exports configuration.'
+**Alert to be generated.
+
+

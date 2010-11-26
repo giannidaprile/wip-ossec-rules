@@ -1,2 +1,254 @@
-2010/11/26 09:30:05 ossec-analysisd: Invalid decoder name: 'openldap'.
-2010/11/26 09:30:05 ossec-testrule(1220): ERROR: Error loading the rules: 'syslog_rules.xml'.
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '[Time 2009.08.13 17:17:05 UTC] [Facility install] [Sender Software Update] [PID 12439] [Message Package Authoring Error: installation-check results requires a message] [Level 3] [UID -2] [GID -2] [Host bunnys-mac-mini]                                    '
+       hostname: 'bunnys-mac-mini'
+       program_name: 'Software Update'
+       log: 'Package Authoring Error: installation-check results requires a message'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 13 13:17:05 bunnys-mac-mini Software Update[12439]: Package Authoring Error: installation-check results requires a message'
+       hostname: 'bunnys-mac-mini'
+       program_name: '(null)'
+       log: 'Software Update[12439]: Package Authoring Error: installation-check results requires a message'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 14 03:15:07 bunnys-mac-mini cp: error processing extended attributes: Operation not permitted'
+       hostname: 'bunnys-mac-mini'
+       program_name: 'cp'
+       log: 'error processing extended attributes: Operation not permitted'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '[Time 2009.08.14 07:15:07 UTC] [Facility user] [Sender cp] [PID -1] [Message error processing extended attributes: Operation not permitted] [Level 4] [UID -2][GID -2] [Host bunnys-mac-mini]'
+       hostname: 'bunnys-mac-mini'
+       program_name: 'cp'
+       log: 'error processing extended attributes: Operation not permitted'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 22 13:11:29 bunnys-mac-mini launchproxy[1286]: /usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution'
+       hostname: 'bunnys-mac-mini'
+       program_name: 'launchproxy'
+       log: '/usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution'
+
+**Phase 2: Completed decoding.
+       decoder: 'launchproxy'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '440009'
+       Level: '1'
+       Description: 'Failure in name resolution.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '[Time 2009.08.22 17:11:29 UTC] [Facility launchd] [Sender launchproxy] [PID 1286] [Message /usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution] [Level 4] [UID -2] [GID -2] [Host bunnys-mac-mini]'
+       hostname: 'bunnys-mac-mini'
+       program_name: 'launchproxy'
+       log: '/usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution'
+
+**Phase 2: Completed decoding.
+       decoder: 'launchproxy'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '440009'
+       Level: '1'
+       Description: 'Failure in name resolution.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul 13 08:40:30 mbp loginwindow[35]: in pam_sm_authenticate(): Failed to determine Kerberos principal name.'
+       hostname: 'mbp'
+       program_name: 'loginwindow'
+       log: 'in pam_sm_authenticate(): Failed to determine Kerberos principal name.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul 13 08:46:01 mbp SystemStarter[2661]: The following StartupItems failed to start properly:'
+       hostname: 'mbp'
+       program_name: 'SystemStarter'
+       log: 'The following StartupItems failed to start properly:'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul 13 08:46:01 mbp SystemStarter[2661]:  - execution of Startup script failed'
+       hostname: 'mbp'
+       program_name: 'SystemStarter'
+       log: ' - execution of Startup script failed'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul 13 08:46:01 mbp SystemStarter[2661]: The following StartupItems were not attempted due to failure of a required service:'
+       hostname: 'mbp'
+       program_name: 'SystemStarter'
+       log: 'The following StartupItems were not attempted due to failure of a required service:'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul 13 08:48:17 mbp mdworker[702]: Error, could not create MachMessagePort for com.apple.AddressBook.abd'
+       hostname: 'mbp'
+       program_name: 'mdworker'
+       log: 'Error, could not create MachMessagePort for com.apple.AddressBook.abd'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 24 09:58:58 mbp [0x0-0x20020].com.jivesoftware.SparkBundle[261]: Exception in thread "AWT-EventQueue-0" java.lang.NoClassDefFoundError: com/apple/cocoa/application/NSMenuItem'
+       hostname: 'mbp'
+       program_name: '(null)'
+       log: '[0x0-0x20020].com.jivesoftware.SparkBundle[261]: Exception in thread "AWT-EventQueue-0" java.lang.NoClassDefFoundError: com/apple/cocoa/application/NSMenuItem'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 24 10:02:15 mbp ScreenSaverEngine[2483]: *** Message from <QCRSSDownloader = 0x002417E0 "Syndication_1">:\nRSS processing for URL "http://twitter.com/statuses/user_timeline/21232519.rss" failed'
+       hostname: 'mbp'
+       program_name: 'ScreenSaverEngine'
+       log: '*** Message from <QCRSSDownloader = 0x002417E0 "Syndication_1">:\nRSS processing for URL "http://twitter.com/statuses/user_timeline/21232519.rss" failed'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 24 10:29:59 mbp Mail[259]: -[ABAddressBook save] failed. (<ABAddressBook: 0x1175e7150>)'
+       hostname: 'mbp'
+       program_name: 'Mail'
+       log: '-[ABAddressBook save] failed. (<ABAddressBook: 0x1175e7150>)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

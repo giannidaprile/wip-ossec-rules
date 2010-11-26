@@ -1,2 +1,404 @@
-2010/11/26 09:30:06 ossec-analysisd: Invalid decoder name: 'openldap'.
-2010/11/26 09:30:06 ossec-testrule(1220): ERROR: Error loading the rules: 'syslog_rules.xml'.
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 28 02:33:53 ix smartd[7092]: Device: /dev/wd0c, previous self-test completed without error'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Device: /dev/wd0c, previous self-test completed without error'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330010'
+       Level: '0'
+       Description: 'Ignore this non-error'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 25 13:55:15 gorilla smartd[3018]: Device: /dev/sd0c, Bad IEC (SMART) mode page, err=5, skip device'
+       hostname: 'gorilla'
+       program_name: 'smartd'
+       log: 'Device: /dev/sd0c, Bad IEC (SMART) mode page, err=5, skip device'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330011'
+       Level: '2'
+       Description: 'XXX Bad IEC'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jan 18 14:54:28 tiny smartd[31648]: Device: /dev/wd0c, SMART Usage Attribute: 190 Airflow_Temperature_Cel changed from 62 to 61'
+       hostname: 'tiny'
+       program_name: 'smartd'
+       log: 'Device: /dev/wd0c, SMART Usage Attribute: 190 Airflow_Temperature_Cel changed from 62 to 61'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330012'
+       Level: '1'
+       Description: 'SMART Usage Attribute changed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jan 18 14:54:28 tiny smartd[31648]: Device: /dev/wd0c, SMART Usage Attribute: 194 Temperature_Celsius changed from 38 to 39'
+       hostname: 'tiny'
+       program_name: 'smartd'
+       log: 'Device: /dev/wd0c, SMART Usage Attribute: 194 Temperature_Celsius changed from 38 to 39'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330012'
+       Level: '1'
+       Description: 'SMART Usage Attribute changed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 02:01:21 ix smartd[30274]: Device: /dev/wd0c, starting scheduled Short Self-Test.'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Device: /dev/wd0c, starting scheduled Short Self-Test.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330013'
+       Level: '1'
+       Description: 'Short self-test started'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  9 13:56:22 tiny smartd[631]: Device: /dev/wd1c, SMART Prefailure Attribute: 1 Raw_Read_Error_Rate changed from 103 to 104'
+       hostname: 'tiny'
+       program_name: 'smartd'
+       log: 'Device: /dev/wd1c, SMART Prefailure Attribute: 1 Raw_Read_Error_Rate changed from 103 to 104'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330014'
+       Level: '2'
+       Description: 'SMART prefailure attribute changed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 10 16:37:13 ix smartd[6233]: Configuration file /etc/smartd.conf parsed.'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Configuration file /etc/smartd.conf parsed.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330015'
+       Level: '0'
+       Description: 'Configuration file parsed.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, enabled SMART Attribute Autosave.'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Device: /dev/wd0c, enabled SMART Attribute Autosave.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330016'
+       Level: '0'
+       Description: 'Ignore SMART attribute autosave enabled messages'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, enabled SMART Automatic Offline Testing.'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Device: /dev/wd0c, enabled SMART Automatic Offline Testing.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330017'
+       Level: '0'
+       Description: 'Ignore SMART automatic offline testing enabled messages'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, found in smartd database.'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Device: /dev/wd0c, found in smartd database.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330018'
+       Level: '0'
+       Description: 'Ignore device found in smartd database messages.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, is SMART capable. Adding to "monitor" list.'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Device: /dev/wd0c, is SMART capable. Adding to "monitor" list.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330019'
+       Level: '0'
+       Description: 'Ignore device added to monitor list messages.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, opened'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Device: /dev/wd0c, opened'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330020'
+       Level: '0'
+       Description: 'Ignore device opened messages.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 10 16:37:13 ix smartd[6233]: Monitoring 1 ATA and 0 SCSI devices'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Monitoring 1 ATA and 0 SCSI devices'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330021'
+       Level: '0'
+       Description: 'Ignore smartd status message.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 10 16:37:13 ix smartd[6233]: Opened configuration file /etc/smartd.conf'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Opened configuration file /etc/smartd.conf'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330022'
+       Level: '0'
+       Description: 'Ignore configuration file opened messages.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 10 16:37:14 ix smartd[3419]: smartd has fork()ed into background mode. New PID=3419.'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'smartd has fork()ed into background mode. New PID=3419.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330023'
+       Level: '0'
+       Description: 'Ignore smartd being forked into the background messages.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 10 16:56:22 tiny smartd[631]: Device: /dev/wd1c, SMART Prefailure Attribute: 1 Raw_Read_Error_Rate changed from 110 to 108'
+       hostname: 'tiny'
+       program_name: 'smartd'
+       log: 'Device: /dev/wd1c, SMART Prefailure Attribute: 1 Raw_Read_Error_Rate changed from 110 to 108'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330014'
+       Level: '2'
+       Description: 'SMART prefailure attribute changed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct  1 15:02:39 localhost smartd: smartd shutdown failed'
+       hostname: 'localhost'
+       program_name: 'smartd'
+       log: 'smartd shutdown failed'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330024'
+       Level: '2'
+       Description: 'XXX smartd shutdown failed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct 14 17:05:49 ix smartd[3956]: Device: /dev/wd0c, SMART Usage Attribute: 7 Seek_Error_Rate changed from 100 to 200'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Device: /dev/wd0c, SMART Usage Attribute: 7 Seek_Error_Rate changed from 100 to 200'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330012'
+       Level: '1'
+       Description: 'SMART Usage Attribute changed.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 16 06:45:04 ix smartd[14769]: Device: /dev/sd0c [SAT], previous self-test could not complete due to a fatal or unknown error'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Device: /dev/sd0c [SAT], previous self-test could not complete due to a fatal or unknown error'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330025'
+       Level: '2'
+       Description: 'XXX self-test failed'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 23 03:45:35 ix smartd[1285]: Device: /dev/sd0c [SAT], Self-Test Log error count increased from 0 to 4'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Device: /dev/sd0c [SAT], Self-Test Log error count increased from 0 to 4'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330026'
+       Level: '2'
+       Description: 'Self-test log error count increased.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 23 04:15:35 ix smartd[1285]: Device: /dev/sd0c [SAT], new Self-Test Log error at hour timestamp 0'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Device: /dev/sd0c [SAT], new Self-Test Log error at hour timestamp 0'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330027'
+       Level: '2'
+       Description: 'Self-test log error.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 23 15:45:35 ix smartd[1285]: Device: /dev/sd0c [SAT], previous self-test completed with error (unknown test element)'
+       hostname: 'ix'
+       program_name: 'smartd'
+       log: 'Device: /dev/sd0c [SAT], previous self-test completed with error (unknown test element)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330028'
+       Level: '2'
+       Description: 'Previous self-test completed, but had an error.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul 13 18:01:52 junction smartd[17585]: Device: /dev/wd0c, appears to lack SMART Error log; disabling -l error (override with -T permissive Directive)'
+       hostname: 'junction'
+       program_name: 'smartd'
+       log: 'Device: /dev/wd0c, appears to lack SMART Error log; disabling -l error (override with -T permissive Directive)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330029'
+       Level: '2'
+       Description: 'Device does not have a SMART Error log available.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 16 16:17:01 junction smartd[9934]: Device: /dev/wd0c, 409245770 Offline uncorrectable sectors (changed +708992)'
+       hostname: 'junction'
+       program_name: 'smartd'
+       log: 'Device: /dev/wd0c, 409245770 Offline uncorrectable sectors (changed +708992)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330030'
+       Level: '2'
+       Description: 'Offline uncorrectable sectors have been counted.'
+**Alert to be generated.
+
+

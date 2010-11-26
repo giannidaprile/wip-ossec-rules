@@ -1,2 +1,35 @@
-2010/11/26 09:30:04 ossec-analysisd: Invalid decoder name: 'openldap'.
-2010/11/26 09:30:04 ossec-testrule(1220): ERROR: Error loading the rules: 'syslog_rules.xml'.
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 23 20:03:57 power hp[2463]: prnt/backend/hp.c 593: ERROR: 1009 media-empty-error; will retry in 30 seconds...'
+       hostname: 'power'
+       program_name: 'hp'
+       log: 'prnt/backend/hp.c 593: ERROR: 1009 media-empty-error; will retry in 30 seconds...'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '240010'
+       Level: '1'
+       Description: 'Printer is out of paper'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  8 02:11:42 gorilla hp-mkuri: io/hpmud/hp-mkuri.c 223: error no hp_model environment variable set'
+       hostname: 'gorilla'
+       program_name: 'hp-mkuri'
+       log: 'io/hpmud/hp-mkuri.c 223: error no hp_model environment variable set'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '240011'
+       Level: '0'
+       Description: 'Please set the hp_model environment variable'
