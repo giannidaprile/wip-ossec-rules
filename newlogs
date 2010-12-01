@@ -33,4 +33,4 @@ WinEvtLog: Application: ERROR(0): AuthLite: (no user): no domain: GIEDIPRIME: ,0
 
 Nov 22 07:24:15 hagal nfsd[550]: accept failed: Software caused connection abort
 
-
+Dec  1 02:50:29 chusuk argus[1272]: 01 Dec 10 02:50:29.986934 ArgusSetChroot: failed to chdir to "/data/argus": No such file or directory
