@@ -34,3 +34,9 @@ WinEvtLog: Application: ERROR(0): AuthLite: (no user): no domain: GIEDIPRIME: ,0
 Nov 22 07:24:15 hagal nfsd[550]: accept failed: Software caused connection abort
 
 Dec  1 02:50:29 chusuk argus[1272]: 01 Dec 10 02:50:29.986934 ArgusSetChroot: failed to chdir to "/data/argus": No such file or directory
+
+[Thu Dec  2 11:03:48 2010][3473.1346] user ddp : Not launching rpc_portmap_port32771.nasl against naraj.example.com because the key rpc/portmap/different_port is missing (this is not an error)
+[Thu Dec  2 11:03:48 2010][3473.1346] user ddp : Not launching nis_get_passwd_map.nasl against naraj.example.com because the key RPC/NIS/domain is missing (this is not an error)
+
+
+
