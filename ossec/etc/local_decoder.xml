@@ -101,6 +101,11 @@ BadResponse\\ for\\ example.com\\ (192.168.2.1) tag=@ce-a7a-1-->
   <order>srcuser,action,srcip,url,status,extra_data</order>
 -->
 
-
+<!--
+20101109, 343218, 2010/11/09 22:19:31, 2010/11/09 22:19:30, global, 22, deviceidp1, 192.168.1.51, predefined, MS-RPC:SAMR-ACCESS-REQUEST, (NULL), eth3, 192.168.1.78, 1108, 0.0.0.0, 0, (NULL), (NULL), 192.168.1.81, 445, 0.0.0.0, 0, tcp, global, 22, Domain Post Rules, idp, 4, accepted, device_warning_log, no, 'interface=eth3', (NULL), (NULL), (NULL), 0, 0, 0, 0, 0, 0, 0, 0, no, 31, Not Set, idp
+-->
+<decoder name="juniper-idp">
+  <prematch>^\d+, \d+, \d\d\d\d/\d\d/\d\d \d\d:\d\d:\d\d, \d\d\d\d/\d\d/\d\d \d\d:\d\d:\d\d, global</prematch>
+</decoder>
 
 
