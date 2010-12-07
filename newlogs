@@ -39,4 +39,10 @@ Dec  1 02:50:29 chusuk argus[1272]: 01 Dec 10 02:50:29.986934 ArgusSetChroot: fa
 [Thu Dec  2 11:03:48 2010][3473.1346] user ddp : Not launching nis_get_passwd_map.nasl against naraj.example.com because the key RPC/NIS/domain is missing (this is not an error)
 
 
+Dec  6 20:21:16 corrin collectd[9933]: read-function of plugin `iptables' failed. Will suspend it for 20 seconds.
+Dec  6 20:21:17 corrin collectd[9933]: read-function of plugin `ntpd' failed. Will suspend it for 20 seconds.
+Dec  6 20:21:36 corrin collectd[9933]: read-function of plugin `iptables' failed. Will suspend it for 40 seconds.
+Dec  6 20:21:37 corrin collectd[9933]: read-function of plugin `ntpd' failed. Will suspend it for 40 seconds.
+
+
 
