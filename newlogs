@@ -45,4 +45,6 @@ Dec  6 20:21:36 corrin collectd[9933]: read-function of plugin `iptables' failed
 Dec  6 20:21:37 corrin collectd[9933]: read-function of plugin `ntpd' failed. Will suspend it for 40 seconds.
 
 
+Dec 13 04:07:03 corrin freshclam[1097]: Can't get information about db.us.clamav.net: Temporary failure in name resolution
+
 
