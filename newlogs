@@ -47,4 +47,7 @@ Dec  6 20:21:37 corrin collectd[9933]: read-function of plugin `ntpd' failed. Wi
 
 Dec 13 04:07:03 corrin freshclam[1097]: Can't get information about db.us.clamav.net: Temporary failure in name resolution
 
+Dec 14 09:51:33 corrin kernel: udevd invoked oom-killer: gfp_mask=0x201d2, order=0, oomkilladj=-17
+Dec 14 09:52:22 corrin kernel: postmaster invoked oom-killer: gfp_mask=0x201d2, order=0, oomkilladj=0
+Dec 14 09:53:31 corrin kernel: java invoked oom-killer: gfp_mask=0x201d2, order=0, oomkilladj=0
 
