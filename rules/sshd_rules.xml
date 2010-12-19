@@ -1,4 +1,4 @@
-<!-- @(#) $Id$
+<!-- @(#) $Id: sshd_rules.xml,v 1.22 2010/12/19 14:50:14 ddp Exp $
   -  Official SSHD rules for OSSEC.
   -
   -  Copyright (C) 2009 Trend Micro Inc.
