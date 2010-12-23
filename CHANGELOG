@@ -10,3 +10,6 @@ Add a rule for the following named logs:
   -  Oct 22 10:12:33 junction named[31687]: reloading configuration failed: unexpected token
 Add a rule for the following freshclam log:
   -  Nov  5 22:59:19 ix freshclam[32349]: Incremental update failed, trying to download daily.cvd
+
+12/23/2010
+Drop the level of the Bro-ids portscan rule from 7 to 5.
