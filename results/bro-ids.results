@@ -99,7 +99,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '52006'
-       Level: '7'
+       Level: '5'
        Description: 'Bro-ids port scan summary.'
 **Alert to be generated.
 
