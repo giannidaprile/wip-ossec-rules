@@ -51,3 +51,6 @@ Dec 14 09:51:33 corrin kernel: udevd invoked oom-killer: gfp_mask=0x201d2, order
 Dec 14 09:52:22 corrin kernel: postmaster invoked oom-killer: gfp_mask=0x201d2, order=0, oomkilladj=0
 Dec 14 09:53:31 corrin kernel: java invoked oom-killer: gfp_mask=0x201d2, order=0, oomkilladj=0
 
+Dec 24 03:01:51 epia kernel: hammer: debug: changed on reblocker uncache
+Dec 24 03:06:09 epia kernel: HAMMER(ROOT): Critical error inode=4357331932 error=5 while syncing inode
+Dec 24 03:06:09 epia kernel: HAMMER(ROOT): Forcing read-only mode
