@@ -54,3 +54,5 @@ Dec 14 09:53:31 corrin kernel: java invoked oom-killer: gfp_mask=0x201d2, order=
 Dec 24 03:01:51 epia kernel: hammer: debug: changed on reblocker uncache
 Dec 24 03:06:09 epia kernel: HAMMER(ROOT): Critical error inode=4357331932 error=5 while syncing inode
 Dec 24 03:06:09 epia kernel: HAMMER(ROOT): Forcing read-only mode
+
+Dec 27 10:30:01 bax inetd[28318]: pop3/tcp server failing (looping), service terminated
