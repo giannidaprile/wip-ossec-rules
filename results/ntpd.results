@@ -12,12 +12,9 @@ ossec-testrule: Type one log per line.
        decoder: 'ntpd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
+       Rule id: '53001'
+       Level: '0'
+       Description: 'Bad time sensor.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -31,9 +28,9 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.1.233)'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '53002'
+       Level: '1'
+       Description: 'Bad ntp peer.'
 **Alert to be generated.
 
 
@@ -49,12 +46,9 @@ ossec-testrule: Type one log per line.
        decoder: 'ntpd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
+       Rule id: '53003'
+       Level: '0'
+       Description: 'Cannot bind to port.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -67,12 +61,9 @@ ossec-testrule: Type one log per line.
        decoder: 'ntpd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
+       Rule id: '53003'
+       Level: '0'
+       Description: 'Cannot bind to port.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -86,9 +77,9 @@ ossec-testrule: Type one log per line.
        srcip: '64.73.32.135)'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '53002'
+       Level: '1'
+       Description: 'Bad ntp peer.'
 **Alert to be generated.
 
 
@@ -105,9 +96,9 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.17.9)'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '53002'
+       Level: '1'
+       Description: 'Bad ntp peer.'
 **Alert to be generated.
 
 
@@ -124,9 +115,9 @@ ossec-testrule: Type one log per line.
        srcip: '69.50.219.51)'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '53002'
+       Level: '1'
+       Description: 'Bad ntp peer.'
 **Alert to be generated.
 
 
@@ -142,12 +133,9 @@ ossec-testrule: Type one log per line.
        decoder: 'ntpd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
+       Rule id: '53004'
+       Level: '0'
+       Description: 'Connection refused.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -170,9 +158,9 @@ ossec-testrule: Type one log per line.
        decoder: 'ntpd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '53005'
+       Level: '1'
+       Description: 'Illegal argument in configuration.'
 **Alert to be generated.
 
 
@@ -188,9 +176,6 @@ ossec-testrule: Type one log per line.
        decoder: 'ntpd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
+       Rule id: '53006'
+       Level: '0'
+       Description: 'Status message.'
