@@ -18,18 +18,22 @@
     <description>Grouping for identd rules.</description>
   </rule>
 
-  <!--Jun  8 08:48:28 gorilla identd[8029]: scanf: invalid-port(s): 0 , 0 from gorilla.monkey.local-->
   <rule id="300010" level="1">
     <if_sid>300000</if_sid>
     <match>scanf: invalid-port</match>
     <description>Invalid port request.</description>
   </rule>
 
-  <!--Jun  8 08:49:18 gorilla identd[9790]: read from gorilla.monkey.local: EOF-->
   <rule id="300011" level="1">
     <if_sid>300000</if_sid>
     <regex>read from \S+: EOF</regex>
     <description>Unexpected EOF</description>
+  </rule>
+
+  <rule id="300012" level="1">
+    <if_sid>300000</if_sid>
+    <match>Undefined error: 0</match>
+    <description>Undefined error.</description>
   </rule>
   
    
