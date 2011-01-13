@@ -36,3 +36,21 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  9 07:43:15 richese identd[28080]: read from ecaz.example.com: Undefined error: 0'
+       hostname: 'richese'
+       program_name: 'identd'
+       log: 'read from ecaz.example.com: Undefined error: 0'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
