@@ -2313,5 +2313,14 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
    <order>id</order>
 </decoder>
 
+<!-- VMWare kernel messages -->
+<!--
+  - kaitain vmkernel: 45:06:44:13.595 cpu1:4842)MigrateNet: vm 4842: 1378: Accepted connection from <192.168.17.14>
+-->
+
+<decoder name="vmkernel">
+  <program_name>^vmkernel</program_name>
+</decoder>
+
 
 <!-- EOF -->

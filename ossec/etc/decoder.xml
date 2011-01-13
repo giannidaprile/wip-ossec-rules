@@ -132,6 +132,11 @@
   -  Jun 11 06:32:17 gorilla sshd[28293]: error: buffer_get_bignum2_ret: negative numbers not supported
   -  Apr 14 19:28:21 gorilla sshd[31274]: Connection closed by 192.168.1.33
   -  Jun 22 12:01:13 junction sshd[11283]: Received disconnect from 212.14.228.46: 11: Bye Bye
+  -  Nov  9 07:40:25 ginaz sshd[5973]: error: setsockopt SO_KEEPALIVE: Connection reset by peer
+  -  Nov  2 12:08:27 192.168.17.7 sshd[9665]: fatal: Cannot bind any address.
+  -  Nov  2 12:11:40 192.168.17.7 sshd[9814]: pam_loginuid(sshd:session): set_loginuid failed opening loginuid
+  -  Nov  6 09:53:38 hagal sshd[697]: error: accept: Software caused connection abort
+  -  Nov  9 11:36:55 ecaz sshd[26967]: pam_succeed_if(sshd:auth): error retrieving information about user _z9xxbBW
   -->
 
 <decoder name="sshd">
@@ -789,6 +794,8 @@
   - Examples:
   -  valhalla named[7885]: client 192.168.1.231#1142: update 'hayaletgemi.edu/IN' denied
   - named[12637]: client 1.2.3.4#32769: query (cache) 'somedomain.com/MX/IN' denied
+  -  Oct 22 10:12:33 junction named[31687]: /etc/blocked.slave:9892: syntax error near ';'
+  -  Oct 22 10:12:33 junction named[31687]: reloading configuration failed: unexpected token
  -->           
 <decoder name="named">
   <program_name>^named</program_name>
@@ -2285,7 +2292,10 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
   <order>srcip</order>
 </decoder>
 
-<!-- Clamav and Freshclam decoder -->
+<!-- Clamav and Freshclam decoder
+  -  Nov  5 22:59:19 ix freshclam[32349]: Incremental update failed, trying to download daily.cvd
+-->
+
 <decoder name="clamd">
   <program_name>^clamd</program_name>
 </decoder>
@@ -2301,6 +2311,15 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
    <program_name>^slapd</program_name>
    <regex>^conn=(\d+) </regex>
    <order>id</order>
+</decoder>
+
+<!-- VMWare kernel messages -->
+<!--
+  - kaitain vmkernel: 45:06:44:13.595 cpu1:4842)MigrateNet: vm 4842: 1378: Accepted connection from <192.168.17.14>
+-->
+
+<decoder name="vmkernel">
+  <program_name>^vmkernel</program_name>
 </decoder>
 
 
