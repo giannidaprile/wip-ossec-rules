@@ -13,3 +13,6 @@ Add a rule for the following freshclam log:
 
 12/23/2010
 Drop the level of the Bro-ids portscan rule from 7 to 5.
+
+1/12/2011
+Add a vmkernel decoder.
