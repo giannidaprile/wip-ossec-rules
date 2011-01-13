@@ -9,7 +9,7 @@ ossec-testrule: Type one log per line.
        log: 'bad sensor nmea0'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'ntpd'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '1002'
@@ -27,7 +27,8 @@ ossec-testrule: Type one log per line.
        log: 'bad peer 192.168.1.233 (192.168.1.233)'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'ntpd'
+       srcip: '192.168.1.233)'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '1002'
@@ -45,7 +46,7 @@ ossec-testrule: Type one log per line.
        log: 'bind on 192.168.1.233 failed, skipping: Can't assign requested address'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'ntpd'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '1002'
@@ -63,7 +64,7 @@ ossec-testrule: Type one log per line.
        log: 'bind on 192.168.17.9 failed, skipping: Address already in use'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'ntpd'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '1002'
@@ -81,7 +82,8 @@ ossec-testrule: Type one log per line.
        log: 'bad peer from pool pool.ntp.org (64.73.32.135)'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'ntpd'
+       srcip: '64.73.32.135)'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '1002'
@@ -99,7 +101,8 @@ ossec-testrule: Type one log per line.
        log: 'bad peer ix (192.168.17.9)'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'ntpd'
+       srcip: '192.168.17.9)'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '1002'
@@ -117,7 +120,8 @@ ossec-testrule: Type one log per line.
        log: 'bad peer from pool pool.ntp.org (69.50.219.51)'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'ntpd'
+       srcip: '69.50.219.51)'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '1002'
@@ -135,7 +139,7 @@ ossec-testrule: Type one log per line.
        log: 'recvmsg 192.168.17.17: Connection refused'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'ntpd'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '1002'
@@ -153,7 +157,7 @@ ossec-testrule: Type one log per line.
        log: '2 out of 3 peers valid'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'ntpd'
 
 
 **Phase 1: Completed pre-decoding.
@@ -163,7 +167,7 @@ ossec-testrule: Type one log per line.
        log: 'logconfig: illegal argument  - ignored'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'ntpd'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '1002'
@@ -181,7 +185,7 @@ ossec-testrule: Type one log per line.
        log: 'offset 0.000000 sec freq 0.000 ppm error 0.000011 poll 6'
 
 **Phase 2: Completed decoding.
-       No decoder matched.
+       decoder: 'ntpd'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '1002'
