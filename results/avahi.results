@@ -12,9 +12,12 @@ ossec-testrule: Type one log per line.
        decoder: 'avahi'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '210010'
-       Level: '0'
-       Description: 'Could not connect to socket'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
 
 
 **Phase 1: Completed pre-decoding.
@@ -27,9 +30,9 @@ ossec-testrule: Type one log per line.
        decoder: 'avahi'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '210011'
-       Level: '1'
-       Description: 'Cannot connect to D-Bus daemon'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -45,9 +48,12 @@ ossec-testrule: Type one log per line.
        decoder: 'avahi'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '210012'
-       Level: '0'
-       Description: 'Cannot assign requested address'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
 
 
 **Phase 1: Completed pre-decoding.
@@ -60,9 +66,12 @@ ossec-testrule: Type one log per line.
        decoder: 'avahi-dnsconfd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '210013'
-       Level: '0'
-       Description: 'Failed to parse a browsing line.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
 
 
 **Phase 1: Completed pre-decoding.

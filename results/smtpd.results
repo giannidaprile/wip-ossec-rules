@@ -12,9 +12,9 @@ ossec-testrule: Type one log per line.
        decoder: 'smtpd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '320010'
-       Level: '1'
-       Description: 'Missing file or directory for mfa chroot'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -31,9 +31,9 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.17.9'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '320011'
-       Level: '1'
-       Description: 'Connection was interrupted.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -49,9 +49,9 @@ ossec-testrule: Type one log per line.
        decoder: 'smtpd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '320012'
-       Level: '1'
-       Description: 'smtpd may already be running.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -68,9 +68,9 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.17.249'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '320013'
+       Rule id: '1002'
        Level: '2'
-       Description: 'EHLO requires domain address'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -87,9 +87,9 @@ ossec-testrule: Type one log per line.
        srcip: '68.1.17.4'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '320014'
-       Level: '5'
-       Description: 'Sender has been rejected by an upstream mail server.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -105,9 +105,9 @@ ossec-testrule: Type one log per line.
        decoder: 'smtpd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '320015'
+       Rule id: '1002'
        Level: '2'
-       Description: 'XXX Unexpected DNS response.'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -124,9 +124,9 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.17.33'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '320016'
-       Level: '5'
-       Description: 'Recipient rejected'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -143,9 +143,9 @@ ossec-testrule: Type one log per line.
        srcip: 'IPv6:::1'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '320017'
-       Level: '5'
-       Description: 'XXX Line too long.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -162,9 +162,9 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.17.249'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '320018'
-       Level: '5'
-       Description: 'Command unrecognized.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -181,9 +181,9 @@ ossec-testrule: Type one log per line.
        srcip: 'IPv6:::1'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '320017'
-       Level: '5'
-       Description: 'XXX Line too long.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -199,9 +199,9 @@ ossec-testrule: Type one log per line.
        decoder: 'smtpd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '320019'
-       Level: '5'
-       Description: 'Cannot resolve the to domain.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -218,9 +218,9 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.1.4'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '320022'
-       Level: '8'
-       Description: 'The message is believed to be spam.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 

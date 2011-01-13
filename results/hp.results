@@ -12,9 +12,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '240010'
-       Level: '1'
-       Description: 'Printer is out of paper'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -30,6 +30,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '240011'
-       Level: '0'
-       Description: 'Please set the hp_model environment variable'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

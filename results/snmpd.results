@@ -11,11 +11,6 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        No decoder matched.
 
-**Phase 3: Completed filtering (rules).
-       Rule id: '410010'
-       Level: '0'
-       Description: 'snmpd has been started.'
-
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 29 14:15:16 junction snmpd[16830]: fatal: snmpe: failed to bind SNMP UDP socket'
@@ -27,9 +22,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '410011'
+       Rule id: '1002'
        Level: '2'
-       Description: 'snmpd is unable to bind to the UDP socket.'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -43,11 +38,3 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        No decoder matched.
-
-**Phase 3: Completed filtering (rules).
-       Rule id: '410012'
-       Level: '3'
-       Description: 'snmpd has exited.'
-**Alert to be generated.
-
-

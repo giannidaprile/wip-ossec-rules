@@ -12,9 +12,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '480020'
-       Level: '1'
-       Description: 'Illegal character in argus configuration.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -30,9 +30,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '480021'
-       Level: '1'
-       Description: 'Syntax error in argus configuration.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -48,9 +48,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '480022'
+       Rule id: '1002'
        Level: '2'
-       Description: 'Argus run with insufficient privileges to open a bpf device.'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -66,9 +66,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '480024'
-       Level: '1'
-       Description: 'ratop run with incorrect filter syntax.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -84,9 +84,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '480023'
+       Rule id: '1002'
        Level: '2'
-       Description: 'Could not bind to the configured port.'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -102,9 +102,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '480025'
-       Level: '1'
-       Description: 'radium could not connect to specified ip and port.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -120,9 +120,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '480024'
-       Level: '1'
-       Description: 'ratop run with incorrect filter syntax.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -137,11 +137,6 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        No decoder matched.
 
-**Phase 3: Completed filtering (rules).
-       Rule id: '480026'
-       Level: '0'
-       Description: 'radium has started.'
-
 
 **Phase 1: Completed pre-decoding.
        full event: 'Aug 15 15:08:09 junction rastream[12043]: 15:08:09.133533 started'
@@ -151,11 +146,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        No decoder matched.
-
-**Phase 3: Completed filtering (rules).
-       Rule id: '480028'
-       Level: '0'
-       Description: 'rastream has been started.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -168,9 +158,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '480031'
-       Level: '1'
-       Description: 'Incorrect filter syntax used with ra.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -186,9 +176,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '480029'
+       Rule id: '1002'
        Level: '2'
-       Description: 'rastream could not connect to configured ip and port.'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -204,9 +194,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '480030'
-       Level: '3'
-       Description: 'Could not write to a new log file.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -221,11 +211,6 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        No decoder matched.
 
-**Phase 3: Completed filtering (rules).
-       Rule id: '480027'
-       Level: '0'
-       Description: 'XXX Client has sent a DONE message.'
-
 
 **Phase 1: Completed pre-decoding.
        full event: 'Sep 22 20:22:51 junction rastream[19908]: 20:22:51.957358 ArgusReadStreamSocket (0x253e000) read error Connection reset by peer'
@@ -237,9 +222,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '148003'
+       Rule id: '1002'
        Level: '2'
-       Description: 'rastream connection was reset.'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 

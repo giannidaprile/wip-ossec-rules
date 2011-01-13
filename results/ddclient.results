@@ -12,9 +12,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '270010'
-       Level: '1'
-       Description: 'Could not connect to the dyndns server'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -30,9 +30,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '270011'
-       Level: '1'
-       Description: 'Cannot create pid file'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -48,9 +48,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '270010'
-       Level: '1'
-       Description: 'Could not connect to the dyndns server'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -65,11 +65,6 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        No decoder matched.
 
-**Phase 3: Completed filtering (rules).
-       Rule id: '270012'
-       Level: '0'
-       Description: 'Forcing an update, since an update has not been necessary in a while.'
-
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun  5 17:12:40 ix ddclient[13600]: SUCCESS:  updating home: good: IP address set to 11.111.11.111'
@@ -79,8 +74,3 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        No decoder matched.
-
-**Phase 3: Completed filtering (rules).
-       Rule id: '270013'
-       Level: '0'
-       Description: 'ddclient successfully updated the IP address.'

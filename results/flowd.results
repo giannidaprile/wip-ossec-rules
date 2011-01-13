@@ -12,9 +12,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '290010'
-       Level: '1'
-       Description: 'flowd has been shutdown.'
+       Rule id: '1004'
+       Level: '5'
+       Description: 'Syslogd exiting (logging stopped).'
 **Alert to be generated.
 
 
@@ -30,9 +30,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '290011'
+       Rule id: '1002'
        Level: '2'
-       Description: 'start_log is not able to seek to the proper place in the log file'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 

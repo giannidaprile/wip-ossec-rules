@@ -22,9 +22,9 @@ ossec-testrule: Type one log per line.
        decoder: 'mountd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '420011'
-       Level: '3'
-       Description: 'Bad exports configuration.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -41,9 +41,9 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.17.10'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '420012'
-       Level: '4'
-       Description: 'A mount RPC was refused.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -59,9 +59,9 @@ ossec-testrule: Type one log per line.
        decoder: 'mountd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '420013'
+       Rule id: '1002'
        Level: '2'
-       Description: 'XXX Bad option?'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -77,9 +77,81 @@ ossec-testrule: Type one log per line.
        decoder: 'mountd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '420011'
-       Level: '3'
-       Description: 'Bad exports configuration.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 15 12:18:44 corrin mountd[7163]: refused mount request from 192.168.17.9 for /mnt (/mnt): illegal port 13329'
+       hostname: 'corrin'
+       program_name: 'mountd'
+       log: 'refused mount request from 192.168.17.9 for /mnt (/mnt): illegal port 13329'
+
+**Phase 2: Completed decoding.
+       decoder: 'mountd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 16 05:52:25 hagal mountd[541]: mount request denied from 192.168.17.7 for /home/ddp/ISO'
+       hostname: 'hagal'
+       program_name: 'mountd'
+       log: 'mount request denied from 192.168.17.7 for /home/ddp/ISO'
+
+**Phase 2: Completed decoding.
+       decoder: 'mountd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 16 06:32:42 hagal mountd[542]: bad exports list line /exports -ro -alldirs maproot=ddp -network'
+       hostname: 'hagal'
+       program_name: 'mountd'
+       log: 'bad exports list line /exports -ro -alldirs maproot=ddp -network'
+
+**Phase 2: Completed decoding.
+       decoder: 'mountd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 16 06:32:42 hagal mountd[542]: bad host maproot=ddp, skipping'
+       hostname: 'hagal'
+       program_name: 'mountd'
+       log: 'bad host maproot=ddp, skipping'
+
+**Phase 2: Completed decoding.
+       decoder: 'mountd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 

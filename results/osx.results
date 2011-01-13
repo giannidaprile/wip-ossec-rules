@@ -84,9 +84,9 @@ ossec-testrule: Type one log per line.
        decoder: 'launchproxy'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '440009'
-       Level: '1'
-       Description: 'Failure in name resolution.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -102,9 +102,9 @@ ossec-testrule: Type one log per line.
        decoder: 'launchproxy'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '440009'
-       Level: '1'
-       Description: 'Failure in name resolution.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 

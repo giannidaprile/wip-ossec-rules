@@ -12,9 +12,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '400010'
-       Level: '1'
-       Description: 'A time sensor is not working properly'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -30,9 +30,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '400011'
-       Level: '1'
-       Description: 'Bad ntp peer.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -48,9 +48,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '400012'
+       Rule id: '1002'
        Level: '2'
-       Description: 'Cannot bind to the assigned port.'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -66,9 +66,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '400013'
+       Rule id: '1002'
        Level: '2'
-       Description: 'Something is already bound to the assigned port.'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -84,9 +84,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '400011'
-       Level: '1'
-       Description: 'Bad ntp peer.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -102,9 +102,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '400011'
-       Level: '1'
-       Description: 'Bad ntp peer.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -120,9 +120,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '400011'
-       Level: '1'
-       Description: 'Bad ntp peer.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -138,9 +138,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '400015'
-       Level: '1'
-       Description: 'Connection refused.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -155,11 +155,6 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        No decoder matched.
 
-**Phase 3: Completed filtering (rules).
-       Rule id: '400016'
-       Level: '0'
-       Description: 'Some peers are now valid.'
-
 
 **Phase 1: Completed pre-decoding.
        full event: 'Sep 27 11:56:04 bridge ntpd[5877]: logconfig: illegal argument  - ignored'
@@ -171,9 +166,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '400017'
-       Level: '1'
-       Description: 'Illegal argument in the configuration.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -189,6 +184,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '400018'
-       Level: '0'
-       Description: 'Normal ntpd status updates.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

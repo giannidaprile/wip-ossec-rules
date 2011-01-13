@@ -12,9 +12,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '430010'
-       Level: '1'
-       Description: 'Pulseaudio daemon could not start.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -30,9 +30,12 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '430011'
-       Level: '0'
-       Description: 'Unknown DBus Service error from ListAdapters reply.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
 
 
 **Phase 1: Completed pre-decoding.
@@ -45,9 +48,12 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '430012'
-       Level: '0'
-       Description: 'D-Bus error while parsing HAL data.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
 
 
 **Phase 1: Completed pre-decoding.
@@ -60,9 +66,12 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '430013'
-       Level: '0'
-       Description: 'Access denied error from ListAdapters reply.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
 
 
 **Phase 1: Completed pre-decoding.
@@ -75,9 +84,12 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '430014'
-       Level: '0'
-       Description: 'XXX Failed to push data into queue.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
 
 
 **Phase 1: Completed pre-decoding.
@@ -90,6 +102,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '430015'
-       Level: '0'
-       Description: 'XXX Error in pulseaudio code.'
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

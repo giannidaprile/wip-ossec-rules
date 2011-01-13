@@ -12,9 +12,9 @@ ossec-testrule: Type one log per line.
        decoder: 'freshclam'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '460010'
+       Rule id: '1002'
        Level: '2'
-       Description: 'Error reading database from remote server.'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
@@ -30,9 +30,9 @@ ossec-testrule: Type one log per line.
        decoder: 'freshclam'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '460011'
+       Rule id: '1002'
        Level: '2'
-       Description: 'Freshclam could not update database.'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 
