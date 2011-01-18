@@ -13,8 +13,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '51006'
-       Level: '2'
-       Description: 'Client exited before authentication.'
+       Level: '1'
+       Description: 'Failed to get key exchange value'
 **Alert to be generated.
 
 
@@ -100,7 +100,7 @@ ossec-testrule: Type one log per line.
        decoder: 'dropbear'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '51006'
+       Rule id: '51001'
        Level: '2'
        Description: 'Client exited before authentication.'
 **Alert to be generated.
@@ -118,7 +118,7 @@ ossec-testrule: Type one log per line.
        decoder: 'dropbear'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '51006'
+       Rule id: '51001'
        Level: '2'
        Description: 'Client exited before authentication.'
 **Alert to be generated.
@@ -136,7 +136,7 @@ ossec-testrule: Type one log per line.
        decoder: 'dropbear'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '51006'
+       Rule id: '51001'
        Level: '2'
        Description: 'Client exited before authentication.'
 **Alert to be generated.
@@ -154,7 +154,7 @@ ossec-testrule: Type one log per line.
        decoder: 'dropbear'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '51006'
+       Rule id: '51001'
        Level: '2'
        Description: 'Client exited before authentication.'
 **Alert to be generated.
