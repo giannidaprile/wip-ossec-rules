@@ -570,7 +570,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'sshd'
-       srcip: '119.147.1.1'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '2503'

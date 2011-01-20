@@ -54,7 +54,6 @@
   <prematch>^pam_unix|^\(pam_unix\)</prematch>
 </decoder>
 
-<!--Jun  8 08:48:28 gorilla su(pam_unix)[2298]: authentication failure; logname= uid=1342 euid=0 tty= ruser=dcid rhost=  user=root-->
 <decoder name="pam-auth-fail">
   <parent>pam</parent>
   <prematch>uid=\d+ euid=\d+ tty=</prematch>
@@ -218,11 +217,10 @@
 <decoder name="ssh-osx-refuse">
   <parent>sshd</parent>
   <prematch>^refused connect </prematch>
-  <regex offset="after_prematch">^from (\S+)</regex>
+  <regex offset="after_prematch">^from (\S+)$</regex>
   <order>srcip</order>
 </decoder>
 
-<!--Apr 14 19:28:21 gorilla sshd[31274]: Connection closed by 192.168.1.33-->
 <decoder name="ssh-closed">
   <parent>sshd</parent>
   <prematch>^Connection closed </prematch>
@@ -230,7 +228,6 @@
   <order>srcip</order>
 </decoder>
 
-<!--Jun 22 12:01:13 junction sshd[11283]: Received disconnect from 212.14.228.46: 11: Bye Bye-->
 <decoder name="ssh-disconnect">
   <parent>sshd</parent>
   <prematch>^Received disconnect </prematch>
@@ -238,7 +235,6 @@
   <order>srcip</order>
 </decoder>
 
-<!--Oct  8 11:18:26 172.16.51.132 sshd[7618]: error: PAM: Module is unknown for ddp from 172.16.51.1-->
 <decoder name="ssh-pam">
   <parent>sshd</parent>
   <prematch>PAM: Module</prematch>
@@ -246,7 +242,6 @@
   <order>user, srcip</order>
 </decoder>
 
-<!--Aug 10 08:38:40 junction sshd[20013]: error: connect_to 192.168.179 port 8080: failed.-->
 <decoder name="ssh-connect-to">
   <parent>sshd</parent>
   <prematch>connect_to</prematch>
@@ -254,7 +249,6 @@
   <order>dstip,dstport</order>
 </decoder>
 
-<!--Sep 23 10:32:25 server sshd[25209]: pam_ldap: error trying to bind as user "uid=user123,ou=People,dc=domain,dc=com" (Invalid credentials)-->
 <decoder name="sshd-ldap">
   <parent>sshd</parent>
   <prematch offset="after_parent">^pam_ldap: </prematch>
@@ -263,13 +257,11 @@
 </decoder>
 
 
-<!-- dropbear ssh server decoders -->
 
 <decoder name="dropbear">
   <program_name>dropbear</program_name>
 </decoder>
 
-<!--Mar 24 15:25:51 buffalo1 dropbear[4092]: bad password attempt for 'root' from 192.168.17.9:5543-->
 <decoder name="dropbear-from">
   <parent>dropbear</parent>
   <regex>for '(\S+)' from (\S+):\d+$</regex>
@@ -365,7 +357,6 @@
   <order>srcip</order>
 </decoder>
 
-<!--Mar 13 16:29:04 ix smbd[6238]:   Connection denied from 0.0.0.0-->
 <decoder name="smbd-from">
   <parent>smbd</parent>
   <prematch> from (\S+)$</prematch>
@@ -373,7 +364,6 @@
   <order>dstip</order>
 </decoder>
 
-<!--Mar 13 16:29:04 ix smbd[6238]:   write_data: write failure in writing to client 0.0.0.0. Error Socket is not connected'-->
 <decoder name="smbd-client">
   <parent>smbd</parent>
   <prematch>to client \S+.</prematch>
@@ -429,7 +419,6 @@
   <fts>name, srcuser, location</fts>
 </decoder>
 
-<!--Jun 23 08:35:32 servername su[19301]: pam_ldap: error trying to bind as user "uid=root,cn=users,dc=ldap-server,dc=example,dc=example,dc=com" (Invalid credentials)-->
 <decoder name="su-ldap">
   <parent>su</parent>
   <prematch>pam_ldap</prematch>                                                                                                                                        
@@ -801,8 +790,6 @@
   <program_name>^named</program_name>
 </decoder>
 
-<!--Jul 12 18:00:02 junction named[15915]: client 192.168.17.9#24416: query: 8.17.168.192.in-addr.arpa IN PTR +-->
-<!--Attempting to pull the domain name out in extra_data-->
 <decoder name="named-query">
   <parent>named</parent>
   <prematch>: query: </prematch>
@@ -824,7 +811,6 @@
   <order>srcip</order>
 </decoder>
 
-<!--Apr 20 00:45:40 gorilla named[19606]: zone adioserrores.com/IN: refresh: retry limit for master 192.168.1.33#53 exceeded (source 0.0.0.0#0)-->
 <decoder name="named-master">
   <parent>named</parent>
   <prematch> for master</prematch>
@@ -954,7 +940,6 @@
   <program_name>smtpd</program_name>
 </decoder>
 
-<!--Oct 26 22:30:12 ix smtpd[6726]: client 192.168.17.9 read error: Connection reset by peer-->
 <decoder name="smtpd-client">
   <parent>smtpd</parent>
   <prematch offset="after_parent">^client</prematch>
@@ -962,7 +947,6 @@
   <order>srcip</order>
 </decoder>
 
-<!--Nov 13 17:30:34 ix smtpd[29377]: (none): from=<@>, relay=power.example.com [192.168.17.249], stat=LocalError (501 EHLO requires domain address)-->
 <decoder name="smtpd-relay">
   <parent>smtpd</parent>
   <prematch>relay=</prematch>
@@ -1355,7 +1339,6 @@
 
 <!-- OpenBSD isakmpd decoders -->
 
-<!--Apr 10 13:22:52 tiny isakmpd[6988]: dropped message from 192.168.1.233 port 500 due to notification type INVALID_COOKIE-->
 <decoder name="isakmpd">
   <program_name>isakmpd</program_name>
 </decoder>
@@ -1367,7 +1350,6 @@
   <order>srcip,srcport</order>
 </decoder>
 
-<!--Nov  4 18:15:59 alphen-vpn-gw isakmpd[28891]: transport_send_messages: giving up on exchange ISAKMP-peer-node-ldn, no response from peer 192.168.1.1:500-->
 <decoder name="isakmpd-peer">
   <parent>isakmpd</parent>
   <prematch>from peer</prematch>
@@ -2141,7 +2123,6 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
   -  Server 2008 DHCP IPv6 Decoder (must go second)
   -  ID,Date,Time,Description,IPV6 Address,Host Name,Error Code, Duid Length, Duid Bytes(Hex),User Name.
 -->
-11020,05/05/09,00:00:38,DHCPV6
 <decoder name="ms-dhcp-ipv6">
   <prematch>^\d\d\d\d\d,\d\d/\d\d/\d\d,\d\d:\d\d:\d\d,</prematch>
   <regex>^(\d\d\d\d\d),</regex>
@@ -2162,9 +2143,7 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 </decoder>
 
 
-<!-- OpenBSD mountd decoder -->
-
-<!--
+<!-- OpenBSD mountd decoder
 - Apr 11 20:01:02 ix mountd[11618]: Refused mount RPC from host 192.168.17.10 port 45659
 -->
 
@@ -2180,8 +2159,7 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 </decoder>
 
 
-<!-- bro-ids decoders -->
-<!--
+<!-- bro-ids decoders
   - Aug 25 08:52:10 junction bro: no=PortScanSummary na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 num=988 msg=192.168.17.8\\\\ scanned\\\\ a\\\\ total\\\\ of\\\\ 988\\\\ ports tag=@ef-24ad-af
   - Aug 26 12:34:27 junction bro: no=PortScan na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.8 p=17/tcp num=250 msg=192.168.17.8\\ has\\ scanned\\ 250\\ ports\\ of\\ 192.168.17.17 tag=@11-68e9-5
   - junction bro: Starting incremental serialization...
@@ -2222,8 +2200,7 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 
 
 
-<!-- nss ldap decoders -->
-<!--
+<!-- nss ldap decoders
 - Jun 26 08:19:25 servername sh: nss_ldap: reconnecting to LDAP server (sleeping 32 seconds)...
 - Aug 16 10:58:12 client nscd: nss_ldap: failed to bind to LDAP server ldap://ldap.example.com: Can't contact LDAP server
 -->
@@ -2253,22 +2230,14 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 </decoder>
 
 
-
-<!-- OpenBSD groupdel -->
-<!--
-- May 28 09:15:43 ix groupdel[25984]: group deleted: name=_dbus
+<!-- OpenBSD groupdel
+  - May 28 09:15:43 ix groupdel[25984]: group deleted: name=_dbus
 -->
 
 <decoder name="groupdel">
   <program_name>groupdel</program_name>
   <regex>^group deleted: name=(\S+)$</regex>
   <order>extra_data</order>
-</decoder>
-
-<!-- Launchproxy -->
-
-<decoder name="launchproxy">
-  <program_name>launchproxy</program_name>
 </decoder>
 
 
@@ -2313,8 +2282,7 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
    <order>id</order>
 </decoder>
 
-<!-- VMWare kernel messages -->
-<!--
+<!-- VMWare kernel messages
   - kaitain vmkernel: 45:06:44:13.595 cpu1:4842)MigrateNet: vm 4842: 1378: Accepted connection from <192.168.17.14>
 -->
 
@@ -2347,5 +2315,10 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
   <order>srcip</order>
 </decoder>
 
+<!-- Launchproxy -->
+
+<decoder name="launchproxy">
+  <program_name>launchproxy</program_name>
+</decoder>
 
 <!-- EOF -->
