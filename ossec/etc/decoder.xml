@@ -214,10 +214,11 @@
   <order>srcip</order>
 </decoder>
 
+<!--Jun 16 19:56:51 blocker sshd[2263]: refused connect from 119.147.1.1 (119.147.1.1)-->
 <decoder name="ssh-osx-refuse">
   <parent>sshd</parent>
   <prematch>^refused connect </prematch>
-  <regex offset="after_prematch">^from (\S+)$</regex>
+  <regex offset="after_prematch">^from (\S+)$|^from \d+.\d+.\d+.\d+ \p(\d+.\d+.\d+.\d+)\p</regex>
   <order>srcip</order>
 </decoder>
 
