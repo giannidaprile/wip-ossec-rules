@@ -26,3 +26,5 @@ Nov 16 15:15:38 kaitain vmkernel: 0:22:21:37.151 cpu2:5131)WARNING: NFS: 959: MO
 Nov 16 15:15:38 kaitain vmkernel: 0:22:21:37.151 cpu2:5131)NFS: 171: NFS mount hagal:/exports status: The mount request was denied by the NFS server. Check that the export exists and that the client is permitted to mount it
 Nov 16 15:30:51 kaitain vmkernel: 0:22:36:50.193 cpu2:9299)WARNING: NFS: 213: Got error 13 from mount call
 Nov 16 15:33:41 kaitain vmkernel: 0:22:39:39.817 cpu0:142815)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy
+Feb  1 14:47:54 kaitain vmkernel: TSC: 65942068 cpu0:0)BootConfig: 35: mcaEnableAllErrorSources = FALSE
+Feb  1 14:49:30 kaitain vmkernel: 0:00:01:41.438 cpu4:4818)WARNING: NFS: 913: RPC error 13 (RPC was aborted due to timeout) trying to get port for Mount Program (100005) Version (3) Protocol (TCP) on Server (192.168.17.12)
