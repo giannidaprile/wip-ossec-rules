@@ -142,6 +142,14 @@
     <group>argus,</group>
   </rule>
 
+  <!--Feb  8 23:59:53 ix radium[2160]: 23:59:53.835391 ArgusEstablishListen: bind() error Permission denied-->
+  <rule id="480034" level="5">
+    <if_sid>480001</if_sid>
+    <match>bind() error Permission denied</match>
+    <description>radium run without sufficient permissions.</description>
+    <group>argus,</group>
+  </rule>
+
 
 </group> <!-- SYSLOG,LOCAL -->
 
