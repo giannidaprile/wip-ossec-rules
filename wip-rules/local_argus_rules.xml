@@ -138,7 +138,7 @@
   <rule id="480033" level="7">
     <if_sid>480001</if_sid>
     <match>remote exceed listen error.$</match>
-    <description>XXX</description>
+    <description>XXX Errors connecting to remote process.</description>
     <group>argus,</group>
   </rule>
 
