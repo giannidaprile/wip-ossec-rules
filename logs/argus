@@ -12,3 +12,4 @@ Aug 19 10:47:13 junction rastream[21319]: 10:47:13.846657 connect to 192.168.17.
 Aug 19 11:00:04 junction rastream[22252]: 11:00:04.435681 ArgusWriteNewLogfile(/var/log/argus/2010/08/19/argus.11.00.00, 0xfffea200) fopen Permission denied
 Aug 19 11:00:04 junction radium[32753]: 11:00:04.504898 ArgusCheckClientMessage: client localhost[127.0.0.1] sent DONE
 Sep 22 20:22:51 junction rastream[19908]: 20:22:51.957358 ArgusReadStreamSocket (0x253e000) read error Connection reset by peer
+Feb  8 23:48:51 ix radium[6566]: 23:48:51.747773 remote exceed listen error.
