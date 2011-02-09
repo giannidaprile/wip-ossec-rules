@@ -28,3 +28,10 @@ Nov 16 15:30:51 kaitain vmkernel: 0:22:36:50.193 cpu2:9299)WARNING: NFS: 213: Go
 Nov 16 15:33:41 kaitain vmkernel: 0:22:39:39.817 cpu0:142815)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy
 Feb  1 14:47:54 kaitain vmkernel: TSC: 65942068 cpu0:0)BootConfig: 35: mcaEnableAllErrorSources = FALSE
 Feb  1 14:49:30 kaitain vmkernel: 0:00:01:41.438 cpu4:4818)WARNING: NFS: 913: RPC error 13 (RPC was aborted due to timeout) trying to get port for Mount Program (100005) Version (3) Protocol (TCP) on Server (192.168.17.12)
+Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.042 cpu6:4407)<6>usb 1-1.1.1: USB disconnect, address 26
+Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.285 cpu6:4407)<6>usb 1-1.1.1: new low speed USB device using ehci_hcd and address 27
+Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: configuration #1 chosen from 1 choice
+Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usbhid 1-1.1.1:1.0: not claiming non-bootable hid device
+Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: device is available for passthrough
+Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: New USB device found, idVendor=09ae, idProduct=2010
+Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: new device strings: Mfr=1, Product=2, SerialNumber=0
