@@ -228,3 +228,39 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Feb  8 23:48:51 ix radium[6566]: 23:48:51.747773 remote exceed listen error.'
+       hostname: 'ix'
+       program_name: 'radium'
+       log: '23:48:51.747773 remote exceed listen error.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Feb  8 23:59:53 ix radium[2160]: 23:59:53.835391 ArgusEstablishListen: bind() error Permission denied'
+       hostname: 'ix'
+       program_name: 'radium'
+       log: '23:59:53.835391 ArgusEstablishListen: bind() error Permission denied'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
