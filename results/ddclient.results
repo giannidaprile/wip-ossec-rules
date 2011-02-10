@@ -92,3 +92,21 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Feb 10 07:25:42 ix ddclient[25730]: WARNING:  cannot connect to updates.opendns.com:443 socket: IO::Socket::SSL: Bad hostname 'updates.opendns.com' IO::Socket::INET configuration failederror:00000000:lib(0):func(0):reason(0)'
+       hostname: 'ix'
+       program_name: 'ddclient'
+       log: 'WARNING:  cannot connect to updates.opendns.com:443 socket: IO::Socket::SSL: Bad hostname 'updates.opendns.com' IO::Socket::INET configuration failederror:00000000:lib(0):func(0):reason(0)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
