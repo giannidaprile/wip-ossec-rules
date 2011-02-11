@@ -2,7 +2,6 @@ Nov  5 12:19:26 kaitain vmkernel: 0:00:23:48.161 cpu3:10707)WARNING: UserObj: 56
 Nov  5 12:38:51 192.168.17.12 vmkernel: 0:00:01:25.204 cpu2:5464)Net: 2813: failed to update ethernet FRP for port 0x1000003: Not found
 Nov  5 12:42:09 kaitain vmkernel: 0:00:00:37.838 cpu6:4654)NMP: nmp_CompleteCommandForPath: Command 0x12 (0x41027f37c040) to NMP device "mpx.vmhba1:C0:T0:L0" failed on physical path "vmhba1:C0:T0:L0" H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x24 0x0.
 Nov  5 12:42:09 kaitain vmkernel: 0:00:00:37.838 cpu6:4654)ScsiDeviceIO: 1672: Command 0x12 to device "mpx.vmhba1:C0:T0:L0" failed H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x24 0x0.
-Nov  5 08:42:14 kaitain iled error information
 Nov  5 12:50:40 kaitain vmkernel: 0:00:09:08.895 cpu0:9129)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy
 Nov  5 13:02:10 kaitain authd[10199]: Local connection for mks failed.
 Nov  5 14:07:35 kaitain vobd: Nov 05 14:07:35.066: 5163272128us: [vob.net.pg.uplink.transition.down] Uplink: vmnic2 is down. Affected portgroup: VM Network. 1 uplinks up. Failed criteria: 512.
