@@ -50,3 +50,4 @@ Rule IDs:
 470000+: syslog/newsyslog
 480000+: argus/related tools
 490000+: bro-ids
+490100+: vmware esxi
