@@ -1,0 +1,518 @@
+2011/02/11 12:18:39 ossec-testrule: INFO: Reading local decoder file.
+2011/02/11 12:18:39 ossec-testrule: INFO: Started (pid: 12015).
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  5 12:19:26 kaitain vmkernel: 0:00:23:48.161 cpu3:10707)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:00:23:48.161 cpu3:10707)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490111'
+       Level: '0'
+       Description: 'XXX Failed to crossdup fd.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  5 12:38:51 192.168.17.12 vmkernel: 0:00:01:25.204 cpu2:5464)Net: 2813: failed to update ethernet FRP for port 0x1000003: Not found'
+       hostname: '192.168.17.12'
+       program_name: 'vmkernel'
+       log: '0:00:01:25.204 cpu2:5464)Net: 2813: failed to update ethernet FRP for port 0x1000003: Not found'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490112'
+       Level: '0'
+       Description: 'XXX Ethernet port no found.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  5 12:42:09 kaitain vmkernel: 0:00:00:37.838 cpu6:4654)NMP: nmp_CompleteCommandForPath: Command 0x12 (0x41027f37c040) to NMP device "mpx.vmhba1:C0:T0:L0" failed on physical path "vmhba1:C0:T0:L0" H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x24 0x0.'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:00:00:37.838 cpu6:4654)NMP: nmp_CompleteCommandForPath: Command 0x12 (0x41027f37c040) to NMP device "mpx.vmhba1:C0:T0:L0" failed on physical path "vmhba1:C0:T0:L0" H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x24 0x0.'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490114'
+       Level: '0'
+       Description: 'XXX Command to nmp device failed on physical path.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  5 12:42:09 kaitain vmkernel: 0:00:00:37.838 cpu6:4654)ScsiDeviceIO: 1672: Command 0x12 to device "mpx.vmhba1:C0:T0:L0" failed H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x24 0x0.'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:00:00:37.838 cpu6:4654)ScsiDeviceIO: 1672: Command 0x12 to device "mpx.vmhba1:C0:T0:L0" failed H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x24 0x0.'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490115'
+       Level: '0'
+       Description: 'XXX Command to device failed.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  5 12:50:40 kaitain vmkernel: 0:00:09:08.895 cpu0:9129)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:00:09:08.895 cpu0:9129)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490111'
+       Level: '0'
+       Description: 'XXX Failed to crossdup fd.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  5 13:02:10 kaitain authd[10199]: Local connection for mks failed.'
+       hostname: 'kaitain'
+       program_name: 'authd'
+       log: 'Local connection for mks failed.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490116'
+       Level: '0'
+       Description: 'XXX Local connection for mks failed.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  5 14:07:35 kaitain vobd: Nov 05 14:07:35.066: 5163272128us: [vob.net.pg.uplink.transition.down] Uplink: vmnic2 is down. Affected portgroup: VM Network. 1 uplinks up. Failed criteria: 512.'
+       hostname: 'kaitain'
+       program_name: 'vobd'
+       log: 'Nov 05 14:07:35.066: 5163272128us: [vob.net.pg.uplink.transition.down] Uplink: vmnic2 is down. Affected portgroup: VM Network. 1 uplinks up. Failed criteria: 512.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490117'
+       Level: '3'
+       Description: 'XXX vmnic is down.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  5 14:07:35 kaitain vobd: Nov 05 14:07:35.066: 5163272133us: [vob.net.pg.uplink.transition.down] Uplink: vmnic2 is down. Affected portgroup: Switch1. 1 uplinks up. Failed criteria: 512.'
+       hostname: 'kaitain'
+       program_name: 'vobd'
+       log: 'Nov 05 14:07:35.066: 5163272133us: [vob.net.pg.uplink.transition.down] Uplink: vmnic2 is down. Affected portgroup: Switch1. 1 uplinks up. Failed criteria: 512.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490117'
+       Level: '3'
+       Description: 'XXX vmnic is down.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  5 14:08:10 kaitain vmkernel: 0:01:26:38.511 cpu1:5126)Net: 2813: failed to update ethernet FRP for port 0x2000004: Not found'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:01:26:38.511 cpu1:5126)Net: 2813: failed to update ethernet FRP for port 0x2000004: Not found'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490112'
+       Level: '0'
+       Description: 'XXX Ethernet port no found.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  5 14:11:39 kaitain watchdog-openwsmand: [5273] Begin '/sbin/openwsmand ++min=0,swap,group=wsman --syslog=3 --foreground-process', min-uptime = 60, max-quick-failures = 5, max-total-failures = 10'
+       hostname: 'kaitain'
+       program_name: 'watchdog-openwsmand'
+       log: '[5273] Begin '/sbin/openwsmand ++min=0,swap,group=wsman --syslog=3 --foreground-process', min-uptime = 60, max-quick-failures = 5, max-total-failures = 10'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490119'
+       Level: '0'
+       Description: 'XXX Looks like a command being run.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  5 14:11:40 kaitain watchdog-usbarbitrator: [5347] Begin '/usr/lib/vmware/bin/vmware-usbarbitrator ++min=0,max=10 -t', min-uptime = 60, max-quick-failures = 1, max-total-failures = 1000000'
+       hostname: 'kaitain'
+       program_name: 'watchdog-usbarbitrator'
+       log: '[5347] Begin '/usr/lib/vmware/bin/vmware-usbarbitrator ++min=0,max=10 -t', min-uptime = 60, max-quick-failures = 1, max-total-failures = 1000000'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490120'
+       Level: '0'
+       Description: 'XXX Looks like a command being run.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  5 14:11:39 kaitain vmkernel: 0:00:00:33.126 cpu1:5319)Vol3: 1604: Could not open device 't10.ATA_____SAMSUNG_HE253GJ_______________________________S2B5J90Z907112:5' for probing: Permission denied'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:00:00:33.126 cpu1:5319)Vol3: 1604: Could not open device 't10.ATA_____SAMSUNG_HE253GJ_______________________________S2B5J90Z907112:5' for probing: Permission denied'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490121'
+       Level: '0'
+       Description: 'XXX Could not open a device.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  5 14:11:39 kaitain vmkernel: 0:00:00:33.126 cpu1:5319)Vol3: 644: Could not open device 't10.ATA_____SAMSUNG_HE253GJ_______________________________S2B5J90Z907112:5' for volume open: Permission denied'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:00:00:33.126 cpu1:5319)Vol3: 644: Could not open device 't10.ATA_____SAMSUNG_HE253GJ_______________________________S2B5J90Z907112:5' for volume open: Permission denied'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490121'
+       Level: '0'
+       Description: 'XXX Could not open a device.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  6 02:24:08 kaitain vmkernel: 0:12:13:01.567 cpu0:80682)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:12:13:01.567 cpu0:80682)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490111'
+       Level: '0'
+       Description: 'XXX Failed to crossdup fd.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  6 04:39:17 kaitain watchdog-cdp: [5431] Begin '/usr/sbin/net-cdp', min-uptime = 60, max-quick-failures = 1, max-total-failures = 1000000'
+       hostname: 'kaitain'
+       program_name: 'watchdog-cdp'
+       log: '[5431] Begin '/usr/sbin/net-cdp', min-uptime = 60, max-quick-failures = 1, max-total-failures = 1000000'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490122'
+       Level: '0'
+       Description: 'XXX Looks like a command being run.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  6 05:30:59 kaitain sfcb-CIMXML-Processor[13160]:  *** 1622 Timeout error accepting SSL connection -- exiting'
+       hostname: 'kaitain'
+       program_name: 'sfcb-CIMXML-Processor'
+       log: ' *** 1622 Timeout error accepting SSL connection -- exiting'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490123'
+       Level: '0'
+       Description: 'XXX Timeout error accepting SSL connection.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  6 05:31:05 kaitain vmkernel: 0:00:52:21.765 cpu6:4842)Migrate: 402: Error reading from pending connection: Connection closed by remote host, possibly due to timeout'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:00:52:21.765 cpu6:4842)Migrate: 402: Error reading from pending connection: Connection closed by remote host, possibly due to timeout'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490124'
+       Level: '0'
+       Description: 'XXX Error reading from pending connection.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  8 17:13:17 kaitain vmkernel: 2:12:34:33.682 cpu2:369423)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '2:12:34:33.682 cpu2:369423)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490111'
+       Level: '0'
+       Description: 'XXX Failed to crossdup fd.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 16 15:39:26 kaitain vmkernel: 0:22:45:24.981 cpu6:5755)WARNING: NFS: 1090: Error (No connection) trying to umount /exports/ISO on host hagal (192.168.17.12)'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:22:45:24.981 cpu6:5755)WARNING: NFS: 1090: Error (No connection) trying to umount /exports/ISO on host hagal (192.168.17.12)'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490125'
+       Level: '0'
+       Description: 'XXX Trying to umount an nfs mount.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 16 15:41:26 kaitain vmkernel: 0:22:47:25.037 cpu1:4654)NMP: nmp_CompleteCommandForPath: Command 0x12 (0x41027f400340) to NMP device "mpx.vmhba1:C0:T0:L0" failed on physical path "vmhba1:C0:T0:L0" H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x24 0x0.'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:22:47:25.037 cpu1:4654)NMP: nmp_CompleteCommandForPath: Command 0x12 (0x41027f400340) to NMP device "mpx.vmhba1:C0:T0:L0" failed on physical path "vmhba1:C0:T0:L0" H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x24 0x0.'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490114'
+       Level: '0'
+       Description: 'XXX Command to nmp device failed on physical path.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 16 15:42:01 kaitain vmkernel: 0:22:47:59.559 cpu4:143711)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:22:47:59.559 cpu4:143711)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490111'
+       Level: '0'
+       Description: 'XXX Failed to crossdup fd.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 17 06:30:28 kaitain sfcb-CIMXML-Processor[232856]:  *** 1622 Timeout error accepting SSL connection -- exiting'
+       hostname: 'kaitain'
+       program_name: 'sfcb-CIMXML-Processor'
+       log: ' *** 1622 Timeout error accepting SSL connection -- exiting'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490123'
+       Level: '0'
+       Description: 'XXX Timeout error accepting SSL connection.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 16 15:15:01 kaitain vmkernel: 0:22:20:59.810 cpu0:13640)WARNING: NFS: 213: Got error 13 from mount call'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:22:20:59.810 cpu0:13640)WARNING: NFS: 213: Got error 13 from mount call'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490126'
+       Level: '0'
+       Description: 'XXX NFS got error 13 from mount call.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 16 15:15:38 kaitain vmkernel: 0:22:21:37.151 cpu2:5131)WARNING: NFS: 959: MOUNT failed with MOUNT status 13 (Permission denied) trying to mount Server (192.168.17.12) Path (/exports)'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:22:21:37.151 cpu2:5131)WARNING: NFS: 959: MOUNT failed with MOUNT status 13 (Permission denied) trying to mount Server (192.168.17.12) Path (/exports)'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490127'
+       Level: '0'
+       Description: 'XXX Mount failed with status 13.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 16 15:15:38 kaitain vmkernel: 0:22:21:37.151 cpu2:5131)NFS: 171: NFS mount hagal:/exports status: The mount request was denied by the NFS server. Check that the export exists and that the client is permitted to mount it'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:22:21:37.151 cpu2:5131)NFS: 171: NFS mount hagal:/exports status: The mount request was denied by the NFS server. Check that the export exists and that the client is permitted to mount it'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490128'
+       Level: '3'
+       Description: 'XXX Mount request was denied by the NFS server.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 16 15:30:51 kaitain vmkernel: 0:22:36:50.193 cpu2:9299)WARNING: NFS: 213: Got error 13 from mount call'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:22:36:50.193 cpu2:9299)WARNING: NFS: 213: Got error 13 from mount call'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490126'
+       Level: '0'
+       Description: 'XXX NFS got error 13 from mount call.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 16 15:33:41 kaitain vmkernel: 0:22:39:39.817 cpu0:142815)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:22:39:39.817 cpu0:142815)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490111'
+       Level: '0'
+       Description: 'XXX Failed to crossdup fd.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Feb  1 14:47:54 kaitain vmkernel: TSC: 65942068 cpu0:0)BootConfig: 35: mcaEnableAllErrorSources = FALSE'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: 'TSC: 65942068 cpu0:0)BootConfig: 35: mcaEnableAllErrorSources = FALSE'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490129'
+       Level: '0'
+       Description: 'XXX BootConfig setting.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Feb  1 14:49:30 kaitain vmkernel: 0:00:01:41.438 cpu4:4818)WARNING: NFS: 913: RPC error 13 (RPC was aborted due to timeout) trying to get port for Mount Program (100005) Version (3) Protocol (TCP) on Server (192.168.17.12)'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '0:00:01:41.438 cpu4:4818)WARNING: NFS: 913: RPC error 13 (RPC was aborted due to timeout) trying to get port for Mount Program (100005) Version (3) Protocol (TCP) on Server (192.168.17.12)'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490130'
+       Level: '0'
+       Description: 'XXX RPC was aborted due to a timeout.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.042 cpu6:4407)<6>usb 1-1.1.1: USB disconnect, address 26'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '7:14:25:30.042 cpu6:4407)<6>usb 1-1.1.1: USB disconnect, address 26'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.285 cpu6:4407)<6>usb 1-1.1.1: new low speed USB device using ehci_hcd and address 27'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '7:14:25:30.285 cpu6:4407)<6>usb 1-1.1.1: new low speed USB device using ehci_hcd and address 27'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: configuration #1 chosen from 1 choice'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: configuration #1 chosen from 1 choice'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usbhid 1-1.1.1:1.0: not claiming non-bootable hid device'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '7:14:25:30.405 cpu6:4407)<6>usbhid 1-1.1.1:1.0: not claiming non-bootable hid device'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: device is available for passthrough'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: device is available for passthrough'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: New USB device found, idVendor=09ae, idProduct=2010'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: New USB device found, idVendor=09ae, idProduct=2010'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: new device strings: Mfr=1, Product=2, SerialNumber=0'
+       hostname: 'kaitain'
+       program_name: 'vmkernel'
+       log: '7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: new device strings: Mfr=1, Product=2, SerialNumber=0'
+
+**Phase 2: Completed decoding.
+       decoder: 'vmkernel'
