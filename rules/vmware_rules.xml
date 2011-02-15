@@ -151,6 +151,9 @@
     <group>authentication_failures,</group>
   </rule>
 
+  <!-- vmware esxi 4.1 rules. -->
+
+
 </group> <!-- VMware ESX -->
 
 <!-- EOF -->
