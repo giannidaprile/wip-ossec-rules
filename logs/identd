@@ -1,0 +1,3 @@
+Jun  8 08:48:28 gorilla identd[8029]: scanf: invalid-port(s): 0 , 0 from gorilla.monkey.local
+Jun  8 08:49:18 gorilla identd[9790]: read from gorilla.monkey.local: EOF
+Nov  9 07:43:15 richese identd[28080]: read from ecaz.example.com: Undefined error: 0

@@ -1,0 +1,52 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 22 01:04:55 gorilla sensorsd[28381]: nmea0 has appeared'
+       hostname: 'gorilla'
+       program_name: 'sensorsd'
+       log: 'nmea0 has appeared'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  7 03:03:51 ix sensorsd[4027]: nmea0.timedelta0: 0.335796 secs, CRITICAL'
+       hostname: 'ix'
+       program_name: 'sensorsd'
+       log: 'nmea0.timedelta0: 0.335796 secs, CRITICAL'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct 28 21:28:36 ix sensorsd[4027]: nmea0.percent0: 100.00%, WARN'
+       hostname: 'ix'
+       program_name: 'sensorsd'
+       log: 'nmea0.percent0: 100.00%, WARN'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  5 15:22:22 junction sensorsd[26757]: startup, system has 15 sensors'
+       hostname: 'junction'
+       program_name: 'sensorsd'
+       log: 'startup, system has 15 sensors'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  5 16:59:50 ix sensorsd[19365]: nmea0.timedelta0: 0.303331 secs, UNKNOWN'
+       hostname: 'ix'
+       program_name: 'sensorsd'
+       log: 'nmea0.timedelta0: 0.303331 secs, UNKNOWN'
+
+**Phase 2: Completed decoding.
+       No decoder matched.

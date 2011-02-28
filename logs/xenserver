@@ -1,0 +1,62 @@
+Nov  2 12:13:32 192.168.17.7 NET[5953]: /etc/sysconfig/network-scripts/ifup-post : updated /etc/resolv.conf
+Nov  2 12:13:38 kaitain rpc.statd[6439]: Version 1.0.9 Starting
+Nov  2 12:13:38 192.168.17.7 rpc.statd[6439]: statd running as root. chown /var/lib/nfs/statd/sm to choose different user
+Nov  2 12:13:38 192.168.17.7 lwsmd: Logging started
+Nov  2 12:13:38 192.168.17.7 ntpdate[6590]: step time server 192.168.17.9 offset -0.444219 sec
+Nov  2 12:13:38 192.168.17.7 ntpd[6594]: ntpd 4.2.2p1@1.1570-o Sat Dec 19 00:58:16 UTC 2009 (1)
+Nov  2 12:13:38 192.168.17.7 ntpd[6595]: getaddrinfo: "::1" invalid host address, ignored
+Nov  2 12:13:40 192.168.17.7 xapi: [ warn|kaitain|0 thread_zero|Licensing host D:a42b453ec4fe|license] License application failed: cannot read license file.
+Nov  2 12:13:40 192.168.17.7 xapi: [ warn|kaitain|22 heartbeat|heartbeat thread D:86dc1fdcb5b8|startup] thread [heartbeat thread] died
+Nov  2 12:13:40 192.168.17.7 xapi: [ warn|kaitain|20|control domain memory D:099f65a5240e|startup] thread [control domain memory] died
+Nov  2 12:13:40 192.168.17.7 ovs-vsctl: 00001|vsctl|INFO|Called as /usr/bin/ovs-vsctl -vANY:console:emer get Open_vSwitch . managers
+Nov  2 12:13:40 192.168.17.7 ovs-vsctl: 00002|stream_unix|ERR|/tmp/stream-unix.7188.0: connection to /var/run/openvswitch/db.sock failed: No such file or directory
+Nov  2 12:13:40 192.168.17.7 ovs-vsctl: 00003|reconnect|WARN|unix:/var/run/openvswitch/db.sock: connection attempt failed (No such file or directory)
+Nov  2 12:13:41 192.168.17.7 ovs-vsctl: 00004|stream_unix|ERR|/tmp/stream-unix.7188.1: connection to /var/run/openvswitch/db.sock failed: No such file or directory
+Nov  2 12:13:41 192.168.17.7 ovs-vsctl: 00005|reconnect|WARN|unix:/var/run/openvswitch/db.sock: connection attempt failed (No such file or directory)
+Nov  2 12:13:43 192.168.17.7 ovs-vsctl: 00006|stream_unix|ERR|/tmp/stream-unix.7188.2: connection to /var/run/openvswitch/db.sock failed: No such file or directory
+Nov  2 12:13:43 192.168.17.7 ovs-vsctl: 00007|reconnect|WARN|unix:/var/run/openvswitch/db.sock: connection attempt failed (No such file or directory)
+Nov  2 12:13:49 192.168.17.7 xapi: [ warn|kaitain|500|Calling on_xapi_initialize event hook in the external authentication plugin D:0787ad5289d1|startup] thread [Calling on_xapi_initialize event hook in the external authentication plugin] died
+Nov  3 09:23:19 kaitain xapi: [ warn|kaitain|1605 unix-RPC|VM.clone R:a10e62dfa06d|xapi] VM CentOS 5.3 (32-bit) could run on any of these hosts: [ kaitain ]
+Nov  3 09:23:19 kaitain xapi: [ warn|kaitain|1605 unix-RPC|VM.clone R:a10e62dfa06d|xapi] VM CentOS 5.3 (32-bit) could run on any of these hosts: [ kaitain ]
+Nov  3 09:23:19 kaitain xapi: [ warn|kaitain|1617 unix-RPC|VM.clone R:daad50d99692|xapi] VM CentOS 5.3 (32-bit) could run on any of these hosts: [ kaitain ]
+Nov  3 09:23:19 kaitain xapi: [ warn|kaitain|1617 unix-RPC|VM.clone R:daad50d99692|xapi] VM CentOS 5.3 (32-bit) could run on any of these hosts: [ kaitain ]
+Nov  3 09:25:21 kaitain xapi: [ warn|kaitain|1628|Async.VM.clone R:ac8f58fb9d77|xapi] VM CentOS 5.5 (64-bit) could run on any of these hosts: [ kaitain ]
+Nov  3 09:25:21 kaitain xapi: [ warn|kaitain|1628|Async.VM.clone R:ac8f58fb9d77|xapi] VM CentOS 5.5 (64-bit) could run on any of these hosts: [ kaitain ]
+Nov  3 09:25:22 kaitain xapi: [ warn|kaitain|1636|Async.VM.provision R:c0fc80413bee|xapi] VM __gui__corrin could run on any of these hosts: [ kaitain ]
+Nov  3 09:25:22 kaitain xapi: [ warn|kaitain|1636|Async.VM.provision R:c0fc80413bee|xapi] VM __gui__corrin could run on any of these hosts: [ kaitain ]
+Nov  3 09:25:23 kaitain xapi: [ warn|kaitain|1663 unix-RPC|VBD.create R:f77dab090f4e|helpers] SR OpaqueRef:d291291f-ebb3-f3f2-8d6d-c40a823f0e54 not shared properly: field 'shared' is set to false'
+Nov  3 09:25:23 kaitain xapi: [ warn|kaitain|1663 unix-RPC|VBD.create R:f77dab090f4e|helpers] SR OpaqueRef:d291291f-ebb3-f3f2-8d6d-c40a823f0e54 not shared properly: field 'shared' is set to false'
+Nov  3 09:34:09 kaitain xapi: [ warn|kaitain|1746|Async.VM.clone R:1cee3b1eaebf|xapi] VM CentOS 5.5 (64-bit) could run on any of these hosts: [ kaitain ]
+Nov  3 09:34:09 kaitain xapi: [ warn|kaitain|1746|Async.VM.clone R:1cee3b1eaebf|xapi] VM CentOS 5.5 (64-bit) could run on any of these hosts: [ kaitain ]
+Nov  3 09:34:11 kaitain xapi: [ warn|kaitain|1754|Async.VM.provision R:12cc05e22283|xapi] VM __gui__corrin could run on any of these hosts: [ kaitain ]
+Nov  3 09:34:11 kaitain xapi: [ warn|kaitain|1754|Async.VM.provision R:12cc05e22283|xapi] VM __gui__corrin could run on any of these hosts: [ kaitain ]
+Nov  3 09:34:11 kaitain xapi: [ warn|kaitain|1780 unix-RPC|VBD.create R:35d60bd58137|helpers] SR OpaqueRef:d291291f-ebb3-f3f2-8d6d-c40a823f0e54 not shared properly: field 'shared' is set to false'
+Nov  3 09:34:11 kaitain xapi: [ warn|kaitain|1780 unix-RPC|VBD.create R:35d60bd58137|helpers] SR OpaqueRef:d291291f-ebb3-f3f2-8d6d-c40a823f0e54 not shared properly: field 'shared' is set to false'
+Nov  3 09:34:15 kaitain xapi: [ warn|kaitain|1787|Async.VBD.insert R:009631e1ad95|helpers] SR OpaqueRef:8f1fe3ab-d4f6-0b3a-1874-dcd0982ff4a0 not shared properly: field 'shared' is set to false'
+Nov  3 09:34:15 kaitain xapi: [ warn|kaitain|1787|Async.VBD.insert R:009631e1ad95|helpers] SR OpaqueRef:8f1fe3ab-d4f6-0b3a-1874-dcd0982ff4a0 not shared properly: field 'shared' is set to false'
+Nov  3 09:34:22 kaitain xapi: [ warn|kaitain|1796 unix-RPC|VBD.create R:7a86484949ee|helpers] SR OpaqueRef:8f1fe3ab-d4f6-0b3a-1874-dcd0982ff4a0 not shared properly: field 'shared' is set to false'
+Nov  3 09:34:22 kaitain xapi: [ warn|kaitain|1796 unix-RPC|VBD.create R:7a86484949ee|helpers] SR OpaqueRef:8f1fe3ab-d4f6-0b3a-1874-dcd0982ff4a0 not shared properly: field 'shared' is set to false'
+Nov  3 09:34:24 kaitain xapi: [error|kaitain|1799 unix-RPC|VBD.plug R:efc92134466d|hotplug] Failed waiting for frontend device frontend (domid=0 | kind=vbd | devid=51712); backend (domid=0 | kind=vbd | devid=51712): 2 creating vbd structure
+Nov  3 09:34:24 kaitain xapi: [error|kaitain|1799 unix-RPC|VBD.plug R:efc92134466d|hotplug] Failed waiting for frontend device frontend (domid=0 | kind=vbd | devid=51712); backend (domid=0 | kind=vbd | devid=51712): 2 creating vbd structure
+Nov  3 09:34:24 kaitain kernel: xenbus dev backend/vbd/0/51712 error 2 creating vbd structure
+Nov  3 09:34:25 kaitain last message repeated 2 times
+Nov  3 09:34:25 kaitain xapi: [error|kaitain|1792|Async.VM.start R:21189fb7498c|xapi] Memory F 7804760 KiB S 0 KiB T 8182 MiB
+Nov  2 12:13:40 192.168.17.7 xapi: [ warn|kaitain|0 thread_zero|Licensing host D:a42b453ec4fe|license] License application failed: cannot read license file.
+Nov  2 12:13:40 192.168.17.7 ovs-vsctl: 00002|stream_unix|ERR|/tmp/stream-unix.7188.0: connection to /var/run/openvswitch/db.sock failed: No such file or directory
+Nov  2 12:13:40 192.168.17.7 ovs-vsctl: 00003|reconnect|WARN|unix:/var/run/openvswitch/db.sock: connection attempt failed (No such file or directory)
+Nov  3 01:31:04 kaitain stunnel: LOG3[7071:3073440656]: SSL_accept: 140760FC: error:140760FC:SSL routines:SSL23_GET_CLIENT_HELLO:unknown protocol
+Nov  3 01:32:28 kaitain stunnel: LOG3[7071:3073301392]: SSL_accept: 1407609C: error:1407609C:SSL routines:SSL23_GET_CLIENT_HELLO:http request
+Nov  3 09:34:24 kaitain xapi: [error|kaitain|1799 unix-RPC|VBD.plug R:efc92134466d|hotplug] Failed waiting for frontend device frontend (domid=0 | kind=vbd | devid=51712); backend (domid=0 | kind=vbd | devid=51712): 2 creating vbd structure
+Nov  3 09:34:24 kaitain kernel: xenbus dev backend/vbd/0/51712 error 2 creating vbd structure
+Nov  3 09:34:25 kaitain xapi: [error|kaitain|1792|Async.VM.start R:21189fb7498c|xapi] Memory F 7804760 KiB S 0 KiB T 8182 MiB
+Nov  3 09:34:24 kaitain xapi: [error|kaitain|1799 unix-RPC|VBD.plug R:efc92134466d|hotplug] Failed waiting for frontend device frontend (domid=0 | kind=vbd | devid=51712); backend (domid=0 | kind=vbd | devid=51712): 2 creating vbd structure
+Nov  3 09:39:34 kaitain vhd-util: libvhd::vhd_read_footer_at: /dev/VG_XenStorage-98bc3b50-ef9b-4d63-4298-347505db8e05/VHD-7ba13aed-dfdb-4a56-b5bd-9ae51daebc54: reading footer at 0x281bffe00 failed: -22
+Nov  3 10:09:23 kaitain TAPDISK[23030]: /dev/VG_XenStorage-98bc3b50-ef9b-4d63-4298-347505db8e05/VHD-7ba13aed-dfdb-4a56-b5bd-9ae51daebc54: state: 0x00000000, new: 0x00, pending: 0x00, failed: 0x00, completed: 0x00
+Nov  3 10:09:23 kaitain TAPDISK[23030]: last activity: 1288791629.476631, errors: 0x0000, retries: 0x0000, received: 0x00000002, returned: 0x00000002, kicked: +0x00000002, kicks in: 0x00000002, out: 0x00000002
+Nov  3 10:09:23 kaitain TAPDISK[23030]: tapdisk-log: closing after 0 errors
+Nov  3 10:09:23 kaitain TAPDISK[23030]: tapdisk-syslog: 0 messages, 0 bytes, xmits: 0, failed: 0, dropped: 0
+Nov  3 10:09:23 kaitain xapi: [error|kaitain|167 xal_listen|VM (domid: 2) device_event = device shutdown {tap,51712} D:f609ffba7f95|event] device_event could not be processed because VM record not in database
+Nov  3 11:51:37 kaitain xapi: [error|kaitain|167 xal_listen|VM (domid: 8) device_event = device shutdown {tap,51712} D:b1b27bc7c794|event] device_event could not be processed because VM record not in database
+Nov  3 11:51:37 kaitain TAPDISK[25765]: /dev/VG_XenStorage-98bc3b50-ef9b-4d63-4298-347505db8e05/VHD-42506f52-cbee-47db-847c-61f272471c5b: state: 0x00000000, new: 0x00, pending: 0x00, failed: 0x00, completed: 0x00
+Nov  3 11:51:37 kaitain TAPDISK[25765]: last activity: 1288799490.708935, errors: 0x0000, retries: 0x007c, received: 0x000048eb, returned: 0x000048eb, kicked: 0x000048eb, kicks in: 0x00001b28, out: 0x00008431
+

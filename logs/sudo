@@ -1,0 +1,1 @@
+Oct  1 08:25:54 gorilla sudo:      ddp : (command continued) /etc/snort/rules/telnet.rules /etc/snort/rules/tftp.rules /etc/snort/rules/virus.rules /etc/snort/rules/voip.rules /etc/snort/rules/web-activex.rules /etc/snort/rules/web-attacks.rules /etc/snort/

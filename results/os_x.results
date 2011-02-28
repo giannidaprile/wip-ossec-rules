@@ -1,0 +1,110 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '[Time 2009.08.13 17:17:05 UTC] [Facility install] [Sender Software Update] [PID 12439] [Message Package Authoring Error: installation-check results requires a message] [Level 3] [UID -2] [GID -2] [Host bunnys-mac-mini]                                    '
+       hostname: 'bunnys-mac-mini'
+       program_name: 'Software Update'
+       log: 'Package Authoring Error: installation-check results requires a message'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 13 13:17:05 bunnys-mac-mini Software Update[12439]: Package Authoring Error: installation-check results requires a message'
+       hostname: 'bunnys-mac-mini'
+       program_name: '(null)'
+       log: 'Software Update[12439]: Package Authoring Error: installation-check results requires a message'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 14 03:15:07 bunnys-mac-mini cp: error processing extended attributes: Operation not permitted'
+       hostname: 'bunnys-mac-mini'
+       program_name: 'cp'
+       log: 'error processing extended attributes: Operation not permitted'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '[Time 2009.08.14 07:15:07 UTC] [Facility user] [Sender cp] [PID -1] [Message error processing extended attributes: Operation not permitted] [Level 4] [UID -2][GID -2] [Host bunnys-mac-mini]'
+       hostname: 'bunnys-mac-mini'
+       program_name: 'cp'
+       log: 'error processing extended attributes: Operation not permitted'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 22 13:11:29 bunnys-mac-mini launchproxy[1286]: /usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution'
+       hostname: 'bunnys-mac-mini'
+       program_name: 'launchproxy'
+       log: '/usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '[Time 2009.08.22 17:11:29 UTC] [Facility launchd] [Sender launchproxy] [PID 1286] [Message /usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution] [Level 4] [UID -2] [GID -2] [Host bunnys-mac-mini]'
+       hostname: 'bunnys-mac-mini'
+       program_name: 'launchproxy'
+       log: '/usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

@@ -1,0 +1,20 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 14 09:51:17 giediprime dbus: Rejected send message, 2 matched rules; type="method_call", sender=":1.30" (uid=42 pid=1916 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="org.bluez.Manager" member="ListAdapters" error name="(unset)" re'
+       hostname: 'giediprime'
+       program_name: 'dbus'
+       log: 'Rejected send message, 2 matched rules; type="method_call", sender=":1.30" (uid=42 pid=1916 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="org.bluez.Manager" member="ListAdapters" error name="(unset)" re'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

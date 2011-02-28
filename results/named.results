@@ -1,0 +1,592 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Mar 26 01:06:48 gorilla named[12721]: zone dnserrortool.com/IN: zone transfer deferred due to quota'
+       hostname: 'gorilla'
+       program_name: 'named'
+       log: 'zone dnserrortool.com/IN: zone transfer deferred due to quota'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12113'
+       Level: '1'
+       Description: 'Zone transfer deferred'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jan 11 14:05:53 ix named[2200]: /master/blockeddomain.hosts:16: aniulu.cn,\\010: bad owner name (check-names)'
+       hostname: 'ix'
+       program_name: 'named'
+       log: '/master/blockeddomain.hosts:16: aniulu.cn,\\010: bad owner name (check-names)'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12114'
+       Level: '1'
+       Description: 'Hostname contains characters that check-names does not like'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Dec 25 17:12:00 ix named[18333]: zone antivirus-solution.net/IN: loaded serial 6'
+       hostname: 'ix'
+       program_name: 'named'
+       log: 'zone antivirus-solution.net/IN: loaded serial 6'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12115'
+       Level: '1'
+       Description: 'Zone transfer'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Mar 26 01:52:13 gorilla named[12721]: zone idenserror.com/IN: transferred serial 6'
+       hostname: 'gorilla'
+       program_name: 'named'
+       log: 'zone idenserror.com/IN: transferred serial 6'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12116'
+       Level: '1'
+       Description: 'Zone transfer'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 20 00:45:40 gorilla named[19606]: zone adioserrores.com/IN: refresh: retry limit for master 192.168.1.33#53 exceeded (source 0.0.0.0#0)'
+       hostname: 'gorilla'
+       program_name: 'named'
+       log: 'zone adioserrores.com/IN: refresh: retry limit for master 192.168.1.33#53 exceeded (source 0.0.0.0#0)'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12117'
+       Level: '1'
+       Description: 'Zone transfer rety limit exceeded'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'May  4 14:53:13 gorilla named[29877]: /etc/blocked.zones_slave:9637: zone 'internet-optimizer.com': already exists previous definition: /etc/adserver.zones_slave:1593'
+       hostname: 'gorilla'
+       program_name: 'named'
+       log: '/etc/blocked.zones_slave:9637: zone 'internet-optimizer.com': already exists previous definition: /etc/adserver.zones_slave:1593'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12118'
+       Level: '1'
+       Description: 'Zone has been duplicated'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  8 21:06:21 gorilla named[25104]: starting BIND 9.4.2-P2'
+       hostname: 'gorilla'
+       program_name: 'named'
+       log: 'starting BIND 9.4.2-P2'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12119'
+       Level: '1'
+       Description: 'BIND has been started'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  8 21:46:19 gorilla named[27527]: zone 17.168.192.in-addr.arpa/IN: NS 'gorilla.17.168.192.IN-ADDR.ARPA' has no address records (A or AAAA)'
+       hostname: 'gorilla'
+       program_name: 'named'
+       log: 'zone 17.168.192.in-addr.arpa/IN: NS 'gorilla.17.168.192.IN-ADDR.ARPA' has no address records (A or AAAA)'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12120'
+       Level: '1'
+       Description: 'Missing A or AAAA record'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep  8 12:38:41 gorilla named[699]: zone dns.org/IN: (master) removed'
+       hostname: 'gorilla'
+       program_name: 'named'
+       log: 'zone dns.org/IN: (master) removed'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12121'
+       Level: '1'
+       Description: 'Zone has been removed from a master server'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 12 13:16:04 ix named[16880]: zone 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loading from master file standard/loopback6.arpa failed: not at top of zone'
+       hostname: 'ix'
+       program_name: 'named'
+       log: 'zone 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loading from master file standard/loopback6.arpa failed: not at top of zone'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12122'
+       Level: '1'
+       Description: 'Origin of zone and owner name of SOA do not match.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 12 14:16:44 ix named[3709]: client 192.168.17.249#7784: zone transfer 'example.com/AXFR/IN' denied'
+       hostname: 'ix'
+       program_name: 'named'
+       log: 'client 192.168.17.249#7784: zone transfer 'example.com/AXFR/IN' denied'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+       srcip: '192.168.17.249'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12146'
+       Level: '1'
+       Description: 'zone transfer denied'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jan 11 15:05:38 ix named[2200]: reloading configuration failed: unexpected end of input'
+       hostname: 'ix'
+       program_name: 'named'
+       log: 'reloading configuration failed: unexpected end of input'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12147'
+       Level: '1'
+       Description: 'Configuration mistake'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 16 19:01:01 junction named[1112]: /etc/named.conf:98: open: /etc/blocked.zones: file not found'
+       hostname: 'junction'
+       program_name: 'named'
+       log: '/etc/named.conf:98: open: /etc/blocked.zones: file not found'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 16 19:01:01 junction named[1112]: loading configuration: file not found'
+       hostname: 'junction'
+       program_name: 'named'
+       log: 'loading configuration: file not found'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 16 19:02:17 junction named[4509]: /etc/blocked.slave:14: option 'masters' is not allowed in 'master' zone 'example.com''
+       hostname: 'junction'
+       program_name: 'named'
+       log: '/etc/blocked.slave:14: option 'masters' is not allowed in 'master' zone 'example.com''
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 16 19:18:28 ix named[17897]: client 192.168.17.17#48823: transfer of 'domain.com/IN': AXFR ended'
+       hostname: 'ix'
+       program_name: 'named'
+       log: 'client 192.168.17.17#48823: transfer of 'domain.com/IN': AXFR ended'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+       srcip: '192.168.17.17'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 16 19:18:28 junction named[14448]: transfer of 'example.com/IN' from 192.168.17.9#53: connected using 192.168.17.17#48823'
+       hostname: 'junction'
+       program_name: 'named'
+       log: 'transfer of 'example.com/IN' from 192.168.17.9#53: connected using 192.168.17.17#48823'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12128'
+       Level: '1'
+       Description: 'Zone transfer.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 28 22:49:11 junction named[8435]: transfer of 'example.com/IN' from 192.168.17.9#53: failed to connect: connection refused'
+       hostname: 'junction'
+       program_name: 'named'
+       log: 'transfer of 'example.com/IN' from 192.168.17.9#53: failed to connect: connection refused'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12129'
+       Level: '4'
+       Description: 'Zone transfer failed, unable to connect to master.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 29 09:39:11 ix named[17743]: listening on all IPv6 interfaces failed'
+       hostname: 'ix'
+       program_name: 'named'
+       log: 'listening on all IPv6 interfaces failed'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12130'
+       Level: '2'
+       Description: 'Could not listen on IPv6 interface.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 29 09:40:11 ix named[17743]: creating IPv4 interface lo0 failed; interface ignored'
+       hostname: 'ix'
+       program_name: 'named'
+       log: 'creating IPv4 interface lo0 failed; interface ignored'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12131'
+       Level: '2'
+       Description: 'Could not bind to an interface.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 29 10:38:38 junction named[8435]: transfer of 'example.net/IN' from 192.168.17.9#53: failed while receiving responses: not authoritative'
+       hostname: 'junction'
+       program_name: 'named'
+       log: 'transfer of 'example.net/IN' from 192.168.17.9#53: failed while receiving responses: not authoritative'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12132'
+       Level: '1'
+       Description: 'Master is not authoritative for zone.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 30 17:03:17 junction named[24824]: none:0: open: /etc/named.conf: permission denied'
+       hostname: 'junction'
+       program_name: 'named'
+       log: 'none:0: open: /etc/named.conf: permission denied'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12133'
+       Level: '4'
+       Description: 'Could not open configuration file, permission denied.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 30 17:03:17 junction named[24824]: loading configuration: permission denied'
+       hostname: 'junction'
+       program_name: 'named'
+       log: 'loading configuration: permission denied'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12134'
+       Level: '4'
+       Description: 'Could not open configuration file, permission denied.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  1 10:07:17 ix named[13508]: client 192.168.17.17#3969: query: example.com IN SOA -E'
+       hostname: 'ix'
+       program_name: 'named'
+       log: 'client 192.168.17.17#3969: query: example.com IN SOA -E'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+       srcip: '192.168.17.17'
+       url: 'example.com'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12135'
+       Level: '0'
+       Description: 'Domain in SOA -E.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  1 18:38:30 junction named[23078]: transfer of 'trojanremoverpc.com/IN' from 192.168.17.9#53: failed to connect: host unreachable'
+       hostname: 'junction'
+       program_name: 'named'
+       log: 'transfer of 'trojanremoverpc.com/IN' from 192.168.17.9#53: failed to connect: host unreachable'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12136'
+       Level: '4'
+       Description: 'Master appears to be down.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul  1 21:15:39 ix named[30050]: client 192.168.17.17#6511: query: example.com IN AXFR -'
+       hostname: 'ix'
+       program_name: 'named'
+       log: 'client 192.168.17.17#6511: query: example.com IN AXFR -'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+       srcip: '192.168.17.17'
+       url: 'example.com'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12137'
+       Level: '0'
+       Description: 'Domain is queried for a zone transferred.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul 13 02:59:55 junction named[15915]: zone example.com/IN: refresh: unexpected rcode (SERVFAIL) from master 192.168.1.8#53 (source 0.0.0.0#0)'
+       hostname: 'junction'
+       program_name: 'named'
+       log: 'zone example.com/IN: refresh: unexpected rcode (SERVFAIL) from master 192.168.1.8#53 (source 0.0.0.0#0)'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12105'
+       Level: '4'
+       Description: 'Unexpected error while resolving domain.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul 29 11:19:18 buzzell named[10305]: client 192.168.17.17#14126: bad zone transfer request: 'construtoranovak.com.br/IN': non-authoritative zone (NOTAUTH)'
+       hostname: 'buzzell'
+       program_name: 'named'
+       log: 'client 192.168.17.17#14126: bad zone transfer request: 'construtoranovak.com.br/IN': non-authoritative zone (NOTAUTH)'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+       srcip: '192.168.17.17'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12139'
+       Level: '3'
+       Description: 'Bad zone transfer request.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  3 10:20:57 junction named[19435]: zone example.com/IN: refresh: failure trying master 192.168.17.8#53 (source 0.0.0.0#0): operation canceled'
+       hostname: 'junction'
+       program_name: 'named'
+       log: 'zone example.com/IN: refresh: failure trying master 192.168.17.8#53 (source 0.0.0.0#0): operation canceled'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12140'
+       Level: '2'
+       Description: 'Cannot refresh a domain from the master server.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 16 16:02:10 junction named[26796]: /slave/blockeddomain.hosts:3: SOA record not at top of zone (icicles2010.com)'
+       hostname: 'junction'
+       program_name: 'named'
+       log: '/slave/blockeddomain.hosts:3: SOA record not at top of zone (icicles2010.com)'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12141'
+       Level: '1'
+       Description: 'Origin of zone and owner name of SOA do not match.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  4 13:47:16 buzzell named[20055]: command channel listening on 127.0.0.1#953'
+       hostname: 'buzzell'
+       program_name: 'named'
+       log: 'command channel listening on 127.0.0.1#953'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12142'
+       Level: '0'
+       Description: 'named command channel is listening.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  4 13:47:16 buzzell named[20055]: command channel listening on ::1#953'
+       hostname: 'buzzell'
+       program_name: 'named'
+       log: 'command channel listening on ::1#953'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12142'
+       Level: '0'
+       Description: 'named command channel is listening.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug  4 13:51:06 buzzell named[20055]: running'
+       hostname: 'buzzell'
+       program_name: 'named'
+       log: 'running'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12143'
+       Level: '0'
+       Description: 'named is now running.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 29 10:34:44 ix named[22107]: automatic empty zone: A.E.F.IP6.ARPA'
+       hostname: 'ix'
+       program_name: 'named'
+       log: 'automatic empty zone: A.E.F.IP6.ARPA'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12144'
+       Level: '1'
+       Description: 'named has created an automatic empty zone.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Sep 10 11:27:39 buzzell named[13160]: reloading configuration failed: out of memory'
+       hostname: 'buzzell'
+       program_name: 'named'
+       log: 'reloading configuration failed: out of memory'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12145'
+       Level: '3'
+       Description: 'Server does not have enough memory to reload the configuration.'
+**Alert to be generated.
+
+

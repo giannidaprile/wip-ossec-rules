@@ -1,0 +1,14 @@
+Aug  3 11:12:41 ix collectd[26538]: read-function of plugin `ntpd' failed. Will suspend it for 20 seconds.
+Aug  3 11:12:41 ix collectd[26538]: recv(2) failed: Connection refused
+Aug  3 11:22:46 ix collectdmon[11906]: Error: couldn't open PID-file (/var/run/collectdmon.pid) for writing: Permission denied
+Aug  3 12:46:08 junction collectd[3827]: uc_update: Value too old: name = junction.example.com/interface/if_errors-lo0; value time = 1280853968; last cache update = 1280853968;
+Aug  4 09:23:55 junction collectd[28372]: network plugin: Cannot set the interface on a unicast socket because the the "SO_BINDTODEVICE" socket option is not availableon your system.
+Aug  9 11:48:38 buzzell collectd[13606]: network plugin: The `TimeToLive' config option needs exactly one numeric argument.
+Aug  2 16:12:36 ix collectd[15580]: network plugin: Option `SecurityLevel' is not allowed here.
+Aug  2 16:12:36 ix collectd[2330]: Initialization complete, entering read-loop.
+Aug  2 16:12:57 ix collectd[3672]: Exiting normally.
+Aug  2 16:12:57 ix collectd[2330]: collectd: Stopping 5 read threads.
+Aug  2 16:29:27 ix collectd[16963]: network plugin: Option `Username' is not allowed here.
+Aug  2 16:29:27 ix collectd[16963]: network plugin: Option `Password' is not allowed here.
+Nov 15 13:05:50 buzzell collectd[25440]: network plugin: sendto failed: Host is down
+Feb  1 11:27:00 ipyr collectd[22603]: uc_update: Value too old: name = ipyr.example.com/df-home/df_complex-free; value time = 1296577620; last cache update = 1296577620;

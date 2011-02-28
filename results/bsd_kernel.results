@@ -1,0 +1,355 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr  3 18:35:14 power /bsd: cd0(atapiscsi0:0:0): Check Condition (error 0x70) on opcode 0x0'
+       hostname: 'power'
+       program_name: '/bsd'
+       log: 'cd0(atapiscsi0:0:0): Check Condition (error 0x70) on opcode 0x0'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51502'
+       Level: '0'
+       Description: 'Check media in optical drive.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 20 01:27:21 gorilla /bsd: umass0: BBB bulk-in clear stall failed, TIMEOUT'
+       hostname: 'gorilla'
+       program_name: '/bsd'
+       log: 'umass0: BBB bulk-in clear stall failed, TIMEOUT'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51503'
+       Level: '1'
+       Description: 'A disk has timed out.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  8 23:40:41 gorilla /bsd: arp info overwritten for 192.168.17.111 by 00:16:01:4b:45:a6 on sk0'
+       hostname: 'gorilla'
+       program_name: '/bsd'
+       log: 'arp info overwritten for 192.168.17.111 by 00:16:01:4b:45:a6 on sk0'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+       dstip: '192.168.17.111'
+       extra_data: '00:16:01:4b:45:a6'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51504'
+       Level: '1'
+       Description: 'arp info has been overwritten for a host'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun  8 21:46:18 gorilla /bsd: WARNING: / was not properly unmounted'
+       hostname: 'gorilla'
+       program_name: '/bsd'
+       log: 'WARNING: / was not properly unmounted'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51505'
+       Level: '5'
+       Description: 'A filesystem was not properly unmounted, likely system crash'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'May 26 23:30:57 gorilla /bsd: UKC> quit'
+       hostname: 'gorilla'
+       program_name: '/bsd'
+       log: 'UKC> quit'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51506'
+       Level: '1'
+       Description: 'UKC was used, possibly modifying a kernel at boot time.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct 15 20:06:43 mobile /bsd: run0: Michael MIC failure'
+       hostname: 'mobile'
+       program_name: '/bsd'
+       log: 'run0: Michael MIC failure'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51507'
+       Level: '1'
+       Description: 'Michael MIC failure: Checksum failure in the tkip protocol.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct 17 07:39:56 power /bsd: wd0: soft error (corrected)'
+       hostname: 'power'
+       program_name: '/bsd'
+       log: 'wd0: soft error (corrected)'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51508'
+       Level: '2'
+       Description: 'A soft error has been corrected on a hard drive, this is a possible early sign of failure.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct 17 07:39:56 power /bsd: wd0: soft error (corrected)'
+       hostname: 'power'
+       program_name: '/bsd'
+       log: 'wd0: soft error (corrected)'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51508'
+       Level: '2'
+       Description: 'A soft error has been corrected on a hard drive, this is a possible early sign of failure.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jan 12 19:40:27 x60 /bsd: acpithinkpad0: unknown event 0x6022'
+       hostname: 'x60'
+       program_name: '/bsd'
+       log: 'acpithinkpad0: unknown event 0x6022'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51509'
+       Level: '1'
+       Description: 'Unknown acpithinkpad event'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jan 12 19:40:45 x60 /bsd: acpitz1: Critical temperature, shutting down'
+       hostname: 'x60'
+       program_name: '/bsd'
+       log: 'acpitz1: Critical temperature, shutting down'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51510'
+       Level: '5'
+       Description: 'System shutdown due to temperature'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jan 18 09:22:45 bart /bsd: acpitz0: _AL0[0] _PR0 failed'
+       hostname: 'bart'
+       program_name: '/bsd'
+       log: 'acpitz0: _AL0[0] _PR0 failed'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51511'
+       Level: '1'
+       Description: 'Unknown ACPI event (bug 6299 in OpenBSD bug tracking system).'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Feb 26 11:18:59 ix /bsd: ehci_freex: xfer=0xffff8000003ef800 not busy, 0x4f4e5155'
+       hostname: 'ix'
+       program_name: '/bsd'
+       log: 'ehci_freex: xfer=0xffff8000003ef800 not busy, 0x4f4e5155'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51512'
+       Level: '1'
+       Description: 'USB diagnostic message.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Feb 28 23:23:21 ix /bsd: ichiic0: abort failed, status 0x0'
+       hostname: 'ix'
+       program_name: '/bsd'
+       log: 'ichiic0: abort failed, status 0x0'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51513'
+       Level: '1'
+       Description: 'Possible APM or ACPI event.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Mar  3 10:30:10 ix /bsd: ichiic0: abort failed, status 0x40<INUSE>'
+       hostname: 'ix'
+       program_name: '/bsd'
+       log: 'ichiic0: abort failed, status 0x40<INUSE>'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51501'
+       Level: '1'
+       Description: 'A timeout occurred waiting for a transfer.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 15 21:15:03 ix /bsd: atascsi_passthru_done, timeout'
+       hostname: 'ix'
+       program_name: '/bsd'
+       log: 'atascsi_passthru_done, timeout'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51515'
+       Level: '0'
+       Description: 'Timeout in atascsi_passthru_done.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 30 17:03:17 junction /bsd: RTC BIOS diagnostic error 80<clock_battery>'
+       hostname: 'junction'
+       program_name: '/bsd'
+       log: 'RTC BIOS diagnostic error 80<clock_battery>'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51516'
+       Level: '0'
+       Description: 'Clock battery error 80'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jun 30 17:20:56 junction /bsd: WARNING: R/W mount of /home denied.  Filesystem is not clean - run fsck'
+       hostname: 'junction'
+       program_name: '/bsd'
+       log: 'WARNING: R/W mount of /home denied.  Filesystem is not clean - run fsck'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51514'
+       Level: '3'
+       Description: 'Unclean filesystem, run fsck.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jul 27 11:19:20 richese /bsd: softraid0: i/o error on block 528'
+       hostname: 'richese'
+       program_name: '/bsd'
+       log: 'softraid0: i/o error on block 528'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51518'
+       Level: '3'
+       Description: 'I/O error on a storage device'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 15 16:39:12 ix /bsd: kbc: cmd word write error'
+       hostname: 'ix'
+       program_name: '/bsd'
+       log: 'kbc: cmd word write error'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51519'
+       Level: '1'
+       Description: 'kbc error.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Aug 15 17:02:12 ix /bsd: umass0: BBB reset failed, IOERROR'
+       hostname: 'ix'
+       program_name: '/bsd'
+       log: 'umass0: BBB reset failed, IOERROR'
+
+**Phase 2: Completed decoding.
+       decoder: 'bsd_kernel'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51520'
+       Level: '1'
+       Description: 'USB reset failed, IOERROR.'
+**Alert to be generated.
+
+

@@ -1,0 +1,4 @@
+Jun  8 21:06:31 gorilla ldattach: can't open /dev/cuaU0
+Jun 22 01:04:47 gorilla ldattach[26729]: attach nmea on /dev/ttyU0
+Dec 23 17:48:59 ix ldattach[16308]: polling error
+Aug 15 17:22:13 ix ldattach[23650]: eof during read from pty: Input/output error

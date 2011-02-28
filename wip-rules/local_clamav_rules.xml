@@ -1,0 +1,42 @@
+  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  -->
+
+
+
+<!-- Modify it at your will. -->
+
+<group name="local,syslog,">
+
+  <rule id="460000" level="0" noalert="1">
+    <program_name>freshclam</program_name>
+    <description>Grouping for freshclam rule.s</description>
+    <group>clamav,</group>
+  </rule>
+
+  <!--Mar 27 04:03:26 localhost freshclam[8992]: getfile: Error while reading database from db.us.clamav.net (IP: 64.142.100.50)-->
+  <rule id="460010" level="2">
+    <if_sid>460000</if_sid>
+    <match>getfile: Error while reading database from</match>
+    <description>Error reading database from remote server.</description>
+    <group>clamav,</group>
+  </rule>
+
+  <!--Jul  7 04:08:24 localhost freshclam[4328]: Update failed. Your-->
+  <rule id="460011" level="2">
+    <if_sid>460000</if_sid>
+    <match>Update failed.</match>
+    <description>Freshclam could not update database.</description>
+    <group>clamav,</group>
+  </rule>
+  
+   
+</group> <!-- SYSLOG,LOCAL -->
+
+
+<!-- EOF -->

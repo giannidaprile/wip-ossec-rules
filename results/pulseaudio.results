@@ -1,0 +1,110 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct 22 11:33:40 fedora11 pulseaudio[3424]: main.c: Daemon startup failed.'
+       hostname: 'fedora11'
+       program_name: 'pulseaudio'
+       log: 'main.c: Daemon startup failed.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  3 05:42:39 giediprime pulseaudio[1951]: bluetooth-util.c: Error from ListAdapters reply: org.freedesktop.DBus.Error.ServiceUnknown'
+       hostname: 'giediprime'
+       program_name: 'pulseaudio'
+       log: 'bluetooth-util.c: Error from ListAdapters reply: org.freedesktop.DBus.Error.ServiceUnknown'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  3 17:34:09 giediprime pulseaudio[2101]: module-hal-detect.c: D-Bus error while parsing HAL data: org.freedesktop.Hal.NoSuchDevice: No device with id /org/freedesktop/Hal/devices/platform_parport_pc_632'
+       hostname: 'giediprime'
+       program_name: 'pulseaudio'
+       log: 'module-hal-detect.c: D-Bus error while parsing HAL data: org.freedesktop.Hal.NoSuchDevice: No device with id /org/freedesktop/Hal/devices/platform_parport_pc_632'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 14 09:51:17 giediprime pulseaudio[1916]: bluetooth-util.c: Error from ListAdapters reply: org.freedesktop.DBus.Error.AccessDenied'
+       hostname: 'giediprime'
+       program_name: 'pulseaudio'
+       log: 'bluetooth-util.c: Error from ListAdapters reply: org.freedesktop.DBus.Error.AccessDenied'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Dec 27 04:31:25 giediprime pulseaudio[2042]: protocol-native.c: Failed to push data into queue'
+       hostname: 'giediprime'
+       program_name: 'pulseaudio'
+       log: 'protocol-native.c: Failed to push data into queue'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jan 20 03:29:25 giediprime pulseaudio[2068]: core.c: Assertion 'pa_idxset_isempty(c->clients)' failed at pulsecore/core.c:176, function core_free(). Aborting.'
+       hostname: 'giediprime'
+       program_name: 'pulseaudio'
+       log: 'core.c: Assertion 'pa_idxset_isempty(c->clients)' failed at pulsecore/core.c:176, function core_free(). Aborting.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

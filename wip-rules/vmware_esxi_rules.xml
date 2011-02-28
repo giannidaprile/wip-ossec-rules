@@ -1,0 +1,189 @@
+<!-- @(#) $Id$
+  -  Example of local rules for OSSEC.
+  -
+  -  Copyright (C) 2009 Trend Micro Inc.
+  -  All rights reserved.
+  -
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.ossec.net/en/licensing.html
+  -->
+
+
+<!-- Modify it at your will. -->
+
+<group name="local,syslog,vmware">
+
+<!--490100-->
+  <rule id="490100" level="0" noalert="1">
+    <decoded_as>vmkernel</decoded_as>
+    <description>Grouping for vmkernel logs.</description>
+  </rule>
+
+  <rule id="490101" level="0" noalert="1">
+    <program_name>sfcb-CIMXML-Processor</program_name>
+    <description>Grouping for sfcb-CIMXML-Processor logs.</description>
+  </rule>
+
+  <rule id="490102" level="0" noalert="1">
+    <program_name>watchdog-cdp</program_name>
+    <description>Grouping for watchdog-cdp logs.</description>
+  </rule>
+
+  <rule id="490103" level="0" noalert="1">
+    <program_name>watchdog-usbarbitrator</program_name>
+    <description>Grouping for watchdog-usbarbitrator logs.</description>
+  </rule>
+  
+  <rule id="490104" level="0" noalert="1">
+    <program_name>watchdog-openwsmand</program_name>
+    <description>Grouping for watchdog-openwsmand logs.</description>
+  </rule>
+
+  <rule id="490105" level="0" noalert="1">
+    <program_name>vobd</program_name>
+    <description>Grouping for vobd logs.</description>
+  </rule>
+ 
+  <rule id="490106" level="0" noalert="1">
+    <program_name>authd</program_name>
+    <description>Grouping for authd logs.</description>
+  </rule>
+
+  <!-- Skip 490107 - 490110 -->
+
+  <rule id="490111" level="0">
+    <if_sid>490100</if_sid>
+    <match>WARNING</match>
+    <regex>UserObj: \S+: Failed to crossdup fd \S+, fs: \S+ oid: \S+ type CHAR: Busy$</regex>
+    <description>XXX Failed to crossdup fd.</description>
+  </rule>
+
+  <rule id="490112" level="0">
+    <if_sid>490100</if_sid>
+    <match>failed to update ethernet FRP for port</match>
+    <regex>failed to update ethernet FRP for port \S+ Not found$</regex>
+    <description>XXX Ethernet port no found.</description>
+  </rule>
+
+  <rule id="490113" level="0" noalert="1">
+    <if_sid>490100</if_sid>
+    <match>nmp_CompleteCommandForPath</match>
+    <description>Grouping for nmp_CompleteCommandForPath rules.</description>
+  </rule>
+
+  <rule id="490114" level="0">
+    <if_sid>490113</if_sid>
+    <match>failed on physical path</match>
+    <description>XXX Command to nmp device failed on physical path.</description>
+  </rule>
+
+  <rule id="490115" level="0">
+    <if_sid>490100</if_sid>
+    <match>ScsiDeviceIO</match>
+    <regex>Command \S+ to device \S+ failed \S+ \S+ \S+ Valid sense data</regex>
+    <description>XXX Command to device failed.</description>
+  </rule>
+
+  <rule id="490116" level="0">
+    <if_sid>490106</if_sid>
+    <match>^Local connection for mks failed.$</match>
+    <description>XXX Local connection for mks failed.</description>
+  </rule>
+
+  <rule id="490117" level="3">
+    <if_sid>490105</if_sid>
+    <match>Affected portgroup</match>
+    <regex>Uplink: vmnic\d+ is down. Affected portgroup: \.+. \d+ uplinks up. Failed criteria</regex>
+    <description>XXX vmnic is down.</description>
+  </rule>
+
+  <rule id="490118" level="0">
+    <if_sid>490100</if_sid>
+    <match>failed to update ethernet FRP for port</match>
+    <description>XXX Failed to update ethernet FRP.</description>
+  </rule>
+
+  <rule id="490119" level="0">
+    <if_sid>490104</if_sid>
+    <match>max-quick-failures</match>
+    <description>XXX Looks like a command being run.</description>
+  </rule>
+
+  <rule id="490120" level="0">
+    <if_sid>490103</if_sid>
+    <match>max-quick-failures</match>
+    <description>XXX Looks like a command being run.</description>
+  </rule>
+
+  <rule id="490121" level="0">
+    <if_sid>490100</if_sid>
+    <match>Could not open device</match>
+    <description>XXX Could not open a device.</description>
+  </rule>
+
+  <rule id="490122" level="0">
+    <if_sid>490102</if_sid>
+    <match>max-quick-failures</match>
+    <description>XXX Looks like a command being run.</description>
+  </rule>
+
+  <rule id="490123" level="0">
+    <if_sid>490101</if_sid>
+    <match>Timeout error accepting SSL connection -- exiting</match>
+    <description>XXX Timeout error accepting SSL connection.</description>
+  </rule>
+
+  <rule id="490124" level="0">
+    <if_sid>490100</if_sid>
+    <match>Migrate: 402: Error reading from pending connection: Connection closed by remote host, possibly due to timeout</match>
+    <description>XXX Error reading from pending connection.</description>s
+  </rule>
+
+  <rule id="490125" level="0">
+    <if_sid>490100</if_sid>
+    <match>WARNING: NFS: 1090: Error (No connection) trying to umount</match>
+    <description>XXX Trying to umount an nfs mount.</description>
+  </rule>
+
+  <rule id="490126" level="0">
+    <if_sid>490100</if_sid>
+    <match>WARNING: NFS: 213: Got error 13 from mount call</match>
+    <description>XXX NFS got error 13 from mount call.</description>
+  </rule>
+
+  <rule id="490127" level="0">
+    <if_sid>490100</if_sid>
+    <match>NFS: 959: MOUNT failed with MOUNT status 13 (Permission denied) trying to mount Server</match>
+    <description>XXX Mount failed with status 13.</description>
+  </rule>
+
+  <rule id="490128" level="3">
+    <if_sid>490100</if_sid>
+    <match>The mount request was denied by the NFS server</match>
+    <description>XXX Mount request was denied by the NFS server.</description>
+  </rule>
+
+  <rule id="490129" level="0">
+    <if_sid>490100</if_sid>
+    <match>mcaEnableAllErrorSources = FALSE</match>
+    <description>XXX BootConfig setting.</description>
+  </rule>
+
+  <rule id="490130" level="0">
+    <if_sid>490100</if_sid>
+    <match>NFS: 913: RPC error 13 (RPC was aborted due to timeout) trying to get port for Mount Program</match>
+    <description>XXX RPC was aborted due to a timeout.</description>
+  </rule>
+
+
+
+
+
+</group> <!-- SYSLOG,LOCAL -->
+
+
+<!-- EOF -->

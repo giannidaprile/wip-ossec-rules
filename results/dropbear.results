@@ -1,0 +1,162 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jan 22 21:21:20 buffalo1 dropbear[3859]: exit before auth: Failed to get kex value'
+       hostname: 'buffalo1'
+       program_name: 'dropbear'
+       log: 'exit before auth: Failed to get kex value'
+
+**Phase 2: Completed decoding.
+       decoder: 'dropbear'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51006'
+       Level: '1'
+       Description: 'Failed to get key exchange value'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jan 22 21:21:20 buffalo1 dropbear[3859]: Premature kexdh_init message received'
+       hostname: 'buffalo1'
+       program_name: 'dropbear'
+       log: 'Premature kexdh_init message received'
+
+**Phase 2: Completed decoding.
+       decoder: 'dropbear'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51002'
+       Level: '1'
+       Description: 'Premature kexdh_init message'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Mar 24 15:25:51 buffalo1 dropbear[4092]: bad password attempt for 'root' from 192.168.17.9:5543'
+       hostname: 'buffalo1'
+       program_name: 'dropbear'
+       log: 'bad password attempt for 'root' from 192.168.17.9:5543'
+
+**Phase 2: Completed decoding.
+       decoder: 'dropbear'
+       dstuser: 'root'
+       srcip: '192.168.17.9'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51003'
+       Level: '5'
+       Description: 'Bad password attempt.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Mar 22 16:22:17 buffalo1 dropbear[25017]: password auth succeeded for 'root' from 192.168.17.9:39285'
+       hostname: 'buffalo1'
+       program_name: 'dropbear'
+       log: 'password auth succeeded for 'root' from 192.168.17.9:39285'
+
+**Phase 2: Completed decoding.
+       decoder: 'dropbear'
+       dstuser: 'root'
+       srcip: '192.168.17.9'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51009'
+       Level: '0'
+       Description: 'User successfully logged in using a password.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Mar 22 16:22:18 buffalo1 dropbear[25017]: exit after auth (root): Disconnect received'
+       hostname: 'buffalo1'
+       program_name: 'dropbear'
+       log: 'exit after auth (root): Disconnect received'
+
+**Phase 2: Completed decoding.
+       decoder: 'dropbear'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51005'
+       Level: '0'
+       Description: 'User disconnected.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Mar 22 16:29:14 buffalo1 dropbear[25121]: exit before auth: Exited normally'
+       hostname: 'buffalo1'
+       program_name: 'dropbear'
+       log: 'exit before auth: Exited normally'
+
+**Phase 2: Completed decoding.
+       decoder: 'dropbear'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51001'
+       Level: '2'
+       Description: 'Client exited before authentication.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Mar 22 16:29:51 buffalo1 dropbear[25132]: exit before auth: Incompatible remote version 'SSH-1.5-NmapNSE_1.0''
+       hostname: 'buffalo1'
+       program_name: 'dropbear'
+       log: 'exit before auth: Incompatible remote version 'SSH-1.5-NmapNSE_1.0''
+
+**Phase 2: Completed decoding.
+       decoder: 'dropbear'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51001'
+       Level: '2'
+       Description: 'Client exited before authentication.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Mar 22 16:29:53 buffalo1 dropbear[25139]: exit before auth: Incompatible remote version 'SSH-1.5-Nmap-SSH1-Hostkey''
+       hostname: 'buffalo1'
+       program_name: 'dropbear'
+       log: 'exit before auth: Incompatible remote version 'SSH-1.5-Nmap-SSH1-Hostkey''
+
+**Phase 2: Completed decoding.
+       decoder: 'dropbear'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51001'
+       Level: '2'
+       Description: 'Client exited before authentication.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jan 18 19:56:11 buffalo2 dropbear[13611]: exit before auth: error reading: Connection reset by peer'
+       hostname: 'buffalo2'
+       program_name: 'dropbear'
+       log: 'exit before auth: error reading: Connection reset by peer'
+
+**Phase 2: Completed decoding.
+       decoder: 'dropbear'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '51001'
+       Level: '2'
+       Description: 'Client exited before authentication.'
+**Alert to be generated.
+
+

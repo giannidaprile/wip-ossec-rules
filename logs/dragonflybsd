@@ -1,0 +1,6 @@
+Nov  5 19:08:35 hagal kernel: Mounting root from hammer:da0s1d
+Nov  5 19:08:35 hagal kernel: HAMMER(ROOT) recovery check seqno=0003dca3
+Nov  5 19:08:35 hagal kernel: HAMMER(ROOT) recovery range 3000000001000498-3000000001000498
+Nov  5 19:08:35 hagal kernel: HAMMER(ROOT) recovery nexto 3000000001000498 endseqno=0003dca4
+Nov  5 19:08:35 hagal kernel: HAMMER(ROOT) mounted clean, no recovery needed
+Nov  6 03:01:01 hagal kernel: hammer: System has insufficient buffers to rebalance the tree.  nbuf < 3969

@@ -1,0 +1,73 @@
+  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  -->
+
+
+
+<!-- Modify it at your will. -->
+
+<group name="local,syslog,">
+
+  <rule id="430000" level="0" noalert="1">
+    <program_name>^pulseaudio</program_name>
+    <description>Grouping for pulseaudio rules.</description>
+  </rule>
+
+  <!--Oct 22 11:33:40 172.16.51.135 fedora11 pulseaudio[3424]: main.c: Daemon startup failed.-->
+  <rule id="430010" level="1">
+    <if_sid>430000</if_sid>
+    <match>Daemon startup failed.</match>
+    <description>Pulseaudio daemon could not start.</description>
+    <group>audio,</group>
+  </rule>
+
+  <!--Nov  3 05:42:39 giediprime pulseaudio[1951]: bluetooth-util.c: Error from ListAdapters reply: org.freedesktop.DBus.Error.ServiceUnknown-->
+  <rule id="430011" level="0">
+    <if_sid>430000</if_sid>
+    <match>Error from ListAdapters reply: org.freedesktop.DBus.Error.ServiceUnknown</match>
+    <description>Unknown DBus Service error from ListAdapters reply.</description>
+    <group>audio,</group>
+  </rule>
+
+  <!--Nov  3 17:34:09 giediprime pulseaudio[2101]: module-hal-detect.c: D-Bus error while parsing HAL data: org.freedesktop.Hal.NoSuchDevice: No device with id /org/freedesktop/Hal/devices/platform_parport_pc_632-->
+  <rule id="430012" level="0">
+    <if_sid>430000</if_sid>
+    <match>D-Bus error while parsing HAL data: org.freedesktop.Hal.NoSuchDevice: No device with id /org/freedesktop/Hal/devices/platform_parport_pc</match>
+    <description>D-Bus error while parsing HAL data.</description>
+    <group>audio,</group>
+  </rule>
+
+  <!--Nov 14 09:51:17 giediprime pulseaudio[1916]: bluetooth-util.c: Error from ListAdapters reply: org.freedesktop.DBus.Error.AccessDenied-->
+  <rule id="430013" level="0">
+    <if_sid>430000</if_sid>
+    <match>Error from ListAdapters reply: org.freedesktop.DBus.Error.AccessDenied</match>
+    <description>Access denied error from ListAdapters reply.</description>
+    <group>audio,</group>
+  </rule>
+
+  <!--Dec 27 04:31:25 giediprime pulseaudio[2042]: protocol-native.c: Failed to push data into queue-->
+  <rule id="430014" level="0">
+    <if_sid>430000</if_sid>
+    <match>Failed to push data into queue</match>
+    <description>XXX Failed to push data into queue.</description>
+    <group>audio,</group>
+  </rule>
+
+  <!--Jan 20 03:29:25 giediprime pulseaudio[2068]: core.c: Assertion 'pa_idxset_isempty(c->clients)' failed at pulsecore/core.c:176, function core_free(). Aborting.-->
+  <rule id="430015" level="0">
+    <if_sid>430000</if_sid>
+    <match>function core_free(). Aborting</match>
+    <description>XXX Error in pulseaudio code.</description>
+    <group>audio,</group>
+  </rule>
+  
+   
+</group> <!-- SYSLOG,LOCAL -->
+
+
+<!-- EOF -->

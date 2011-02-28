@@ -1,0 +1,35 @@
+Mar 26 01:06:48 gorilla named[12721]: zone dnserrortool.com/IN: zone transfer deferred due to quota
+Jan 11 14:05:53 ix named[2200]: /master/blockeddomain.hosts:16: aniulu.cn,\\010: bad owner name (check-names)
+Dec 25 17:12:00 ix named[18333]: zone antivirus-solution.net/IN: loaded serial 6
+Mar 26 01:52:13 gorilla named[12721]: zone idenserror.com/IN: transferred serial 6
+Apr 20 00:45:40 gorilla named[19606]: zone adioserrores.com/IN: refresh: retry limit for master 192.168.1.33#53 exceeded (source 0.0.0.0#0)
+May  4 14:53:13 gorilla named[29877]: /etc/blocked.zones_slave:9637: zone 'internet-optimizer.com': already exists previous definition: /etc/adserver.zones_slave:1593
+Jun  8 21:06:21 gorilla named[25104]: starting BIND 9.4.2-P2
+Jun  8 21:46:19 gorilla named[27527]: zone 17.168.192.in-addr.arpa/IN: NS 'gorilla.17.168.192.IN-ADDR.ARPA' has no address records (A or AAAA)
+Sep  8 12:38:41 gorilla named[699]: zone dns.org/IN: (master) removed
+Nov 12 13:16:04 ix named[16880]: zone 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa/IN: loading from master file standard/loopback6.arpa failed: not at top of zone
+Nov 12 14:16:44 ix named[3709]: client 192.168.17.249#7784: zone transfer 'example.com/AXFR/IN' denied
+Jan 11 15:05:38 ix named[2200]: reloading configuration failed: unexpected end of input
+Jun 16 19:01:01 junction named[1112]: /etc/named.conf:98: open: /etc/blocked.zones: file not found
+Jun 16 19:01:01 junction named[1112]: loading configuration: file not found
+Jun 16 19:02:17 junction named[4509]: /etc/blocked.slave:14: option 'masters' is not allowed in 'master' zone 'example.com'
+Jun 16 19:18:28 ix named[17897]: client 192.168.17.17#48823: transfer of 'domain.com/IN': AXFR ended
+Jun 16 19:18:28 junction named[14448]: transfer of 'example.com/IN' from 192.168.17.9#53: connected using 192.168.17.17#48823
+Jun 28 22:49:11 junction named[8435]: transfer of 'example.com/IN' from 192.168.17.9#53: failed to connect: connection refused
+Jun 29 09:39:11 ix named[17743]: listening on all IPv6 interfaces failed
+Jun 29 09:40:11 ix named[17743]: creating IPv4 interface lo0 failed; interface ignored
+Jun 29 10:38:38 junction named[8435]: transfer of 'example.net/IN' from 192.168.17.9#53: failed while receiving responses: not authoritative
+Jun 30 17:03:17 junction named[24824]: none:0: open: /etc/named.conf: permission denied
+Jun 30 17:03:17 junction named[24824]: loading configuration: permission denied
+Jul  1 10:07:17 ix named[13508]: client 192.168.17.17#3969: query: example.com IN SOA -E
+Jul  1 18:38:30 junction named[23078]: transfer of 'trojanremoverpc.com/IN' from 192.168.17.9#53: failed to connect: host unreachable
+Jul  1 21:15:39 ix named[30050]: client 192.168.17.17#6511: query: example.com IN AXFR -
+Jul 13 02:59:55 junction named[15915]: zone example.com/IN: refresh: unexpected rcode (SERVFAIL) from master 192.168.1.8#53 (source 0.0.0.0#0)
+Jul 29 11:19:18 buzzell named[10305]: client 192.168.17.17#14126: bad zone transfer request: 'construtoranovak.com.br/IN': non-authoritative zone (NOTAUTH)
+Aug  3 10:20:57 junction named[19435]: zone example.com/IN: refresh: failure trying master 192.168.17.8#53 (source 0.0.0.0#0): operation canceled
+Aug 16 16:02:10 junction named[26796]: /slave/blockeddomain.hosts:3: SOA record not at top of zone (icicles2010.com)
+Aug  4 13:47:16 buzzell named[20055]: command channel listening on 127.0.0.1#953
+Aug  4 13:47:16 buzzell named[20055]: command channel listening on ::1#953
+Aug  4 13:51:06 buzzell named[20055]: running
+Jun 29 10:34:44 ix named[22107]: automatic empty zone: A.E.F.IP6.ARPA
+Sep 10 11:27:39 buzzell named[13160]: reloading configuration failed: out of memory

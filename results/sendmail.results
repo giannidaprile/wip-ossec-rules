@@ -1,0 +1,17 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct 28 04:41:19 fedora11 sendmail[12094]: n9S7eOSX012059: to=<root@fedora11.localdomain>, delay=00:58:35, xdelay=00:00:20, mailer=esmtp, pri=127609, relay=fedora11.localdomain., dsn=4.0.0, stat=Deferred: Name server: fedora11.localdomain.: host name lookup'
+       hostname: 'fedora11'
+       program_name: 'sendmail'
+       log: 'n9S7eOSX012059: to=<root@fedora11.localdomain>, delay=00:58:35, xdelay=00:00:20, mailer=esmtp, pri=127609, relay=fedora11.localdomain., dsn=4.0.0, stat=Deferred: Name server: fedora11.localdomain.: host name lookup'
+
+**Phase 2: Completed decoding.
+       decoder: 'sendmail-reject'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '3100'
+       Level: '0'
+       Description: 'Grouping of the sendmail rules.'

@@ -1,0 +1,38 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr  3 15:26:46 localhost unix_chkpwd[15643]: password check failed for user (ddp)'
+       hostname: 'localhost'
+       program_name: 'unix_chkpwd'
+       log: 'password check failed for user (ddp)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct  8 14:15:45 172.16.51.137 fedora11 unix_chkpwd[11808]: password check failed for user (ddp)'
+       hostname: '172.16.51.137'
+       program_name: '(null)'
+       log: 'fedora11 unix_chkpwd[11808]: password check failed for user (ddp)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

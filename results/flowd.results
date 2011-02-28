@@ -1,0 +1,38 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct  6 11:33:14 gorilla flowd[15953]: Exiting on signal 15'
+       hostname: 'gorilla'
+       program_name: 'flowd'
+       log: 'Exiting on signal 15'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1004'
+       Level: '5'
+       Description: 'Syslogd exiting (logging stopped).'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Jan 19 20:39:23 ix flowd[22557]: start_log: lseek: Illegal seek'
+       hostname: 'ix'
+       program_name: 'flowd'
+       log: 'start_log: lseek: Illegal seek'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

@@ -1,0 +1,1 @@
+Nov 14 09:51:17 giediprime dbus: Rejected send message, 2 matched rules; type="method_call", sender=":1.30" (uid=42 pid=1916 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="org.bluez.Manager" member="ListAdapters" error name="(unset)" re

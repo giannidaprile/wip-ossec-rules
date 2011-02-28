@@ -1,0 +1,1 @@
+Nov  8 09:45:45 giediprime udevd-event[5801]: mknod(/dev/vmci, 020660, (10,59) failed: File exists
