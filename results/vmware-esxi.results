@@ -514,3 +514,18 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'vmkernel'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Feb 11 23:12:23 kaitain sfcb-CIMXML-Processor[1503936]:  *** 1628 Error accepting SSL connection -- exiting'
+       hostname: 'kaitain'
+       program_name: 'sfcb-CIMXML-Processor'
+       log: ' *** 1628 Error accepting SSL connection -- exiting'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '490131'
+       Level: '0'
+       Description: 'XXX Error accepting ssl connections.'
