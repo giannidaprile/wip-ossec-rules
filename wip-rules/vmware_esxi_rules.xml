@@ -179,6 +179,11 @@
     <description>XXX RPC was aborted due to a timeout.</description>
   </rule>
 
+  <rule id="490131" level="0">
+    <if_sid>490101</if_sid>
+    <match>1628 Error accepting SSL connection -- exiting$</match>
+    <description>XXX Error accepting ssl connections.</description>
+  </rule>
 
 
 

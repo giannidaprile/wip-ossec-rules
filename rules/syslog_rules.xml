@@ -614,6 +614,7 @@
     <group>config_changed,</group>
     <description>Yum package deleted.</description>
   </rule>
+
 </group>
 
 
