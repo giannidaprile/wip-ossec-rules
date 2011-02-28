@@ -1,4 +1,4 @@
-<!-- @(#) $Id: syslog_rules.xml,v 1.22 2010/11/25 17:06:17 ddp Exp $
+<!-- @(#) $Id$
   -  Official Generic Syslog rules for OSSEC.
   -
   -  Copyright (C) 2009 Trend Micro Inc.
@@ -64,6 +64,12 @@
     <match>killed by SIGTERM</match>
     <description>Process exiting (killed).</description>
     <group>service_availability,</group>
+  </rule>
+
+  <rule id="1009" level="0">
+    <if_sid>1002</if_sid>
+    <match>terminated without error</match>
+    <description>Ignoring known false positives on rule 1002..</description>
   </rule>
 </group> <!-- SYSLOG,ERRORS -->
 
@@ -173,7 +179,6 @@
     <match>RESULT tag=97 err=49</match>
     <description>OpenLDAP authentication failed.</description>
   </rule>
-
 </group> <!-- SYSLOG,ACESSCONTROL -->
 
 
@@ -430,7 +435,6 @@
     <info>OpenBSD uses login classes, and an inappropriate login class was used.</info>
     <description>A user has attempted to su to an unknown class.</description>
   </rule>
-
 </group> <!-- SYSLOG,SU -->
 
 

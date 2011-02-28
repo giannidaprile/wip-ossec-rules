@@ -54,13 +54,6 @@
   <prematch>^pam_unix|^\(pam_unix\)</prematch>
 </decoder>
 
-<decoder name="pam-auth-fail">
-  <parent>pam</parent>
-  <prematch>uid=\d+ euid=\d+ tty=</prematch>
-  <regex>ruser=(\S+) rhost=\.+ user=(\S+)</regex>
-  <order>srcuser,dstuser</order>
-</decoder>
-  
 <decoder name="pam-user">
   <parent>pam</parent>
   <prematch>^session \w+ </prematch>
@@ -68,12 +61,13 @@
   <order>user</order>
 </decoder>  
 
-<decoder name="pam-user2">
+<!--XXXX<decoder name="pam-user2">
   <parent>pam</parent>
-  <prematch>session \S+ </prematch>
+  <prematch>^session \S+ </prematch>
   <regex>for user (\S+)</regex>
   <order>user</order>
 </decoder>
+-->
 
 <decoder name="pam-host-user">
   <parent>pam</parent>
@@ -116,7 +110,7 @@
   -  Apr 23 07:03:53 machinename sshd[29961]: User root from 12.3.4.5
   not allowed because not listed in AllowUsers
   -  sshd[9815]: scanned from 127.0.0.1 with SSH-1.99-AKASSH_Version_Mapper1.  Don't panic.
-  -  Sep  4 23:58:33 junction sshd[9351]: fatal: Write failed: Broken pipe-->
+  -  Sep  4 23:58:33 junction sshd[9351]: fatal: Write failed: Broken pipe
   -  Sep 18 14:58:47 ix sshd[11816]: error: Could not load host key: /etc/ssh/ssh_host_ecdsa_key
   -  Sep 23 10:32:25 server sshd[25209]: pam_ldap: error trying to bind as user "uid=user123,ou=People,dc=domain,dc=com" (Invalid credentials)
   -  Aug 10 08:38:40 junction sshd[20013]: error: connect_to 192.168.179 port 8080: failed
@@ -214,11 +208,10 @@
   <order>srcip</order>
 </decoder>
 
-<!--Jun 16 19:56:51 blocker sshd[2263]: refused connect from 119.147.1.1 (119.147.1.1)-->
 <decoder name="ssh-osx-refuse">
   <parent>sshd</parent>
   <prematch>^refused connect </prematch>
-  <regex offset="after_prematch">^from (\S+)$|^from \d+.\d+.\d+.\d+ \p(\d+.\d+.\d+.\d+)\p$</regex>
+  <regex offset="after_prematch">^from (\S+)$</regex>
   <order>srcip</order>
 </decoder>
 
@@ -236,6 +229,7 @@
   <order>srcip</order>
 </decoder>
 
+<!--XXX
 <decoder name="ssh-pam">
   <parent>sshd</parent>
   <prematch>PAM: Module</prematch>
@@ -249,18 +243,19 @@
   <regex>connect_to: (\S+) port (\d+):</regex>
   <order>dstip,dstport</order>
 </decoder>
+-->
 
 <decoder name="sshd-ldap">
   <parent>sshd</parent>
-  <prematch offset="after_parent">^pam_ldap: </prematch>
+  <prematch>^pam_ldap: </prematch>
   <regex>user "uid=(\S+),ou=\w+,dc=\w+,dc=\w+"</regex>
   <order>user</order>
 </decoder>
 
 
-
+<!-- Dropbear rules -->
 <decoder name="dropbear">
-  <program_name>dropbear</program_name>
+  <program_name>^dropbear</program_name>
 </decoder>
 
 <decoder name="dropbear-from">
@@ -362,7 +357,7 @@
   <parent>smbd</parent>
   <prematch> from (\S+)$</prematch>
   <regex> from (\S+)$</regex>
-  <order>dstip</order>
+  <order>srcip</order>
 </decoder>
 
 <decoder name="smbd-client">
@@ -543,13 +538,12 @@
   <program_name>^ftpd|^in.ftpd</program_name>
 </decoder>
 
-<!-- Modifications from blacklight vphuvan@yahoo.com -->
 <decoder name="ftpd-mac-failure">
   <parent>ftpd</parent>
   <prematch>^Failed authentication from: \S+ |</prematch>
   <prematch>^repeated login failures from </prematch>
   <!--<regex offset="after_prematch">(\S+)</regex>-->
-  <regex offset="after_prematch">\S+ [(\d+.\d+.\d+.\d+)]$|(\S+)</regex>
+  <regex offset="after_prematch">^\S+ [(\d+.\d+.\d+.\d+)]$|^(\S+)</regex>
   <order>srcip</order>
 </decoder>
 
@@ -944,7 +938,7 @@
 <decoder name="smtpd-client">
   <parent>smtpd</parent>
   <prematch offset="after_parent">^client</prematch>
-  <regex>client (\S+) </regex>
+  <regex>^client (\S+) </regex>
   <order>srcip</order>
 </decoder>
 
@@ -1341,7 +1335,7 @@
 <!-- OpenBSD isakmpd decoders -->
 
 <decoder name="isakmpd">
-  <program_name>isakmpd</program_name>
+  <program_name>^isakmpd</program_name>
 </decoder>
 
 <decoder name="isakmpd-from">
@@ -2133,7 +2127,7 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 
 <!-- OpenBSD kernel messages -->
 <decoder name="bsd_kernel">
-  <program_name>/bsd</program_name>
+  <program_name>^/bsd</program_name>
 </decoder>
 
 <decoder name="bsd_arp">
@@ -2205,10 +2199,10 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 - Jun 26 08:19:25 servername sh: nss_ldap: reconnecting to LDAP server (sleeping 32 seconds)...
 - Aug 16 10:58:12 client nscd: nss_ldap: failed to bind to LDAP server ldap://ldap.example.com: Can't contact LDAP server
 -->
-
+<!--
 <decoder name="nss-ldap">
-  <program_name></program_name>
-  <prematch>nss_ldap</prematch>
+  <program_name>^sh$|^nscd$</program_name>
+  <prematch>^nss_ldap</prematch>
 </decoder>
 
 <decoder name="ldap-server">
@@ -2217,24 +2211,13 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
   <regex offset="after_prematch">ldap://(\S+):</regex>
   <order>system_name</order>
 </decoder>
+-->
 
-
-
-<!-- Avahi daemon -->
-
-<decoder name="avahi">
-  <program_name>avahi-daemon</program_name>
-</decoder>
-
-<decoder name="avahi-dnsconfd">
-  <program_name>avahi-dnsconfd</program_name>
-</decoder>
 
 
 <!-- OpenBSD groupdel
   - May 28 09:15:43 ix groupdel[25984]: group deleted: name=_dbus
 -->
-
 <decoder name="groupdel">
   <program_name>groupdel</program_name>
   <regex>^group deleted: name=(\S+)$</regex>
@@ -2243,9 +2226,8 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 
 
 <!-- Portsentry -->
-
 <decoder name="portsentry">
-  <program_name>portsentry</program_name>
+  <program_name>^portsentry</program_name>
 </decoder>
 
 <decoder name="portsentry-attackalert">
@@ -2262,10 +2244,10 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
   <order>srcip</order>
 </decoder>
 
+
 <!-- Clamav and Freshclam decoder
   -  Nov  5 22:59:19 ix freshclam[32349]: Incremental update failed, trying to download daily.cvd
 -->
-
 <decoder name="clamd">
   <program_name>^clamd</program_name>
 </decoder>
@@ -2273,6 +2255,7 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 <decoder name="freshclam">
   <program_name>^freshclam</program_name>
 </decoder>
+
 
 <!-- OpenLDAP decoder.
   - Jan 11 09:26:57 hostname slapd2.4[20872]: conn=999999 fd=64 ACCEPT from IP=10.10.248.27:33957 (IP=10.10.241.77:389)
@@ -2283,13 +2266,7 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
    <order>id</order>
 </decoder>
 
-<!-- VMWare kernel messages
-  - kaitain vmkernel: 45:06:44:13.595 cpu1:4842)MigrateNet: vm 4842: 1378: Accepted connection from <192.168.17.14>
--->
 
-<decoder name="vmkernel">
-  <program_name>^vmkernel</program_name>
-</decoder>
 
 <!-- NTP decoder 
   - gorilla ntpd[27379]: bad sensor nmea0
@@ -2304,7 +2281,6 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
   - bridge ntpd[5877]: logconfig: illegal argument  - ignored
   - bridge ntpd[5902]: offset 0.000000 sec freq 0.000 ppm error 0.000011 poll 6
 -->
-
 <decoder name="ntpd">
   <program_name>^ntpd</program_name>
 </decoder>
@@ -2316,10 +2292,5 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
   <order>srcip</order>
 </decoder>
 
-<!-- Launchproxy -->
-
-<decoder name="launchproxy">
-  <program_name>launchproxy</program_name>
-</decoder>
 
 <!-- EOF -->
