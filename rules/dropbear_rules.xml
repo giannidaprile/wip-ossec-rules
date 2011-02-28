@@ -1,4 +1,4 @@
-  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
+<!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
   -  This program is a free software; you can redistribute it
   -  and/or modify it under the terms of the GNU General Public
   -  License (version 2) as published by the FSF - Free Software
@@ -10,7 +10,6 @@
 
 
 <!-- Modify it at your will. -->
-
 <group name="syslog,sshd,dropbear">
 
   <rule id="51000" level="0" noalert="1">
@@ -64,7 +63,6 @@
     <group>authentication_failures,</group>
   </rule>
 
-
   <rule id="51008" level="1">
     <if_sid>51000</if_sid>
     <match>Incompatible remote version</match>
@@ -82,5 +80,3 @@
    
 </group> <!-- SYSLOG,LOCAL -->
 
-
-<!-- EOF -->
