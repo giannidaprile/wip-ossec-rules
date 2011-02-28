@@ -34,3 +34,4 @@ Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usbhid 1-1.1.1:1.0
 Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: device is available for passthrough
 Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: New USB device found, idVendor=09ae, idProduct=2010
 Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: new device strings: Mfr=1, Product=2, SerialNumber=0
+Feb 11 23:12:23 kaitain sfcb-CIMXML-Processor[1503936]:  *** 1628 Error accepting SSL connection -- exiting
