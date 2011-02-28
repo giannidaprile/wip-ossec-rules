@@ -12,9 +12,9 @@ ossec-testrule: Type one log per line.
        decoder: 'freshclam'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '52509'
+       Level: '1'
+       Description: 'Could not download the latest database.'
 **Alert to be generated.
 
 
@@ -30,9 +30,9 @@ ossec-testrule: Type one log per line.
        decoder: 'freshclam'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '52509'
+       Level: '1'
+       Description: 'Could not download the latest database.'
 **Alert to be generated.
 
 
