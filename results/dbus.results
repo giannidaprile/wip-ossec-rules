@@ -12,9 +12,6 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
+       Rule id: '260010'
+       Level: '0'
+       Description: 'Rejected send message.'

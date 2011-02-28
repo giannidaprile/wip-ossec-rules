@@ -12,9 +12,9 @@ ossec-testrule: Type one log per line.
        decoder: 'iptables'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '360010'
+       Level: '1'
+       Description: 'XXX SCSI device offlined'
 **Alert to be generated.
 
 
@@ -30,9 +30,9 @@ ossec-testrule: Type one log per line.
        decoder: 'iptables'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '360011'
+       Level: '1'
+       Description: 'XXX'
 **Alert to be generated.
 
 
@@ -48,9 +48,9 @@ ossec-testrule: Type one log per line.
        decoder: 'iptables'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '360012'
+       Level: '1'
+       Description: 'Could not enable interrupt for /dev/rtc (VMWare).'
 **Alert to be generated.
 
 
@@ -66,9 +66,9 @@ ossec-testrule: Type one log per line.
        decoder: 'iptables'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '360013'
+       Level: '1'
+       Description: 'XXX audit denied.'
 **Alert to be generated.
 
 
@@ -84,9 +84,9 @@ ossec-testrule: Type one log per line.
        decoder: 'iptables'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '360014'
+       Level: '1'
+       Description: 'XXX FAT error'
 **Alert to be generated.
 
 
@@ -102,9 +102,9 @@ ossec-testrule: Type one log per line.
        decoder: 'iptables'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '360015'
+       Level: '1'
+       Description: 'XXX I/O error'
 **Alert to be generated.
 
 
@@ -120,9 +120,9 @@ ossec-testrule: Type one log per line.
        decoder: 'iptables'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '360016'
+       Level: '1'
+       Description: 'XXX FAT directory error.'
 **Alert to be generated.
 
 
@@ -138,9 +138,9 @@ ossec-testrule: Type one log per line.
        decoder: 'iptables'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '360017'
+       Level: '1'
+       Description: 'XXX ACPI Error.'
 **Alert to be generated.
 
 
@@ -156,9 +156,9 @@ ossec-testrule: Type one log per line.
        decoder: 'iptables'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '360017'
+       Level: '1'
+       Description: 'XXX ACPI Error.'
 **Alert to be generated.
 
 
@@ -174,9 +174,9 @@ ossec-testrule: Type one log per line.
        decoder: 'iptables'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '360018'
+       Level: '1'
+       Description: 'XXX'
 **Alert to be generated.
 
 
@@ -192,9 +192,9 @@ ossec-testrule: Type one log per line.
        decoder: 'iptables'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '360019'
+       Level: '1'
+       Description: 'Adobe flash segfault'
 **Alert to be generated.
 
 
@@ -210,9 +210,9 @@ ossec-testrule: Type one log per line.
        decoder: 'iptables'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '360020'
+       Level: '1'
+       Description: 'Issue reading a drive.'
 **Alert to be generated.
 
 
@@ -228,9 +228,9 @@ ossec-testrule: Type one log per line.
        decoder: 'iptables'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '360021'
+       Level: '1'
+       Description: 'XXX I/O error.'
 **Alert to be generated.
 
 
