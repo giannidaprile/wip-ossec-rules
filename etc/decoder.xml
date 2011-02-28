@@ -2267,11 +2267,6 @@ in HTTP request too long; attack: Malformed HTTP; src: 10.10.10.4; dst:
 
 <!-- Launchproxy -->
 
-<decoder name="launchproxy">
-  <program_name>launchproxy</program_name>
-</decoder>
-
-
 <!-- Portsentry -->
 
 <decoder name="portsentry">

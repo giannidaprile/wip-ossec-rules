@@ -1049,11 +1049,6 @@ oopback6.arpa failed: not at top of zone-->
     <group>ntpd,</group>
   </rule>
 
-  <rule id="450000" level="0" noalert="1">
-    <decoded_as>launchproxy</decoded_as>
-    <description>Grouping for launchproxy rules</description>
-  </rule>
-  
   <!--Apr 14 13:33:50 fedora10 gdm-session-worker[2484]: pam_unix(gdm:auth): conversation failed-->
   <rule id="380010" level="1">
     <if_sid>5500</if_sid>
@@ -1238,14 +1233,6 @@ conf).-->
 
   <rule id="440000" level="0" noalert="1">
     <decoded_as>nmbd</decoded_as>
-  </rule>
-
-  <!--Aug 22 13:11:29 bunnys-mac-mini launchproxy[1286]: /usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution-->
-  <rule id="440009" level="1">
-    <if_sid>450000</if_sid>
-    <match>resolution</match>
-    <description>Failure in name resolution.</description>
-    <group>smbd,</group>
   </rule>
 
   <!--Dec 25 18:11:29 ix smbd[22614]:   ERROR: smbd is already running. File /var/run/smbd.pid exists and process id 3203 is running.-->
