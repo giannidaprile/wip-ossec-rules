@@ -22,7 +22,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/08/02 14:17:39 ossec-dbd(1230): ERROR: Invalid element in the configuration: 'list'.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/08/02 14:17:39 ossec-dbd(1230): ERROR: Invalid element in the configuration: 'list'.'
 
@@ -40,7 +40,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/08/02 14:17:39 ossec-dbd(1220): ERROR: Error loading the rules: 'local_rules.xml'.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/08/02 14:17:39 ossec-dbd(1220): ERROR: Error loading the rules: 'local_rules.xml'.'
 
@@ -58,7 +58,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/08/02 14:17:39 ossec-dbd(1202): ERROR: Configuration error at '/var/ossec/etc/ossec.conf'. Exiting.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/08/02 14:17:39 ossec-dbd(1202): ERROR: Configuration error at '/var/ossec/etc/ossec.conf'. Exiting.'
 
@@ -76,7 +76,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/08/30 11:38:12 ossec-remoted: ERROR: Unable to create merged file: '/etc/shared/merged.mg'.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/08/30 11:38:12 ossec-remoted: ERROR: Unable to create merged file: '/etc/shared/merged.mg'.'
 
@@ -94,7 +94,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/08/30 11:45:16 ossec-rootcheck(1251): ERROR: Invalid rk configuration name: '^M'.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/08/30 11:45:16 ossec-rootcheck(1251): ERROR: Invalid rk configuration name: '^M'.'
 
@@ -112,7 +112,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/08/31 10:05:08 ossec-reportd: ERROR: Invalid related entry 'Rule'.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/08/31 10:05:08 ossec-reportd: ERROR: Invalid related entry 'Rule'.'
 
@@ -130,7 +130,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/08/31 10:05:08 ossec-reportd(1202): ERROR: Configuration error at 'user argument'. Exiting.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/08/31 10:05:08 ossec-reportd(1202): ERROR: Configuration error at 'user argument'. Exiting.'
 
@@ -148,7 +148,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/08/31 10:05:13 ossec-reportd: ERROR: Invalid relation '1002'.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/08/31 10:05:13 ossec-reportd: ERROR: Invalid relation '1002'.'
 
@@ -166,7 +166,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/08/31 14:41:29 ossec-config(1226): ERROR: Error reading XML file 'etc/ossec.conf': XMLERR: File 'etc/ossec.conf' not found. (line 0).'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/08/31 14:41:29 ossec-config(1226): ERROR: Error reading XML file 'etc/ossec.conf': XMLERR: File 'etc/ossec.conf' not found. (line 0).'
 
@@ -184,7 +184,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/01 04:41:11 ossec-logcollector: Bad formated nmap grepable file (port).'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/01 04:41:11 ossec-logcollector: Bad formated nmap grepable file (port).'
 
@@ -202,7 +202,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/01 13:52:55 ossec-testrule(1202): ERROR: Configuration error at '/etc/local_decoder.xml'. Exiting.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/01 13:52:55 ossec-testrule(1202): ERROR: Configuration error at '/etc/local_decoder.xml'. Exiting.'
 
@@ -220,7 +220,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/01 15:09:42 ossec-syscheckd(1124): ERROR: Unable to rename file: '/etc/malloc.conf'. <!--From report changes-->'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/01 15:09:42 ossec-syscheckd(1124): ERROR: Unable to rename file: '/etc/malloc.conf'. <!--From report changes-->'
 
@@ -238,7 +238,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/01 15:25:14 ossec-syscheckd: ERROR: Invalid internal state (missing '/etc/malloc.conf').'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/01 15:25:14 ossec-syscheckd: ERROR: Invalid internal state (missing '/etc/malloc.conf').'
 
@@ -256,7 +256,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/10 14:00:34 ossec-dbd(1235): ERROR: Invalid value for element 'id': 1100000.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/10 14:00:34 ossec-dbd(1235): ERROR: Invalid value for element 'id': 1100000.'
 
@@ -274,7 +274,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/10 14:00:34 ossec-dbd(5105): ERROR: Invalid rule attributes inside file: 'local_rules.xml'.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/10 14:00:34 ossec-dbd(5105): ERROR: Invalid rule attributes inside file: 'local_rules.xml'.'
 
@@ -292,7 +292,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/10 14:00:34 ossec-dbd(1220): ERROR: Error loading the rules: 'local_rules.xml'.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/10 14:00:34 ossec-dbd(1220): ERROR: Error loading the rules: 'local_rules.xml'.'
 
@@ -310,7 +310,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/10 14:00:34 ossec-dbd(1202): ERROR: Configuration error at '/var/ossec/etc/ossec.conf'. Exiting.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/10 14:00:34 ossec-dbd(1202): ERROR: Configuration error at '/var/ossec/etc/ossec.conf'. Exiting.'
 
@@ -328,7 +328,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/01 04:41:11 ossec-logcollector: Bad formated nmap grepable file (port).'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/01 04:41:11 ossec-logcollector: Bad formated nmap grepable file (port).'
 
@@ -346,7 +346,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/01 13:52:55 ossec-testrule(1202): ERROR: Configuration error at '/etc/local_decoder.xml'. Exiting.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/01 13:52:55 ossec-testrule(1202): ERROR: Configuration error at '/etc/local_decoder.xml'. Exiting.'
 
@@ -364,7 +364,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/01 14:15:49 ossec-analysisd(2107): ERROR: Decoder configuration error: 'dennis-test'.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/01 14:15:49 ossec-analysisd(2107): ERROR: Decoder configuration error: 'dennis-test'.'
 
@@ -382,7 +382,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/10 21:14:03 ossec-dbd(5204): ERROR: Database error. Unable to run query.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/10 21:14:03 ossec-dbd(5204): ERROR: Database error. Unable to run query.'
 
@@ -400,7 +400,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/13 09:38:10 ossec-reportd: ERROR: Invalid filter 'Rule'.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/13 09:38:10 ossec-reportd: ERROR: Invalid filter 'Rule'.'
 
@@ -418,7 +418,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/13 19:48:32 decode-xml: Wrong field 'hostname' in the order of decoder 'attack data''
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/13 19:48:32 decode-xml: Wrong field 'hostname' in the order of decoder 'attack data''
 
@@ -436,7 +436,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/16 22:37:46 ossec-reportd: ERROR: Invalid filter 'agent'. '
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/16 22:37:46 ossec-reportd: ERROR: Invalid filter 'agent'. '
 
@@ -454,7 +454,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/16 22:37:50 ossec-reportd: ERROR: Invalid filter 'id'.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/16 22:37:50 ossec-reportd: ERROR: Invalid filter 'id'.'
 
@@ -472,7 +472,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/17 13:28:05 adding rule: attack_rules.xml'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/17 13:28:05 adding rule: attack_rules.xml'
 
@@ -489,7 +489,7 @@ ossec-testrule: Type one log per line.
 
 
 **Phase 1: Completed pre-decoding.
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
 
 **Phase 2: Completed decoding.
@@ -506,7 +506,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/17 13:35:08 ossec-config(1226): ERROR: Error reading XML file 'etc/ossec.conf': XML ERR: Element not closed: decoder_dir (line 180).'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/17 13:35:08 ossec-config(1226): ERROR: Error reading XML file 'etc/ossec.conf': XML ERR: Element not closed: decoder_dir (line 180).'
 
@@ -524,7 +524,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/17 13:35:08 ossec-testrule(1202): ERROR: Configuration error at 'etc/ossec.conf'. Exiting.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/17 13:35:08 ossec-testrule(1202): ERROR: Configuration error at 'etc/ossec.conf'. Exiting.'
 
@@ -542,7 +542,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/20 17:21:50 ossec-analysisd(1226): ERROR: Error reading XML file 'rules/rules.d/local_argus_rules.xml': XMLERR: File 'rules/rules.d/local_argus_rules.xml' not found. (line 125).'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/20 17:21:50 ossec-analysisd(1226): ERROR: Error reading XML file 'rules/rules.d/local_argus_rules.xml': XMLERR: File 'rules/rules.d/local_argus_rules.xml' not found. (line 125).'
 
@@ -560,7 +560,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/20 17:21:50 ossec-testrule(1220): ERROR: Error loading the rules: 'rules/rules.d/local_argus_rules.xml'.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/20 17:21:50 ossec-testrule(1220): ERROR: Error loading the rules: 'rules/rules.d/local_argus_rules.xml'.'
 
@@ -577,7 +577,7 @@ ossec-testrule: Type one log per line.
 
 
 **Phase 1: Completed pre-decoding.
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
 
 **Phase 2: Completed decoding.
@@ -594,7 +594,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/20 17:42:41 ossec-syscheckd: Error accessing '/usr/local/bin/pkg.74xZ7mk5eM'.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/20 17:42:41 ossec-syscheckd: Error accessing '/usr/local/bin/pkg.74xZ7mk5eM'.'
 
@@ -612,7 +612,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/20 17:46:52 ossec-analysisd: INFO: Ignoring file: '^/usr/local/bin/pkg.''
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/20 17:46:52 ossec-analysisd: INFO: Ignoring file: '^/usr/local/bin/pkg.''
 
@@ -622,7 +622,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/23 11:15:13 ossec-analysisd(2107): ERROR: Decoder configuration error: 'nss-ldap'.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/23 11:15:13 ossec-analysisd(2107): ERROR: Decoder configuration error: 'nss-ldap'.'
 
@@ -640,7 +640,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/23 11:32:53 ossec-analysisd(2106): ERROR: Error adding decoder plugin.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/23 11:32:53 ossec-analysisd(2106): ERROR: Error adding decoder plugin.'
 
@@ -658,7 +658,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/23 14:45:40 ossec-analysisd(2101): ERROR: Parent decoder name invalid: 'cisco-ios'. '
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/23 14:45:40 ossec-analysisd(2101): ERROR: Parent decoder name invalid: 'cisco-ios'. '
 
@@ -676,7 +676,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/29 09:19:03 ossec-remoted(1403): ERROR: Incorrectly formated message from'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/29 09:19:03 ossec-remoted(1403): ERROR: Incorrectly formated message from'
 
@@ -694,7 +694,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/29 22:34:44 ossec-analysisd(2102): ERROR: Duplicated decoder with prematch: 'named-master'.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/29 22:34:44 ossec-analysisd(2102): ERROR: Duplicated decoder with prematch: 'named-master'.'
 
@@ -712,7 +712,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/09/29 22:34:44 ossec-analysisd(2105): ERROR: Error loading decoder options.'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/09/29 22:34:44 ossec-analysisd(2105): ERROR: Error loading decoder options.'
 
@@ -748,7 +748,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '2010/11/08 12:59:28 ossec-remoted(1206): ERROR: Unable to Bind port '1514''
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: '2010/11/08 12:59:28 ossec-remoted(1206): ERROR: Unable to Bind port '1514''
 

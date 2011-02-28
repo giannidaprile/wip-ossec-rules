@@ -81,7 +81,7 @@ ossec-testrule: Type one log per line.
        log: '/usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution'
 
 **Phase 2: Completed decoding.
-       decoder: 'launchproxy'
+       No decoder matched.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '1002'
@@ -99,7 +99,7 @@ ossec-testrule: Type one log per line.
        log: '/usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution'
 
 **Phase 2: Completed decoding.
-       decoder: 'launchproxy'
+       No decoder matched.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '1002'

@@ -789,7 +789,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 8 21:20:48 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 8 21:20:48 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
 
@@ -807,7 +807,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 8 21:20:49 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 8 21:20:49 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
 
@@ -825,7 +825,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 8 21:20:52 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 8 21:20:52 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
 
@@ -843,7 +843,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 8 21:20:55 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 8 21:20:55 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
 
@@ -861,7 +861,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 8 21:20:59 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 8 21:20:59 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
 
@@ -879,7 +879,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 8 21:21:04 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 8 21:21:04 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
 
@@ -897,7 +897,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 8 21:21:04 MyComputer ftpd[5710]: repeated login failures from 32.c8.85ae.static.theplanet.com'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 8 21:21:04 MyComputer ftpd[5710]: repeated login failures from 32.c8.85ae.static.theplanet.com'
 
@@ -1046,7 +1046,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 4 23:37:36 server ftpd274: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 4 23:37:36 server ftpd274: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1064,7 +1064,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 4 23:47:13 server ftpd1369: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 4 23:47:13 server ftpd1369: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1082,7 +1082,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 4 23:56:14 server ftpd1369: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 4 23:56:14 server ftpd1369: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1100,7 +1100,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 00:03:46 server ftpd1369: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 00:03:46 server ftpd1369: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1118,7 +1118,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 00:16:36 server ftpd2161: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 00:16:36 server ftpd2161: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1136,7 +1136,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 00:19:31 server ftpd2161: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 00:19:31 server ftpd2161: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1154,7 +1154,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 00:21:05 server ftpd2161: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 00:21:05 server ftpd2161: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1172,7 +1172,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 00:30:52 server ftpd2525: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 00:30:52 server ftpd2525: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1190,7 +1190,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 00:40:15 server ftpd2525: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 00:40:15 server ftpd2525: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1208,7 +1208,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 00:48:01 server ftpd2525: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 00:48:01 server ftpd2525: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1226,7 +1226,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 01:03:23 server ftpd3848: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 01:03:23 server ftpd3848: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1244,7 +1244,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 01:30:46 server ftpd4421: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 01:30:46 server ftpd4421: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1262,7 +1262,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 01:38:40 server ftpd4421: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 01:38:40 server ftpd4421: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1280,7 +1280,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 01:41:39 server ftpd4421: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 01:41:39 server ftpd4421: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1298,7 +1298,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 01:53:21 server ftpd5691: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 01:53:21 server ftpd5691: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1316,7 +1316,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 01:57:51 server ftpd5691: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 01:57:51 server ftpd5691: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1334,7 +1334,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 02:08:21 server ftpd5691: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 02:08:21 server ftpd5691: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1352,7 +1352,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 02:20:32 server ftpd6438: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 02:20:32 server ftpd6438: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1370,7 +1370,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 02:26:52 server ftpd6438: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 02:26:52 server ftpd6438: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1388,7 +1388,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 02:56:57 server ftpd7692: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 02:56:57 server ftpd7692: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1406,7 +1406,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 03:05:58 server ftpd7692: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 03:05:58 server ftpd7692: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1424,7 +1424,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 03:12:58 server ftpd7692: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 03:12:58 server ftpd7692: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1442,7 +1442,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 03:28:35 server ftpd8862: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 03:28:35 server ftpd8862: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1460,7 +1460,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 03:35:36 server ftpd8862: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 03:35:36 server ftpd8862: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1478,7 +1478,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 03:45:22 server ftpd8862: Failed authentication from: 218.107.139.2 http://218.107.139.2 '
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'Apr 5 03:45:22 server ftpd8862: Failed authentication from: 218.107.139.2 http://218.107.139.2 '
 

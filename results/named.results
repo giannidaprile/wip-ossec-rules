@@ -13,11 +13,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '12113'
-       Level: '1'
-       Description: 'Zone transfer deferred'
-**Alert to be generated.
-
-
+       Level: '0'
+       Description: 'Zone transfer deferred.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -32,7 +29,7 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '12114'
        Level: '1'
-       Description: 'Hostname contains characters that check-names does not like'
+       Description: 'Hostname contains characters that check-names does not like.'
 **Alert to be generated.
 
 
@@ -49,11 +46,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '12115'
-       Level: '1'
-       Description: 'Zone transfer'
-**Alert to be generated.
-
-
+       Level: '0'
+       Description: 'Zone transfer.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -66,12 +60,9 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '12116'
-       Level: '1'
-       Description: 'Zone transfer'
-**Alert to be generated.
-
-
+       Rule id: '12115'
+       Level: '0'
+       Description: 'Zone transfer.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -102,12 +93,9 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '12118'
-       Level: '1'
+       Rule id: '12123'
+       Level: '0'
        Description: 'Zone has been duplicated'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.
@@ -121,7 +109,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '12119'
-       Level: '1'
+       Level: '3'
        Description: 'BIND has been started'
 **Alert to be generated.
 
@@ -156,12 +144,9 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '12121'
-       Level: '1'
+       Rule id: '12126'
+       Level: '0'
        Description: 'Zone has been removed from a master server'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.
@@ -193,7 +178,7 @@ ossec-testrule: Type one log per line.
        srcip: '192.168.17.249'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '12146'
+       Rule id: '12145'
        Level: '1'
        Description: 'zone transfer denied'
 **Alert to be generated.
@@ -211,9 +196,9 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '12147'
-       Level: '1'
-       Description: 'Configuration mistake'
+       Rule id: '12125'
+       Level: '3'
+       Description: 'BIND Configuration error.'
 **Alert to be generated.
 
 
@@ -343,11 +328,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '12132'
-       Level: '1'
+       Level: '0'
        Description: 'Master is not authoritative for zone.'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.
@@ -550,11 +532,6 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'named'
 
-**Phase 3: Completed filtering (rules).
-       Rule id: '12143'
-       Level: '0'
-       Description: 'named is now running.'
-
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 29 10:34:44 ix named[22107]: automatic empty zone: A.E.F.IP6.ARPA'
@@ -566,12 +543,9 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '12144'
-       Level: '1'
+       Rule id: '12143'
+       Level: '0'
        Description: 'named has created an automatic empty zone.'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.
@@ -584,8 +558,8 @@ ossec-testrule: Type one log per line.
        decoder: 'named'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '12145'
-       Level: '3'
+       Rule id: '12144'
+       Level: '9'
        Description: 'Server does not have enough memory to reload the configuration.'
 **Alert to be generated.
 

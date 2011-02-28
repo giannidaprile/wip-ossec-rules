@@ -9,7 +9,7 @@ ossec-testrule: Type one log per line.
        log: 'dbus_bus_get_private(): Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory'
 
 **Phase 2: Completed decoding.
-       decoder: 'avahi'
+       No decoder matched.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '1002'
@@ -27,7 +27,7 @@ ossec-testrule: Type one log per line.
        log: 'WARNING: Failed to contact D-Bus daemon.'
 
 **Phase 2: Completed decoding.
-       decoder: 'avahi'
+       No decoder matched.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '1002'
@@ -45,7 +45,7 @@ ossec-testrule: Type one log per line.
        log: 'IP_DROP_MEMBERSHIP failed: Can't assign requested address'
 
 **Phase 2: Completed decoding.
-       decoder: 'avahi'
+       No decoder matched.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '1002'
@@ -63,7 +63,7 @@ ossec-testrule: Type one log per line.
        log: 'Failed to parse browsing line: <28>Sep  6 01:56:16 avahi-daemon[13441]: Invalid query packet.ansfer on gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\^L\^R\^\\^A'
 
 **Phase 2: Completed decoding.
-       decoder: 'avahi-dnsconfd'
+       No decoder matched.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '1002'
@@ -76,7 +76,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Sep  6 01:56:16 avahi-daemon[13441]: Invalid query packet.ansfer on gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\^L\^R\^\\^A'
-       hostname: 'ix'
+       hostname: 'arrakis'
        program_name: '(null)'
        log: 'avahi-daemon[13441]: Invalid query packet.ansfer on gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\^L\^R\^\\^A'
 

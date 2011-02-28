@@ -66,8 +66,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'pam'
-       srcuser: 'dcid'
-       dstuser: 'osaudit'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '5503'
@@ -86,8 +84,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'pam'
-       srcuser: 'dcid'
-       dstuser: 'root'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '5503'

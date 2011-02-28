@@ -14,11 +14,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '5722'
-       Level: '1'
+       Level: '0'
        Description: 'ssh connection closed.'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.
@@ -65,11 +62,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '5721'
-       Level: '1'
+       Level: '0'
        Description: 'System disconnected from sshd.'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.
@@ -83,11 +77,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '5725'
-       Level: '1'
+       Level: '0'
        Description: 'Host ungracefully disconnected.'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.
@@ -133,13 +124,11 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'sshd'
-       dstuser: 'ddp'
-       srcip: '172.16.51.1'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '5726'
        Level: '5'
-       Description: 'Unknown PAM module, PAM misconfiguration'
+       Description: 'Unknown PAM module, PAM misconfiguration.'
 **Alert to be generated.
 
 
@@ -206,7 +195,7 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '5730'
        Level: '4'
-       Description: 'sshd is not accepting connections.'
+       Description: 'SSHD is not accepting connections.'
 **Alert to be generated.
 
 
@@ -536,7 +525,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '5731'
-       Level: '1'
+       Level: '6'
        Description: 'SSH Scanning.'
 **Alert to be generated.
 
@@ -570,7 +559,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'sshd'
-       srcip: '119.147.1.1'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '2503'
@@ -593,11 +581,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '5721'
-       Level: '1'
+       Level: '0'
        Description: 'System disconnected from sshd.'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.
@@ -612,11 +597,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '5733'
-       Level: '2'
+       Level: '0'
        Description: 'User entered incorrect password.'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.
@@ -630,12 +612,9 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '5734'
-       Level: '1'
+       Level: '0'
        Description: 'sshd could not load one or more host keys.'
        Info - Text: 'This may be related to an upgrade to OpenSSH.'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.
@@ -649,11 +628,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '5735'
-       Level: '2'
+       Level: '0'
        Description: 'Failed write due to one host disappearing.'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.
@@ -682,7 +658,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '5737'
-       Level: '3'
+       Level: '5'
        Description: 'sshd cannot bind to configured address.'
 **Alert to be generated.
 
