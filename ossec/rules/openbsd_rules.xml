@@ -159,6 +159,12 @@
     <description>System was rebooted.</description>
   </rule>
 
+  <rule id="51525" level="0">
+    <decoded_as>ftp-proxy</decoded_as>
+    <match>proxy cannot connect to server</match>
+    <description>ftp-proxy cannot connect to a server.</description>
+  </rule>
+
 
 </group> <!-- SYSLOG,LOCAL -->
 

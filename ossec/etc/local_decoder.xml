@@ -130,3 +130,13 @@ Dec 28 06:54:36 1.1.1.1 MSWinEventLog;1;Security;23875316;Tue: Dec 28 06:54:34 2
   <program_name>^vmkernel</program_name>
 </decoder>
 
+<decoder name="ftp-proxy">
+  <program_name>^ftp-proxy</program_name>
+</decoder>
+
+<decoder name="ftp-prox-refused">
+  <parent>ftp-proxy</parent>
+  <prematch> Connection refused$</prematch>
+  <regex offset="after_parent"> to server (\S+):</regex>
+  <order>dstip</order>
+</decoder>
