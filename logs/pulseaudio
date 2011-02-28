@@ -1,0 +1,6 @@
+Oct 22 11:33:40 fedora11 pulseaudio[3424]: main.c: Daemon startup failed.
+Nov  3 05:42:39 giediprime pulseaudio[1951]: bluetooth-util.c: Error from ListAdapters reply: org.freedesktop.DBus.Error.ServiceUnknown
+Nov  3 17:34:09 giediprime pulseaudio[2101]: module-hal-detect.c: D-Bus error while parsing HAL data: org.freedesktop.Hal.NoSuchDevice: No device with id /org/freedesktop/Hal/devices/platform_parport_pc_632
+Nov 14 09:51:17 giediprime pulseaudio[1916]: bluetooth-util.c: Error from ListAdapters reply: org.freedesktop.DBus.Error.AccessDenied
+Dec 27 04:31:25 giediprime pulseaudio[2042]: protocol-native.c: Failed to push data into queue
+Jan 20 03:29:25 giediprime pulseaudio[2068]: core.c: Assertion 'pa_idxset_isempty(c->clients)' failed at pulsecore/core.c:176, function core_free(). Aborting.

@@ -1,0 +1,17 @@
+Oct 21 02:09:46 ix cvsyncd[19692]: /var/run/cvsyncd.pid: Permission denied
+Oct 26 22:31:17 ix cvsyncd[3699]: Socket Error: recv: 2 residue 2
+Nov 24 03:13:23 ix cvsyncd[551]: configuration: failed to reload
+Nov 24 03:17:11 ix cvsyncd[15862]: [192.168.17.33] (9b5c193f) DirCmp: RCS Error
+Nov 24 03:17:11 ix cvsyncd[15862]: Receiver Error: recv
+Nov 24 03:17:11 ix cvsyncd[15862]: [192.168.17.33] (9b5c193f) FileCmp: RCS Error
+Nov 24 03:17:11 ix cvsyncd[15862]: Mux(RECV) Error: not running: 0
+Nov 24 03:17:11 ix cvsyncd[15862]: [192.168.17.33] (9b5c193f) FileCmp(RCS): /data/cvs/sysconf/buffalo1/buffalo1.nvram,v: UPDATE Error
+Nov 24 03:17:11 ix cvsyncd[15862]: Mux(SEND) Error: not running: 1
+Aug 16 23:35:02 ix cvsyncd[25508]: [192.168.1.8] (734d2640) Connected (status=0)-->
+Aug 16 23:35:08 ix cvsyncd[25508]: [192.168.1.8] (734d2640) Connection closed
+Aug  6 01:30:11 ix cvsyncd[13850]: [192.168.17.17] (b8f9513b) Collection sysconf/rcs (time=6s)
+Aug  6 01:30:11 ix cvsyncd[13850]: [192.168.17.17] (b8f9513b) Finished successfully
+Aug  5 12:28:40 ix cvsyncd[9129]: Stop cvsync server
+Aug  5 12:28:52 ix cvsyncd[13201]: Listen on 0.0.0.0 port 7777
+Aug  5 12:28:52 ix cvsyncd[13201]: Listen on :: port 7777
+Aug  5 12:28:52 ix cvsyncd[13201]: Starting cvsync server

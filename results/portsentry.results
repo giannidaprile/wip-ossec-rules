@@ -1,0 +1,252 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  1 19:28:58 testserver portsentry[1620]: adminalert: Going into listen mode on UDP port: 31337'
+       hostname: 'testserver'
+       program_name: 'portsentry'
+       log: 'adminalert: Going into listen mode on UDP port: 31337'
+
+**Phase 2: Completed decoding.
+       decoder: 'portsentry'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  1 19:28:58 testserver portsentry[1620]: adminalert: Going into listen mode on UDP port: 54321'
+       hostname: 'testserver'
+       program_name: 'portsentry'
+       log: 'adminalert: Going into listen mode on UDP port: 54321'
+
+**Phase 2: Completed decoding.
+       decoder: 'portsentry'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  1 19:28:58 testserver portsentry[1620]: adminalert: PortSentry is now active and listening.'
+       hostname: 'testserver'
+       program_name: 'portsentry'
+       log: 'adminalert: PortSentry is now active and listening.'
+
+**Phase 2: Completed decoding.
+       decoder: 'portsentry'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 1'
+       hostname: 'testserver'
+       program_name: 'portsentry'
+       log: 'attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 1'
+
+**Phase 2: Completed decoding.
+       decoder: 'portsentry'
+       srcip: '192.168.45.1'
+       proto: 'TCP'
+       dstport: '1'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Ignoring TCP response per configuration file setting.'
+       hostname: 'testserver'
+       program_name: 'portsentry'
+       log: 'attackalert: Ignoring TCP response per configuration file setting.'
+
+**Phase 2: Completed decoding.
+       decoder: 'portsentry'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 79'
+       hostname: 'testserver'
+       program_name: 'portsentry'
+       log: 'attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 79'
+
+**Phase 2: Completed decoding.
+       decoder: 'portsentry'
+       srcip: '192.168.45.1'
+       proto: 'TCP'
+       dstport: '79'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Host: 192.168.45.1 is already blocked. Ignoring'
+       hostname: 'testserver'
+       program_name: 'portsentry'
+       log: 'attackalert: Host: 192.168.45.1 is already blocked. Ignoring'
+
+**Phase 2: Completed decoding.
+       decoder: 'portsentry'
+       srcip: '192.168.45.1'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 111'
+       hostname: 'testserver'
+       program_name: 'portsentry'
+       log: 'attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 111'
+
+**Phase 2: Completed decoding.
+       decoder: 'portsentry'
+       srcip: '192.168.45.1'
+       proto: 'TCP'
+       dstport: '111'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Host: 192.168.45.1 is already blocked. Ignoring'
+       hostname: 'testserver'
+       program_name: 'portsentry'
+       log: 'attackalert: Host: 192.168.45.1 is already blocked. Ignoring'
+
+**Phase 2: Completed decoding.
+       decoder: 'portsentry'
+       srcip: '192.168.45.1'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 119'
+       hostname: 'testserver'
+       program_name: 'portsentry'
+       log: 'attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 119'
+
+**Phase 2: Completed decoding.
+       decoder: 'portsentry'
+       srcip: '192.168.45.1'
+       proto: 'TCP'
+       dstport: '119'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Host: 192.168.45.1 is already blocked. Ignoring'
+       hostname: 'testserver'
+       program_name: 'portsentry'
+       log: 'attackalert: Host: 192.168.45.1 is already blocked. Ignoring'
+
+**Phase 2: Completed decoding.
+       decoder: 'portsentry'
+       srcip: '192.168.45.1'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 143'
+       hostname: 'testserver'
+       program_name: 'portsentry'
+       log: 'attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 143'
+
+**Phase 2: Completed decoding.
+       decoder: 'portsentry'
+       srcip: '192.168.45.1'
+       proto: 'TCP'
+       dstport: '143'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Host: 192.168.45.1 is already blocked. Ignoring'
+       hostname: 'testserver'
+       program_name: 'portsentry'
+       log: 'attackalert: Host: 192.168.45.1 is already blocked. Ignoring'
+
+**Phase 2: Completed decoding.
+       decoder: 'portsentry'
+       srcip: '192.168.45.1'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 1080'
+       hostname: 'testserver'
+       program_name: 'portsentry'
+       log: 'attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 1080'
+
+**Phase 2: Completed decoding.
+       decoder: 'portsentry'
+       srcip: '192.168.45.1'
+       proto: 'TCP'
+       dstport: '1080'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

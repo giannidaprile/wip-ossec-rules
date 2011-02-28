@@ -1,0 +1,53 @@
+LICENSE contains the gpl v2 as distributed with the OSSEC Project.
+gpl.txt contains the gpl v3 (from http://www.gnu.org/licenses/gpl.txt) since it is referenced in some rules.
+
+Directory structure:
+newlogs - This file contains new logs that have not been sorted yet.
+rules/local_*_rules.xml - These files contain new rules that have not been submitted to the OSSEC project yet.
+etc/local_decoder.xml - This file contains new decoders that have not been submitted to the OSSEC project yet.
+logs/* - These files contain collected logs for various programs.
+ossec/rules/* - These files (except local_rules.xml) are from OSSEC snapshots, and are being used for testing.
+ossec/rules/local_rules.xml - This file contains the new rules for testing.
+ossec/etc/* - These files (except local_decoder.xml) are from the OSSEC snapshots, and are being used for testing.
+ossec/etc/local_decoder.xml - This file contains the new decoders for testing.
+
+Regress testing:
+Regress testing can be done on individual log sets. The ossec directory should contain the ossec rulesets, as 
+well as a populated local_rules.xml. The decoders are also present, and should be up to date. Inside of the 
+ossec directory the following command can be used to test a log set and save the output to a file:
+  cat ../logs/logfile | /var/ossec/bin/ossec-logtest -D . -c etc/ossec.conf 2>&1 | grep -v \
+    'ossec-testrule: INFO: Started' > ../results/logfile.results
+The "logfile.results" can be compared to previous runs with the following command (as long as the command 
+has been run previously for that logset):
+  hg diff results/logfile.results
+Regressions should be easy to spot if there were no changes to the rule set or decoders being tested. For 
+new rulesets/decoders, going through the file by hand may be the best option right now.
+
+Rule IDs:
+210000+: new avahi related rules
+220000+: (Open?)bsd kernel
+230000+: python
+240000+: cups
+250000+: cvsyncd
+260000+: dbus
+270000+: ddclient
+280000+: dropbear
+290000+: flowd
+300000+: identd
+320000+: smtpd
+330000+: smartd
+340000+: isakmpd
+350000+: irqbalance
+360000+: Linux kernel
+380000+: pam
+390000+: sensorsd
+400000+: ntpd
+410000+: snmpd
+420000+: mountd
+430000+: pulseaudio
+450000+: os x
+460000+: clamav
+470000+: syslog/newsyslog
+480000+: argus/related tools
+490000+: bro-ids
+490100+: vmware esxi

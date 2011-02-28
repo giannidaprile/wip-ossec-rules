@@ -1,0 +1,2 @@
+Aug 16 10:59:57 snortsensor snort[11557]: database: mysql_error: Can't connect to MySQL server on '192.168.1.90' (110)
+Aug 16 10:59:57 snortsensor snort[11557]: database: Problem inserting a new signature 'TEST RULE': INSERT INTO signature (sig_name,sig_rev,sig_sid,sig_gid) VALUES ('TEST RULE',1,2010000001,1)

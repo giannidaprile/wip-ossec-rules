@@ -1,0 +1,80 @@
+<!-- @(#) $Id: decoder.xml,v 1.166 2010/06/15 12:52:01 dcid Exp $
+  -  OSSEC log decoder.
+  -  Author: Daniel B. Cid
+  -  License: http://www.ossec.net/en/licensing.html
+  -->
+
+<!-- ossec decoder.
+  - Deals with ossec internal messages.
+  -->
+<decoder name="ossec">
+  <prematch>^ossec: </prematch>
+  <type>ossec</type>
+</decoder>
+
+<decoder name="ossec-agent">
+  <parent>ossec</parent>
+  <type>ossec</type>
+  <prematch offset="after_parent">^Agent started:</prematch>
+  <regex offset="after_prematch">^ '(\S+)'</regex>
+  <order>extra_data</order>
+  <fts>name, location, extra_data</fts>
+</decoder>
+
+<decoder name="ossec-alert">
+  <program_name>^ossec$</program_name>
+  <plugin_decoder>OSSECAlert_Decoder</plugin_decoder>
+</decoder>
+
+<!--2010/08/02 14:17:39 ossec-dbd(1230): ERROR: Invalid element in the configuration: 'list'.-->
+<decoder name="ossec-dbd">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-dbd</prematch>
+</decoder>
+
+<!--'2010/08/30 11:38:12 ossec-remoted: ERROR: Unable to create merged file: '/etc/shared/merged.mg'.-->
+<decoder name="ossec-remoted">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-remoted</prematch>
+</decoder>
+
+<!--2010/08/30 11:45:16 ossec-rootcheck(1251): ERROR: Invalid rk configuration name: '^M'.-->
+<decoder name="ossec-rootcheck">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-rootcheck</prematch>
+</decoder>
+
+<!--2010/08/31 10:05:08 ossec-reportd: ERROR: Invalid related entry 'Rule'.-->
+<decoder name="ossec-reportd">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-reportd</prematch>
+</decoder>
+
+<!--2010/08/31 14:41:29 ossec-config(1226): ERROR: Error reading XML file 'etc/ossec.conf': XMLERR: File 'etc/ossec.conf' not found. (line 0).-->
+<decoder name="ossec-config">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-config</prematch>
+</decoder>
+
+<!--2010/09/01 04:41:11 ossec-logcollector: Bad formated nmap grepable file (port).-->
+<decoder name="ossec-logcollector">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-logcollector</prematch>
+</decoder>
+
+<!--2010/09/01 15:09:42 ossec-syscheckd(1124): ERROR: Unable to rename file: '/etc/malloc.conf'.-->
+<decoder name="ossec-syscheckd">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-syscheckd</prematch>
+</decoder>
+
+<!--2010/09/01 13:52:55 ossec-testrule(1202): ERROR: Configuration error at '/etc/local_decoder.xml'. Exiting.-->
+<decoder name="ossec-testrule">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-testrule</prematch>
+</decoder>
+
+<!--2010/09/01 14:15:49 ossec-analysisd(2107): ERROR: Decoder configuration error: 'dennis-test'.2010/09/01 14:15:49 ossec-analysisd(2107): ERROR: Decoder configuration
+ error: 'dennis-test'.-->
+<decoder name="ossec-analysisd">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-analysisd</prematch>
+</decoder>
+
+<!--2010/09/13 19:48:32 decode-xml: Wrong field 'hostname' in the order of decoder 'attack data'-->
+<decoder name="decode-xml">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ decode-xml</prematch>
+</decoder>
+
+

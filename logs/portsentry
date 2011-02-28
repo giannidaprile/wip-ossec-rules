@@ -1,0 +1,14 @@
+Nov  1 19:28:58 testserver portsentry[1620]: adminalert: Going into listen mode on UDP port: 31337
+Nov  1 19:28:58 testserver portsentry[1620]: adminalert: Going into listen mode on UDP port: 54321
+Nov  1 19:28:58 testserver portsentry[1620]: adminalert: PortSentry is now active and listening.
+Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 1
+Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Ignoring TCP response per configuration file setting.
+Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 79
+Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Host: 192.168.45.1 is already blocked. Ignoring
+Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 111
+Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Host: 192.168.45.1 is already blocked. Ignoring
+Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 119
+Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Host: 192.168.45.1 is already blocked. Ignoring
+Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 143
+Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Host: 192.168.45.1 is already blocked. Ignoring
+Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 1080

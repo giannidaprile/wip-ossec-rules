@@ -1,0 +1,48 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 10 13:22:52 tiny isakmpd[6988]: dropped message from 192.168.1.233 port 500 due to notification type INVALID_COOKIE'
+       hostname: 'tiny'
+       program_name: 'isakmpd'
+       log: 'dropped message from 192.168.1.233 port 500 due to notification type INVALID_COOKIE'
+
+**Phase 2: Completed decoding.
+       decoder: 'isakmpd'
+       srcip: '192.168.1.233'
+       srcport: '500'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  4 18:15:48 vpn-gw isakmpd[13559]: message_parse_payloads: invalid next payload type RESERVED_MIN in payload of type 10'
+       hostname: 'vpn-gw'
+       program_name: 'isakmpd'
+       log: 'message_parse_payloads: invalid next payload type RESERVED_MIN in payload of type 10'
+
+**Phase 2: Completed decoding.
+       decoder: 'isakmpd'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  4 18:15:48 vpn-gw isakmpd[13559]: dropped message from 192.168.1.1 port 500 due to notification type INVALID_PAYLOAD_TYPE'
+       hostname: 'vpn-gw'
+       program_name: 'isakmpd'
+       log: 'dropped message from 192.168.1.1 port 500 due to notification type INVALID_PAYLOAD_TYPE'
+
+**Phase 2: Completed decoding.
+       decoder: 'isakmpd'
+       srcip: '192.168.1.1'
+       srcport: '500'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov  4 18:15:59 alphen-vpn-gw isakmpd[28891]: transport_send_messages: giving up on exchange ISAKMP-peer-node-ldn, no response from peer 192.168.1.1:500'
+       hostname: 'alphen-vpn-gw'
+       program_name: 'isakmpd'
+       log: 'transport_send_messages: giving up on exchange ISAKMP-peer-node-ldn, no response from peer 192.168.1.1:500'
+
+**Phase 2: Completed decoding.
+       decoder: 'isakmpd'
+       srcip: '192.168.1.1'
+       srcport: '500'

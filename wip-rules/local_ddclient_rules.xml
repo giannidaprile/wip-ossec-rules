@@ -1,0 +1,52 @@
+  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  -->
+
+
+
+<!-- Modify it at your will. -->
+
+<group name="local,syslog,">
+
+  <rule id="270000" level="0" noalert="1">
+    <program_name>ddclient</program_name>
+  </rule>
+
+  <rule id="270010" level="0">
+    <if_sid>270000</if_sid>
+    <match>cannot connect to|Could not connect to</match>
+    <description>Could not connect to the server.</description>
+  </rule>
+
+  <rule id="270011" level="0">
+    <if_sid>270000</if_sid>
+    <match>Cannot create file</match>
+    <description>Cannot create pid file</description>
+  </rule>
+
+  <rule id="270012" level="0">
+    <if_sid>270000</if_sid>
+    <match>forcing update of</match>
+    <description>Forcing an update, since an update has not been necessary in a while.</description>
+  </rule>
+
+  <rule id="270013" level="0">
+    <if_sid>270000</if_sid>
+    <match>SUCCESS:  updating</match>
+    <description>ddclient successfully updated the IP address.</description>
+  </rule>
+  
+  <rule id="270014" level="0">
+    <if_sid>270000</if_sid>
+    <match>The hostname specified does not exist in the database</match>
+    <description>The hostname does not exist in the database.</description>
+  </rule>
+</group> <!-- SYSLOG,LOCAL -->
+
+
+<!-- EOF -->

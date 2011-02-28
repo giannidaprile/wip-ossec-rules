@@ -1,0 +1,132 @@
+<!-- This does not work quite the way I expect yet:
+<decoder name="bsd_hd">
+  <parent>bsd_kernel</parent>
+  <use_own_name>true</use_own_name>
+  <prematch offset="after_parent">^wd|^sd</prematch>
+  <regex>^(wd\d)|(sd\d)</regex>
+  <order>extra_data</order>
+</decoder>
+-->
+
+<decoder name="python">
+  <program_name>^python</program_name>
+</decoder>
+
+
+<!--XXX This is for some personal testing and will be removed.-->
+<!--Aug 25 13:20:35 ix bro: WTF domain: sacxtra.com other: 208.53.158.84-->
+<decoder name="bro-wtf">
+  <parent>bro-ids</parent>
+  <prematch offset="after_parent">^WTF domain</prematch>
+  <regex>WTF domain: (\S+) other: (\S+)$</regex>
+  <order>extra_data,srcip</order>
+</decoder>
+
+<!--This is for a personal bro-ids script that looks at the responses for dns lookups and compares the resulting IP to a list of known bad IPs-->
+<!--XXX Format is subject to change!-->
+<!--Aug 25 13:28:48 junction bro: no=DNS_Bad_Response na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.1.1 sp=42166/udp da=192.168.1.2 dp=53/udp p=53/udp msg=
+BadResponse\\ for\\ example.com\\ (192.168.2.1) tag=@ce-a7a-1-->
+<!--Aug 28 22:21:29 junction bro: no=DNS_Bad_Response na=NOTICE_ALARM_ALWAYS es=bro sa=192.168.17.17 sp=16254/udp da=208.67.220.220 dp=53/udp p=53/udp msg=BadResponse\\\\ for\\\\ torrent-finder.com\\\\ (208.101.51.57) tag=@11-68e9-3e-->
+<decoder name="bro-baddns">
+  <parent>bro-ids</parent>
+  <prematch>no=DNS_Bad_Response</prematch>
+  <regex>es=bro sa=(\S+) sp=(\d+)/(\S+) da=(\S+) dp=(\d+)/\S+ p=\d+/\S+ msg=BadResponse\S+ for\S+ (\S+)\\\S+ </regex>
+  <order>srcip,srcport,protocol,dstip,dstport,url</order>
+</decoder>
+
+
+<!--2010/08/02 14:17:39 ossec-dbd(1230): ERROR: Invalid element in the configuration: 'list'.-->
+<decoder name="ossec-dbd">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-dbd</prematch>
+</decoder>
+
+<!--'2010/08/30 11:38:12 ossec-remoted: ERROR: Unable to create merged file: '/etc/shared/merged.mg'.-->
+<decoder name="ossec-remoted">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-remoted</prematch>
+</decoder>
+
+<!--2010/08/30 11:45:16 ossec-rootcheck(1251): ERROR: Invalid rk configuration name: '^M'.-->
+<decoder name="ossec-rootcheck">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-rootcheck</prematch>
+</decoder>
+
+<!--2010/08/31 10:05:08 ossec-reportd: ERROR: Invalid related entry 'Rule'.-->
+<decoder name="ossec-reportd">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-reportd</prematch>
+</decoder>
+
+<!--2010/08/31 14:41:29 ossec-config(1226): ERROR: Error reading XML file 'etc/ossec.conf': XMLERR: File 'etc/ossec.conf' not found. (line 0).-->
+<decoder name="ossec-config">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-config</prematch>
+</decoder>
+
+<!--2010/09/01 04:41:11 ossec-logcollector: Bad formated nmap grepable file (port).-->
+<decoder name="ossec-logcollector">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-logcollector</prematch>
+</decoder>
+
+<!--2010/09/01 15:09:42 ossec-syscheckd(1124): ERROR: Unable to rename file: '/etc/malloc.conf'.-->
+<decoder name="ossec-syscheckd">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-syscheckd</prematch>
+</decoder>
+
+<!--2010/09/01 13:52:55 ossec-testrule(1202): ERROR: Configuration error at '/etc/local_decoder.xml'. Exiting.-->
+<decoder name="ossec-testrule">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-testrule</prematch>
+</decoder>
+
+<!--2010/09/01 14:15:49 ossec-analysisd(2107): ERROR: Decoder configuration error: 'dennis-test'.2010/09/01 14:15:49 ossec-analysisd(2107): ERROR: Decoder configuration error: 'dennis-test'.-->
+<decoder name="ossec-analysisd">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ ossec-analysisd</prematch>
+</decoder>
+
+<!--2010/09/13 19:48:32 decode-xml: Wrong field 'hostname' in the order of decoder 'attack data'-->
+<decoder name="decode-xml">
+  <prematch>\d+/\d+/\d+ \d+:\d+:\d+ decode-xml</prematch>
+</decoder>
+
+
+<!--
+"Vitor Correia" "PT" 89.155.91.201 - - [21/Oct/2010:01:48:13 +0100] "GET /collect/main/ HTTP/1.1" 200 2970 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.11) Gecko/20101012 Firefox/3.6.11"
+-->
+
+<decoder name="ssl-cert">
+  <prematch>^"\.+" "\S+" \S+ - - [\d+/\S+/\d\d\d\d:\d\d:\d\d:\d\d \S+] </prematch>
+  <regex>^"(\.+)" "(\S+)" (\S+) - - [\d+/\S+/\d\d\d\d:\d\d:\d\d:\d\d \p\d+] "(\S+) (\.+) HTTP/\d.\d" (\d+) \d+ "\.+" "(\.+)</regex>
+  <order>srcuser,id,srcip,action,url,status,extra_data</order>
+</decoder>
+
+<!--
+  <regex>^"(\.+)" "(\S+)" (\S+) - - [\d+/\S+/\d\d\d\d:\d\d:\d\d:\d\d \S+] "(\.+) HTTP/\d.\d" (\d+) \S+ "-" "(\.+)"$</regex>
+  <order>srcuser,action,srcip,url,status,extra_data</order>
+-->
+
+<!--
+20101109, 343218, 2010/11/09 22:19:31, 2010/11/09 22:19:30, global, 22, deviceidp1, 192.168.1.51, predefined, MS-RPC:SAMR-ACCESS-REQUEST, (NULL), eth3, 192.168.1.78, 1108, 0.0.0.0, 0, (NULL), (NULL), 192.168.1.81, 445, 0.0.0.0, 0, tcp, global, 22, Domain Post Rules, idp, 4, accepted, device_warning_log, no, 'interface=eth3', (NULL), (NULL), (NULL), 0, 0, 0, 0, 0, 0, 0, 0, no, 31, Not Set, idp
+-->
+<decoder name="juniper-idp">
+  <prematch>^\d+, \d+, \d\d\d\d/\d\d/\d\d \d\d:\d\d:\d\d, \d\d\d\d/\d\d/\d\d \d\d:\d\d:\d\d, global</prematch>
+</decoder>
+
+<!--
+Dec 28 06:54:36 1.1.1.1 MSWinEventLog;1;Security;23875316;Tue: Dec 28 06:54:34 2010;680;Security;DOMAINUSER;User;Success Audit;ADSERVER;Account Logon;;Logon attempt by: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0    Logon account: DOMAINUSER Source Workstation: DOMAINSTATION    Error Code:        0x0    ; 23866818 
+-->
+
+<decoder name="windows-snare2">
+  <type>windows</type>
+  <prematch>MSWinEventLog;\d;\.+;\d+;\w\w\S+ \w\w\w \d\d \d\d</prematch>
+  <regex offset="after_prematch">^:\d\d:\d\d \d\d\d\d\t(\d+)\t(\.+)</regex>
+  <regex>\t(\.+)\t\.+\t(\.+)\t(\.+)\t</regex>
+  <order>id, extra_data, user, status, system_name</order>
+  <fts>name, id, location, user, system_name</fts>
+</decoder>
+
+<!-- VMWare kernel messages -->
+<!--
+  - kaitain vmkernel: 45:06:44:13.595 cpu1:4842)MigrateNet: vm 4842: 1378: Accepted connection from <192.168.17.14>
+-->
+
+<decoder name="vmkernel">
+  <program_name>^vmkernel</program_name>
+</decoder>
+

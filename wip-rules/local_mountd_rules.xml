@@ -1,0 +1,54 @@
+  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  -->
+
+
+
+<!-- Modify it at your will. -->
+
+<group name="local,syslog,">
+
+  <rule id="420000" level="0" noalert="1">
+    <decoded_as>mountd</decoded_as>
+    <description>Grouping for mountd rules.</description>
+  </rule>
+
+  <!--Jun 10 12:15:18 gorilla mountd[29763]: Can't delete exports for /tmp/xxxy: Invalid argument-->
+  <rule id="420010" level="1">
+    <if_sid>420000</if_sid>
+    <match>Can't delete exports for</match>
+    <match>Invalid argument</match>
+    <description>Cannot delete an export.</description>
+  </rule>
+
+  <!--Jun 26 21:09:01 gorilla mountd[3773]: Bad exports list line /data01-->
+  <rule id="420011" level="3">
+    <if_sid>420000</if_sid>
+    <match>Bad exports list line</match>
+    <description>Bad exports configuration.</description>
+  </rule>
+
+  <!--Apr 11 20:01:02 ix mountd[11618]: Refused mount RPC from host 192.168.17.10 port 45659-->
+  <rule id="420012" level="4">
+    <if_sid>420000</if_sid>
+    <match>Refused mount RPC from host</match>
+    <description>A mount RPC was refused.</description>
+  </rule>
+
+  <!--Mar 11 15:30:44 ix mountd[17006]: Bad opt mast-->
+  <rule id="420013" level="2">
+    <if_sid>420000</if_sid>
+    <match>Bad opt</match>
+    <description>Bad mountd option.</description>
+  </rule>
+
+   
+</group> <!-- SYSLOG,LOCAL -->
+
+
+<!-- EOF -->

@@ -1,0 +1,60 @@
+Jul 15 18:32:43 server fsmpm[16951]: PortMapper: Deleting stale mapping for id 192.168.1.2
+Jul 15 18:33:10 server fsmpm[16951]: NSS: Name Server '192.168.1.2' (192.168.1.2) heartbeat lost, unable to send message.
+Jul 15 18:33:10 server fsmpm[16951]: NSS: Name Server '192.168.1.2' (192.168.1.2) port is 55040, revision is 0x0102.
+Jul 15 18:33:10 server fsmpm[16951]: PortMapper: Added mapping from id 192.168.1.2 to addr 192.168.1.2
+
+Sep 17 14:44:51 wks5184 Safari[402]: Periodic CFURLCache Insert stats (iters: 520) - Tx time:0.434590, # of Inserts: 5, # of bytes written: 185855, Did shrink: NO, Size of cache-file: 182607872, Num of Failures: 0
+
+Oct 15 15:34:27 carpsystem /bsd: carp1: state transition: MASTER -> BACKUP
+Oct 15 15:34:27 carpsystem /bsd: carp16: state transition: MASTER -> BACKUP
+Oct 15 15:34:27 carpsystem /bsd: nd6_na_input: duplicate IP6 address fe80:0424::03e0: 5e6f:fe00:0110
+Oct 15 15:34:27 carpsystem /bsd: nd6_na_input: duplicate IP6 address 2001:0560:73d7:0002:0012::00ef
+
+Oct 26 01:35:27 ix smtpd[4667]: (none): from=<@>, relay=ix.example.com [192.168.17.9], stat=LocalError (500 5.0.0 Pipelining unsupported)
+Oct 26 01:35:27 ix smtpd[4667]: client 192.168.17.9 write error: Broken pipe
+
+Nov 15 12:18:44 corrin mountd[7163]: refused mount request from 192.168.17.9 for /mnt (/mnt): illegal port 13329
+Nov 16 05:52:25 hagal mountd[541]: mount request denied from 192.168.17.7 for /home/ddp/ISO
+Nov 16 06:32:42 hagal mountd[542]: bad exports list line /exports -ro -alldirs maproot=ddp -network
+Nov 16 06:32:42 hagal mountd[542]: bad host maproot=ddp, skipping
+
+Nov 15 18:15:14 kaitain nssquery: User lookup failed for uid '1000'
+
+Nov 16 22:57:30 gamont ntpdate[6752]: name server cannot be used, reason: Temporary failure in name resolution
+
+Nov 17 10:51:26 junction named[5358]: client 192.168.17.14#58909: update forwarding 'example.com/IN' denied
+
+Nov 18 09:43:55 gamont slapd[3375]: daemon: bind(7) failed errno=98 (Address already in use)
+Nov 18 09:50:37 gamont slapd[3595]: /etc/ldap/slapd.conf: line 1: <database> failed init (bdb)
+
+WinEvtLog: Application: ERROR(0): AuthLite: (no user): no domain: GIEDIPRIME: ,000 9890a406-efc7-479a-a698-96644243d781 [8] ERROR Collective.AuthLite.Audit.OtpValidation - Invalid OTP string.
+
+Nov 22 07:24:15 hagal nfsd[550]: accept failed: Software caused connection abort
+
+Dec  1 02:50:29 chusuk argus[1272]: 01 Dec 10 02:50:29.986934 ArgusSetChroot: failed to chdir to "/data/argus": No such file or directory
+
+[Thu Dec  2 11:03:48 2010][3473.1346] user ddp : Not launching rpc_portmap_port32771.nasl against naraj.example.com because the key rpc/portmap/different_port is missing (this is not an error)
+[Thu Dec  2 11:03:48 2010][3473.1346] user ddp : Not launching nis_get_passwd_map.nasl against naraj.example.com because the key RPC/NIS/domain is missing (this is not an error)
+
+
+Dec  6 20:21:16 corrin collectd[9933]: read-function of plugin `iptables' failed. Will suspend it for 20 seconds.
+Dec  6 20:21:17 corrin collectd[9933]: read-function of plugin `ntpd' failed. Will suspend it for 20 seconds.
+Dec  6 20:21:36 corrin collectd[9933]: read-function of plugin `iptables' failed. Will suspend it for 40 seconds.
+Dec  6 20:21:37 corrin collectd[9933]: read-function of plugin `ntpd' failed. Will suspend it for 40 seconds.
+
+
+Dec 13 04:07:03 corrin freshclam[1097]: Can't get information about db.us.clamav.net: Temporary failure in name resolution
+
+Dec 14 09:51:33 corrin kernel: udevd invoked oom-killer: gfp_mask=0x201d2, order=0, oomkilladj=-17
+Dec 14 09:52:22 corrin kernel: postmaster invoked oom-killer: gfp_mask=0x201d2, order=0, oomkilladj=0
+Dec 14 09:53:31 corrin kernel: java invoked oom-killer: gfp_mask=0x201d2, order=0, oomkilladj=0
+
+Dec 24 03:01:51 epia kernel: hammer: debug: changed on reblocker uncache
+Dec 24 03:06:09 epia kernel: HAMMER(ROOT): Critical error inode=4357331932 error=5 while syncing inode
+Dec 24 03:06:09 epia kernel: HAMMER(ROOT): Forcing read-only mode
+
+Dec 27 10:30:01 bax inetd[28318]: pop3/tcp server failing (looping), service terminated
+
+Jan 18 19:56:11 buffalo2 dropbear[13611]: exit before auth: error reading: Connection reset by peer
+
+Feb  7 22:31:59 richese /bsd: urtwn0: failed loadfirmware of file urtwn-rtl8192cfwT (error 2)

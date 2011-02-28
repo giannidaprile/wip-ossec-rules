@@ -1,0 +1,56 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 14 14:38:28 fedora10 setroubleshoot: [avc.ERROR] exception OSError: [Errno 104] Connection reset by peer#012Traceback (most recent call last):#012  File "/usr/lib/python2.5/site-packages/setroubleshoot/avc_audit.py", line 335, in run#012    new_data = o'
+       hostname: 'fedora10'
+       program_name: 'setroubleshoot'
+       log: '[avc.ERROR] exception OSError: [Errno 104] Connection reset by peer#012Traceback (most recent call last):#012  File "/usr/lib/python2.5/site-packages/setroubleshoot/avc_audit.py", line 335, in run#012    new_data = o'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 14 14:38:28 fedora10 setroubleshoot: [avc.ERROR] exception'
+       hostname: 'fedora10'
+       program_name: 'setroubleshoot'
+       log: '[avc.ERROR] exception'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Dec 14 17:29:57 giediprime setroubleshoot: [rpc.ERROR] could not send data on socket ({unix}/var/run/setroubleshoot/setroubleshoot_server socket=0x954b614): Broken pipe'
+       hostname: 'giediprime'
+       program_name: 'setroubleshoot'
+       log: '[rpc.ERROR] could not send data on socket ({unix}/var/run/setroubleshoot/setroubleshoot_server socket=0x954b614): Broken pipe'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

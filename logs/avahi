@@ -1,0 +1,5 @@
+Jul 08 00:47:19 gorilla avahi-daemon[32088]: dbus_bus_get_private(): Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+Jul 08 00:47:19 gorilla avahi-daemon[32088]: WARNING: Failed to contact D-Bus daemon.
+Jul 08 00:59:06 gorilla avahi-daemon[22180]: IP_DROP_MEMBERSHIP failed: Can't assign requested address
+Sep 06 01:56:16 gorilla avahi-dnsconfd[30635]: Failed to parse browsing line: <28>Sep  6 01:56:16 avahi-daemon[13441]: Invalid query packet.ansfer on gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\^L\^R\^\\^A
+Sep 06 01:56:16 avahi-daemon[13441]: Invalid query packet.ansfer on gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\^L\^R\^\\^A

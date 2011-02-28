@@ -1,0 +1,209 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'WinEvtLog: Application: ERROR(1002): Application Hang: (no user): no domain: GIEDIPRIME: Hanging application vlc.exe, version 1.0.5.0, hang module hungapp, version 0.0.0.0, hang address 0x00000000.'
+       hostname: 'ix'
+       program_name: '(null)'
+       log: 'WinEvtLog: Application: ERROR(1002): Application Hang: (no user): no domain: GIEDIPRIME: Hanging application vlc.exe, version 1.0.5.0, hang module hungapp, version 0.0.0.0, hang address 0x00000000.'
+
+**Phase 2: Completed decoding.
+       decoder: 'windows'
+       status: 'ERROR'
+       id: '1002'
+       extra_data: 'Application Hang'
+       dstuser: '(no user)'
+       system_name: 'GIEDIPRIME'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '18103'
+       Level: '5'
+       Description: 'Windows error event.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'WinEvtLog: Application: ERROR(1002): Application Hang: (no user): no domain: GIEDIPRIME: Hanging application chrome.exe, version 0.0.0.0, hang module hungapp, version 0.0.0.0, hang address 0x00000000.'
+       hostname: 'ix'
+       program_name: '(null)'
+       log: 'WinEvtLog: Application: ERROR(1002): Application Hang: (no user): no domain: GIEDIPRIME: Hanging application chrome.exe, version 0.0.0.0, hang module hungapp, version 0.0.0.0, hang address 0x00000000.'
+
+**Phase 2: Completed decoding.
+       decoder: 'windows'
+       status: 'ERROR'
+       id: '1002'
+       extra_data: 'Application Hang'
+       dstuser: '(no user)'
+       system_name: 'GIEDIPRIME'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '18103'
+       Level: '5'
+       Description: 'Windows error event.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'WinEvtLog: System: ERROR(17): W32Time: (no user): no domain: GIEDIPRIME: Time Provider NtpClient: An error occurred during DNS lookup of the manually  configured peer 'time.windows.com,0x1'. NtpClient will try the DNS lookup again in 15  minutes.  The error was:  A socket operation was attempted to an unreachable host. (0x80072751)'
+       hostname: 'ix'
+       program_name: '(null)'
+       log: 'WinEvtLog: System: ERROR(17): W32Time: (no user): no domain: GIEDIPRIME: Time Provider NtpClient: An error occurred during DNS lookup of the manually  configured peer 'time.windows.com,0x1'. NtpClient will try the DNS lookup again in 15  minutes.  The error was:  A socket operation was attempted to an unreachable host. (0x80072751)'
+
+**Phase 2: Completed decoding.
+       decoder: 'windows'
+       status: 'ERROR'
+       id: '17'
+       extra_data: 'W32Time'
+       dstuser: '(no user)'
+       system_name: 'GIEDIPRIME'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '18103'
+       Level: '5'
+       Description: 'Windows error event.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'WinEvtLog: System: ERROR(29): W32Time: (no user): no domain: GIEDIPRIME: The time provider NtpClient is configured to acquire time from one or more  time sources, however none of the sources are currently accessible.   No attempt to contact a source will be made for 14 minutes.  NtpClient has no source of accurate time.'
+       hostname: 'ix'
+       program_name: '(null)'
+       log: 'WinEvtLog: System: ERROR(29): W32Time: (no user): no domain: GIEDIPRIME: The time provider NtpClient is configured to acquire time from one or more  time sources, however none of the sources are currently accessible.   No attempt to contact a source will be made for 14 minutes.  NtpClient has no source of accurate time.'
+
+**Phase 2: Completed decoding.
+       decoder: 'windows'
+       status: 'ERROR'
+       id: '29'
+       extra_data: 'W32Time'
+       dstuser: '(no user)'
+       system_name: 'GIEDIPRIME'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '18103'
+       Level: '5'
+       Description: 'Windows error event.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'WinEvtLog: System: ERROR(14103): PSched: (no user): no domain: GIEDIPRIME: QoS [Adapter {4A95485A-6F2D-476D-98B6-1B42D36B25F6}]:  The netcard driver failed the query for OID_GEN_LINK_SPEED.'
+       hostname: 'ix'
+       program_name: '(null)'
+       log: 'WinEvtLog: System: ERROR(14103): PSched: (no user): no domain: GIEDIPRIME: QoS [Adapter {4A95485A-6F2D-476D-98B6-1B42D36B25F6}]:  The netcard driver failed the query for OID_GEN_LINK_SPEED.'
+
+**Phase 2: Completed decoding.
+       decoder: 'windows'
+       status: 'ERROR'
+       id: '14103'
+       extra_data: 'PSched'
+       dstuser: '(no user)'
+       system_name: 'GIEDIPRIME'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '18103'
+       Level: '5'
+       Description: 'Windows error event.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'WinEvtLog: System: ERROR(17): W32Time: (no user): no domain: GIEDIPRIME: Time Provider NtpClient: An error occurred during DNS lookup of the manually  configured peer 'time.windows.com,0x1'. NtpClient will try the DNS lookup again in 15  minutes.  The error was:  A socket operation was attempted to an unreachable host. (0x80072751)'
+       hostname: 'ix'
+       program_name: '(null)'
+       log: 'WinEvtLog: System: ERROR(17): W32Time: (no user): no domain: GIEDIPRIME: Time Provider NtpClient: An error occurred during DNS lookup of the manually  configured peer 'time.windows.com,0x1'. NtpClient will try the DNS lookup again in 15  minutes.  The error was:  A socket operation was attempted to an unreachable host. (0x80072751)'
+
+**Phase 2: Completed decoding.
+       decoder: 'windows'
+       status: 'ERROR'
+       id: '17'
+       extra_data: 'W32Time'
+       dstuser: '(no user)'
+       system_name: 'GIEDIPRIME'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '18103'
+       Level: '5'
+       Description: 'Windows error event.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'WinEvtLog: System: ERROR(34): W32Time: (no user): no domain: GIEDIPRIME: The time service has detected that the system time needs to be   changed by +169278 seconds. The time service will not change the system   time by more than +54000 seconds. Verify that your time and time zone are correct, and that the time source time.windows.com (ntp.m|0x1|192.168.17.10:123->207.46.232.182:123) is working properly.'
+       hostname: 'ix'
+       program_name: '(null)'
+       log: 'WinEvtLog: System: ERROR(34): W32Time: (no user): no domain: GIEDIPRIME: The time service has detected that the system time needs to be   changed by +169278 seconds. The time service will not change the system   time by more than +54000 seconds. Verify that your time and time zone are correct, and that the time source time.windows.com (ntp.m|0x1|192.168.17.10:123->207.46.232.182:123) is working properly.'
+
+**Phase 2: Completed decoding.
+       decoder: 'windows'
+       status: 'ERROR'
+       id: '34'
+       extra_data: 'W32Time'
+       dstuser: '(no user)'
+       system_name: 'GIEDIPRIME'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '18103'
+       Level: '5'
+       Description: 'Windows error event.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'WinEvtLog: System: ERROR(29): W32Time: (no user): no domain: GIEDIPRIME: The time provider NtpClient is configured to acquire time from one or more  time sources, however none of the sources are currently accessible.   No attempt to contact a source will be made for 14 minutes.  NtpClient has no source of accurate time.'
+       hostname: 'ix'
+       program_name: '(null)'
+       log: 'WinEvtLog: System: ERROR(29): W32Time: (no user): no domain: GIEDIPRIME: The time provider NtpClient is configured to acquire time from one or more  time sources, however none of the sources are currently accessible.   No attempt to contact a source will be made for 14 minutes.  NtpClient has no source of accurate time.'
+
+**Phase 2: Completed decoding.
+       decoder: 'windows'
+       status: 'ERROR'
+       id: '29'
+       extra_data: 'W32Time'
+       dstuser: '(no user)'
+       system_name: 'GIEDIPRIME'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '18154'
+       Level: '10'
+       Description: 'Multiple Windows error events.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'WinEvtLog: Application: ERROR(0): AuthLite: (no user): no domain: GIEDIPRIME: 2010-03-20 21:59:24,000 5ae18991-f7fa-49ac-bf83-075e16b6f6ca [9] ERROR Collective.AuthLite.Service.MessageHandlers.StandardValidationHandler - The OTP string must be 32 bytes, was 29'
+       hostname: 'ix'
+       program_name: '(null)'
+       log: 'WinEvtLog: Application: ERROR(0): AuthLite: (no user): no domain: GIEDIPRIME: 2010-03-20 21:59:24,000 5ae18991-f7fa-49ac-bf83-075e16b6f6ca [9] ERROR Collective.AuthLite.Service.MessageHandlers.StandardValidationHandler - The OTP string must be 32 bytes, was 29'
+
+**Phase 2: Completed decoding.
+       decoder: 'windows'
+       status: 'ERROR'
+       id: '0'
+       extra_data: 'AuthLite'
+       dstuser: '(no user)'
+       system_name: 'GIEDIPRIME'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '18103'
+       Level: '5'
+       Description: 'Windows error event.'
+**Alert to be generated.
+
+

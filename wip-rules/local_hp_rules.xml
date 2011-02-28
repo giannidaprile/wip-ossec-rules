@@ -1,0 +1,47 @@
+  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  -->
+
+
+
+<!-- Modify it at your will. -->
+
+<group name="local,syslog,">
+
+  <rule id="240000" level="0" noalert="1">
+    <program_name>^hp$</program_name>
+    <description>Grouping for hp rules</description>
+  </rule>
+
+  <rule id="240001" level="0" noalert="1">
+    <program_name>^hp-mkuri$</program_name>
+    <description>Grouping for hp-mkuri rules</description>
+  </rule>
+
+
+
+  <!--'Aug 23 20:03:57 power hp[2463]: prnt/backend/hp.c 593: ERROR: 1009 media-empty-error; will retry in 30 seconds...-->
+  <rule id="240010" level="1">
+    <if_sid>240000</if_sid>
+    <match>1009 media-empty-error</match> 
+    <description>Printer is out of paper</description>
+  </rule>
+
+  <!--Jul  8 02:11:42 gorilla hp-mkuri: io/hpmud/hp-mkuri.c 223: error no hp_model environment variable set-->
+  <rule id="240011" level="0">
+    <if_sid>240001</if_sid>
+    <match>error no hp_model environment variable set</match>
+    <description>Please set the hp_model environment variable</description>
+  </rule>
+
+  
+   
+</group> <!-- SYSLOG,LOCAL -->
+
+
+<!-- EOF -->

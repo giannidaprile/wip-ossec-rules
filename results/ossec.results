@@ -1,0 +1,764 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct 27 09:48:52 fedora11 kernel: ossec-logcollec[2166]: segfault at 0 ip 0804d4ee sp bf988b40 error 4 in ossec-logcollector[8048000+27000]'
+       hostname: 'fedora11'
+       program_name: 'kernel'
+       log: 'ossec-logcollec[2166]: segfault at 0 ip 0804d4ee sp bf988b40 error 4 in ossec-logcollector[8048000+27000]'
+
+**Phase 2: Completed decoding.
+       decoder: 'iptables'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/08/02 14:17:39 ossec-dbd(1230): ERROR: Invalid element in the configuration: 'list'.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/08/02 14:17:39 ossec-dbd(1230): ERROR: Invalid element in the configuration: 'list'.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-dbd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/08/02 14:17:39 ossec-dbd(1220): ERROR: Error loading the rules: 'local_rules.xml'.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/08/02 14:17:39 ossec-dbd(1220): ERROR: Error loading the rules: 'local_rules.xml'.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-dbd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/08/02 14:17:39 ossec-dbd(1202): ERROR: Configuration error at '/var/ossec/etc/ossec.conf'. Exiting.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/08/02 14:17:39 ossec-dbd(1202): ERROR: Configuration error at '/var/ossec/etc/ossec.conf'. Exiting.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-dbd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/08/30 11:38:12 ossec-remoted: ERROR: Unable to create merged file: '/etc/shared/merged.mg'.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/08/30 11:38:12 ossec-remoted: ERROR: Unable to create merged file: '/etc/shared/merged.mg'.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-remoted'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/08/30 11:45:16 ossec-rootcheck(1251): ERROR: Invalid rk configuration name: '^M'.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/08/30 11:45:16 ossec-rootcheck(1251): ERROR: Invalid rk configuration name: '^M'.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-rootcheck'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/08/31 10:05:08 ossec-reportd: ERROR: Invalid related entry 'Rule'.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/08/31 10:05:08 ossec-reportd: ERROR: Invalid related entry 'Rule'.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-reportd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/08/31 10:05:08 ossec-reportd(1202): ERROR: Configuration error at 'user argument'. Exiting.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/08/31 10:05:08 ossec-reportd(1202): ERROR: Configuration error at 'user argument'. Exiting.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-reportd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/08/31 10:05:13 ossec-reportd: ERROR: Invalid relation '1002'.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/08/31 10:05:13 ossec-reportd: ERROR: Invalid relation '1002'.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-reportd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/08/31 14:41:29 ossec-config(1226): ERROR: Error reading XML file 'etc/ossec.conf': XMLERR: File 'etc/ossec.conf' not found. (line 0).'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/08/31 14:41:29 ossec-config(1226): ERROR: Error reading XML file 'etc/ossec.conf': XMLERR: File 'etc/ossec.conf' not found. (line 0).'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-config'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/01 04:41:11 ossec-logcollector: Bad formated nmap grepable file (port).'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/01 04:41:11 ossec-logcollector: Bad formated nmap grepable file (port).'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-logcollector'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/01 13:52:55 ossec-testrule(1202): ERROR: Configuration error at '/etc/local_decoder.xml'. Exiting.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/01 13:52:55 ossec-testrule(1202): ERROR: Configuration error at '/etc/local_decoder.xml'. Exiting.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-testrule'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/01 15:09:42 ossec-syscheckd(1124): ERROR: Unable to rename file: '/etc/malloc.conf'. <!--From report changes-->'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/01 15:09:42 ossec-syscheckd(1124): ERROR: Unable to rename file: '/etc/malloc.conf'. <!--From report changes-->'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-syscheckd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/01 15:25:14 ossec-syscheckd: ERROR: Invalid internal state (missing '/etc/malloc.conf').'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/01 15:25:14 ossec-syscheckd: ERROR: Invalid internal state (missing '/etc/malloc.conf').'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-syscheckd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/10 14:00:34 ossec-dbd(1235): ERROR: Invalid value for element 'id': 1100000.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/10 14:00:34 ossec-dbd(1235): ERROR: Invalid value for element 'id': 1100000.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-dbd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/10 14:00:34 ossec-dbd(5105): ERROR: Invalid rule attributes inside file: 'local_rules.xml'.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/10 14:00:34 ossec-dbd(5105): ERROR: Invalid rule attributes inside file: 'local_rules.xml'.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-dbd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/10 14:00:34 ossec-dbd(1220): ERROR: Error loading the rules: 'local_rules.xml'.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/10 14:00:34 ossec-dbd(1220): ERROR: Error loading the rules: 'local_rules.xml'.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-dbd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/10 14:00:34 ossec-dbd(1202): ERROR: Configuration error at '/var/ossec/etc/ossec.conf'. Exiting.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/10 14:00:34 ossec-dbd(1202): ERROR: Configuration error at '/var/ossec/etc/ossec.conf'. Exiting.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-dbd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/01 04:41:11 ossec-logcollector: Bad formated nmap grepable file (port).'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/01 04:41:11 ossec-logcollector: Bad formated nmap grepable file (port).'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-logcollector'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/01 13:52:55 ossec-testrule(1202): ERROR: Configuration error at '/etc/local_decoder.xml'. Exiting.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/01 13:52:55 ossec-testrule(1202): ERROR: Configuration error at '/etc/local_decoder.xml'. Exiting.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-testrule'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/01 14:15:49 ossec-analysisd(2107): ERROR: Decoder configuration error: 'dennis-test'.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/01 14:15:49 ossec-analysisd(2107): ERROR: Decoder configuration error: 'dennis-test'.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-analysisd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/10 21:14:03 ossec-dbd(5204): ERROR: Database error. Unable to run query.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/10 21:14:03 ossec-dbd(5204): ERROR: Database error. Unable to run query.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-dbd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/13 09:38:10 ossec-reportd: ERROR: Invalid filter 'Rule'.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/13 09:38:10 ossec-reportd: ERROR: Invalid filter 'Rule'.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-reportd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/13 19:48:32 decode-xml: Wrong field 'hostname' in the order of decoder 'attack data''
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/13 19:48:32 decode-xml: Wrong field 'hostname' in the order of decoder 'attack data''
+
+**Phase 2: Completed decoding.
+       decoder: 'decode-xml'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/16 22:37:46 ossec-reportd: ERROR: Invalid filter 'agent'. '
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/16 22:37:46 ossec-reportd: ERROR: Invalid filter 'agent'. '
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-reportd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/16 22:37:50 ossec-reportd: ERROR: Invalid filter 'id'.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/16 22:37:50 ossec-reportd: ERROR: Invalid filter 'id'.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-reportd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/17 13:28:05 adding rule: attack_rules.xml'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/17 13:28:05 adding rule: attack_rules.xml'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       hostname: 'arrakis'
+       program_name: '(null)'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-testrule'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/17 13:35:08 ossec-config(1226): ERROR: Error reading XML file 'etc/ossec.conf': XML ERR: Element not closed: decoder_dir (line 180).'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/17 13:35:08 ossec-config(1226): ERROR: Error reading XML file 'etc/ossec.conf': XML ERR: Element not closed: decoder_dir (line 180).'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-config'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/17 13:35:08 ossec-testrule(1202): ERROR: Configuration error at 'etc/ossec.conf'. Exiting.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/17 13:35:08 ossec-testrule(1202): ERROR: Configuration error at 'etc/ossec.conf'. Exiting.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-testrule'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/20 17:21:50 ossec-analysisd(1226): ERROR: Error reading XML file 'rules/rules.d/local_argus_rules.xml': XMLERR: File 'rules/rules.d/local_argus_rules.xml' not found. (line 125).'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/20 17:21:50 ossec-analysisd(1226): ERROR: Error reading XML file 'rules/rules.d/local_argus_rules.xml': XMLERR: File 'rules/rules.d/local_argus_rules.xml' not found. (line 125).'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-analysisd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/20 17:21:50 ossec-testrule(1220): ERROR: Error loading the rules: 'rules/rules.d/local_argus_rules.xml'.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/20 17:21:50 ossec-testrule(1220): ERROR: Error loading the rules: 'rules/rules.d/local_argus_rules.xml'.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-testrule'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       hostname: 'arrakis'
+       program_name: '(null)'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-testrule'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/20 17:42:41 ossec-syscheckd: Error accessing '/usr/local/bin/pkg.74xZ7mk5eM'.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/20 17:42:41 ossec-syscheckd: Error accessing '/usr/local/bin/pkg.74xZ7mk5eM'.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-syscheckd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/20 17:46:52 ossec-analysisd: INFO: Ignoring file: '^/usr/local/bin/pkg.''
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/20 17:46:52 ossec-analysisd: INFO: Ignoring file: '^/usr/local/bin/pkg.''
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-analysisd'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/23 11:15:13 ossec-analysisd(2107): ERROR: Decoder configuration error: 'nss-ldap'.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/23 11:15:13 ossec-analysisd(2107): ERROR: Decoder configuration error: 'nss-ldap'.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-analysisd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/23 11:32:53 ossec-analysisd(2106): ERROR: Error adding decoder plugin.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/23 11:32:53 ossec-analysisd(2106): ERROR: Error adding decoder plugin.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-analysisd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/23 14:45:40 ossec-analysisd(2101): ERROR: Parent decoder name invalid: 'cisco-ios'. '
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/23 14:45:40 ossec-analysisd(2101): ERROR: Parent decoder name invalid: 'cisco-ios'. '
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-analysisd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/29 09:19:03 ossec-remoted(1403): ERROR: Incorrectly formated message from'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/29 09:19:03 ossec-remoted(1403): ERROR: Incorrectly formated message from'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-remoted'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/29 22:34:44 ossec-analysisd(2102): ERROR: Duplicated decoder with prematch: 'named-master'.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/29 22:34:44 ossec-analysisd(2102): ERROR: Duplicated decoder with prematch: 'named-master'.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-analysisd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/09/29 22:34:44 ossec-analysisd(2105): ERROR: Error loading decoder options.'
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/09/29 22:34:44 ossec-analysisd(2105): ERROR: Error loading decoder options.'
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-analysisd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Oct 27 11:07:14 richese collectd[6415]: network plugin: sendto failed: No route to host'
+       hostname: 'richese'
+       program_name: 'collectd'
+       log: 'network plugin: sendto failed: No route to host'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2010/11/08 12:59:28 ossec-remoted(1206): ERROR: Unable to Bind port '1514''
+       hostname: 'arrakis'
+       program_name: '(null)'
+       log: '2010/11/08 12:59:28 ossec-remoted(1206): ERROR: Unable to Bind port '1514''
+
+**Phase 2: Completed decoding.
+       decoder: 'ossec-remoted'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

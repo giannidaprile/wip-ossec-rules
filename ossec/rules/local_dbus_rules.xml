@@ -1,0 +1,31 @@
+  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  -->
+
+
+
+<!-- Modify it at your will. -->
+
+<group name="local,syslog,">
+
+  <rule id="260000" level="0" noalert="1">
+    <program_name>dbus</program_name>
+  </rule>
+
+  <!--Nov 14 09:51:17 giediprime dbus: Rejected send message, 2 matched rules; type="method_call", sender=":1.30" (uid=42 pid=1916 comm="/usr/bin/pulseaudio --start --log-target=syslog ") interface="org.bluez.Manager" member="ListAdapters" error name="(unset)" re-->
+  <rule id="260010" level="0">
+    <if_sid>260000</if_sid>
+    <match>Rejected send message</match>
+    <description>Rejected send message.</description>
+  </rule>
+  
+   
+</group> <!-- SYSLOG,LOCAL -->
+
+
+<!-- EOF -->

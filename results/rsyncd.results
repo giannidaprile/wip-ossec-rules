@@ -1,0 +1,110 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 14 20:27:32 ix rsyncd[7180]: rsync denied on module pwg from power.example.com (192.168.17.249)'
+       hostname: 'ix'
+       program_name: 'rsyncd'
+       log: 'rsync denied on module pwg from power.example.com (192.168.17.249)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 14 20:28:26 ix rsyncd[14751]: rsync: failed to open lock file /var/run/rsyncd.lock: Permission denied (13)'
+       hostname: 'ix'
+       program_name: 'rsyncd'
+       log: 'rsync: failed to open lock file /var/run/rsyncd.lock: Permission denied (13)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 14 20:29:24 ix rsyncd[1267]: rsync: chroot /home/ddp/.pass failed: Operation not permitted (1)'
+       hostname: 'ix'
+       program_name: 'rsyncd'
+       log: 'rsync: chroot /home/ddp/.pass failed: Operation not permitted (1)'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 14 21:21:16 ix rsyncd[6536]: rsync error: syntax or usage error (code 1) at main.c(1490) [receiver=3.0.6]'
+       hostname: 'ix'
+       program_name: 'rsyncd'
+       log: 'rsync error: syntax or usage error (code 1) at main.c(1490) [receiver=3.0.6]'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 14 21:21:16 ix rsyncd[6536]:  -q, --quiet                 suppress non-error messages'
+       hostname: 'ix'
+       program_name: 'rsyncd'
+       log: ' -q, --quiet                 suppress non-error messages'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 14 21:21:16 ix rsyncd[6536]:      --ignore-errors         delete even if there are I/O errors'
+       hostname: 'ix'
+       program_name: 'rsyncd'
+       log: '     --ignore-errors         delete even if there are I/O errors'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+

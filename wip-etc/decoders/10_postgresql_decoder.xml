@@ -1,0 +1,18 @@
+<!-- @(#) $Id: decoder.xml,v 1.166 2010/06/15 12:52:01 dcid Exp $
+  -  OSSEC log decoder.
+  -  Author: Daniel B. Cid
+  -  License: http://www.ossec.net/en/licensing.html
+  -->
+
+<!-- PostgreSQL decoder.
+  - Examples:
+  - [2007-08-31 18:37:09.454 ADT] 192.168.2.99: LOG:  connection authorized: user=ossec_user database=ossecdb
+  - [2007-08-31 18:37:15.525 ADT] 192.168.2.99: ERROR:  relation "alert2" does not exist
+  -->
+<decoder name="postgresql_log">
+  <prematch>^[\d\d\d\d-\d\d-\d\d \S+ \w+] </prematch>
+  <regex offset="after_prematch">^\S+ (\w+): </regex>
+  <order>status</order>
+</decoder>
+
+

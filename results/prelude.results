@@ -1,0 +1,192 @@
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 24 20:50:05 power prelude-manager: WARNING: Option error: error initializing libpreludedb SQL interface: Could not load sql plugin 'pgsql'.'
+       hostname: 'power'
+       program_name: 'prelude-manager'
+       log: 'WARNING: Option error: error initializing libpreludedb SQL interface: Could not load sql plugin 'pgsql'.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 24 21:04:38 power prelude-lml: WARNING: /var/log/apache2/error_log does not exist.'
+       hostname: 'power'
+       program_name: 'prelude-lml'
+       log: 'WARNING: /var/log/apache2/error_log does not exist.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 24 21:04:38 power prelude-lml: WARNING: /var/log/httpd/error_log does not exist.'
+       hostname: 'power'
+       program_name: 'prelude-lml'
+       log: 'WARNING: /var/log/httpd/error_log does not exist.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 24 21:24:38 power prelude-manager: WARNING: could not insert message into database: FATAL:  terminating connection due to administrator command server closed the connection unexpectedly        This probably means the server terminated abnormally    before or while processing the request..'
+       hostname: 'power'
+       program_name: 'prelude-manager'
+       log: 'WARNING: could not insert message into database: FATAL:  terminating connection due to administrator command server closed the connection unexpectedly        This probably means the server terminated abnormally    before or while processing the request..'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 24 21:32:51 power prelude-lml: WARNING: Failover enabled: connection error with 127.0.0.1:4690: End of file'
+       hostname: 'power'
+       program_name: 'prelude-lml'
+       log: 'WARNING: Failover enabled: connection error with 127.0.0.1:4690: End of file'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 24 22:29:13 power prelude-lml: WARNING: Failover enabled: connection error with 127.0.0.1:4690: End of file'
+       hostname: 'power'
+       program_name: 'prelude-lml'
+       log: 'WARNING: Failover enabled: connection error with 127.0.0.1:4690: End of file'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 24 22:29:23 power prelude-lml: WARNING: Failover enabled: connection error with 127.0.0.1:4690: Connection refused'
+       hostname: 'power'
+       program_name: 'prelude-lml'
+       log: 'WARNING: Failover enabled: connection error with 127.0.0.1:4690: Connection refused'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 27 17:38:41 power prelude-manager: WARNING: signal 15 received, terminating prelude-manager.'
+       hostname: 'power'
+       program_name: 'prelude-manager'
+       log: 'WARNING: signal 15 received, terminating prelude-manager.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 27 16:55:22 tiny prelude-pflogger: WARNING: prelude-client: error: TLS handshake failed: Error in the push function..  In order to register this sensor, please run: prelude-admin register prelude-pflogger-tiny "idmef:w" 192.168.17.249 --uid 0 --gid 0  Profile 'prelude-pflogger-tiny' does not exist. In order to create it, please run: prelude-admin register "prelude-pflogger-tiny" "idmef:w" <manager address> --uid 0 --gid 0.'
+       hostname: 'tiny'
+       program_name: 'prelude-pflogger'
+       log: 'WARNING: prelude-client: error: TLS handshake failed: Error in the push function..  In order to register this sensor, please run: prelude-admin register prelude-pflogger-tiny "idmef:w" 192.168.17.249 --uid 0 --gid 0  Profile 'prelude-pflogger-tiny' does not exist. In order to create it, please run: prelude-admin register "prelude-pflogger-tiny" "idmef:w" <manager address> --uid 0 --gid 0.'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 27 16:56:44 power prelude-lml: WARNING: Failover enabled: connection error with 127.0.0.1:4690: End of file'
+       hostname: 'power'
+       program_name: 'prelude-lml'
+       log: 'WARNING: Failover enabled: connection error with 127.0.0.1:4690: End of file'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 27 16:56:54 power prelude-lml: WARNING: Failover enabled: connection error with 127.0.0.1:4690: Connection refused'
+       hostname: 'power'
+       program_name: 'prelude-lml'
+       log: 'WARNING: Failover enabled: connection error with 127.0.0.1:4690: Connection refused'
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '1002'
+       Level: '2'
+       Description: 'Unknown problem somewhere in the system.'
+**Alert to be generated.
+
+
