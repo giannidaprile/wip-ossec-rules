@@ -8,3 +8,5 @@ ossec/rules/rule.d/*
 *~
 l_r
 l_d
+backup_*
+*.ddp
