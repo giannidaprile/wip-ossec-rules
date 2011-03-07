@@ -11,7 +11,7 @@
 
 <!-- Modify it at your will. -->
 
-<group name="local,syslog,">
+<group name="local,syslog,ntpd">
 
   <rule id="400000" level="0" noalert="1">
     <program_name>ntpd</program_name>
@@ -19,76 +19,58 @@
     <group>ntpd,</group>
   </rule>
 
-  <!--Apr  2 01:23:31 gorilla ntpd[27379]: bad sensor nmea0-->
-  <rule id="400010" level="1">
+  <rule id="400010" level="0">
     <if_sid>400000</if_sid>
     <match>bad sensor</match>
     <description>A time sensor is not working properly</description>
-    <group>ntpd,</group>
   </rule>
 
-  <!--Apr 20 13:02:11 tiny ntpd[25875]: bad peer 192.168.1.233 (192.168.1.233)-->
-  <rule id="400011" level="1">
+  <rule id="400011" level="0">
     <if_sid>400000</if_sid>
     <match>bad peer</match>
     <description>Bad ntp peer.</description>
-    <group>ntpd,</group>
   </rule>
 
-  <!--May 26 23:31:02 gorilla ntpd[29719]: bind on 192.168.1.233 failed, skipping: Can't assign requested address-->
-  <rule id="400012" level="2">
+  <rule id="400012" level="0">
     <if_sid>400000</if_sid>
     <match>skipping: Can't assign requested address</match>
     <description>Cannot bind to the assigned port.</description>
-    <group>ntpd,</group>
   </rule>
 
-  <!--Jun 28 22:54:52 ix ntpd[8392]: bind on 192.168.17.9 failed, skipping: Address already in use-->
-  <rule id="400013" level="2">
+  <rule id="400013" level="0">
     <if_sid>400000</if_sid>
     <match>skipping: Address already in use</match>
     <description>Something is already bound to the assigned port.</description>
-    <group>ntpd,</group>
   </rule>
 
-  <!--Jul  1 19:50:00 ix ntpd[11685]: bad peer from pool pool.ntp.org (64.73.32.135)-->
-  <rule id="400014" level="1">
+  <rule id="400014" level="0">
     <if_sid>400000</if_sid>
     <match>bad peer from pool</match>
     <description>Bad ntp peer.</description>
-    <group>ntpd,</group>
   </rule>
 
-  <!--Aug 15 17:26:17 ix ntpd[7045]: recvmsg 192.168.17.17: Connection refused-->
-  <rule id="400015" level="1">
+  <rule id="400015" level="0">
     <if_sid>400000</if_sid>
     <match>Connection refused$</match>
     <description>Connection refused.</description>
-    <group>ntpd,</group>
   </rule>
 
-  <!--Aug  4 23:18:33 ix ntpd[29411]: 2 out of 3 peers valid-->
   <rule id="400016" level="0">
     <if_sid>400000</if_sid>
     <regex>\d+ out of \d+ peers valid</regex>
     <description>Some peers are now valid.</description>
-    <group>ntpd,</group>
   </rule>
 
-  <!--Sep 27 11:56:04 bridge ntpd[5877]: logconfig: illegal argument  - ignored-->
-  <rule id="400017" level="1">
+  <rule id="400017" level="0">
     <if_sid>400000</if_sid>
     <match>logconfig: illegal argument</match>
     <description>Illegal argument in the configuration.</description>
-    <group>ntpd,</group>
   </rule>
 
-  <!--Sep 27 12:56:53 bridge ntpd[5902]: offset 0.000000 sec freq 0.000 ppm error 0.000011 poll 6-->
   <rule id="400018" level="0">
     <if_sid>400000</if_sid>
     <regex>offset \S+ sec freq \S+ ppm error \S+ poll \S+</regex>
     <description>Normal ntpd status updates.</description>
-    <group>ntpd,</group>
   </rule>
 
 </group> <!-- SYSLOG,LOCAL -->
