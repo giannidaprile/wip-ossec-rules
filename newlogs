@@ -59,3 +59,6 @@ Jan 18 19:56:11 buffalo2 dropbear[13611]: exit before auth: error reading: Conne
 
 Feb  7 22:31:59 richese /bsd: urtwn0: failed loadfirmware of file urtwn-rtl8192cfwT (error 2)
 Feb 15 11:07:43 junction ftp-proxy[30564]: #3 proxy cannot connect to server 192.168.17.17: Connection refused
+
+Mar  8 10:51:14 arrakis hotplugd[27959]: /etc/hotplug/attach: Permission denied
+
