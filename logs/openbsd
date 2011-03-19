@@ -1,1 +1,2 @@
 Feb 26 23:09:42 junction ftp-proxy[10776]: #1203 proxy cannot connect to server 192.168.17.17: Connection refused
+Mar 19 01:41:07 buzzell /bsd: wd0a: uncorrectable data error reading fsbn 829424 of 829408-829439 (wd0 bn 832449; cn 825 tn 13 sn 30), retrying
