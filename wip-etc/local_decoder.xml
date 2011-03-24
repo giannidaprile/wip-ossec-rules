@@ -86,8 +86,86 @@ BadResponse\\ for\\ example.com\\ (192.168.2.1) tag=@ce-a7a-1-->
 </decoder>
 
 
+<!--
+"Vitor Correia" "PT" 89.155.91.201 - - [21/Oct/2010:01:48:13 +0100] "GET /collect/main/ HTTP/1.1" 200 2970 "-" "Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.2.11) Gecko/20101012 Firefox/3.6.11"
+-->
 
+<decoder name="ssl-cert">
+  <prematch>^"\.+" "\S+" \S+ - - [\d+/\S+/\d\d\d\d:\d\d:\d\d:\d\d \S+] </prematch>
+  <regex>^"(\.+)" "(\S+)" (\S+) - - [\d+/\S+/\d\d\d\d:\d\d:\d\d:\d\d \p\d+] "(\S+) (\.+) HTTP/\d.\d" (\d+) \d+ "\.+" "(\.+)</regex>
+  <order>srcuser,id,srcip,action,url,status,extra_data</order>
+</decoder>
 
+<!--
+  <regex>^"(\.+)" "(\S+)" (\S+) - - [\d+/\S+/\d\d\d\d:\d\d:\d\d:\d\d \S+] "(\.+) HTTP/\d.\d" (\d+) \S+ "-" "(\.+)"$</regex>
+  <order>srcuser,action,srcip,url,status,extra_data</order>
+-->
 
+<!--
+20101109, 343218, 2010/11/09 22:19:31, 2010/11/09 22:19:30, global, 22, deviceidp1, 192.168.1.51, predefined, MS-RPC:SAMR-ACCESS-REQUEST, (NULL), eth3, 192.168.1.78, 1108, 0.0.0.0, 0, (NULL), (NULL), 192.168.1.81, 445, 0.0.0.0, 0, tcp, global, 22, Domain Post Rules, idp, 4, accepted, device_warning_log, no, 'interface=eth3', (NULL), (NULL), (NULL), 0, 0, 0, 0, 0, 0, 0, 0, no, 31, Not Set, idp
+-->
+<decoder name="juniper-idp">
+  <prematch>^\d+, \d+, \d\d\d\d/\d\d/\d\d \d\d:\d\d:\d\d, \d\d\d\d/\d\d/\d\d \d\d:\d\d:\d\d, global</prematch>
+</decoder>
 
+<!--
+Dec 28 06:54:36 1.1.1.1 MSWinEventLog;1;Security;23875316;Tue: Dec 28 06:54:34 2010;680;Security;DOMAINUSER;User;Success Audit;ADSERVER;Account Logon;;Logon attempt by: MICROSOFT_AUTHENTICATION_PACKAGE_V1_0    Logon account: DOMAINUSER Source Workstation: DOMAINSTATION    Error Code:        0x0    ; 23866818 
+-->
 
+<decoder name="windows-snare2">
+  <type>windows</type>
+  <prematch>MSWinEventLog;\d;\.+;\d+;\w\w\S+ \w\w\w \d\d \d\d</prematch>
+  <regex offset="after_prematch">^:\d\d:\d\d \d\d\d\d\t(\d+)\t(\.+)</regex>
+  <regex>\t(\.+)\t\.+\t(\.+)\t(\.+)\t</regex>
+  <order>id, extra_data, user, status, system_name</order>
+  <fts>name, id, location, user, system_name</fts>
+</decoder>
+
+<!-- VMWare kernel messages -->
+<!--
+  - kaitain vmkernel: 45:06:44:13.595 cpu1:4842)MigrateNet: vm 4842: 1378: Accepted connection from <192.168.17.14>
+-->
+
+<decoder name="vmkernel">
+  <program_name>^vmkernel</program_name>
+</decoder>
+
+<decoder name="ftp-proxy">
+  <program_name>^ftp-proxy</program_name>
+</decoder>
+
+<decoder name="ftp-prox-refused">
+  <parent>ftp-proxy</parent>
+  <prematch> Connection refused$</prematch>
+  <regex offset="after_parent"> to server (\S+):</regex>
+  <order>dstip</order>
+</decoder>
+
+<!-- general esxi decoder -->
+<decoder name="esxi">
+  <program_name>Hostd</program_name>
+</decoder>
+
+<!-- esxi login decoder -->
+<decoder name="esxi-success">
+  <parent>esxi</parent>
+  <prematch>^Accepted|^Rejected</prematch>
+  <regex offset="after_prematch">^ \S+ for user (\S+) from (\S+)$</regex>
+  <order>user, srcip</order>
+</decoder>
+
+<!-- alternative esxi login decoder -->
+<decoder name="esxi-login">
+  <parent>esxi</parent>
+  <prematch>Event \d+ : User \S+@\S+ logged in</prematch>
+  <regex>Event \d+ : User (\S+)@(\S+) logged in</regex>
+  <order>user, srcip</order>
+</decoder>
+
+<!-- state transition decoder -->
+<decoder name="esxi-state-transition">
+  <parent>esxi</parent>
+  <prematch>State Transition (\S+ -> \S+)</prematch>
+  <regex>State Transition \((\S+) -> (\S+)\)</regex>
+  <order>status, action</order>
+</decoder>
