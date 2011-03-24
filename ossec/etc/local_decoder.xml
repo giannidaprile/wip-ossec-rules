@@ -140,3 +140,32 @@ Dec 28 06:54:36 1.1.1.1 MSWinEventLog;1;Security;23875316;Tue: Dec 28 06:54:34 2
   <regex offset="after_parent"> to server (\S+):</regex>
   <order>dstip</order>
 </decoder>
+
+<!-- general esxi decoder -->
+<decoder name="esxi">
+  <program_name>Hostd</program_name>
+</decoder>
+
+<!-- esxi login decoder -->
+<decoder name="esxi-success">
+  <parent>esxi</parent>
+  <prematch>^Accepted|^Rejected</prematch>
+  <regex offset="after_prematch">^ \S+ for user (\S+) from (\S+)$</regex>
+  <order>user, srcip</order>
+</decoder>
+
+<!-- alternative esxi login decoder -->
+<decoder name="esxi-login">
+  <parent>esxi</parent>
+  <prematch>Event \d+ : User \S+@\S+ logged in</prematch>
+  <regex>Event \d+ : User (\S+)@(\S+) logged in</regex>
+  <order>user, srcip</order>
+</decoder>
+
+<!-- state transition decoder -->
+<decoder name="esxi-state-transition">
+  <parent>esxi</parent>
+  <prematch>State Transition (\S+ -> \S+)</prematch>
+  <regex>State Transition \((\S+) -> (\S+)\)</regex>
+  <order>status, action</order>
+</decoder>
