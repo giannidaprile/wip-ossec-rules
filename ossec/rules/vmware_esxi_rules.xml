@@ -24,8 +24,8 @@
   </rule>
 
   <rule id="490101" level="0" noalert="1">
-    <program_name>sfcb-CIMXML-Processor</program_name>
-    <description>Grouping for sfcb-CIMXML-Processor logs.</description>
+    <decoded_as>esxi</decoded_as>
+    <description>Grouping for esxi hostd logs.</description>
   </rule>
 
   <rule id="490102" level="0" noalert="1">
@@ -185,6 +185,23 @@
     <description>XXX Error accepting ssl connections.</description>
   </rule>
 
+  <rule id="490132" level="0" noalert="1">
+    <program_name>sfcb-CIMXML-Processor</program_name>
+    <description>Grouping for sfcb-CIMXML-Processor logs.</description>
+  </rule>
+
+  <rule id="490133" level="0">
+    <if_sid>490101</if_sid>
+    <match>Failed to read header on stream</match>
+    <description>XXX Failed to read header on stream.</description>
+  </rule>
+
+  <rule id="490134" level="0">
+    <program_name>fcb-CIMXML-Processor</program_name>
+    <match>^ *** 1622 Timeout error accepting SSL connection -- exiting$|</match>
+    <match>^ *** 1628 Error accepting SSL connection -- exiting$|</match>
+    <description>Timeout accepting SSL connection.</description>
+  </rule>
 
 
 
