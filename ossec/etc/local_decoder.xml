@@ -199,6 +199,9 @@ Dec 28 06:54:36 1.1.1.1 MSWinEventLog;1;Security;23875316;Tue: Dec 28 06:54:34 2
 
 <decoder name="esxi-sfcb-CIMXML-Processor">
   <program_name>^sfcb-CIMXML-Processor</program_name>
+  <prematch>^ *** </prematch>
+  <regex offset="after_prematch">^(\d+) </regex>
+  <order>id</order>
 </decoder>
 
 <decoder name="esxi-shell">
