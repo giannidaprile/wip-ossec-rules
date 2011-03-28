@@ -143,7 +143,7 @@ Dec 28 06:54:36 1.1.1.1 MSWinEventLog;1;Security;23875316;Tue: Dec 28 06:54:34 2
 
 <!-- general esxi decoder -->
 <decoder name="esxi">
-  <program_name>Hostd</program_name>
+  <program_name>^Hostd</program_name>
 </decoder>
 
 <!-- esxi login decoder -->
@@ -168,4 +168,11 @@ Dec 28 06:54:36 1.1.1.1 MSWinEventLog;1;Security;23875316;Tue: Dec 28 06:54:34 2
   <prematch>State Transition (\S+ -> \S+)</prematch>
   <regex>State Transition \((\S+) -> (\S+)\)</regex>
   <order>status, action</order>
+</decoder>
+
+<decoder name="esxi-header-stream">
+  <parent>esxi</parent>
+  <prematch>Failed to read header on stream </prematch>
+  <regex offset="after_prematch">^TCP\p\S+=(\S+):(\d+), peer=(\S+):(\d+)\p: </regex>
+  <order>srcip, srcport, dstip, dstport</order>
 </decoder>
