@@ -71,3 +71,7 @@ Mar  8 10:51:14 arrakis hotplugd[27959]: /etc/hotplug/attach: Permission denied
 2011-03-08T12:10:53.300382-05:00 arrakis rsyslogd: [origin software="rsyslogd" swVersion="4.6.4" x-pid="14829" x-info="http://www.rsyslog.com"] exiting on signal 15.
 
 Mar 17 10:19:33 buzzell named[29503]: /etc/blocked.zones:96581: parsing failed
+
+Mar 25 17:46:30 kaitain Hostd: [2011-03-25 17:46:30.466 4F1A2B90 error 'App'] Failed to read header on stream TCP(local=127.0.0.1:60224, peer=127.0.0.1:0): N7Vmacore15SystemExceptionE(Connection reset by peer)
+
+
