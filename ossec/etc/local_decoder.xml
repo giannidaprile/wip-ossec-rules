@@ -141,6 +141,17 @@ Dec 28 06:54:36 1.1.1.1 MSWinEventLog;1;Security;23875316;Tue: Dec 28 06:54:34 2
   <order>dstip</order>
 </decoder>
 
+<!-- VMWare esxi decoders -->
+<!-- From Wim Remes
+  - Mar 21 19:11:03 192.168.1.2 Hostd: Accepted password for user root from 192.168.1.25
+  - Mar 21 19:11:03 192.168.1.2 Hostd: [2011-03-21 19:11:03.952 49F54B90 info 'ha-eventmgr' opID=63154CB9-00000003] Event 233 : User root@192.168.1.25 logged in
+  - Mar 21 19:16:58 192.168.1.2 shell[2909252]: vim-cmd vmsvc/snapshot.revert 16 0
+  - Mar 21 19:16:58 192.168.1.2 Hostd: [2011-03-21 19:16:58.550 4ABC2B90 info 'TaskManager'] Task Created : haTask-16-vim.vm.Snapshot.revert-8047
+  - Mar 21 19:16:58 192.168.1.2 Hostd: [2011-03-21 19:16:58.551 49CF1B90 info 'vm:/vmfs/volumes/4d5ab801-a3984e3b-3c46-0014221a2fc4/WIN03/WIN03.vmx'] State Transition (VM_STATE_ON -> VM_STATE_REVERT_SNAPSHOT)
+  - Mar 21 19:17:02 192.168.1.2 Hostd: [2011-03-21 19:17:02.053 4A4DDB90 info 'vm:/vmfs/volumes/4d5ab801-a3984e3b-3c46-0014221a2fc4/WIN03/WIN03.vmx'] State Transition (VM_STATE_REVERT_SNAPSHOT -> VM_STATE_ON)
+-->
+
+
 <!-- general esxi decoder -->
 <decoder name="esxi">
   <program_name>^Hostd</program_name>
