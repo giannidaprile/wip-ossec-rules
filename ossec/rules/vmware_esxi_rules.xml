@@ -203,6 +203,37 @@
     <description>Timeout accepting SSL connection.</description>
   </rule>
 
+  <rule id="490135" level="0">
+    <decoded_as>esxi</decoded_as>
+    <match>PendingRequest: HTTP Transaction failed, closing connection: N7Vmacore15SystemExceptionE(Connection reset by peer)$</match>
+    <description>XXX HTTP transaction failed.</description>
+  </rule>
+
+  <rule id="490136" level="0">
+    <program_name>^sfcb</program_name>
+    <match>^ INTERNAL StorelibManager::fireStorelibCommand - caller StorelibManager::getConnectorInfo, ProcessLibCommandCall failed, rval = 0x2</match>
+    <description>XXX getConnectorInfo  ProcessLibCommandCall failed.</description>
+  </rule>
+
+  <rule id="490137" level="0">
+    <decoded_as>esxi</decoded_as>
+    <match>Failed to remove stale ticket</match>
+    <description>XXX Failed to remove stale ticket.</description>
+  </rule>
+
+  <rule id="490138" level="0">
+    <decoded_as>esxi</decoded_as>
+    <match>^ INTERNAL StorelibManager::fireStorelibCommand - caller StorelibManager::getPartitionInfo, ProcessLibCommandCall failed, rval = 0x8023$</match>
+    <description>XXX getPartitionInfo ProcessLibCommandCall failed.</description>
+  </rule>
+
+  <rule id="490139" level="0">
+    <decoded_as>vmkernel</decoded_as>
+    <match>Possible sense data</match>
+    <regex>ScsiDeviceIO: \d+: Command 0x\S+ to device "\S+.\S+" failed</regex>
+    <description>XXX Command to device failed.</description>
+  </rule>
+
 
 
 </group> <!-- SYSLOG,LOCAL -->
