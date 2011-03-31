@@ -205,7 +205,7 @@
 
   <rule id="490135" level="0">
     <decoded_as>esxi</decoded_as>
-    <match>PendingRequest: HTTP Transaction failed, closing connection: N7Vmacore15SystemExceptionE(Connection reset by peer)$</match>
+    <match>PendingRequest: HTTP Transaction failed, closing connection: N7Vmacore15SystemExceptionE(Connection reset by peer)</match>
     <description>XXX HTTP transaction failed.</description>
   </rule>
 
@@ -232,6 +232,19 @@
     <match>Possible sense data</match>
     <regex>ScsiDeviceIO: \d+: Command 0x\S+ to device "\S+.\S+" failed</regex>
     <description>XXX Command to device failed.</description>
+  </rule>
+
+  <rule id="490140" level="0">
+    <decoded_as>esxi</decoded_as>
+    <match> Looking up object with name</match>
+    <regex> Looking up object with name = \p\S+\p failed.$</regex>
+    <description>Looking up an object failed.</description>
+  </rule>
+
+  <rule id="490141" level="0">
+    <decoded_as>esxi</decoded_as>
+    <match>GetPropertyProvider failed for</match>
+    <description>Get property provider for an object failed.</description>
   </rule>
 
 
