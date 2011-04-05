@@ -165,6 +165,13 @@
     <description>ftp-proxy cannot connect to a server.</description>
   </rule>
 
+  <rule id="51526" level="0">
+    <decoded_as>bsd_kernel</decoded_as>
+    <match>uncorrectable data error reading fsbn</match>
+    <description>Hard drive is dying.</description>
+  </rule>
+
+
 
 </group> <!-- SYSLOG,LOCAL -->
 
