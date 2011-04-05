@@ -49,8 +49,6 @@ Apr 8 21:20:55 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.th
 Apr 8 21:20:59 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com
 Apr 8 21:21:04 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com
 Apr 8 21:21:04 MyComputer ftpd[5710]: repeated login failures from 32.c8.85ae.static.theplanet.com
-Nov 21 18:11:10 japoata ftpd[21984]: pam_authenticate: Authentication failed 
-Nov 21 18:14:21 japoata ftpd[22119]: pam_authenticate: Authentication failed 
 Nov 23 10:28:55 passabem ftpd[14270]: REPEATED LOGIN FAILURES FROM 10.128.80.31 
 Nov 30 09:00:13 ipv6 ftpd[94032]: FTP LOGIN FAILED FROM 211.137.239.68
 Nov 30 09:00:18 ipv6 ftpd[94032]: FTP LOGIN FAILED FROM 211.137.239.68
