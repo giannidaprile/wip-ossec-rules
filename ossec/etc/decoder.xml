@@ -792,7 +792,6 @@
   <order>srcip,url</order>
 </decoder>
 
-
 <decoder name="named_client">
   <parent>named</parent>  
   <prematch>^client </prematch>
@@ -802,7 +801,9 @@
 
 <decoder name="named_from">
   <parent>named</parent>  
-  <regex offset="after_parent"> from [(\d+.\d+.\d+.\d+)]</regex>
+  <prematch>^transfer </prematch>
+  <regex offset="after_parent"> from [(\d+.\d+.\d+.\d+)]|</regex>
+  <regex> from (\d+.\d+.\d+.\d+)#</regex>
   <order>srcip</order>
 </decoder>
 
