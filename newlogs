@@ -76,3 +76,5 @@ Mar 25 17:46:30 kaitain Hostd: [2011-03-25 17:46:30.466 4F1A2B90 error 'App'] Fa
 Mar 25 14:31:40 kaitain Hostd: [2011-03-25 14:31:40.004 50B81B90 verbose 'Statssvc'] HostCtl exception Unable to complete Sysinfo operation.  Please see the VMkernel log file for more details.
 
 Apr  2 03:21:01 ip-10-212-181-157 kernel: [902291.826851] JBD: barrier-based sync failed on xvdb1-8 - disabling barriers
+
+Apr  5 01:48:08 buzzell /bsd: wd0a: uncorrectable data error reading fsbn 829435 of 829408-829439 (wd0 bn 832460; cn 825 tn 13 sn 41), retryin
