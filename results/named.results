@@ -73,6 +73,9 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'named'
+       dstip: '192.168.1.33'
+       dstport: '53'
+       srcip: '0.0.0.0'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '12117'
@@ -253,6 +256,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'named'
+       srcip: '192.168.17.9'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '12128'
@@ -271,6 +275,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'named'
+       srcip: '192.168.17.9'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '12129'
@@ -325,6 +330,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'named'
+       srcip: '192.168.17.9'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '12132'
@@ -393,6 +399,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'named'
+       srcip: '192.168.17.9'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '12136'
@@ -428,6 +435,9 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'named'
+       dstip: '192.168.1.8'
+       dstport: '53'
+       srcip: '0.0.0.0'
 
 **Phase 3: Completed filtering (rules).
        Rule id: '12105'
