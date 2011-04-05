@@ -73,9 +73,6 @@ Mar  8 10:51:14 arrakis hotplugd[27959]: /etc/hotplug/attach: Permission denied
 Mar 17 10:19:33 buzzell named[29503]: /etc/blocked.zones:96581: parsing failed
 
 Mar 25 17:46:30 kaitain Hostd: [2011-03-25 17:46:30.466 4F1A2B90 error 'App'] Failed to read header on stream TCP(local=127.0.0.1:60224, peer=127.0.0.1:0): N7Vmacore15SystemExceptionE(Connection reset by peer)
-Mar 25 14:31:40 kaitain Hostd: [2011-03-25 14:31:40.004 50B81B90 verbose 'Statssvc'] HostCtl exception Unable to complete Sysinfo operation.  Please see the VMkernel lo
-g file for more details.
+Mar 25 14:31:40 kaitain Hostd: [2011-03-25 14:31:40.004 50B81B90 verbose 'Statssvc'] HostCtl exception Unable to complete Sysinfo operation.  Please see the VMkernel log file for more details.
 
-
-Apr  3 20:28:44 ip-10-212-181-157 sshd[22506]: warning: /etc/hosts.deny, line 16: can't verify hostname: getaddrinfo(50.n0.netell.net.br, AF_INET) failed
 Apr  2 03:21:01 ip-10-212-181-157 kernel: [902291.826851] JBD: barrier-based sync failed on xvdb1-8 - disabling barriers
