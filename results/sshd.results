@@ -711,3 +711,18 @@ ossec-testrule: Type one log per line.
        Rule id: '5709'
        Level: '0'
        Description: 'Useless SSHD message without an user/ip and context.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr  3 20:28:44 ip-10-212-181-157 sshd[22506]: warning: /etc/hosts.deny, line 16: can't verify hostname: getaddrinfo(50.n0.netell.net.br, AF_INET) failed'
+       hostname: 'ip-10-212-181-157'
+       program_name: 'sshd'
+       log: 'warning: /etc/hosts.deny, line 16: can't verify hostname: getaddrinfo(50.n0.netell.net.br, AF_INET) failed'
+
+**Phase 2: Completed decoding.
+       decoder: 'sshd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '5740'
+       Level: '0'
+       Description: 'Invalid entry in /etc/hosts.deny.'
