@@ -77,3 +77,5 @@ Mar 25 14:31:40 kaitain Hostd: [2011-03-25 14:31:40.004 50B81B90 verbose 'Statss
 g file for more details.
 
 
+Apr  3 20:28:44 ip-10-212-181-157 sshd[22506]: warning: /etc/hosts.deny, line 16: can't verify hostname: getaddrinfo(50.n0.netell.net.br, AF_INET) failed
+Apr  2 03:21:01 ip-10-212-181-157 kernel: [902291.826851] JBD: barrier-based sync failed on xvdb1-8 - disabling barriers
