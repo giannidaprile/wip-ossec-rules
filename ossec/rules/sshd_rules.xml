@@ -270,6 +270,17 @@
     <group>authentication_failed,</group>
   </rule>
 
+  <rule id="5739" level="0">
+    <if_sid>5700</if_sid>
+    <match>warning: /etc/hosts.deny, line </match>
+    <description>Issue with /etc/hosts.deny.</description>
+  </rule>
+
+  <rule id="5740" level="0">
+    <if_sid>5739</if_sid>
+    <match>can't verify hostname</match>
+    <description>Invalid entry in /etc/hosts.deny.</description>
+  </rule>
 </group> <!-- SYSLOG, SSHD -->
 
 <!-- EOF -->
