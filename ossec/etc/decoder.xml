@@ -808,11 +808,11 @@
 
 <decoder name="named-master">
   <parent>named</parent>
-  <prematch> for master</prematch>
-  <regex>for master (\d+.\d+.\d+.\d+):(\d+) \S+ \(source (\d+.\d+.\d+.\d+)#d+\)$</regex>
+  <prematch> for master| from master</prematch>
+  <regex>for master (\d+.\d+.\d+.\d+)#(\d+) \S* \(source (\d+.\d+.\d+.\d+)#\d+|</regex>
+  <regex>from master (\d+.\d+.\d+.\d+)#(\d+) \(source (\d+.\d+.\d+.\d+)#\d+\)</regex>
   <order>dstip,dstport,srcip</order>
 </decoder>
-
 
 <!-- Postfix  decoder.
   - Will extract the srcip
