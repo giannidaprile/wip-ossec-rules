@@ -38,4 +38,4 @@ Nov  2 12:08:27 192.168.17.7 sshd[9665]: fatal: Cannot bind any address.
 Nov  2 12:11:40 192.168.17.7 sshd[9814]: pam_loginuid(sshd:session): set_loginuid failed opening loginuid
 Nov  6 09:53:38 hagal sshd[697]: error: accept: Software caused connection abort
 Nov  9 11:36:55 ecaz sshd[26967]: pam_succeed_if(sshd:auth): error retrieving information about user _z9xxbBW
-
+Apr  3 20:28:44 ip-10-212-181-157 sshd[22506]: warning: /etc/hosts.deny, line 16: can't verify hostname: getaddrinfo(50.n0.netell.net.br, AF_INET) failed
