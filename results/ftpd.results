@@ -914,42 +914,6 @@ ossec-testrule: Type one log per line.
 
 
 **Phase 1: Completed pre-decoding.
-       full event: 'Nov 21 18:11:10 japoata ftpd[21984]: pam_authenticate: Authentication failed '
-       hostname: 'japoata'
-       program_name: 'ftpd'
-       log: 'pam_authenticate: Authentication failed '
-
-**Phase 2: Completed decoding.
-       decoder: 'ftpd'
-
-**Phase 3: Completed filtering (rules).
-       Rule id: '11112'
-       Level: '5'
-       Description: 'FTP authentication failure.'
-**Alert to be generated.
-
-
-
-
-**Phase 1: Completed pre-decoding.
-       full event: 'Nov 21 18:14:21 japoata ftpd[22119]: pam_authenticate: Authentication failed '
-       hostname: 'japoata'
-       program_name: 'ftpd'
-       log: 'pam_authenticate: Authentication failed '
-
-**Phase 2: Completed decoding.
-       decoder: 'ftpd'
-
-**Phase 3: Completed filtering (rules).
-       Rule id: '11112'
-       Level: '5'
-       Description: 'FTP authentication failure.'
-**Alert to be generated.
-
-
-
-
-**Phase 1: Completed pre-decoding.
        full event: 'Nov 23 10:28:55 passabem ftpd[14270]: REPEATED LOGIN FAILURES FROM 10.128.80.31 '
        hostname: 'passabem'
        program_name: 'ftpd'
