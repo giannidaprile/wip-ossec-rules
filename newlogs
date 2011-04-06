@@ -81,3 +81,7 @@ wd0a: uncorrectable data error reading fsbn 829435 of 829408-829439 (wd0 bn 8324
 wd0a: uncorrectable data error reading fsbn 829435 of 829408-829439 (wd0 bn 832460; cn 825 tn 13 sn 41)
 
 Apr  6 10:41:58 corrin sshd[26534]: Setting tty modes failed: Invalid argument
+
+Apr  6 01:49:08 buzzell smtpd[15411]: parent_forward_open: /root/.forward: Input/output error
+
+
