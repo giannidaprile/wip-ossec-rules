@@ -92,4 +92,9 @@ Mar  8 10:19:31 junction dhcpd[1628]: Reclaiming abandoned IP address 192.168.17
 Mar  8 19:18:35 junction dhcpd[9468]: Abandoning IP address 192.168.17.150 for 43200 seconds: pinged before offer
 Apr  7 09:25:41 junction dhcpd[3013]: exiting.
 
+Feb 11 22:34:20 junction dhcpd[15781]: DHCPDISCOVER from a8:e3:ee:05:52:f3 via sk0
+Feb 11 22:34:20 junction dhcpd[15781]: DHCPOFFER on 192.168.17.161 to a8:e3:ee:05:52:f3 via sk0
+Feb 11 22:34:21 junction dhcpd[15781]: DHCPREQUEST for 192.168.17.134 from a8:e3:ee:05:52:f3 via sk0
+Feb 11 22:34:21 junction dhcpd[15781]: DHCPNAK on 192.168.17.134 to a8:e3:ee:05:52:f3 via sk0
+Feb 11 23:19:12 junction dhcpd[15781]: Discarding packet with invalid hlen.
 
