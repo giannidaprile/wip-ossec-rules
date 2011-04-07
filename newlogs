@@ -84,4 +84,8 @@ Apr  6 10:41:58 corrin sshd[26534]: Setting tty modes failed: Invalid argument
 
 Apr  6 01:49:08 buzzell smtpd[15411]: parent_forward_open: /root/.forward: Input/output error
 
+Apr  7 09:24:21 junction dhcpd[12258]: Configuration file errors encountered
+
+Apr  7 10:20:21 junction portmap[32125]: cannot bind udp: Permission denied
+
 
