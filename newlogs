@@ -97,4 +97,10 @@ Feb 11 22:34:20 junction dhcpd[15781]: DHCPOFFER on 192.168.17.161 to a8:e3:ee:0
 Feb 11 22:34:21 junction dhcpd[15781]: DHCPREQUEST for 192.168.17.134 from a8:e3:ee:05:52:f3 via sk0
 Feb 11 22:34:21 junction dhcpd[15781]: DHCPNAK on 192.168.17.134 to a8:e3:ee:05:52:f3 via sk0
 Feb 11 23:19:12 junction dhcpd[15781]: Discarding packet with invalid hlen.
+Apr  7 10:05:40 junction dhcpd[9573]: BOOTREQUEST from 00:11:24:76:6d:66 via sk0
+Apr  7 10:05:40 junction dhcpd[9573]: BOOTREPLY for 192.168.17.8 to buzzell (00:11:24:76:6d:66) via sk0
+
+Apr  6 23:53:30 junction dhclient[4078]: DHCPREQUEST on re0 to 192.168.1.1 port 67
+Apr  6 23:53:30 junction dhclient[4078]: DHCPACK from 192.168.1.1 (00:14:f1:e9:1a:e2)
+Apr  6 23:53:31 junction dhclient[4078]: bound to 192.168.1.1 -- renewal in 43200 seconds.
 
