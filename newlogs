@@ -104,3 +104,4 @@ Apr  6 23:53:30 junction dhclient[4078]: DHCPREQUEST on re0 to 192.168.1.1 port 
 Apr  6 23:53:30 junction dhclient[4078]: DHCPACK from 192.168.1.1 (00:14:f1:e9:1a:e2)
 Apr  6 23:53:31 junction dhclient[4078]: bound to 192.168.1.1 -- renewal in 43200 seconds.
 
+pr 12 12:17:44 buzzell named[6186]: client 192.168.17.17#19588: transfer of 'example.net/IN': AXFR started
