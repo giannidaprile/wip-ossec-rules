@@ -1,79 +1,65 @@
-  <!-- Copyright 2010 Dan Parriott (ddpbsd@gmail.com)
+<!-- @(#) $Id$
+  -  Example of local rules for OSSEC.
+  -
+  -  Copyright (C) 2009 Trend Micro Inc.
+  -  All rights reserved.
+  -
   -  This program is a free software; you can redistribute it
   -  and/or modify it under the terms of the GNU General Public
   -  License (version 2) as published by the FSF - Free Software
   -  Foundation.
   -
-  -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+  -  License details: http://www.ossec.net/en/licensing.html
   -->
-
 
 
 <!-- Modify it at your will. -->
 
-<group name="local,syslog,ntpd">
+<group name="ntpd,syslog,">
 
-  <rule id="400000" level="0" noalert="1">
-    <program_name>ntpd</program_name>
+  <rule id="53000" level="0" noalert="yes">
+    <decoded_as>ntpd</decoded_as>
     <description>Grouping for ntpd rules.</description>
-    <group>ntpd,</group>
   </rule>
 
-  <rule id="400010" level="0">
-    <if_sid>400000</if_sid>
-    <match>bad sensor</match>
-    <description>A time sensor is not working properly</description>
+  <rule id="53001" level="0">
+    <if_sid>53000</if_sid>
+    <match>^bad sensor</match>
+    <description>Bad time sensor.</description>
   </rule>
 
-  <rule id="400011" level="0">
-    <if_sid>400000</if_sid>
-    <match>bad peer</match>
+  <rule id="53002" level="1">
+    <if_sid>53000</if_sid>
+    <match>^bad peer</match>
     <description>Bad ntp peer.</description>
   </rule>
 
-  <rule id="400012" level="0">
-    <if_sid>400000</if_sid>
-    <match>skipping: Can't assign requested address</match>
-    <description>Cannot bind to the assigned port.</description>
+  <rule id="53003" level="0">
+    <if_sid>53000</if_sid>
+    <match>Can't assign requested address$|skipping: Address already in use$</match>
+    <description>Cannot bind to port.</description>
   </rule>
 
-  <rule id="400013" level="0">
-    <if_sid>400000</if_sid>
-    <match>skipping: Address already in use</match>
-    <description>Something is already bound to the assigned port.</description>
-  </rule>
-
-  <rule id="400014" level="0">
-    <if_sid>400000</if_sid>
-    <match>bad peer from pool</match>
-    <description>Bad ntp peer.</description>
-  </rule>
-
-  <rule id="400015" level="0">
-    <if_sid>400000</if_sid>
+  <rule id="53004" level="0">
+    <if_sid>53000</if_sid>
     <match>Connection refused$</match>
     <description>Connection refused.</description>
   </rule>
 
-  <rule id="400016" level="0">
-    <if_sid>400000</if_sid>
-    <regex>\d+ out of \d+ peers valid</regex>
-    <description>Some peers are now valid.</description>
+  <rule id="53005" level="1">
+    <if_sid>53000</if_sid>
+    <match>logconfig: illegal argument  - ignored$</match>
+    <description>Illegal argument in configuration.</description>
   </rule>
 
-  <rule id="400017" level="0">
-    <if_sid>400000</if_sid>
-    <match>logconfig: illegal argument</match>
-    <description>Illegal argument in the configuration.</description>
+  <rule id="53006" level="0">
+    <if_sid>53000</if_sid>
+    <regex>offset \d+.\d+ sec freq \d+.000 ppm error \d+.\d+ poll \d+$</regex>
+    <description>Status message.</description>
   </rule>
 
-  <rule id="400018" level="0">
-    <if_sid>400000</if_sid>
-    <regex>offset \S+ sec freq \S+ ppm error \S+ poll \S+</regex>
-    <description>Normal ntpd status updates.</description>
-  </rule>
-
-</group> <!-- SYSLOG,LOCAL -->
+   
+</group> <!-- SYSLOG,NTPD -->
 
 
 <!-- EOF -->
