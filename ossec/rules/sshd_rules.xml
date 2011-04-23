@@ -70,7 +70,7 @@
     <if_sid>5700</if_sid>
     <match>error: Could not get shadow information for NOUSER|</match>
     <match>fatal: Read from socket failed: |error: ssh_msg_send: write|</match>
-    <match>^syslogin_perform_logout: |^pam_succeed_if(sshd:auth): error retrieving information about user</match>
+    <match>^syslogin_perform_logout: |^pam_succeed_if(sshd:auth): error retrieving information about user|can't verify hostname: getaddrinfo</match>
     <description>Useless SSHD message without an user/ip and context.</description>
   </rule>
   
@@ -270,17 +270,6 @@
     <group>authentication_failed,</group>
   </rule>
 
-  <rule id="5739" level="0">
-    <if_sid>5700</if_sid>
-    <match>warning: /etc/hosts.deny, line </match>
-    <description>Issue with /etc/hosts.deny.</description>
-  </rule>
-
-  <rule id="5740" level="0">
-    <if_sid>5739</if_sid>
-    <match>can't verify hostname</match>
-    <description>Invalid entry in /etc/hosts.deny.</description>
-  </rule>
 </group> <!-- SYSLOG, SSHD -->
 
 <!-- EOF -->
