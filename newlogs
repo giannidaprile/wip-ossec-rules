@@ -107,3 +107,8 @@ Apr  6 23:53:30 junction dhclient[4078]: DHCPACK from 192.168.1.1 (00:14:f1:e9:1
 Apr  6 23:53:31 junction dhclient[4078]: bound to 192.168.1.1 -- renewal in 43200 seconds.
 
 pr 12 12:17:44 buzzell named[6186]: client 192.168.17.17#19588: transfer of 'example.net/IN': AXFR started
+
+Apr 22 20:03:44 ix smtpd[25396]: (none): from=<ossecm@ix.example.com>, relay=localhost [127.0.0.1], stat=LocalError (421 Service temporarily unavailable)
+
+
+
