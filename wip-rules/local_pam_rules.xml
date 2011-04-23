@@ -1,0 +1,8 @@
+<group name="syslog,pam,">
+  <rule id="5552" level="0">
+    <if_sid>5500</if_sid>
+    <match>conversation failed$</match>
+    <description>Conversation with pam failed.</description>
+  </rule>
+</group> <!-- SYSLOG,pam -->
+
