@@ -3,13 +3,15 @@ gpl.txt contains the gpl v3 (from http://www.gnu.org/licenses/gpl.txt) since it 
 
 Directory structure:
 newlogs - This file contains new logs that have not been sorted yet.
-rules/local_*_rules.xml - These files contain new rules that have not been submitted to the OSSEC project yet.
-etc/local_decoder.xml - This file contains new decoders that have not been submitted to the OSSEC project yet.
 logs/* - These files contain collected logs for various programs.
 ossec/rules/* - These files (except local_rules.xml) are from OSSEC snapshots, and are being used for testing.
 ossec/rules/local_rules.xml - This file contains the new rules for testing.
 ossec/etc/* - These files (except local_decoder.xml) are from the OSSEC snapshots, and are being used for testing.
 ossec/etc/local_decoder.xml - This file contains the new decoders for testing.
+wip_rules - These rules can be used, but have not been submitted to the OSSEC project.
+wip_decoders - These decoders can be used, but have not been submitted to the OSSEC project.
+
+
 
 Regress testing:
 Regress testing can be done on individual log sets. The ossec directory should contain the ossec rulesets, as 
