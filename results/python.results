@@ -12,9 +12,9 @@ ossec-testrule: Type one log per line.
        decoder: 'python'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '230020'
+       Level: '1'
+       Description: 'hp-scan could not find a printer'
 **Alert to be generated.
 
 
@@ -30,9 +30,9 @@ ossec-testrule: Type one log per line.
        decoder: 'python'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '230021'
+       Level: '1'
+       Description: 'Unable to setup multicast socket.'
 **Alert to be generated.
 
 
@@ -48,9 +48,9 @@ ossec-testrule: Type one log per line.
        decoder: 'python'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '230022'
+       Level: '1'
+       Description: 'hp-setup requires a GUI'
 **Alert to be generated.
 
 
@@ -66,9 +66,9 @@ ossec-testrule: Type one log per line.
        decoder: 'python'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '230023'
+       Level: '1'
+       Description: 'hp-setup could not find a printer'
 **Alert to be generated.
 
 
@@ -84,9 +84,9 @@ ossec-testrule: Type one log per line.
        decoder: 'python'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '230024'
+       Level: '1'
+       Description: 'hp-info cannot find a printer'
 **Alert to be generated.
 
 
@@ -102,9 +102,9 @@ ossec-testrule: Type one log per line.
        decoder: 'python'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '230025'
+       Level: '1'
+       Description: 'A proper ID was not specified for hp-makeuri'
 **Alert to be generated.
 
 
@@ -120,9 +120,9 @@ ossec-testrule: Type one log per line.
        decoder: 'python'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '230026'
+       Level: '1'
+       Description: 'hpaio has not been setup.'
 **Alert to be generated.
 
 
@@ -138,9 +138,9 @@ ossec-testrule: Type one log per line.
        decoder: 'python'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '230027'
+       Level: '1'
+       Description: 'errors and/or warnings were found in the configuration'
 **Alert to be generated.
 
 
@@ -156,9 +156,9 @@ ossec-testrule: Type one log per line.
        decoder: 'python'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '230028'
+       Level: '1'
+       Description: 'hp-makeuri could not find the printer device'
 **Alert to be generated.
 
 

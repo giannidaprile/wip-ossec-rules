@@ -723,6 +723,6 @@ ossec-testrule: Type one log per line.
        decoder: 'sshd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '5740'
+       Rule id: '5709'
        Level: '0'
-       Description: 'Invalid entry in /etc/hosts.deny.'
+       Description: 'Useless SSHD message without an user/ip and context.'

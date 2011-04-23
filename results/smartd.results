@@ -12,12 +12,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
-**Alert to be generated.
-
-
+       Rule id: '330010'
+       Level: '0'
+       Description: 'Ignore this non-error'
 
 
 **Phase 1: Completed pre-decoding.
@@ -30,9 +27,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
+       Rule id: '330011'
        Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Description: 'XXX Bad IEC'
 **Alert to be generated.
 
 
@@ -47,6 +44,14 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        No decoder matched.
 
+**Phase 3: Completed filtering (rules).
+       Rule id: '330012'
+       Level: '1'
+       Description: 'SMART Usage Attribute changed.'
+**Alert to be generated.
+
+
+
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 18 14:54:28 tiny smartd[31648]: Device: /dev/wd0c, SMART Usage Attribute: 194 Temperature_Celsius changed from 38 to 39'
@@ -57,6 +62,14 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        No decoder matched.
 
+**Phase 3: Completed filtering (rules).
+       Rule id: '330012'
+       Level: '1'
+       Description: 'SMART Usage Attribute changed.'
+**Alert to be generated.
+
+
+
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun  9 02:01:21 ix smartd[30274]: Device: /dev/wd0c, starting scheduled Short Self-Test.'
@@ -66,6 +79,14 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330013'
+       Level: '1'
+       Description: 'Short self-test started'
+**Alert to be generated.
+
+
 
 
 **Phase 1: Completed pre-decoding.
@@ -78,9 +99,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
+       Rule id: '330014'
        Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Description: 'SMART prefailure attribute changed.'
 **Alert to be generated.
 
 
@@ -95,6 +116,11 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        No decoder matched.
 
+**Phase 3: Completed filtering (rules).
+       Rule id: '330015'
+       Level: '0'
+       Description: 'Configuration file parsed.'
+
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, enabled SMART Attribute Autosave.'
@@ -104,6 +130,11 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330016'
+       Level: '0'
+       Description: 'Ignore SMART attribute autosave enabled messages'
 
 
 **Phase 1: Completed pre-decoding.
@@ -115,6 +146,11 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        No decoder matched.
 
+**Phase 3: Completed filtering (rules).
+       Rule id: '330017'
+       Level: '0'
+       Description: 'Ignore SMART automatic offline testing enabled messages'
+
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, found in smartd database.'
@@ -124,6 +160,11 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330018'
+       Level: '0'
+       Description: 'Ignore device found in smartd database messages.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -135,6 +176,11 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        No decoder matched.
 
+**Phase 3: Completed filtering (rules).
+       Rule id: '330019'
+       Level: '0'
+       Description: 'Ignore device added to monitor list messages.'
+
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 10 16:37:13 ix smartd[6233]: Device: /dev/wd0c, opened'
@@ -144,6 +190,11 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330020'
+       Level: '0'
+       Description: 'Ignore device opened messages.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -155,6 +206,11 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        No decoder matched.
 
+**Phase 3: Completed filtering (rules).
+       Rule id: '330021'
+       Level: '0'
+       Description: 'Ignore smartd status message.'
+
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 10 16:37:13 ix smartd[6233]: Opened configuration file /etc/smartd.conf'
@@ -165,6 +221,11 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        No decoder matched.
 
+**Phase 3: Completed filtering (rules).
+       Rule id: '330022'
+       Level: '0'
+       Description: 'Ignore configuration file opened messages.'
+
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 10 16:37:14 ix smartd[3419]: smartd has fork()ed into background mode. New PID=3419.'
@@ -174,6 +235,11 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330023'
+       Level: '0'
+       Description: 'Ignore smartd being forked into the background messages.'
 
 
 **Phase 1: Completed pre-decoding.
@@ -186,9 +252,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
+       Rule id: '330014'
        Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Description: 'SMART prefailure attribute changed.'
 **Alert to be generated.
 
 
@@ -204,9 +270,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
+       Rule id: '330024'
        Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Description: 'smartd shutdown failed.'
 **Alert to be generated.
 
 
@@ -222,9 +288,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '330012'
+       Level: '1'
+       Description: 'SMART Usage Attribute changed.'
 **Alert to be generated.
 
 
@@ -240,9 +306,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
+       Rule id: '330025'
        Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Description: 'smartd self-test failed.'
 **Alert to be generated.
 
 
@@ -258,9 +324,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
+       Rule id: '330026'
        Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Description: 'Self-test log error count increased.'
 **Alert to be generated.
 
 
@@ -276,9 +342,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
+       Rule id: '330027'
        Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Description: 'Self-test log error.'
 **Alert to be generated.
 
 
@@ -294,9 +360,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
+       Rule id: '330028'
        Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Description: 'Previous self-test completed, but had an error.'
 **Alert to be generated.
 
 
@@ -312,9 +378,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
+       Rule id: '330029'
        Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Description: 'Device does not have a SMART Error log available.'
 **Alert to be generated.
 
 
@@ -328,3 +394,11 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '330030'
+       Level: '2'
+       Description: 'Offline uncorrectable sectors have changed.'
+**Alert to be generated.
+
+
