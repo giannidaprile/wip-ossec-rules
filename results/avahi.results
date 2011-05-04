@@ -67,7 +67,7 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Sep 06 01:56:16 avahi-daemon[13441]: Invalid query packet.ansfer on gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\^L\^R\^\\^A'
-       hostname: 'arrakis'
+       hostname: 'ix'
        program_name: '(null)'
        log: 'avahi-daemon[13441]: Invalid query packet.ansfer on gorilla"(/etc/avahi/services/sftp-ssh.service) successfully established.\M^A:\^L\^R\^\\^A'
 

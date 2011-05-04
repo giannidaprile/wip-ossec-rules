@@ -279,3 +279,21 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'May  3 17:59:21 junction radium[7994]: 17:59:21.510306 connect to 127.0.0.1:562 failed 'Connection refused''
+       hostname: 'junction'
+       program_name: 'radium'
+       log: '17:59:21.510306 connect to 127.0.0.1:562 failed 'Connection refused''
+
+**Phase 2: Completed decoding.
+       No decoder matched.
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '480025'
+       Level: '1'
+       Description: 'radium could not connect to specified ip and port.'
+**Alert to be generated.
+
+
