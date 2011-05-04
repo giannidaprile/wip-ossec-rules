@@ -20,7 +20,24 @@
     <decoded_as>rsyslogd</decoded_as>
     <description>Grouping for rsyslogd rules.</description>
   </rule> 
- 
+
+  <rule id="490501" level="0">
+    <decoded_as>rsyslogd</decoded_as>
+    <match>^Warning: backward compatibility layer added to following directive to</match>
+    <description>rsyslogd backwards compatibility layer is in use.</description>
+  </rule>
+
+  <rule id="490502" level="0">
+    <decoded_as>rsyslogd</decoded_as>
+    <match>^-- MARK --$</match>
+    <description>rsyslogd MARK message.</description>
+  </rule>
+
+  <rule id="490503" level="5">
+    <decoded_as>rsyslogd</decoded_as>
+    <match>exiting on signal 15.$</match>
+    <description>rsyslogd has been stopped.</description>
+  </rule> 
 </group> <!-- SYSLOG,LOCAL -->
 
 
