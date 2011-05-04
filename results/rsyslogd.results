@@ -1,0 +1,79 @@
+2011/05/04 10:50:28 ossec-testrule: INFO: Reading local decoder file.
+2011/05/04 10:50:28 ossec-testrule: INFO: Started (pid: 23604).
+ossec-testrule: Type one log per line.
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2011-03-08T11:20:25.189381-05:00 arrakis rsyslogd: [origin software="rsyslogd" swVersion="4.6.4" x-pid="14829" x-info="http://www.rsyslog.com"] (re)start'
+       hostname: 'arrakis'
+       program_name: 'rsyslogd'
+       log: '[origin software="rsyslogd" swVersion="4.6.4" x-pid="14829" x-info="http://www.rsyslog.com"] (re)start'
+
+**Phase 2: Completed decoding.
+       decoder: 'rsyslogd'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '470011'
+       Level: '0'
+       Description: 'syslogd has started.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2011-03-08T11:20:25.160584-05:00 arrakis rsyslogd: WARNING: rsyslogd is running in compatibility mode. Automatically generated config directives may interfer with your rsyslog.conf settings. We suggest upgrading your config and adding -c4 as the first rsyslogd option.'
+       hostname: 'arrakis'
+       program_name: 'rsyslogd'
+       log: 'WARNING: rsyslogd is running in compatibility mode. Automatically generated config directives may interfer with your rsyslog.conf settings. We suggest upgrading your config and adding -c4 as the first rsyslogd option.'
+
+**Phase 2: Completed decoding.
+       decoder: 'rsyslogd'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2011-03-08T11:20:25.188818-05:00 arrakis rsyslogd: Warning: backward compatibility layer added to following directive to rsyslog.conf: ModLoad immark'
+       hostname: 'arrakis'
+       program_name: 'rsyslogd'
+       log: 'Warning: backward compatibility layer added to following directive to rsyslog.conf: ModLoad immark'
+
+**Phase 2: Completed decoding.
+       decoder: 'rsyslogd'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2011-03-08T11:20:25.188851-05:00 arrakis rsyslogd: Warning: backward compatibility layer added to following directive to rsyslog.conf: MarkMessagePeriod 1200'
+       hostname: 'arrakis'
+       program_name: 'rsyslogd'
+       log: 'Warning: backward compatibility layer added to following directive to rsyslog.conf: MarkMessagePeriod 1200'
+
+**Phase 2: Completed decoding.
+       decoder: 'rsyslogd'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2011-03-08T11:20:25.188870-05:00 arrakis rsyslogd: Warning: backward compatibility layer added to following directive to rsyslog.conf: ModLoad imuxsock'
+       hostname: 'arrakis'
+       program_name: 'rsyslogd'
+       log: 'Warning: backward compatibility layer added to following directive to rsyslog.conf: ModLoad imuxsock'
+
+**Phase 2: Completed decoding.
+       decoder: 'rsyslogd'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2011-03-08T11:40:25.209369-05:00 arrakis rsyslogd: -- MARK --'
+       hostname: 'arrakis'
+       program_name: 'rsyslogd'
+       log: '-- MARK --'
+
+**Phase 2: Completed decoding.
+       decoder: 'rsyslogd'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: '2011-03-08T12:10:53.300382-05:00 arrakis rsyslogd: [origin software="rsyslogd" swVersion="4.6.4" x-pid="14829" x-info="http://www.rsyslog.com"] exiting on signal 15.'
+       hostname: 'arrakis'
+       program_name: 'rsyslogd'
+       log: '[origin software="rsyslogd" swVersion="4.6.4" x-pid="14829" x-info="http://www.rsyslog.com"] exiting on signal 15.'
+
+**Phase 2: Completed decoding.
+       decoder: 'rsyslogd'

@@ -1,0 +1,7 @@
+2011-03-08T11:20:25.189381-05:00 arrakis rsyslogd: [origin software="rsyslogd" swVersion="4.6.4" x-pid="14829" x-info="http://www.rsyslog.com"] (re)start
+2011-03-08T11:20:25.160584-05:00 arrakis rsyslogd: WARNING: rsyslogd is running in compatibility mode. Automatically generated config directives may interfer with your rsyslog.conf settings. We suggest upgrading your config and adding -c4 as the first rsyslogd option.
+2011-03-08T11:20:25.188818-05:00 arrakis rsyslogd: Warning: backward compatibility layer added to following directive to rsyslog.conf: ModLoad immark
+2011-03-08T11:20:25.188851-05:00 arrakis rsyslogd: Warning: backward compatibility layer added to following directive to rsyslog.conf: MarkMessagePeriod 1200
+2011-03-08T11:20:25.188870-05:00 arrakis rsyslogd: Warning: backward compatibility layer added to following directive to rsyslog.conf: ModLoad imuxsock
+2011-03-08T11:40:25.209369-05:00 arrakis rsyslogd: -- MARK --
+2011-03-08T12:10:53.300382-05:00 arrakis rsyslogd: [origin software="rsyslogd" swVersion="4.6.4" x-pid="14829" x-info="http://www.rsyslog.com"] exiting on signal 15.
