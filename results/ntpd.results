@@ -4,7 +4,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr  2 01:23:31 gorilla ntpd[27379]: bad sensor nmea0'
-       hostname: 'gorilla'
        program_name: 'ntpd'
        log: 'bad sensor nmea0'
 
@@ -19,7 +18,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 20 13:02:11 tiny ntpd[25875]: bad peer 192.168.1.233 (192.168.1.233)'
-       hostname: 'tiny'
        program_name: 'ntpd'
        log: 'bad peer 192.168.1.233 (192.168.1.233)'
 
@@ -38,7 +36,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'May 26 23:31:02 gorilla ntpd[29719]: bind on 192.168.1.233 failed, skipping: Can't assign requested address'
-       hostname: 'gorilla'
        program_name: 'ntpd'
        log: 'bind on 192.168.1.233 failed, skipping: Can't assign requested address'
 
@@ -53,7 +50,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 28 22:54:52 ix ntpd[8392]: bind on 192.168.17.9 failed, skipping: Address already in use'
-       hostname: 'ix'
        program_name: 'ntpd'
        log: 'bind on 192.168.17.9 failed, skipping: Address already in use'
 
@@ -68,7 +64,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jul  1 19:50:00 ix ntpd[11685]: bad peer from pool pool.ntp.org (64.73.32.135)'
-       hostname: 'ix'
        program_name: 'ntpd'
        log: 'bad peer from pool pool.ntp.org (64.73.32.135)'
 
@@ -87,7 +82,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jul  2 22:06:30 richese ntpd[3465]: bad peer ix (192.168.17.9)'
-       hostname: 'richese'
        program_name: 'ntpd'
        log: 'bad peer ix (192.168.17.9)'
 
@@ -106,7 +100,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jul  2 22:07:58 ix ntpd[11685]: bad peer from pool pool.ntp.org (69.50.219.51)'
-       hostname: 'ix'
        program_name: 'ntpd'
        log: 'bad peer from pool pool.ntp.org (69.50.219.51)'
 
@@ -125,7 +118,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Aug 15 17:26:17 ix ntpd[7045]: recvmsg 192.168.17.17: Connection refused'
-       hostname: 'ix'
        program_name: 'ntpd'
        log: 'recvmsg 192.168.17.17: Connection refused'
 
@@ -140,7 +132,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Aug  4 23:18:33 ix ntpd[29411]: 2 out of 3 peers valid'
-       hostname: 'ix'
        program_name: 'ntpd'
        log: '2 out of 3 peers valid'
 
@@ -150,7 +141,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Sep 27 11:56:04 bridge ntpd[5877]: logconfig: illegal argument  - ignored'
-       hostname: 'bridge'
        program_name: 'ntpd'
        log: 'logconfig: illegal argument  - ignored'
 
@@ -168,7 +158,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Sep 27 12:56:53 bridge ntpd[5902]: offset 0.000000 sec freq 0.000 ppm error 0.000011 poll 6'
-       hostname: 'bridge'
        program_name: 'ntpd'
        log: 'offset 0.000000 sec freq 0.000 ppm error 0.000011 poll 6'
 

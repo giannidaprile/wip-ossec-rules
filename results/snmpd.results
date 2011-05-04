@@ -4,7 +4,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 16 19:28:36 buffalo1 syslog: snmpd : SNMP daemon successfully started'
-       hostname: 'buffalo1'
        program_name: 'syslog'
        log: 'snmpd : SNMP daemon successfully started'
 
@@ -19,7 +18,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 29 14:15:16 junction snmpd[16830]: fatal: snmpe: failed to bind SNMP UDP socket'
-       hostname: 'junction'
        program_name: 'snmpd'
        log: 'fatal: snmpe: failed to bind SNMP UDP socket'
 
@@ -37,7 +35,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 29 14:15:16 junction snmpd[27091]: check_child: lost child: snmp engine exited'
-       hostname: 'junction'
        program_name: 'snmpd'
        log: 'check_child: lost child: snmp engine exited'
 

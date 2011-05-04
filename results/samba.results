@@ -4,7 +4,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Aug 22 13:11:29 bunnys-mac-mini launchproxy[1286]: /usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution'
-       hostname: 'bunnys-mac-mini'
        program_name: 'launchproxy'
        log: '/usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution'
 
@@ -22,7 +21,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Dec 25 18:11:29 ix smbd[22614]:   ERROR: smbd is already running. File /var/run/smbd.pid exists and process id 3203 is running.'
-       hostname: 'ix'
        program_name: 'smbd'
        log: '  ERROR: smbd is already running. File /var/run/smbd.pid exists and process id 3203 is running.'
 
@@ -40,7 +38,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Dec 25 18:11:33 ix nmbd[554]:   ERROR: nmbd is already running. File /var/run/nmbd.pid exists and process id 31838 is running.'
-       hostname: 'ix'
        program_name: 'nmbd'
        log: '  ERROR: nmbd is already running. File /var/run/nmbd.pid exists and process id 31838 is running.'
 
@@ -58,7 +55,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 13 16:29:04 ix smbd[6238]:   Connection denied from 0.0.0.0'
-       hostname: 'ix'
        program_name: 'smbd'
        log: '  Connection denied from 0.0.0.0'
 
@@ -76,7 +72,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 13 16:29:04 ix smbd[6238]:   write_data: write failure in writing to client 0.0.0.0. Error Socket is not connected'
-       hostname: 'ix'
        program_name: 'smbd'
        log: '  write_data: write failure in writing to client 0.0.0.0. Error Socket is not connected'
 
@@ -94,7 +89,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  9 04:56:33 giediprime kernel: gvfsd-smb[8203]: segfault at c ip 08061322 sp bfcd78a0 error 4 in gvfsd-smb[8048000+22000'
-       hostname: 'giediprime'
        program_name: 'kernel'
        log: 'gvfsd-smb[8203]: segfault at c ip 08061322 sp bfcd78a0 error 4 in gvfsd-smb[8048000+22000'
 
@@ -112,7 +106,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Oct 28 01:53:12 ix smbd[16392]:   getpeername failed. Error was Socket is not connected'
-       hostname: 'ix'
        program_name: 'smbd'
        log: '  getpeername failed. Error was Socket is not connected'
 
@@ -130,7 +123,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Oct 28 01:53:12 ix smbd[16392]:   read_fd_with_timeout: client 0.0.0.0 read error = Socket is not connected.'
-       hostname: 'ix'
        program_name: 'smbd'
        log: '  read_fd_with_timeout: client 0.0.0.0 read error = Socket is not connected.'
 
@@ -148,7 +140,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: '[Time 2009.08.22 17:11:29 UTC] [Facility launchd] [Sender launchproxy] [PID 1286] [Message /usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution] [Level 4] [UID -2] [GID -2] [Host bunnys-mac-mini]'
-       hostname: 'bunnys-mac-mini'
        program_name: 'launchproxy'
        log: '/usr/sbin/smbd: getnameinfo(): Non-recoverable failure in name resolution'
 

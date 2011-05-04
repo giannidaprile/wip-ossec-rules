@@ -4,7 +4,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  5 12:19:26 kaitain vmkernel: 0:00:23:48.161 cpu3:10707)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:00:23:48.161 cpu3:10707)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
 
@@ -19,7 +18,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  5 12:38:51 192.168.17.12 vmkernel: 0:00:01:25.204 cpu2:5464)Net: 2813: failed to update ethernet FRP for port 0x1000003: Not found'
-       hostname: '192.168.17.12'
        program_name: 'vmkernel'
        log: '0:00:01:25.204 cpu2:5464)Net: 2813: failed to update ethernet FRP for port 0x1000003: Not found'
 
@@ -34,7 +32,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  5 12:42:09 kaitain vmkernel: 0:00:00:37.838 cpu6:4654)NMP: nmp_CompleteCommandForPath: Command 0x12 (0x41027f37c040) to NMP device "mpx.vmhba1:C0:T0:L0" failed on physical path "vmhba1:C0:T0:L0" H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x24 0x0.'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:00:00:37.838 cpu6:4654)NMP: nmp_CompleteCommandForPath: Command 0x12 (0x41027f37c040) to NMP device "mpx.vmhba1:C0:T0:L0" failed on physical path "vmhba1:C0:T0:L0" H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x24 0x0.'
 
@@ -49,7 +46,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  5 12:42:09 kaitain vmkernel: 0:00:00:37.838 cpu6:4654)ScsiDeviceIO: 1672: Command 0x12 to device "mpx.vmhba1:C0:T0:L0" failed H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x24 0x0.'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:00:00:37.838 cpu6:4654)ScsiDeviceIO: 1672: Command 0x12 to device "mpx.vmhba1:C0:T0:L0" failed H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x24 0x0.'
 
@@ -64,7 +60,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  5 12:50:40 kaitain vmkernel: 0:00:09:08.895 cpu0:9129)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:00:09:08.895 cpu0:9129)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
 
@@ -79,7 +74,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  5 13:02:10 kaitain authd[10199]: Local connection for mks failed.'
-       hostname: 'kaitain'
        program_name: 'authd'
        log: 'Local connection for mks failed.'
 
@@ -94,7 +88,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  5 14:07:35 kaitain vobd: Nov 05 14:07:35.066: 5163272128us: [vob.net.pg.uplink.transition.down] Uplink: vmnic2 is down. Affected portgroup: VM Network. 1 uplinks up. Failed criteria: 512.'
-       hostname: 'kaitain'
        program_name: 'vobd'
        log: 'Nov 05 14:07:35.066: 5163272128us: [vob.net.pg.uplink.transition.down] Uplink: vmnic2 is down. Affected portgroup: VM Network. 1 uplinks up. Failed criteria: 512.'
 
@@ -112,7 +105,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  5 14:07:35 kaitain vobd: Nov 05 14:07:35.066: 5163272133us: [vob.net.pg.uplink.transition.down] Uplink: vmnic2 is down. Affected portgroup: Switch1. 1 uplinks up. Failed criteria: 512.'
-       hostname: 'kaitain'
        program_name: 'vobd'
        log: 'Nov 05 14:07:35.066: 5163272133us: [vob.net.pg.uplink.transition.down] Uplink: vmnic2 is down. Affected portgroup: Switch1. 1 uplinks up. Failed criteria: 512.'
 
@@ -130,7 +122,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  5 14:08:10 kaitain vmkernel: 0:01:26:38.511 cpu1:5126)Net: 2813: failed to update ethernet FRP for port 0x2000004: Not found'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:01:26:38.511 cpu1:5126)Net: 2813: failed to update ethernet FRP for port 0x2000004: Not found'
 
@@ -145,7 +136,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  5 14:11:39 kaitain watchdog-openwsmand: [5273] Begin '/sbin/openwsmand ++min=0,swap,group=wsman --syslog=3 --foreground-process', min-uptime = 60, max-quick-failures = 5, max-total-failures = 10'
-       hostname: 'kaitain'
        program_name: 'watchdog-openwsmand'
        log: '[5273] Begin '/sbin/openwsmand ++min=0,swap,group=wsman --syslog=3 --foreground-process', min-uptime = 60, max-quick-failures = 5, max-total-failures = 10'
 
@@ -160,7 +150,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  5 14:11:40 kaitain watchdog-usbarbitrator: [5347] Begin '/usr/lib/vmware/bin/vmware-usbarbitrator ++min=0,max=10 -t', min-uptime = 60, max-quick-failures = 1, max-total-failures = 1000000'
-       hostname: 'kaitain'
        program_name: 'watchdog-usbarbitrator'
        log: '[5347] Begin '/usr/lib/vmware/bin/vmware-usbarbitrator ++min=0,max=10 -t', min-uptime = 60, max-quick-failures = 1, max-total-failures = 1000000'
 
@@ -175,7 +164,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  5 14:11:39 kaitain vmkernel: 0:00:00:33.126 cpu1:5319)Vol3: 1604: Could not open device 't10.ATA_____SAMSUNG_HE253GJ_______________________________S2B5J90Z907112:5' for probing: Permission denied'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:00:00:33.126 cpu1:5319)Vol3: 1604: Could not open device 't10.ATA_____SAMSUNG_HE253GJ_______________________________S2B5J90Z907112:5' for probing: Permission denied'
 
@@ -190,7 +178,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  5 14:11:39 kaitain vmkernel: 0:00:00:33.126 cpu1:5319)Vol3: 644: Could not open device 't10.ATA_____SAMSUNG_HE253GJ_______________________________S2B5J90Z907112:5' for volume open: Permission denied'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:00:00:33.126 cpu1:5319)Vol3: 644: Could not open device 't10.ATA_____SAMSUNG_HE253GJ_______________________________S2B5J90Z907112:5' for volume open: Permission denied'
 
@@ -205,7 +192,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  6 02:24:08 kaitain vmkernel: 0:12:13:01.567 cpu0:80682)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:12:13:01.567 cpu0:80682)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
 
@@ -220,7 +206,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  6 04:39:17 kaitain watchdog-cdp: [5431] Begin '/usr/sbin/net-cdp', min-uptime = 60, max-quick-failures = 1, max-total-failures = 1000000'
-       hostname: 'kaitain'
        program_name: 'watchdog-cdp'
        log: '[5431] Begin '/usr/sbin/net-cdp', min-uptime = 60, max-quick-failures = 1, max-total-failures = 1000000'
 
@@ -235,7 +220,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  6 05:30:59 kaitain sfcb-CIMXML-Processor[13160]:  *** 1622 Timeout error accepting SSL connection -- exiting'
-       hostname: 'kaitain'
        program_name: 'sfcb-CIMXML-Processor'
        log: ' *** 1622 Timeout error accepting SSL connection -- exiting'
 
@@ -251,7 +235,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  6 05:31:05 kaitain vmkernel: 0:00:52:21.765 cpu6:4842)Migrate: 402: Error reading from pending connection: Connection closed by remote host, possibly due to timeout'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:00:52:21.765 cpu6:4842)Migrate: 402: Error reading from pending connection: Connection closed by remote host, possibly due to timeout'
 
@@ -266,7 +249,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  8 17:13:17 kaitain vmkernel: 2:12:34:33.682 cpu2:369423)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '2:12:34:33.682 cpu2:369423)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
 
@@ -281,7 +263,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 16 15:39:26 kaitain vmkernel: 0:22:45:24.981 cpu6:5755)WARNING: NFS: 1090: Error (No connection) trying to umount /exports/ISO on host hagal (192.168.17.12)'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:22:45:24.981 cpu6:5755)WARNING: NFS: 1090: Error (No connection) trying to umount /exports/ISO on host hagal (192.168.17.12)'
 
@@ -296,7 +277,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 16 15:41:26 kaitain vmkernel: 0:22:47:25.037 cpu1:4654)NMP: nmp_CompleteCommandForPath: Command 0x12 (0x41027f400340) to NMP device "mpx.vmhba1:C0:T0:L0" failed on physical path "vmhba1:C0:T0:L0" H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x24 0x0.'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:22:47:25.037 cpu1:4654)NMP: nmp_CompleteCommandForPath: Command 0x12 (0x41027f400340) to NMP device "mpx.vmhba1:C0:T0:L0" failed on physical path "vmhba1:C0:T0:L0" H:0x0 D:0x2 P:0x0 Valid sense data: 0x5 0x24 0x0.'
 
@@ -311,7 +291,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 16 15:42:01 kaitain vmkernel: 0:22:47:59.559 cpu4:143711)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:22:47:59.559 cpu4:143711)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
 
@@ -326,7 +305,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 17 06:30:28 kaitain sfcb-CIMXML-Processor[232856]:  *** 1622 Timeout error accepting SSL connection -- exiting'
-       hostname: 'kaitain'
        program_name: 'sfcb-CIMXML-Processor'
        log: ' *** 1622 Timeout error accepting SSL connection -- exiting'
 
@@ -342,7 +320,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 16 15:15:01 kaitain vmkernel: 0:22:20:59.810 cpu0:13640)WARNING: NFS: 213: Got error 13 from mount call'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:22:20:59.810 cpu0:13640)WARNING: NFS: 213: Got error 13 from mount call'
 
@@ -357,7 +334,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 16 15:15:38 kaitain vmkernel: 0:22:21:37.151 cpu2:5131)WARNING: NFS: 959: MOUNT failed with MOUNT status 13 (Permission denied) trying to mount Server (192.168.17.12) Path (/exports)'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:22:21:37.151 cpu2:5131)WARNING: NFS: 959: MOUNT failed with MOUNT status 13 (Permission denied) trying to mount Server (192.168.17.12) Path (/exports)'
 
@@ -372,7 +348,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 16 15:15:38 kaitain vmkernel: 0:22:21:37.151 cpu2:5131)NFS: 171: NFS mount hagal:/exports status: The mount request was denied by the NFS server. Check that the export exists and that the client is permitted to mount it'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:22:21:37.151 cpu2:5131)NFS: 171: NFS mount hagal:/exports status: The mount request was denied by the NFS server. Check that the export exists and that the client is permitted to mount it'
 
@@ -390,7 +365,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 16 15:30:51 kaitain vmkernel: 0:22:36:50.193 cpu2:9299)WARNING: NFS: 213: Got error 13 from mount call'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:22:36:50.193 cpu2:9299)WARNING: NFS: 213: Got error 13 from mount call'
 
@@ -405,7 +379,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 16 15:33:41 kaitain vmkernel: 0:22:39:39.817 cpu0:142815)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:22:39:39.817 cpu0:142815)WARNING: UserObj: 569: Failed to crossdup fd 6, fs: def5 oid: 1500000003000000d type CHAR: Busy'
 
@@ -420,7 +393,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Feb  1 14:47:54 kaitain vmkernel: TSC: 65942068 cpu0:0)BootConfig: 35: mcaEnableAllErrorSources = FALSE'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: 'TSC: 65942068 cpu0:0)BootConfig: 35: mcaEnableAllErrorSources = FALSE'
 
@@ -435,7 +407,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Feb  1 14:49:30 kaitain vmkernel: 0:00:01:41.438 cpu4:4818)WARNING: NFS: 913: RPC error 13 (RPC was aborted due to timeout) trying to get port for Mount Program (100005) Version (3) Protocol (TCP) on Server (192.168.17.12)'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '0:00:01:41.438 cpu4:4818)WARNING: NFS: 913: RPC error 13 (RPC was aborted due to timeout) trying to get port for Mount Program (100005) Version (3) Protocol (TCP) on Server (192.168.17.12)'
 
@@ -450,7 +421,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.042 cpu6:4407)<6>usb 1-1.1.1: USB disconnect, address 26'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '7:14:25:30.042 cpu6:4407)<6>usb 1-1.1.1: USB disconnect, address 26'
 
@@ -460,7 +430,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.285 cpu6:4407)<6>usb 1-1.1.1: new low speed USB device using ehci_hcd and address 27'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '7:14:25:30.285 cpu6:4407)<6>usb 1-1.1.1: new low speed USB device using ehci_hcd and address 27'
 
@@ -470,7 +439,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: configuration #1 chosen from 1 choice'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: configuration #1 chosen from 1 choice'
 
@@ -480,7 +448,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usbhid 1-1.1.1:1.0: not claiming non-bootable hid device'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '7:14:25:30.405 cpu6:4407)<6>usbhid 1-1.1.1:1.0: not claiming non-bootable hid device'
 
@@ -490,7 +457,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: device is available for passthrough'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: device is available for passthrough'
 
@@ -500,7 +466,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: New USB device found, idVendor=09ae, idProduct=2010'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: New USB device found, idVendor=09ae, idProduct=2010'
 
@@ -510,7 +475,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Feb  9 05:13:21 kaitain vmkernel: 7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: new device strings: Mfr=1, Product=2, SerialNumber=0'
-       hostname: 'kaitain'
        program_name: 'vmkernel'
        log: '7:14:25:30.405 cpu6:4407)<6>usb 1-1.1.1: new device strings: Mfr=1, Product=2, SerialNumber=0'
 
@@ -520,7 +484,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Feb 11 23:12:23 kaitain sfcb-CIMXML-Processor[1503936]:  *** 1628 Error accepting SSL connection -- exiting'
-       hostname: 'kaitain'
        program_name: 'sfcb-CIMXML-Processor'
        log: ' *** 1628 Error accepting SSL connection -- exiting'
 
@@ -536,7 +499,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 21 19:11:03 esxi-server Hostd: Accepted password for user root from 192.168.1.45'
-       hostname: 'esxi-server'
        program_name: 'Hostd'
        log: 'Accepted password for user root from 192.168.1.45'
 
@@ -548,7 +510,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 21 19:11:03 esxi-server Hostd: [2011-03-21 19:11:03.952 49F54B90 info 'ha-eventmgr' opID=63154CB9-00000003] Event 233 : User root@192.168.1.45 logged in'
-       hostname: 'esxi-server'
        program_name: 'Hostd'
        log: '[2011-03-21 19:11:03.952 49F54B90 info 'ha-eventmgr' opID=63154CB9-00000003] Event 233 : User root@192.168.1.45 logged in'
 
@@ -560,7 +521,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 21 19:16:58 esxi-server shell[2909252]: vim-cmd vmsvc/snapshot.revert 16 0'
-       hostname: 'esxi-server'
        program_name: 'shell'
        log: 'vim-cmd vmsvc/snapshot.revert 16 0'
 
@@ -570,7 +530,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 21 19:16:58 esxi-server Hostd: [2011-03-21 19:16:58.550 4ABC2B90 info 'TaskManager'] Task Created : haTask-16-vim.vm.Snapshot.revert-8047'
-       hostname: 'esxi-server'
        program_name: 'Hostd'
        log: '[2011-03-21 19:16:58.550 4ABC2B90 info 'TaskManager'] Task Created : haTask-16-vim.vm.Snapshot.revert-8047'
 
@@ -580,7 +539,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 21 19:16:58 esxi-server Hostd: [2011-03-21 19:16:58.551 49CF1B90 info 'vm:/vmfs/volumes/4d5ab801-a3984e3b-3c46-0014221a2fc4/APWIN03/APWIN03.vmx'] State Transition (VM_STATE_ON -> VM_STATE_REVERT_SNAPSHOT)'
-       hostname: 'esxi-server'
        program_name: 'Hostd'
        log: '[2011-03-21 19:16:58.551 49CF1B90 info 'vm:/vmfs/volumes/4d5ab801-a3984e3b-3c46-0014221a2fc4/APWIN03/APWIN03.vmx'] State Transition (VM_STATE_ON -> VM_STATE_REVERT_SNAPSHOT)'
 
@@ -592,7 +550,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 21 19:17:02 esxi-server Hostd: [2011-03-21 19:17:02.053 4A4DDB90 info 'vm:/vmfs/volumes/4d5ab801-a3984e3b-3c46-0014221a2fc4/APWIN03/APWIN03.vmx'] State Transition (VM_STATE_REVERT_SNAPSHOT -> VM_STATE_ON)'
-       hostname: 'esxi-server'
        program_name: 'Hostd'
        log: '[2011-03-21 19:17:02.053 4A4DDB90 info 'vm:/vmfs/volumes/4d5ab801-a3984e3b-3c46-0014221a2fc4/APWIN03/APWIN03.vmx'] State Transition (VM_STATE_REVERT_SNAPSHOT -> VM_STATE_ON)'
 

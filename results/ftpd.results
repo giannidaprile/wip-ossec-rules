@@ -4,7 +4,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Aug 16 13:32:08 unknown ftpd[2494]: [ID 265846 daemon.notice] repeated login failures from nod32.megalan.bg [89.190.196.14]'
-       hostname: 'unknown'
        program_name: 'ftpd'
        log: 'repeated login failures from nod32.megalan.bg [89.190.196.14]'
 
@@ -23,7 +22,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Aug 16 13:32:13 unknown ftpd[2495]: [ID 265846 daemon.notice] repeated login failures from nod32.megalan.bg [89.190.196.14]'
-       hostname: 'unknown'
        program_name: 'ftpd'
        log: 'repeated login failures from nod32.megalan.bg [89.190.196.14]'
 
@@ -42,7 +40,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Aug 16 13:32:18 unknown ftpd[2496]: [ID 265846 daemon.notice] repeated login failures from nod32.megalan.bg [89.190.196.14]'
-       hostname: 'unknown'
        program_name: 'ftpd'
        log: 'repeated login failures from nod32.megalan.bg [89.190.196.14]'
 
@@ -61,7 +58,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Aug 16 13:32:29 unknown ftpd[2497]: [ID 265846 daemon.notice] repeated login failures from nod32.megalan.bg [89.190.196.14]'
-       hostname: 'unknown'
        program_name: 'ftpd'
        log: 'repeated login failures from nod32.megalan.bg [89.190.196.14]'
 
@@ -80,7 +76,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 18:09:46 minime ftpd[132]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -99,7 +94,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 18:19:52 minime ftpd[689]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -118,7 +112,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 18:30:05 minime ftpd[1138]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -137,7 +130,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 18:40:29 minime ftpd[1652]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -156,7 +148,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 18:51:01 minime ftpd[1853]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -175,7 +166,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 19:01:43 minime ftpd[2001]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -194,7 +184,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 19:12:34 minime ftpd[2269]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -213,7 +202,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 19:23:33 minime ftpd[2452]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -232,7 +220,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 19:34:41 minime ftpd[2610]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -251,7 +238,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 19:45:58 minime ftpd[2792]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -270,7 +256,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 19:57:24 minime ftpd[2967]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -289,7 +274,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 20:08:59 minime ftpd[3129]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -308,7 +292,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 20:20:43 minime ftpd[3446]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -327,7 +310,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 20:32:36 minime ftpd[3570]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -346,7 +328,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 20:44:38 minime ftpd[3675]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -365,7 +346,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 20:56:49 minime ftpd[3769]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -384,7 +364,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 21:09:09 minime ftpd[3868]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -403,7 +382,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 21:21:42 minime ftpd[4085]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -422,7 +400,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 21:34:20 minime ftpd[4164]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -441,7 +418,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 21:47:07 minime ftpd[4264]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -460,7 +436,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 22:00:04 minime ftpd[4383]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -479,7 +454,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 22:13:10 minime ftpd[4573]: repeated login failures from 218.188.21.181 [218.188.21.181]'
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181]'
 
@@ -498,7 +472,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan 22 22:26:24 minime ftpd[4731]: repeated login failures from 218.188.21.181 [218.188.21.181] '
-       hostname: 'minime'
        program_name: 'ftpd'
        log: 'repeated login failures from 218.188.21.181 [218.188.21.181] '
 
@@ -517,7 +490,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 16 12:56:48 myserver ftpd62773: Failed authentication from: 211.95.77.52 http://211.95.77.52'
-       hostname: 'myserver'
        program_name: 'ftpd62773'
        log: 'Failed authentication from: 211.95.77.52 http://211.95.77.52'
 
@@ -536,7 +508,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 16 12:56:52 myserver ftpd62773: repeated login failures from 211.95.77.52 http://211.95.77.52'
-       hostname: 'myserver'
        program_name: 'ftpd62773'
        log: 'repeated login failures from 211.95.77.52 http://211.95.77.52'
 
@@ -555,7 +526,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 16 12:56:52 myserver emond68: Host at 211.95.77.52 will be blocked for at least 15.00 minutes'
-       hostname: 'myserver'
        program_name: 'emond68'
        log: 'Host at 211.95.77.52 will be blocked for at least 15.00 minutes'
 
@@ -565,7 +535,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 16 12:57:08 myserver emond68: Host at 211.95.77.52 will be blocked for at least 15.00 minutes'
-       hostname: 'myserver'
        program_name: 'emond68'
        log: 'Host at 211.95.77.52 will be blocked for at least 15.00 minutes'
 
@@ -575,7 +544,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 16 12:57:12 myserver ftpd62788: repeated login failures from 211.95.77.52 http://211.95.77.52'
-       hostname: 'myserver'
        program_name: 'ftpd62788'
        log: 'repeated login failures from 211.95.77.52 http://211.95.77.52'
 
@@ -594,7 +562,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 16 12:57:12 myserver emond68: Host at 211.95.77.52 will be blocked for at least 15.00 minutes'
-       hostname: 'myserver'
        program_name: 'emond68'
        log: 'Host at 211.95.77.52 will be blocked for at least 15.00 minutes'
 
@@ -604,7 +571,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 16 12:57:28 myserver emond68: Host at 211.95.77.52 will be blocked for at least 15.00 minutes'
-       hostname: 'myserver'
        program_name: 'emond68'
        log: 'Host at 211.95.77.52 will be blocked for at least 15.00 minutes'
 
@@ -614,7 +580,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 16 12:57:32 myserver ftpd62799: repeated login failures from 211.95.77.52 http://211.95.77.52'
-       hostname: 'myserver'
        program_name: 'ftpd62799'
        log: 'repeated login failures from 211.95.77.52 http://211.95.77.52'
 
@@ -633,7 +598,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 16 12:57:32 myserver emond68: Host at 211.95.77.52 will be blocked for at least 15.00 minutes'
-       hostname: 'myserver'
        program_name: 'emond68'
        log: 'Host at 211.95.77.52 will be blocked for at least 15.00 minutes'
 
@@ -643,7 +607,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 20 18:45:36 MyComputer ftpd[16245]: repeated login failures from 201-23-190-65.gprs.claro.net.br [201.23.190.65]'
-       hostname: 'MyComputer'
        program_name: 'ftpd'
        log: 'repeated login failures from 201-23-190-65.gprs.claro.net.br [201.23.190.65]'
 
@@ -662,7 +625,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 20 18:45:36 MyComputer ftpd[4666]: FTP LOGIN FAILED FROM 210.18.123.42.sify.net'
-       hostname: 'MyComputer'
        program_name: 'ftpd'
        log: 'FTP LOGIN FAILED FROM 210.18.123.42.sify.net'
 
@@ -680,7 +642,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 20 18:45:37 MyComputer ftpd[4666]: FTP LOGIN FAILED FROM 210.18.123.42.sify.net'
-       hostname: 'MyComputer'
        program_name: 'ftpd'
        log: 'FTP LOGIN FAILED FROM 210.18.123.42.sify.net'
 
@@ -698,7 +659,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 20 18:45:39 MyComputer ftpd[4666]: FTP LOGIN FAILED FROM 210.18.123.42.sify.net'
-       hostname: 'MyComputer'
        program_name: 'ftpd'
        log: 'FTP LOGIN FAILED FROM 210.18.123.42.sify.net'
 
@@ -716,7 +676,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 20 18:45:44 MyComputer ftpd[4666]: FTP LOGIN FAILED FROM 210.18.123.42.sify.net'
-       hostname: 'MyComputer'
        program_name: 'ftpd'
        log: 'FTP LOGIN FAILED FROM 210.18.123.42.sify.net'
 
@@ -734,7 +693,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 20 18:45:48 MyComputer ftpd[4666]: FTP LOGIN FAILED FROM 210.18.123.42.sify.net'
-       hostname: 'MyComputer'
        program_name: 'ftpd'
        log: 'FTP LOGIN FAILED FROM 210.18.123.42.sify.net'
 
@@ -752,7 +710,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 20 18:45:54 MyComputer ftpd[4666]: FTP LOGIN FAILED FROM 210.18.123.42.sify.net'
-       hostname: 'MyComputer'
        program_name: 'ftpd'
        log: 'FTP LOGIN FAILED FROM 210.18.123.42.sify.net'
 
@@ -770,7 +727,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 20 18:45:54 MyComputer ftpd[4666]: repeated login failures from 210.18.123.42.sify.net'
-       hostname: 'MyComputer'
        program_name: 'ftpd'
        log: 'repeated login failures from 210.18.123.42.sify.net'
 
@@ -789,7 +745,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 8 21:20:48 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 8 21:20:48 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
 
@@ -807,7 +762,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 8 21:20:49 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 8 21:20:49 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
 
@@ -825,7 +779,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 8 21:20:52 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 8 21:20:52 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
 
@@ -843,7 +796,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 8 21:20:55 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 8 21:20:55 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
 
@@ -861,7 +813,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 8 21:20:59 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 8 21:20:59 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
 
@@ -879,7 +830,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 8 21:21:04 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 8 21:21:04 MyComputer ftpd[5710]: FTP LOGIN FAILED FROM 32.c8.85ae.static.theplanet.com'
 
@@ -897,7 +847,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 8 21:21:04 MyComputer ftpd[5710]: repeated login failures from 32.c8.85ae.static.theplanet.com'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 8 21:21:04 MyComputer ftpd[5710]: repeated login failures from 32.c8.85ae.static.theplanet.com'
 
@@ -915,7 +864,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 23 10:28:55 passabem ftpd[14270]: REPEATED LOGIN FAILURES FROM 10.128.80.31 '
-       hostname: 'passabem'
        program_name: 'ftpd'
        log: 'REPEATED LOGIN FAILURES FROM 10.128.80.31 '
 
@@ -934,7 +882,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 30 09:00:13 ipv6 ftpd[94032]: FTP LOGIN FAILED FROM 211.137.239.68'
-       hostname: 'ipv6'
        program_name: 'ftpd'
        log: 'FTP LOGIN FAILED FROM 211.137.239.68'
 
@@ -953,7 +900,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 30 09:00:18 ipv6 ftpd[94032]: FTP LOGIN FAILED FROM 211.137.239.68'
-       hostname: 'ipv6'
        program_name: 'ftpd'
        log: 'FTP LOGIN FAILED FROM 211.137.239.68'
 
@@ -972,7 +918,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 30 09:00:18 ipv6 ftpd[94032]: repeated login failures from 211.137.239.68'
-       hostname: 'ipv6'
        program_name: 'ftpd'
        log: 'repeated login failures from 211.137.239.68'
 
@@ -991,7 +936,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 30 09:00:19 ipv6 ftpd[94034]: FTP LOGIN FAILED FROM 211.137.239.68'
-       hostname: 'ipv6'
        program_name: 'ftpd'
        log: 'FTP LOGIN FAILED FROM 211.137.239.68'
 
@@ -1010,7 +954,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 4 23:37:36 server ftpd274: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 4 23:37:36 server ftpd274: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1028,7 +971,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 4 23:47:13 server ftpd1369: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 4 23:47:13 server ftpd1369: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1046,7 +988,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 4 23:56:14 server ftpd1369: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 4 23:56:14 server ftpd1369: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1064,7 +1005,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 00:03:46 server ftpd1369: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 00:03:46 server ftpd1369: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1082,7 +1022,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 00:16:36 server ftpd2161: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 00:16:36 server ftpd2161: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1100,7 +1039,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 00:19:31 server ftpd2161: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 00:19:31 server ftpd2161: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1118,7 +1056,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 00:21:05 server ftpd2161: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 00:21:05 server ftpd2161: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1136,7 +1073,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 00:30:52 server ftpd2525: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 00:30:52 server ftpd2525: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1154,7 +1090,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 00:40:15 server ftpd2525: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 00:40:15 server ftpd2525: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1172,7 +1107,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 00:48:01 server ftpd2525: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 00:48:01 server ftpd2525: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1190,7 +1124,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 01:03:23 server ftpd3848: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 01:03:23 server ftpd3848: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1208,7 +1141,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 01:30:46 server ftpd4421: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 01:30:46 server ftpd4421: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1226,7 +1158,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 01:38:40 server ftpd4421: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 01:38:40 server ftpd4421: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1244,7 +1175,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 01:41:39 server ftpd4421: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 01:41:39 server ftpd4421: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1262,7 +1192,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 01:53:21 server ftpd5691: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 01:53:21 server ftpd5691: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1280,7 +1209,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 01:57:51 server ftpd5691: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 01:57:51 server ftpd5691: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1298,7 +1226,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 02:08:21 server ftpd5691: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 02:08:21 server ftpd5691: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1316,7 +1243,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 02:20:32 server ftpd6438: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 02:20:32 server ftpd6438: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1334,7 +1260,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 02:26:52 server ftpd6438: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 02:26:52 server ftpd6438: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1352,7 +1277,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 02:56:57 server ftpd7692: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 02:56:57 server ftpd7692: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1370,7 +1294,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 03:05:58 server ftpd7692: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 03:05:58 server ftpd7692: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1388,7 +1311,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 03:12:58 server ftpd7692: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 03:12:58 server ftpd7692: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1406,7 +1328,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 03:28:35 server ftpd8862: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 03:28:35 server ftpd8862: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1424,7 +1345,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 03:35:36 server ftpd8862: Failed authentication from: 218.107.139.2 http://218.107.139.2'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 03:35:36 server ftpd8862: Failed authentication from: 218.107.139.2 http://218.107.139.2'
 
@@ -1442,7 +1362,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 5 03:45:22 server ftpd8862: Failed authentication from: 218.107.139.2 http://218.107.139.2 '
-       hostname: 'ix'
        program_name: '(null)'
        log: 'Apr 5 03:45:22 server ftpd8862: Failed authentication from: 218.107.139.2 http://218.107.139.2 '
 
@@ -1460,7 +1379,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 16 12:56:48 myserver ftpd62773: Failed authentication from: 211.95.77.52 http://211.95.77.52'
-       hostname: 'myserver'
        program_name: 'ftpd62773'
        log: 'Failed authentication from: 211.95.77.52 http://211.95.77.52'
 

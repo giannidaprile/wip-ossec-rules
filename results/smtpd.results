@@ -4,7 +4,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Oct 26 13:37:52 tiny smtpd[9446]: fatal: mfa: chroot: No such file or directory'
-       hostname: 'tiny'
        program_name: 'smtpd'
        log: 'fatal: mfa: chroot: No such file or directory'
 
@@ -22,7 +21,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Oct 26 22:30:12 ix smtpd[6726]: client 192.168.17.9 read error: Connection reset by peer'
-       hostname: 'ix'
        program_name: 'smtpd'
        log: 'client 192.168.17.9 read error: Connection reset by peer'
 
@@ -41,7 +39,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  2 20:54:57 ix smtpd[3884]: fatal: bind: Address already in use'
-       hostname: 'ix'
        program_name: 'smtpd'
        log: 'fatal: bind: Address already in use'
 
@@ -59,7 +56,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 13 17:30:34 ix smtpd[29377]: (none): from=<@>, relay=power.example.com [192.168.17.249], stat=LocalError (501 EHLO requires domain address)'
-       hostname: 'ix'
        program_name: 'smtpd'
        log: '(none): from=<@>, relay=power.example.com [192.168.17.249], stat=LocalError (501 EHLO requires domain address)'
 
@@ -78,7 +74,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 15 04:15:28 ix smtpd[1461]: 1258258526.ulJRPbD7Ch7um55S: to=<ddp@power.example.com>, delay=2, relay=smtp.east.cox.net [68.1.17.4], stat=RemoteError (5.1.0 <ddp@power.example.com> sender rejected)'
-       hostname: 'ix'
        program_name: 'smtpd'
        log: '1258258526.ulJRPbD7Ch7um55S: to=<ddp@power.example.com>, delay=2, relay=smtp.east.cox.net [68.1.17.4], stat=RemoteError (5.1.0 <ddp@power.example.com> sender rejected)'
 
@@ -97,7 +92,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 16 21:41:30 ix smtpd[13395]: fatal: lka_resolve_node: unexpected type'
-       hostname: 'ix'
        program_name: 'smtpd'
        log: 'fatal: lka_resolve_node: unexpected type'
 
@@ -115,7 +109,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov 25 01:28:45 ix smtpd[4224]: 1259112525.AbdJ8tDSelOWn16C: from=<root@tiny>, relay=tiny.example.com [192.168.17.33], stat=LocalError (530 Recipient rejected: ddp@ix.example.com)'
-       hostname: 'ix'
        program_name: 'smtpd'
        log: '1259112525.AbdJ8tDSelOWn16C: from=<root@tiny>, relay=tiny.example.com [192.168.17.33], stat=LocalError (530 Recipient rejected: ddp@ix.example.com)'
 
@@ -134,7 +127,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan  8 01:30:45 tiny smtpd[18682]: 1262914225.YfKQNsGh7vFa7e2q: from=<root@tiny>, relay=0@localhost [IPv6:::1], stat=LocalError (500 Line too long)'
-       hostname: 'tiny'
        program_name: 'smtpd'
        log: '1262914225.YfKQNsGh7vFa7e2q: from=<root@tiny>, relay=0@localhost [IPv6:::1], stat=LocalError (500 Line too long)'
 
@@ -153,7 +145,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'May 10 23:32:09 ix smtpd[15646]: (none): from=<@>, relay=power.example.com [192.168.17.249], stat=LocalError (500 Command unrecognized)'
-       hostname: 'ix'
        program_name: 'smtpd'
        log: '(none): from=<@>, relay=power.example.com [192.168.17.249], stat=LocalError (500 Command unrecognized)'
 
@@ -172,7 +163,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'May 11 01:40:49 ix smtpd[15646]: 1273556449.uHHIXLagKFbXXnNy: from=<root@ix.example.com>, relay=0@localhost [IPv6:::1], stat=LocalError (500 5.0.0 Line too long)'
-       hostname: 'ix'
        program_name: 'smtpd'
        log: '1273556449.uHHIXLagKFbXXnNy: from=<root@ix.example.com>, relay=0@localhost [IPv6:::1], stat=LocalError (500 5.0.0 Line too long)'
 
@@ -191,7 +181,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 29 13:50:06 power smtpd[1462]: 1277789704.eAEyryx4h198WX2u: to=<ddp@ix.example.com>, delay=44102, relay=(none) [], stat=LocalError (Domain does not exist)'
-       hostname: 'power'
        program_name: 'smtpd'
        log: '1277789704.eAEyryx4h198WX2u: to=<ddp@ix.example.com>, delay=44102, relay=(none) [], stat=LocalError (Domain does not exist)'
 
@@ -209,7 +198,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Oct 24 01:04:25 ix smtpd[28336]: 1287896658.JV4Wq8oILSx84ncz: to=<ddpbsd@gmail.com>, delay=7, relay=email.server.example.com [192.168.1.4], stat=RemoteError (5.2.0 NV4K1f0052G0zYQ02V4KgD This message was undeliverable.  This message has been found to be a potential spam message, and has therefore been blocked.'
-       hostname: 'ix'
        program_name: 'smtpd'
        log: '1287896658.JV4Wq8oILSx84ncz: to=<ddpbsd@gmail.com>, delay=7, relay=email.server.example.com [192.168.1.4], stat=RemoteError (5.2.0 NV4K1f0052G0zYQ02V4KgD This message was undeliverable.  This message has been found to be a potential spam message, and has therefore been blocked.'
 

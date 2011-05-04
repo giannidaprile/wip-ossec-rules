@@ -4,7 +4,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan  1 00:00:05 buffalo1 syslog: syslogd : syslog daemon successfully started'
-       hostname: 'buffalo1'
        program_name: 'syslog'
        log: 'syslogd : syslog daemon successfully started'
 
@@ -14,7 +13,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jan  1 00:02:00 buffalo1.example.com syslog: process_monitor successfully started'
-       hostname: 'buffalo1.example.com'
        program_name: 'syslog'
        log: 'process_monitor successfully started'
 
@@ -24,7 +22,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Aug 16 16:00:01 ix newsyslog[11856]: logfile turned over'
-       hostname: 'ix'
        program_name: 'newsyslog'
        log: 'logfile turned over'
 
@@ -39,7 +36,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Aug  4 13:46:23 buzzell syslogd: start'
-       hostname: 'buzzell'
        program_name: 'syslogd'
        log: 'start'
 
@@ -54,7 +50,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Aug  4 09:14:58 ix last message repeated 2 times'
-       hostname: 'ix'
        program_name: '(null)'
        log: 'last message repeated 2 times'
 

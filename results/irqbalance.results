@@ -4,7 +4,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Oct  6 14:31:31 localhost irqbalance: Can't balance irqs on a uniprocessor system:  failed'
-       hostname: 'localhost'
        program_name: 'irqbalance'
        log: 'Can't balance irqs on a uniprocessor system:  failed'
 

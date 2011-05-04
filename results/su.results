@@ -4,7 +4,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Dec 22 13:15:10 ix su: -: unknown class'
-       hostname: 'ix'
        program_name: 'su'
        log: '-: unknown class'
 
@@ -22,7 +21,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun  8 08:48:28 gorilla su[2921936]: failed: ttyq4 changing from ldap to root'
-       hostname: 'gorilla'
        program_name: 'su'
        log: 'failed: ttyq4 changing from ldap to root'
 
@@ -42,7 +40,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun  8 08:48:28 gorilla su[234]: BAD SU ger to fwmaster on /dev/ttyp0'
-       hostname: 'gorilla'
        program_name: 'su'
        log: 'BAD SU ger to fwmaster on /dev/ttyp0'
 
@@ -62,7 +59,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun  8 08:48:28 gorilla su(pam_unix)[23164]: authentication failure; logname= uid=1342 euid=0 tty= ruser=dcid rhost=  user=osaudit'
-       hostname: 'gorilla'
        program_name: 'su(pam_unix)'
        log: 'authentication failure; logname= uid=1342 euid=0 tty= ruser=dcid rhost=  user=osaudit'
 
@@ -80,7 +76,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun  8 08:48:28 gorilla su(pam_unix)[2298]: authentication failure; logname= uid=1342 euid=0 tty= ruser=dcid rhost=  user=root'
-       hostname: 'gorilla'
        program_name: 'su(pam_unix)'
        log: 'authentication failure; logname= uid=1342 euid=0 tty= ruser=dcid rhost=  user=root'
 
@@ -98,7 +93,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jul  5 12:17:38 lili su[2702]: - pts/5 ab-dc-root'
-       hostname: 'lili'
        program_name: 'su'
        log: '- pts/5 ab-dc-root'
 
@@ -118,7 +112,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jul  5 12:13:15 lili su[2614]: - pts/6 dcid-root  -  su[29149]: + pts/5 dcid:root  -  SU 07/23 01:24 + pts/4 lcid-root'
-       hostname: 'lili'
        program_name: 'su'
        log: '- pts/6 dcid-root  -  su[29149]: + pts/5 dcid:root  -  SU 07/23 01:24 + pts/4 lcid-root'
 
@@ -136,7 +129,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Apr 22 17:51:51 enigma su: dcid to root on /dev/ttyp1'
-       hostname: 'enigma'
        program_name: 'su'
        log: 'dcid to root on /dev/ttyp1'
 
@@ -156,7 +148,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 23 08:35:32 servername su[19301]: pam_ldap: error trying to bind as user "uid=root,cn=users,dc=ldap-server,dc=example,dc=example,dc=com" (Invalid credentials)'
-       hostname: 'servername'
        program_name: 'su'
        log: 'pam_ldap: error trying to bind as user "uid=root,cn=users,dc=ldap-server,dc=example,dc=example,dc=com" (Invalid credentials)'
 

@@ -4,7 +4,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun  8 08:48:28 gorilla identd[8029]: scanf: invalid-port(s): 0 , 0 from gorilla.monkey.local'
-       hostname: 'gorilla'
        program_name: 'identd'
        log: 'scanf: invalid-port(s): 0 , 0 from gorilla.monkey.local'
 
@@ -22,7 +21,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun  8 08:49:18 gorilla identd[9790]: read from gorilla.monkey.local: EOF'
-       hostname: 'gorilla'
        program_name: 'identd'
        log: 'read from gorilla.monkey.local: EOF'
 
@@ -40,7 +38,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  9 07:43:15 richese identd[28080]: read from ecaz.example.com: Undefined error: 0'
-       hostname: 'richese'
        program_name: 'identd'
        log: 'read from ecaz.example.com: Undefined error: 0'
 

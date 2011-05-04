@@ -4,7 +4,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  1 19:28:58 testserver portsentry[1620]: adminalert: Going into listen mode on UDP port: 31337'
-       hostname: 'testserver'
        program_name: 'portsentry'
        log: 'adminalert: Going into listen mode on UDP port: 31337'
 
@@ -14,7 +13,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  1 19:28:58 testserver portsentry[1620]: adminalert: Going into listen mode on UDP port: 54321'
-       hostname: 'testserver'
        program_name: 'portsentry'
        log: 'adminalert: Going into listen mode on UDP port: 54321'
 
@@ -24,7 +22,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  1 19:28:58 testserver portsentry[1620]: adminalert: PortSentry is now active and listening.'
-       hostname: 'testserver'
        program_name: 'portsentry'
        log: 'adminalert: PortSentry is now active and listening.'
 
@@ -34,7 +31,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 1'
-       hostname: 'testserver'
        program_name: 'portsentry'
        log: 'attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 1'
 
@@ -55,7 +51,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Ignoring TCP response per configuration file setting.'
-       hostname: 'testserver'
        program_name: 'portsentry'
        log: 'attackalert: Ignoring TCP response per configuration file setting.'
 
@@ -73,7 +68,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 79'
-       hostname: 'testserver'
        program_name: 'portsentry'
        log: 'attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 79'
 
@@ -94,7 +88,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Host: 192.168.45.1 is already blocked. Ignoring'
-       hostname: 'testserver'
        program_name: 'portsentry'
        log: 'attackalert: Host: 192.168.45.1 is already blocked. Ignoring'
 
@@ -113,7 +106,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 111'
-       hostname: 'testserver'
        program_name: 'portsentry'
        log: 'attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 111'
 
@@ -134,7 +126,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Host: 192.168.45.1 is already blocked. Ignoring'
-       hostname: 'testserver'
        program_name: 'portsentry'
        log: 'attackalert: Host: 192.168.45.1 is already blocked. Ignoring'
 
@@ -153,7 +144,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 119'
-       hostname: 'testserver'
        program_name: 'portsentry'
        log: 'attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 119'
 
@@ -174,7 +164,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Host: 192.168.45.1 is already blocked. Ignoring'
-       hostname: 'testserver'
        program_name: 'portsentry'
        log: 'attackalert: Host: 192.168.45.1 is already blocked. Ignoring'
 
@@ -193,7 +182,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 143'
-       hostname: 'testserver'
        program_name: 'portsentry'
        log: 'attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 143'
 
@@ -214,7 +202,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Host: 192.168.45.1 is already blocked. Ignoring'
-       hostname: 'testserver'
        program_name: 'portsentry'
        log: 'attackalert: Host: 192.168.45.1 is already blocked. Ignoring'
 
@@ -233,7 +220,6 @@ ossec-testrule: Type one log per line.
 
 **Phase 1: Completed pre-decoding.
        full event: 'Nov  1 19:31:33 testserver portsentry[1616]: attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 1080'
-       hostname: 'testserver'
        program_name: 'portsentry'
        log: 'attackalert: Connect from host: 192.168.45.1/192.168.45.1 to TCP port: 1080'
 
