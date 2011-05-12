@@ -110,4 +110,12 @@ pr 12 12:17:44 buzzell named[6186]: client 192.168.17.17#19588: transfer of 'exa
 
 Apr 22 20:03:44 ix smtpd[25396]: (none): from=<ossecm@ix.example.com>, relay=localhost [127.0.0.1], stat=LocalError (421 Service temporarily unavailable)
 
+Apr 23 20:39:37 kaitain ntpd[150409]: no servers reachable
+Apr 23 21:47:56 kaitain ntpd[150409]: synchronized to 192.168.17.9, stratum 6
+Apr 23 21:47:56 kaitain ntpd[150409]: kernel time sync status change 6001
+May  4 19:29:19 kaitain ntpd[150409]: time reset -0.299161 s
+May  4 19:40:54 kaitain ntpd[150409]: synchronized to 192.168.17.9, stratum 1
+May  4 20:27:07 kaitain ntpd[150409]: time reset +0.293079 s
+
+
 
