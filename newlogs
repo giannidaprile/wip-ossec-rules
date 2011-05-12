@@ -117,5 +117,13 @@ May  4 19:29:19 kaitain ntpd[150409]: time reset -0.299161 s
 May  4 19:40:54 kaitain ntpd[150409]: synchronized to 192.168.17.9, stratum 1
 May  4 20:27:07 kaitain ntpd[150409]: time reset +0.293079 s
 
+Mar 25 14:30:00 kaitain Hostd: [2011-03-25 14:30:00.004 50BC2B90 verbose 'Statssvc'] HostCtl exception Unable to complete Sysinfo operation.  Please see the VMkernel log file for more details.
+
+Mar 25 14:31:09 kaitain Hostd: [2011-03-25 14:31:09.089 4F361B90 verbose 'Cimsvc' opID=F411BF69-00000138] Ticket issued for CIMOM version 1.0, user root
+Mar 25 14:31:13 kaitain Hostd: [2011-03-25 14:31:13.669 501C7B90 verbose 'Proxysvc Req61619'] New proxy client TCP(local=127.0.0.1:49416, peer=127.0.0.1:80)
+Mar 25 14:31:13 kaitain Hostd: [2011-03-25 14:31:13.670 50581B90 info 'Vmomi'] Activation [N5Vmomi10ActivationE:0x4f2f7468] : Invoke done [waitForUpdates] on [vmodl.query.PropertyCollector:ha-property-collector]
+Mar 25 14:31:13 kaitain Hostd: [2011-03-25 14:31:13.671 50581B90 error 'App'] Failed to read header on stream TCP(local=127.0.0.1:59937, peer=127.0.0.1:0): N7Vmacore15SystemExceptionE(Connection reset by peer)
+Mar 25 14:46:10 kaitain Hostd: [2011-03-25 14:46:10.904 501C7B90 verbose 'Cimsvc' opID=F411BF69-00000138] Ticket issued for CIMOM version 1.0, user root
+
 
 
