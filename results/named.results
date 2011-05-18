@@ -539,3 +539,71 @@ ossec-testrule: Type one log per line.
 **Alert to be generated.
 
 
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'May  8 22:00:35 junction named[13508]: client 192.168.17.156#16276: error sending response: host unreachable'
+       program_name: 'named'
+       log: 'client 192.168.17.156#16276: error sending response: host unreachable'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+       srcip: '192.168.17.156'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12146'
+       Level: '1'
+       Description: 'Cannot send a DNS response.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Nov 17 10:51:26 junction named[5358]: client 192.168.17.14#58909: update forwarding 'example.com/IN' denied'
+       program_name: 'named'
+       log: 'client 192.168.17.14#58909: update forwarding 'example.com/IN' denied'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+       srcip: '192.168.17.14'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12147'
+       Level: '1'
+       Description: 'Cannot update forwarding domain.'
+**Alert to be generated.
+
+
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Mar 17 10:19:33 buzzell named[29503]: /etc/blocked.zones:96581: parsing failed'
+       program_name: 'named'
+       log: '/etc/blocked.zones:96581: parsing failed'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12148'
+       Level: '0'
+       Description: 'Parsing of a configuration file has failed.'
+
+
+**Phase 1: Completed pre-decoding.
+       full event: 'Apr 12 12:17:44 buzzell named[6186]: client 192.168.17.17#19588: transfer of 'example.net/IN': AXFR started'
+       program_name: 'named'
+       log: 'client 192.168.17.17#19588: transfer of 'example.net/IN': AXFR started'
+
+**Phase 2: Completed decoding.
+       decoder: 'named'
+       srcip: '192.168.17.17'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12128'
+       Level: '1'
+       Description: 'Zone transfer.'
+**Alert to be generated.
+
+
