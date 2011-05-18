@@ -22,8 +22,6 @@ Nov 15 18:15:14 kaitain nssquery: User lookup failed for uid '1000'
 
 Nov 16 22:57:30 gamont ntpdate[6752]: name server cannot be used, reason: Temporary failure in name resolution
 
-Nov 17 10:51:26 junction named[5358]: client 192.168.17.14#58909: update forwarding 'example.com/IN' denied
-
 Nov 18 09:43:55 gamont slapd[3375]: daemon: bind(7) failed errno=98 (Address already in use)
 Nov 18 09:50:37 gamont slapd[3595]: /etc/ldap/slapd.conf: line 1: <database> failed init (bdb)
 
@@ -70,7 +68,6 @@ Mar  8 10:51:14 arrakis hotplugd[27959]: /etc/hotplug/attach: Permission denied
 2011-03-08T11:40:25.209369-05:00 arrakis rsyslogd: -- MARK --
 2011-03-08T12:10:53.300382-05:00 arrakis rsyslogd: [origin software="rsyslogd" swVersion="4.6.4" x-pid="14829" x-info="http://www.rsyslog.com"] exiting on signal 15.
 
-Mar 17 10:19:33 buzzell named[29503]: /etc/blocked.zones:96581: parsing failed
 
 Mar 25 17:46:30 kaitain Hostd: [2011-03-25 17:46:30.466 4F1A2B90 error 'App'] Failed to read header on stream TCP(local=127.0.0.1:60224, peer=127.0.0.1:0): N7Vmacore15SystemExceptionE(Connection reset by peer)
 Mar 25 14:31:40 kaitain Hostd: [2011-03-25 14:31:40.004 50B81B90 verbose 'Statssvc'] HostCtl exception Unable to complete Sysinfo operation.  Please see the VMkernel log file for more details.
@@ -106,7 +103,6 @@ Apr  6 23:53:30 junction dhclient[4078]: DHCPREQUEST on re0 to 192.168.1.1 port 
 Apr  6 23:53:30 junction dhclient[4078]: DHCPACK from 192.168.1.1 (00:14:f1:e9:1a:e2)
 Apr  6 23:53:31 junction dhclient[4078]: bound to 192.168.1.1 -- renewal in 43200 seconds.
 
-pr 12 12:17:44 buzzell named[6186]: client 192.168.17.17#19588: transfer of 'example.net/IN': AXFR started
 
 Apr 22 20:03:44 ix smtpd[25396]: (none): from=<ossecm@ix.example.com>, relay=localhost [127.0.0.1], stat=LocalError (421 Service temporarily unavailable)
 
@@ -129,7 +125,6 @@ May 17 13:31:00 rossak rsyslogd-3000: netstream session 0xe39bc30 will be closed
 May 17 13:31:05 rossak rsyslogd: Framing Error in received TCP message: delimiter is not SP but has ASCII value 0.
 May 17 13:31:05 rossak rsyslogd: Framing Error in received TCP message: invalid octet count 0.
 May 17 13:31:19 chusuk nrpe[63017]: Network server accept failure (53: Software caused connection abort)
-May  8 22:00:35 junction named[13508]: client 192.168.17.156#16276: error sending response: host unreachable
 
 May 18 08:38:34 corrin sshd[19741]: Setting tty modes failed: Invalid argument
 
