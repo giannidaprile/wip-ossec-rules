@@ -125,5 +125,9 @@ Mar 25 14:31:13 kaitain Hostd: [2011-03-25 14:31:13.670 50581B90 info 'Vmomi'] A
 Mar 25 14:31:13 kaitain Hostd: [2011-03-25 14:31:13.671 50581B90 error 'App'] Failed to read header on stream TCP(local=127.0.0.1:59937, peer=127.0.0.1:0): N7Vmacore15SystemExceptionE(Connection reset by peer)
 Mar 25 14:46:10 kaitain Hostd: [2011-03-25 14:46:10.904 501C7B90 verbose 'Cimsvc' opID=F411BF69-00000138] Ticket issued for CIMOM version 1.0, user root
 
-
+May 17 13:31:00 rossak rsyslogd-3000: netstream session 0xe39bc30 will be closed due to error
+May 17 13:31:05 rossak rsyslogd: Framing Error in received TCP message: delimiter is not SP but has ASCII value 0.
+May 17 13:31:05 rossak rsyslogd: Framing Error in received TCP message: invalid octet count 0.
+May 17 13:31:19 chusuk nrpe[63017]: Network server accept failure (53: Software caused connection abort)
+May  8 22:00:35 junction named[13508]: client 192.168.17.156#16276: error sending response: host unreachable
 
