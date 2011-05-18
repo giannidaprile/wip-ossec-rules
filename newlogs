@@ -131,3 +131,5 @@ May 17 13:31:05 rossak rsyslogd: Framing Error in received TCP message: invalid 
 May 17 13:31:19 chusuk nrpe[63017]: Network server accept failure (53: Software caused connection abort)
 May  8 22:00:35 junction named[13508]: client 192.168.17.156#16276: error sending response: host unreachable
 
+May 18 08:38:34 corrin sshd[19741]: Setting tty modes failed: Invalid argument
+
