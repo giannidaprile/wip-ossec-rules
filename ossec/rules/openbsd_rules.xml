@@ -185,6 +185,17 @@
     <description>Duplicate IPv6 address.</description>
   </rule>
 
+  <rule id="51528" level="0">
+    <decoded_as>bsd_kernel</decoded_as>
+    <match>failed loadfirmware of file</match>
+    <description>Could not load a firmware.</description>
+  </rule>
+
+  <rule id="51529" level="0">
+    <decoded_as>hotplugd</decoded_as>
+    <match>Permission denied$</match>
+    <description>Could not open a file.</description>
+  </rule>
 
 </group> <!-- SYSLOG,LOCAL -->
 

@@ -5,11 +5,6 @@ Jul 15 18:33:10 server fsmpm[16951]: PortMapper: Added mapping from id 192.168.1
 
 Sep 17 14:44:51 wks5184 Safari[402]: Periodic CFURLCache Insert stats (iters: 520) - Tx time:0.434590, # of Inserts: 5, # of bytes written: 185855, Did shrink: NO, Size of cache-file: 182607872, Num of Failures: 0
 
-Oct 15 15:34:27 carpsystem /bsd: carp1: state transition: MASTER -> BACKUP
-Oct 15 15:34:27 carpsystem /bsd: carp16: state transition: MASTER -> BACKUP
-Oct 15 15:34:27 carpsystem /bsd: nd6_na_input: duplicate IP6 address fe80:0424::03e0: 5e6f:fe00:0110
-Oct 15 15:34:27 carpsystem /bsd: nd6_na_input: duplicate IP6 address 2001:0560:73d7:0002:0012::00ef
-
 Oct 26 01:35:27 ix smtpd[4667]: (none): from=<@>, relay=ix.example.com [192.168.17.9], stat=LocalError (500 5.0.0 Pipelining unsupported)
 Oct 26 01:35:27 ix smtpd[4667]: client 192.168.17.9 write error: Broken pipe
 
@@ -54,11 +49,6 @@ Dec 24 03:06:09 epia kernel: HAMMER(ROOT): Forcing read-only mode
 Dec 27 10:30:01 bax inetd[28318]: pop3/tcp server failing (looping), service terminated
 
 Jan 18 19:56:11 buffalo2 dropbear[13611]: exit before auth: error reading: Connection reset by peer
-
-Feb  7 22:31:59 richese /bsd: urtwn0: failed loadfirmware of file urtwn-rtl8192cfwT (error 2)
-Feb 15 11:07:43 junction ftp-proxy[30564]: #3 proxy cannot connect to server 192.168.17.17: Connection refused
-
-Mar  8 10:51:14 arrakis hotplugd[27959]: /etc/hotplug/attach: Permission denied
 
 2011-03-08T11:20:25.189381-05:00 arrakis rsyslogd: [origin software="rsyslogd" swVersion="4.6.4" x-pid="14829" x-info="http://www.rsyslog.com"] (re)start
 2011-03-08T11:20:25.160584-05:00 arrakis rsyslogd: WARNING: rsyslogd is running in compatibility mode. Automatically generated config directives may interfer with your rsyslog.conf settings. We suggest upgrading your config and adding -c4 as the first rsyslogd option.

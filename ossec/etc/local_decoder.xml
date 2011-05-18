@@ -240,3 +240,7 @@ Dec 28 06:54:36 1.1.1.1 MSWinEventLog;1;Security;23875316;Tue: Dec 28 06:54:34 2
   <regex>(carp\d+): (\.+): (\.+)$</regex>
   <order>extra_data,action,status</order>
 </decoder>
+
+<decoder name="hotplugd">
+  <program_name>^hotplugd</program_name>
+</decoder>

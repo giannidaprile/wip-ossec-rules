@@ -3,3 +3,4 @@ Mar 19 01:41:07 buzzell /bsd: wd0a: uncorrectable data error reading fsbn 829424
 Oct 15 15:34:27 carpsystem /bsd: carp1: state transition: MASTER -> BACKUP
 Oct 15 15:34:27 carpsystem /bsd: carp16: state transition: MASTER -> BACKUP
 Oct 15 15:34:27 carpsystem /bsd: nd6_na_input: duplicate IP6 address fe80:0424::03e0: 5e6f:fe00:0110
+Feb  7 22:31:59 richese /bsd: urtwn0: failed loadfirmware of file urtwn-rtl8192cfwT (error 2)
