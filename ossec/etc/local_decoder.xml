@@ -233,3 +233,10 @@ Dec 28 06:54:36 1.1.1.1 MSWinEventLog;1;Security;23875316;Tue: Dec 28 06:54:34 2
   <program_name>^rsyslogd</program_name>
 </decoder>
 
+
+<decoder name="openbsd_carp">
+  <parent>bsd_kernel</parent>
+  <prematch offset="after_parent">^carp</prematch>
+  <regex>(carp\d+): (\.+): (\.+)$</regex>
+  <order>extra_data,action,status</order>
+</decoder>
