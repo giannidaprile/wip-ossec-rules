@@ -244,3 +244,24 @@ Dec 28 06:54:36 1.1.1.1 MSWinEventLog;1;Security;23875316;Tue: Dec 28 06:54:34 2
 <decoder name="hotplugd">
   <program_name>^hotplugd</program_name>
 </decoder>
+
+<decoder name="nagios">
+  <program_name>^nagios</program_name>
+</decoder>
+
+<decoder name="nagios-host">
+  <parent>nagios</parent>
+  <prematch offset="after_parent"> of host </prematch>
+  <regex offset="after_prematch">^'(\S+)' </regex>
+  <order>dstip</order>
+</decoder>
+
+<decoder name="nagios-service">
+  <parent>nagios</parent>
+  <prematch offset="after_parent"> of service </prematch>
+  <regex offset="after_prematch">^'(\.+)' </regex>
+  <order>extra_data</order>
+</decoder>
+
+
+
