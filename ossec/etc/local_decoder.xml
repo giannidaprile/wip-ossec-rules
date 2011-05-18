@@ -263,5 +263,12 @@ Dec 28 06:54:36 1.1.1.1 MSWinEventLog;1;Security;23875316;Tue: Dec 28 06:54:34 2
   <order>extra_data</order>
 </decoder>
 
+<decoder name="nagios-warning">
+  <parent>nagios</parent>
+  <prematch offset="after_parent">^SERVICE ALERT: </prematch>
+  <regex offset="after_prematch">^(\.+);(\.+);(\S+);\d+;</regex>
+  <order>srcip,extra_data,status</order>
+</decoder>
+
 
 
