@@ -118,3 +118,9 @@ May 17 13:31:19 chusuk nrpe[63017]: Network server accept failure (53: Software 
 
 May 18 08:38:34 corrin sshd[19741]: Setting tty modes failed: Invalid argument
 
+May 18 12:45:28 rossak kernel: hdc: drive_cmd: status=0x51 { DriveReady SeekComplete Error }
+May 18 12:45:28 rossak kernel: hdc: drive_cmd: error=0x04 { AbortedCommand }
+May 18 12:45:28 rossak kernel: ide: failed opcode was: 0xec
+May 18 21:51:04 kaitain Hostd: [2011-05-18 21:51:04.104 36381B90 warning 'Proxysvc Req10681'] Error reading from client while waiting for header: N7Vmacore15SystemExceptionE(Connection reset by peer)
+
+
