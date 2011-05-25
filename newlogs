@@ -123,4 +123,9 @@ May 18 12:45:28 rossak kernel: hdc: drive_cmd: error=0x04 { AbortedCommand }
 May 18 12:45:28 rossak kernel: ide: failed opcode was: 0xec
 May 18 21:51:04 kaitain Hostd: [2011-05-18 21:51:04.104 36381B90 warning 'Proxysvc Req10681'] Error reading from client while waiting for header: N7Vmacore15SystemExceptionE(Connection reset by peer)
 
+2011-05-25T15:23:49.895449-04:00 arrakis kernel: softraid0 at root
+2011-05-25T15:23:49.895464-04:00 arrakis kernel: scsibus3 at softraid0: 1 targets
+2011-05-25T15:23:49.895485-04:00 arrakis kernel: softraid0: volume sd2 is roaming, it used to be sd1, updating metadata
+2011-05-25T15:23:57.921130-04:00 arrakis hotplugd[27084]: softraid0 attached, class 0
+2011-05-25T15:24:57.890320-04:00 arrakis sensorsd[22064]: softraid0.drive1: online, OK
 
