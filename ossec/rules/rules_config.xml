@@ -1,4 +1,4 @@
-<!-- @(#) $Id: rules_config.xml,v 1.16 2010/03/04 20:12:33 dcid Exp $
+<!-- @(#) $Id$
   -  Rules config.
   -  Configuration options. This file must always be included, otherwise
   -  most of the rules will not work properly.

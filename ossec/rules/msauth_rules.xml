@@ -68,7 +68,7 @@
 
   <rule id="18108" level="4">
     <if_sid>18105</if_sid>
-    <id>^577</id>
+    <id>^577$</id>
     <description>Failed attempt to perform a privileged </description>
     <description>operation.</description>
   </rule>
@@ -490,7 +490,7 @@
 
   <rule id="18217" level="12">
     <if_sid>18207,18208</if_sid>
-    <regex> ID:\s+\p*S-1-5-32-544\p*</regex>
+    <regex> ID:\s+%{S-1-5-32-544}|ID:\s+S-1-5-32-544\s+</regex>
     <description>Administrators Group Changed</description>
     <group>group_changed,win_group_changed,</group>
     <info>http://support.microsoft.com/kb/243330</info>
