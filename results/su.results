@@ -11,12 +11,10 @@ ossec-testrule: Type one log per line.
        decoder: 'su'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '5301'
-       Level: '5'
-       Description: 'User missed the password to change UID (user id).'
-**Alert to be generated.
-
-
+       Rule id: '5306'
+       Level: '0'
+       Description: 'A user has attempted to su to an unknown class.'
+       Info - Text: 'OpenBSD uses login classes, and an inappropriate login class was used.'
 
 
 **Phase 1: Completed pre-decoding.

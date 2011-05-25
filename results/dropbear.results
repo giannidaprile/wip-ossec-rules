@@ -11,7 +11,7 @@ ossec-testrule: Type one log per line.
        decoder: 'dropbear'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '51006'
+       Rule id: '51001'
        Level: '1'
        Description: 'Failed to get key exchange value'
 **Alert to be generated.
@@ -93,14 +93,6 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'dropbear'
 
-**Phase 3: Completed filtering (rules).
-       Rule id: '51001'
-       Level: '2'
-       Description: 'Client exited before authentication.'
-**Alert to be generated.
-
-
-
 
 **Phase 1: Completed pre-decoding.
        full event: 'Mar 22 16:29:51 buffalo1 dropbear[25132]: exit before auth: Incompatible remote version 'SSH-1.5-NmapNSE_1.0''
@@ -111,9 +103,9 @@ ossec-testrule: Type one log per line.
        decoder: 'dropbear'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '51001'
-       Level: '2'
-       Description: 'Client exited before authentication.'
+       Rule id: '51008'
+       Level: '1'
+       Description: 'Incompatible remote version.'
 **Alert to be generated.
 
 
@@ -128,9 +120,9 @@ ossec-testrule: Type one log per line.
        decoder: 'dropbear'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '51001'
-       Level: '2'
-       Description: 'Client exited before authentication.'
+       Rule id: '51008'
+       Level: '1'
+       Description: 'Incompatible remote version.'
 **Alert to be generated.
 
 
@@ -145,9 +137,9 @@ ossec-testrule: Type one log per line.
        decoder: 'dropbear'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '51001'
+       Rule id: '1002'
        Level: '2'
-       Description: 'Client exited before authentication.'
+       Description: 'Unknown problem somewhere in the system.'
 **Alert to be generated.
 
 

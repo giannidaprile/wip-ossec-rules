@@ -25,9 +25,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '5553'
+       Level: '4'
+       Description: 'PAM misconfiguration.'
 **Alert to be generated.
 
 
@@ -42,9 +42,9 @@ ossec-testrule: Type one log per line.
        No decoder matched.
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '5554'
+       Level: '4'
+       Description: 'PAM misconfiguration.'
 **Alert to be generated.
 
 
