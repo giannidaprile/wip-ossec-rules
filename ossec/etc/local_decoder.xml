@@ -245,8 +245,43 @@ Dec 28 06:54:36 1.1.1.1 MSWinEventLog;1;Security;23875316;Tue: Dec 28 06:54:34 2
   <program_name>^hotplugd</program_name>
 </decoder>
 
+
+<!--
+May 18 00:05:24 caladan nagios: SERVICE ALERT: richese.example.com;PING;WARNING;SOFT;1;PING WARNING - Packet loss = 20%, RTA = 1.36 ms
+May 18 00:07:24 caladan nagios: SERVICE ALERT: richese.example.com;PING;OK;SOFT;2;PING OK - Packet loss = 0%, RTA = 5.60 ms
+May 18 00:22:14 caladan nagios: Auto-save of retention data completed successfully.
+May 18 01:22:14 caladan nagios: Auto-save of retention data completed successfully.
+May 18 02:13:04 caladan nagios: SERVICE ALERT: bunpup1.example.com;PING;WARNING;SOFT;1;PING WARNING - Packet loss = 20%, RTA = 2.20 ms
+May 18 02:15:04 caladan nagios: SERVICE ALERT: bunpup1.example.com;PING;OK;SOFT;2;PING OK - Packet loss = 0%, RTA = 2.28 ms
+May 18 02:22:14 caladan nagios: Auto-save of retention data completed successfully.
+May 18 03:22:14 caladan nagios: Auto-save of retention data completed successfully.
+May 18 04:22:14 caladan nagios: Auto-save of retention data completed successfully.
+May 18 04:47:24 caladan nagios: SERVICE ALERT: richese.example.com;PING;WARNING;SOFT;1;PING WARNING - Packet loss = 20%, RTA = 1.39 ms
+May 18 04:49:24 caladan nagios: SERVICE ALERT: richese.example.com;PING;OK;SOFT;2;PING OK - Packet loss = 0%, RTA = 1.75 ms
+May 18 05:22:14 caladan nagios: Auto-save of retention data completed successfully.
+May 18 06:22:14 caladan nagios: Auto-save of retention data completed successfully.
+May 18 07:12:34 caladan nagios: SERVICE ALERT: ix.example.com;load avg;WARNING;SOFT;1;WARNING - load average: 1.78, 0.80, 0.51
+May 18 07:14:34 caladan nagios: SERVICE ALERT: ix.example.com;load avg;OK;SOFT;2;OK - load average: 0.92, 0.82, 0.56
+May 18 07:22:14 caladan nagios: Auto-save of retention data completed successfully.
+May 18 08:22:14 caladan nagios: Auto-save of retention data completed successfully.
+May 18 08:54:34 caladan nagios: SERVICE ALERT: ix.example.com;load avg;WARNING;SOFT;1;WARNING - load average: 1.28, 1.13, 0.80
+May 18 08:56:34 caladan nagios: SERVICE ALERT: ix.example.com;load avg;WARNING;SOFT;2;WARNING - load average: 1.39, 1.19, 0.86
+May 18 08:58:34 caladan nagios: SERVICE ALERT: ix.example.com;load avg;WARNING;HARD;3;WARNING - load average: 1.33, 1.23, 0.92
+May 18 08:58:34 caladan nagios: SERVICE NOTIFICATION: nagiosadmin;ix.example.com;load avg;WARNING;notify-service-by-email;WARNING - load average: 1.33, 1.23, 0.92
+May 18 09:11:22 caladan nagios: EXTERNAL COMMAND: ACKNOWLEDGE_SVC_PROBLEM;ix.example.com;load avg;2;1;0;Nagios Admin;This isn't a problem.
+May 18 09:11:22 caladan nagios: SERVICE NOTIFICATION: nagiosadmin;ix.example.com;load avg;ACKNOWLEDGEMENT (WARNING);notify-service-by-email;WARNING - load average: 1.61, 1.42, 1.15;Nagios Admin;This isn't a problem.
+-->
+
 <decoder name="nagios">
   <program_name>^nagios</program_name>
+</decoder>
+
+<decoder name="nagios-notification">
+  <parent>nagios</parent>
+  <prematch offset="after_parent">^SERVICE NOTIFICATION</prematch>
+  <regex offset="after_prematch">^: (\S+);(\S+);(\.+);ACKNOWLEDGEMENT \((\S+)\);|</regex>
+  <regex>^: (\S+);(\S+);(\.+);(\S+);</regex>
+  <order>user,srcip,extra_data,status</order>
 </decoder>
 
 <decoder name="nagios-host">
@@ -269,6 +304,7 @@ Dec 28 06:54:36 1.1.1.1 MSWinEventLog;1;Security;23875316;Tue: Dec 28 06:54:34 2
   <regex offset="after_prematch">^(\.+);(\.+);(\S+);\d+;</regex>
   <order>srcip,extra_data,status</order>
 </decoder>
+
 
 
 

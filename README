@@ -54,3 +54,4 @@ Rule IDs:
 490000+: bro-ids
 490100+: vmware esxi
 490500+: rsyslog
+490700+: nagios
