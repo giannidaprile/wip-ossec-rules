@@ -11,55 +11,64 @@
 
 <!-- Modify it at your will. -->
 
-<group name="local,syslog,argus,">
+<group name="local,syslog,">
 
   <rule id="480000" level="0" noalert="1">
     <program_name>argus</program_name>
     <description>Grouping for argus rules.</description>
+    <group>argus,</group>
   </rule>
 
   <rule id="480001" level="0" noalert="1">
     <program_name>radium</program_name>
     <description>Grouping for radium rules.</description>
+    <group>argus,</group>
   </rule>
 
   <rule id="480002" level="0" noalert="1">
     <program_name>rastream</program_name>
     <description>Grouping for rastream rules.</description>
+    <group>argus,</group>
   </rule>
 
   <rule id="480003" level="0" noalert="1">
     <program_name>ratop</program_name>
     <description>Grouping for ratop rules.</description>
+    <group>argus,</group>
   </rule>
 
   <rule id="480004" level="0" noalert="1">
     <program_name>ra</program_name>
     <description>Groupoing for ra rules.</description>
+    <group>argus,</group>
   </rule>
 
   <rule id="480020" level="1">
     <if_sid>480000</if_sid>
     <match>illegal char </match>
     <description>Illegal character in argus configuration.</description>
+    <group>argus,</group>
   </rule>
 
   <rule id="480021" level="1">
     <if_sid>480000</if_sid>
     <match>syntax error$</match>
     <description>Syntax error in argus configuration.</description>
+    <group>argus,</group>
   </rule> 
   
   <rule id="480022" level="2">
     <if_sid>480000</if_sid>
     <regex>ArgusOpenInterface: pcap_open_live /dev/bpf\d: Permission denied</regex> 
     <description>Argus run with insufficient privileges to open a bpf device.</description>
+    <group>argus,</group>
   </rule>
 
   <rule id="480023" level="2">
     <if_sid>480000</if_sid>
     <match>argus: ArgusEstablishListen: bind() error</match>
     <description>Could not bind to the configured port.</description>
+    <group>argus,</group>
   </rule>
 
   <!--Aug 15 12:48:31 junction ratop[28040]: 12:48:31.178756 argus.00.00.00 filter syntax error-->
@@ -67,73 +76,78 @@
     <if_sid>480003</if_sid>
     <match>filter syntax error</match>
     <description>ratop run with incorrect filter syntax.</description>
+    <group>argus,</group>
   </rule>
 
   <rule id="480025" level="1">
     <if_sid>480001</if_sid>
     <regex>connect to \S+ failed 'Connection refused'</regex>
     <description>radium could not connect to specified ip and port.</description>
+    <group>argus,</group>
   </rule>
 
   <rule id="480026" level="0">
     <if_sid>480001</if_sid>
     <match>started$</match>
     <description>radium has started.</description>
+    <group>argus,</group>
   </rule>
 
   <rule id="480027" level="0">
     <if_sid>480001</if_sid>
     <regex>ArgusCheckClientMessage: client \S+ sent DONE$</regex>
     <description>XXX Client has sent a DONE message.</description>
+    <group>argus,</group>
   </rule>
 
   <rule id="480028" level="0">
     <if_sid>480002</if_sid>
     <match>started</match>
     <description>rastream has been started.</description>
+    <group>argus,</group>
   </rule>
 
   <rule id="480029" level="2">
     <if_sid>480002</if_sid>
     <regex>connect to \S+ failed 'Connection refused'</regex>
     <description>rastream could not connect to configured ip and port.</description>
+    <group>argus,</group>
   </rule>
 
   <rule id="480030" level="3">
     <if_sid>480002</if_sid>
     <regex>ArgusWriteNewLogfile\p\.+\p fopen Permission denied</regex>
     <description>Could not write to a new log file.</description>
+    <group>argus,</group>
   </rule>
 
   <rule id="480031" level="1">
     <if_sid>480004</if_sid>
     <match>filter syntax error</match>
     <description>Incorrect filter syntax used with ra.</description>
+    <group>argus,</group>
   </rule>
 
   <rule id="480032" level="2">
     <if_sid>480002</if_sid>
     <match>read error Connection reset by peer</match>
     <description>rastream connection was reset.</description>
+    <group>argus,</group>
   </rule>
 
   <rule id="480033" level="7">
     <if_sid>480001</if_sid>
     <match>remote exceed listen error.$</match>
     <description>XXX Errors connecting to remote process.</description>
+    <group>argus,</group>
   </rule>
 
+  <!--Feb  8 23:59:53 ix radium[2160]: 23:59:53.835391 ArgusEstablishListen: bind() error Permission denied-->
   <rule id="480034" level="5">
     <if_sid>480001</if_sid>
     <match>bind() error Permission denied</match>
     <description>radium run without sufficient permissions.</description>
-  </rule>
-
-  <!--May  3 17:59:21 junction radium[7994]: 17:59:21.510306 connect to 127.0.0.1:562 failed 'Connection refused'-->
-  <rule id="480035" level="1">
-    <if_sid>480001</if_sid>
-    <match>failed 'Connection refused'$</match>
-    <description>radium connection refused.</description>
+    <group>argus,</group>
   </rule>
 
 

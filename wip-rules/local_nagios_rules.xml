@@ -1,0 +1,64 @@
+<!-- @(#) $Id$
+  -  Example of local rules for OSSEC.
+  -
+  -  Copyright (C) 2009 Trend Micro Inc.
+  -  All rights reserved.
+  -
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.ossec.net/en/licensing.html
+  -->
+
+
+<!-- Modify it at your will. -->
+
+<group name="local,syslog,nagios,">
+
+  <rule id="490700" level="0">
+    <decoded_as>nagios</decoded_as>
+    <description>Grouping for nagios alerts.</description>
+  </rule>
+
+  <rule id="490701" level="0">
+    <if_sid>490700</if_sid>
+    <match>ACKNOWLEDGEMENT</match>
+    <description>Service check was acknowledged.</description>
+  </rule>
+
+  <rule id="490702" level="1">
+    <if_sid>490700</if_sid>
+    <status>^OK</status>
+    <description>Check has changed to OK state.</description>
+  </rule>
+
+  <rule id="490703" level="1">
+    <if_sid>490700</if_sid>
+    <status>^WARNING</status>
+    <description>Check has entered WARNING state.</description>
+  </rule>
+
+  <rule id="490704" level="1">
+    <if_sid>490703</if_sid>
+    <status>WARNING;HARD</status>
+    <description>Check has entered HARD WARNING state.</description>
+  </rule>
+
+  <rule id="490704" level="1">
+    <if_sid>490700</if_sid>
+    <status>^CRITICAL</status>
+    <description>Check has entered CRITICAL state.</description>
+  </rule>
+
+  <rule id="490705" level="0">
+    <if_sid>490700</if_sid>
+    <match>^Auto-save of retention data completed successfully.$</match>
+    <description>Ignore status message.</description>
+  </rule>
+   
+</group> <!-- SYSLOG,LOCAL -->
+
+
+<!-- EOF -->
