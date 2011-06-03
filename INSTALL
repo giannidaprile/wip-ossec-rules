@@ -1,0 +1,7 @@
+How to use this repository:
+
+The easiest method is to copy wip-rules to /var/ossec/rules/ and add the following to the <rules> section of the ossec.conf:
+<rule_dir>rules/wip-rules</rule_dir>
+
+The decoder should be handled the same way, by copying wip-etc to /var/ossec/etc/ and adding the following to the <rules section:
+<decoder_dir>etc/wip-etc</decoder_dir>
