@@ -9,7 +9,7 @@
 
 <group name="syslog,ids,bro">
 
-  <rule id="52000" level="0" noalert="1">
+  <rule id="52000" level="0">
     <decoded_as>bro-ids</decoded_as>
     <description>Grouping for all bro-ids events.</description>
   </rule>
