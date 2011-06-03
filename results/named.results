@@ -203,6 +203,11 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'named'
 
+**Phase 3: Completed filtering (rules).
+       Rule id: '12100'
+       Level: '0'
+       Description: 'Grouping of the named rules'
+
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 16 19:01:01 junction named[1112]: loading configuration: file not found'
@@ -211,6 +216,11 @@ ossec-testrule: Type one log per line.
 
 **Phase 2: Completed decoding.
        decoder: 'named'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12100'
+       Level: '0'
+       Description: 'Grouping of the named rules'
 
 
 **Phase 1: Completed pre-decoding.
@@ -221,6 +231,11 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'named'
 
+**Phase 3: Completed filtering (rules).
+       Rule id: '12100'
+       Level: '0'
+       Description: 'Grouping of the named rules'
+
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 16 19:18:28 ix named[17897]: client 192.168.17.17#48823: transfer of 'domain.com/IN': AXFR ended'
@@ -230,6 +245,11 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'named'
        srcip: '192.168.17.17'
+
+**Phase 3: Completed filtering (rules).
+       Rule id: '12100'
+       Level: '0'
+       Description: 'Grouping of the named rules'
 
 
 **Phase 1: Completed pre-decoding.
@@ -509,6 +529,11 @@ ossec-testrule: Type one log per line.
 **Phase 2: Completed decoding.
        decoder: 'named'
 
+**Phase 3: Completed filtering (rules).
+       Rule id: '12100'
+       Level: '0'
+       Description: 'Grouping of the named rules'
+
 
 **Phase 1: Completed pre-decoding.
        full event: 'Jun 29 10:34:44 ix named[22107]: automatic empty zone: A.E.F.IP6.ARPA'
@@ -552,11 +577,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '12146'
-       Level: '1'
+       Level: '0'
        Description: 'Cannot send a DNS response.'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.
@@ -570,11 +592,8 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '12147'
-       Level: '1'
+       Level: '0'
        Description: 'Cannot update forwarding domain.'
-**Alert to be generated.
-
-
 
 
 **Phase 1: Completed pre-decoding.

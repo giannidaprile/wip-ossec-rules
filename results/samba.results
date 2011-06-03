@@ -28,9 +28,9 @@ ossec-testrule: Type one log per line.
        decoder: 'smbd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '13108'
+       Level: '1'
+       Description: 'An attempt has been made to start smbd but the process is already running.'
 **Alert to be generated.
 
 
@@ -45,9 +45,9 @@ ossec-testrule: Type one log per line.
        decoder: 'nmbd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '13109'
+       Level: '1'
+       Description: 'An attempt has been made to start nmbd but the process is already running.'
 **Alert to be generated.
 
 
@@ -79,9 +79,9 @@ ossec-testrule: Type one log per line.
        decoder: 'smbd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '13111'
+       Level: '3'
+       Description: 'Socket is not connected, write failed.'
 **Alert to be generated.
 
 
@@ -96,9 +96,9 @@ ossec-testrule: Type one log per line.
        decoder: 'iptables'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '13112'
+       Level: '3'
+       Description: 'Segfault in gvfs-smb.'
 **Alert to be generated.
 
 
@@ -113,9 +113,9 @@ ossec-testrule: Type one log per line.
        decoder: 'smbd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '13111'
+       Level: '3'
+       Description: 'Socket is not connected, write failed.'
 **Alert to be generated.
 
 
@@ -130,9 +130,9 @@ ossec-testrule: Type one log per line.
        decoder: 'smbd'
 
 **Phase 3: Completed filtering (rules).
-       Rule id: '1002'
-       Level: '2'
-       Description: 'Unknown problem somewhere in the system.'
+       Rule id: '13111'
+       Level: '3'
+       Description: 'Socket is not connected, write failed.'
 **Alert to be generated.
 
 

@@ -12,8 +12,11 @@ ossec-testrule: Type one log per line.
 
 **Phase 3: Completed filtering (rules).
        Rule id: '5552'
-       Level: '0'
-       Description: 'Conversation with pam failed.'
+       Level: '1'
+       Description: 'PAM and gdm are not playing nicely.'
+**Alert to be generated.
+
+
 
 
 **Phase 1: Completed pre-decoding.
