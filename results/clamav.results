@@ -13,7 +13,7 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '52509'
        Level: '1'
-       Description: 'Could not download the incremental virus definition updates.'
+       Description: 'Could not download the latest database.'
 **Alert to be generated.
 
 
@@ -30,7 +30,7 @@ ossec-testrule: Type one log per line.
 **Phase 3: Completed filtering (rules).
        Rule id: '52509'
        Level: '1'
-       Description: 'Could not download the incremental virus definition updates.'
+       Description: 'Could not download the latest database.'
 **Alert to be generated.
 
 
