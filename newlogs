@@ -129,3 +129,4 @@ May 18 21:51:04 kaitain Hostd: [2011-05-18 21:51:04.104 36381B90 warning 'Proxys
 2011-05-25T15:23:57.921130-04:00 arrakis hotplugd[27084]: softraid0 attached, class 0
 2011-05-25T15:24:57.890320-04:00 arrakis sensorsd[22064]: softraid0.drive1: online, OK
 
+2011-06-08T20:08:38-04:00 ix /bsd: in6_purgeaddr: failed to remove a route to the p2p destination: 2001:0470:0007:0e64::0002 on gif0, errno=3
