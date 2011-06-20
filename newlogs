@@ -36,7 +36,6 @@ Dec  6 20:21:36 corrin collectd[9933]: read-function of plugin `iptables' failed
 Dec  6 20:21:37 corrin collectd[9933]: read-function of plugin `ntpd' failed. Will suspend it for 40 seconds.
 
 
-Dec 13 04:07:03 corrin freshclam[1097]: Can't get information about db.us.clamav.net: Temporary failure in name resolution
 
 Dec 14 09:51:33 corrin kernel: udevd invoked oom-killer: gfp_mask=0x201d2, order=0, oomkilladj=-17
 Dec 14 09:52:22 corrin kernel: postmaster invoked oom-killer: gfp_mask=0x201d2, order=0, oomkilladj=0
@@ -131,6 +130,4 @@ May 18 21:51:04 kaitain Hostd: [2011-05-18 21:51:04.104 36381B90 warning 'Proxys
 
 2011-06-08T20:08:38-04:00 ix /bsd: in6_purgeaddr: failed to remove a route to the p2p destination: 2001:0470:0007:0e64::0002 on gif0, errno=3
 
-Jun 16 04:02:24 corrin freshclam[14776]: connect_error: getsockopt(SO_ERROR): fd=5 error=110: Connection timed out
 
-Jun 20 13:49:33 ix freshclam[2998]: connect_error: getsockopt(SO_ERROR): fd=6 error=61: Connection refused
