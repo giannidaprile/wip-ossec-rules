@@ -1,6 +1,21 @@
 
 <group name="clamd,freshclam,">
 
+<!--
+Jun 20 13:49:33 ix freshclam[2998]: connect_error: getsockopt(SO_ERROR): fd=6 error=61: Connection refused
+Jun 16 04:02:24 corrin freshclam[14776]: connect_error: getsockopt(SO_ERROR): fd=5 error=110: Connection timed out
+Dec 13 04:07:03 corrin freshclam[1097]: Can't get information about db.us.clamav.net: Temporary failure in name resolution
+-->
+
+  <rule id="52510" level="1">
+    <if_sid>52501</if_sid>
+    <match>error=61: Connection refused|</match>
+    <match>error=110: Connection timed out|</match>
+    <match>Temporary failure in name resolution</match>
+    <description>Could not connect to update server.</description>
+  </rule>
+
+
 
 
 </group> <!-- clamd, freshclam -->
