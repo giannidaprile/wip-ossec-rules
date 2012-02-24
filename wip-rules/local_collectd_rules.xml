@@ -1,0 +1,86 @@
+<group name="local,syslog,">
+  <rule id="52900" level="0" noalert="1">
+    <decoded_as>collectd</decoded_as>
+    <description>Grouping for collectd messages.</description>
+  </rule>
+
+  <rule id="52901" level="0">
+    <if_sid>52900</if_sid>
+    <match>^network plugin</match>
+    <description>Network plugin grouping.</description>
+  </rule>
+
+  <rule id="52902" level="0">
+    <if_sid>52901</if_sid>
+    <match>Decrypting AES256 part failed|</match>
+    <match>Decryption failed</match>
+    <description>Decryption failed.</description>
+  </rule>
+
+  <rule id="52903" level="0">
+    <if_sid>52900</if_sid>
+    <match>read-function of plugin</match>
+    <description>Read-function of a plugin failed.</description>
+  </rule>
+
+  <rule id="52904" level="0">
+    <if_sid>52900</if_sid>
+    <match>^recv(2) failed: Connection refused$</match>
+    <description>Could not receive message.</description>
+  </rule>
+
+  <rule id="52905" level="0">
+    <if_sid>52900</if_sid>
+    <match>Error: couldn't open PID-file</match>
+    <description>Could not open pid file.</description>
+  </rule>
+
+  <rule id="52906" level="0">
+    <if_sid>52900</if_sid>
+    <match>^uc_update: Value too old:</match>
+    <description>Update is too old.</description>
+  </rule>
+
+  <rule id="52907" level="0">
+    <if_sid>52901</if_sid>
+    <match>Cannot set the interface on a unicast socket</match>
+    <description>Cannot set the interface on a unicast socket.</description>
+  </rule>
+
+  <rule id="52908" level="0">
+    <if_sid>52901</if_sid>
+    <match>The `TimeToLive' config option needs exactly one numeric argument.$</match>
+    <description>Misconfiguration in TimeToLive option.</description>
+  </rule>
+
+  <rule id="52909" level="0">
+    <if_sid>52901</if_sid>
+    <match> is not allowed here.$</match>
+    <description>Misconfiguration.</description>
+  </rule>
+
+  <rule id="52910" level="0">
+    <if_sid>52900</if_sid>
+    <match>^Initialization complete, entering read-loop.$</match>
+    <description>collectd has started.</description>
+  </rule>
+
+  <rule id="52911" level="0">
+    <if_sid>52900</if_sid>
+    <match>^Exiting normally.$</match>
+    <description>collectd has stopped.</description>
+  </rule>
+
+  <rule id="52912" level="0">
+    <if_sid>52900</if_sid>
+    <match> Stopping 5 read threads.$</match>
+    <description>Stopping 5 read threads.</description>
+  </rule>
+
+  <rule id="52913" level="0">
+    <if_sid>52901</if_sid>
+    <match>sendto failed: Host is down$</match>
+    <description>collectd server is down.</description>
+  </rule>
+
+</group>

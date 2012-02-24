@@ -17,45 +17,69 @@
 
 <group name="local,syslog,nagios,">
 
-  <rule id="490700" level="0">
+  <rule id="53500" level="0" noalert="1">
     <decoded_as>nagios</decoded_as>
     <description>Grouping for nagios alerts.</description>
   </rule>
 
-  <rule id="490701" level="0">
-    <if_sid>490700</if_sid>
-    <match>ACKNOWLEDGEMENT</match>
-    <description>Service check was acknowledged.</description>
+  <rule id="53501" level="0" noalert="1">
+    <decoded_as>nrpe</decoded_as>
   </rule>
 
-  <rule id="490702" level="1">
-    <if_sid>490700</if_sid>
-    <status>^OK</status>
-    <description>Check has changed to OK state.</description>
-  </rule>
 
-  <rule id="490703" level="1">
-    <if_sid>490700</if_sid>
+  <rule id="53503" level="1">
+    <if_sid>53500</if_sid>
     <status>^WARNING</status>
     <description>Check has entered WARNING state.</description>
   </rule>
 
-  <rule id="490704" level="1">
-    <if_sid>490703</if_sid>
+  <rule id="53504" level="1">
+    <if_sid>53503</if_sid>
     <status>WARNING;HARD</status>
     <description>Check has entered HARD WARNING state.</description>
   </rule>
 
-  <rule id="490704" level="1">
-    <if_sid>490700</if_sid>
+  <rule id="53504" level="1">
+    <if_sid>53500</if_sid>
     <status>^CRITICAL</status>
     <description>Check has entered CRITICAL state.</description>
   </rule>
 
-  <rule id="490705" level="0">
-    <if_sid>490700</if_sid>
+  <rule id="53505" level="0">
+    <if_sid>53500</if_sid>
     <match>^Auto-save of retention data completed successfully.$</match>
     <description>Ignore status message.</description>
+  </rule>
+
+  <rule id="53506" level="0">
+    <if_sid>53500</if_sid>
+    <match>looks like it was orphaned (results never came back).  I'm scheduling an immediate check of the service...$|</match>
+    <match>looks like it was orphaned (results never came back).  I'm scheduling an immediate check of the host...</match>
+    <description>Orphaned service or host.</description>
+  </rule>
+
+  <rule id="53507" level="1">
+    <if_sid>53500</if_sid>
+    <status>^DOWN</status>
+    <description>Host is down.</description>
+  </rule>
+
+  <rule id="53508" level="0">
+    <if_sid>53500</if_sid>
+    <match>ACKNOWLEDGEMENT</match>
+    <description>Service check was acknowledged.</description>
+  </rule>
+
+  <rule id="53509" level="1">
+    <if_sid>53500</if_sid>
+    <status>^OK</status>
+    <description>Check has changed to OK state.</description>
+  </rule>
+
+  <rule id="53510" level="0">
+    <if_sid>53501</if_sid>
+    <match>^Error: Could not complete SSL handshake.</match>
+    <description>Nagios and nrpe could not communicate over ssl.</description>
   </rule>
    
 </group> <!-- SYSLOG,LOCAL -->

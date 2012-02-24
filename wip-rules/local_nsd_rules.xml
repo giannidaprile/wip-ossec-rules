@@ -1,0 +1,53 @@
+<!-- @(#) $Id: local_rules.xml,v 1.75 2011/02/14 16:41:37 ddp Exp $
+  -  Example of local rules for OSSEC.
+  -
+  -  Copyright (C) 2009 Trend Micro Inc.
+  -  All rights reserved.
+  -
+  -  This program is a free software; you can redistribute it
+  -  and/or modify it under the terms of the GNU General Public
+  -  License (version 2) as published by the FSF - Free Software
+  -  Foundation.
+  -
+  -  License details: http://www.ossec.net/en/licensing.html
+  -->
+
+
+<!-- Modify it at your will. -->
+
+<group name="local,syslog,nsd,">
+
+  <rule id="15000" level="0" noalert="1">
+    <decoded_as>nsd</decoded_as>
+    <description>Grouping for nsd rules.</description>
+  </rule>
+
+  <rule id="15009" level="0">
+    <if_sid>15000</if_sid>
+    <match>^xfrd: </match>
+    <description>Zone transfer.</description>
+  </rule>
+
+  <rule id="15010" level="1">
+    <if_sid>15000</if_sid>
+    <match>^Reload process </match>
+    <status>256</status>
+    <description>Reload process failed with status 256.</description>
+  </rule>
+
+  <rule id="15011" level="1">
+    <if_sid>15009</if_sid>
+    <status>FORMAT ERROR</status>
+    <description>Format error in zone transfer.</description>
+  </rule>
+
+  <rule id="15012" level="1">
+    <if_sid>15009</if_sid>
+    <status>REfUSED</status>
+    <description>Zone transfer refused.</description>
+  </rule>
+
+</group> <!-- SYSLOG,LOCAL -->
+
+
+<!-- EOF -->

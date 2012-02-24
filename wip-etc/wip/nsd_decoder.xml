@@ -1,0 +1,41 @@
+<!-- nsd decoders
+  - Feb 12 08:57:33 ix nsd[4750]: signal received, reloading...
+  - Feb 12 08:57:33 ix nsd[15765]: cannot load database. Zone scooter.web.tr. in db /db/nsd.db, but not in config file (might happen if you edited the config file). Please rebuild database and start again.
+  - Feb 12 08:57:33 ix nsd[15765]: unable to reload the database: Interrupted system call
+  - Feb 12 08:57:33 ix nsd[4750]: handle_reload_cmd: reload closed cmd channel
+  - Feb 12 08:57:33 ix nsd[4750]: Reload process 15765 failed with status 256, continuing with old database
+  - Feb 12 08:58:52 junction nsd[24316]: ...stale pid file from process 30720
+  - Feb 12 08:58:53 junction nsd[6212]: nsd started (NSD 3.2.8), pid 6212
+  - Feb 12 08:58:54 junction nsd[14480]: xfrd: zone example.com received error code FORMAT ERROR from 192.168.17.9
+  - Feb 12 08:58:54 junction nsd[14480]: xfrd: zone example.com received error code REFUSED from 192.168.17.9
+  - Feb 12 08:58:54 junction nsd[14480]: xfrd: zone example.com received error code REFUSED from 192.168.17.9
+  - Feb 12 08:59:59 junction nsd[6212]: signal received, reloading...
+  - Feb 12 09:50:59 ix nsd[4750]: signal received, reloading...
+  - Feb 12 09:50:59 ix nsd[6523]: cannot load database. Zone www.tdrc.org.zm. in db /db/nsd.db, but not in config file (might happen if you edited the config file). Please rebuild database and start again.
+  - Feb 12 09:50:59 ix nsd[6523]: unable to reload the database: Interrupted system call
+  - Feb 12 09:50:59 ix nsd[4750]: handle_reload_cmd: reload closed cmd channel
+  - Feb 12 09:50:59 ix nsd[4750]: Reload process 6523 failed with status 256, continuing with old database
+  - Feb 24 07:07:39 junction nsd[14480]: xfrd: zone example.com received error code REFUSED from 192.168.17.9
+  - Feb 24 10:57:13 junction nsd[14480]: xfrd: zone example.com received error code FORMAT ERROR from 192.168.17.9
+-->
+
+
+<decoder name="nsd">
+  <program_name>^nsd</program_name>
+</decoder>
+
+<decoder name="nsd-from">
+  <parent>nsd</parent>
+  <prematch>^xfrd: </prematch>
+  <regex offset="after_prematch">zone (\S+) received error code (\.+) from (\S+)$</regex>
+  <order>url, status, srcip</order>
+</decoder>
+
+<decoder name="nsd-reload">
+  <parent>nsd</parent>
+  <prematch offset="after_parent">^Reload process </prematch>
+  <regex offset="after_prematch">^\d+ failed with status (\d+),</regex>
+  <order>status</order>
+</decoder>
+
+

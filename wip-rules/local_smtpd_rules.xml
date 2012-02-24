@@ -107,6 +107,24 @@
     <description>The message is believed to be spam.</description>
   </rule>
 
+  <rule id="320023" level="1">
+    <if_sid>320000</if_sid>
+    <match> exiting$</match>
+    <description>smtpd process is exiting.</description>
+  </rule>
+
+  <rule id="320024" level="2">
+    <if_sid>320000</if_sid>
+    <match>lost child: runner terminated; signal 10$</match>
+    <description>smtpd: lost child.</description>
+  </rule>
+
+  <rule id="320025" level="1">
+    <if_sid>320000</if_sid>
+    <match>^parent terminating$</match>
+    <description>smtpd: All processes terminating.</description>
+  </rule>
+
    
 </group> <!-- SYSLOG,LOCAL -->
 

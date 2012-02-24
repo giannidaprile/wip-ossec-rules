@@ -7,12 +7,30 @@
   -  License details: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
   -->
 
-
-
-  <!-- Modify it at your will. -->
-
 <group name="local,syslog,openbsd">
 
+<!--
+2011-06-08T20:08:38-04:00 ix /bsd: in6_purgeaddr: failed to remove a route to the p2p destination: 2001:0470:0007:0e64::0002 on gif0, errno=3
+Apr  7 10:20:21 junction portmap[32125]: cannot bind udp: Permission denied
+-->
+
+  <rule id="51530" level="1">
+    <if_sid>51500</if_sid>
+    <match>in6_purgeaddr: failed to remove a route</match>
+    <description>Failed to remove a route.</description>
+  </rule>
+
+  <rule id="51532" level="0">
+    <decoded_as>portmap</decoded_as>
+    <match>cannot bind udp</match>
+    <description>portmap cannot bind udp.</description>
+  </rule>
+  
+  <rule id="51533" level="1">
+    <decoded_as>openbsd-pkg_add</decoded_as>
+    <match>^Added</match>
+    <description>New package added.</description>
+  </rule>
 
 </group> <!-- SYSLOG,LOCAL -->
 
